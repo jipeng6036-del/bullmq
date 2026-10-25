@@ -1,0 +1,48 @@
+{
+  "head": "2e5ecf53615fd799d0c660d3b8bb8a5af579ccf7",
+  "parent": "09b7bfeb8653e74074542ca48e70477540742a7e",
+  "tree": "0503ca913f5b3b71b081f7912a497fe635317d67",
+  "sourceFiles": [
+    {
+      "path": "src/classes/child-processor.ts",
+      "mode": "100644",
+      "sha256": "bee535372224faa900ab6566fbc6ffd27fe14395a1c38e4b950c6fd81626cb98",
+      "bytes": 11009
+    },
+    {
+      "path": "src/classes/sandbox.ts",
+      "mode": "100644",
+      "sha256": "9dc41eca97a29776785b97a335747f9c02ab9ad30d43f31bcc8235ffecee242e",
+      "bytes": 7035
+    },
+    {
+      "path": "src/enums/child-command.ts",
+      "mode": "100644",
+      "sha256": "9eff9e47993440d0d454f2a2d77e24477030300a6cd8553e6372fc7ebcc7c8e1",
+      "bytes": 245
+    },
+    {
+      "path": "tests/sandboxed_process.test.ts",
+      "mode": "100644",
+      "sha256": "3576b9b6677194384812a043fb3b54458e1f09f959a824d654c9fbc73b10e060",
+      "bytes": 68710
+    },
+    {
+      "path": "tests/child-processor.test.ts",
+      "mode": "100644",
+      "sha256": "228ce90c084a90cf0ddb8a195fcdbc48713b121f335f3560aa6a7c951b6c2920",
+      "bytes": 3959
+    },
+    {
+      "path": "tests/fixtures/fixture_processor_update_data_await.js",
+      "mode": "100644",
+      "sha256": "bd12dc3628575ad06b62659da98bdd0c3dcddc1784f627fd60254495cd246864",
+      "bytes": 1032
+    }
+  ],
+  "stat": "src/classes/child-processor.ts                     |  63 +++++++++---\n src/classes/sandbox.ts                             |  18 +++-\n src/enums/child-command.ts                         |   1 +\n tests/child-processor.test.ts                      | 108 +++++++++++++++++++++\n .../fixture_processor_update_data_await.js         |  35 +++++++\n tests/sandboxed_process.test.ts                    |  44 +++++++++\n 6 files changed, 254 insertions(+), 15 deletions(-)",
+  "modes": "100644 blob 99a280730db1c1271b8c21c6901cc8a8c32f3336\tsrc/classes/child-processor.ts\n100644 blob f69ca7ddfe1254ea7a82da0e0d0eed6952c03673\tsrc/classes/sandbox.ts\n100644 blob 56582618281fcd25466f597c84195e707f83320a\tsrc/enums/child-command.ts\n100644 blob 31bac68e3d38b364ef2ca5fd0dd0d9351ffde524\ttests/child-processor.test.ts\n100644 blob 2c96f5ed684eaa92c1dfc03ae353a99b41e493f5\ttests/fixtures/fixture_processor_update_data_await.js\n100644 blob e64abf50d02187f9cd3ac4a35b9c676aa6e52e41\ttests/sandboxed_process.test.ts",
+  "clean": true,
+  "normalPrecommitAndCommitMsgHooks": true,
+  "frozenV2PreservedByHooks": true
+}

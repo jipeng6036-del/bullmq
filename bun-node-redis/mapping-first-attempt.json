@@ -1,0 +1,10 @@
+{
+  "stage": "final-head mapping precheck before root host import completed",
+  "expectedHead": "2e5ecf53615fd799d0c660d3b8bb8a5af579ccf7",
+  "observedHead": "09b7bfeb8653e74074542ca48e70477540742a7e",
+  "exitCode": 1,
+  "error": "AssertionError at gates-v2.py line 9: host HEAD did not yet match final HEAD",
+  "buildOrTestsStarted": false,
+  "sourceMutatedByAttempt": false,
+  "resolution": "Root completed bundle import and confirmed clean final HEAD before rerun"
+}

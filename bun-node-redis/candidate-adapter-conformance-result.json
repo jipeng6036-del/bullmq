@@ -1,0 +1,28 @@
+{
+  "name": "candidate-adapter-conformance",
+  "argv": [
+    "docker",
+    "exec",
+    "--user",
+    "node",
+    "--env",
+    "HOME=/tmp/bunroot/home",
+    "--env",
+    "npm_config_cache=/tmp/bunroot/npm-cache",
+    "--env",
+    "YARN_CACHE_FOLDER=/tmp/bunroot/yarn-cache",
+    "--env",
+    "PATH=/tmp/bunroot/tools/node_modules/node/bin:/tmp/bunroot/tools/node_modules/.bin:/tmp/bunroot/bun/node_modules/@oven/bun-linux-x64/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+    "--env",
+    "REDIS_HOST=127.0.0.1",
+    "--env",
+    "REDIS_PORT=6379",
+    "ghpr-0902-bullmq-bun-root-runner",
+    "sh",
+    "-c",
+    "cd /tmp/bunroot/candidate && yarn test:adapter-conformance"
+  ],
+  "started": "2026-10-25T10:30:11.621006+00:00",
+  "ended": "2026-10-25T10:30:14.274451+00:00",
+  "exitCode": 0
+}

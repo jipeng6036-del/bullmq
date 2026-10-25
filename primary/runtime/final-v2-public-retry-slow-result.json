@@ -1,0 +1,23 @@
+{
+  "name": "final-v2-public-retry-slow",
+  "command": "cd /tmp/bullmq4168/public-final-v2 && cp /evidence/contracts-v2-extra-probe.cjs . && REDIS_PORT=6387 node contracts-v2-extra-probe.cjs && cp contracts-v2-extra-result.json /evidence/final-v2-public-retry-slow.json && node /evidence/assert-final-v2-runtime.cjs",
+  "argv": [
+    "docker",
+    "exec",
+    "--user",
+    "node",
+    "--env",
+    "HOME=/tmp/bullmq4168/home",
+    "--env",
+    "npm_config_cache=/tmp/bullmq4168/npm-cache",
+    "--env",
+    "PATH=/tmp/bullmq4168/tools/node_modules/node/bin:/tmp/bullmq4168/tools/node_modules/.bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+    "ghpr-heartbeat0902-js-bullmq4168-matrix",
+    "sh",
+    "-c",
+    "cd /tmp/bullmq4168/public-final-v2 && cp /evidence/contracts-v2-extra-probe.cjs . && REDIS_PORT=6387 node contracts-v2-extra-probe.cjs && cp contracts-v2-extra-result.json /evidence/final-v2-public-retry-slow.json && node /evidence/assert-final-v2-runtime.cjs"
+  ],
+  "started": "2026-10-25T10:27:25.843839+00:00",
+  "ended": "2026-10-25T10:27:42.601726+00:00",
+  "exitCode": 0
+}

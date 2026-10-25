@@ -1,0 +1,7 @@
+{
+  "canonicalSha256": "352db92214415193667c493636408682bb3fb612775c70df81e5522f6b76cb4f",
+  "npmSideEffectSha256": "b86c5e2376edc8634060744f08f8d338f8ae0cad5b7e13399ecbf0d648e0a569",
+  "cause": "Official CI npm install --no-save @valkey/valkey-glide@2.5.0 rewrites yarn.lock. Restore canonical lock after installation; leave installed native adapter unchanged, then rerun build and full suite on exact final source.",
+  "previousPostcheck": "v2-valkey-glide-source-after.json",
+  "restoreScope": "Only this worker-owned validation tree; no product/host edits."
+}

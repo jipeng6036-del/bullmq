@@ -1,0 +1,23 @@
+{
+  "name": "final-v2-postgres-pack",
+  "command": "cd /tmp/bullmq4168/postgres-candidate && node /evidence/verify-final-v2.cjs /tmp/bullmq4168/postgres-candidate && yarn build && POSTGRES_URL=postgres://postgres:postgres@127.0.0.1:5432/bullmq_test yarn test:postgres && mkdir -p /evidence/artifact-final-v2 && npm pack --ignore-scripts --pack-destination /evidence/artifact-final-v2 && node /evidence/verify-final-v2.cjs /tmp/bullmq4168/postgres-candidate",
+  "argv": [
+    "docker",
+    "exec",
+    "--user",
+    "node",
+    "--env",
+    "HOME=/tmp/bullmq4168/home",
+    "--env",
+    "npm_config_cache=/tmp/bullmq4168/npm-cache",
+    "--env",
+    "PATH=/tmp/bullmq4168/tools/node_modules/node/bin:/tmp/bullmq4168/tools/node_modules/.bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+    "ghpr-heartbeat0902-js-bullmq4168-validation",
+    "sh",
+    "-c",
+    "cd /tmp/bullmq4168/postgres-candidate && node /evidence/verify-final-v2.cjs /tmp/bullmq4168/postgres-candidate && yarn build && POSTGRES_URL=postgres://postgres:postgres@127.0.0.1:5432/bullmq_test yarn test:postgres && mkdir -p /evidence/artifact-final-v2 && npm pack --ignore-scripts --pack-destination /evidence/artifact-final-v2 && node /evidence/verify-final-v2.cjs /tmp/bullmq4168/postgres-candidate"
+  ],
+  "started": "2026-10-25T10:23:24.782004+00:00",
+  "ended": "2026-10-25T10:23:43.926495+00:00",
+  "exitCode": 0
+}

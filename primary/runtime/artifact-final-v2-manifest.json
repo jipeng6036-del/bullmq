@@ -1,0 +1,4034 @@
+{
+  "sourceCommit": "2e5ecf53615fd799d0c660d3b8bb8a5af579ccf7",
+  "sourceTree": "0503ca913f5b3b71b081f7912a497fe635317d67",
+  "frozenArchiveSha256": "7bc67762360cab5ec31cc6f42e95cbc9c8d2401364a40b5129cf5bf2e10193a3",
+  "artifact": "F:\\Github-PR\\ci-evidence\\heartbeat0902-js-bullmq-4168\\runtime\\artifact-final-v2\\bullmq-6.4.2.tgz",
+  "artifactSha256": "d14b6b2ce3a64dccd7950860eb2b757e093bbf74735ea3ec7790bb43bf9b9f8e",
+  "files": [
+    {
+      "path": "LICENSE",
+      "sha256": "ad9e1382b9c055365f7a6a659a0e94543c7424a0272b8b44a54f79d6c961d321",
+      "bytes": 1092
+    },
+    {
+      "path": "dist/cjs/classes/abort-controller.js",
+      "sha256": "b6ef1af033f886397fa057cf0d0b5f34e1f71c87fea8454d7c621155717cd278",
+      "bytes": 595
+    },
+    {
+      "path": "dist/esm/classes/abort-controller.js",
+      "sha256": "f1b0eeda4ecacef77aaa75c9285842685f87810cfa59163b41313d7946a3b969",
+      "bytes": 450
+    },
+    {
+      "path": "dist/cjs/scripts/addDelayedJob-6.js",
+      "sha256": "efd17710f01204241af6b26576e3d334e91cfa3c766277559233cfb1b111af6d",
+      "bytes": 24312
+    },
+    {
+      "path": "dist/esm/scripts/addDelayedJob-6.js",
+      "sha256": "a772a70a06ad96509d5fae03afeee7fbf5a2d712d51f16855cb99abc9881ac1a",
+      "bytes": 24208
+    },
+    {
+      "path": "dist/cjs/scripts/addJobScheduler-11.js",
+      "sha256": "fca3224cfa75d249c7f9e9bc137d6f8d908d9d080f250e04d27cf024ceb24d8e",
+      "bytes": 22542
+    },
+    {
+      "path": "dist/esm/scripts/addJobScheduler-11.js",
+      "sha256": "f59865832caa2b02f747185b07fe16cd913ccc5c663669b8b0e1f3a338e388a3",
+      "bytes": 22436
+    },
+    {
+      "path": "dist/cjs/scripts/addLog-2.js",
+      "sha256": "c2ac90a81dd72d7b9bef17593e541062a3b3e1aae9de4ebe32b23727c45744b2",
+      "bytes": 686
+    },
+    {
+      "path": "dist/esm/scripts/addLog-2.js",
+      "sha256": "38c3797547733faa4ee4fcd3ca3836910c7ef0d833c3a9b324a55b9fcfd07f8f",
+      "bytes": 589
+    },
+    {
+      "path": "dist/cjs/scripts/addParentJob-6.js",
+      "sha256": "0c64e7bec22069e4ea54ac55aaeb376a0f236bc701572ec423f0c31144a953cf",
+      "bytes": 19180
+    },
+    {
+      "path": "dist/esm/scripts/addParentJob-6.js",
+      "sha256": "f594dbf2cba1fcd2b4d867e4c5a2db4f1eac80c4e456c06b695e40aa402f8b95",
+      "bytes": 19077
+    },
+    {
+      "path": "dist/cjs/scripts/addPrioritizedJob-9.js",
+      "sha256": "fc640075315fff5aa703c0265ae4727738ef0111ca3163fab0dd71708eb32d03",
+      "bytes": 23117
+    },
+    {
+      "path": "dist/esm/scripts/addPrioritizedJob-9.js",
+      "sha256": "3e467b0d6c0960c0141714a120ed95941355457031e8bb4f2303ae6879463807",
+      "bytes": 23009
+    },
+    {
+      "path": "dist/cjs/scripts/addStandardJob-9.js",
+      "sha256": "4a318dc6add340fc7bf2d67e09c3c9c2d140208fd01d60251f244737cb45a728",
+      "bytes": 23192
+    },
+    {
+      "path": "dist/esm/scripts/addStandardJob-9.js",
+      "sha256": "ee6410247e979737db96a40729825d0651aae91d866c719fe877fb6459416643",
+      "bytes": 23087
+    },
+    {
+      "path": "dist/cjs/interfaces/advanced-options.js",
+      "sha256": "d43aa81f5bc89faa359e0f97c814ba25155591ff078fbb9bfd40f8c7c9683230",
+      "bytes": 77
+    },
+    {
+      "path": "dist/esm/interfaces/advanced-options.js",
+      "sha256": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
+      "bytes": 11
+    },
+    {
+      "path": "dist/cjs/classes/async-fifo-queue.js",
+      "sha256": "19d3fcfde8de944caa0dcc3201902cedda1b6a4aa3fe41baa651d056915b7362",
+      "bytes": 4746
+    },
+    {
+      "path": "dist/esm/classes/async-fifo-queue.js",
+      "sha256": "49e38231c4f6f9862b36ebe1614e2f730677c2253aa35931b6e109f254e270c1",
+      "bytes": 4602
+    },
+    {
+      "path": "dist/cjs/interfaces/backoff-options.js",
+      "sha256": "d43aa81f5bc89faa359e0f97c814ba25155591ff078fbb9bfd40f8c7c9683230",
+      "bytes": 77
+    },
+    {
+      "path": "dist/esm/interfaces/backoff-options.js",
+      "sha256": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
+      "bytes": 11
+    },
+    {
+      "path": "dist/cjs/types/backoff-strategy.js",
+      "sha256": "d43aa81f5bc89faa359e0f97c814ba25155591ff078fbb9bfd40f8c7c9683230",
+      "bytes": 77
+    },
+    {
+      "path": "dist/esm/types/backoff-strategy.js",
+      "sha256": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
+      "bytes": 11
+    },
+    {
+      "path": "dist/cjs/classes/backoffs.js",
+      "sha256": "44ecf46bb438c46f9e9dd26290b998f655e5211bd09a845b467b154fa2ebdfd8",
+      "bytes": 1935
+    },
+    {
+      "path": "dist/esm/classes/backoffs.js",
+      "sha256": "a7e10ef480311f10c54974f09e98d1dd9b68130a0a6d755821c36571e0ed2316",
+      "bytes": 1809
+    },
+    {
+      "path": "dist/cjs/interfaces/base-job-options.js",
+      "sha256": "d43aa81f5bc89faa359e0f97c814ba25155591ff078fbb9bfd40f8c7c9683230",
+      "bytes": 77
+    },
+    {
+      "path": "dist/esm/interfaces/base-job-options.js",
+      "sha256": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
+      "bytes": 11
+    },
+    {
+      "path": "dist/cjs/classes/bun-redis-client.js",
+      "sha256": "86b632a26f3bc269f33b8d84da87e3ffac2897fc668aab29fef7c8752250469e",
+      "bytes": 46881
+    },
+    {
+      "path": "dist/esm/classes/bun-redis-client.js",
+      "sha256": "3c16c86df66aaa6f6a720211ca4474ea924af293a85f127e8b67c48be226e2ab",
+      "bytes": 46672
+    },
+    {
+      "path": "dist/cjs/scripts/changeDelay-4.js",
+      "sha256": "383d86b44032e97086d26bed05cf6edbadc8c4615daa77f2eecfc797d45c51a9",
+      "bytes": 3174
+    },
+    {
+      "path": "dist/esm/scripts/changeDelay-4.js",
+      "sha256": "a9ccbe550be33f4b4b39cbcd197fe3b42486412cc1549b8130a1d3d609695dfc",
+      "bytes": 3072
+    },
+    {
+      "path": "dist/cjs/scripts/changePriority-7.js",
+      "sha256": "428cff4708cd58a8a419cc88b0035c61eba63918123e8b364251e8dcf2eaddf8",
+      "bytes": 3965
+    },
+    {
+      "path": "dist/esm/scripts/changePriority-7.js",
+      "sha256": "0876a2230aa6667242b3e0edf9e1537e3256d46e98c39f0a246dbc51c87047d3",
+      "bytes": 3860
+    },
+    {
+      "path": "dist/cjs/enums/child-command.js",
+      "sha256": "a34e7827a2e5d039f7c6cb29227553650eedd94179331e944698bd0ca655db35",
+      "bytes": 1019
+    },
+    {
+      "path": "dist/esm/enums/child-command.js",
+      "sha256": "5c2986cd21f0bf5bb6e4969819f7b4443e5e3afdbb9175844030bc9f2209fa5b",
+      "bytes": 895
+    },
+    {
+      "path": "dist/cjs/interfaces/child-message.js",
+      "sha256": "d43aa81f5bc89faa359e0f97c814ba25155591ff078fbb9bfd40f8c7c9683230",
+      "bytes": 77
+    },
+    {
+      "path": "dist/esm/interfaces/child-message.js",
+      "sha256": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
+      "bytes": 11
+    },
+    {
+      "path": "dist/cjs/classes/child-pool.js",
+      "sha256": "a8013c387d2fdb375004f1bf2f83c77c825c256d65c7fa304d9ba930f9f274c2",
+      "bytes": 3789
+    },
+    {
+      "path": "dist/esm/classes/child-pool.js",
+      "sha256": "83c147c0fb586bb9d5fb6e5e28f6144c175ff81f71b77c812ee9724c531fe7b0",
+      "bytes": 3649
+    },
+    {
+      "path": "dist/cjs/classes/child-processor.js",
+      "sha256": "5fb88e1a696fda6ba6308213d15581620b6a89847e0ccf4a7e8fa35e9e197283",
+      "bytes": 11303
+    },
+    {
+      "path": "dist/esm/classes/child-processor.js",
+      "sha256": "611339849ed330f5875094eac5f4ff0f322d0e72c583fbc5075bcb6bd66a596e",
+      "bytes": 10985
+    },
+    {
+      "path": "dist/cjs/classes/child.js",
+      "sha256": "407af2a58068191f9b7ee1648c6c3a81e353623c120cc17fc228235b61709383",
+      "bytes": 7935
+    },
+    {
+      "path": "dist/esm/classes/child.js",
+      "sha256": "3313d2ade7ee9c9146164829c049450e16cf71d39ca1d721f3abb612e7393c3a",
+      "bytes": 7733
+    },
+    {
+      "path": "dist/cjs/scripts/cleanJobsInSet-3.js",
+      "sha256": "770910f8afd74e023fd0b04e86ded58f5b037bcdef23f9507882609508108f98",
+      "bytes": 12980
+    },
+    {
+      "path": "dist/esm/scripts/cleanJobsInSet-3.js",
+      "sha256": "37a7a9ca742a50c9a5eb362b773d545e4e484f19b2806d66edbd603aaadf51d2",
+      "bytes": 12875
+    },
+    {
+      "path": "dist/cjs/classes/errors/connection-closed-error.js",
+      "sha256": "7b63133982b6528eee56e212b42232358232c7d20e8aad722de51a9ed9aabfb4",
+      "bytes": 1191
+    },
+    {
+      "path": "dist/esm/classes/errors/connection-closed-error.js",
+      "sha256": "8d34613f1cc33b1300659fba3ee0e34237065853cffc561064693ded85c88d21",
+      "bytes": 985
+    },
+    {
+      "path": "dist/cjs/interfaces/connection.js",
+      "sha256": "d43aa81f5bc89faa359e0f97c814ba25155591ff078fbb9bfd40f8c7c9683230",
+      "bytes": 77
+    },
+    {
+      "path": "dist/esm/interfaces/connection.js",
+      "sha256": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
+      "bytes": 11
+    },
+    {
+      "path": "dist/cjs/utils/create-backend.js",
+      "sha256": "85458a01c622e5345a127d560e39d733ec1113ee0695d2033ddca161d781c9ec",
+      "bytes": 4853
+    },
+    {
+      "path": "dist/esm/utils/create-backend.js",
+      "sha256": "edaa5f9f41a9bf697089d2c22dfdcba337c0e3f1036b63ee5d41dc6919c92f00",
+      "bytes": 4407
+    },
+    {
+      "path": "dist/cjs/postgres/create-postgres-backend.js",
+      "sha256": "ec1cf271838128e1ec9456e0702c73331ad4996f309fc5dd9293a7cde8e608bc",
+      "bytes": 2380
+    },
+    {
+      "path": "dist/esm/postgres/create-postgres-backend.js",
+      "sha256": "ab4822efeecc36c3fda6b55d5b699c6acc870c67f2dda31f8929210018db3e9e",
+      "bytes": 2160
+    },
+    {
+      "path": "dist/cjs/types/database-type.js",
+      "sha256": "d43aa81f5bc89faa359e0f97c814ba25155591ff078fbb9bfd40f8c7c9683230",
+      "bytes": 77
+    },
+    {
+      "path": "dist/esm/types/database-type.js",
+      "sha256": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
+      "bytes": 11
+    },
+    {
+      "path": "dist/cjs/types/deduplication-options.js",
+      "sha256": "d43aa81f5bc89faa359e0f97c814ba25155591ff078fbb9bfd40f8c7c9683230",
+      "bytes": 77
+    },
+    {
+      "path": "dist/esm/types/deduplication-options.js",
+      "sha256": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
+      "bytes": 11
+    },
+    {
+      "path": "dist/cjs/types/default-queue-options.js",
+      "sha256": "d43aa81f5bc89faa359e0f97c814ba25155591ff078fbb9bfd40f8c7c9683230",
+      "bytes": 77
+    },
+    {
+      "path": "dist/esm/types/default-queue-options.js",
+      "sha256": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
+      "bytes": 11
+    },
+    {
+      "path": "dist/cjs/classes/errors/delayed-error.js",
+      "sha256": "a3a4c42e1850ae05b7afdcf2208fd48b6603554f1b3c60e49b3de990fe8c81eb",
+      "bytes": 554
+    },
+    {
+      "path": "dist/esm/classes/errors/delayed-error.js",
+      "sha256": "2376b78d4adb86a96d759b7d270ec919f3d0e93ac01ec98c2cc3958555db53cf",
+      "bytes": 389
+    },
+    {
+      "path": "dist/cjs/scripts/drain-5.js",
+      "sha256": "43f00ae2232d42a0b8e47c6b00e1eff695e52ee6c0f5e92bcebdc55d6ca55dba",
+      "bytes": 9049
+    },
+    {
+      "path": "dist/esm/scripts/drain-5.js",
+      "sha256": "e702983dccfdb8e5db9419ed42873f4a9f9e58564abdf42053ac1be2ab17a568",
+      "bytes": 8953
+    },
+    {
+      "path": "dist/cjs/enums/error-code.js",
+      "sha256": "151ca81bf4f420390c835b0f499002ade47646d00256ae55e3073ec460cec8d0",
+      "bytes": 1045
+    },
+    {
+      "path": "dist/esm/enums/error-code.js",
+      "sha256": "1f7621bb2f03c113a7594c830b3699510f1769ad657f53800aa9ad71e0fbf809",
+      "bytes": 927
+    },
+    {
+      "path": "dist/cjs/scripts/extendLock-2.js",
+      "sha256": "0136eb55a136e04afd5b41d02e4d7b5f478da911f9f1f63b46ddf7a21f53ce86",
+      "bytes": 704
+    },
+    {
+      "path": "dist/esm/scripts/extendLock-2.js",
+      "sha256": "f9857d3143fac3929c5a83401e5c438ac8db22a8cf2fbf8821d2e11ff50ca756",
+      "bytes": 603
+    },
+    {
+      "path": "dist/cjs/scripts/extendLocks-1.js",
+      "sha256": "adb9b90538293624f0a54b0588f71ad30eae52fadbd96e4c6c9935bb4159536f",
+      "bytes": 1401
+    },
+    {
+      "path": "dist/esm/scripts/extendLocks-1.js",
+      "sha256": "3ef8d7421e73d01dbbff3d5ab453d052889c93f14d7dc0870b8d72d3a702306d",
+      "bytes": 1299
+    },
+    {
+      "path": "dist/cjs/classes/finished-errors.js",
+      "sha256": "5da6d85d7994bac085d231f030fe61d12c8a99b16d78a1d694b635597d268f6e",
+      "bytes": 2740
+    },
+    {
+      "path": "dist/esm/classes/finished-errors.js",
+      "sha256": "ad3be82cf648aa37cdfe36a375eb6ea2a383fe111049b025af72a2779c89ad60",
+      "bytes": 2516
+    },
+    {
+      "path": "dist/cjs/types/finished-status.js",
+      "sha256": "d43aa81f5bc89faa359e0f97c814ba25155591ff078fbb9bfd40f8c7c9683230",
+      "bytes": 77
+    },
+    {
+      "path": "dist/esm/types/finished-status.js",
+      "sha256": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
+      "bytes": 11
+    },
+    {
+      "path": "dist/cjs/interfaces/flow-job.js",
+      "sha256": "d43aa81f5bc89faa359e0f97c814ba25155591ff078fbb9bfd40f8c7c9683230",
+      "bytes": 77
+    },
+    {
+      "path": "dist/esm/interfaces/flow-job.js",
+      "sha256": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
+      "bytes": 11
+    },
+    {
+      "path": "dist/cjs/classes/flow-producer.js",
+      "sha256": "a7b87d40e8d2aaac55e307a576c338a186ab361d5aa19411dbc002d3bbc783f4",
+      "bytes": 18145
+    },
+    {
+      "path": "dist/esm/classes/flow-producer.js",
+      "sha256": "eb646da325ffabe5cba32c574ce40363da438f789afdd4575b44e70656431e75",
+      "bytes": 17861
+    },
+    {
+      "path": "dist/cjs/scripts/getCounts-1.js",
+      "sha256": "fa3d40832e1db57f1a93f10aff40caba98705ced8c139652ff839e1dc07115fb",
+      "bytes": 1067
+    },
+    {
+      "path": "dist/esm/scripts/getCounts-1.js",
+      "sha256": "4e76ad74d5aad727b72c2e8ee91e46d60cce4f96937054727a515ed1db65beb6",
+      "bytes": 967
+    },
+    {
+      "path": "dist/cjs/scripts/getCountsPerPriority-2.js",
+      "sha256": "0a52184943862b8278d1bbacf0197be26a205db4dcb63341811ccbaa07f8afce",
+      "bytes": 749
+    },
+    {
+      "path": "dist/esm/scripts/getCountsPerPriority-2.js",
+      "sha256": "c389871889a7758626d316ff38bddf908f0f21a4a65c5211060632c824d21035",
+      "bytes": 638
+    },
+    {
+      "path": "dist/cjs/scripts/getDependencyCounts-4.js",
+      "sha256": "4e5d8fc7f72c88d676c214362946f11c593cf13a57a83c59f54fa250e787e2fe",
+      "bytes": 954
+    },
+    {
+      "path": "dist/esm/scripts/getDependencyCounts-4.js",
+      "sha256": "8292642df5abe6081635f6c6cd97ad80027de695a5a2eb9586d9263dc792c58c",
+      "bytes": 844
+    },
+    {
+      "path": "dist/cjs/scripts/getJobs-1.js",
+      "sha256": "c8e88300896fd17e2fcb55360e0e2298331d649c444f0a19fbacff761f374deb",
+      "bytes": 4671
+    },
+    {
+      "path": "dist/esm/scripts/getJobs-1.js",
+      "sha256": "4881215dfcdbd4bdd97406b5c72f020088fed53f78884d1efc8113647bea3c1d",
+      "bytes": 4573
+    },
+    {
+      "path": "dist/cjs/scripts/getJobScheduler-1.js",
+      "sha256": "0b135c09f3c23554e89bfb7bf09a72bcf71414e9ad8c80371123ff1794c17c74",
+      "bytes": 529
+    },
+    {
+      "path": "dist/esm/scripts/getJobScheduler-1.js",
+      "sha256": "0db3496a3c3cc9d08dc184c3d6c21cb11825328fb74ed0cf383166ad0008ce96",
+      "bytes": 423
+    },
+    {
+      "path": "dist/cjs/scripts/getMetrics-2.js",
+      "sha256": "5d7bf30c0b2b0ec77dbcc11d6e31847e76d34669d6434f3992159667d05ec17f",
+      "bytes": 639
+    },
+    {
+      "path": "dist/esm/scripts/getMetrics-2.js",
+      "sha256": "55f2559c9f2871395f831234c2552383edd3f9d673fb67a84e62ce336b48b673",
+      "bytes": 538
+    },
+    {
+      "path": "dist/cjs/scripts/getRanges-1.js",
+      "sha256": "5ef267fdb77687a1743cab5016ced59e395a6c1b066551785114305c3f15cff2",
+      "bytes": 2005
+    },
+    {
+      "path": "dist/esm/scripts/getRanges-1.js",
+      "sha256": "8bf9d536cc97781a58428f452a16ac5d2804c8a1f0bb130eb89b3dfb16f191c6",
+      "bytes": 1905
+    },
+    {
+      "path": "dist/cjs/scripts/getRateLimitTtl-2.js",
+      "sha256": "5f1dffa7dda012d4bb741dcb52e43c6e920fc93dab5877a971f3bf54c2e6ef02",
+      "bytes": 1035
+    },
+    {
+      "path": "dist/esm/scripts/getRateLimitTtl-2.js",
+      "sha256": "58e0ea4b0bdde196a0eebb26793d1bec6ac3b75ba8eafcc21d2b58c6d10fa58f",
+      "bytes": 929
+    },
+    {
+      "path": "dist/cjs/scripts/getState-8.js",
+      "sha256": "a72a14c23256bf0c174071bb1eca8b6793913d4e4945dbfd12cfe633b0fe25a7",
+      "bytes": 1583
+    },
+    {
+      "path": "dist/esm/scripts/getState-8.js",
+      "sha256": "57173169a5a7e208e905a072a7f5ab3021830ca151050a102b44814420f6faee",
+      "bytes": 1484
+    },
+    {
+      "path": "dist/cjs/scripts/getStateV2-8.js",
+      "sha256": "40752bc9a98cdc52fa2a4dab3e50b9e9b75a41f06dacd869a87185b0e0b4dd8e",
+      "bytes": 1165
+    },
+    {
+      "path": "dist/esm/scripts/getStateV2-8.js",
+      "sha256": "66c3d8597eed4eee06119177b080e2d5dcbfd89ff39b6a759fb5a7a1c7a4a1ea",
+      "bytes": 1064
+    },
+    {
+      "path": "dist/cjs/classes/errors/index.js",
+      "sha256": "104c190cf2118b83edc0b91199c314a7d1f1952476f5c2964a73f24cc31d22d0",
+      "bytes": 493
+    },
+    {
+      "path": "dist/cjs/classes/index.js",
+      "sha256": "644c59069f4f0a779163c7704e605c3b33d3dd570db43484bc3a5ae61be174e5",
+      "bytes": 1798
+    },
+    {
+      "path": "dist/cjs/enums/index.js",
+      "sha256": "976df4b7f0fef04ead631153aaeb28f1cf679db43df5ab14c0964cbe22ae36b6",
+      "bytes": 410
+    },
+    {
+      "path": "dist/cjs/index.js",
+      "sha256": "5fd51a20d7bbd17b38c199d91fb3be99e486b7b4c61067bb74d4462cc6ca71aa",
+      "bytes": 732
+    },
+    {
+      "path": "dist/cjs/interfaces/index.js",
+      "sha256": "9ff3464df723054ddc379852ecc145797c397f96d2db6ffff08a4b88295042b2",
+      "bytes": 2202
+    },
+    {
+      "path": "dist/cjs/postgres/index.js",
+      "sha256": "d1664a59e04f39ef3e5edc615628a56703c0abf7cc46ab77ec1d6aa8b2c8d0b1",
+      "bytes": 3874
+    },
+    {
+      "path": "dist/cjs/postgres/migrations/index.js",
+      "sha256": "8fb50cdc99aafc34054ca887afce34a3fa1d8fb84e62f6f3d09a83caeb57859d",
+      "bytes": 1739
+    },
+    {
+      "path": "dist/cjs/scripts/index.js",
+      "sha256": "de2b821b09a2787705b696886505fa88c29edaac3f4c7d5153ec653c9279b9de",
+      "bytes": 3991
+    },
+    {
+      "path": "dist/cjs/types/index.js",
+      "sha256": "1ac76af045804a54ccdf515b5640e4cbc9b3fa8d34203c662b206d0227ba2663",
+      "bytes": 783
+    },
+    {
+      "path": "dist/cjs/utils/index.js",
+      "sha256": "35a41bd60f3431bf5cf108a33aac9800ee1ca28acd39719c45a9d4be700341f8",
+      "bytes": 13517
+    },
+    {
+      "path": "dist/esm/classes/errors/index.js",
+      "sha256": "7dc695c4ab01309d1d1b43201700560054feadddf8d0bbfc79d981bff03c1db0",
+      "bytes": 226
+    },
+    {
+      "path": "dist/esm/classes/index.js",
+      "sha256": "bd96b00a0f8b1630159073b2fedf13f09c6c910484033366d71940bea33429e3",
+      "bytes": 985
+    },
+    {
+      "path": "dist/esm/enums/index.js",
+      "sha256": "a66ad696f2785dd00374b8dee6fab5c58c049c0efe24b3c214fbe6aec3f53d6e",
+      "bytes": 169
+    },
+    {
+      "path": "dist/esm/index.js",
+      "sha256": "d6295fd16058d203e528ebf6c462280f019927678eb4516f9dc31ec8478ef209",
+      "bytes": 387
+    },
+    {
+      "path": "dist/esm/interfaces/index.js",
+      "sha256": "5f95889cde89ebd6c9c12f42c603ff89e7142a3ff4d9547f06d6995830bfb44a",
+      "bytes": 1181
+    },
+    {
+      "path": "dist/esm/postgres/index.js",
+      "sha256": "2d3ef354a03b86bd01144e2aa650ec5e73968d4c70a305fc9be2b2ea4041f220",
+      "bytes": 707
+    },
+    {
+      "path": "dist/esm/postgres/migrations/index.js",
+      "sha256": "84fe85369f3e66896172a35f811bf762e6174bd84cb0b420665e42dedad4af6e",
+      "bytes": 1518
+    },
+    {
+      "path": "dist/esm/scripts/index.js",
+      "sha256": "28fbfec2e145f6059f84d27c771a2878d79c2a8448bea29008b8777ef371bbb1",
+      "bytes": 2242
+    },
+    {
+      "path": "dist/esm/types/index.js",
+      "sha256": "de79263f32ea34b3f9282b19251626eeb3a3aef8d96491b731a3c0fb5cca2e77",
+      "bytes": 386
+    },
+    {
+      "path": "dist/esm/utils/index.js",
+      "sha256": "a2a7c2e5dd0fc0c1f8170eee2b49c84fd79e2d82d9f3acad84433f10010d23cf",
+      "bytes": 12109
+    },
+    {
+      "path": "dist/cjs/classes/ioredis-client.js",
+      "sha256": "f107e50df2bd013cfaf18c26568e8dc83211c30dadc76176f82754826e524dd1",
+      "bytes": 13657
+    },
+    {
+      "path": "dist/esm/classes/ioredis-client.js",
+      "sha256": "25420d87d1af23a110102b556575aa71e382cef8c4c9b05ee132162f513112f6",
+      "bytes": 13502
+    },
+    {
+      "path": "dist/cjs/interfaces/ioredis-events.js",
+      "sha256": "d43aa81f5bc89faa359e0f97c814ba25155591ff078fbb9bfd40f8c7c9683230",
+      "bytes": 77
+    },
+    {
+      "path": "dist/esm/interfaces/ioredis-events.js",
+      "sha256": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
+      "bytes": 11
+    },
+    {
+      "path": "dist/cjs/scripts/isFinished-3.js",
+      "sha256": "b477b99bdc6074796eb129c80044860adc8ee284a4d25c3ef320fc8be470ad04",
+      "bytes": 1081
+    },
+    {
+      "path": "dist/esm/scripts/isFinished-3.js",
+      "sha256": "cf138db083e30ae18a0e6e4cff201bce986eebdd7030a635c99a5b8b021b75e1",
+      "bytes": 980
+    },
+    {
+      "path": "dist/cjs/scripts/isJobInList-1.js",
+      "sha256": "47163441b9db75cbab8160d078f76bafc8bb44158f518afdab1873442937c02a",
+      "bytes": 629
+    },
+    {
+      "path": "dist/esm/scripts/isJobInList-1.js",
+      "sha256": "eb8750cd44d78c69a85540ed01fc152b10a5a23eb712c0f3ca51b35779658286",
+      "bytes": 527
+    },
+    {
+      "path": "dist/cjs/scripts/isMaxed-2.js",
+      "sha256": "df0e14677d67224326d234ab9339662294c99e713378ba84c7332f27af3d41a3",
+      "bytes": 755
+    },
+    {
+      "path": "dist/esm/scripts/isMaxed-2.js",
+      "sha256": "2b535448f9c2bff477d9724c5f9883b4b542662291490d8ed812155871c62ad9",
+      "bytes": 657
+    },
+    {
+      "path": "dist/cjs/types/job-json-sandbox.js",
+      "sha256": "d43aa81f5bc89faa359e0f97c814ba25155591ff078fbb9bfd40f8c7c9683230",
+      "bytes": 77
+    },
+    {
+      "path": "dist/esm/types/job-json-sandbox.js",
+      "sha256": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
+      "bytes": 11
+    },
+    {
+      "path": "dist/cjs/interfaces/job-json.js",
+      "sha256": "d43aa81f5bc89faa359e0f97c814ba25155591ff078fbb9bfd40f8c7c9683230",
+      "bytes": 77
+    },
+    {
+      "path": "dist/esm/interfaces/job-json.js",
+      "sha256": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
+      "bytes": 11
+    },
+    {
+      "path": "dist/cjs/types/job-options.js",
+      "sha256": "d43aa81f5bc89faa359e0f97c814ba25155591ff078fbb9bfd40f8c7c9683230",
+      "bytes": 77
+    },
+    {
+      "path": "dist/esm/types/job-options.js",
+      "sha256": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
+      "bytes": 11
+    },
+    {
+      "path": "dist/cjs/types/job-progress.js",
+      "sha256": "d43aa81f5bc89faa359e0f97c814ba25155591ff078fbb9bfd40f8c7c9683230",
+      "bytes": 77
+    },
+    {
+      "path": "dist/esm/types/job-progress.js",
+      "sha256": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
+      "bytes": 11
+    },
+    {
+      "path": "dist/cjs/interfaces/job-scheduler-json.js",
+      "sha256": "d43aa81f5bc89faa359e0f97c814ba25155591ff078fbb9bfd40f8c7c9683230",
+      "bytes": 77
+    },
+    {
+      "path": "dist/esm/interfaces/job-scheduler-json.js",
+      "sha256": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
+      "bytes": 11
+    },
+    {
+      "path": "dist/cjs/types/job-scheduler-template-options.js",
+      "sha256": "d43aa81f5bc89faa359e0f97c814ba25155591ff078fbb9bfd40f8c7c9683230",
+      "bytes": 77
+    },
+    {
+      "path": "dist/esm/types/job-scheduler-template-options.js",
+      "sha256": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
+      "bytes": 11
+    },
+    {
+      "path": "dist/cjs/classes/job-scheduler.js",
+      "sha256": "6b50bdfe9640b9341aae6464a1be323cd8cccbeeac437c9b694f32a5b8f87fc4",
+      "bytes": 15297
+    },
+    {
+      "path": "dist/esm/classes/job-scheduler.js",
+      "sha256": "1cea7784336a14f76afc92e8916fed1153ecb12a4de503948f2ff9361a7d4aba",
+      "bytes": 14726
+    },
+    {
+      "path": "dist/cjs/types/job-type.js",
+      "sha256": "d43aa81f5bc89faa359e0f97c814ba25155591ff078fbb9bfd40f8c7c9683230",
+      "bytes": 77
+    },
+    {
+      "path": "dist/esm/types/job-type.js",
+      "sha256": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
+      "bytes": 11
+    },
+    {
+      "path": "dist/cjs/classes/job.js",
+      "sha256": "99758f1a66b7e32c25fc1e368e02830a0eb2e0d1db3b1d9c39f912f9fece5839",
+      "bytes": 37858
+    },
+    {
+      "path": "dist/esm/classes/job.js",
+      "sha256": "5d4259b090d61787fe9433a271d653e19d5f7f718498efa9c480593a962a8184",
+      "bytes": 37526
+    },
+    {
+      "path": "dist/cjs/types/keep-jobs.js",
+      "sha256": "d43aa81f5bc89faa359e0f97c814ba25155591ff078fbb9bfd40f8c7c9683230",
+      "bytes": 77
+    },
+    {
+      "path": "dist/esm/types/keep-jobs.js",
+      "sha256": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
+      "bytes": 11
+    },
+    {
+      "path": "dist/cjs/interfaces/lock-manager-worker-context.js",
+      "sha256": "d43aa81f5bc89faa359e0f97c814ba25155591ff078fbb9bfd40f8c7c9683230",
+      "bytes": 77
+    },
+    {
+      "path": "dist/esm/interfaces/lock-manager-worker-context.js",
+      "sha256": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
+      "bytes": 11
+    },
+    {
+      "path": "dist/cjs/classes/lock-manager.js",
+      "sha256": "bd6b97d0e793180c2acc6dac1eb7310107ca2cdfc8aaf62f86ec5d5c598deadc",
+      "bytes": 6083
+    },
+    {
+      "path": "dist/esm/classes/lock-manager.js",
+      "sha256": "6c09764d76668d8604e9bc46b4090d4b90f5f61c72196aa1433c56a0e892f1e7",
+      "bytes": 5914
+    },
+    {
+      "path": "dist/cjs/classes/main-base.js",
+      "sha256": "0749dade3a83828c256e2c83100b8283d7a8953b36f1874a655cab8245ab1de9",
+      "bytes": 1744
+    },
+    {
+      "path": "dist/esm/classes/main-base.js",
+      "sha256": "f3d0454cd2bd1a955b23aa7d28b9bbda3d596822bedaedc2565bdd9142baf3a9",
+      "bytes": 1608
+    },
+    {
+      "path": "dist/cjs/classes/main-worker.js",
+      "sha256": "6dfb627d9c62606b4b71d6eedc1f3dfa0967c5110eb9c2e93a7955e11613f0fc",
+      "bytes": 340
+    },
+    {
+      "path": "dist/esm/classes/main-worker.js",
+      "sha256": "b162d68dcd77121a3f603dbef11c41150b13fa195ea2b4fa256e871993c5e8c9",
+      "bytes": 198
+    },
+    {
+      "path": "dist/cjs/classes/main.js",
+      "sha256": "0acec8672bd570608ee9572a0c6aaeaa10b4b429ad36e41ebb7899dda0f18bd1",
+      "bytes": 292
+    },
+    {
+      "path": "dist/esm/classes/main.js",
+      "sha256": "043df0b30753c5008430ec0ec2942bcedf128ffe0969deb608841d36cdd0ef39",
+      "bytes": 179
+    },
+    {
+      "path": "dist/cjs/interfaces/metrics-options.js",
+      "sha256": "d43aa81f5bc89faa359e0f97c814ba25155591ff078fbb9bfd40f8c7c9683230",
+      "bytes": 77
+    },
+    {
+      "path": "dist/esm/interfaces/metrics-options.js",
+      "sha256": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
+      "bytes": 11
+    },
+    {
+      "path": "dist/cjs/enums/metrics-time.js",
+      "sha256": "b0bd0a4570ed89cbb72f8b6382e4e0fd852f7c230b473a11c3bd7c4177c2316c",
+      "bytes": 740
+    },
+    {
+      "path": "dist/esm/enums/metrics-time.js",
+      "sha256": "0b704dcb51869d2a08bb4875a4d3c7bc9149446ec9b1588aff1cd659359d7585",
+      "bytes": 618
+    },
+    {
+      "path": "dist/cjs/interfaces/metrics.js",
+      "sha256": "d43aa81f5bc89faa359e0f97c814ba25155591ff078fbb9bfd40f8c7c9683230",
+      "bytes": 77
+    },
+    {
+      "path": "dist/esm/interfaces/metrics.js",
+      "sha256": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
+      "bytes": 11
+    },
+    {
+      "path": "dist/cjs/postgres/migrator.js",
+      "sha256": "621b6cc9f604982a364a0cf838d1e01e5e932ff876506e976580e985b753185f",
+      "bytes": 14900
+    },
+    {
+      "path": "dist/esm/postgres/migrator.js",
+      "sha256": "18d4d509fc181a7352962cdbe4c99629ac8d9d5daffa12cac6314f19d8745faa",
+      "bytes": 13982
+    },
+    {
+      "path": "dist/cjs/interfaces/minimal-job.js",
+      "sha256": "d43aa81f5bc89faa359e0f97c814ba25155591ff078fbb9bfd40f8c7c9683230",
+      "bytes": 77
+    },
+    {
+      "path": "dist/esm/interfaces/minimal-job.js",
+      "sha256": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
+      "bytes": 11
+    },
+    {
+      "path": "dist/cjs/interfaces/minimal-queue.js",
+      "sha256": "d43aa81f5bc89faa359e0f97c814ba25155591ff078fbb9bfd40f8c7c9683230",
+      "bytes": 77
+    },
+    {
+      "path": "dist/esm/interfaces/minimal-queue.js",
+      "sha256": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
+      "bytes": 11
+    },
+    {
+      "path": "dist/cjs/scripts/moveJobFromActiveToWait-9.js",
+      "sha256": "924358a126b95ae11b8d1d961f15eed8b0303201e1547fe6d6ab66e00d8eab8b",
+      "bytes": 3594
+    },
+    {
+      "path": "dist/esm/scripts/moveJobFromActiveToWait-9.js",
+      "sha256": "6738063d146278ea478f74f8630d0dbabb6052491134d89196cbc84682d83d44",
+      "bytes": 3480
+    },
+    {
+      "path": "dist/cjs/scripts/moveJobsToWait-8.js",
+      "sha256": "eb0ebdd7434f56b8e7091fc24907909bdbe83c8fcb8e15e831bf0e726383344b",
+      "bytes": 4183
+    },
+    {
+      "path": "dist/esm/scripts/moveJobsToWait-8.js",
+      "sha256": "a0de28e94776186527910380038d58a4dfabd4797c0d0266b3bda6b2df7ca048",
+      "bytes": 4078
+    },
+    {
+      "path": "dist/cjs/scripts/moveStalledJobsToWait-9.js",
+      "sha256": "e37307f7de08a93e53dc00203d5c88faebc14b9a2eb0f27dd08213c9a1a2ffed",
+      "bytes": 6745
+    },
+    {
+      "path": "dist/esm/scripts/moveStalledJobsToWait-9.js",
+      "sha256": "c23c230a419f889952a196fa11a7f8c75efa6621875c89366ec69d43b4c7966a",
+      "bytes": 6633
+    },
+    {
+      "path": "dist/cjs/scripts/moveToActive-11.js",
+      "sha256": "690e6c5f3e786ddf5c4d536e3339b946f3ab335397953f8ccf6be875bbec8832",
+      "bytes": 8631
+    },
+    {
+      "path": "dist/esm/scripts/moveToActive-11.js",
+      "sha256": "39863bd75d7e8f5bd12028a560c7ee5acdbfbedcbe095d0575f495a74035099b",
+      "bytes": 8528
+    },
+    {
+      "path": "dist/cjs/scripts/moveToDelayed-11.js",
+      "sha256": "13040c9946235f104f5c040812c9632f9b775c6c4d4c578a7634e58bc8d00b64",
+      "bytes": 13752
+    },
+    {
+      "path": "dist/esm/scripts/moveToDelayed-11.js",
+      "sha256": "cf996b969d4c5049f11dc1575950360d4f4ad32c41070026ca5d27f531bdb291",
+      "bytes": 13648
+    },
+    {
+      "path": "dist/cjs/scripts/moveToFinished-14.js",
+      "sha256": "2640504bbf676a7408a3d54330522cba155ad87919ee5c0325a9a341ba43c7c3",
+      "bytes": 39849
+    },
+    {
+      "path": "dist/esm/scripts/moveToFinished-14.js",
+      "sha256": "33588141e5ba154b88138aa19503745adc76f687a4634e76c19a3d711e999232",
+      "bytes": 39744
+    },
+    {
+      "path": "dist/cjs/scripts/moveToWaitingChildren-7.js",
+      "sha256": "5e387f679a5fcc38afe314c307755db11aa1f59ad232ae8265f8cfe511e34bd9",
+      "bytes": 2971
+    },
+    {
+      "path": "dist/esm/scripts/moveToWaitingChildren-7.js",
+      "sha256": "6fe1b854bb1765f0f9b0005795bd8321364c70238d2fd87870d9927dc70e7ce2",
+      "bytes": 2859
+    },
+    {
+      "path": "dist/cjs/types/no-infer.js",
+      "sha256": "d43aa81f5bc89faa359e0f97c814ba25155591ff078fbb9bfd40f8c7c9683230",
+      "bytes": 77
+    },
+    {
+      "path": "dist/esm/types/no-infer.js",
+      "sha256": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
+      "bytes": 11
+    },
+    {
+      "path": "dist/cjs/classes/node-redis-client.js",
+      "sha256": "660a57ef875caa0aa1480297c2ae430164b1b3b4e5d356b0b18b99fd99b7e8e1",
+      "bytes": 28983
+    },
+    {
+      "path": "dist/esm/classes/node-redis-client.js",
+      "sha256": "d12583a5549d6a97e115f2f3afd77e927fe8c3d9813f09df700b97ea7b4a0289",
+      "bytes": 28717
+    },
+    {
+      "path": "dist/cjs/scripts/obliterate-2.js",
+      "sha256": "ece630d3e21d9c63aa30af1c464b880e097455053fdd003d2bc04f4846488f6e",
+      "bytes": 11051
+    },
+    {
+      "path": "dist/esm/scripts/obliterate-2.js",
+      "sha256": "87a79416096f0db3ebe84fd701b20ff5c0f8e88d81316adc97074612f2a6ea0d",
+      "bytes": 10950
+    },
+    {
+      "path": "dist/cjs/scripts/paginate-1.js",
+      "sha256": "cd6601e42970a0af1633a1b6bf2c3c5a4c58488ec5fbc83ebaf62b387bb18f9b",
+      "bytes": 3938
+    },
+    {
+      "path": "dist/esm/scripts/paginate-1.js",
+      "sha256": "5f66765008bbd7c7f7888134509ba18e095ccf8d4c430bc85dfcb185d3818b70",
+      "bytes": 3839
+    },
+    {
+      "path": "dist/cjs/enums/parent-command.js",
+      "sha256": "14be1ee6e13c10eab8db195a2043bc433ea5dcf5f70dccffea162b9979b373d2",
+      "bytes": 1297
+    },
+    {
+      "path": "dist/esm/enums/parent-command.js",
+      "sha256": "8f0f1a5f0768017d573615176074dbffd9e2f02e963fd6047d5f3edc3454fb0a",
+      "bytes": 1171
+    },
+    {
+      "path": "dist/cjs/interfaces/parent-message.js",
+      "sha256": "d43aa81f5bc89faa359e0f97c814ba25155591ff078fbb9bfd40f8c7c9683230",
+      "bytes": 77
+    },
+    {
+      "path": "dist/esm/interfaces/parent-message.js",
+      "sha256": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
+      "bytes": 11
+    },
+    {
+      "path": "dist/cjs/interfaces/parent-options.js",
+      "sha256": "d43aa81f5bc89faa359e0f97c814ba25155591ff078fbb9bfd40f8c7c9683230",
+      "bytes": 77
+    },
+    {
+      "path": "dist/esm/interfaces/parent-options.js",
+      "sha256": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
+      "bytes": 11
+    },
+    {
+      "path": "dist/cjs/interfaces/parent.js",
+      "sha256": "d43aa81f5bc89faa359e0f97c814ba25155591ff078fbb9bfd40f8c7c9683230",
+      "bytes": 77
+    },
+    {
+      "path": "dist/esm/interfaces/parent.js",
+      "sha256": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
+      "bytes": 11
+    },
+    {
+      "path": "dist/cjs/scripts/pause-7.js",
+      "sha256": "b7a782bdac11e7cb6c2a6494267b69fef8b22253927e6c8960d6b774adb79c79",
+      "bytes": 2758
+    },
+    {
+      "path": "dist/esm/scripts/pause-7.js",
+      "sha256": "d6210396d2db13a5e7e36191545fc1b2a54a3ae78be2420ef78c8b9e08fa1a12",
+      "bytes": 2662
+    },
+    {
+      "path": "dist/cjs/postgres/pg-types.js",
+      "sha256": "7ca94f930611fd479fee32c318b25a7f0b45933cff8521140267c404aa251ba9",
+      "bytes": 482
+    },
+    {
+      "path": "dist/esm/postgres/pg-types.js",
+      "sha256": "3b725294f42fc09828c8dceca195c3c44c871f373ad0cad6b0d035879348ba4b",
+      "bytes": 383
+    },
+    {
+      "path": "dist/cjs/postgres/postgres-connection.js",
+      "sha256": "86ae0d3def3178762e2a8161d0c622af56af4ce2219c00b0e7987b5c49e2eceb",
+      "bytes": 16886
+    },
+    {
+      "path": "dist/esm/postgres/postgres-connection.js",
+      "sha256": "f50d807c76580507e80de6269eba2592d3a6429125143c200166aedd4b8c85de",
+      "bytes": 16689
+    },
+    {
+      "path": "dist/cjs/postgres/postgres-queue-backend.js",
+      "sha256": "12856782405a2aa9a863a6a9ca9abd337388238f7e2d11298f78aefe4226f2a8",
+      "bytes": 74734
+    },
+    {
+      "path": "dist/esm/postgres/postgres-queue-backend.js",
+      "sha256": "be722c20373d31236091f2a3b69dd051e421fdb1d0f9e24894f07390fbcd2b20",
+      "bytes": 74177
+    },
+    {
+      "path": "dist/cjs/postgres/postgres-relay-backend.js",
+      "sha256": "691881b0a801a08c0e18c1bc11539eaf68893fd989f9fbf7d8526e1b8d9fe2dd",
+      "bytes": 12776
+    },
+    {
+      "path": "dist/esm/postgres/postgres-relay-backend.js",
+      "sha256": "4b57b0a25920e5f53911413df6e969c796a7e0981756a9a40fda0181af18c7ac",
+      "bytes": 12402
+    },
+    {
+      "path": "dist/cjs/types/processor.js",
+      "sha256": "d43aa81f5bc89faa359e0f97c814ba25155591ff078fbb9bfd40f8c7c9683230",
+      "bytes": 77
+    },
+    {
+      "path": "dist/esm/types/processor.js",
+      "sha256": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
+      "bytes": 11
+    },
+    {
+      "path": "dist/cjs/scripts/promote-9.js",
+      "sha256": "0793ac8a231ab44498a4914cd059db6f4b7f69b75b7bd8b414eb47d23f31c763",
+      "bytes": 3231
+    },
+    {
+      "path": "dist/esm/scripts/promote-9.js",
+      "sha256": "d1f641e44e2a88ce8143aaa19d48d5d678ae1e775505b335a107cee9d3324426",
+      "bytes": 3133
+    },
+    {
+      "path": "dist/cjs/interfaces/queue-backend.js",
+      "sha256": "d43aa81f5bc89faa359e0f97c814ba25155591ff078fbb9bfd40f8c7c9683230",
+      "bytes": 77
+    },
+    {
+      "path": "dist/esm/interfaces/queue-backend.js",
+      "sha256": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
+      "bytes": 11
+    },
+    {
+      "path": "dist/cjs/classes/queue-base.js",
+      "sha256": "4b39abae69ea2d787d769374e80765df4bdcd487c74d6d0a5e6414c96e0ef0d6",
+      "bytes": 5234
+    },
+    {
+      "path": "dist/esm/classes/queue-base.js",
+      "sha256": "a8e0931a1262b23ed6ec9663b8280378fde5fb3c305f0e97fd7fc48393e72746",
+      "bytes": 5068
+    },
+    {
+      "path": "dist/cjs/classes/queue-events-producer.js",
+      "sha256": "90f1fefaec968c275651324d17615643526987b87420977afc591e297e7d1c27",
+      "bytes": 1302
+    },
+    {
+      "path": "dist/esm/classes/queue-events-producer.js",
+      "sha256": "b2e57555591c393b178ba4edeb14853d5893912744ba9150bde96a247795a58d",
+      "bytes": 1116
+    },
+    {
+      "path": "dist/cjs/classes/queue-events.js",
+      "sha256": "0f2d334d676bdbc1b6dd63adf2bf42edd0327ab2f4295693460ec0f21b0dc0ee",
+      "bytes": 4630
+    },
+    {
+      "path": "dist/esm/classes/queue-events.js",
+      "sha256": "e6720d469996569212646a8fc0f1e76b1d5e9c22ad26c3a379b6ab88c1345ed3",
+      "bytes": 4468
+    },
+    {
+      "path": "dist/cjs/classes/queue-getters.js",
+      "sha256": "d84e911b841c1b58b3e7361bbe0a27b32d92fa48b4cbf62d27856685a6b3ffed",
+      "bytes": 21201
+    },
+    {
+      "path": "dist/esm/classes/queue-getters.js",
+      "sha256": "8e0f10bbe3e9ba62d56369b6195b25920778af0d7d29e567b252da65ea160c4e",
+      "bytes": 21042
+    },
+    {
+      "path": "dist/cjs/classes/queue-keys.js",
+      "sha256": "9d60b0807c33c54b732f43dc16b37f2550b30f149a7ba3eb82a7f5480d3a5702",
+      "bytes": 1051
+    },
+    {
+      "path": "dist/esm/classes/queue-keys.js",
+      "sha256": "6da24c952674a35935eb3d5b76305324e5d25fa803db61b6c0f42132b7f9c6d4",
+      "bytes": 922
+    },
+    {
+      "path": "dist/cjs/interfaces/queue-meta.js",
+      "sha256": "d43aa81f5bc89faa359e0f97c814ba25155591ff078fbb9bfd40f8c7c9683230",
+      "bytes": 77
+    },
+    {
+      "path": "dist/esm/interfaces/queue-meta.js",
+      "sha256": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
+      "bytes": 11
+    },
+    {
+      "path": "dist/cjs/interfaces/queue-options.js",
+      "sha256": "c2166ff18f5496755f1a4922132822bdd1589fc85ed14174b7376184c9f0dde4",
+      "bytes": 283
+    },
+    {
+      "path": "dist/esm/interfaces/queue-options.js",
+      "sha256": "ebbe8222d62a068ac8ac7821238795baee157a0e40c9bfdff0f6bb1bb549161e",
+      "bytes": 163
+    },
+    {
+      "path": "dist/cjs/types/queue-type.js",
+      "sha256": "d43aa81f5bc89faa359e0f97c814ba25155591ff078fbb9bfd40f8c7c9683230",
+      "bytes": 77
+    },
+    {
+      "path": "dist/esm/types/queue-type.js",
+      "sha256": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
+      "bytes": 11
+    },
+    {
+      "path": "dist/cjs/classes/queue.js",
+      "sha256": "7bb52315e3258fc838a3475c82d94794b1b90704ab03947eebc89ef62dab431e",
+      "bytes": 24602
+    },
+    {
+      "path": "dist/esm/classes/queue.js",
+      "sha256": "e7f113be47c34d5ac80a0f48323a37ff3fb8bf0ed277d44f2a6f9593b1d87055",
+      "bytes": 24153
+    },
+    {
+      "path": "dist/cjs/classes/errors/rate-limit-error.js",
+      "sha256": "deffc90a55e957224625e619abe0741601792cf399e1904d3ce7394fccd11dfc",
+      "bytes": 545
+    },
+    {
+      "path": "dist/esm/classes/errors/rate-limit-error.js",
+      "sha256": "9eb318ea422a736d5ae3973761c0660c02a13ef7cf899bf8253d4d4b87e26863",
+      "bytes": 371
+    },
+    {
+      "path": "dist/cjs/interfaces/rate-limiter-options.js",
+      "sha256": "d43aa81f5bc89faa359e0f97c814ba25155591ff078fbb9bfd40f8c7c9683230",
+      "bytes": 77
+    },
+    {
+      "path": "dist/esm/interfaces/rate-limiter-options.js",
+      "sha256": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
+      "bytes": 11
+    },
+    {
+      "path": "dist/cjs/interfaces/receiver.js",
+      "sha256": "d43aa81f5bc89faa359e0f97c814ba25155591ff078fbb9bfd40f8c7c9683230",
+      "bytes": 77
+    },
+    {
+      "path": "dist/esm/interfaces/receiver.js",
+      "sha256": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
+      "bytes": 11
+    },
+    {
+      "path": "dist/cjs/interfaces/redis-client.js",
+      "sha256": "d43aa81f5bc89faa359e0f97c814ba25155591ff078fbb9bfd40f8c7c9683230",
+      "bytes": 77
+    },
+    {
+      "path": "dist/esm/interfaces/redis-client.js",
+      "sha256": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
+      "bytes": 11
+    },
+    {
+      "path": "dist/cjs/classes/redis-connection.js",
+      "sha256": "5e67697c1c550d15920923473b08e63fcaae139b626d672166d2dcf1c1fb6443",
+      "bytes": 27857
+    },
+    {
+      "path": "dist/esm/classes/redis-connection.js",
+      "sha256": "cd60f9aba451bfc6a9dc8092a0f15eb7993353b5922b08e0e8b39967775eea9b",
+      "bytes": 27426
+    },
+    {
+      "path": "dist/cjs/interfaces/redis-options.js",
+      "sha256": "d43aa81f5bc89faa359e0f97c814ba25155591ff078fbb9bfd40f8c7c9683230",
+      "bytes": 77
+    },
+    {
+      "path": "dist/esm/interfaces/redis-options.js",
+      "sha256": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
+      "bytes": 11
+    },
+    {
+      "path": "dist/cjs/classes/redis-queue-backend.js",
+      "sha256": "a3db4a1d9b10c9895a97f89dd225d56a21bd2b3de3a8a3025848c483f4657088",
+      "bytes": 82164
+    },
+    {
+      "path": "dist/esm/classes/redis-queue-backend.js",
+      "sha256": "1e686d6a60f1fd955debfc992ae37ae090c8d5e38f4f2a37629d60a333941f05",
+      "bytes": 81907
+    },
+    {
+      "path": "dist/cjs/classes/redis-relay-backend.js",
+      "sha256": "64ef392e1cc6b606d292d75e960cac06f8fa369dcb80b7628b11b77cffee5f92",
+      "bytes": 19289
+    },
+    {
+      "path": "dist/esm/classes/redis-relay-backend.js",
+      "sha256": "3a62bdb5b2eca3d2d873b58f3301a15d1c6fb9a0822456d96b0dfec484aedae3",
+      "bytes": 18833
+    },
+    {
+      "path": "dist/cjs/interfaces/redis-streams.js",
+      "sha256": "d43aa81f5bc89faa359e0f97c814ba25155591ff078fbb9bfd40f8c7c9683230",
+      "bytes": 77
+    },
+    {
+      "path": "dist/esm/interfaces/redis-streams.js",
+      "sha256": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
+      "bytes": 11
+    },
+    {
+      "path": "dist/cjs/interfaces/relay-backend.js",
+      "sha256": "d43aa81f5bc89faa359e0f97c814ba25155591ff078fbb9bfd40f8c7c9683230",
+      "bytes": 77
+    },
+    {
+      "path": "dist/esm/interfaces/relay-backend.js",
+      "sha256": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
+      "bytes": 11
+    },
+    {
+      "path": "dist/cjs/classes/relay-errors.js",
+      "sha256": "69827e202b98828b807c4e135d26c739e02263a8a9bba35f794c35d6f5343e64",
+      "bytes": 1797
+    },
+    {
+      "path": "dist/esm/classes/relay-errors.js",
+      "sha256": "de0ed0df2ea1c7a9dbc082b11a6a46d8ef4d720cc1a5c0fe2759c7ec5971449a",
+      "bytes": 1584
+    },
+    {
+      "path": "dist/cjs/classes/relay.js",
+      "sha256": "4639ee11595f10974eaf4871c981ca3dfaa09ab4a68c802286553bd6fe0157ab",
+      "bytes": 21263
+    },
+    {
+      "path": "dist/esm/classes/relay.js",
+      "sha256": "42a3bb9364d93bcbfb2dd6015c55b2be922c45dac30ef4acc7c239e9f69553a4",
+      "bytes": 21088
+    },
+    {
+      "path": "dist/cjs/scripts/relayAckInbox-1.js",
+      "sha256": "f10e3c3dcbe4c8196f3e5a7f5961956240f3fac815ab004432a117dde7c4cb1c",
+      "bytes": 592
+    },
+    {
+      "path": "dist/esm/scripts/relayAckInbox-1.js",
+      "sha256": "9fd33e0ac7eb0c5d5b9e58a6d7253f928dd706b5b4956e2f2a44eaf53bea76e2",
+      "bytes": 488
+    },
+    {
+      "path": "dist/cjs/scripts/relayDeleteRetained-1.js",
+      "sha256": "a92f48891c047373ec42dff40d893edb8cbffdd8ccf6a4968dda617f53a4b65a",
+      "bytes": 5371
+    },
+    {
+      "path": "dist/esm/scripts/relayDeleteRetained-1.js",
+      "sha256": "bde92e7990a0faa801322164902dd30211ed0707449e958b8f6e1183c27ea995",
+      "bytes": 5261
+    },
+    {
+      "path": "dist/cjs/scripts/relayGet-1.js",
+      "sha256": "bb337e1c36b797676a0e8dec239b63d4ec6db16e9489662ac454ab13a3fd0746",
+      "bytes": 11543
+    },
+    {
+      "path": "dist/esm/scripts/relayGet-1.js",
+      "sha256": "b1a9690b82bc6c6f9c3c337291f8b6dc8d953af77768f7dba4caca730f263f02",
+      "bytes": 11444
+    },
+    {
+      "path": "dist/cjs/scripts/relayGetNamespaces-1.js",
+      "sha256": "97445da4ea68566a53a51d500fdd258d26bffcc0ff5e562d589abd7d9c1cced9",
+      "bytes": 1208
+    },
+    {
+      "path": "dist/esm/scripts/relayGetNamespaces-1.js",
+      "sha256": "06472e571e2365f8966385c3d8fc38b0c5d09aded91f1a2317f4668a43bc8160",
+      "bytes": 1099
+    },
+    {
+      "path": "dist/cjs/scripts/relayHeartbeat-1.js",
+      "sha256": "ae4f90d7114657c769c8d3296b1071cdf5c6b28ba00f99a89bdf4c494d191071",
+      "bytes": 2911
+    },
+    {
+      "path": "dist/esm/scripts/relayHeartbeat-1.js",
+      "sha256": "9a3a0076723d3a5d7fe844e6cba44fbd7d7b567a8c720ab8529db3617a06c85b",
+      "bytes": 2806
+    },
+    {
+      "path": "dist/cjs/scripts/relayPublish-1.js",
+      "sha256": "709b0c9d03008b8e6c024c11946a02d0f6789f1696fd3920b7d92c1ce9bf29a7",
+      "bytes": 13281
+    },
+    {
+      "path": "dist/esm/scripts/relayPublish-1.js",
+      "sha256": "94fa9678d118f9230232489b46d13070a0d2ac4acd58a9df3406cc7bca820d77",
+      "bytes": 13178
+    },
+    {
+      "path": "dist/cjs/scripts/relayReadInbox-1.js",
+      "sha256": "8cbe36d9cfa6570756e82b0e8f03061d1f8113a9eb2d47a6383ecfe24ffbcef9",
+      "bytes": 1067
+    },
+    {
+      "path": "dist/esm/scripts/relayReadInbox-1.js",
+      "sha256": "084fc614b9b1ae8ff67a0146ce021925f06259354ff6d9df7516b8fc9b037f19",
+      "bytes": 962
+    },
+    {
+      "path": "dist/cjs/scripts/relayRegisterNode-1.js",
+      "sha256": "cd1cced57c976819a7a679f87224c5263089817eddebef4c4bc1a68e9029ba6d",
+      "bytes": 10242
+    },
+    {
+      "path": "dist/esm/scripts/relayRegisterNode-1.js",
+      "sha256": "e04f47d095bf44ec1e1b0a82d94816bd1dc41e539419be0d572d3b9a45d6f5b4",
+      "bytes": 10134
+    },
+    {
+      "path": "dist/cjs/scripts/relayRemoveEndpoint-1.js",
+      "sha256": "218acb401e8e281d871fa5d9bcc89b1f2dd0ddf0128a331afd53e07e5b335931",
+      "bytes": 7071
+    },
+    {
+      "path": "dist/esm/scripts/relayRemoveEndpoint-1.js",
+      "sha256": "2392d761da293a196c688df77be35471ef9a33f3696421c49b8d16bf1fc56948",
+      "bytes": 6961
+    },
+    {
+      "path": "dist/cjs/scripts/relaySubscribe-1.js",
+      "sha256": "7ac83f1156205991677815582e7c04fb480559abacb8630c9e109dc052886c0c",
+      "bytes": 4629
+    },
+    {
+      "path": "dist/esm/scripts/relaySubscribe-1.js",
+      "sha256": "f052723416ed12a59ae6727e496d3b53d02a30a5f7dd56eeaf28319d66a4d760",
+      "bytes": 4524
+    },
+    {
+      "path": "dist/cjs/scripts/relaySweep-1.js",
+      "sha256": "79c2ac6649d50201607e2fd693564785aa8fed198cfe710154a0d7c00a2152de",
+      "bytes": 9434
+    },
+    {
+      "path": "dist/esm/scripts/relaySweep-1.js",
+      "sha256": "6ea9121c28c2a119e2fe15be17986114b0bcd68cb4fb36ca09abe93e821e5404",
+      "bytes": 9333
+    },
+    {
+      "path": "dist/cjs/scripts/relayTouchNamespace-1.js",
+      "sha256": "dffc20a603aeb9d6b804bf1c65a6a510b91181e7983c7976c52c1a1cd3cfaf81",
+      "bytes": 1376
+    },
+    {
+      "path": "dist/esm/scripts/relayTouchNamespace-1.js",
+      "sha256": "8088ad1b89d28888d727790de34cf4bd8275e5ed22b717d2438dd0a91ecda6fa",
+      "bytes": 1266
+    },
+    {
+      "path": "dist/cjs/scripts/relayTrimInbox-1.js",
+      "sha256": "81dc3fe3c43f0c72b6848420482472a4edb22df8f1b77cffea7a1de2ab21c43c",
+      "bytes": 2577
+    },
+    {
+      "path": "dist/esm/scripts/relayTrimInbox-1.js",
+      "sha256": "6bec890d8e854f73ea7c4e5d85783a7da0af042e12f24388696be0a0c3a7add4",
+      "bytes": 2472
+    },
+    {
+      "path": "dist/cjs/scripts/relayUnregisterNode-1.js",
+      "sha256": "1ccc12a4d2b888219e1b6026570f05f53b57378ac646b44b64f7dff92676f7f2",
+      "bytes": 9134
+    },
+    {
+      "path": "dist/esm/scripts/relayUnregisterNode-1.js",
+      "sha256": "009a749665cba90d95769eccbd266b427367bd829d8d236063a89cc823ae4b77",
+      "bytes": 9024
+    },
+    {
+      "path": "dist/cjs/scripts/releaseLock-1.js",
+      "sha256": "81db1e9d9c69cf99701271a904a8df2c911821bdbb2694c3e421ac6c8422f740",
+      "bytes": 498
+    },
+    {
+      "path": "dist/esm/scripts/releaseLock-1.js",
+      "sha256": "c6468fbcf43ed52238f6435f8b5ef4abb8f9007a5201139bdbed27ab6da9d768",
+      "bytes": 396
+    },
+    {
+      "path": "dist/cjs/scripts/removeChildDependency-1.js",
+      "sha256": "7b51df73c0eb385fe6f7437d3937fa7f3817c5c9fb7857403e42c4f19d4334e0",
+      "bytes": 5670
+    },
+    {
+      "path": "dist/esm/scripts/removeChildDependency-1.js",
+      "sha256": "10a91d6d7844ba03c14048506f3153e12117659321d73e69c8e40448ccc9b178",
+      "bytes": 5558
+    },
+    {
+      "path": "dist/cjs/scripts/removeDeduplicationKey-1.js",
+      "sha256": "2b9139c7273d8f0ded5a4da0c96d38f1961d9944cf325dbf50b225e131754685",
+      "bytes": 626
+    },
+    {
+      "path": "dist/esm/scripts/removeDeduplicationKey-1.js",
+      "sha256": "3b31901e1946ca37c864dd901cf92915be0e333f458ced35ce16040b7e38156c",
+      "bytes": 513
+    },
+    {
+      "path": "dist/cjs/scripts/removeJob-2.js",
+      "sha256": "2eff81d60dd5df346a4d40f18f3d14affa8bf045237f12c9213f407cc1e9a079",
+      "bytes": 12574
+    },
+    {
+      "path": "dist/esm/scripts/removeJob-2.js",
+      "sha256": "0df3ab40e0f72977d57416c97f86f4963e8d3c42a87b77ae495254885657eda3",
+      "bytes": 12474
+    },
+    {
+      "path": "dist/cjs/scripts/removeJobScheduler-3.js",
+      "sha256": "8b04309df5498cb17e1579c34e4d4a2f200c3f0640d0ce26e188663af0e5a7ec",
+      "bytes": 1324
+    },
+    {
+      "path": "dist/esm/scripts/removeJobScheduler-3.js",
+      "sha256": "b6f21d34d88f8fc740811a477ff2fa2589cd56248cc41bbde2aa7d365c2af07d",
+      "bytes": 1215
+    },
+    {
+      "path": "dist/cjs/scripts/removeOrphanedJobs-1.js",
+      "sha256": "fe17aa11a29071528f66182e71d77317185e667761669451efc0f7883cc5cc77",
+      "bytes": 2320
+    },
+    {
+      "path": "dist/esm/scripts/removeOrphanedJobs-1.js",
+      "sha256": "b281275ead0059c79601e138282f66b8e3001750ae01a87e05069bab10b99278",
+      "bytes": 2211
+    },
+    {
+      "path": "dist/cjs/scripts/removeUnprocessedChildren-2.js",
+      "sha256": "a92818d2da4b71f22087f5bd36a5bcbdf65d694c66226743aa9ffae4fd2e9aaa",
+      "bytes": 12330
+    },
+    {
+      "path": "dist/esm/scripts/removeUnprocessedChildren-2.js",
+      "sha256": "2633e72041e6cfce400fe18e799ea6330bef0a1b4e0c3a1be6dfa3bf51a2d5a6",
+      "bytes": 12214
+    },
+    {
+      "path": "dist/cjs/interfaces/repeat-options.js",
+      "sha256": "d43aa81f5bc89faa359e0f97c814ba25155591ff078fbb9bfd40f8c7c9683230",
+      "bytes": 77
+    },
+    {
+      "path": "dist/esm/interfaces/repeat-options.js",
+      "sha256": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
+      "bytes": 11
+    },
+    {
+      "path": "dist/cjs/types/repeat-strategy.js",
+      "sha256": "d43aa81f5bc89faa359e0f97c814ba25155591ff078fbb9bfd40f8c7c9683230",
+      "bytes": 77
+    },
+    {
+      "path": "dist/esm/types/repeat-strategy.js",
+      "sha256": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
+      "bytes": 11
+    },
+    {
+      "path": "dist/cjs/interfaces/repeatable-options.js",
+      "sha256": "d43aa81f5bc89faa359e0f97c814ba25155591ff078fbb9bfd40f8c7c9683230",
+      "bytes": 77
+    },
+    {
+      "path": "dist/esm/interfaces/repeatable-options.js",
+      "sha256": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
+      "bytes": 11
+    },
+    {
+      "path": "dist/cjs/scripts/reprocessJob-9.js",
+      "sha256": "d60e5f693809ffc37c31deadf15709f6739738f731db0e651dc220747b35d700",
+      "bytes": 4570
+    },
+    {
+      "path": "dist/esm/scripts/reprocessJob-9.js",
+      "sha256": "753580fc4ac45905d57b0329360413f18ef3d9a0af149397818ff3da74424a42",
+      "bytes": 4467
+    },
+    {
+      "path": "dist/cjs/interfaces/retry-options.js",
+      "sha256": "d43aa81f5bc89faa359e0f97c814ba25155591ff078fbb9bfd40f8c7c9683230",
+      "bytes": 77
+    },
+    {
+      "path": "dist/esm/interfaces/retry-options.js",
+      "sha256": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
+      "bytes": 11
+    },
+    {
+      "path": "dist/cjs/scripts/retryJob-11.js",
+      "sha256": "fa78ba5ea79849dbb21905e703d4d64600a67f8a66e0773aa0eca52fcd6d589c",
+      "bytes": 6104
+    },
+    {
+      "path": "dist/esm/scripts/retryJob-11.js",
+      "sha256": "320acaa1bf0a6816758d7eeaec9e8755030519aac0a79d8d4f87dfef881a07b4",
+      "bytes": 6005
+    },
+    {
+      "path": "dist/cjs/classes/sandbox.js",
+      "sha256": "e3a62e1508d30a0b1b2f8b6f7be90c12643055b37213d0a9526722d83d8478c0",
+      "bytes": 9884
+    },
+    {
+      "path": "dist/esm/classes/sandbox.js",
+      "sha256": "64797feb7b834d6ba2a3ec5c68a165ec1ec67d57aee10c0f7669ed3e28fecc4d",
+      "bytes": 9645
+    },
+    {
+      "path": "dist/cjs/interfaces/sandboxed-job-processor.js",
+      "sha256": "d43aa81f5bc89faa359e0f97c814ba25155591ff078fbb9bfd40f8c7c9683230",
+      "bytes": 77
+    },
+    {
+      "path": "dist/esm/interfaces/sandboxed-job-processor.js",
+      "sha256": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
+      "bytes": 11
+    },
+    {
+      "path": "dist/cjs/interfaces/sandboxed-job.js",
+      "sha256": "d43aa81f5bc89faa359e0f97c814ba25155591ff078fbb9bfd40f8c7c9683230",
+      "bytes": 77
+    },
+    {
+      "path": "dist/esm/interfaces/sandboxed-job.js",
+      "sha256": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
+      "bytes": 11
+    },
+    {
+      "path": "dist/cjs/interfaces/sandboxed-options.js",
+      "sha256": "d43aa81f5bc89faa359e0f97c814ba25155591ff078fbb9bfd40f8c7c9683230",
+      "bytes": 77
+    },
+    {
+      "path": "dist/esm/interfaces/sandboxed-options.js",
+      "sha256": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
+      "bytes": 11
+    },
+    {
+      "path": "dist/cjs/scripts/saveStacktrace-1.js",
+      "sha256": "b60b4728b45d30c5edde548ae403a9bfa54c21d5fdfc59859a324ecfd6d34bee",
+      "bytes": 549
+    },
+    {
+      "path": "dist/esm/scripts/saveStacktrace-1.js",
+      "sha256": "33852de6308e67c69ae00f18ee97f1423428e2fd9005226aabc74d4a54769e6b",
+      "bytes": 444
+    },
+    {
+      "path": "dist/cjs/interfaces/script-queue-context.js",
+      "sha256": "d43aa81f5bc89faa359e0f97c814ba25155591ff078fbb9bfd40f8c7c9683230",
+      "bytes": 77
+    },
+    {
+      "path": "dist/esm/interfaces/script-queue-context.js",
+      "sha256": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
+      "bytes": 11
+    },
+    {
+      "path": "dist/cjs/postgres/sql-loader.js",
+      "sha256": "b61e5999380cffcd066eb287203f163ee0f7bd36135e278c06d4c16949380378",
+      "bytes": 2065
+    },
+    {
+      "path": "dist/esm/postgres/sql-loader.js",
+      "sha256": "aad5190d4a4749cf5ae397615b13b6a55a282f6eb1310bd5966a746ce0379e5d",
+      "bytes": 1902
+    },
+    {
+      "path": "dist/cjs/postgres/sql-scripts.js",
+      "sha256": "84911550cf647293f3aa449162d676b761564b7f6a3ff6e9f1cfaf4919845a6d",
+      "bytes": 214214
+    },
+    {
+      "path": "dist/esm/postgres/sql-scripts.js",
+      "sha256": "7cb0dcfd79a3c3315913c7d0212b69eaf97460e856fecf6878a977a679aba6fc",
+      "bytes": 214091
+    },
+    {
+      "path": "dist/cjs/enums/telemetry-attributes.js",
+      "sha256": "f6518aef17616a6b46574514a35dd0fc5ee54bc607c6d92210b0b32855175110",
+      "bytes": 3819
+    },
+    {
+      "path": "dist/esm/enums/telemetry-attributes.js",
+      "sha256": "78d6a68e36b7c16f0a792d62521606f6d76b268881a41fc5cba14a71e0d4c8bd",
+      "bytes": 3613
+    },
+    {
+      "path": "dist/cjs/interfaces/telemetry.js",
+      "sha256": "d43aa81f5bc89faa359e0f97c814ba25155591ff078fbb9bfd40f8c7c9683230",
+      "bytes": 77
+    },
+    {
+      "path": "dist/esm/interfaces/telemetry.js",
+      "sha256": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
+      "bytes": 11
+    },
+    {
+      "path": "dist/cjs/classes/errors/unrecoverable-error.js",
+      "sha256": "12defe0519676c9a168cd42464c6506adb10ecb3bad6ff7b5a0a63165337dcd1",
+      "bytes": 611
+    },
+    {
+      "path": "dist/esm/classes/errors/unrecoverable-error.js",
+      "sha256": "ed40611b8e3485579e0ac0dfaefffaf1d6d9a153444fd925885c70e490e4d9b2",
+      "bytes": 422
+    },
+    {
+      "path": "dist/cjs/scripts/updateData-1.js",
+      "sha256": "cf8b7413981ac415e19616a612c8b2a74b16862d004dec660410bb55d40256cc",
+      "bytes": 482
+    },
+    {
+      "path": "dist/esm/scripts/updateData-1.js",
+      "sha256": "6721304cd2edc0099eb5f2b410dd3297e74b6d14aeb2bf233a340a01fd22483f",
+      "bytes": 381
+    },
+    {
+      "path": "dist/cjs/scripts/updateJobScheduler-12.js",
+      "sha256": "a462eca2bbbfbc195e02ce9e2b81a0f5a0b6827d77ae49c824431072a44732e6",
+      "bytes": 12684
+    },
+    {
+      "path": "dist/esm/scripts/updateJobScheduler-12.js",
+      "sha256": "301dbe37504937a67eb7f839afd6bbb60a28fca83dc85b4988347fc8047c26a0",
+      "bytes": 12575
+    },
+    {
+      "path": "dist/cjs/scripts/updateProgress-3.js",
+      "sha256": "40db2a637bbd2a7323eb0ac6be53074b9ea605c14369bc66d0bb1b42495eea06",
+      "bytes": 1113
+    },
+    {
+      "path": "dist/esm/scripts/updateProgress-3.js",
+      "sha256": "3aed640486bdaa3fa044d86e782ddec0c476335de8ced4003fb098ec800d3968",
+      "bytes": 1008
+    },
+    {
+      "path": "dist/cjs/classes/valkey-glide-client.js",
+      "sha256": "225ba74c768c9728d628600a60a8e6374db41b2e6c48523d9b448a90dcd34265",
+      "bytes": 35075
+    },
+    {
+      "path": "dist/esm/classes/valkey-glide-client.js",
+      "sha256": "3908b69b46dcdee9204eaf8c63660486257462186e17da999b0d56cd7df9f473",
+      "bytes": 34808
+    },
+    {
+      "path": "dist/cjs/version.js",
+      "sha256": "ff915bd06bcb605f6b6aa853d66bb860b139831a410dc1595084ecfd9553e0e6",
+      "bytes": 130
+    },
+    {
+      "path": "dist/esm/version.js",
+      "sha256": "7f8ffbd7df063202000704abd40f10979e4ac87e9ebddc452e69e119e3bad852",
+      "bytes": 32
+    },
+    {
+      "path": "dist/cjs/classes/errors/waiting-children-error.js",
+      "sha256": "0d10909e4779d5b1e3c928adf4770bd799a987de4aaff16a4713375dc37f5549",
+      "bytes": 638
+    },
+    {
+      "path": "dist/esm/classes/errors/waiting-children-error.js",
+      "sha256": "d0b77906924c4a5653de1f833301ea29ba456e4c26abe4f3bad136d710de13c3",
+      "bytes": 440
+    },
+    {
+      "path": "dist/cjs/classes/errors/waiting-error.js",
+      "sha256": "c8bbd41e5ab283bcbedbc8cff09604a666ed9dae9fdd61f8d4550a988a540591",
+      "bytes": 560
+    },
+    {
+      "path": "dist/esm/classes/errors/waiting-error.js",
+      "sha256": "1e0b364fe2eb4b657586c74ddc1706526fc5930bd150e4ac00156d15c3033ad2",
+      "bytes": 395
+    },
+    {
+      "path": "dist/cjs/utils/with-backend.js",
+      "sha256": "2143a344127f9066477d5308dae4e91c0edcd448bfa5d0ee819f6f7af0bbb078",
+      "bytes": 1813
+    },
+    {
+      "path": "dist/esm/utils/with-backend.js",
+      "sha256": "a754ae06ea63e35447c782fc49d2c0a76e6e0dae788fb3233b12db7b769e204c",
+      "bytes": 1617
+    },
+    {
+      "path": "dist/cjs/interfaces/worker-options.js",
+      "sha256": "d43aa81f5bc89faa359e0f97c814ba25155591ff078fbb9bfd40f8c7c9683230",
+      "bytes": 77
+    },
+    {
+      "path": "dist/esm/interfaces/worker-options.js",
+      "sha256": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
+      "bytes": 11
+    },
+    {
+      "path": "dist/cjs/classes/worker.js",
+      "sha256": "c3f95fbb5e50d93fbbf33035016355372f8612f726a37d205553a6946323197d",
+      "bytes": 47343
+    },
+    {
+      "path": "dist/esm/classes/worker.js",
+      "sha256": "7b9f568e43c89684796255e076422becf044027459e003e687d603fc6594020b",
+      "bytes": 46819
+    },
+    {
+      "path": "package.json",
+      "sha256": "212e979e06640c1ff99d041381dc9e274e3de8d7319fa23d1e29b2f63c873fe0",
+      "bytes": 10484
+    },
+    {
+      "path": "dist/cjs/commands/includes/addBaseMarkerIfNeeded.lua",
+      "sha256": "bbdfb3922acec0e812a1f99988160bb7faab8099bf402d3cfc2dc96f81b6c00f",
+      "bytes": 201
+    },
+    {
+      "path": "dist/esm/commands/includes/addBaseMarkerIfNeeded.lua",
+      "sha256": "bbdfb3922acec0e812a1f99988160bb7faab8099bf402d3cfc2dc96f81b6c00f",
+      "bytes": 201
+    },
+    {
+      "path": "dist/cjs/commands/addDelayedJob-6.lua",
+      "sha256": "092708d954d91e54ccb5bc234b8dbea629c7c6af50931049cc56df2192fe3ac0",
+      "bytes": 2930
+    },
+    {
+      "path": "dist/esm/commands/addDelayedJob-6.lua",
+      "sha256": "092708d954d91e54ccb5bc234b8dbea629c7c6af50931049cc56df2192fe3ac0",
+      "bytes": 2930
+    },
+    {
+      "path": "dist/cjs/commands/includes/addDelayedJob.lua",
+      "sha256": "aa5911509b85e3c5f464fc519afcaf14287d9c1beb3a2716a0e4411194ab9c8f",
+      "bytes": 739
+    },
+    {
+      "path": "dist/esm/commands/includes/addDelayedJob.lua",
+      "sha256": "aa5911509b85e3c5f464fc519afcaf14287d9c1beb3a2716a0e4411194ab9c8f",
+      "bytes": 739
+    },
+    {
+      "path": "dist/cjs/commands/includes/addDelayMarkerIfNeeded.lua",
+      "sha256": "1a55c5edda6b3c54270831aad482f7e9850f492fd89660a50e63eabdb31c9656",
+      "bytes": 386
+    },
+    {
+      "path": "dist/esm/commands/includes/addDelayMarkerIfNeeded.lua",
+      "sha256": "1a55c5edda6b3c54270831aad482f7e9850f492fd89660a50e63eabdb31c9656",
+      "bytes": 386
+    },
+    {
+      "path": "dist/cjs/commands/includes/addJobFromScheduler.lua",
+      "sha256": "ae12b71b35bc7d849e44d7cac7c64c49215b5f8d0e67ab5bfc73912aaeff48c6",
+      "bytes": 604
+    },
+    {
+      "path": "dist/esm/commands/includes/addJobFromScheduler.lua",
+      "sha256": "ae12b71b35bc7d849e44d7cac7c64c49215b5f8d0e67ab5bfc73912aaeff48c6",
+      "bytes": 604
+    },
+    {
+      "path": "dist/cjs/commands/includes/addJobInTargetList.lua",
+      "sha256": "356385ce8c4ba1841de955ac76af5381f3b2074628133e870c2035c3d64a62a2",
+      "bytes": 302
+    },
+    {
+      "path": "dist/esm/commands/includes/addJobInTargetList.lua",
+      "sha256": "356385ce8c4ba1841de955ac76af5381f3b2074628133e870c2035c3d64a62a2",
+      "bytes": 302
+    },
+    {
+      "path": "dist/cjs/commands/addJobScheduler-11.lua",
+      "sha256": "d9760f7f6d586b7168cfe7125600d36b73e11ba3d5dbd54aba3d5bab875fb30b",
+      "bytes": 6681
+    },
+    {
+      "path": "dist/esm/commands/addJobScheduler-11.lua",
+      "sha256": "d9760f7f6d586b7168cfe7125600d36b73e11ba3d5dbd54aba3d5bab875fb30b",
+      "bytes": 6681
+    },
+    {
+      "path": "dist/cjs/commands/includes/addJobWithPriority.lua",
+      "sha256": "b01312aa67e05384933c9a8d0f5ca752e6fb6a10d23cfb1da6988d566758dfc7",
+      "bytes": 417
+    },
+    {
+      "path": "dist/esm/commands/includes/addJobWithPriority.lua",
+      "sha256": "b01312aa67e05384933c9a8d0f5ca752e6fb6a10d23cfb1da6988d566758dfc7",
+      "bytes": 417
+    },
+    {
+      "path": "dist/cjs/commands/addLog-2.lua",
+      "sha256": "0d12136752ac2bbafa9702d30bd381acb111599e598e96f85d7c416a23d9e6d2",
+      "bytes": 503
+    },
+    {
+      "path": "dist/esm/commands/addLog-2.lua",
+      "sha256": "0d12136752ac2bbafa9702d30bd381acb111599e598e96f85d7c416a23d9e6d2",
+      "bytes": 503
+    },
+    {
+      "path": "dist/cjs/commands/addParentJob-6.lua",
+      "sha256": "94b732a5ba896528fbf14672a07a865f9a6272607270d137945f3c8fe9ec9f40",
+      "bytes": 3066
+    },
+    {
+      "path": "dist/esm/commands/addParentJob-6.lua",
+      "sha256": "94b732a5ba896528fbf14672a07a865f9a6272607270d137945f3c8fe9ec9f40",
+      "bytes": 3066
+    },
+    {
+      "path": "dist/cjs/commands/addPrioritizedJob-9.lua",
+      "sha256": "ec171e1d4abe399adb7986d8358f29487dd68999cd1e26562c2738d81fda8dcb",
+      "bytes": 3385
+    },
+    {
+      "path": "dist/esm/commands/addPrioritizedJob-9.lua",
+      "sha256": "ec171e1d4abe399adb7986d8358f29487dd68999cd1e26562c2738d81fda8dcb",
+      "bytes": 3385
+    },
+    {
+      "path": "dist/cjs/commands/addStandardJob-9.lua",
+      "sha256": "51c1af55649a56d99a3b533791b6d890ec34be49c40c426d50dd65b08353b563",
+      "bytes": 3470
+    },
+    {
+      "path": "dist/esm/commands/addStandardJob-9.lua",
+      "sha256": "51c1af55649a56d99a3b533791b6d890ec34be49c40c426d50dd65b08353b563",
+      "bytes": 3470
+    },
+    {
+      "path": "dist/cjs/commands/includes/batches.lua",
+      "sha256": "4f60fd74f44041e353e19b95509b1910d085f2a7c357a8606cf0e6e86fd0e424",
+      "bytes": 378
+    },
+    {
+      "path": "dist/esm/commands/includes/batches.lua",
+      "sha256": "4f60fd74f44041e353e19b95509b1910d085f2a7c357a8606cf0e6e86fd0e424",
+      "bytes": 378
+    },
+    {
+      "path": "dist/cjs/commands/changeDelay-4.lua",
+      "sha256": "066e83a43bf4db3f77c45d98234fa03e71233bcf0f325181d04be68c93671833",
+      "bytes": 1178
+    },
+    {
+      "path": "dist/esm/commands/changeDelay-4.lua",
+      "sha256": "066e83a43bf4db3f77c45d98234fa03e71233bcf0f325181d04be68c93671833",
+      "bytes": 1178
+    },
+    {
+      "path": "dist/cjs/commands/changePriority-7.lua",
+      "sha256": "c1ba1868b2ada51c98e8db22247ef0c6eeb8b7b241155ee382d36f06d9da7891",
+      "bytes": 2070
+    },
+    {
+      "path": "dist/esm/commands/changePriority-7.lua",
+      "sha256": "c1ba1868b2ada51c98e8db22247ef0c6eeb8b7b241155ee382d36f06d9da7891",
+      "bytes": 2070
+    },
+    {
+      "path": "dist/cjs/commands/includes/checkItemInList.lua",
+      "sha256": "a888671a40c224431011055d0042f8daa6e7d52ed17ac27ebeddcc1a6f3eeb9d",
+      "bytes": 199
+    },
+    {
+      "path": "dist/esm/commands/includes/checkItemInList.lua",
+      "sha256": "a888671a40c224431011055d0042f8daa6e7d52ed17ac27ebeddcc1a6f3eeb9d",
+      "bytes": 199
+    },
+    {
+      "path": "dist/cjs/commands/cleanJobsInSet-3.lua",
+      "sha256": "89025401178aecedf4c606ffb893f31f8110ac92dfe0cf96e9e808b04e9e7e51",
+      "bytes": 1917
+    },
+    {
+      "path": "dist/esm/commands/cleanJobsInSet-3.lua",
+      "sha256": "89025401178aecedf4c606ffb893f31f8110ac92dfe0cf96e9e808b04e9e7e51",
+      "bytes": 1917
+    },
+    {
+      "path": "dist/cjs/commands/includes/cleanList.lua",
+      "sha256": "37ae17bf3841202d9723891faa37e6a0057b5807bce5938fa3faf5cffe496f2b",
+      "bytes": 1859
+    },
+    {
+      "path": "dist/esm/commands/includes/cleanList.lua",
+      "sha256": "37ae17bf3841202d9723891faa37e6a0057b5807bce5938fa3faf5cffe496f2b",
+      "bytes": 1859
+    },
+    {
+      "path": "dist/cjs/commands/includes/cleanSet.lua",
+      "sha256": "9bdbff70d0ff2c398a7272fd59372cddf6056487a8ba92daf554165aa7a93a6a",
+      "bytes": 1794
+    },
+    {
+      "path": "dist/esm/commands/includes/cleanSet.lua",
+      "sha256": "9bdbff70d0ff2c398a7272fd59372cddf6056487a8ba92daf554165aa7a93a6a",
+      "bytes": 1794
+    },
+    {
+      "path": "dist/cjs/commands/includes/collectMetrics.lua",
+      "sha256": "317a3d95a1c60055b78869bffc80b9802319cb08291a41404ec9fd3023c6e33c",
+      "bytes": 1542
+    },
+    {
+      "path": "dist/esm/commands/includes/collectMetrics.lua",
+      "sha256": "317a3d95a1c60055b78869bffc80b9802319cb08291a41404ec9fd3023c6e33c",
+      "bytes": 1542
+    },
+    {
+      "path": "dist/cjs/commands/includes/deduplicateJob.lua",
+      "sha256": "ab7051fab9d20eea3c9dfca9d3be976ebc3517463e6eb9cbcfcdabd82aaa7c56",
+      "bytes": 3645
+    },
+    {
+      "path": "dist/esm/commands/includes/deduplicateJob.lua",
+      "sha256": "ab7051fab9d20eea3c9dfca9d3be976ebc3517463e6eb9cbcfcdabd82aaa7c56",
+      "bytes": 3645
+    },
+    {
+      "path": "dist/cjs/commands/includes/deduplicateJobWithoutReplace.lua",
+      "sha256": "661977e37e4285a2bfafd43fe7b29ca1268cbfbe484a6ad26f1b5adb342abc04",
+      "bytes": 3328
+    },
+    {
+      "path": "dist/esm/commands/includes/deduplicateJobWithoutReplace.lua",
+      "sha256": "661977e37e4285a2bfafd43fe7b29ca1268cbfbe484a6ad26f1b5adb342abc04",
+      "bytes": 3328
+    },
+    {
+      "path": "dist/cjs/commands/includes/destructureJobKey.lua",
+      "sha256": "c5d4d00b305cd60f4c8449c4aa8e928135a1f7ab3e70afb00cfac774385fdb20",
+      "bytes": 332
+    },
+    {
+      "path": "dist/esm/commands/includes/destructureJobKey.lua",
+      "sha256": "c5d4d00b305cd60f4c8449c4aa8e928135a1f7ab3e70afb00cfac774385fdb20",
+      "bytes": 332
+    },
+    {
+      "path": "dist/cjs/commands/drain-5.lua",
+      "sha256": "9f2bec72349533d1a5edf0907ebba51ba269bd24cd57bb1c3007f743bd4b9878",
+      "bytes": 1262
+    },
+    {
+      "path": "dist/esm/commands/drain-5.lua",
+      "sha256": "9f2bec72349533d1a5edf0907ebba51ba269bd24cd57bb1c3007f743bd4b9878",
+      "bytes": 1262
+    },
+    {
+      "path": "dist/cjs/commands/extendLock-2.lua",
+      "sha256": "266659b31ea3579908bfd52b369441d5f5f4c00ad81fd8995ceba08551235243",
+      "bytes": 505
+    },
+    {
+      "path": "dist/esm/commands/extendLock-2.lua",
+      "sha256": "266659b31ea3579908bfd52b369441d5f5f4c00ad81fd8995ceba08551235243",
+      "bytes": 505
+    },
+    {
+      "path": "dist/cjs/commands/extendLocks-1.lua",
+      "sha256": "3bbdd28e98315606bb80355026539dcf0e647d8fc6038fee5b3bc7a5495132f4",
+      "bytes": 1206
+    },
+    {
+      "path": "dist/esm/commands/extendLocks-1.lua",
+      "sha256": "3bbdd28e98315606bb80355026539dcf0e647d8fc6038fee5b3bc7a5495132f4",
+      "bytes": 1206
+    },
+    {
+      "path": "dist/cjs/commands/includes/fetchNextJob.lua",
+      "sha256": "0a58476bafccaaed14c0d7b525ba404dcb01e0cd45b6504bc35ee6e9ffa61514",
+      "bytes": 3552
+    },
+    {
+      "path": "dist/esm/commands/includes/fetchNextJob.lua",
+      "sha256": "0a58476bafccaaed14c0d7b525ba404dcb01e0cd45b6504bc35ee6e9ffa61514",
+      "bytes": 3552
+    },
+    {
+      "path": "dist/cjs/commands/includes/filterOutJobsToIgnore.lua",
+      "sha256": "ecc8428dc0dab0e623bcf202846f4827620f892350f6e7e8fceccf201169d431",
+      "bytes": 290
+    },
+    {
+      "path": "dist/esm/commands/includes/filterOutJobsToIgnore.lua",
+      "sha256": "ecc8428dc0dab0e623bcf202846f4827620f892350f6e7e8fceccf201169d431",
+      "bytes": 290
+    },
+    {
+      "path": "dist/cjs/commands/includes/findPage.lua",
+      "sha256": "9ea89fca6535c98d2052a77b7132502123e22f9ce88cc0bae373842b5913831e",
+      "bytes": 2526
+    },
+    {
+      "path": "dist/esm/commands/includes/findPage.lua",
+      "sha256": "9ea89fca6535c98d2052a77b7132502123e22f9ce88cc0bae373842b5913831e",
+      "bytes": 2526
+    },
+    {
+      "path": "dist/cjs/commands/getCounts-1.lua",
+      "sha256": "bfb163ab2dc8b1690245085c2c120aeb94fb1f6f9305d700b252776b15be5c54",
+      "bytes": 872
+    },
+    {
+      "path": "dist/esm/commands/getCounts-1.lua",
+      "sha256": "bfb163ab2dc8b1690245085c2c120aeb94fb1f6f9305d700b252776b15be5c54",
+      "bytes": 872
+    },
+    {
+      "path": "dist/cjs/commands/getCountsPerPriority-2.lua",
+      "sha256": "612efad9c536f55aba12da1a3d72969ef4d485a7a0fb57fe133b92bbe28054ce",
+      "bytes": 521
+    },
+    {
+      "path": "dist/esm/commands/getCountsPerPriority-2.lua",
+      "sha256": "612efad9c536f55aba12da1a3d72969ef4d485a7a0fb57fe133b92bbe28054ce",
+      "bytes": 521
+    },
+    {
+      "path": "dist/cjs/commands/includes/getDelayedScore.lua",
+      "sha256": "18547f918fdc531bfe0f0b65c52fe3e8574d31fa99563e790703c6965b493db3",
+      "bytes": 953
+    },
+    {
+      "path": "dist/esm/commands/includes/getDelayedScore.lua",
+      "sha256": "18547f918fdc531bfe0f0b65c52fe3e8574d31fa99563e790703c6965b493db3",
+      "bytes": 953
+    },
+    {
+      "path": "dist/cjs/commands/getDependencyCounts-4.lua",
+      "sha256": "72d766fb029abafd7b0aa85e9b43e84b34aec8583284251795528207b3bd93bc",
+      "bytes": 729
+    },
+    {
+      "path": "dist/esm/commands/getDependencyCounts-4.lua",
+      "sha256": "72d766fb029abafd7b0aa85e9b43e84b34aec8583284251795528207b3bd93bc",
+      "bytes": 729
+    },
+    {
+      "path": "dist/cjs/commands/getJobs-1.lua",
+      "sha256": "e28da48742bc04845d3a3c39620a2ebe4eb5c8e119c5a867e4e4a4edd6214697",
+      "bytes": 4496
+    },
+    {
+      "path": "dist/esm/commands/getJobs-1.lua",
+      "sha256": "e28da48742bc04845d3a3c39620a2ebe4eb5c8e119c5a867e4e4a4edd6214697",
+      "bytes": 4496
+    },
+    {
+      "path": "dist/cjs/commands/getJobScheduler-1.lua",
+      "sha256": "a298ea84573ffe47e0574d3508b0ba7200a6559157e16cfcb79c1fcab41c9384",
+      "bytes": 318
+    },
+    {
+      "path": "dist/esm/commands/getJobScheduler-1.lua",
+      "sha256": "a298ea84573ffe47e0574d3508b0ba7200a6559157e16cfcb79c1fcab41c9384",
+      "bytes": 318
+    },
+    {
+      "path": "dist/cjs/commands/includes/getJobSchedulerEveryNextMillis.lua",
+      "sha256": "236cb607f94e73bede2fdd065c5f5b247560dd2e1f75f56cb1c43639349ca8b1",
+      "bytes": 1781
+    },
+    {
+      "path": "dist/esm/commands/includes/getJobSchedulerEveryNextMillis.lua",
+      "sha256": "236cb607f94e73bede2fdd065c5f5b247560dd2e1f75f56cb1c43639349ca8b1",
+      "bytes": 1781
+    },
+    {
+      "path": "dist/cjs/commands/includes/getJobsInZset.lua",
+      "sha256": "ab3ae83c845931c46c079cd6a2e8748723945c029d62e3bc6a7d4492e58e8587",
+      "bytes": 477
+    },
+    {
+      "path": "dist/esm/commands/includes/getJobsInZset.lua",
+      "sha256": "ab3ae83c845931c46c079cd6a2e8748723945c029d62e3bc6a7d4492e58e8587",
+      "bytes": 477
+    },
+    {
+      "path": "dist/cjs/commands/getMetrics-2.lua",
+      "sha256": "bcce6c374e8924600c4f8db450317883c6f320b3c5997c35dcaceb7cadd59088",
+      "bytes": 441
+    },
+    {
+      "path": "dist/esm/commands/getMetrics-2.lua",
+      "sha256": "bcce6c374e8924600c4f8db450317883c6f320b3c5997c35dcaceb7cadd59088",
+      "bytes": 441
+    },
+    {
+      "path": "dist/cjs/commands/includes/getNextDelayedTimestamp.lua",
+      "sha256": "b2e7b56676668f78ea01270f3daab3667ab68ea963671b3468e2018af75eb6e4",
+      "bytes": 328
+    },
+    {
+      "path": "dist/esm/commands/includes/getNextDelayedTimestamp.lua",
+      "sha256": "b2e7b56676668f78ea01270f3daab3667ab68ea963671b3468e2018af75eb6e4",
+      "bytes": 328
+    },
+    {
+      "path": "dist/cjs/commands/includes/getOrSetMaxEvents.lua",
+      "sha256": "ec9e059a7d303cff34329453cc4747be9f20bc4824abcb397ca4847c52bac8c4",
+      "bytes": 308
+    },
+    {
+      "path": "dist/esm/commands/includes/getOrSetMaxEvents.lua",
+      "sha256": "ec9e059a7d303cff34329453cc4747be9f20bc4824abcb397ca4847c52bac8c4",
+      "bytes": 308
+    },
+    {
+      "path": "dist/cjs/commands/includes/getPriorityScore.lua",
+      "sha256": "2543a3e682c15d9d8466b633aeb3a6d54a813ec23b5aa7aaf636457d62610206",
+      "bytes": 225
+    },
+    {
+      "path": "dist/esm/commands/includes/getPriorityScore.lua",
+      "sha256": "2543a3e682c15d9d8466b633aeb3a6d54a813ec23b5aa7aaf636457d62610206",
+      "bytes": 225
+    },
+    {
+      "path": "dist/cjs/commands/includes/getQueueMetadata.lua",
+      "sha256": "10799ec741d9845f4a6ec9317cd22f30daabfa4c55159b2b3a14e8330c2c1298",
+      "bytes": 656
+    },
+    {
+      "path": "dist/esm/commands/includes/getQueueMetadata.lua",
+      "sha256": "10799ec741d9845f4a6ec9317cd22f30daabfa4c55159b2b3a14e8330c2c1298",
+      "bytes": 656
+    },
+    {
+      "path": "dist/cjs/commands/getRanges-1.lua",
+      "sha256": "551d2221e1b4d28566d6b11f2a390fd11d83bd90002df4c69af4da14a25c8d41",
+      "bytes": 1813
+    },
+    {
+      "path": "dist/esm/commands/getRanges-1.lua",
+      "sha256": "551d2221e1b4d28566d6b11f2a390fd11d83bd90002df4c69af4da14a25c8d41",
+      "bytes": 1813
+    },
+    {
+      "path": "dist/cjs/commands/getRateLimitTtl-2.lua",
+      "sha256": "382bdbcf39ec3f7ee9aab44ec31edeb41c5537bdfab074fc2620bfa20cd0ef2e",
+      "bytes": 501
+    },
+    {
+      "path": "dist/esm/commands/getRateLimitTtl-2.lua",
+      "sha256": "382bdbcf39ec3f7ee9aab44ec31edeb41c5537bdfab074fc2620bfa20cd0ef2e",
+      "bytes": 501
+    },
+    {
+      "path": "dist/cjs/commands/includes/getRateLimitTTL.lua",
+      "sha256": "c11ca472bd6817b0e24311f65571b1a665ca668ea1ec08cfa0cf7e356d372ce6",
+      "bytes": 365
+    },
+    {
+      "path": "dist/esm/commands/includes/getRateLimitTTL.lua",
+      "sha256": "c11ca472bd6817b0e24311f65571b1a665ca668ea1ec08cfa0cf7e356d372ce6",
+      "bytes": 365
+    },
+    {
+      "path": "dist/cjs/commands/getState-8.lua",
+      "sha256": "8b674e6c4db705ad966028f3c65ff8518286410943be90d78837afab52d8ea0b",
+      "bytes": 1241
+    },
+    {
+      "path": "dist/esm/commands/getState-8.lua",
+      "sha256": "8b674e6c4db705ad966028f3c65ff8518286410943be90d78837afab52d8ea0b",
+      "bytes": 1241
+    },
+    {
+      "path": "dist/cjs/commands/getStateV2-8.lua",
+      "sha256": "c5b75f6296af0472df26bf288e913ee445d398b5ba8c7187a830760c7c01e093",
+      "bytes": 974
+    },
+    {
+      "path": "dist/esm/commands/getStateV2-8.lua",
+      "sha256": "c5b75f6296af0472df26bf288e913ee445d398b5ba8c7187a830760c7c01e093",
+      "bytes": 974
+    },
+    {
+      "path": "dist/cjs/commands/includes/getTimestamp.lua",
+      "sha256": "0cc3365051dd76510375c9347b3d241cff03439fc964223b3b523287055a40c1",
+      "bytes": 348
+    },
+    {
+      "path": "dist/esm/commands/includes/getTimestamp.lua",
+      "sha256": "0cc3365051dd76510375c9347b3d241cff03439fc964223b3b523287055a40c1",
+      "bytes": 348
+    },
+    {
+      "path": "dist/cjs/commands/includes/getWaitPlusPrioritizedCount.lua",
+      "sha256": "035e5ac25d7a661d8132688cd9057e6c00aa188b8c3740f0479613a3a36ae796",
+      "bytes": 262
+    },
+    {
+      "path": "dist/esm/commands/includes/getWaitPlusPrioritizedCount.lua",
+      "sha256": "035e5ac25d7a661d8132688cd9057e6c00aa188b8c3740f0479613a3a36ae796",
+      "bytes": 262
+    },
+    {
+      "path": "dist/cjs/commands/includes/getZSetItems.lua",
+      "sha256": "d9054d54200c971e8d1a48702494580590bd027c6c68534d050cc94b457c1f28",
+      "bytes": 131
+    },
+    {
+      "path": "dist/esm/commands/includes/getZSetItems.lua",
+      "sha256": "d9054d54200c971e8d1a48702494580590bd027c6c68534d050cc94b457c1f28",
+      "bytes": 131
+    },
+    {
+      "path": "dist/cjs/commands/includes/handleDuplicatedJob.lua",
+      "sha256": "9c7c05cc2702e75a1627268b73827f8079fb90da7b43b6ac51c286b9dccf6b88",
+      "bytes": 879
+    },
+    {
+      "path": "dist/esm/commands/includes/handleDuplicatedJob.lua",
+      "sha256": "9c7c05cc2702e75a1627268b73827f8079fb90da7b43b6ac51c286b9dccf6b88",
+      "bytes": 879
+    },
+    {
+      "path": "dist/cjs/commands/isFinished-3.lua",
+      "sha256": "4f9aa69cc2db88e1f7cf116c5094affeeffac3432f3ac1b2cf453c4de128c63a",
+      "bytes": 888
+    },
+    {
+      "path": "dist/esm/commands/isFinished-3.lua",
+      "sha256": "4f9aa69cc2db88e1f7cf116c5094affeeffac3432f3ac1b2cf453c4de128c63a",
+      "bytes": 888
+    },
+    {
+      "path": "dist/cjs/commands/isJobInList-1.lua",
+      "sha256": "30bf880531612691f94679f3dfe804049fd433230d3bdc457afd3ddaf0baabea",
+      "bytes": 270
+    },
+    {
+      "path": "dist/esm/commands/isJobInList-1.lua",
+      "sha256": "30bf880531612691f94679f3dfe804049fd433230d3bdc457afd3ddaf0baabea",
+      "bytes": 270
+    },
+    {
+      "path": "dist/cjs/commands/includes/isJobSchedulerJob.lua",
+      "sha256": "2c4c960d75094304f7d07e5ea06f1dbc7c2b593885aebbe35c4222f924e15ffd",
+      "bytes": 503
+    },
+    {
+      "path": "dist/esm/commands/includes/isJobSchedulerJob.lua",
+      "sha256": "2c4c960d75094304f7d07e5ea06f1dbc7c2b593885aebbe35c4222f924e15ffd",
+      "bytes": 503
+    },
+    {
+      "path": "dist/cjs/commands/includes/isLocked.lua",
+      "sha256": "eaa9bc81b6391f4cb0106866b9f7d4c79d8976f3d38a79544b9a5a05361bf22f",
+      "bytes": 957
+    },
+    {
+      "path": "dist/esm/commands/includes/isLocked.lua",
+      "sha256": "eaa9bc81b6391f4cb0106866b9f7d4c79d8976f3d38a79544b9a5a05361bf22f",
+      "bytes": 957
+    },
+    {
+      "path": "dist/cjs/commands/isMaxed-2.lua",
+      "sha256": "0a80150b260c450bd5dc0ff49eb71237cb74bc46e5f74b139b87925cd98f68d1",
+      "bytes": 252
+    },
+    {
+      "path": "dist/esm/commands/isMaxed-2.lua",
+      "sha256": "0a80150b260c450bd5dc0ff49eb71237cb74bc46e5f74b139b87925cd98f68d1",
+      "bytes": 252
+    },
+    {
+      "path": "dist/cjs/commands/includes/isQueueMaxed.lua",
+      "sha256": "59ba61e45601003cedc1293f7b7715550cb45e73a9b7ccb0e3aa5c9b72dbf674",
+      "bytes": 354
+    },
+    {
+      "path": "dist/esm/commands/includes/isQueueMaxed.lua",
+      "sha256": "59ba61e45601003cedc1293f7b7715550cb45e73a9b7ccb0e3aa5c9b72dbf674",
+      "bytes": 354
+    },
+    {
+      "path": "dist/cjs/commands/includes/isQueuePaused.lua",
+      "sha256": "a37e955b68b50b2662fccc2a9fa91ae5add980a42cb94c633f62fd10dff91d91",
+      "bytes": 255
+    },
+    {
+      "path": "dist/esm/commands/includes/isQueuePaused.lua",
+      "sha256": "a37e955b68b50b2662fccc2a9fa91ae5add980a42cb94c633f62fd10dff91d91",
+      "bytes": 255
+    },
+    {
+      "path": "dist/cjs/commands/includes/isQueuePausedOrMaxed.lua",
+      "sha256": "b347fdeb087c7a7c6fda41e845f56f6ab8a34999238cff57fc33efcf63e9bee3",
+      "bytes": 484
+    },
+    {
+      "path": "dist/esm/commands/includes/isQueuePausedOrMaxed.lua",
+      "sha256": "b347fdeb087c7a7c6fda41e845f56f6ab8a34999238cff57fc33efcf63e9bee3",
+      "bytes": 484
+    },
+    {
+      "path": "dist/cjs/commands/includes/moveChildBackToParentDependencies.lua",
+      "sha256": "69f0d2e2ed6a627e78d81c85cbd2bbb648d0adbf42965d9e303abc90432d3eb4",
+      "bytes": 749
+    },
+    {
+      "path": "dist/esm/commands/includes/moveChildBackToParentDependencies.lua",
+      "sha256": "69f0d2e2ed6a627e78d81c85cbd2bbb648d0adbf42965d9e303abc90432d3eb4",
+      "bytes": 749
+    },
+    {
+      "path": "dist/cjs/commands/includes/moveChildFromDependenciesIfNeeded.lua",
+      "sha256": "3a701c2ee43fde55dc5c46529413582262302b8ee667dfa6f57e9cdf8ead8b27",
+      "bytes": 2995
+    },
+    {
+      "path": "dist/esm/commands/includes/moveChildFromDependenciesIfNeeded.lua",
+      "sha256": "3a701c2ee43fde55dc5c46529413582262302b8ee667dfa6f57e9cdf8ead8b27",
+      "bytes": 2995
+    },
+    {
+      "path": "dist/cjs/commands/moveJobFromActiveToWait-9.lua",
+      "sha256": "959ec2b87e4b820f6eaea75fcaab882392cea0ccf99c63193e4881330f86d9c6",
+      "bytes": 1509
+    },
+    {
+      "path": "dist/esm/commands/moveJobFromActiveToWait-9.lua",
+      "sha256": "959ec2b87e4b820f6eaea75fcaab882392cea0ccf99c63193e4881330f86d9c6",
+      "bytes": 1509
+    },
+    {
+      "path": "dist/cjs/commands/includes/moveJobFromPrioritizedToActive.lua",
+      "sha256": "7ff9813350e337debb58b0eaf6f83680e51adb9196d8f4dc184eae0990517bce",
+      "bytes": 373
+    },
+    {
+      "path": "dist/esm/commands/includes/moveJobFromPrioritizedToActive.lua",
+      "sha256": "7ff9813350e337debb58b0eaf6f83680e51adb9196d8f4dc184eae0990517bce",
+      "bytes": 373
+    },
+    {
+      "path": "dist/cjs/commands/moveJobsToWait-8.lua",
+      "sha256": "019589f064c426fb47ef92f4d82e2d253cd49b641ae15fd765397ec0b2e3b860",
+      "bytes": 2094
+    },
+    {
+      "path": "dist/esm/commands/moveJobsToWait-8.lua",
+      "sha256": "019589f064c426fb47ef92f4d82e2d253cd49b641ae15fd765397ec0b2e3b860",
+      "bytes": 2094
+    },
+    {
+      "path": "dist/cjs/commands/includes/moveJobToWait.lua",
+      "sha256": "966d62ef90039afb97bfaaf72caf1283246bbeee9f8a444ab5636583a85ea85a",
+      "bytes": 511
+    },
+    {
+      "path": "dist/esm/commands/includes/moveJobToWait.lua",
+      "sha256": "966d62ef90039afb97bfaaf72caf1283246bbeee9f8a444ab5636583a85ea85a",
+      "bytes": 511
+    },
+    {
+      "path": "dist/cjs/commands/includes/moveParentToWait.lua",
+      "sha256": "a4813de74ed31a8161d25d2a23b41bc6b3042bc7bb47141dc70c1804b51e181e",
+      "bytes": 1828
+    },
+    {
+      "path": "dist/esm/commands/includes/moveParentToWait.lua",
+      "sha256": "a4813de74ed31a8161d25d2a23b41bc6b3042bc7bb47141dc70c1804b51e181e",
+      "bytes": 1828
+    },
+    {
+      "path": "dist/cjs/commands/includes/moveParentToWaitIfNeeded.lua",
+      "sha256": "c617af1b7998643ef46aefd2532f450551427a28201ecc6d1301f161afd2aa64",
+      "bytes": 559
+    },
+    {
+      "path": "dist/esm/commands/includes/moveParentToWaitIfNeeded.lua",
+      "sha256": "c617af1b7998643ef46aefd2532f450551427a28201ecc6d1301f161afd2aa64",
+      "bytes": 559
+    },
+    {
+      "path": "dist/cjs/commands/includes/moveParentToWaitIfNoPendingDependencies.lua",
+      "sha256": "10932e7bc87bc1ea6e48ec803955b7cc00aac2adb6cf2cbf12bb596d3c5b3363",
+      "bytes": 504
+    },
+    {
+      "path": "dist/esm/commands/includes/moveParentToWaitIfNoPendingDependencies.lua",
+      "sha256": "10932e7bc87bc1ea6e48ec803955b7cc00aac2adb6cf2cbf12bb596d3c5b3363",
+      "bytes": 504
+    },
+    {
+      "path": "dist/cjs/commands/moveStalledJobsToWait-9.lua",
+      "sha256": "3bfdcfcf90882a81fb77e6cc4317f9f9e9453e3361f64b0c0e11b7c162d923a1",
+      "bytes": 4313
+    },
+    {
+      "path": "dist/esm/commands/moveStalledJobsToWait-9.lua",
+      "sha256": "3bfdcfcf90882a81fb77e6cc4317f9f9e9453e3361f64b0c0e11b7c162d923a1",
+      "bytes": 4313
+    },
+    {
+      "path": "dist/cjs/commands/moveToActive-11.lua",
+      "sha256": "a097cd12b152a4bae61dc5f84508fd6c9315555ef0f828bed58dbb8684decaf0",
+      "bytes": 3134
+    },
+    {
+      "path": "dist/esm/commands/moveToActive-11.lua",
+      "sha256": "a097cd12b152a4bae61dc5f84508fd6c9315555ef0f828bed58dbb8684decaf0",
+      "bytes": 3134
+    },
+    {
+      "path": "dist/cjs/commands/moveToDelayed-11.lua",
+      "sha256": "f2c27d4e0f449633d08f09976f4de3d9b7bcbbb34f89fd68cfc53389a24f6687",
+      "bytes": 2507
+    },
+    {
+      "path": "dist/esm/commands/moveToDelayed-11.lua",
+      "sha256": "f2c27d4e0f449633d08f09976f4de3d9b7bcbbb34f89fd68cfc53389a24f6687",
+      "bytes": 2507
+    },
+    {
+      "path": "dist/cjs/commands/moveToFinished-14.lua",
+      "sha256": "d7336f45303f7f0f0c78cbf62ac4839b6b805f2610eb918d8cfe19a25451fa5a",
+      "bytes": 7808
+    },
+    {
+      "path": "dist/esm/commands/moveToFinished-14.lua",
+      "sha256": "d7336f45303f7f0f0c78cbf62ac4839b6b805f2610eb918d8cfe19a25451fa5a",
+      "bytes": 7808
+    },
+    {
+      "path": "dist/cjs/commands/moveToWaitingChildren-7.lua",
+      "sha256": "9793fe05ad8048d47e70ff9e2502e37e775baecd1a9b176db1dbb30cc7c25bed",
+      "bytes": 2323
+    },
+    {
+      "path": "dist/esm/commands/moveToWaitingChildren-7.lua",
+      "sha256": "9793fe05ad8048d47e70ff9e2502e37e775baecd1a9b176db1dbb30cc7c25bed",
+      "bytes": 2323
+    },
+    {
+      "path": "dist/cjs/commands/obliterate-2.lua",
+      "sha256": "23fcbc24a763761cfbca022bc92f0a1be2c1ea350fb70cd6b24f1253b830c6f2",
+      "bytes": 3295
+    },
+    {
+      "path": "dist/esm/commands/obliterate-2.lua",
+      "sha256": "23fcbc24a763761cfbca022bc92f0a1be2c1ea350fb70cd6b24f1253b830c6f2",
+      "bytes": 3295
+    },
+    {
+      "path": "dist/cjs/commands/paginate-1.lua",
+      "sha256": "4697d37d5eb7f253f0016467f170044a87eab23e2662a925ed48bdfa3bdd91f8",
+      "bytes": 1285
+    },
+    {
+      "path": "dist/esm/commands/paginate-1.lua",
+      "sha256": "4697d37d5eb7f253f0016467f170044a87eab23e2662a925ed48bdfa3bdd91f8",
+      "bytes": 1285
+    },
+    {
+      "path": "dist/cjs/commands/pause-7.lua",
+      "sha256": "0b30955bf97abe6a0f4eb4b4bdeb0d504bc34d9bf0e5ac5eff41ca391d2a6f0e",
+      "bytes": 1748
+    },
+    {
+      "path": "dist/esm/commands/pause-7.lua",
+      "sha256": "0b30955bf97abe6a0f4eb4b4bdeb0d504bc34d9bf0e5ac5eff41ca391d2a6f0e",
+      "bytes": 1748
+    },
+    {
+      "path": "dist/cjs/commands/includes/prepareJobForProcessing.lua",
+      "sha256": "b1cc78fa3446e8ec3f52585f67a42fe40faf4d3f0328216bf8b6ed58106b4668",
+      "bytes": 1602
+    },
+    {
+      "path": "dist/esm/commands/includes/prepareJobForProcessing.lua",
+      "sha256": "b1cc78fa3446e8ec3f52585f67a42fe40faf4d3f0328216bf8b6ed58106b4668",
+      "bytes": 1602
+    },
+    {
+      "path": "dist/cjs/commands/promote-9.lua",
+      "sha256": "d9f4b220d25c8ab83bdd4806510135b37f52f4e889f1cc056a16bbbe4e3251e2",
+      "bytes": 1665
+    },
+    {
+      "path": "dist/esm/commands/promote-9.lua",
+      "sha256": "d9f4b220d25c8ab83bdd4806510135b37f52f4e889f1cc056a16bbbe4e3251e2",
+      "bytes": 1665
+    },
+    {
+      "path": "dist/cjs/commands/includes/promoteDelayedJobs.lua",
+      "sha256": "589b54b638e2c7f81b3815c40ac7b4f509b4d842f0823dcfea4c3346920bc3c4",
+      "bytes": 1422
+    },
+    {
+      "path": "dist/esm/commands/includes/promoteDelayedJobs.lua",
+      "sha256": "589b54b638e2c7f81b3815c40ac7b4f509b4d842f0823dcfea4c3346920bc3c4",
+      "bytes": 1422
+    },
+    {
+      "path": "dist/cjs/commands/includes/pushBackJobWithPriority.lua",
+      "sha256": "a936ead0f0fd382c566b8589c763879bc8fdac4de9a6561b2fbb72a1d2828495",
+      "bytes": 353
+    },
+    {
+      "path": "dist/esm/commands/includes/pushBackJobWithPriority.lua",
+      "sha256": "a936ead0f0fd382c566b8589c763879bc8fdac4de9a6561b2fbb72a1d2828495",
+      "bytes": 353
+    },
+    {
+      "path": "dist/cjs/commands/includes/recoverStaleDeduplicationKey.lua",
+      "sha256": "74247c4f8d8e666fcb74f4564c2ce0ab2cf5f2f59f0b1d52b4dbb779f800f082",
+      "bytes": 1284
+    },
+    {
+      "path": "dist/esm/commands/includes/recoverStaleDeduplicationKey.lua",
+      "sha256": "74247c4f8d8e666fcb74f4564c2ce0ab2cf5f2f59f0b1d52b4dbb779f800f082",
+      "bytes": 1284
+    },
+    {
+      "path": "dist/cjs/commands/includes/refreshRelayNamespace.lua",
+      "sha256": "fbec5d4bc84b2ca3f46bc3a7e18ad300aa17d9347f4f37daabea77e6e9f5cfde",
+      "bytes": 1330
+    },
+    {
+      "path": "dist/esm/commands/includes/refreshRelayNamespace.lua",
+      "sha256": "fbec5d4bc84b2ca3f46bc3a7e18ad300aa17d9347f4f37daabea77e6e9f5cfde",
+      "bytes": 1330
+    },
+    {
+      "path": "dist/cjs/commands/relayAckInbox-1.lua",
+      "sha256": "71c9824f9c2efe183677863b7178f006a1f57bd699a5f756d928745434502508",
+      "bytes": 385
+    },
+    {
+      "path": "dist/esm/commands/relayAckInbox-1.lua",
+      "sha256": "71c9824f9c2efe183677863b7178f006a1f57bd699a5f756d928745434502508",
+      "bytes": 385
+    },
+    {
+      "path": "dist/cjs/commands/relayDeleteRetained-1.lua",
+      "sha256": "1f380f873b030aaaf519fd46b50515f307da90dad9ea07fd0f934c8de80eccc1",
+      "bytes": 969
+    },
+    {
+      "path": "dist/esm/commands/relayDeleteRetained-1.lua",
+      "sha256": "1f380f873b030aaaf519fd46b50515f307da90dad9ea07fd0f934c8de80eccc1",
+      "bytes": 969
+    },
+    {
+      "path": "dist/cjs/commands/relayGet-1.lua",
+      "sha256": "606f940dc904cceb922475ae63987af809863a3876fdc215f088d561dfb78d9a",
+      "bytes": 4379
+    },
+    {
+      "path": "dist/esm/commands/relayGet-1.lua",
+      "sha256": "606f940dc904cceb922475ae63987af809863a3876fdc215f088d561dfb78d9a",
+      "bytes": 4379
+    },
+    {
+      "path": "dist/cjs/commands/relayGetNamespaces-1.lua",
+      "sha256": "0b93b72e3db2443449c0c49d9cf9e1497b29ad4171e689ffc4b21ed37f14651e",
+      "bytes": 516
+    },
+    {
+      "path": "dist/esm/commands/relayGetNamespaces-1.lua",
+      "sha256": "0b93b72e3db2443449c0c49d9cf9e1497b29ad4171e689ffc4b21ed37f14651e",
+      "bytes": 516
+    },
+    {
+      "path": "dist/cjs/commands/relayHeartbeat-1.lua",
+      "sha256": "5e15f0eba6937ece2133758a4336c2913f9dd0aba4d9cf7b1d430e4dc97bce39",
+      "bytes": 945
+    },
+    {
+      "path": "dist/esm/commands/relayHeartbeat-1.lua",
+      "sha256": "5e15f0eba6937ece2133758a4336c2913f9dd0aba4d9cf7b1d430e4dc97bce39",
+      "bytes": 945
+    },
+    {
+      "path": "dist/cjs/commands/includes/relayIndex.lua",
+      "sha256": "e4796ecdf923bb3b842a9fffeca073ce9dd06b75f0141d6c8d0ca173ae5b99c9",
+      "bytes": 4129
+    },
+    {
+      "path": "dist/esm/commands/includes/relayIndex.lua",
+      "sha256": "e4796ecdf923bb3b842a9fffeca073ce9dd06b75f0141d6c8d0ca173ae5b99c9",
+      "bytes": 4129
+    },
+    {
+      "path": "dist/cjs/commands/relayPublish-1.lua",
+      "sha256": "ad651ded92cbe93ea6c0ac46d36d2643a1750a6f23f859064db8e526f7d354df",
+      "bytes": 4819
+    },
+    {
+      "path": "dist/esm/commands/relayPublish-1.lua",
+      "sha256": "ad651ded92cbe93ea6c0ac46d36d2643a1750a6f23f859064db8e526f7d354df",
+      "bytes": 4819
+    },
+    {
+      "path": "dist/cjs/commands/relayReadInbox-1.lua",
+      "sha256": "d7a6bffcd80bc1ca07f4bf3f20dbdc98893e93ed9866ee2c9fac47b4072e7e3d",
+      "bytes": 858
+    },
+    {
+      "path": "dist/esm/commands/relayReadInbox-1.lua",
+      "sha256": "d7a6bffcd80bc1ca07f4bf3f20dbdc98893e93ed9866ee2c9fac47b4072e7e3d",
+      "bytes": 858
+    },
+    {
+      "path": "dist/cjs/commands/relayRegisterNode-1.lua",
+      "sha256": "5a4acf35cd774b7d044c1951944f5b7b463f93a2e4f4ab2a8349a2517fe55d2b",
+      "bytes": 1758
+    },
+    {
+      "path": "dist/esm/commands/relayRegisterNode-1.lua",
+      "sha256": "5a4acf35cd774b7d044c1951944f5b7b463f93a2e4f4ab2a8349a2517fe55d2b",
+      "bytes": 1758
+    },
+    {
+      "path": "dist/cjs/commands/relayRemoveEndpoint-1.lua",
+      "sha256": "37562d61c2e8d8fedee09270f1e91684637768985e6ee7734b71c8544120a743",
+      "bytes": 335
+    },
+    {
+      "path": "dist/esm/commands/relayRemoveEndpoint-1.lua",
+      "sha256": "37562d61c2e8d8fedee09270f1e91684637768985e6ee7734b71c8544120a743",
+      "bytes": 335
+    },
+    {
+      "path": "dist/cjs/commands/relaySubscribe-1.lua",
+      "sha256": "7499488ac52184f73671c62d59cce34534191197238f37069a3385e90ed5f9ca",
+      "bytes": 2005
+    },
+    {
+      "path": "dist/esm/commands/relaySubscribe-1.lua",
+      "sha256": "7499488ac52184f73671c62d59cce34534191197238f37069a3385e90ed5f9ca",
+      "bytes": 2005
+    },
+    {
+      "path": "dist/cjs/commands/relaySweep-1.lua",
+      "sha256": "9da3f658fbbddc6f66b3e6b7ee80a0f5bf8119fc8899c63f10b7cee3222a0861",
+      "bytes": 970
+    },
+    {
+      "path": "dist/esm/commands/relaySweep-1.lua",
+      "sha256": "9da3f658fbbddc6f66b3e6b7ee80a0f5bf8119fc8899c63f10b7cee3222a0861",
+      "bytes": 970
+    },
+    {
+      "path": "dist/cjs/commands/includes/relayTime.lua",
+      "sha256": "8245a2d870a4248e58592db595cfe6132664f965ccaa73f6802187b3dfb3f4eb",
+      "bytes": 505
+    },
+    {
+      "path": "dist/esm/commands/includes/relayTime.lua",
+      "sha256": "8245a2d870a4248e58592db595cfe6132664f965ccaa73f6802187b3dfb3f4eb",
+      "bytes": 505
+    },
+    {
+      "path": "dist/cjs/commands/includes/relayTopics.lua",
+      "sha256": "ab5a7c2c4c38928ec7555857b1bbea97430295a81a435280de6a588f22220a9e",
+      "bytes": 2465
+    },
+    {
+      "path": "dist/esm/commands/includes/relayTopics.lua",
+      "sha256": "ab5a7c2c4c38928ec7555857b1bbea97430295a81a435280de6a588f22220a9e",
+      "bytes": 2465
+    },
+    {
+      "path": "dist/cjs/commands/relayTouchNamespace-1.lua",
+      "sha256": "7f694aa6e58a9a11e515b82e15ccee49ead5b171b05f528d6556771e9773c77e",
+      "bytes": 683
+    },
+    {
+      "path": "dist/esm/commands/relayTouchNamespace-1.lua",
+      "sha256": "7f694aa6e58a9a11e515b82e15ccee49ead5b171b05f528d6556771e9773c77e",
+      "bytes": 683
+    },
+    {
+      "path": "dist/cjs/commands/relayTrimInbox-1.lua",
+      "sha256": "f1075399fc36dbec7bd4b1bad2749aaafebbf354bf5f64bb6aec04dbfd3c1e4a",
+      "bytes": 2027
+    },
+    {
+      "path": "dist/esm/commands/relayTrimInbox-1.lua",
+      "sha256": "f1075399fc36dbec7bd4b1bad2749aaafebbf354bf5f64bb6aec04dbfd3c1e4a",
+      "bytes": 2027
+    },
+    {
+      "path": "dist/cjs/commands/relayUnregisterNode-1.lua",
+      "sha256": "a47220095ba1ed0328f3473c07aa50986a4664c03aa2e924faf38294148bf238",
+      "bytes": 639
+    },
+    {
+      "path": "dist/esm/commands/relayUnregisterNode-1.lua",
+      "sha256": "a47220095ba1ed0328f3473c07aa50986a4664c03aa2e924faf38294148bf238",
+      "bytes": 639
+    },
+    {
+      "path": "dist/cjs/commands/releaseLock-1.lua",
+      "sha256": "d06adb03511de0f2981b5d81d25037086fbac88d3cb0c2b8a34df79ad9718053",
+      "bytes": 307
+    },
+    {
+      "path": "dist/esm/commands/releaseLock-1.lua",
+      "sha256": "d06adb03511de0f2981b5d81d25037086fbac88d3cb0c2b8a34df79ad9718053",
+      "bytes": 307
+    },
+    {
+      "path": "dist/cjs/commands/removeChildDependency-1.lua",
+      "sha256": "433e3d3db8937eb3849f506801a704b7e62d30be9376a9577ef4d26c8a740352",
+      "bytes": 685
+    },
+    {
+      "path": "dist/esm/commands/removeChildDependency-1.lua",
+      "sha256": "433e3d3db8937eb3849f506801a704b7e62d30be9376a9577ef4d26c8a740352",
+      "bytes": 685
+    },
+    {
+      "path": "dist/cjs/commands/removeDeduplicationKey-1.lua",
+      "sha256": "860c34dc0d120b88bced3d1a2adc823b5b3576fae5440b2f7c1d9318accf0323",
+      "bytes": 393
+    },
+    {
+      "path": "dist/esm/commands/removeDeduplicationKey-1.lua",
+      "sha256": "860c34dc0d120b88bced3d1a2adc823b5b3576fae5440b2f7c1d9318accf0323",
+      "bytes": 393
+    },
+    {
+      "path": "dist/cjs/commands/includes/removeDeduplicationKeyIfNeededOnFinalization.lua",
+      "sha256": "fef48705f6df8106e9599b8539a689900b3a820b55e0450a985b22046f583194",
+      "bytes": 634
+    },
+    {
+      "path": "dist/esm/commands/includes/removeDeduplicationKeyIfNeededOnFinalization.lua",
+      "sha256": "fef48705f6df8106e9599b8539a689900b3a820b55e0450a985b22046f583194",
+      "bytes": 634
+    },
+    {
+      "path": "dist/cjs/commands/includes/removeDeduplicationKeyIfNeededOnRemoval.lua",
+      "sha256": "cf3fe8a640a44fd8637f96afe5b28f2e8a619fa7f986416f243f050815d13399",
+      "bytes": 578
+    },
+    {
+      "path": "dist/esm/commands/includes/removeDeduplicationKeyIfNeededOnRemoval.lua",
+      "sha256": "cf3fe8a640a44fd8637f96afe5b28f2e8a619fa7f986416f243f050815d13399",
+      "bytes": 578
+    },
+    {
+      "path": "dist/cjs/commands/removeJob-2.lua",
+      "sha256": "8e14c006968b11d9a04128aa8c4a89df58ad917a0d4e8a3c9afce5c13cb7a557",
+      "bytes": 960
+    },
+    {
+      "path": "dist/esm/commands/removeJob-2.lua",
+      "sha256": "8e14c006968b11d9a04128aa8c4a89df58ad917a0d4e8a3c9afce5c13cb7a557",
+      "bytes": 960
+    },
+    {
+      "path": "dist/cjs/commands/includes/removeJob.lua",
+      "sha256": "b7c6655ea027d9d70fd70de52582fed4299f5ce8d5ec15a08a23233909c1e658",
+      "bytes": 548
+    },
+    {
+      "path": "dist/esm/commands/includes/removeJob.lua",
+      "sha256": "b7c6655ea027d9d70fd70de52582fed4299f5ce8d5ec15a08a23233909c1e658",
+      "bytes": 548
+    },
+    {
+      "path": "dist/cjs/commands/includes/removeJobFromAnyState.lua",
+      "sha256": "c89a2da89b69667fd4f73aa133d9ea5a52d2f2c33803c75bea9c7482d4947612",
+      "bytes": 1229
+    },
+    {
+      "path": "dist/esm/commands/includes/removeJobFromAnyState.lua",
+      "sha256": "c89a2da89b69667fd4f73aa133d9ea5a52d2f2c33803c75bea9c7482d4947612",
+      "bytes": 1229
+    },
+    {
+      "path": "dist/cjs/commands/includes/removeJobKeys.lua",
+      "sha256": "3ef7537779443d1f580acce3352f3d57050b9dbbac952c62911ca36d4201ad67",
+      "bytes": 233
+    },
+    {
+      "path": "dist/esm/commands/includes/removeJobKeys.lua",
+      "sha256": "3ef7537779443d1f580acce3352f3d57050b9dbbac952c62911ca36d4201ad67",
+      "bytes": 233
+    },
+    {
+      "path": "dist/cjs/commands/includes/removeJobs.lua",
+      "sha256": "c5f9b238913d0117db4cd66352532e3d7ce64b48abd6d8da0cacd8f60148fbdf",
+      "bytes": 256
+    },
+    {
+      "path": "dist/esm/commands/includes/removeJobs.lua",
+      "sha256": "c5f9b238913d0117db4cd66352532e3d7ce64b48abd6d8da0cacd8f60148fbdf",
+      "bytes": 256
+    },
+    {
+      "path": "dist/cjs/commands/includes/removeJobsByMaxAge.lua",
+      "sha256": "0472931a0b4cfe5f490e09d543b2806cf2c69c5426691109422b68d72307fc69",
+      "bytes": 690
+    },
+    {
+      "path": "dist/esm/commands/includes/removeJobsByMaxAge.lua",
+      "sha256": "0472931a0b4cfe5f490e09d543b2806cf2c69c5426691109422b68d72307fc69",
+      "bytes": 690
+    },
+    {
+      "path": "dist/cjs/commands/includes/removeJobsByMaxCount.lua",
+      "sha256": "2f51a4bd01105138cf32f5f1a72616cb63f6fdb2c7d0b138d0006c2d6966c2c4",
+      "bytes": 409
+    },
+    {
+      "path": "dist/esm/commands/includes/removeJobsByMaxCount.lua",
+      "sha256": "2f51a4bd01105138cf32f5f1a72616cb63f6fdb2c7d0b138d0006c2d6966c2c4",
+      "bytes": 409
+    },
+    {
+      "path": "dist/cjs/commands/removeJobScheduler-3.lua",
+      "sha256": "830ddcb9060432542e33cf896fd1898e0d40aad4b28ea52619239088906732b6",
+      "bytes": 914
+    },
+    {
+      "path": "dist/esm/commands/removeJobScheduler-3.lua",
+      "sha256": "830ddcb9060432542e33cf896fd1898e0d40aad4b28ea52619239088906732b6",
+      "bytes": 914
+    },
+    {
+      "path": "dist/cjs/commands/includes/removeJobWithChildren.lua",
+      "sha256": "1117256971fc23ceaa1e5812418a72498b25bdf259011e13257cc8d577ac3333",
+      "bytes": 3501
+    },
+    {
+      "path": "dist/esm/commands/includes/removeJobWithChildren.lua",
+      "sha256": "1117256971fc23ceaa1e5812418a72498b25bdf259011e13257cc8d577ac3333",
+      "bytes": 3501
+    },
+    {
+      "path": "dist/cjs/commands/includes/removeListJobs.lua",
+      "sha256": "2cd58962c8b37fa8abffd0f6710a56a37a8fa3b7fc7d93100e53bfc7dd00b049",
+      "bytes": 514
+    },
+    {
+      "path": "dist/esm/commands/includes/removeListJobs.lua",
+      "sha256": "2cd58962c8b37fa8abffd0f6710a56a37a8fa3b7fc7d93100e53bfc7dd00b049",
+      "bytes": 514
+    },
+    {
+      "path": "dist/cjs/commands/includes/removeLock.lua",
+      "sha256": "b88f066760e53683fd27727b086d7dcd0e792a0d0a65e12e1f3e829339d808ba",
+      "bytes": 468
+    },
+    {
+      "path": "dist/esm/commands/includes/removeLock.lua",
+      "sha256": "b88f066760e53683fd27727b086d7dcd0e792a0d0a65e12e1f3e829339d808ba",
+      "bytes": 468
+    },
+    {
+      "path": "dist/cjs/commands/removeOrphanedJobs-1.lua",
+      "sha256": "b1cacf706c60d9f90511cac6bb1a12e0fec4186c7ec3484043b0be44e6f0f361",
+      "bytes": 2104
+    },
+    {
+      "path": "dist/esm/commands/removeOrphanedJobs-1.lua",
+      "sha256": "b1cacf706c60d9f90511cac6bb1a12e0fec4186c7ec3484043b0be44e6f0f361",
+      "bytes": 2104
+    },
+    {
+      "path": "dist/cjs/commands/includes/removeParentDependencyKey.lua",
+      "sha256": "2a97d866674d7c98ad82fec7a897c24cd46e22ab12ce6a305480414005b66633",
+      "bytes": 3441
+    },
+    {
+      "path": "dist/esm/commands/includes/removeParentDependencyKey.lua",
+      "sha256": "2a97d866674d7c98ad82fec7a897c24cd46e22ab12ce6a305480414005b66633",
+      "bytes": 3441
+    },
+    {
+      "path": "dist/cjs/commands/removeUnprocessedChildren-2.lua",
+      "sha256": "4d4bfa95b45fadc44873df2a42f8ea3498cf40c38bea1309878a75fe0e99f73f",
+      "bytes": 598
+    },
+    {
+      "path": "dist/esm/commands/removeUnprocessedChildren-2.lua",
+      "sha256": "4d4bfa95b45fadc44873df2a42f8ea3498cf40c38bea1309878a75fe0e99f73f",
+      "bytes": 598
+    },
+    {
+      "path": "dist/cjs/commands/includes/removeZSetJobs.lua",
+      "sha256": "e1ee6123329810f259d6ff40679872e6b32293baeb0b776c7921d304095aa8ef",
+      "bytes": 532
+    },
+    {
+      "path": "dist/esm/commands/includes/removeZSetJobs.lua",
+      "sha256": "e1ee6123329810f259d6ff40679872e6b32293baeb0b776c7921d304095aa8ef",
+      "bytes": 532
+    },
+    {
+      "path": "dist/cjs/commands/reprocessJob-9.lua",
+      "sha256": "f3787a3eb9a6381ddbe2f26ee0f314952e9bde545535a223fef904ab716546f7",
+      "bytes": 2034
+    },
+    {
+      "path": "dist/esm/commands/reprocessJob-9.lua",
+      "sha256": "f3787a3eb9a6381ddbe2f26ee0f314952e9bde545535a223fef904ab716546f7",
+      "bytes": 2034
+    },
+    {
+      "path": "dist/cjs/commands/includes/requeueDeduplicatedJob.lua",
+      "sha256": "1fc6fc2feb31978da1a8f7e0007e6fc1483801b95a552063cd26836cb003ac9f",
+      "bytes": 2588
+    },
+    {
+      "path": "dist/esm/commands/includes/requeueDeduplicatedJob.lua",
+      "sha256": "1fc6fc2feb31978da1a8f7e0007e6fc1483801b95a552063cd26836cb003ac9f",
+      "bytes": 2588
+    },
+    {
+      "path": "dist/cjs/commands/retryJob-11.lua",
+      "sha256": "999adde89b617ef45d71ebf87cb816122201d5d3f3e6ec6f5e14f4acd506fefe",
+      "bytes": 2326
+    },
+    {
+      "path": "dist/esm/commands/retryJob-11.lua",
+      "sha256": "999adde89b617ef45d71ebf87cb816122201d5d3f3e6ec6f5e14f4acd506fefe",
+      "bytes": 2326
+    },
+    {
+      "path": "dist/cjs/commands/saveStacktrace-1.lua",
+      "sha256": "e4480ff56304cad025828e3b40f0c42e0acf3e5b0fd016f5b6cf4f3f3f11d8ae",
+      "bytes": 337
+    },
+    {
+      "path": "dist/esm/commands/saveStacktrace-1.lua",
+      "sha256": "e4480ff56304cad025828e3b40f0c42e0acf3e5b0fd016f5b6cf4f3f3f11d8ae",
+      "bytes": 337
+    },
+    {
+      "path": "dist/cjs/commands/includes/setDeduplicationKey.lua",
+      "sha256": "c9865740e8ac92b8e13203ab5e68043f12d564d40ee6addb0830f916074167f0",
+      "bytes": 401
+    },
+    {
+      "path": "dist/esm/commands/includes/setDeduplicationKey.lua",
+      "sha256": "c9865740e8ac92b8e13203ab5e68043f12d564d40ee6addb0830f916074167f0",
+      "bytes": 401
+    },
+    {
+      "path": "dist/cjs/commands/includes/storeAndEnqueueJob.lua",
+      "sha256": "f1e9884a13c068d4968fe9814d39091429bfafa48c8dd555025f05ade8a8c670",
+      "bytes": 1456
+    },
+    {
+      "path": "dist/esm/commands/includes/storeAndEnqueueJob.lua",
+      "sha256": "f1e9884a13c068d4968fe9814d39091429bfafa48c8dd555025f05ade8a8c670",
+      "bytes": 1456
+    },
+    {
+      "path": "dist/cjs/commands/includes/storeDeduplicatedNextJob.lua",
+      "sha256": "fa7a699209bcb952860e3e1fd3a4781aae46e92c660527fe9811f1e27b2010f7",
+      "bytes": 2401
+    },
+    {
+      "path": "dist/esm/commands/includes/storeDeduplicatedNextJob.lua",
+      "sha256": "fa7a699209bcb952860e3e1fd3a4781aae46e92c660527fe9811f1e27b2010f7",
+      "bytes": 2401
+    },
+    {
+      "path": "dist/cjs/commands/includes/storeJob.lua",
+      "sha256": "34bf9c99ad762cae3fa0a1a5a265e8ff63b598b5b9d7d0ebbfa8f56091b30dc1",
+      "bytes": 1165
+    },
+    {
+      "path": "dist/esm/commands/includes/storeJob.lua",
+      "sha256": "34bf9c99ad762cae3fa0a1a5a265e8ff63b598b5b9d7d0ebbfa8f56091b30dc1",
+      "bytes": 1165
+    },
+    {
+      "path": "dist/cjs/commands/includes/storeJobScheduler.lua",
+      "sha256": "b229c7f9cb6ef7e2db39b7a8faea482246bf6d965461c650d5da55e43e2b85dc",
+      "bytes": 1922
+    },
+    {
+      "path": "dist/esm/commands/includes/storeJobScheduler.lua",
+      "sha256": "b229c7f9cb6ef7e2db39b7a8faea482246bf6d965461c650d5da55e43e2b85dc",
+      "bytes": 1922
+    },
+    {
+      "path": "dist/cjs/commands/includes/trimEvents.lua",
+      "sha256": "47d17832c79d57c1e950cf7e3eeaddd4c70f1483c89bc4d14c458af51796d493",
+      "bytes": 350
+    },
+    {
+      "path": "dist/esm/commands/includes/trimEvents.lua",
+      "sha256": "47d17832c79d57c1e950cf7e3eeaddd4c70f1483c89bc4d14c458af51796d493",
+      "bytes": 350
+    },
+    {
+      "path": "dist/cjs/commands/updateData-1.lua",
+      "sha256": "3640c889d8502c47fca7016a44c7693c0b04aaafb37a06d18ed8fc7b2f60233b",
+      "bytes": 284
+    },
+    {
+      "path": "dist/esm/commands/updateData-1.lua",
+      "sha256": "3640c889d8502c47fca7016a44c7693c0b04aaafb37a06d18ed8fc7b2f60233b",
+      "bytes": 284
+    },
+    {
+      "path": "dist/cjs/commands/includes/updateExistingJobsParent.lua",
+      "sha256": "cf57067f5bb8abb4420ea016c86074ff492dd1f566735bdadebcc3e013cba817",
+      "bytes": 1140
+    },
+    {
+      "path": "dist/esm/commands/includes/updateExistingJobsParent.lua",
+      "sha256": "cf57067f5bb8abb4420ea016c86074ff492dd1f566735bdadebcc3e013cba817",
+      "bytes": 1140
+    },
+    {
+      "path": "dist/cjs/commands/includes/updateJobFields.lua",
+      "sha256": "ea81b9ee826e1146c2c0aa5b56e580acf8fe87c31bef56639c0c80d349e11e37",
+      "bytes": 322
+    },
+    {
+      "path": "dist/esm/commands/includes/updateJobFields.lua",
+      "sha256": "ea81b9ee826e1146c2c0aa5b56e580acf8fe87c31bef56639c0c80d349e11e37",
+      "bytes": 322
+    },
+    {
+      "path": "dist/cjs/commands/updateJobScheduler-12.lua",
+      "sha256": "04ec4e82a96dcf64c4830366a4f9fc2d4c6318e6aa657a08ce2f5dd7c1f0e08e",
+      "bytes": 3715
+    },
+    {
+      "path": "dist/esm/commands/updateJobScheduler-12.lua",
+      "sha256": "04ec4e82a96dcf64c4830366a4f9fc2d4c6318e6aa657a08ce2f5dd7c1f0e08e",
+      "bytes": 3715
+    },
+    {
+      "path": "dist/cjs/commands/includes/updateParentDepsIfNeeded.lua",
+      "sha256": "35d3815946403dc42be08b3e652e6a67d947c5fb331c4759b8a04be6e7a6cf1a",
+      "bytes": 484
+    },
+    {
+      "path": "dist/esm/commands/includes/updateParentDepsIfNeeded.lua",
+      "sha256": "35d3815946403dc42be08b3e652e6a67d947c5fb331c4759b8a04be6e7a6cf1a",
+      "bytes": 484
+    },
+    {
+      "path": "dist/cjs/commands/updateProgress-3.lua",
+      "sha256": "32508585fe79742cc08d615ea122bc9e73952551ab3fdae71b3246948755b269",
+      "bytes": 640
+    },
+    {
+      "path": "dist/esm/commands/updateProgress-3.lua",
+      "sha256": "32508585fe79742cc08d615ea122bc9e73952551ab3fdae71b3246948755b269",
+      "bytes": 640
+    },
+    {
+      "path": "README.md",
+      "sha256": "204d420167361620b685e5f6a651ce7b9ea1420dff9e3b24a660c37856953a8e",
+      "bytes": 12239
+    },
+    {
+      "path": "dist/esm/classes/abort-controller.d.ts",
+      "sha256": "77515d8e0ceb4f4bae7d0c9aafe9fd764a5f25601569ecbac3240cacfe136f14",
+      "bytes": 229
+    },
+    {
+      "path": "dist/esm/scripts/addDelayedJob-6.d.ts",
+      "sha256": "176d164a71b7e42bfbb7b87bb457728a6f4f8ebc2f1386ba10358c21b80ac6b3",
+      "bytes": 98
+    },
+    {
+      "path": "dist/esm/scripts/addJobScheduler-11.d.ts",
+      "sha256": "9787b621a14f75e2a8beba6d318e75af00586745ca2b8b66fb3f2edaae5b0e9e",
+      "bytes": 100
+    },
+    {
+      "path": "dist/esm/scripts/addLog-2.d.ts",
+      "sha256": "dd0b7333537f5cb89e10e7b19f927b28c11849b09542daef1f5d023b96f83776",
+      "bytes": 91
+    },
+    {
+      "path": "dist/esm/scripts/addParentJob-6.d.ts",
+      "sha256": "9f251dd23b2e8054aac7c9ce06aec62234f971770455cf7ac9ea61d13a0a9e7c",
+      "bytes": 97
+    },
+    {
+      "path": "dist/esm/scripts/addPrioritizedJob-9.d.ts",
+      "sha256": "579fba019a5e9caf42e88d7b10c230df0d7a31fcfd89df1c8f62faac969f941b",
+      "bytes": 102
+    },
+    {
+      "path": "dist/esm/scripts/addStandardJob-9.d.ts",
+      "sha256": "1dddf3c7864daff2fd99f85588079b51364289fe70af34a4161ef296c18726da",
+      "bytes": 99
+    },
+    {
+      "path": "dist/esm/interfaces/advanced-options.d.ts",
+      "sha256": "a8aa7a344599265ef9c2aba0433a805227b2c9b0e743106fab4d6f0c6966f536",
+      "bytes": 553
+    },
+    {
+      "path": "dist/esm/classes/async-fifo-queue.d.ts",
+      "sha256": "663266b8782a8b327a5196efa1b3627805e3e4fc712d6a4380f5e6571e45a813",
+      "bytes": 2491
+    },
+    {
+      "path": "dist/esm/interfaces/backoff-options.d.ts",
+      "sha256": "5aa42b32993e161aaf93d992300494377d38c8883e15fde44d5c7949313058af",
+      "bytes": 420
+    },
+    {
+      "path": "dist/esm/types/backoff-strategy.d.ts",
+      "sha256": "471486ab7c5c95c3df63c0fbebe6871b9535eedff8b582557dfd66fcbf946d5b",
+      "bytes": 184
+    },
+    {
+      "path": "dist/esm/classes/backoffs.d.ts",
+      "sha256": "45e82f28a80d855bab2355d5e46cc8edd7f2679fc5bfb0905dcf01ce59a5c347",
+      "bytes": 631
+    },
+    {
+      "path": "dist/esm/interfaces/base-job-options.d.ts",
+      "sha256": "41911db25d5e5def47342f8a6aee50080a226b580b1916d8696d60f0ad86ec4f",
+      "bytes": 3752
+    },
+    {
+      "path": "dist/esm/classes/bun-redis-client.d.ts",
+      "sha256": "8e780b37d9624d1d901bc3efbe9a03a906b675efd5fdeb94b4f2d8651ecea406",
+      "bytes": 816
+    },
+    {
+      "path": "dist/esm/scripts/changeDelay-4.d.ts",
+      "sha256": "5e53425c12122c8eed4e68d63a588f8934ede60998c675f3fb560c38db9b0db5",
+      "bytes": 96
+    },
+    {
+      "path": "dist/esm/scripts/changePriority-7.d.ts",
+      "sha256": "f476942a86546971adc1d4bbfd61ebedf8ca33c79fae1bfb0f163e9cac68b958",
+      "bytes": 99
+    },
+    {
+      "path": "dist/esm/enums/child-command.d.ts",
+      "sha256": "7c382c27e893982bf814a41e4cbd2606b9a72517d75eacb66bbe491ae8987a5f",
+      "bytes": 312
+    },
+    {
+      "path": "dist/esm/interfaces/child-message.d.ts",
+      "sha256": "9b92a4d989efc3eeefdca5f95f10267504abc7748ecff400b533cdf54dcdbd68",
+      "bytes": 187
+    },
+    {
+      "path": "dist/esm/classes/child-pool.d.ts",
+      "sha256": "4f5f11b73282262904f4c1bc5ffb76631b40ac8b54ae01bde274cb9242d6cb2f",
+      "bytes": 707
+    },
+    {
+      "path": "dist/esm/classes/child-processor.d.ts",
+      "sha256": "9e6dcb736749cc84304b38c5a1101b299659dbc3871bab5d1544ee8f8dc73e5b",
+      "bytes": 1517
+    },
+    {
+      "path": "dist/esm/classes/child.d.ts",
+      "sha256": "bd15222c3f016a97d7062a0018f7fe0d130be508ca276b43dcafa8c9032a3ea4",
+      "bytes": 989
+    },
+    {
+      "path": "dist/esm/scripts/cleanJobsInSet-3.d.ts",
+      "sha256": "f71b01c27cbe950aaa065e686af643e4c5b7c90ae6ded7962bf93673b6a8b223",
+      "bytes": 99
+    },
+    {
+      "path": "dist/esm/classes/errors/connection-closed-error.d.ts",
+      "sha256": "12d4af190aed4919e47c24149071c6001086ea11729353fb2749af172462a3af",
+      "bytes": 816
+    },
+    {
+      "path": "dist/esm/interfaces/connection.d.ts",
+      "sha256": "2f45dc6e152333f5d28bb660e4543bfd41412b5af16b9a6331b7fd0b4982885e",
+      "bytes": 254
+    },
+    {
+      "path": "dist/esm/utils/create-backend.d.ts",
+      "sha256": "f033d6fc5bd3a97fca1b7d76deacb69bb751e21cc709d52f5a7795799cb07b49",
+      "bytes": 1654
+    },
+    {
+      "path": "dist/esm/postgres/create-postgres-backend.d.ts",
+      "sha256": "ce95ed76206fdafc66f8710976bcd202333ff24fe48b4c65d6c9084b3f6716ca",
+      "bytes": 971
+    },
+    {
+      "path": "dist/esm/types/database-type.d.ts",
+      "sha256": "ea4eadfe3d8b0447ecea1cbbf7aad70423cca9350bc9103a1d80cebc37e6bdb3",
+      "bytes": 61
+    },
+    {
+      "path": "dist/esm/types/deduplication-options.d.ts",
+      "sha256": "243248596db650ce6f8907cbb3a8076a5ab6888a39c37debc11a81c2f9f9d247",
+      "bytes": 1127
+    },
+    {
+      "path": "dist/esm/types/default-queue-options.d.ts",
+      "sha256": "25ffcabb04bdeb92cb1ff231fae21b50bad899eff79c5de49bc53f8d0ca9fc1e",
+      "bytes": 818
+    },
+    {
+      "path": "dist/esm/classes/errors/delayed-error.d.ts",
+      "sha256": "4e4559e8e4ea7d87f914014074559e515de78308bacc733a7ea76f795de178a3",
+      "bytes": 265
+    },
+    {
+      "path": "dist/esm/scripts/drain-5.d.ts",
+      "sha256": "1841a2248669736447751ce979d4318af9247ffeac2ebea0886e26a9b25a441e",
+      "bytes": 90
+    },
+    {
+      "path": "dist/esm/enums/error-code.d.ts",
+      "sha256": "0850c98ca2cccae6ce2aad363f6eb370c401fbc279a64607fff90c0f87973a91",
+      "bytes": 358
+    },
+    {
+      "path": "dist/esm/scripts/extendLock-2.d.ts",
+      "sha256": "d09ab17b2953596c84fe3529fefde695ee236123728eff8bf6d492726cebb884",
+      "bytes": 95
+    },
+    {
+      "path": "dist/esm/scripts/extendLocks-1.d.ts",
+      "sha256": "672eeb0065e00748f6baa23c898fc607eadd2ff93092dc951d1c56a6d658491d",
+      "bytes": 96
+    },
+    {
+      "path": "dist/esm/classes/finished-errors.d.ts",
+      "sha256": "7ff60c61f44037a8d90f9f456d14b0acf8e08bdbda8512bd553f01e9cebc5228",
+      "bytes": 528
+    },
+    {
+      "path": "dist/esm/types/finished-status.d.ts",
+      "sha256": "b88645280562793af76ab59052d87e4846ac5ef19af054c729fbb87c73481a59",
+      "bytes": 124
+    },
+    {
+      "path": "dist/esm/interfaces/flow-job.d.ts",
+      "sha256": "684dbff0e5a524924305d3d61811174f92d9bea537275ee3eae066def3048fde",
+      "bytes": 1339
+    },
+    {
+      "path": "dist/esm/classes/flow-producer.d.ts",
+      "sha256": "0dbe03e99437504e7bbd9657fada26d8c406acf41d75fe0bef74d4f8bca138e0",
+      "bytes": 8107
+    },
+    {
+      "path": "dist/esm/scripts/getCounts-1.d.ts",
+      "sha256": "f032c631db239175a83344071f70205230478deac7f7ed68434ffa01e7335a5d",
+      "bytes": 94
+    },
+    {
+      "path": "dist/esm/scripts/getCountsPerPriority-2.d.ts",
+      "sha256": "656daca5613edf0a29f933bede6aa64fee1dae7225535ae0bb839f5a6485a440",
+      "bytes": 105
+    },
+    {
+      "path": "dist/esm/scripts/getDependencyCounts-4.d.ts",
+      "sha256": "7461b3546a2c4f94f6543055d204941e5655406d88d54c40610b30db45aee0d9",
+      "bytes": 104
+    },
+    {
+      "path": "dist/esm/scripts/getJobs-1.d.ts",
+      "sha256": "de7e1ecf988b05c06760e7e8de000074544a0a527c8f18cc8b411e0d3dce253e",
+      "bytes": 92
+    },
+    {
+      "path": "dist/esm/scripts/getJobScheduler-1.d.ts",
+      "sha256": "826dd0d2d4c0be260d9cf7af58065546f573d6808232af90ce9403d13f0cd008",
+      "bytes": 100
+    },
+    {
+      "path": "dist/esm/scripts/getMetrics-2.d.ts",
+      "sha256": "fa327025d6c21f3eaeb8a8ace7ad03e433ae851d2daccead08d86c4c1337ff13",
+      "bytes": 95
+    },
+    {
+      "path": "dist/esm/scripts/getRanges-1.d.ts",
+      "sha256": "2afc601b8dbb55f5b2115397b86ba967e1baab2dc49b086e92332e15ea8fdec7",
+      "bytes": 94
+    },
+    {
+      "path": "dist/esm/scripts/getRateLimitTtl-2.d.ts",
+      "sha256": "9fa6cd3f04e975e1abcbc11bbd73974ccd8c2d32905625a0cb15e5ee3c125601",
+      "bytes": 100
+    },
+    {
+      "path": "dist/esm/scripts/getState-8.d.ts",
+      "sha256": "193c244240a23ea51c448ee0f36e487f79c878041fbe16beb484efb216bdf26b",
+      "bytes": 93
+    },
+    {
+      "path": "dist/esm/scripts/getStateV2-8.d.ts",
+      "sha256": "0ad625884919fd79071b2ac13a16766c4beab2bce9403813466bba21998b3fd0",
+      "bytes": 95
+    },
+    {
+      "path": "dist/esm/classes/errors/index.d.ts",
+      "sha256": "7dc695c4ab01309d1d1b43201700560054feadddf8d0bbfc79d981bff03c1db0",
+      "bytes": 226
+    },
+    {
+      "path": "dist/esm/classes/index.d.ts",
+      "sha256": "b3f2ade5cb4409f5cb1c168ddbd43cdf550bff88887aeb1528061a0270f8c078",
+      "bytes": 862
+    },
+    {
+      "path": "dist/esm/enums/index.d.ts",
+      "sha256": "a66ad696f2785dd00374b8dee6fab5c58c049c0efe24b3c214fbe6aec3f53d6e",
+      "bytes": 169
+    },
+    {
+      "path": "dist/esm/index.d.ts",
+      "sha256": "44931fbd99e535ca8f95c01318d6dfda0317ada8fa851f5c0b3c7fdaa1f1bdfc",
+      "bytes": 273
+    },
+    {
+      "path": "dist/esm/interfaces/index.d.ts",
+      "sha256": "5f95889cde89ebd6c9c12f42c603ff89e7142a3ff4d9547f06d6995830bfb44a",
+      "bytes": 1181
+    },
+    {
+      "path": "dist/esm/postgres/index.d.ts",
+      "sha256": "b77230eb402eada189c9977d3a5248cb23ae96e96c9b8428f9fef7171d783b2d",
+      "bytes": 844
+    },
+    {
+      "path": "dist/esm/postgres/migrations/index.d.ts",
+      "sha256": "d381c8a1403e17c5ca7217eb34d96d3210bd5d067d8d4b3bef4f2f4ac85ac04b",
+      "bytes": 1553
+    },
+    {
+      "path": "dist/esm/scripts/index.d.ts",
+      "sha256": "28fbfec2e145f6059f84d27c771a2878d79c2a8448bea29008b8777ef371bbb1",
+      "bytes": 2242
+    },
+    {
+      "path": "dist/esm/types/index.d.ts",
+      "sha256": "de79263f32ea34b3f9282b19251626eeb3a3aef8d96491b731a3c0fb5cca2e77",
+      "bytes": 386
+    },
+    {
+      "path": "dist/esm/utils/index.d.ts",
+      "sha256": "421a43a312b1acc9494ae5985841ec6ae3c0ec6cf76205fb5fbf040d577053b6",
+      "bytes": 7080
+    },
+    {
+      "path": "dist/esm/classes/ioredis-client.d.ts",
+      "sha256": "ad3e63759a775e24193eebaef8c9e6a42b9953e10a301f968a4b91441857ddb1",
+      "bytes": 1750
+    },
+    {
+      "path": "dist/esm/interfaces/ioredis-events.d.ts",
+      "sha256": "397b46c6a95826d26714b5481addc606de72d8229b092e236f0d78a9e7226d29",
+      "bytes": 188
+    },
+    {
+      "path": "dist/esm/scripts/isFinished-3.d.ts",
+      "sha256": "81abdcacdd604aca64febe79cd01fdf7da87ffc4d3d8023dedc3d807d1845b61",
+      "bytes": 95
+    },
+    {
+      "path": "dist/esm/scripts/isJobInList-1.d.ts",
+      "sha256": "e9c3b57fb0a98322d5b29630da10685e8e6122e2a9abebf1572485a9d709fe37",
+      "bytes": 96
+    },
+    {
+      "path": "dist/esm/scripts/isMaxed-2.d.ts",
+      "sha256": "856dfa77951ecc8e7e05ea3476e5bfb949643bb027aeb6fde3acb6d3c7936f7a",
+      "bytes": 92
+    },
+    {
+      "path": "dist/esm/types/job-json-sandbox.d.ts",
+      "sha256": "65357b3849688962f59c625718650ad31ff59e6c23f244b4086f0d96558405d6",
+      "bytes": 169
+    },
+    {
+      "path": "dist/esm/interfaces/job-json.d.ts",
+      "sha256": "e0dfd6bf8df0cc9817c75f3e90d3c1048ca57ed4941656339c2918d7b60ba34f",
+      "bytes": 738
+    },
+    {
+      "path": "dist/esm/types/job-options.d.ts",
+      "sha256": "0045e22398806e13dd130c7e4247fb414ea2978a66cd77cdafd4ff32ab9efeae",
+      "bytes": 1965
+    },
+    {
+      "path": "dist/esm/types/job-progress.d.ts",
+      "sha256": "c5d73bf762b7b0e75fcdf691e21e31c9db9913931b200b9990f07f49ab2edff3",
+      "bytes": 62
+    },
+    {
+      "path": "dist/esm/interfaces/job-scheduler-json.d.ts",
+      "sha256": "5f47fb5b000c03fdcae71e6e017261898a37f0892532cb713ce95c8950462d80",
+      "bytes": 509
+    },
+    {
+      "path": "dist/esm/types/job-scheduler-template-options.d.ts",
+      "sha256": "e6b7abf5109e720e1c96d441350ed2daf67b0a83da50044f3aca0cdedf6bc717",
+      "bytes": 154
+    },
+    {
+      "path": "dist/esm/classes/job-scheduler.d.ts",
+      "sha256": "b2c480381b8e70d134339a88448c9824200699497f5748a97657ca6c4065d466",
+      "bytes": 3412
+    },
+    {
+      "path": "dist/esm/types/job-type.d.ts",
+      "sha256": "b2bf20ecf54742659e379ec3abf47fc890f061a2b1d0d3f0c4d06a3e7324fda8",
+      "bytes": 215
+    },
+    {
+      "path": "dist/esm/classes/job.d.ts",
+      "sha256": "9f49d955bdbdcc103ffde121ef0f7c768a08531f68f008ec7a3f426cfc33c611",
+      "bytes": 18350
+    },
+    {
+      "path": "dist/esm/types/keep-jobs.d.ts",
+      "sha256": "b75dd83280bdfd4880c04cadd7f5edf6b23305850e436b1e5b92c3847090d031",
+      "bytes": 1196
+    },
+    {
+      "path": "dist/esm/interfaces/lock-manager-worker-context.d.ts",
+      "sha256": "8142d5eaa44b4dbb68dbe87b5f05b148c5a74a6fa7abd3cb3aa80a7ed4a05150",
+      "bytes": 794
+    },
+    {
+      "path": "dist/esm/classes/lock-manager.d.ts",
+      "sha256": "b07d72a408bfcf125c24cfba3db38207687711b800b98ab417e5ada59438c554",
+      "bytes": 2327
+    },
+    {
+      "path": "dist/esm/classes/main-base.d.ts",
+      "sha256": "a32ba2409ac4ce9e71701525146a7b842d96b47891cbdeb6585063fd5d8e7141",
+      "bytes": 156
+    },
+    {
+      "path": "dist/cjs/classes/main-worker.d.ts",
+      "sha256": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
+      "bytes": 11
+    },
+    {
+      "path": "dist/esm/classes/main-worker.d.ts",
+      "sha256": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
+      "bytes": 11
+    },
+    {
+      "path": "dist/cjs/classes/main.d.ts",
+      "sha256": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
+      "bytes": 11
+    },
+    {
+      "path": "dist/esm/classes/main.d.ts",
+      "sha256": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
+      "bytes": 11
+    },
+    {
+      "path": "dist/esm/interfaces/metrics-options.d.ts",
+      "sha256": "6c66369276512eac5b53eaca735d7472b5ffca417977c3976a66b84059f2af2b",
+      "bytes": 403
+    },
+    {
+      "path": "dist/esm/enums/metrics-time.d.ts",
+      "sha256": "d0f62192ec787f1592a5b86760a44350d1c925883a573eadc12d60862890dffe",
+      "bytes": 215
+    },
+    {
+      "path": "dist/esm/interfaces/metrics.d.ts",
+      "sha256": "225deff02f4d1c91e2d6c71dec9f18feae510aa729a9774024f30278f4c6b8fe",
+      "bytes": 161
+    },
+    {
+      "path": "dist/esm/postgres/migrator.d.ts",
+      "sha256": "b5cb188ce8a196a426068dc8e66df7f3c1c62d707bf384ce95bc1460543b8d84",
+      "bytes": 6926
+    },
+    {
+      "path": "dist/esm/interfaces/minimal-job.d.ts",
+      "sha256": "9bbb69e022419121d539969928636a84bda059c306429e4b372d33c801f2d53e",
+      "bytes": 4026
+    },
+    {
+      "path": "dist/esm/interfaces/minimal-queue.d.ts",
+      "sha256": "e542a11c18cbfc73591f58b2ef9d6ba960ddb1d311b2c8f525b66b7c846ec16d",
+      "bytes": 1940
+    },
+    {
+      "path": "dist/esm/scripts/moveJobFromActiveToWait-9.d.ts",
+      "sha256": "7f9e863e7a89fc3e701e55062e88a789b88bcd8b21d8d91ab26cc68c7828c1f0",
+      "bytes": 108
+    },
+    {
+      "path": "dist/esm/scripts/moveJobsToWait-8.d.ts",
+      "sha256": "d01a2c7e0a0db396dbd5d33a340a2525ca8ccdc921ebb5f67089042bae21b117",
+      "bytes": 99
+    },
+    {
+      "path": "dist/esm/scripts/moveStalledJobsToWait-9.d.ts",
+      "sha256": "f00b6e55fc48e4aef40f51462fe1fff20d5015053b951d82aac13a749d6e51b5",
+      "bytes": 106
+    },
+    {
+      "path": "dist/esm/scripts/moveToActive-11.d.ts",
+      "sha256": "6a475d279bf59dad092e57ef74d3b2d395857ff5538b6db6acb8796f28a60270",
+      "bytes": 97
+    },
+    {
+      "path": "dist/esm/scripts/moveToDelayed-11.d.ts",
+      "sha256": "6ab7ca9cbd92e8ad021b507900374f35459c327b977806c698b75a1550300f23",
+      "bytes": 98
+    },
+    {
+      "path": "dist/esm/scripts/moveToFinished-14.d.ts",
+      "sha256": "f668997f545dd0a656b86b71147731d99ec6b6dccb7cce886001b076c60275fa",
+      "bytes": 99
+    },
+    {
+      "path": "dist/esm/scripts/moveToWaitingChildren-7.d.ts",
+      "sha256": "2db03d901da2f53eeb8aafdbb077b3ae631b1bb4f0fde07d027fd599e16423ea",
+      "bytes": 106
+    },
+    {
+      "path": "dist/esm/types/no-infer.d.ts",
+      "sha256": "ba2959018fda4d282d4b5b9123efea7ef740ef41088a8121462f3b1daf2df956",
+      "bytes": 228
+    },
+    {
+      "path": "dist/esm/classes/node-redis-client.d.ts",
+      "sha256": "69cab7f70e702f3a517d6e47428b4d2d76b56bc355e6f85e305d1b6f6d700f7b",
+      "bytes": 4464
+    },
+    {
+      "path": "dist/esm/scripts/obliterate-2.d.ts",
+      "sha256": "b189a1779523269bb6fb3315beb0050f63ae63e404d9fcb8efb63089a45ee636",
+      "bytes": 95
+    },
+    {
+      "path": "dist/esm/scripts/paginate-1.d.ts",
+      "sha256": "d8348ab9c4560759c65bcf1241accf7c751ac7045872734defcde20dfc001686",
+      "bytes": 93
+    },
+    {
+      "path": "dist/esm/enums/parent-command.d.ts",
+      "sha256": "806bed2ed4bf1c6ebb74a391531e98d361a0e23a31601fddb33dd90e31436b6d",
+      "bytes": 374
+    },
+    {
+      "path": "dist/esm/interfaces/parent-message.d.ts",
+      "sha256": "9b74326515d17f03809cfbea6de789772ff7d0c759a08a59bfa5242bda98d35b",
+      "bytes": 204
+    },
+    {
+      "path": "dist/esm/interfaces/parent-options.d.ts",
+      "sha256": "eae784573a5c4c55c65b86accb356b21b5f597c3484c1bd344e647bc92ebe572",
+      "bytes": 294
+    },
+    {
+      "path": "dist/esm/interfaces/parent.d.ts",
+      "sha256": "de38157a9f1be75a02ea8358be48a4d50ba31785fedd6a4f9ce7387d77ac9a22",
+      "bytes": 1768
+    },
+    {
+      "path": "dist/esm/scripts/pause-7.d.ts",
+      "sha256": "e03f632680b081ae9ccca2c9eb574c71e93c198680509875f808d55158204ac8",
+      "bytes": 90
+    },
+    {
+      "path": "dist/esm/postgres/pg-types.d.ts",
+      "sha256": "d3ada780d263b1ba00c76f25c2025273014137aef41e67afedde06399f6383cc",
+      "bytes": 3936
+    },
+    {
+      "path": "dist/esm/postgres/postgres-connection.d.ts",
+      "sha256": "58e07170b32b20bf7d7c26f26e4cfba1845add54bc512f04adf5e85057088c20",
+      "bytes": 8697
+    },
+    {
+      "path": "dist/esm/postgres/postgres-queue-backend.d.ts",
+      "sha256": "d27702d6384ef9c1d4131cccea068425b411e368fe0b07edd018f8a28f3c2f66",
+      "bytes": 16693
+    },
+    {
+      "path": "dist/esm/postgres/postgres-relay-backend.d.ts",
+      "sha256": "a98ed101a619940fea3648f1470152b3ecc717870e2876bb78ba191b63788de8",
+      "bytes": 3610
+    },
+    {
+      "path": "dist/esm/types/processor.d.ts",
+      "sha256": "99a81d1eea443081afd43f1cc00e27aadd2fc7117c348a57937561da4cae1ed5",
+      "bytes": 334
+    },
+    {
+      "path": "dist/esm/scripts/promote-9.d.ts",
+      "sha256": "416522a036f968e5cc1e1c91f340b96b18e7fd61f11abe019cb6acd4656ed44b",
+      "bytes": 92
+    },
+    {
+      "path": "dist/esm/interfaces/queue-backend.d.ts",
+      "sha256": "5170d051e7a08f90d2e47b293a3c85922aeb985a24a6750b7a22f56f1168f0bf",
+      "bytes": 23800
+    },
+    {
+      "path": "dist/esm/classes/queue-base.d.ts",
+      "sha256": "2002253804b100d6aec2fedafe62648a6397dde735e93a8af14be4f4f836a809",
+      "bytes": 4170
+    },
+    {
+      "path": "dist/esm/classes/queue-events-producer.d.ts",
+      "sha256": "ad923a3f30d478e4749e7a2ceedbaf543c290f01a56a0d5b23bb52e704b4c647",
+      "bytes": 1490
+    },
+    {
+      "path": "dist/esm/classes/queue-events.d.ts",
+      "sha256": "4fa020f503903cd03d63324619ef3a77f58d248e2d9b94dcd5af7959fedd829f",
+      "bytes": 11900
+    },
+    {
+      "path": "dist/esm/classes/queue-getters.d.ts",
+      "sha256": "f8d7e6535b4923283f64dd58c4e4c6300b2b3313fa91254ad3897add5bfc224f",
+      "bytes": 10968
+    },
+    {
+      "path": "dist/esm/classes/queue-keys.d.ts",
+      "sha256": "6c24f6dcbb3bf8235bf8da995a7290ffbd9d557a760cf2deb380ce91a989b765",
+      "bytes": 288
+    },
+    {
+      "path": "dist/esm/interfaces/queue-meta.d.ts",
+      "sha256": "09788d0d992a6d2471f35019ab68b39105c44ebf17f2051cf3e228a39e91885a",
+      "bytes": 1662
+    },
+    {
+      "path": "dist/esm/interfaces/queue-options.d.ts",
+      "sha256": "f0fcdf8a66eccea8e4d325cd371935c5341d7d86307a39f430a5c5de5a033b4d",
+      "bytes": 4141
+    },
+    {
+      "path": "dist/esm/types/queue-type.d.ts",
+      "sha256": "bd52ae165fdf1da13f7d46d99b33854854de2f686ed37472dc7f3778be5e61ad",
+      "bytes": 402
+    },
+    {
+      "path": "dist/esm/classes/queue.d.ts",
+      "sha256": "4724412a9a3b4adc755280fc7e028f1a5c449bc6e4ef727ac4dd4f4783675c3d",
+      "bytes": 17211
+    },
+    {
+      "path": "dist/esm/classes/errors/rate-limit-error.d.ts",
+      "sha256": "13ecb31795209aa56b1837b9d46cc5494da392f594132bc5b3a56c067e12ea1c",
+      "bytes": 244
+    },
+    {
+      "path": "dist/esm/interfaces/rate-limiter-options.d.ts",
+      "sha256": "0ea47413eaffe144782a44058205c31130b382dee0e2f66b62b5188eac57039e",
+      "bytes": 296
+    },
+    {
+      "path": "dist/esm/interfaces/receiver.d.ts",
+      "sha256": "cf841c4bfb05b4b1d3826773ff77a47bb0dc17c665a4dbff7d6c4a6d9042d50c",
+      "bytes": 147
+    },
+    {
+      "path": "dist/esm/interfaces/redis-client.d.ts",
+      "sha256": "bf7abebf9283073ba5ea9f47e969df562d62790333c7ed257a791be67e1110d9",
+      "bytes": 7615
+    },
+    {
+      "path": "dist/esm/classes/redis-connection.d.ts",
+      "sha256": "eff43213ae44b13279398cf60a8c064a609d76572844dcc08458f760af4e00a6",
+      "bytes": 3723
+    },
+    {
+      "path": "dist/esm/interfaces/redis-options.d.ts",
+      "sha256": "5646f01193d3a3cfbb277d12bf7e7e3e6016c4df4ec9761a0bb40480b9fb05d9",
+      "bytes": 1341
+    },
+    {
+      "path": "dist/esm/classes/redis-queue-backend.d.ts",
+      "sha256": "d6ace9361e2777d120fc0b72bdcdf894ee201f54312daa2b227e945688e27c81",
+      "bytes": 23596
+    },
+    {
+      "path": "dist/esm/classes/redis-relay-backend.d.ts",
+      "sha256": "a3bb0187ba6a001ac4d54069ae718ea23dc640f0b8ec24ab4a0dfff53a40781f",
+      "bytes": 5779
+    },
+    {
+      "path": "dist/esm/interfaces/redis-streams.d.ts",
+      "sha256": "c0591738dbfe11a36959f16ab40bc98b2a430c4565770ef6257574546079d791",
+      "bytes": 182
+    },
+    {
+      "path": "dist/esm/interfaces/relay-backend.d.ts",
+      "sha256": "3b96ea66b232d1042042be1278c27754a57fcab6ad5530cb3a5d3bfb47df6259",
+      "bytes": 8864
+    },
+    {
+      "path": "dist/esm/classes/relay-errors.d.ts",
+      "sha256": "83a1af9e8f0280f3371ea388d5fa31ef1c71d9eede619e4b7d1983f1f7b7ac2b",
+      "bytes": 555
+    },
+    {
+      "path": "dist/esm/classes/relay.d.ts",
+      "sha256": "4296be1f0987e9093f17670c3e011a533172be7a1549087d371c54697e19c5ab",
+      "bytes": 7440
+    },
+    {
+      "path": "dist/esm/scripts/relayAckInbox-1.d.ts",
+      "sha256": "fa11e00821f4cfe184e63d529507241c2c24d79e0f0dd5a344905ac4d44ace30",
+      "bytes": 98
+    },
+    {
+      "path": "dist/esm/scripts/relayDeleteRetained-1.d.ts",
+      "sha256": "0618436e43395aa49501c20c1620156fe1ac1a799c6cca06e5fdf8e69d9aa15b",
+      "bytes": 104
+    },
+    {
+      "path": "dist/esm/scripts/relayGet-1.d.ts",
+      "sha256": "bb4e28a9b4d7986a5dfb50b246f0fedb1f10e01c180258e2f61e9c5b84df7dda",
+      "bytes": 93
+    },
+    {
+      "path": "dist/esm/scripts/relayGetNamespaces-1.d.ts",
+      "sha256": "6d11c095e91cb83ec8e31515a70d2b70f0d815f76ae9886efe4769b5a6479d18",
+      "bytes": 103
+    },
+    {
+      "path": "dist/esm/scripts/relayHeartbeat-1.d.ts",
+      "sha256": "75d5e773032cf2313ed81a6c7e81628c31226dac3f0202c7712c43116c1a8b7a",
+      "bytes": 99
+    },
+    {
+      "path": "dist/esm/scripts/relayPublish-1.d.ts",
+      "sha256": "68d427b7388b0c85f138e787d66bb3a92e29f0dec4089c2082a4ab64034413b4",
+      "bytes": 97
+    },
+    {
+      "path": "dist/esm/scripts/relayReadInbox-1.d.ts",
+      "sha256": "c1fd743cb0b9f28fb81996d50415309886c99a5248b00c671366dbdf90557c32",
+      "bytes": 99
+    },
+    {
+      "path": "dist/esm/scripts/relayRegisterNode-1.d.ts",
+      "sha256": "a6f5ddef0c2845165521533497648219a8e64d22cc8722577115fbe018924f26",
+      "bytes": 102
+    },
+    {
+      "path": "dist/esm/scripts/relayRemoveEndpoint-1.d.ts",
+      "sha256": "02cf6375fb8bbc8553e2e96b9a10d5b3da06064881beccc9f7644946284cbda6",
+      "bytes": 104
+    },
+    {
+      "path": "dist/esm/scripts/relaySubscribe-1.d.ts",
+      "sha256": "89b952e53f7551cd057d9cbfa45ceebcb4e1a161f4459badaf9f6156e175e9e1",
+      "bytes": 99
+    },
+    {
+      "path": "dist/esm/scripts/relaySweep-1.d.ts",
+      "sha256": "f4e388388c29c12541cb810fd63bef67364a35f546a6ae6ce04097805c08d2d6",
+      "bytes": 95
+    },
+    {
+      "path": "dist/esm/scripts/relayTouchNamespace-1.d.ts",
+      "sha256": "101041e2a98cd4a6ed04001482353dd7981ebe1ca07e8906ce4b439fd0c397e6",
+      "bytes": 104
+    },
+    {
+      "path": "dist/esm/scripts/relayTrimInbox-1.d.ts",
+      "sha256": "c626154eb71e63d3f2795fb5fe680edbf0bd0d712093d51f2559512f517cb375",
+      "bytes": 99
+    },
+    {
+      "path": "dist/esm/scripts/relayUnregisterNode-1.d.ts",
+      "sha256": "ca3f7d2399dbbb7167f36d22cc6b2fed53b87cce1225e2868cf6638b0df5d3b5",
+      "bytes": 104
+    },
+    {
+      "path": "dist/esm/scripts/releaseLock-1.d.ts",
+      "sha256": "00d00c5e6c810632838f4ec87bf6bc560414a9250a7c909386931f70248ca3a6",
+      "bytes": 96
+    },
+    {
+      "path": "dist/esm/scripts/removeChildDependency-1.d.ts",
+      "sha256": "e2b6a16a4577bbc6c1fabdc1428f7d53893ba984e1bc4c61c54ab3534b52d0e5",
+      "bytes": 106
+    },
+    {
+      "path": "dist/esm/scripts/removeDeduplicationKey-1.d.ts",
+      "sha256": "918c3f6b8294fdd64169b5fdf972e46a7e036f2c51e154857604f433c6f2822e",
+      "bytes": 107
+    },
+    {
+      "path": "dist/esm/scripts/removeJob-2.d.ts",
+      "sha256": "94b0db8ed1f88c852ceb18f197cc7b600d2d42cac4ede04f26d5b52a71669aef",
+      "bytes": 94
+    },
+    {
+      "path": "dist/esm/scripts/removeJobScheduler-3.d.ts",
+      "sha256": "0102a7dd4777c95f65ee01e611a157585d814464d91c7f77f620a0e369a1dc5d",
+      "bytes": 103
+    },
+    {
+      "path": "dist/esm/scripts/removeOrphanedJobs-1.d.ts",
+      "sha256": "c6fcd8ae1bd3057acbc9b2076aa4ae3b711f566a570f4e0a3fb4377014574fc2",
+      "bytes": 103
+    },
+    {
+      "path": "dist/esm/scripts/removeUnprocessedChildren-2.d.ts",
+      "sha256": "0ec7f5381148479f6214bd62f8e19f217cb00c5ac1f83a8801c2a9278e9df67f",
+      "bytes": 110
+    },
+    {
+      "path": "dist/esm/interfaces/repeat-options.d.ts",
+      "sha256": "cfea9a8dbb4d7629a1a215c7e335df40d94fe5a77dbeaade11485c26ca5ad4c9",
+      "bytes": 1596
+    },
+    {
+      "path": "dist/esm/types/repeat-strategy.d.ts",
+      "sha256": "48f7cd72c6f8ec5b2f70f50a8d4e6f47494e0d228015efb50c36fc6eab33c7ff",
+      "bytes": 197
+    },
+    {
+      "path": "dist/esm/interfaces/repeatable-options.d.ts",
+      "sha256": "ca73451ec7771379b6b1271dcda0d0b2146da80b329136a09ad692529a073965",
+      "bytes": 201
+    },
+    {
+      "path": "dist/esm/scripts/reprocessJob-9.d.ts",
+      "sha256": "986239f9410d2945c20d6dd1a32dc908297b0566165a2ef8ec8cfa16764047cd",
+      "bytes": 97
+    },
+    {
+      "path": "dist/esm/interfaces/retry-options.d.ts",
+      "sha256": "fad74233657c4e0346822942ac3716a20b16fb053ca00c1260a08a81cc76df89",
+      "bytes": 308
+    },
+    {
+      "path": "dist/esm/scripts/retryJob-11.d.ts",
+      "sha256": "b9fabf86d204796a50c2e54aa6271b60bfa29fc9b90261187ca36f15faeb9892",
+      "bytes": 93
+    },
+    {
+      "path": "dist/esm/classes/sandbox.d.ts",
+      "sha256": "5a59c1315ed5ca8f899fc6527f23a15dc9a38107175a5fffd473db25bcd1fd4a",
+      "bytes": 259
+    },
+    {
+      "path": "dist/esm/interfaces/sandboxed-job-processor.d.ts",
+      "sha256": "fced7c59acecb0ac631505fcbc5a1ce0c6420e2494a256321e9359093efb7a1f",
+      "bytes": 320
+    },
+    {
+      "path": "dist/esm/interfaces/sandboxed-job.d.ts",
+      "sha256": "43f0a7dead8b25e1c101a060ea31d6df548a9303c58aa7498d0285fd4ecaac1c",
+      "bytes": 1233
+    },
+    {
+      "path": "dist/esm/interfaces/sandboxed-options.d.ts",
+      "sha256": "8c42fbcae55a41f9c48f644ff9743fab827a9d38f5a6bd486f17c6460f8a099b",
+      "bytes": 1088
+    },
+    {
+      "path": "dist/esm/scripts/saveStacktrace-1.d.ts",
+      "sha256": "47c83d32f10b141c6c547dae0e5a804e2700ce4f07226ce3ef0d87a007752e44",
+      "bytes": 99
+    },
+    {
+      "path": "dist/esm/interfaces/script-queue-context.d.ts",
+      "sha256": "cbf8a272e72b48f01a3b88c97b36327f77c5025a6f24ca178aea76d38e4ba103",
+      "bytes": 1060
+    },
+    {
+      "path": "dist/esm/postgres/sql-loader.d.ts",
+      "sha256": "ce104a8f80b954278b12312c7c397bee66ca30712eb6297ecd06e0acfdc271a1",
+      "bytes": 561
+    },
+    {
+      "path": "dist/esm/postgres/sql-scripts.d.ts",
+      "sha256": "c3a8c90ebd5c2b6697b20285f470191faf16b45afdfc28c3141c0cc0b69c90db",
+      "bytes": 384
+    },
+    {
+      "path": "dist/esm/enums/telemetry-attributes.d.ts",
+      "sha256": "cfdb7da67179165bdc8b2d9f7dc1877560fbf76972c32c0510009bb28633ddf2",
+      "bytes": 2294
+    },
+    {
+      "path": "dist/esm/interfaces/telemetry.d.ts",
+      "sha256": "0bd27c90d0da78773f0536bd1ab73a46ee9aec7cb55d753cafc4fa699d8d5b0c",
+      "bytes": 8369
+    },
+    {
+      "path": "dist/esm/classes/errors/unrecoverable-error.d.ts",
+      "sha256": "e34a28e978cf430e062c91d03987f2b42360b33e6207738b40494acd4a97004b",
+      "bytes": 292
+    },
+    {
+      "path": "dist/esm/scripts/updateData-1.d.ts",
+      "sha256": "5cb8e3bc45cbdc199a6dc03b5be2b3acc44ec8e096ff09dad5eb7ff9a0a0e29d",
+      "bytes": 95
+    },
+    {
+      "path": "dist/esm/scripts/updateJobScheduler-12.d.ts",
+      "sha256": "4f6895a478dec68805a747920ead623e5f327806a5aa116f0fecb66f4e2af5cd",
+      "bytes": 103
+    },
+    {
+      "path": "dist/esm/scripts/updateProgress-3.d.ts",
+      "sha256": "bd4e5e239f942af97617f9405e9fac6253b66d18fe02abff2d37f4988e8c1fdb",
+      "bytes": 99
+    },
+    {
+      "path": "dist/esm/classes/valkey-glide-client.d.ts",
+      "sha256": "b376d7a4e6434bb07f9caa9257e90275994108ffb7d0340eb9096026e3712973",
+      "bytes": 139
+    },
+    {
+      "path": "dist/esm/version.d.ts",
+      "sha256": "06d7c299d407ae33be847a8236751571101fab83c75de05e0c755302e7eb2790",
+      "bytes": 40
+    },
+    {
+      "path": "dist/esm/classes/errors/waiting-children-error.d.ts",
+      "sha256": "5cc10d0295e594c961bd020cc76845097928f550fa3d58468114e5225054f76c",
+      "bytes": 307
+    },
+    {
+      "path": "dist/esm/classes/errors/waiting-error.d.ts",
+      "sha256": "99c4cd704c85c3b9a215977d1d10ad34f1c6bbc5784e0ddaaf6fe8090030eaf3",
+      "bytes": 271
+    },
+    {
+      "path": "dist/esm/utils/with-backend.d.ts",
+      "sha256": "59221c489200ae32da1e99b92a99532c2fe34cc9c0522c628292fd700d1d5d64",
+      "bytes": 2107
+    },
+    {
+      "path": "dist/esm/interfaces/worker-options.d.ts",
+      "sha256": "8b961fb891974669d3b764385418196fe90b66b26d50fc36c79679d8f55690cd",
+      "bytes": 5200
+    },
+    {
+      "path": "dist/esm/classes/worker.d.ts",
+      "sha256": "3c88b589aa4523af67e4db90b2831ece723f4ad0715c0ee1fb0024c6839b7d99",
+      "bytes": 13770
+    },
+    {
+      "path": "dist/cjs/tsconfig-cjs.tsbuildinfo",
+      "sha256": "d51abf32e042277e8c646638d7fbd5732fdaf166cc2958a0d8740ab846d0397f",
+      "bytes": 79942
+    },
+    {
+      "path": "dist/esm/tsconfig.tsbuildinfo",
+      "sha256": "8545a7c8719d765397e48599f16ccd04b9121aa9439dbb242cb9895ab4b0abea",
+      "bytes": 89922
+    }
+  ]
+}

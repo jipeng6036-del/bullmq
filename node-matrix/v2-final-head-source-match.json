@@ -1,0 +1,9 @@
+{
+  "atUtc": "2026-10-25T10:22:20.101105+00:00",
+  "head": "2e5ecf53615fd799d0c660d3b8bb8a5af579ccf7",
+  "tree": "0503ca913f5b3b71b081f7912a497fe635317d67",
+  "sixFrozenPathsMatchCommittedSource": true,
+  "normalCommitSourceEvidenceSha256": "ec183656bcba7ba073e85ada953eeeba22e35019c967a9b882a4940be56e9c74",
+  "all1068ArchiveVerified": "v2-frozen-archive-independent-verification.json",
+  "pass": true
+}

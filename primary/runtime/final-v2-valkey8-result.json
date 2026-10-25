@@ -1,0 +1,23 @@
+{
+  "name": "final-v2-valkey8",
+  "command": "cd /tmp/bullmq4168/candidate && node /evidence/verify-final-v2.cjs /tmp/bullmq4168/candidate && yarn build && yarn test && node /evidence/verify-final-v2.cjs /tmp/bullmq4168/candidate",
+  "argv": [
+    "docker",
+    "exec",
+    "--user",
+    "node",
+    "--env",
+    "HOME=/tmp/bullmq4168/home",
+    "--env",
+    "npm_config_cache=/tmp/bullmq4168/npm-cache",
+    "--env",
+    "PATH=/tmp/bullmq4168/tools/node_modules/node/bin:/tmp/bullmq4168/tools/node_modules/.bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+    "ghpr-heartbeat0902-js-bullmq4168-matrix",
+    "sh",
+    "-c",
+    "cd /tmp/bullmq4168/candidate && node /evidence/verify-final-v2.cjs /tmp/bullmq4168/candidate && yarn build && yarn test && node /evidence/verify-final-v2.cjs /tmp/bullmq4168/candidate"
+  ],
+  "started": "2026-10-25T10:22:57.915825+00:00",
+  "ended": "2026-10-25T10:30:11.056159+00:00",
+  "exitCode": 0
+}

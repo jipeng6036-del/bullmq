@@ -1,0 +1,440 @@
+yarn run v1.22.22
+$ vitest run --no-file-parallelism --config vitest.ioredis.config.ts
+(!) Your Vite config uses features that are unsupported by `configLoader: 'native'`, which is planned to become the default in a future major version of Vite:
+  - ESM syntax in a file loaded as CommonJS (vitest.ioredis.config.ts:1:1). Use a `.mjs` extension or set `"type": "module"` in the closest package.json
+Set `VITE_CONFIG_NATIVE_IGNORE_WARNING=true` to suppress this warning.
+
+[1m[30m[46m RUN [49m[39m[22m [36mv4.1.12 [39m[90m/work/source[39m
+
+ [32m✓[39m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using child processes[2m > [22msandboxed process[2m > [22mshould process and complete[33m 1084[2mms[22m[39m
+ [32m✓[39m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using child processes[2m > [22msandboxed process[2m > [22mshould process and complete when passing a URL[33m 1065[2mms[22m[39m
+ [32m✓[39m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using child processes[2m > [22msandboxed process[2m > [22mshould process and complete using esbuild compiled processor[33m 557[2mms[22m[39m
+ [32m✓[39m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using child processes[2m > [22msandboxed process[2m > [22mwhen processor has more than 2 params[2m > [22mshould ignore extra params, process and complete[33m 561[2mms[22m[39m
+ [32m✓[39m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using child processes[2m > [22msandboxed process[2m > [22mwhen processor file is .cjs (CommonJS)[2m > [22mprocesses and completes[33m 562[2mms[22m[39m
+ [32m✓[39m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using child processes[2m > [22msandboxed process[2m > [22mwhen processor file is .mjs (ESM)[2m > [22mprocesses and completes[33m 574[2mms[22m[39m
+ [32m✓[39m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using child processes[2m > [22msandboxed process[2m > [22mwhen there is an output from stdout[2m > [22muses the parent stdout[33m 578[2mms[22m[39m
+ [32m✓[39m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using child processes[2m > [22msandboxed process[2m > [22mwhen there is an output from stderr[2m > [22muses the parent stderr[33m 574[2mms[22m[39m
+ [32m✓[39m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using child processes[2m > [22msandboxed process[2m > [22mwhen processor throws UnrecoverableError[2m > [22mmoves job to failed[33m 2170[2mms[22m[39m
+ [32m✓[39m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using child processes[2m > [22msandboxed process[2m > [22mshould process with named processor[33m 1060[2mms[22m[39m
+ [32m✓[39m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using child processes[2m > [22msandboxed process[2m > [22mshould process with concurrent processors[33m 1065[2mms[22m[39m
+ [32m✓[39m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using child processes[2m > [22msandboxed process[2m > [22mshould reuse process with single processors[33m 4058[2mms[22m[39m
+ [32m✓[39m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using child processes[2m > [22msandboxed process[2m > [22mshould process and update progress[33m 462[2mms[22m[39m
+ [32m✓[39m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using child processes[2m > [22msandboxed process[2m > [22mshould process and update data[32m 199[2mms[22m[39m
+ [32m✓[39m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using child processes[2m > [22msandboxed process[2m > [22mshould await persisted data before continuing in a sandbox[33m 702[2mms[22m[39m
+ [32m✓[39m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using child processes[2m > [22msandboxed process[2m > [22mshould return persistence errors to a sandboxed updateData caller[32m 131[2mms[22m[39m
+ [32m✓[39m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using child processes[2m > [22msandboxed process[2m > [22mshould process steps and complete[33m 472[2mms[22m[39m
+ [32m✓[39m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using child processes[2m > [22msandboxed process[2m > [22mcan get children values by calling getChildrenValues[32m 168[2mms[22m[39m
+ [32m✓[39m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using child processes[2m > [22msandboxed process[2m > [22mwill fail job if calling getChildrenValues is too slow[33m 661[2mms[22m[39m
+ [32m✓[39m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using child processes[2m > [22msandboxed process[2m > [22mcan get children failures by calling getIgnoredChildrenFailures[32m 202[2mms[22m[39m
+ [32m✓[39m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using child processes[2m > [22msandboxed process[2m > [22mcan get dependencies count by calling getDependenciesCount[32m 131[2mms[22m[39m
+ [32m✓[39m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using child processes[2m > [22msandboxed process[2m > [22mwill fail job if calling getDependenciesCount is too slow[33m 635[2mms[22m[39m
+ [32m✓[39m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using child processes[2m > [22msandboxed process[2m > [22mcan get dependencies by calling getDependencies[32m 126[2mms[22m[39m
+ [32m✓[39m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using child processes[2m > [22msandboxed process[2m > [22mwill fail job if calling getDependencies is too slow[33m 627[2mms[22m[39m
+ [32m✓[39m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using child processes[2m > [22msandboxed process[2m > [22mshould process and move to delayed[33m 2881[2mms[22m[39m
+ [32m✓[39m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using child processes[2m > [22msandboxed process[2m > [22mshould process and move to wait[33m 844[2mms[22m[39m
+ [32m✓[39m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using child processes[2m > [22msandboxed process[2m > [22mshould process and move to wait for children[33m 380[2mms[22m[39m
+ [32m✓[39m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using child processes[2m > [22msandboxed process[2m > [22mwhen env variables are provided[2m > [22mshares env variables[33m 555[2mms[22m[39m
+ [32m✓[39m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using child processes[2m > [22msandboxed process[2m > [22mincludes queueName[33m 556[2mms[22m[39m
+ [32m✓[39m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using child processes[2m > [22msandboxed process[2m > [22mincludes parent[32m 276[2mms[22m[39m
+ [32m✓[39m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using child processes[2m > [22msandboxed process[2m > [22mshould process and fail[33m 554[2mms[22m[39m
+ [32m✓[39m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using child processes[2m > [22msandboxed process[2m > [22mshould process and fail when circular reference[33m 558[2mms[22m[39m
+ [32m✓[39m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using child processes[2m > [22msandboxed process[2m > [22mshould error if processor file is missing[32m 30[2mms[22m[39m
+ [32m✓[39m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using child processes[2m > [22msandboxed process[2m > [22mshould error if processor file passed as URL is missing[32m 31[2mms[22m[39m
+ [32m✓[39m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using child processes[2m > [22msandboxed process[2m > [22mshould fail if the process crashes[32m 161[2mms[22m[39m
+ [32m✓[39m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using child processes[2m > [22msandboxed process[2m > [22mshould fail if the process exits 0[32m 163[2mms[22m[39m
+ [32m✓[39m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using child processes[2m > [22msandboxed process[2m > [22mshould fail if the process exits non-0[32m 164[2mms[22m[39m
+[90mstderr[2m | tests/sandboxed_process.test.ts[2m > [22m[2mSandboxed process using child processes[2m > [22m[2msandboxed process[2m > [22m[2mshould fail if the process file is broken
+[22m[39mError: Broken file processor
+    at Object.<anonymous> [90m(/work/source/[39mtests/fixtures/fixture_processor_broken.js:1:7[90m)[39m
+[90m    at Module._compile (node:internal/modules/cjs/loader:1521:14)[39m
+[90m    at Module._extensions..js (node:internal/modules/cjs/loader:1623:10)[39m
+[90m    at Module.load (node:internal/modules/cjs/loader:1266:32)[39m
+[90m    at Module._load (node:internal/modules/cjs/loader:1091:12)[39m
+[90m    at cjsLoader (node:internal/modules/esm/translators:298:15)[39m
+[90m    at ModuleWrap.<anonymous> (node:internal/modules/esm/translators:240:7)[39m
+[90m    at ModuleJob.run (node:internal/modules/esm/module_job:325:25)[39m
+[90m    at async ModuleLoader.import (node:internal/modules/esm/loader:606:24)[39m
+    at async ChildProcessor.init [90m(/work/source/[39mdist/cjs/classes/child-processor.js:31:46[90m)[39m
+
+ [32m✓[39m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using child processes[2m > [22msandboxed process[2m > [22mshould fail if wrapping with ttl pattern[33m 1054[2mms[22m[39m
+ [32m✓[39m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using child processes[2m > [22msandboxed process[2m > [22mshould fail if the process file is broken[32m 60[2mms[22m[39m
+[90mstderr[2m | tests/sandboxed_process.test.ts[2m > [22m[2mSandboxed process using child processes[2m > [22m[2msandboxed process[2m > [22m[2mwhen a child fails to initialize once (transient error)[2m > [22m[2mdoes not reuse the broken child and recovers on the next job
+[22m[39mError: transient module load failure
+    at Object.<anonymous> [90m(/work/source/[39mtests/fixtures/fixture_processor_fail_init_once.js:19:9[90m)[39m
+[90m    at Module._compile (node:internal/modules/cjs/loader:1521:14)[39m
+[90m    at Module._extensions..js (node:internal/modules/cjs/loader:1623:10)[39m
+[90m    at Module.load (node:internal/modules/cjs/loader:1266:32)[39m
+[90m    at Module._load (node:internal/modules/cjs/loader:1091:12)[39m
+[90m    at cjsLoader (node:internal/modules/esm/translators:298:15)[39m
+[90m    at ModuleWrap.<anonymous> (node:internal/modules/esm/translators:240:7)[39m
+[90m    at ModuleJob.run (node:internal/modules/esm/module_job:325:25)[39m
+[90m    at async ModuleLoader.import (node:internal/modules/esm/loader:606:24)[39m
+    at async ChildProcessor.init [90m(/work/source/[39mdist/cjs/classes/child-processor.js:31:46[90m)[39m
+
+ [32m✓[39m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using child processes[2m > [22msandboxed process[2m > [22mwhen a child fails to initialize once (transient error)[2m > [22mdoes not reuse the broken child and recovers on the next job[32m 144[2mms[22m[39m
+ [32m✓[39m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using child processes[2m > [22msandboxed process[2m > [22mwhen child process a job and its killed direcly after completing[2m > [22mshould process the next job in a new child process[33m 2114[2mms[22m[39m
+[90mstderr[2m | tests/sandboxed_process.test.ts[2m > [22m[2mSandboxed process using child processes[2m > [22m[2msandboxed process[2m > [22m[2mwhen function is not exported[2m > [22m[2mthrows an error
+[22m[39mError: No function is exported in processor file
+    at ChildProcessor.init [90m(/work/source/[39mdist/cjs/classes/child-processor.js:38:23[90m)[39m
+    at async process.<anonymous> [90m(/work/source/[39mdist/cjs/classes/main-base.js:16:21[90m)[39m
+
+ [32m✓[39m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using child processes[2m > [22msandboxed process[2m > [22mwhen child process a job and its killed with SIGKILL while processing[2m > [22mshould fail with an unexpected error[32m 278[2mms[22m[39m
+ [32m✓[39m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using child processes[2m > [22msandboxed process[2m > [22mwhen function is not exported[2m > [22mthrows an error[32m 52[2mms[22m[39m
+ [32m✓[39m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using child processes[2m > [22msandboxed process[2m > [22mshould release exited process[33m 458[2mms[22m[39m
+ [32m✓[39m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using child processes[2m > [22msandboxed process[2m > [22mshould allow the job to complete and then exit on worker close[33m 1056[2mms[22m[39m
+ [32m✓[39m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using child processes[2m > [22msandboxed process[2m > [22mwhen cancelling a sandboxed job[2m > [22mshould cancel a running job and fail it[32m 153[2mms[22m[39m
+ [32m✓[39m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using child processes[2m > [22msandboxed process[2m > [22mwhen cancelling a sandboxed job[2m > [22mshould cancel a running job with a custom reason[32m 156[2mms[22m[39m
+ [32m✓[39m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using child processes[2m > [22msandboxed process[2m > [22mwhen cancelling a sandboxed job[2m > [22mshould return false when cancelling a non-existent job[32m 20[2mms[22m[39m
+ [32m✓[39m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using child processes[2m > [22msandboxed process[2m > [22mwhen cancelling a sandboxed job[2m > [22mshould cancel all running jobs with cancelAllJobs[32m 157[2mms[22m[39m
+ [32m✓[39m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using child processes[2m > [22mcustom cases[2m > [22mshould handle non-BullMQ messages during child initialization[32m 60[2mms[22m[39m
+ [32m✓[39m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using child processes[2m > [22mcustom cases[2m > [22mshould allow to pass workerForkOptions[33m 1063[2mms[22m[39m
+ [32m✓[39m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using child processes[2m > [22mcustom cases[2m > [22mshould allow to pass workerForkOptions with timeout[33m 1548[2mms[22m[39m
+ [32m✓[39m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using worker threads[2m > [22msandboxed process[2m > [22mshould process and complete[33m 1056[2mms[22m[39m
+ [32m✓[39m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using worker threads[2m > [22msandboxed process[2m > [22mshould process and complete when passing a URL[33m 1051[2mms[22m[39m
+ [32m✓[39m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using worker threads[2m > [22msandboxed process[2m > [22mshould process and complete using esbuild compiled processor[33m 544[2mms[22m[39m
+ [32m✓[39m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using worker threads[2m > [22msandboxed process[2m > [22mwhen processor has more than 2 params[2m > [22mshould ignore extra params, process and complete[33m 556[2mms[22m[39m
+ [32m✓[39m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using worker threads[2m > [22msandboxed process[2m > [22mwhen processor file is .cjs (CommonJS)[2m > [22mprocesses and completes[33m 542[2mms[22m[39m
+ [32m✓[39m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using worker threads[2m > [22msandboxed process[2m > [22mwhen processor file is .mjs (ESM)[2m > [22mprocesses and completes[33m 543[2mms[22m[39m
+ [32m✓[39m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using worker threads[2m > [22msandboxed process[2m > [22mwhen there is an output from stdout[2m > [22muses the parent stdout[33m 542[2mms[22m[39m
+ [32m✓[39m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using worker threads[2m > [22msandboxed process[2m > [22mwhen there is an output from stderr[2m > [22muses the parent stderr[33m 547[2mms[22m[39m
+ [32m✓[39m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using worker threads[2m > [22msandboxed process[2m > [22mwhen processor throws UnrecoverableError[2m > [22mmoves job to failed[33m 2184[2mms[22m[39m
+ [32m✓[39m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using worker threads[2m > [22msandboxed process[2m > [22mshould process with named processor[33m 1048[2mms[22m[39m
+ [32m✓[39m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using worker threads[2m > [22msandboxed process[2m > [22mshould process with concurrent processors[33m 1055[2mms[22m[39m
+ [32m✓[39m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using worker threads[2m > [22msandboxed process[2m > [22mshould reuse process with single processors[33m 4060[2mms[22m[39m
+ [32m✓[39m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using worker threads[2m > [22msandboxed process[2m > [22mshould process and update progress[33m 452[2mms[22m[39m
+ [32m✓[39m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using worker threads[2m > [22msandboxed process[2m > [22mshould process and update data[32m 206[2mms[22m[39m
+ [32m✓[39m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using worker threads[2m > [22msandboxed process[2m > [22mshould await persisted data before continuing in a sandbox[33m 720[2mms[22m[39m
+ [32m✓[39m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using worker threads[2m > [22msandboxed process[2m > [22mshould return persistence errors to a sandboxed updateData caller[32m 110[2mms[22m[39m
+ [32m✓[39m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using worker threads[2m > [22msandboxed process[2m > [22mshould process steps and complete[33m 462[2mms[22m[39m
+ [32m✓[39m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using worker threads[2m > [22msandboxed process[2m > [22mcan get children values by calling getChildrenValues[32m 128[2mms[22m[39m
+ [32m✓[39m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using worker threads[2m > [22msandboxed process[2m > [22mwill fail job if calling getChildrenValues is too slow[33m 643[2mms[22m[39m
+ [32m✓[39m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using worker threads[2m > [22msandboxed process[2m > [22mcan get children failures by calling getIgnoredChildrenFailures[32m 121[2mms[22m[39m
+ [32m✓[39m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using worker threads[2m > [22msandboxed process[2m > [22mcan get dependencies count by calling getDependenciesCount[32m 112[2mms[22m[39m
+ [32m✓[39m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using worker threads[2m > [22msandboxed process[2m > [22mwill fail job if calling getDependenciesCount is too slow[33m 616[2mms[22m[39m
+ [32m✓[39m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using worker threads[2m > [22msandboxed process[2m > [22mcan get dependencies by calling getDependencies[32m 113[2mms[22m[39m
+ [32m✓[39m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using worker threads[2m > [22msandboxed process[2m > [22mwill fail job if calling getDependencies is too slow[33m 616[2mms[22m[39m
+ [32m✓[39m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using worker threads[2m > [22msandboxed process[2m > [22mshould process and move to delayed[33m 2908[2mms[22m[39m
+ [32m✓[39m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using worker threads[2m > [22msandboxed process[2m > [22mshould process and move to wait[33m 847[2mms[22m[39m
+ [32m✓[39m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using worker threads[2m > [22msandboxed process[2m > [22mshould process and move to wait for children[33m 396[2mms[22m[39m
+ [32m✓[39m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using worker threads[2m > [22msandboxed process[2m > [22mwhen env variables are provided[2m > [22mshares env variables[33m 566[2mms[22m[39m
+ [32m✓[39m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using worker threads[2m > [22msandboxed process[2m > [22mincludes queueName[33m 590[2mms[22m[39m
+ [32m✓[39m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using worker threads[2m > [22msandboxed process[2m > [22mincludes parent[32m 284[2mms[22m[39m
+ [32m✓[39m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using worker threads[2m > [22msandboxed process[2m > [22mshould process and fail[33m 558[2mms[22m[39m
+ [32m✓[39m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using worker threads[2m > [22msandboxed process[2m > [22mshould process and fail when circular reference[33m 566[2mms[22m[39m
+ [32m✓[39m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using worker threads[2m > [22msandboxed process[2m > [22mshould error if processor file is missing[32m 30[2mms[22m[39m
+ [32m✓[39m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using worker threads[2m > [22msandboxed process[2m > [22mshould error if processor file passed as URL is missing[32m 50[2mms[22m[39m
+ [32m✓[39m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using worker threads[2m > [22msandboxed process[2m > [22mshould fail if the process crashes[32m 171[2mms[22m[39m
+ [32m✓[39m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using worker threads[2m > [22msandboxed process[2m > [22mshould fail if the process exits 0[32m 161[2mms[22m[39m
+ [32m✓[39m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using worker threads[2m > [22msandboxed process[2m > [22mshould fail if the process exits non-0[32m 152[2mms[22m[39m
+[90mstderr[2m | tests/sandboxed_process.test.ts[2m > [22m[2mSandboxed process using worker threads[2m > [22m[2msandboxed process[2m > [22m[2mshould fail if the process file is broken
+[22m[39mError: Broken file processor
+    at Object.<anonymous> [90m(/work/source/[39mtests/fixtures/fixture_processor_broken.js:1:7[90m)[39m
+[90m    at Module._compile (node:internal/modules/cjs/loader:1521:14)[39m
+[90m    at Object..js (node:internal/modules/cjs/loader:1623:10)[39m
+[90m    at Module.load (node:internal/modules/cjs/loader:1266:32)[39m
+[90m    at Function._load (node:internal/modules/cjs/loader:1091:12)[39m
+[90m    at cjsLoader (node:internal/modules/esm/translators:298:15)[39m
+[90m    at ModuleWrap.<anonymous> (node:internal/modules/esm/translators:240:7)[39m
+[90m    at ModuleJob.run (node:internal/modules/esm/module_job:325:25)[39m
+[90m    at async ModuleLoader.import (node:internal/modules/esm/loader:606:24)[39m
+    at async ChildProcessor.init [90m(/work/source/[39mdist/cjs/classes/child-processor.js:31:46[90m)[39m
+
+ [32m✓[39m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using worker threads[2m > [22msandboxed process[2m > [22mshould fail if wrapping with ttl pattern[33m 1051[2mms[22m[39m
+ [32m✓[39m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using worker threads[2m > [22msandboxed process[2m > [22mshould fail if the process file is broken[32m 44[2mms[22m[39m
+[90mstderr[2m | tests/sandboxed_process.test.ts[2m > [22m[2mSandboxed process using worker threads[2m > [22m[2msandboxed process[2m > [22m[2mwhen a child fails to initialize once (transient error)[2m > [22m[2mdoes not reuse the broken child and recovers on the next job
+[22m[39mError: transient module load failure
+    at Object.<anonymous> [90m(/work/source/[39mtests/fixtures/fixture_processor_fail_init_once.js:19:9[90m)[39m
+[90m    at Module._compile (node:internal/modules/cjs/loader:1521:14)[39m
+[90m    at Object..js (node:internal/modules/cjs/loader:1623:10)[39m
+[90m    at Module.load (node:internal/modules/cjs/loader:1266:32)[39m
+[90m    at Function._load (node:internal/modules/cjs/loader:1091:12)[39m
+[90m    at cjsLoader (node:internal/modules/esm/translators:298:15)[39m
+[90m    at ModuleWrap.<anonymous> (node:internal/modules/esm/translators:240:7)[39m
+[90m    at ModuleJob.run (node:internal/modules/esm/module_job:325:25)[39m
+[90m    at async ModuleLoader.import (node:internal/modules/esm/loader:606:24)[39m
+    at async ChildProcessor.init [90m(/work/source/[39mdist/cjs/classes/child-processor.js:31:46[90m)[39m
+
+ [32m✓[39m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using worker threads[2m > [22msandboxed process[2m > [22mwhen a child fails to initialize once (transient error)[2m > [22mdoes not reuse the broken child and recovers on the next job[32m 98[2mms[22m[39m
+ [32m✓[39m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using worker threads[2m > [22msandboxed process[2m > [22mwhen child process a job and its killed direcly after completing[2m > [22mshould process the next job in a new child process[33m 2098[2mms[22m[39m
+[90mstderr[2m | tests/sandboxed_process.test.ts[2m > [22m[2mSandboxed process using worker threads[2m > [22m[2msandboxed process[2m > [22m[2mwhen function is not exported[2m > [22m[2mthrows an error
+[22m[39mError: No function is exported in processor file
+    at ChildProcessor.init [90m(/work/source/[39mdist/cjs/classes/child-processor.js:38:23[90m)[39m
+    at async MessagePort.<anonymous> [90m(/work/source/[39mdist/cjs/classes/main-base.js:16:21[90m)[39m
+
+ [32m✓[39m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using worker threads[2m > [22msandboxed process[2m > [22mwhen child process a job and its killed with SIGKILL while processing[2m > [22mshould fail with an unexpected error[32m 270[2mms[22m[39m
+ [32m✓[39m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using worker threads[2m > [22msandboxed process[2m > [22mwhen function is not exported[2m > [22mthrows an error[32m 51[2mms[22m[39m
+ [32m✓[39m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using worker threads[2m > [22msandboxed process[2m > [22mshould release exited process[33m 453[2mms[22m[39m
+ [32m✓[39m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using worker threads[2m > [22msandboxed process[2m > [22mshould allow the job to complete and then exit on worker close[33m 1046[2mms[22m[39m
+ [32m✓[39m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using worker threads[2m > [22msandboxed process[2m > [22mwhen cancelling a sandboxed job[2m > [22mshould cancel a running job and fail it[32m 151[2mms[22m[39m
+ [32m✓[39m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using worker threads[2m > [22msandboxed process[2m > [22mwhen cancelling a sandboxed job[2m > [22mshould cancel a running job with a custom reason[32m 145[2mms[22m[39m
+ [32m✓[39m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using worker threads[2m > [22msandboxed process[2m > [22mwhen cancelling a sandboxed job[2m > [22mshould return false when cancelling a non-existent job[32m 20[2mms[22m[39m
+ [32m✓[39m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using worker threads[2m > [22msandboxed process[2m > [22mwhen cancelling a sandboxed job[2m > [22mshould cancel all running jobs with cancelAllJobs[32m 161[2mms[22m[39m
+ [32m✓[39m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using worker threads[2m > [22mcustom cases[2m > [22mshould allow to pass workerThreadsOptions[33m 1068[2mms[22m[39m
+ [32m✓[39m tests/sandboxed_process.test.ts[2m > [22mSandbox error message handling[2m > [22mpreserves error message when child reports via ParentCommand.Error[32m 5[2mms[22m[39m
+ [32m✓[39m tests/connection.test.ts[2m > [22mRedisConnection[2m > [22mconstructor[2m > [22minitializes with default extraOptions when none provided[32m 2[2mms[22m[39m
+ [32m✓[39m tests/connection.test.ts[2m > [22mRedisConnection[2m > [22mconstructor[2m > [22mmerges provided extraOptions with defaults[32m 2[2mms[22m[39m
+ [32m✓[39m tests/connection.test.ts[2m > [22mRedisConnection[2m > [22mconstructor[2m > [22mwhen skipVersionCheck is set as true[2m > [22minitializes version as minimum[32m 9[2mms[22m[39m
+ [32m✓[39m tests/connection.test.ts[2m > [22mRedisConnection[2m > [22mblocking option[2m > [22msets maxRetriesPerRequest to null when blocking is true[32m 0[2mms[22m[39m
+ [32m✓[39m tests/connection.test.ts[2m > [22mRedisConnection[2m > [22mblocking option[2m > [22mpreserves maxRetriesPerRequest when blocking is false[32m 0[2mms[22m[39m
+ [32m✓[39m tests/connection.test.ts[2m > [22mRedisConnection[2m > [22mblocking option[2m > [22mreconnects an ioredis cluster with an empty node pool before bzpopmin[32m 12[2mms[22m[39m
+ [32m✓[39m tests/connection.test.ts[2m > [22mRedisConnection[2m > [22mblocking option[2m > [22mrestores patched bzpopmin when a shared blocking cluster connection closes[32m 6[2mms[22m[39m
+ [32m✓[39m tests/connection.test.ts[2m > [22mRedisConnection[2m > [22mblocking option[2m > [22mkeeps patched bzpopmin until all shared blocking cluster connections close[32m 10[2mms[22m[39m
+ [32m✓[39m tests/connection.test.ts[2m > [22mRedisConnection[2m > [22mblocking option[2m > [22mdoes not reconnect an empty-node blocking cluster while the client is closing[32m 5[2mms[22m[39m
+ [32m✓[39m tests/connection.test.ts[2m > [22mRedisConnection[2m > [22mblocking option[2m > [22mreconnects an ioredis cluster after bzpopmin command timeout[32m 6[2mms[22m[39m
+ [32m✓[39m tests/connection.test.ts[2m > [22mRedisConnection[2m > [22mblocking option[2m > [22mdoes not reconnect after bzpopmin command timeout while closing[32m 8[2mms[22m[39m
+ [32m✓[39m tests/connection.test.ts[2m > [22mRedisConnection[2m > [22mblocking option[2m > [22mpreserves the bzpopmin error when reconnect after command timeout fails[32m 9[2mms[22m[39m
+ [32m✓[39m tests/connection.test.ts[2m > [22mRedisConnection[2m > [22mblocking option[2m > [22mreconnects an ioredis cluster after slots refresh timeout[32m 7[2mms[22m[39m
+ [32m✓[39m tests/connection.test.ts[2m > [22mRedisConnection[2m > [22mblocking option[2m > [22mthrows a timeout error when cluster reconnect hangs longer than clusterReconnectTimeoutMs[32m 56[2mms[22m[39m
+[90mstderr[2m | tests/connection.test.ts[2m > [22m[2mRedisConnection[2m > [22m[2mwhen init fails before an error listener is attached[2m > [22m[2mdoes not leak an unhandled error for a Worker
+[22m[39mError: connect ECONNREFUSED 127.0.0.1:59999
+[90m    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1611:16)[39m {
+  errno: [33m-111[39m,
+  code: [32m'ECONNREFUSED'[39m,
+  syscall: [32m'connect'[39m,
+  address: [32m'127.0.0.1'[39m,
+  port: [33m59999[39m
+}
+
+[90mstderr[2m | tests/connection.test.ts[2m > [22m[2mRedisConnection[2m > [22m[2mwhen init fails before an error listener is attached[2m > [22m[2mdoes not leak an unhandled error for a Worker
+[22m[39mError: connect ECONNREFUSED 127.0.0.1:59999
+[90m    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1611:16)[39m {
+  errno: [33m-111[39m,
+  code: [32m'ECONNREFUSED'[39m,
+  syscall: [32m'connect'[39m,
+  address: [32m'127.0.0.1'[39m,
+  port: [33m59999[39m
+}
+
+[90mstderr[2m | tests/connection.test.ts[2m > [22m[2mRedisConnection[2m > [22m[2mwhen init fails before an error listener is attached[2m > [22m[2mdoes not leak an unhandled error for a Worker
+[22m[39mError: connect ECONNREFUSED 127.0.0.1:59999
+[90m    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1611:16)[39m {
+  errno: [33m-111[39m,
+  code: [32m'ECONNREFUSED'[39m,
+  syscall: [32m'connect'[39m,
+  address: [32m'127.0.0.1'[39m,
+  port: [33m59999[39m
+}
+
+[90mstderr[2m | tests/connection.test.ts[2m > [22m[2mRedisConnection[2m > [22m[2mwhen init fails before an error listener is attached[2m > [22m[2mdoes not leak an unhandled error for a Worker
+[22m[39mError: connect ECONNREFUSED 127.0.0.1:59999
+[90m    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1611:16)[39m {
+  errno: [33m-111[39m,
+  code: [32m'ECONNREFUSED'[39m,
+  syscall: [32m'connect'[39m,
+  address: [32m'127.0.0.1'[39m,
+  port: [33m59999[39m
+}
+
+ [32m✓[39m tests/connection.test.ts[2m > [22mRedisConnection[2m > [22mblocking option[2m > [22mclears the cached reconnect promise after a timeout so subsequent calls can retry[32m 108[2mms[22m[39m
+ [32m✓[39m tests/connection.test.ts[2m > [22mRedisConnection[2m > [22mconnect()[2m > [22mskips waiting for ready when skipWaitingForReady is true[32m 4[2mms[22m[39m
+ [32m✓[39m tests/connection.test.ts[2m > [22mRedisConnection[2m > [22mconnect()[2m > [22mawaits ready state when skipWaitingForReady is false[32m 3[2mms[22m[39m
+ [32m✓[39m tests/connection.test.ts[2m > [22mRedisConnection[2m > [22mwaitUntilReady()[2m > [22mreturns immediately when standalone client status is "ready"[32m 1[2mms[22m[39m
+ [32m✓[39m tests/connection.test.ts[2m > [22mRedisConnection[2m > [22mwaitUntilReady()[2m > [22mreturns immediately when cluster client status is "connect"[32m 1[2mms[22m[39m
+ [32m✓[39m tests/connection.test.ts[2m > [22mRedisConnection[2m > [22mreconnect()[2m > [22mdoes not connect from status ready[32m 0[2mms[22m[39m
+ [32m✓[39m tests/connection.test.ts[2m > [22mRedisConnection[2m > [22mreconnect()[2m > [22mconnects from status wait[32m 0[2mms[22m[39m
+ [32m✓[39m tests/connection.test.ts[2m > [22mRedisConnection[2m > [22mreconnect()[2m > [22mconnects from status end[32m 1[2mms[22m[39m
+ [32m✓[39m tests/connection.test.ts[2m > [22mRedisConnection[2m > [22mreconnect()[2m > [22mwaits for status connecting to become ready[32m 1[2mms[22m[39m
+ [32m✓[39m tests/connection.test.ts[2m > [22mRedisConnection[2m > [22mreconnect()[2m > [22mwaits for status connect to become ready[32m 0[2mms[22m[39m
+ [32m✓[39m tests/connection.test.ts[2m > [22mRedisConnection[2m > [22mreconnect()[2m > [22mwaits for status reconnecting to become ready[32m 0[2mms[22m[39m
+ [32m✓[39m tests/connection.test.ts[2m > [22mRedisConnection[2m > [22mreconnect()[2m > [22mconnects after status close becomes terminal[32m 1[2mms[22m[39m
+ [32m✓[39m tests/connection.test.ts[2m > [22mRedisConnection[2m > [22mreconnect()[2m > [22mconnects after status closing becomes terminal[32m 0[2mms[22m[39m
+ [32m✓[39m tests/connection.test.ts[2m > [22mRedisConnection[2m > [22mreconnect()[2m > [22mconnects after status disconnecting becomes terminal[32m 0[2mms[22m[39m
+ [32m✓[39m tests/connection.test.ts[2m > [22mRedisConnection[2m > [22mreconnect()[2m > [22mwaits for a concurrent reconnect started from the end event[32m 1[2mms[22m[39m
+ [32m✓[39m tests/connection.test.ts[2m > [22mRedisConnection[2m > [22mQueue[2m > [22mpropagates skipWaitingForReady to RedisConnection[32m 2[2mms[22m[39m
+ [32m✓[39m tests/connection.test.ts[2m > [22mRedisConnection[2m > [22mQueue[2m > [22muses non-blocking connection by default[32m 1[2mms[22m[39m
+ [32m✓[39m tests/connection.test.ts[2m > [22mRedisConnection[2m > [22mQueue[2m > [22muses shared connection if provided Redis instance[32m 0[2mms[22m[39m
+ [32m✓[39m tests/connection.test.ts[2m > [22mRedisConnection[2m > [22mWorker[2m > [22minitializes blockingConnection with blocking: true[32m 2[2mms[22m[39m
+ [32m✓[39m tests/connection.test.ts[2m > [22mRedisConnection[2m > [22mWorker[2m > [22msets shared: false for blockingConnection[32m 1[2mms[22m[39m
+ [32m✓[39m tests/connection.test.ts[2m > [22mRedisConnection[2m > [22mWorker[2m > [22muses blocking connection by default[32m 0[2mms[22m[39m
+ [32m✓[39m tests/connection.test.ts[2m > [22mRedisConnection[2m > [22mFlowProducer[2m > [22muses non-blocking connection[32m 0[2mms[22m[39m
+ [32m✓[39m tests/connection.test.ts[2m > [22mRedisConnection[2m > [22mFlowProducer[2m > [22mshares connection if provided Redis instance[32m 0[2mms[22m[39m
+ [32m✓[39m tests/connection.test.ts[2m > [22mRedisConnection[2m > [22mwhen init fails before an error listener is attached[2m > [22mdoes not leak an unhandled error for a Worker[33m 503[2mms[22m[39m
+[90mstderr[2m | tests/connection.test.ts[2m > [22m[2mRedisConnection[2m > [22m[2mwhen init fails before an error listener is attached[2m > [22m[2mdoes not leak an unhandled error for a Queue
+[22m[39mError: connect ECONNREFUSED 127.0.0.1:59999
+[90m    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1611:16)[39m {
+  errno: [33m-111[39m,
+  code: [32m'ECONNREFUSED'[39m,
+  syscall: [32m'connect'[39m,
+  address: [32m'127.0.0.1'[39m,
+  port: [33m59999[39m
+}
+
+[90mstderr[2m | tests/connection.test.ts[2m > [22m[2mRedisConnection[2m > [22m[2mwhen init fails before an error listener is attached[2m > [22m[2mdoes not leak an unhandled error for a Queue
+[22m[39mError: connect ECONNREFUSED 127.0.0.1:59999
+[90m    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1611:16)[39m {
+  errno: [33m-111[39m,
+  code: [32m'ECONNREFUSED'[39m,
+  syscall: [32m'connect'[39m,
+  address: [32m'127.0.0.1'[39m,
+  port: [33m59999[39m
+}
+
+ [32m✓[39m tests/connection.test.ts[2m > [22mRedisConnection[2m > [22mwhen init fails before an error listener is attached[2m > [22mdoes not leak an unhandled error for a Queue[33m 503[2mms[22m[39m
+ [32m✓[39m tests/connection.test.ts[2m > [22mRedisConnection[2m > [22mwhen init fails before an error listener is attached[2m > [22mdoes not leak an unhandled error for a FlowProducer[33m 502[2mms[22m[39m
+[90mstderr[2m | tests/connection.test.ts[2m > [22m[2mconnection[2m > [22m[2mestablish ioredis connection[2m > [22m[2mshould fail with invalid host:port
+[22m[39mError: connect ECONNREFUSED 127.0.0.1:9000
+[90m    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1611:16)[39m {
+  errno: [33m-111[39m,
+  code: [32m'ECONNREFUSED'[39m,
+  syscall: [32m'connect'[39m,
+  address: [32m'127.0.0.1'[39m,
+  port: [33m9000[39m
+}
+
+[90mstderr[2m | tests/connection.test.ts[2m > [22m[2mconnection[2m > [22m[2mestablish ioredis connection[2m > [22m[2mshould fail with invalid host:port
+[22m[39mError: connect ECONNREFUSED 127.0.0.1:9000
+[90m    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1611:16)[39m {
+  errno: [33m-111[39m,
+  code: [32m'ECONNREFUSED'[39m,
+  syscall: [32m'connect'[39m,
+  address: [32m'127.0.0.1'[39m,
+  port: [33m9000[39m
+}
+
+[90mstderr[2m | tests/connection.test.ts[2m > [22m[2mconnection[2m > [22m[2mestablish ioredis connection[2m > [22m[2mshould fail with invalid connection URL
+[22m[39mError: connect ECONNREFUSED 127.0.0.1:9001
+[90m    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1611:16)[39m {
+  errno: [33m-111[39m,
+  code: [32m'ECONNREFUSED'[39m,
+  syscall: [32m'connect'[39m,
+  address: [32m'127.0.0.1'[39m,
+  port: [33m9001[39m
+}
+
+[90mstderr[2m | tests/connection.test.ts[2m > [22m[2mconnection[2m > [22m[2mestablish ioredis connection[2m > [22m[2mshould fail with invalid connection URL
+[22m[39mError: connect ECONNREFUSED 127.0.0.1:9001
+[90m    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1611:16)[39m {
+  errno: [33m-111[39m,
+  code: [32m'ECONNREFUSED'[39m,
+  syscall: [32m'connect'[39m,
+  address: [32m'127.0.0.1'[39m,
+  port: [33m9001[39m
+}
+
+ [32m✓[39m tests/connection.test.ts[2m > [22mconnection[2m > [22mestablish ioredis connection[2m > [22mshould connect with host:port[32m 27[2mms[22m[39m
+ [32m✓[39m tests/connection.test.ts[2m > [22mconnection[2m > [22mestablish ioredis connection[2m > [22mshould fail with invalid host:port[32m 20[2mms[22m[39m
+ [32m✓[39m tests/connection.test.ts[2m > [22mconnection[2m > [22mestablish ioredis connection[2m > [22mshould connect with connection URL[32m 20[2mms[22m[39m
+ [32m✓[39m tests/connection.test.ts[2m > [22mconnection[2m > [22mestablish ioredis connection[2m > [22mshould fail with invalid connection URL[32m 20[2mms[22m[39m
+ [32m✓[39m tests/connection.test.ts[2m > [22mconnection[2m > [22mprefix[2m > [22mshould throw exception if using prefix with ioredis[32m 10[2mms[22m[39m
+ [32m✓[39m tests/connection.test.ts[2m > [22mconnection[2m > [22mprefix[2m > [22mshould throw exception if using prefix with ioredis in cluster mode[32m 10[2mms[22m[39m
+ [32m✓[39m tests/connection.test.ts[2m > [22mconnection[2m > [22mblocking[2m > [22mshould override maxRetriesPerRequest: null as redis options[32m 14[2mms[22m[39m
+ [32m✓[39m tests/connection.test.ts[2m > [22mconnection[2m > [22mnon-blocking[2m > [22mshould not override any redis options[32m 16[2mms[22m[39m
+ [2m[90m↓[39m[22m tests/connection.test.ts[2m > [22mconnection[2m > [22mwhen maxmemory-policy is different than noeviction in Redis[2m > [22mthrows an error
+ [32m✓[39m tests/connection.test.ts[2m > [22mconnection[2m > [22mwhen instantiating with a clustered ioredis connection[2m > [22mshould not fail when using dsn strings[32m 10[2mms[22m[39m
+ [32m✓[39m tests/connection.test.ts[2m > [22mconnection[2m > [22mshould close worker even if redis is down[32m 21[2mms[22m[39m
+ [32m✓[39m tests/connection.test.ts[2m > [22mconnection[2m > [22mshould close underlying redis connection when closing fast[32m 8[2mms[22m[39m
+[90mstderr[2m | tests/connection.test.ts[2m > [22m[2mconnection[2m > [22m[2mshould fail if redis connection fails
+[22m[39mError: connect ECONNREFUSED 127.0.0.1:1234
+[90m    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1611:16)[39m {
+  errno: [33m-111[39m,
+  code: [32m'ECONNREFUSED'[39m,
+  syscall: [32m'connect'[39m,
+  address: [32m'127.0.0.1'[39m,
+  port: [33m1234[39m
+}
+
+[90mstderr[2m | tests/connection.test.ts[2m > [22m[2mconnection[2m > [22m[2mshould fail if redis connection fails
+[22m[39mError: connect ECONNREFUSED 127.0.0.1:1234
+[90m    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1611:16)[39m {
+  errno: [33m-111[39m,
+  code: [32m'ECONNREFUSED'[39m,
+  syscall: [32m'connect'[39m,
+  address: [32m'127.0.0.1'[39m,
+  port: [33m1234[39m
+}
+
+ [32m✓[39m tests/connection.test.ts[2m > [22mconnection[2m > [22mshould recover from a connection loss[33m 2084[2mms[22m[39m
+ [32m✓[39m tests/connection.test.ts[2m > [22mconnection[2m > [22mshould handle jobs added before and after a redis disconnect[32m 78[2mms[22m[39m
+ [32m✓[39m tests/connection.test.ts[2m > [22mconnection[2m > [22mshould fail if redis connection fails[32m 10[2mms[22m[39m
+[90mstderr[2m | tests/connection.test.ts[2m > [22m[2mconnection[2m > [22m[2mshould close if connection is failing
+[22m[39mError: connect ECONNREFUSED 127.0.0.1:1234
+[90m    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1611:16)[39m {
+  errno: [33m-111[39m,
+  code: [32m'ECONNREFUSED'[39m,
+  syscall: [32m'connect'[39m,
+  address: [32m'127.0.0.1'[39m,
+  port: [33m1234[39m
+}
+
+[90mstderr[2m | tests/connection.test.ts[2m > [22m[2mconnection[2m > [22m[2mshould close if connection is failing
+[22m[39mError: connect ECONNREFUSED 127.0.0.1:1234
+[90m    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1611:16)[39m {
+  errno: [33m-111[39m,
+  code: [32m'ECONNREFUSED'[39m,
+  syscall: [32m'connect'[39m,
+  address: [32m'127.0.0.1'[39m,
+  port: [33m1234[39m
+}
+
+ [32m✓[39m tests/connection.test.ts[2m > [22mconnection[2m > [22mshould emit error if redis connection fails[32m 11[2mms[22m[39m
+ [32m✓[39m tests/connection.test.ts[2m > [22mconnection[2m > [22mshould close if connection has failed[32m 9[2mms[22m[39m
+ [32m✓[39m tests/connection.test.ts[2m > [22mconnection[2m > [22mshould close if connection is failing[32m 10[2mms[22m[39m
+ [32m✓[39m tests/cluster.test.ts[2m > [22mCluster support[2m > [22mWorker connection name on cluster[2m > [22mwhen connection is a cluster instance[2m > [22mshould pass connectionName when duplicating a cluster connection[32m 43[2mms[22m[39m
+ [32m✓[39m tests/cluster.test.ts[2m > [22mCluster support[2m > [22mWorker connection name on cluster[2m > [22mwhen connection is a regular Redis instance[2m > [22mshould pass connectionName when duplicating a non-cluster connection[32m 21[2mms[22m[39m
+ [32m✓[39m tests/cluster.test.ts[2m > [22mCluster support[2m > [22mWorker connection name on cluster[2m > [22mwhen worker has a name option[2m > [22mshould include worker name in connection name for cluster[32m 23[2mms[22m[39m
+ [32m✓[39m tests/cluster.test.ts[2m > [22mCluster support[2m > [22mgetWorkers on cluster[2m > [22mwhen client is a cluster[2m > [22mshould fetch client list from all cluster nodes[32m 8[2mms[22m[39m
+[90mstderr[2m | tests/cluster.test.ts[2m > [22m[2mCluster integration tests
+[22m[39mRedis cluster not available, skipping cluster integration tests: Failed to refresh slots cache.
+
+ [32m✓[39m tests/cluster.test.ts[2m > [22mCluster support[2m > [22mgetWorkers on cluster[2m > [22mwhen client is a cluster[2m > [22mshould return workers from node with most matching connections[32m 10[2mms[22m[39m
+ [32m✓[39m tests/cluster.test.ts[2m > [22mCluster support[2m > [22mgetWorkers on cluster[2m > [22mwhen client is a cluster[2m > [22mshould return empty array when no matching workers found on any node[32m 10[2mms[22m[39m
+ [32m✓[39m tests/cluster.test.ts[2m > [22mCluster support[2m > [22mgetWorkers on cluster[2m > [22mwhen client is not a cluster[2m > [22mshould fetch client list from single node as before[32m 21[2mms[22m[39m
+ [32m✓[39m tests/cluster.test.ts[2m > [22mCluster support[2m > [22mgetQueueEvents on cluster[2m > [22mshould fetch queue events from all cluster nodes and return from node with most matches[32m 8[2mms[22m[39m
+ [32m✓[39m tests/cluster.test.ts[2m > [22mCluster support[2m > [22mgetWorkersCount on cluster[2m > [22mshould return correct count from cluster[32m 9[2mms[22m[39m
+ [32m✓[39m tests/cluster.test.ts[2m > [22mCluster support[2m > [22medge cases[2m > [22mwhen cluster has only one node[2m > [22mshould return workers from that single node[32m 10[2mms[22m[39m
+ [32m✓[39m tests/cluster.test.ts[2m > [22mCluster support[2m > [22medge cases[2m > [22mwhen all nodes have equal number of matching workers[2m > [22mshould return workers from the first node with maximum count[32m 10[2mms[22m[39m
+ [32m✓[39m tests/cluster.test.ts[2m > [22mCluster support[2m > [22medge cases[2m > [22mwhen cluster has workers without names (unnamed workers)[2m > [22mshould include unnamed workers in the result[32m 10[2mms[22m[39m
+ [32m✓[39m tests/cluster.test.ts[2m > [22mCluster support[2m > [22medge cases[2m > [22mwhen cluster nodes return empty client lists[2m > [22mshould return empty array[32m 6[2mms[22m[39m
+[90mstderr[2m | tests/cluster.test.ts[2m > [22m[2mCluster with authentication integration tests
+[22m[39mRedis cluster with auth not available, skipping cluster auth integration tests: Failed to refresh slots cache.
+
+ [2m[90m↓[39m[22m tests/cluster.test.ts[2m > [22mCluster integration tests[2m > [22mwhen using a real Redis cluster[2m > [22mreads relay inboxes using a native Cluster connection[32m 1[2mms[22m[39m
+ [2m[90m↓[39m[22m tests/cluster.test.ts[2m > [22mCluster integration tests[2m > [22mwhen using a real Redis cluster[2m > [22mshould add and process jobs[32m 0[2mms[22m[39m
+ [2m[90m↓[39m[22m tests/cluster.test.ts[2m > [22mCluster integration tests[2m > [22mwhen using a real Redis cluster[2m > [22mshould handle multiple jobs in parallel[32m 0[2mms[22m[39m
+ [2m[90m↓[39m[22m tests/cluster.test.ts[2m > [22mCluster integration tests[2m > [22mwhen using a real Redis cluster[2m > [22mshould get workers from cluster[32m 0[2mms[22m[39m
+ [2m[90m↓[39m[22m tests/cluster.test.ts[2m > [22mCluster integration tests[2m > [22mwhen using a real Redis cluster[2m > [22mshould handle delayed jobs[32m 0[2mms[22m[39m
+ [2m[90m↓[39m[22m tests/cluster.test.ts[2m > [22mCluster integration tests[2m > [22mwhen using a real Redis cluster[2m > [22mshould handle job retries[32m 0[2mms[22m[39m
+ [2m[90m↓[39m[22m tests/cluster.test.ts[2m > [22mCluster integration tests[2m > [22mwhen using a real Redis cluster[2m > [22mshould get queue counts[32m 0[2mms[22m[39m
+ [2m[90m↓[39m[22m tests/cluster.test.ts[2m > [22mCluster with authentication integration tests[2m > [22mwhen using a Redis cluster with authentication[2m > [22mshould add and process jobs with authenticated cluster[32m 0[2mms[22m[39m
+ [2m[90m↓[39m[22m tests/cluster.test.ts[2m > [22mCluster with authentication integration tests[2m > [22mwhen using a Redis cluster with authentication[2m > [22mshould handle worker blocking connection with authentication[32m 0[2mms[22m[39m
+ [2m[90m↓[39m[22m tests/cluster.test.ts[2m > [22mCluster with authentication integration tests[2m > [22mwhen using a Redis cluster with authentication[2m > [22mshould handle QueueEvents with authentication[32m 0[2mms[22m[39m
+ [32m✓[39m tests/relay.ioredis.test.ts[2m > [22mRelay on ioredis[2m > [22maccepts an existing client with default retry options without owning it[32m 78[2mms[22m[39m
+ [32m✓[39m tests/relay.ioredis.test.ts[2m > [22mRelay on ioredis[2m > [22mforwards errors from both Redis connections through Relay[32m 33[2mms[22m[39m
+ [32m✓[39m tests/relay.ioredis.test.ts[2m > [22mRelay on ioredis[2m > [22mkeeps namespace registry retries off the publish path[33m 340[2mms[22m[39m
+ [32m✓[39m tests/relay.ioredis.test.ts[2m > [22mRelay on ioredis[2m > [22muses each recipient inbox limit and counts only unread publish-time drops[32m 33[2mms[22m[39m
+ [32m✓[39m tests/relay.ioredis.test.ts[2m > [22mRelay on ioredis[2m > [22misolates connection discovery for matching node identifiers in different databases[32m 94[2mms[22m[39m
+ [32m✓[39m tests/relay.ioredis.test.ts[2m > [22mRelay on ioredis[2m > [22mdoes not count a fetched batch as dropped while awaiting its heartbeat[32m 116[2mms[22m[39m
+ [32m✓[39m tests/relay.ioredis.test.ts[2m > [22mRelay on ioredis[2m > [22mkeeps a fetched batch when the heartbeat before its dispatch fails[33m 1062[2mms[22m[39m
+ [32m✓[39m tests/relay.ioredis.test.ts[2m > [22mRelay on ioredis[2m > [22mdoes not deliver entries trimmed between a blocking wakeup and the atomic fetch[32m 15[2mms[22m[39m
+ [32m✓[39m tests/relay.ioredis.test.ts[2m > [22mRelay on ioredis[2m > [22mdelivers messages published while its inbox connection was dropped[33m 1089[2mms[22m[39m
+ [32m✓[39m tests/relay.ioredis.test.ts[2m > [22mRelay on ioredis[2m > [22mleaves no keys behind when nodes close[32m 42[2mms[22m[39m
+ [32m✓[39m tests/relay.ioredis.test.ts[2m > [22mRelay on ioredis[2m > [22mkeeps an expiry on every key[32m 130[2mms[22m[39m
+ [32m✓[39m tests/relay.ioredis.test.ts[2m > [22mRelay on ioredis[2m > [22mopens its blocking connection only to read an inbox[32m 64[2mms[22m[39m
+ [32m✓[39m tests/relay.ioredis.test.ts[2m > [22mRelay on ioredis[2m > [22mreturns at once from inbox reads after an interrupt[32m 18[2mms[22m[39m
+ [32m✓[39m tests/relay.ioredis.test.ts[2m > [22mRelay on ioredis[2m > [22mcloses while the inbox connection is still initializing[32m 41[2mms[22m[39m
+ [32m✓[39m tests/relay.ioredis.test.ts[2m > [22mRelay on ioredis[2m > [22mretries its inbox connection after it fails to initialize[32m 60[2mms[22m[39m
+ [32m✓[39m tests/relay.ioredis.test.ts[2m > [22mRelay on ioredis[2m > [22mrecovers an ioredis Cluster inbox connection left with an empty node pool[32m 2[2mms[22m[39m
+ [32m✓[39m tests/relay.ioredis.test.ts[2m > [22mRelay on ioredis[2m > [22mexpires the retained index with the remaining retained messages after a deletion[32m 9[2mms[22m[39m
+ [32m✓[39m tests/relay.ioredis.test.ts[2m > [22mRelay on ioredis[2m > [22mnever shares keys with queues nor looks like one, whatever the names[32m 44[2mms[22m[39m
+ [32m✓[39m tests/relay.ioredis.test.ts[2m > [22mRelay on ioredis[2m > [22mrefuses to share a namespace with nodes of another layout version[32m 5[2mms[22m[39m
+ [32m✓[39m tests/relay.ioredis.test.ts[2m > [22mRelay on ioredis[2m > [22mrequires Redis 6.2[32m 10[2mms[22m[39m
+ [32m✓[39m tests/relay.ioredis.test.ts[2m > [22mRelay on ioredis[2m > [22mbounds dead-node cleanup across many endpoints and continues on idle sweeps[32m 26[2mms[22m[39m
+ [32m✓[39m tests/relay.ioredis.test.ts[2m > [22mRelay on ioredis[2m > [22mbounds dead-node cleanup across many patterns and continues on idle sweeps[32m 18[2mms[22m[39m
+ [32m✓[39m tests/relay.ioredis.test.ts[2m > [22mRelay on ioredis[2m > [22mprunes in bounded registration batches before reusing a node ID after unregister[32m 20[2mms[22m[39m
+ [32m✓[39m tests/relay.ioredis.test.ts[2m > [22mRelay on ioredis[2m > [22mprunes in bounded registration batches before reusing a node ID after expired[32m 24[2mms[22m[39m
+ [32m✓[39m tests/relay.ioredis.test.ts[2m > [22mRelay on ioredis[2m > [22mshares the pruning budget across all nodes removed by a sweep[32m 27[2mms[22m[39m
+ [32m✓[39m tests/relay.ioredis.test.ts[2m > [22mRelay on ioredis[2m > [22mdrops a namespace at once when its last live node leaves[32m 11[2mms[22m[39m
+ [32m✓[39m tests/ioredis-client.test.ts[2m > [22mcreateIORedisClient duplicate routing[2m > [22mshould route duplicate({ connectionName }) through redisOptions for Cluster[32m 8[2mms[22m[39m
+ [32m✓[39m tests/ioredis-client.test.ts[2m > [22mcreateIORedisClient duplicate routing[2m > [22mshould pass options directly for non-Cluster Redis[32m 6[2mms[22m[39m
+ [32m✓[39m tests/ioredis-client.test.ts[2m > [22mcreateIORedisClient does not mutate the raw client[2m > [22mshould not add bullmq markers or override methods on the raw ioredis instance[32m 2[2mms[22m[39m
+ [32m✓[39m tests/ioredis-client.test.ts[2m > [22mcreateIORedisClient does not mutate the raw client[2m > [22mshould return the same proxy when wrapping the same raw client twice[32m 0[2mms[22m[39m
+ [32m✓[39m tests/ioredis-client.test.ts[2m > [22mcreateIORedisClient does not mutate the raw client[2m > [22mshould be idempotent when called with an already-wrapped client[32m 0[2mms[22m[39m
+ [32m✓[39m tests/worker.ioredis.test.ts[2m > [22mworkers (ioredis-only)[2m > [22mwhen the blocking connection is parked in "reconnecting" (#4585)[2m > [22mrecovers and keeps processing jobs after a Redis outage longer than drainDelay[33m 10540[2mms[22m[39m
+ [32m✓[39m tests/worker.ioredis.test.ts[2m > [22mworkers (ioredis-only)[2m > [22mwhen a healthy blocking connection is torn down by the watchdog (#4585 ready-path race)[2m > [22mrecovers and keeps processing jobs (real ioredis)[33m 9030[2mms[22m[39m
+
+[2m Test Files [22m [1m[32m6 passed[39m[22m[90m (6)[39m
+[2m      Tests [22m [1m[32m206 passed[39m[22m[2m | [22m[33m11 skipped[39m[90m (217)[39m
+[2m   Start at [22m 10:30:11
+[2m   Duration [22m 95.76s[2m (transform 861ms, setup 294ms, import 1.59s, tests 93.29s, environment 0ms)[22m
+
+Done in 96.15s.

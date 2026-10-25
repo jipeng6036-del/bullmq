@@ -1,0 +1,66 @@
+[
+  {
+    "operation": "move-idle-owned-redis7-port",
+    "id": "68225c39f119220e6cd64e3023615b1208aba08bc8d1731ad179abea974e5977",
+    "oldPort": 6379,
+    "newPort": 6387,
+    "result": "OK"
+  },
+  {
+    "id": "740103bfad473eb7d69361ace23f507ca036add4a1e73db55cdf800a6a93fa07",
+    "name": "/ghpr-heartbeat0902-js-bullmq4168-redis6",
+    "image": "redis:6-alpine",
+    "imageId": "sha256:592b215e9287182f11ba9d7c229dc0ba312bb900a016ea65ae378b0127567319",
+    "networkMode": "container:68225c39f119220e6cd64e3023615b1208aba08bc8d1731ad179abea974e5977",
+    "tmpfs": {
+      "/data": "rw,size=67108864"
+    },
+    "command": [
+      "docker",
+      "run",
+      "-d",
+      "--name",
+      "ghpr-heartbeat0902-js-bullmq4168-redis6",
+      "--network",
+      "container:68225c39f119220e6cd64e3023615b1208aba08bc8d1731ad179abea974e5977",
+      "--tmpfs",
+      "/data:rw,size=67108864",
+      "redis:6-alpine",
+      "redis-server",
+      "--save",
+      "",
+      "--appendonly",
+      "no"
+    ],
+    "created": "2026-10-25T09:56:02.407053+00:00"
+  },
+  {
+    "id": "aea6beed187edfadb8f2f80209fe82e5f23f9e099661e60b477cfbde89eedda9",
+    "name": "/ghpr-heartbeat0902-js-bullmq4168-postgres16",
+    "image": "postgres:16-alpine",
+    "imageId": "sha256:f4610795587492cd4fb887c2dc3de301b813278bb6f616992061141b5f15ac36",
+    "networkMode": "container:68225c39f119220e6cd64e3023615b1208aba08bc8d1731ad179abea974e5977",
+    "tmpfs": {
+      "/var/lib/postgresql/data": "rw,size=536870912"
+    },
+    "command": [
+      "docker",
+      "run",
+      "-d",
+      "--name",
+      "ghpr-heartbeat0902-js-bullmq4168-postgres16",
+      "--network",
+      "container:68225c39f119220e6cd64e3023615b1208aba08bc8d1731ad179abea974e5977",
+      "--tmpfs",
+      "/var/lib/postgresql/data:rw,size=536870912",
+      "-e",
+      "POSTGRES_USER=postgres",
+      "-e",
+      "POSTGRES_PASSWORD=postgres",
+      "-e",
+      "POSTGRES_DB=bullmq_test",
+      "postgres:16-alpine"
+    ],
+    "created": "2026-10-25T09:56:07.919088+00:00"
+  }
+]

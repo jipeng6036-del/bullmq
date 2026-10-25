@@ -1,0 +1,312 @@
+{
+  "node": "v24.14.0",
+  "port": 46017,
+  "all": [
+    {
+      "mode": "child-process",
+      "operation": "persist",
+      "value": {
+        "equal": true,
+        "seen": [
+          0
+        ],
+        "aborted": false,
+        "listenersBefore": 1,
+        "listenersAfter": 1
+      },
+      "persisted": {
+        "operation": "persist",
+        "port": 46017,
+        "seen": [
+          0
+        ]
+      },
+      "elapsedMs": 1046,
+      "workerErrors": []
+    },
+    {
+      "mode": "child-process",
+      "operation": "reject",
+      "value": {
+        "caught": true,
+        "name": "TypeError",
+        "message": "Do not know how to serialize a BigInt",
+        "localType": "bigint",
+        "listenersBefore": 1,
+        "listenersAfter": 1
+      },
+      "persisted": {
+        "operation": "reject",
+        "port": 46017
+      },
+      "elapsedMs": 235,
+      "workerErrors": []
+    },
+    {
+      "mode": "child-process",
+      "operation": "send-failure",
+      "value": {
+        "caught": true,
+        "name": "Error",
+        "message": "() => {} could not be cloned.",
+        "localType": "function",
+        "listenersBefore": 1,
+        "listenersAfter": 1
+      },
+      "persisted": {
+        "operation": "send-failure",
+        "port": 46017
+      },
+      "elapsedMs": 240,
+      "workerErrors": []
+    },
+    {
+      "mode": "child-process",
+      "operation": "retry",
+      "value": {
+        "equal": true,
+        "seen": [
+          0,
+          1,
+          2
+        ],
+        "aborted": false,
+        "listenersBefore": 1,
+        "listenersAfter": 1
+      },
+      "persisted": {
+        "operation": "retry",
+        "port": 46017,
+        "seen": [
+          0,
+          1,
+          2
+        ]
+      },
+      "elapsedMs": 2568,
+      "workerErrors": []
+    },
+    {
+      "mode": "child-process",
+      "operation": "slow",
+      "value": {
+        "equal": true,
+        "seen": [
+          0
+        ],
+        "aborted": false,
+        "listenersBefore": 1,
+        "listenersAfter": 1
+      },
+      "persisted": {
+        "operation": "slow",
+        "port": 46017,
+        "seen": [
+          0
+        ]
+      },
+      "elapsedMs": 5820,
+      "workerErrors": []
+    },
+    {
+      "mode": "child-process",
+      "operation": "cancel",
+      "cancelled": true,
+      "value": {
+        "equal": true,
+        "seen": [
+          0
+        ],
+        "aborted": true,
+        "listenersBefore": 1,
+        "listenersAfter": 1
+      },
+      "persisted": {
+        "operation": "cancel",
+        "port": 46017,
+        "readyKey": "hb0902-4168-child-process-cancel-19476:ready",
+        "seen": [
+          0
+        ]
+      },
+      "elapsedMs": 994,
+      "workerErrors": []
+    },
+    {
+      "mode": "child-process",
+      "operation": "close",
+      "value": {
+        "equal": true,
+        "seen": [
+          0
+        ],
+        "aborted": false,
+        "listenersBefore": 1,
+        "listenersAfter": 1
+      },
+      "persisted": {
+        "operation": "close",
+        "port": 46017,
+        "readyKey": "hb0902-4168-child-process-close-19476:ready",
+        "seen": [
+          0
+        ]
+      },
+      "elapsedMs": 1015,
+      "workerErrors": []
+    },
+    {
+      "mode": "worker-thread",
+      "operation": "persist",
+      "value": {
+        "equal": true,
+        "seen": [
+          0
+        ],
+        "aborted": false,
+        "listenersBefore": 1,
+        "listenersAfter": 1
+      },
+      "persisted": {
+        "operation": "persist",
+        "port": 46017,
+        "seen": [
+          0
+        ]
+      },
+      "elapsedMs": 1089,
+      "workerErrors": []
+    },
+    {
+      "mode": "worker-thread",
+      "operation": "reject",
+      "value": {
+        "caught": true,
+        "name": "TypeError",
+        "message": "Do not know how to serialize a BigInt",
+        "localType": "bigint",
+        "listenersBefore": 1,
+        "listenersAfter": 1
+      },
+      "persisted": {
+        "operation": "reject",
+        "port": 46017
+      },
+      "elapsedMs": 276,
+      "workerErrors": []
+    },
+    {
+      "mode": "worker-thread",
+      "operation": "send-failure",
+      "value": {
+        "caught": true,
+        "name": "DataCloneError",
+        "message": "() => {} could not be cloned.",
+        "localType": "function",
+        "listenersBefore": 1,
+        "listenersAfter": 1
+      },
+      "persisted": {
+        "operation": "send-failure",
+        "port": 46017
+      },
+      "elapsedMs": 286,
+      "workerErrors": []
+    },
+    {
+      "mode": "worker-thread",
+      "operation": "retry",
+      "value": {
+        "equal": true,
+        "seen": [
+          0,
+          1,
+          2
+        ],
+        "aborted": false,
+        "listenersBefore": 1,
+        "listenersAfter": 1
+      },
+      "persisted": {
+        "operation": "retry",
+        "port": 46017,
+        "seen": [
+          0,
+          1,
+          2
+        ]
+      },
+      "elapsedMs": 2691,
+      "workerErrors": []
+    },
+    {
+      "mode": "worker-thread",
+      "operation": "slow",
+      "value": {
+        "equal": true,
+        "seen": [
+          0
+        ],
+        "aborted": false,
+        "listenersBefore": 1,
+        "listenersAfter": 1
+      },
+      "persisted": {
+        "operation": "slow",
+        "port": 46017,
+        "seen": [
+          0
+        ]
+      },
+      "elapsedMs": 5899,
+      "workerErrors": []
+    },
+    {
+      "mode": "worker-thread",
+      "operation": "cancel",
+      "cancelled": true,
+      "value": {
+        "equal": true,
+        "seen": [
+          0
+        ],
+        "aborted": true,
+        "listenersBefore": 1,
+        "listenersAfter": 1
+      },
+      "persisted": {
+        "operation": "cancel",
+        "port": 46017,
+        "readyKey": "hb0902-4168-worker-thread-cancel-19476:ready",
+        "seen": [
+          0
+        ]
+      },
+      "elapsedMs": 1096,
+      "workerErrors": []
+    },
+    {
+      "mode": "worker-thread",
+      "operation": "close",
+      "value": {
+        "equal": true,
+        "seen": [
+          0
+        ],
+        "aborted": false,
+        "listenersBefore": 1,
+        "listenersAfter": 1
+      },
+      "persisted": {
+        "operation": "close",
+        "port": 46017,
+        "readyKey": "hb0902-4168-worker-thread-close-19476:ready",
+        "seen": [
+          0
+        ]
+      },
+      "elapsedMs": 996,
+      "workerErrors": []
+    }
+  ]
+}

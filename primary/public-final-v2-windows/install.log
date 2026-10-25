@@ -1,0 +1,8 @@
+{"argv": ["C:\\WINDOWS\\system32\\cmd.exe", "/d", "/c", "E:\\Nodejs\\npm.cmd", "install", "--ignore-scripts", "--no-audit", "--no-fund", "--cache", "F:\\Github-PR\\ci-evidence\\heartbeat0902-js-bullmq-4168\\public-final-v2-windows\\npm-cache", "--registry", "https://registry.npmjs.org", "F:\\Github-PR\\ci-evidence\\heartbeat0902-js-bullmq-4168\\runtime\\artifact-final-v2\\bullmq-6.4.2.tgz", "ioredis@5.11.1"], "started": "2026-10-25T10:41:46.023536+00:00", "cwd": "F:\\Github-PR\\ci-evidence\\heartbeat0902-js-bullmq-4168\\public-final-v2-windows"}
+
+added 20 packages in 1m
+npm notice
+npm notice New minor version of npm available! 11.16.0 -> 11.21.1
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.21.1
+npm notice To update run: npm install -g npm@11.21.1
+npm notice

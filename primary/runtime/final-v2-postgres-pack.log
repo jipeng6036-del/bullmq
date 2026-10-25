@@ -1,0 +1,1126 @@
+{"argv": ["docker", "exec", "--user", "node", "--env", "HOME=/tmp/bullmq4168/home", "--env", "npm_config_cache=/tmp/bullmq4168/npm-cache", "--env", "PATH=/tmp/bullmq4168/tools/node_modules/node/bin:/tmp/bullmq4168/tools/node_modules/.bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin", "ghpr-heartbeat0902-js-bullmq4168-validation", "sh", "-c", "cd /tmp/bullmq4168/postgres-candidate && node /evidence/verify-final-v2.cjs /tmp/bullmq4168/postgres-candidate && yarn build && POSTGRES_URL=postgres://postgres:postgres@127.0.0.1:5432/bullmq_test yarn test:postgres && mkdir -p /evidence/artifact-final-v2 && npm pack --ignore-scripts --pack-destination /evidence/artifact-final-v2 && node /evidence/verify-final-v2.cjs /tmp/bullmq4168/postgres-candidate"], "started": "2026-10-25T10:23:24.782004+00:00"}
+{
+  "verified": true,
+  "root": "/tmp/bullmq4168/postgres-candidate",
+  "files": 1068,
+  "symlinks": 2,
+  "node": "v24.22.1",
+  "base": "09b7bfeb8653e74074542ca48e70477540742a7e",
+  "candidateArchiveSha256": "7bc67762360cab5ec31cc6f42e95cbc9c8d2401364a40b5129cf5bf2e10193a3",
+  "checkedAt": "2026-10-25T10:23:24.929Z"
+}
+yarn run v1.22.22
+$ npm run clean:dist && npm run pretest && npm run tsc:all && npm run copy:main:type && npm run clean:temp:files && npm run copy:lua && npm run copy:includes:lua
+npm warn Unknown env config "version-commit-hooks". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown env config "version-tag-prefix". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown env config "version-git-message". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown env config "argv". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown env config "version-git-tag". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+
+> bullmq@6.4.2 clean:dist
+> rimraf dist
+
+npm warn Unknown env config "version-commit-hooks". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown env config "version-tag-prefix". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown env config "version-git-message". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown env config "argv". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown env config "version-git-tag". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+
+> bullmq@6.4.2 pretest
+> npm run clean:scripts && npm run generate:raw:scripts && npm run transform:commands && npm run generate:sql:scripts && npm run circular:references
+
+npm warn Unknown env config "version-commit-hooks". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown env config "version-tag-prefix". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown env config "version-git-message". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown env config "argv". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown env config "version-git-tag". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+
+> bullmq@6.4.2 clean:scripts
+> rimraf rawScripts src/scripts src/postgres/sql-scripts.ts
+
+npm warn Unknown env config "version-commit-hooks". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown env config "version-tag-prefix". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown env config "version-git-message". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown env config "argv". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown env config "version-git-tag". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+
+> bullmq@6.4.2 generate:raw:scripts
+> ts-node --project tsconfig-cjs.json scripts/generateRawScripts.ts
+
+npm warn Unknown env config "version-commit-hooks". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown env config "version-tag-prefix". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown env config "version-git-message". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown env config "argv". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown env config "version-git-tag". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+
+> bullmq@6.4.2 transform:commands
+> node ./scripts/commandTransform.js ./rawScripts ./src/scripts
+
+npm warn Unknown env config "version-commit-hooks". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown env config "version-tag-prefix". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown env config "version-git-message". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown env config "argv". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown env config "version-git-tag". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+
+> bullmq@6.4.2 generate:sql:scripts
+> node ./scripts/generateSqlScripts.js
+
+Generated src/postgres/sql-scripts.ts (100 commands, 4 migrations)
+npm warn Unknown env config "version-commit-hooks". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown env config "version-tag-prefix". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown env config "version-git-message". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown env config "argv". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown env config "version-git-tag". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+
+> bullmq@6.4.2 circular:references
+> madge --circular --extensions ts ./src
+
+- Finding files
+Processed 178 files (734ms) 
+
+✔ No circular dependency found!
+
+npm warn Unknown env config "version-commit-hooks". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown env config "version-tag-prefix". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown env config "version-git-message". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown env config "argv". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown env config "version-git-tag". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+
+> bullmq@6.4.2 tsc:all
+> tsc && tsc -p tsconfig-cjs.json
+
+npm warn Unknown env config "version-commit-hooks". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown env config "version-tag-prefix". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown env config "version-git-message". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown env config "argv". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown env config "version-git-tag". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+
+> bullmq@6.4.2 copy:main:type
+> cpx "./dist/esm/classes/main.d.ts" ./dist/cjs/classes && cpx "./dist/esm/classes/main-worker.d.ts" ./dist/cjs/classes
+
+npm warn Unknown env config "version-commit-hooks". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown env config "version-tag-prefix". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown env config "version-git-message". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown env config "argv". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown env config "version-git-tag". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+
+> bullmq@6.4.2 clean:temp:files
+> rimraf dist/cjs/bullmq.d.ts dist/esm/bullmq.d.ts dist/tsdoc-metadata.json
+
+npm warn Unknown env config "version-commit-hooks". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown env config "version-tag-prefix". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown env config "version-git-message". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown env config "argv". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown env config "version-git-tag". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+
+> bullmq@6.4.2 copy:lua
+> cpx "./src/commands/*.lua" ./dist/cjs/commands && cpx "./src/commands/*.lua" ./dist/esm/commands
+
+npm warn Unknown env config "version-commit-hooks". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown env config "version-tag-prefix". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown env config "version-git-message". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown env config "argv". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown env config "version-git-tag". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+
+> bullmq@6.4.2 copy:includes:lua
+> cpx "./src/commands/includes/*.lua" ./dist/cjs/commands/includes && cpx "./src/commands/includes/*.lua" ./dist/esm/commands/includes
+
+Done in 8.42s.
+yarn run v1.22.22
+$ vitest run --config vitest.postgres.config.ts
+(!) Your Vite config uses features that are unsupported by `configLoader: 'native'`, which is planned to become the default in a future major version of Vite:
+  - ESM syntax in a file loaded as CommonJS (vitest.postgres.config.ts:1:1). Use a `.mjs` extension or set `"type": "module"` in the closest package.json
+Set `VITE_CONFIG_NATIVE_IGNORE_WARNING=true` to suppress this warning.
+
+[1m[30m[46m RUN [49m[39m[22m [36mv4.1.12 [39m[90m/tmp/bullmq4168/postgres-candidate[39m
+
+ [32m✓[39m tests/postgres/sql_loader.test.ts[2m > [22mPostgreSQL SQL Loader[2m > [22mloads migration SQL without throwing[32m 1[2mms[22m[39m
+ [32m✓[39m tests/postgres/sql_loader.test.ts[2m > [22mPostgreSQL SQL Loader[2m > [22mloads command SQL without throwing[32m 0[2mms[22m[39m
+ [32m✓[39m tests/postgres/sql_loader.test.ts[2m > [22mPostgreSQL SQL Loader[2m > [22mdoes not read from the filesystem at runtime[32m 4[2mms[22m[39m
+ [32m✓[39m tests/postgres/sql_loader.test.ts[2m > [22mPostgreSQL SQL Loader[2m > [22minlined SQL is in sync with the .sql sources[32m 0[2mms[22m[39m
+ [32m✓[39m tests/postgres/sql_loader.test.ts[2m > [22mPostgreSQL SQL Loader[2m > [22mthrows a descriptive error for unknown keys[32m 1[2mms[22m[39m
+ [32m✓[39m tests/postgres/relay.test.ts[2m > [22mRelay (postgres) concurrency[2m > [22mrejects a supplied pool with max below 2 before using it[32m 3[2mms[22m[39m
+ [32m✓[39m tests/postgres/migration.test.ts[2m > [22mPostgreSQL migrations[2m > [22mmigrates a fresh database up to the latest schema version[32m 124[2mms[22m[39m
+ [32m✓[39m tests/postgres/relay.test.ts[2m > [22mRelay (postgres) concurrency[2m > [22mreads and publishes with a minimally sized owned pool[32m 195[2mms[22m[39m
+ [32m✓[39m tests/postgres/operations.test.ts[2m > [22mPostgreSQL backend operations[2m > [22madds a job (FIFO waiting) and reads it back[32m 143[2mms[22m[39m
+ [32m✓[39m tests/relay.test.ts[2m > [22mRelay (postgres)[2m > [22mbackend contract[2m > [22mregisters nodes and renews their lease[32m 152[2mms[22m[39m
+ [32m✓[39m tests/postgres/worker.test.ts[2m > [22mPostgreSQL Worker (end-to-end)[2m > [22mprocesses a job added to the queue[32m 213[2mms[22m[39m
+ [32m✓[39m tests/postgres/operations.test.ts[2m > [22mPostgreSQL backend operations[2m > [22mclaims the next job with moveToActive and completes it[32m 52[2mms[22m[39m
+ [32m✓[39m tests/postgres/operations.test.ts[2m > [22mPostgreSQL backend operations[2m > [22mreturns no job when the queue is empty[32m 36[2mms[22m[39m
+ [32m✓[39m tests/postgres/relay.test.ts[2m > [22mRelay (postgres) concurrency[2m > [22mreturns at once from an inbox read whose listener fails while reading[32m 49[2mms[22m[39m
+ [32m✓[39m tests/postgres/relay.test.ts[2m > [22mRelay (postgres) concurrency[2m > [22mforwards connection errors only when an error listener is attached[32m 20[2mms[22m[39m
+ [32m✓[39m tests/postgres/relay.test.ts[2m > [22mRelay (postgres) concurrency[2m > [22muses distinct connection names for long namespace and node IDs[32m 55[2mms[22m[39m
+ [32m✓[39m tests/postgres/with-backend.test.ts[2m > [22mbinds every constructor to the backend without changing global defaults[33m 373[2mms[22m[39m
+ [32m✓[39m tests/postgres/migration.test.ts[2m > [22mPostgreSQL migrations[2m > [22mreads and publishes through a supplied Relay pool[32m 288[2mms[22m[39m
+ [32m✓[39m tests/postgres/operations.test.ts[2m > [22mPostgreSQL backend operations[2m > [22mpreserves FIFO order across multiple jobs[32m 36[2mms[22m[39m
+ [32m✓[39m tests/postgres/operations.test.ts[2m > [22mPostgreSQL backend operations[2m > [22mfails a job and records the reason[32m 39[2mms[22m[39m
+ [32m✓[39m tests/postgres/operations.test.ts[2m > [22mPostgreSQL backend operations[2m > [22mrejects completing a job held by a different token[32m 29[2mms[22m[39m
+ [32m✓[39m tests/postgres/operations.test.ts[2m > [22mPostgreSQL backend operations[2m > [22mappends and reads job logs[32m 23[2mms[22m[39m
+ [32m✓[39m tests/postgres/worker.test.ts[2m > [22mPostgreSQL Worker (end-to-end)[2m > [22mprocesses several jobs in FIFO order[32m 81[2mms[22m[39m
+ [32m✓[39m tests/postgres/worker.test.ts[2m > [22mPostgreSQL Worker (end-to-end)[2m > [22mretries with backoff delay then succeeds[32m 135[2mms[22m[39m
+ [32m✓[39m tests/postgres/operations.test.ts[2m > [22mPostgreSQL backend operations[2m > [22mstores and reads queue metadata[32m 15[2mms[22m[39m
+ [32m✓[39m tests/postgres/operations.test.ts[2m > [22mPostgreSQL backend operations[2m > [22mroutes a delayed job to the delayed state and promotes it when due[32m 110[2mms[22m[39m
+ [32m✓[39m tests/postgres/relay.test.ts[2m > [22mRelay (postgres) concurrency[2m > [22misolates inbox connection discovery across schemas[32m 135[2mms[22m[39m
+ [32m✓[39m tests/postgres/relay.test.ts[2m > [22mRelay (postgres) concurrency[2m > [22mdoes not count inbox batch entries as dropped while dispatching[32m 90[2mms[22m[39m
+ [32m✓[39m tests/postgres/migration.test.ts[2m > [22mPostgreSQL migrations[2m > [22mdoes not retain node discovery after closing a supplied-pool relay[32m 154[2mms[22m[39m
+ [32m✓[39m tests/postgres/relay.test.ts[2m > [22mRelay (postgres) concurrency[2m > [22mdoes not count a fetched batch as dropped when trimming before readLoop gets it[32m 88[2mms[22m[39m
+ [32m✓[39m tests/postgres/worker.test.ts[2m > [22mPostgreSQL Worker (end-to-end)[2m > [22mretries immediately (no backoff) then succeeds[32m 43[2mms[22m[39m
+ [32m✓[39m tests/postgres/worker.test.ts[2m > [22mPostgreSQL Worker (end-to-end)[2m > [22mfails permanently after exhausting attempts[32m 46[2mms[22m[39m
+ [32m✓[39m tests/postgres/worker.test.ts[2m > [22mPostgreSQL Worker (end-to-end)[2m > [22msupports job.waitUntilFinished via QueueEvents[32m 76[2mms[22m[39m
+ [32m✓[39m tests/postgres/operations.test.ts[2m > [22mPostgreSQL backend operations[2m > [22mremoveOnComplete: true removes the job on completion[32m 29[2mms[22m[39m
+ [32m✓[39m tests/postgres/operations.test.ts[2m > [22mPostgreSQL backend operations[2m > [22mremoveOnComplete: N keeps only the N most-recent completed jobs[32m 34[2mms[22m[39m
+ [32m✓[39m tests/postgres/operations.test.ts[2m > [22mPostgreSQL backend operations[2m > [22mremoveOnFail: true removes the job on failure[32m 26[2mms[22m[39m
+ [32m✓[39m tests/postgres/operations.test.ts[2m > [22mPostgreSQL backend operations[2m > [22mremoveOnComplete: -1 keeps the job (negative keep-count is not a LIMIT)[32m 28[2mms[22m[39m
+ [32m✓[39m tests/postgres/migration.test.ts[2m > [22mPostgreSQL migrations[2m > [22mcreates the v2 core schema (tables, enums, indexes) in the namespace[32m 132[2mms[22m[39m
+ [32m✓[39m tests/postgres/worker.test.ts[2m > [22mPostgreSQL Worker (end-to-end)[2m > [22mdelivers a completed event to QueueEvents listeners[32m 46[2mms[22m[39m
+ [32m✓[39m tests/postgres/operations.test.ts[2m > [22mPostgreSQL backend operations[2m > [22mremoveOnComplete: { age: -1 } keeps the job (negative keep-age disables age trimming)[32m 26[2mms[22m[39m
+ [32m✓[39m tests/postgres/operations.test.ts[2m > [22mPostgreSQL backend operations[2m > [22mdeduplication when the winner job no longer exists[2m > [22mrecovers the stale key on a single add[32m 27[2mms[22m[39m
+ [32m✓[39m tests/postgres/operations.test.ts[2m > [22mPostgreSQL backend operations[2m > [22mdeduplication when the winner job no longer exists[2m > [22mrecovers the stale key on a bulk add[32m 26[2mms[22m[39m
+ [32m✓[39m tests/postgres/operations.test.ts[2m > [22mPostgreSQL backend operations[2m > [22mdeduplication when the winner job no longer exists[2m > [22mstill deduplicates while the winner job exists[32m 21[2mms[22m[39m
+ [32m✓[39m tests/postgres/migration.test.ts[2m > [22mPostgreSQL migrations[2m > [22mis idempotent (re-running does not change the version)[32m 111[2mms[22m[39m
+ [32m✓[39m tests/postgres/migration.test.ts[2m > [22mPostgreSQL migrations[2m > [22mdoes not create or migrate a schema by default[32m 40[2mms[22m[39m
+ [32m✓[39m tests/postgres/migration.test.ts[2m > [22mPostgreSQL migrations[2m > [22msupports deprecated skipMigrations: false as migrate-on-connect[32m 66[2mms[22m[39m
+ [32m✓[39m tests/relay_stress.test.ts[2m > [22mRelay stress (postgres)[2m > [22mdelivers every message once and in publisher order with concurrent publishers[33m 922[2mms[22m[39m
+ [32m✓[39m tests/relay.test.ts[2m > [22mRelay (postgres)[2m > [22mbackend contract[2m > [22mextends the inbox expiry when refreshing a node registration[33m 756[2mms[22m[39m
+ [32m✓[39m tests/postgres/migration.test.ts[2m > [22mPostgreSQL migrations[2m > [22mupgrades a database already at schema version 2[32m 101[2mms[22m[39m
+ [32m✓[39m tests/relay.test.ts[2m > [22mRelay (postgres)[2m > [22mbackend contract[2m > [22mdoes not read pending inbox entries after a node lease expires[32m 176[2mms[22m[39m
+ [32m✓[39m tests/postgres/relay.test.ts[2m > [22mRelay (postgres) concurrency[2m > [22mdoes not deliver entries left pending by an expired lease after recovering[33m 511[2mms[22m[39m
+ [32m✓[39m tests/postgres/migration.test.ts[2m > [22mPostgreSQL migrations[2m > [22mupgrades a database already at schema version 3[32m 104[2mms[22m[39m
+ [32m✓[39m tests/relay.test.ts[2m > [22mRelay (postgres)[2m > [22mbackend contract[2m > [22mvalidates node and endpoint ids[32m 35[2mms[22m[39m
+ [32m✓[39m tests/relay.test.ts[2m > [22mRelay (postgres)[2m > [22mbackend contract[2m > [22mrejects subscriptions of unregistered nodes[32m 10[2mms[22m[39m
+ [32m✓[39m tests/postgres/migration.test.ts[2m > [22mPostgreSQL migrations[2m > [22maccepts newer same-major schemas and rejects a newer required major[32m 105[2mms[22m[39m
+ [32m✓[39m tests/postgres/migration.test.ts[2m > [22mPostgreSQL migrations[2m > [22mrolls back atomically when a migration fails[32m 36[2mms[22m[39m
+ [32m✓[39m tests/postgres/migration.test.ts[2m > [22mPostgreSQL relay migration (0004_relay)[2m > [22mis marked compatible with the current major[32m 0[2mms[22m[39m
+ [32m✓[39m tests/postgres/migration.test.ts[2m > [22mPostgreSQL relay migration (0004_relay)[2m > [22mleaves every pre-existing object unchanged and only adds relay_* objects[32m 124[2mms[22m[39m
+ [32m✓[39m tests/postgres/migration.test.ts[2m > [22mPostgreSQL server-version check[2m > [22maccepts a server at or above the minimum version[32m 1[2mms[22m[39m
+ [32m✓[39m tests/postgres/migration.test.ts[2m > [22mPostgreSQL server-version check[2m > [22mthrows UnsupportedPostgresVersionError below the minimum version[32m 0[2mms[22m[39m
+ [32m✓[39m tests/postgres/migration.test.ts[2m > [22mPostgreSQL server-version check[2m > [22mwarns (but does not throw) below the recommended version[32m 0[2mms[22m[39m
+ [32m✓[39m tests/postgres/migration.test.ts[2m > [22mPostgreSQL server-version check[2m > [22mskips the check entirely when skipVersionCheck is set[32m 0[2mms[22m[39m
+ [32m✓[39m tests/postgres/migration.test.ts[2m > [22mPostgreSQL read-only schema check[2m > [22muses one SELECT and accepts a newer same-major schema[32m 0[2mms[22m[39m
+ [32m✓[39m tests/postgres/migration.test.ts[2m > [22mPostgreSQL read-only schema check[2m > [22mrejects a schema requiring a newer BullMQ major[32m 0[2mms[22m[39m
+ [32m✓[39m tests/postgres/migration.test.ts[2m > [22mPostgreSQL compatibility aliases and options[2m > [22mkeeps legacy SchemaVersionMismatchError fields as aliases[32m 0[2mms[22m[39m
+ [32m✓[39m tests/postgres/migration.test.ts[2m > [22mPostgreSQL compatibility aliases and options[2m > [22mrejects migrate and skipMigrations used together[32m 1[2mms[22m[39m
+ [32m✓[39m tests/relay_stress.test.ts[2m > [22mRelay stress (postgres)[2m > [22mkeeps delivering to stable nodes while other nodes join and leave[33m 451[2mms[22m[39m
+ [32m✓[39m tests/relay.test.ts[2m > [22mRelay (postgres)[2m > [22mbackend contract[2m > [22mrejects subscriptions of expired nodes before they are swept[33m 306[2mms[22m[39m
+ [32m✓[39m tests/relay.test.ts[2m > [22mRelay (postgres)[2m > [22mbackend contract[2m > [22mrejects the invalid pattern ""[32m 11[2mms[22m[39m
+ [32m✓[39m tests/relay.test.ts[2m > [22mRelay (postgres)[2m > [22mbackend contract[2m > [22mrejects the invalid pattern "a..b"[32m 11[2mms[22m[39m
+ [32m✓[39m tests/relay.test.ts[2m > [22mRelay (postgres)[2m > [22mbackend contract[2m > [22mrejects the invalid pattern "a.>.c"[32m 11[2mms[22m[39m
+ [32m✓[39m tests/relay.test.ts[2m > [22mRelay (postgres)[2m > [22mbackend contract[2m > [22mrejects the invalid pattern ">.a"[32m 10[2mms[22m[39m
+ [32m✓[39m tests/relay.test.ts[2m > [22mRelay (postgres)[2m > [22mbackend contract[2m > [22mrejects the invalid pattern "a.b*"[32m 9[2mms[22m[39m
+ [32m✓[39m tests/relay.test.ts[2m > [22mRelay (postgres)[2m > [22mbackend contract[2m > [22mrejects the invalid pattern "a.>>"[32m 10[2mms[22m[39m
+ [32m✓[39m tests/relay.test.ts[2m > [22mRelay (postgres)[2m > [22mbackend contract[2m > [22mrejects the invalid pattern "a b"[32m 10[2mms[22m[39m
+ [32m✓[39m tests/relay.test.ts[2m > [22mRelay (postgres)[2m > [22mbackend contract[2m > [22mrejects the invalid pattern "$conn.*"[32m 10[2mms[22m[39m
+ [32m✓[39m tests/relay.test.ts[2m > [22mRelay (postgres)[2m > [22mbackend contract[2m > [22mrejects the invalid pattern "*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*"[32m 10[2mms[22m[39m
+ [32m✓[39m tests/postgres/relay.test.ts[2m > [22mRelay (postgres) concurrency[2m > [22mdiscards an inbox batch fetched before a recovery replaced its registration[33m 482[2mms[22m[39m
+ [32m✓[39m tests/relay.test.ts[2m > [22mRelay (postgres)[2m > [22mbackend contract[2m > [22mrejects publishing to the invalid topic ""[32m 7[2mms[22m[39m
+ [32m✓[39m tests/relay.test.ts[2m > [22mRelay (postgres)[2m > [22mbackend contract[2m > [22mrejects publishing to the invalid topic "."[32m 8[2mms[22m[39m
+ [32m✓[39m tests/relay.test.ts[2m > [22mRelay (postgres)[2m > [22mbackend contract[2m > [22mrejects publishing to the invalid topic "a."[32m 7[2mms[22m[39m
+ [32m✓[39m tests/relay.test.ts[2m > [22mRelay (postgres)[2m > [22mbackend contract[2m > [22mrejects publishing to the invalid topic ".a"[32m 8[2mms[22m[39m
+ [32m✓[39m tests/relay.test.ts[2m > [22mRelay (postgres)[2m > [22mbackend contract[2m > [22mrejects publishing to the invalid topic "a..b"[32m 8[2mms[22m[39m
+ [32m✓[39m tests/relay.test.ts[2m > [22mRelay (postgres)[2m > [22mbackend contract[2m > [22mrejects publishing to the invalid topic "a b"[32m 7[2mms[22m[39m
+ [32m✓[39m tests/relay.test.ts[2m > [22mRelay (postgres)[2m > [22mbackend contract[2m > [22mrejects publishing to the invalid topic "a.b/c"[32m 7[2mms[22m[39m
+ [32m✓[39m tests/relay.test.ts[2m > [22mRelay (postgres)[2m > [22mbackend contract[2m > [22mrejects publishing to the invalid topic "a.*"[32m 6[2mms[22m[39m
+ [32m✓[39m tests/relay.test.ts[2m > [22mRelay (postgres)[2m > [22mbackend contract[2m > [22mrejects publishing to the invalid topic "a.>"[32m 6[2mms[22m[39m
+ [32m✓[39m tests/relay.test.ts[2m > [22mRelay (postgres)[2m > [22mbackend contract[2m > [22mrejects publishing to the invalid topic "ä"[32m 9[2mms[22m[39m
+ [32m✓[39m tests/relay.test.ts[2m > [22mRelay (postgres)[2m > [22mbackend contract[2m > [22mrejects publishing to the invalid topic "a.$conn"[32m 8[2mms[22m[39m
+ [32m✓[39m tests/relay.test.ts[2m > [22mRelay (postgres)[2m > [22mbackend contract[2m > [22mrejects publishing to the invalid topic "$conn.x1"[32m 7[2mms[22m[39m
+ [32m✓[39m tests/relay.test.ts[2m > [22mRelay (postgres)[2m > [22mbackend contract[2m > [22mrejects publishing to the invalid topic "$1.a"[32m 7[2mms[22m[39m
+ [32m✓[39m tests/relay.test.ts[2m > [22mRelay (postgres)[2m > [22mbackend contract[2m > [22mrejects publishing to the invalid topic "$.a"[32m 7[2mms[22m[39m
+ [32m✓[39m tests/relay_stress.test.ts[2m > [22mRelay stress (postgres)[2m > [22mkeeps subscriptions consistent under subscribe/unsubscribe churn[33m 303[2mms[22m[39m
+ [32m✓[39m tests/relay.test.ts[2m > [22mRelay (postgres)[2m > [22mbackend contract[2m > [22mrejects publishing to the invalid topic "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"[32m 7[2mms[22m[39m
+ [32m✓[39m tests/relay.test.ts[2m > [22mRelay (postgres)[2m > [22mbackend contract[2m > [22mrejects publishing to the invalid topic "a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a"[32m 7[2mms[22m[39m
+ [32m✓[39m tests/relay.test.ts[2m > [22mRelay (postgres)[2m > [22mbackend contract[2m > [22maccepts the longest and deepest valid topics[32m 11[2mms[22m[39m
+ [32m✓[39m tests/relay.test.ts[2m > [22mRelay (postgres)[2m > [22mbackend contract[2m > [22msubscribes and removes endpoints idempotently[32m 15[2mms[22m[39m
+ [32m✓[39m tests/relay.test.ts[2m > [22mRelay (postgres)[2m > [22mbackend contract[2m > [22mroutes every topic to exactly the matching patterns[32m 37[2mms[22m[39m
+ [32m✓[39m tests/relay.test.ts[2m > [22mRelay (postgres)[2m > [22mbackend contract[2m > [22mlists each endpoint once even when several of its patterns match[32m 18[2mms[22m[39m
+ [32m✓[39m tests/relay.test.ts[2m > [22mRelay (postgres)[2m > [22mbackend contract[2m > [22mappends one entry per node, each with its own endpoints[32m 21[2mms[22m[39m
+ [32m✓[39m tests/relay.test.ts[2m > [22mRelay (postgres)[2m > [22mbackend contract[2m > [22massigns increasing message ids[32m 11[2mms[22m[39m
+ [32m✓[39m tests/relay.test.ts[2m > [22mRelay (postgres)[2m > [22mbackend contract[2m > [22mkeeps message ids unique and increasing without a registered node[32m 72[2mms[22m[39m
+ [32m✓[39m tests/postgres/relay.test.ts[2m > [22mRelay (postgres) concurrency[2m > [22mserializes retained delivery when subscribe commits first[32m 25[2mms[22m[39m
+ [32m✓[39m tests/postgres/relay.test.ts[2m > [22mRelay (postgres) concurrency[2m > [22mserializes retained delivery when publish commits first[32m 16[2mms[22m[39m
+ [32m✓[39m tests/postgres/relay.test.ts[2m > [22mRelay (postgres) concurrency[2m > [22msweeps expired retained messages from an abandoned namespace in bounded batches[32m 26[2mms[22m[39m
+ [32m✓[39m tests/postgres/relay.test.ts[2m > [22mRelay (postgres) concurrency[2m > [22ma publish racing with a sweep of one of its nodes still succeeds[32m 213[2mms[22m[39m
+ [32m✓[39m tests/relay.test.ts[2m > [22mRelay (postgres)[2m > [22mbackend contract[2m > [22mpasses data through byte for byte[32m 21[2mms[22m[39m
+ [32m✓[39m tests/relay.test.ts[2m > [22mRelay (postgres)[2m > [22mbackend contract[2m > [22menforces the max data size in bytes[32m 16[2mms[22m[39m
+ [32m✓[39m tests/relay.test.ts[2m > [22mRelay (postgres)[2m > [22mbackend contract[2m > [22mkeeps inbox entries until the next read acknowledges them[32m 28[2mms[22m[39m
+ [32m✓[39m tests/relay.test.ts[2m > [22mRelay (postgres)[2m > [22mbackend contract[2m > [22mtrims consumed entries and reports the unread backlog[32m 32[2mms[22m[39m
+ [32m✓[39m tests/relay.test.ts[2m > [22mRelay (postgres)[2m > [22mbackend contract[2m > [22mcaps the inbox by dropping the oldest unread entries[32m 37[2mms[22m[39m
+ [32m✓[39m tests/relay.test.ts[2m > [22mRelay (postgres)[2m > [22mbackend contract[2m > [22mdoes not count fetched entries as dropped when capping the inbox[32m 23[2mms[22m[39m
+ [32m✓[39m tests/relay.test.ts[2m > [22mRelay (postgres)[2m > [22mbackend contract[2m > [22mreports an empty backlog for an empty or missing inbox[32m 9[2mms[22m[39m
+ [32m✓[39m tests/relay.test.ts[2m > [22mRelay (postgres)[2m > [22mbackend contract[2m > [22mwaits for new entries when the inbox is empty[33m 328[2mms[22m[39m
+ [32m✓[39m tests/relay.test.ts[2m > [22mRelay (postgres)[2m > [22mbackend contract[2m > [22man interrupt also stops reads that have not started waiting yet[32m 14[2mms[22m[39m
+ [32m✓[39m tests/relay.test.ts[2m > [22mRelay (postgres)[2m > [22mbackend contract[2m > [22mreturns retained messages only to exact subscriptions[32m 14[2mms[22m[39m
+ [32m✓[39m tests/relay.test.ts[2m > [22mRelay (postgres)[2m > [22mbackend contract[2m > [22mdeletes retained messages[32m 22[2mms[22m[39m
+ [32m✓[39m tests/relay.test.ts[2m > [22mRelay (postgres)[2m > [22mbackend contract[2m > [22mexpires retained messages[32m 262[2mms[22m[39m
+ [32m✓[39m tests/relay.test.ts[2m > [22mRelay (postgres)[2m > [22mbackend contract[2m > [22mremoves every subscription of an endpoint[32m 15[2mms[22m[39m
+ [32m✓[39m tests/relay.test.ts[2m > [22mRelay (postgres)[2m > [22mbackend contract[2m > [22munregistering a node removes its subscriptions and inbox[32m 20[2mms[22m[39m
+ [32m✓[39m tests/relay.test.ts[2m > [22mRelay (postgres)[2m > [22mbackend contract[2m > [22mre-registering a node resets state only if its lease expired (expired=false)[32m 25[2mms[22m[39m
+ [32m✓[39m tests/relay.test.ts[2m > [22mRelay (postgres)[2m > [22mbackend contract[2m > [22mre-registering a node resets state only if its lease expired (expired=true)[32m 274[2mms[22m[39m
+ [32m✓[39m tests/relay.test.ts[2m > [22mRelay (postgres)[2m > [22mbackend contract[2m > [22mskips nodes whose lease expired, and sweeps them[32m 266[2mms[22m[39m
+ [32m✓[39m tests/relay.test.ts[2m > [22mRelay (postgres)[2m > [22mbackend contract[2m > [22man expired node must recover even before it is swept[32m 266[2mms[22m[39m
+ [32m✓[39m tests/relay.test.ts[2m > [22mRelay (postgres)[2m > [22mbackend contract[2m > [22mupdates sweep deadlines on registration and heartbeat[33m 616[2mms[22m[39m
+ [32m✓[39m tests/relay.test.ts[2m > [22mRelay (postgres)[2m > [22mbackend contract[2m > [22msweeps at most the given number of nodes per call[32m 228[2mms[22m[39m
+ [32m✓[39m tests/relay.test.ts[2m > [22mRelay (postgres)[2m > [22mbackend contract[2m > [22mkeeps subscriptions consistent under concurrent changes[32m 34[2mms[22m[39m
+ [32m✓[39m tests/relay.test.ts[2m > [22mRelay (postgres)[2m > [22mbackend contract[2m > [22misolates namespaces[32m 32[2mms[22m[39m
+ [32m✓[39m tests/relay.test.ts[2m > [22mRelay (postgres)[2m > [22mgetters[2m > [22mlists nodes in registration order, with their info and stats[32m 28[2mms[22m[39m
+ [32m✓[39m tests/relay.test.ts[2m > [22mRelay (postgres)[2m > [22mgetters[2m > [22mlists an expired node not swept yet without its info[32m 266[2mms[22m[39m
+ [32m✓[39m tests/relay.test.ts[2m > [22mRelay (postgres)[2m > [22mgetters[2m > [22mlists subscriptions and patterns in a stable order, with pagination[32m 17[2mms[22m[39m
+ [32m✓[39m tests/relay.test.ts[2m > [22mRelay (postgres)[2m > [22mgetters[2m > [22mlists retained messages by expiry, without expired ones[32m 265[2mms[22m[39m
+ [32m✓[39m tests/relay.test.ts[2m > [22mRelay (postgres)[2m > [22mgetters[2m > [22mlists the namespaces in use[32m 280[2mms[22m[39m
+ [32m✓[39m tests/relay.test.ts[2m > [22mRelay (postgres)[2m > [22mgetters[2m > [22mstops listing a namespace once its nodes and retained messages are removed[32m 12[2mms[22m[39m
+ [32m✓[39m tests/relay.test.ts[2m > [22mRelay (postgres)[2m > [22mnode connections[2m > [22mshows where a node is connected from, as the datastore sees it[32m 31[2mms[22m[39m
+ [32m✓[39m tests/relay.test.ts[2m > [22mRelay (postgres)[2m > [22mleaves nothing behind[2m > [22mwhen the last node closes, keeping only retained messages until they expire[33m 523[2mms[22m[39m
+ [32m✓[39m tests/relay.test.ts[2m > [22mRelay (postgres)[2m > [22mleaves nothing behind[2m > [22mwhen every node of a namespace crashes[33m 527[2mms[22m[39m
+ [32m✓[39m tests/relay.test.ts[2m > [22mRelay (postgres)[2m > [22mleaves nothing behind[2m > [22mwhen a node crashes and the others carry on[32m 267[2mms[22m[39m
+ [32m✓[39m tests/relay.test.ts[2m > [22mRelay (postgres)[2m > [22mRelay[2m > [22mvalidates its options[32m 1[2mms[22m[39m
+ [32m✓[39m tests/relay.test.ts[2m > [22mRelay (postgres)[2m > [22mRelay[2m > [22mdelivers messages between nodes, with JSON payloads[32m 37[2mms[22m[39m
+ [32m✓[39m tests/relay.test.ts[2m > [22mRelay (postgres)[2m > [22mRelay[2m > [22mgives each subscription its own copy[32m 76[2mms[22m[39m
+ [32m✓[39m tests/relay.test.ts[2m > [22mRelay (postgres)[2m > [22mRelay[2m > [22mdelivers messages in publish order[32m 94[2mms[22m[39m
+ [32m✓[39m tests/relay.test.ts[2m > [22mRelay (postgres)[2m > [22mRelay[2m > [22mstops delivering after unsubscribe[32m 80[2mms[22m[39m
+ [32m✓[39m tests/relay.test.ts[2m > [22mRelay (postgres)[2m > [22mRelay[2m > [22mdelivers the retained message first on exact subscriptions[32m 27[2mms[22m[39m
+ [32m✓[39m tests/relay.test.ts[2m > [22mRelay (postgres)[2m > [22mRelay[2m > [22mrejects invalid topics and oversized messages[32m 19[2mms[22m[39m
+ [32m✓[39m tests/relay.test.ts[2m > [22mRelay (postgres)[2m > [22mRelay[2m > [22ma failed subscribe leaves nothing behind[32m 17[2mms[22m[39m
+ [32m✓[39m tests/relay.test.ts[2m > [22mRelay (postgres)[2m > [22mRelay[2m > [22mreports listener errors without stopping delivery[32m 27[2mms[22m[39m
+ [32m✓[39m tests/relay.test.ts[2m > [22mRelay (postgres)[2m > [22mRelay[2m > [22mrecovers its subscriptions after being swept[32m 76[2mms[22m[39m
+ [32m✓[39m tests/relay.test.ts[2m > [22mRelay (postgres)[2m > [22mRelay[2m > [22memits recovered after an unswept lease expires before receiving again[32m 286[2mms[22m[39m
+ [32m✓[39m tests/relay.test.ts[2m > [22mRelay (postgres)[2m > [22mRelay[2m > [22msweeps nodes that stopped renewing their lease[32m 120[2mms[22m[39m
+ [32m✓[39m tests/relay.test.ts[2m > [22mRelay (postgres)[2m > [22mRelay[2m > [22mclose() unregisters the node and rejects further use[32m 36[2mms[22m[39m
+ [32m✓[39m tests/relay.test.ts[2m > [22mRelay (postgres)[2m > [22mRelay[2m > [22mclose() returns promptly right after subscribing[32m 101[2mms[22m[39m
+ [32m✓[39m tests/relay.test.ts[2m > [22mRelay (postgres)[2m > [22mRelay[2m > [22mclose() returns promptly while the inbox read is blocked[32m 61[2mms[22m[39m
+ [32m✓[39m tests/relay.test.ts[2m > [22mRelay (postgres)[2m > [22mRelay[2m > [22mdelivers to many subscribers across nodes[32m 41[2mms[22m[39m
+
+[2m Test Files [22m [1m[32m8 passed[39m[22m[90m (8)[39m
+[2m      Tests [22m [1m[32m154 passed[39m[22m[90m (154)[39m
+[2m   Start at [22m 10:23:33
+[2m   Duration [22m 8.70s[2m (transform 4.21s, setup 0ms, import 5.83s, tests 14.78s, environment 1ms)[22m
+
+Done in 8.96s.
+npm notice
+npm notice package: bullmq@6.4.2
+npm notice Tarball Contents
+npm notice 1.1kB LICENSE
+npm notice 12.2kB README.md
+npm notice 595B dist/cjs/classes/abort-controller.js
+npm notice 4.7kB dist/cjs/classes/async-fifo-queue.js
+npm notice 1.9kB dist/cjs/classes/backoffs.js
+npm notice 46.9kB dist/cjs/classes/bun-redis-client.js
+npm notice 3.8kB dist/cjs/classes/child-pool.js
+npm notice 11.3kB dist/cjs/classes/child-processor.js
+npm notice 7.9kB dist/cjs/classes/child.js
+npm notice 1.2kB dist/cjs/classes/errors/connection-closed-error.js
+npm notice 554B dist/cjs/classes/errors/delayed-error.js
+npm notice 493B dist/cjs/classes/errors/index.js
+npm notice 545B dist/cjs/classes/errors/rate-limit-error.js
+npm notice 611B dist/cjs/classes/errors/unrecoverable-error.js
+npm notice 638B dist/cjs/classes/errors/waiting-children-error.js
+npm notice 560B dist/cjs/classes/errors/waiting-error.js
+npm notice 2.7kB dist/cjs/classes/finished-errors.js
+npm notice 18.1kB dist/cjs/classes/flow-producer.js
+npm notice 1.8kB dist/cjs/classes/index.js
+npm notice 13.7kB dist/cjs/classes/ioredis-client.js
+npm notice 15.3kB dist/cjs/classes/job-scheduler.js
+npm notice 37.9kB dist/cjs/classes/job.js
+npm notice 6.1kB dist/cjs/classes/lock-manager.js
+npm notice 1.7kB dist/cjs/classes/main-base.js
+npm notice 11B dist/cjs/classes/main-worker.d.ts
+npm notice 340B dist/cjs/classes/main-worker.js
+npm notice 11B dist/cjs/classes/main.d.ts
+npm notice 292B dist/cjs/classes/main.js
+npm notice 29.0kB dist/cjs/classes/node-redis-client.js
+npm notice 5.2kB dist/cjs/classes/queue-base.js
+npm notice 1.3kB dist/cjs/classes/queue-events-producer.js
+npm notice 4.6kB dist/cjs/classes/queue-events.js
+npm notice 21.2kB dist/cjs/classes/queue-getters.js
+npm notice 1.1kB dist/cjs/classes/queue-keys.js
+npm notice 24.6kB dist/cjs/classes/queue.js
+npm notice 27.9kB dist/cjs/classes/redis-connection.js
+npm notice 82.2kB dist/cjs/classes/redis-queue-backend.js
+npm notice 19.3kB dist/cjs/classes/redis-relay-backend.js
+npm notice 1.8kB dist/cjs/classes/relay-errors.js
+npm notice 21.3kB dist/cjs/classes/relay.js
+npm notice 9.9kB dist/cjs/classes/sandbox.js
+npm notice 35.1kB dist/cjs/classes/valkey-glide-client.js
+npm notice 47.3kB dist/cjs/classes/worker.js
+npm notice 2.9kB dist/cjs/commands/addDelayedJob-6.lua
+npm notice 6.7kB dist/cjs/commands/addJobScheduler-11.lua
+npm notice 503B dist/cjs/commands/addLog-2.lua
+npm notice 3.1kB dist/cjs/commands/addParentJob-6.lua
+npm notice 3.4kB dist/cjs/commands/addPrioritizedJob-9.lua
+npm notice 3.5kB dist/cjs/commands/addStandardJob-9.lua
+npm notice 1.2kB dist/cjs/commands/changeDelay-4.lua
+npm notice 2.1kB dist/cjs/commands/changePriority-7.lua
+npm notice 1.9kB dist/cjs/commands/cleanJobsInSet-3.lua
+npm notice 1.3kB dist/cjs/commands/drain-5.lua
+npm notice 505B dist/cjs/commands/extendLock-2.lua
+npm notice 1.2kB dist/cjs/commands/extendLocks-1.lua
+npm notice 872B dist/cjs/commands/getCounts-1.lua
+npm notice 521B dist/cjs/commands/getCountsPerPriority-2.lua
+npm notice 729B dist/cjs/commands/getDependencyCounts-4.lua
+npm notice 4.5kB dist/cjs/commands/getJobs-1.lua
+npm notice 318B dist/cjs/commands/getJobScheduler-1.lua
+npm notice 441B dist/cjs/commands/getMetrics-2.lua
+npm notice 1.8kB dist/cjs/commands/getRanges-1.lua
+npm notice 501B dist/cjs/commands/getRateLimitTtl-2.lua
+npm notice 1.2kB dist/cjs/commands/getState-8.lua
+npm notice 974B dist/cjs/commands/getStateV2-8.lua
+npm notice 201B dist/cjs/commands/includes/addBaseMarkerIfNeeded.lua
+npm notice 739B dist/cjs/commands/includes/addDelayedJob.lua
+npm notice 386B dist/cjs/commands/includes/addDelayMarkerIfNeeded.lua
+npm notice 604B dist/cjs/commands/includes/addJobFromScheduler.lua
+npm notice 302B dist/cjs/commands/includes/addJobInTargetList.lua
+npm notice 417B dist/cjs/commands/includes/addJobWithPriority.lua
+npm notice 378B dist/cjs/commands/includes/batches.lua
+npm notice 199B dist/cjs/commands/includes/checkItemInList.lua
+npm notice 1.9kB dist/cjs/commands/includes/cleanList.lua
+npm notice 1.8kB dist/cjs/commands/includes/cleanSet.lua
+npm notice 1.5kB dist/cjs/commands/includes/collectMetrics.lua
+npm notice 3.6kB dist/cjs/commands/includes/deduplicateJob.lua
+npm notice 3.3kB dist/cjs/commands/includes/deduplicateJobWithoutReplace.lua
+npm notice 332B dist/cjs/commands/includes/destructureJobKey.lua
+npm notice 3.6kB dist/cjs/commands/includes/fetchNextJob.lua
+npm notice 290B dist/cjs/commands/includes/filterOutJobsToIgnore.lua
+npm notice 2.5kB dist/cjs/commands/includes/findPage.lua
+npm notice 953B dist/cjs/commands/includes/getDelayedScore.lua
+npm notice 1.8kB dist/cjs/commands/includes/getJobSchedulerEveryNextMillis.lua
+npm notice 477B dist/cjs/commands/includes/getJobsInZset.lua
+npm notice 328B dist/cjs/commands/includes/getNextDelayedTimestamp.lua
+npm notice 308B dist/cjs/commands/includes/getOrSetMaxEvents.lua
+npm notice 225B dist/cjs/commands/includes/getPriorityScore.lua
+npm notice 656B dist/cjs/commands/includes/getQueueMetadata.lua
+npm notice 365B dist/cjs/commands/includes/getRateLimitTTL.lua
+npm notice 348B dist/cjs/commands/includes/getTimestamp.lua
+npm notice 262B dist/cjs/commands/includes/getWaitPlusPrioritizedCount.lua
+npm notice 131B dist/cjs/commands/includes/getZSetItems.lua
+npm notice 879B dist/cjs/commands/includes/handleDuplicatedJob.lua
+npm notice 503B dist/cjs/commands/includes/isJobSchedulerJob.lua
+npm notice 957B dist/cjs/commands/includes/isLocked.lua
+npm notice 354B dist/cjs/commands/includes/isQueueMaxed.lua
+npm notice 255B dist/cjs/commands/includes/isQueuePaused.lua
+npm notice 484B dist/cjs/commands/includes/isQueuePausedOrMaxed.lua
+npm notice 749B dist/cjs/commands/includes/moveChildBackToParentDependencies.lua
+npm notice 3.0kB dist/cjs/commands/includes/moveChildFromDependenciesIfNeeded.lua
+npm notice 373B dist/cjs/commands/includes/moveJobFromPrioritizedToActive.lua
+npm notice 511B dist/cjs/commands/includes/moveJobToWait.lua
+npm notice 1.8kB dist/cjs/commands/includes/moveParentToWait.lua
+npm notice 559B dist/cjs/commands/includes/moveParentToWaitIfNeeded.lua
+npm notice 504B dist/cjs/commands/includes/moveParentToWaitIfNoPendingDependencies.lua
+npm notice 1.6kB dist/cjs/commands/includes/prepareJobForProcessing.lua
+npm notice 1.4kB dist/cjs/commands/includes/promoteDelayedJobs.lua
+npm notice 353B dist/cjs/commands/includes/pushBackJobWithPriority.lua
+npm notice 1.3kB dist/cjs/commands/includes/recoverStaleDeduplicationKey.lua
+npm notice 1.3kB dist/cjs/commands/includes/refreshRelayNamespace.lua
+npm notice 4.1kB dist/cjs/commands/includes/relayIndex.lua
+npm notice 505B dist/cjs/commands/includes/relayTime.lua
+npm notice 2.5kB dist/cjs/commands/includes/relayTopics.lua
+npm notice 634B dist/cjs/commands/includes/removeDeduplicationKeyIfNeededOnFinalization.lua
+npm notice 578B dist/cjs/commands/includes/removeDeduplicationKeyIfNeededOnRemoval.lua
+npm notice 548B dist/cjs/commands/includes/removeJob.lua
+npm notice 1.2kB dist/cjs/commands/includes/removeJobFromAnyState.lua
+npm notice 233B dist/cjs/commands/includes/removeJobKeys.lua
+npm notice 256B dist/cjs/commands/includes/removeJobs.lua
+npm notice 690B dist/cjs/commands/includes/removeJobsByMaxAge.lua
+npm notice 409B dist/cjs/commands/includes/removeJobsByMaxCount.lua
+npm notice 3.5kB dist/cjs/commands/includes/removeJobWithChildren.lua
+npm notice 514B dist/cjs/commands/includes/removeListJobs.lua
+npm notice 468B dist/cjs/commands/includes/removeLock.lua
+npm notice 3.4kB dist/cjs/commands/includes/removeParentDependencyKey.lua
+npm notice 532B dist/cjs/commands/includes/removeZSetJobs.lua
+npm notice 2.6kB dist/cjs/commands/includes/requeueDeduplicatedJob.lua
+npm notice 401B dist/cjs/commands/includes/setDeduplicationKey.lua
+npm notice 1.5kB dist/cjs/commands/includes/storeAndEnqueueJob.lua
+npm notice 2.4kB dist/cjs/commands/includes/storeDeduplicatedNextJob.lua
+npm notice 1.2kB dist/cjs/commands/includes/storeJob.lua
+npm notice 1.9kB dist/cjs/commands/includes/storeJobScheduler.lua
+npm notice 350B dist/cjs/commands/includes/trimEvents.lua
+npm notice 1.1kB dist/cjs/commands/includes/updateExistingJobsParent.lua
+npm notice 322B dist/cjs/commands/includes/updateJobFields.lua
+npm notice 484B dist/cjs/commands/includes/updateParentDepsIfNeeded.lua
+npm notice 888B dist/cjs/commands/isFinished-3.lua
+npm notice 270B dist/cjs/commands/isJobInList-1.lua
+npm notice 252B dist/cjs/commands/isMaxed-2.lua
+npm notice 1.5kB dist/cjs/commands/moveJobFromActiveToWait-9.lua
+npm notice 2.1kB dist/cjs/commands/moveJobsToWait-8.lua
+npm notice 4.3kB dist/cjs/commands/moveStalledJobsToWait-9.lua
+npm notice 3.1kB dist/cjs/commands/moveToActive-11.lua
+npm notice 2.5kB dist/cjs/commands/moveToDelayed-11.lua
+npm notice 7.8kB dist/cjs/commands/moveToFinished-14.lua
+npm notice 2.3kB dist/cjs/commands/moveToWaitingChildren-7.lua
+npm notice 3.3kB dist/cjs/commands/obliterate-2.lua
+npm notice 1.3kB dist/cjs/commands/paginate-1.lua
+npm notice 1.7kB dist/cjs/commands/pause-7.lua
+npm notice 1.7kB dist/cjs/commands/promote-9.lua
+npm notice 385B dist/cjs/commands/relayAckInbox-1.lua
+npm notice 969B dist/cjs/commands/relayDeleteRetained-1.lua
+npm notice 4.4kB dist/cjs/commands/relayGet-1.lua
+npm notice 516B dist/cjs/commands/relayGetNamespaces-1.lua
+npm notice 945B dist/cjs/commands/relayHeartbeat-1.lua
+npm notice 4.8kB dist/cjs/commands/relayPublish-1.lua
+npm notice 858B dist/cjs/commands/relayReadInbox-1.lua
+npm notice 1.8kB dist/cjs/commands/relayRegisterNode-1.lua
+npm notice 335B dist/cjs/commands/relayRemoveEndpoint-1.lua
+npm notice 2.0kB dist/cjs/commands/relaySubscribe-1.lua
+npm notice 970B dist/cjs/commands/relaySweep-1.lua
+npm notice 683B dist/cjs/commands/relayTouchNamespace-1.lua
+npm notice 2.0kB dist/cjs/commands/relayTrimInbox-1.lua
+npm notice 639B dist/cjs/commands/relayUnregisterNode-1.lua
+npm notice 307B dist/cjs/commands/releaseLock-1.lua
+npm notice 685B dist/cjs/commands/removeChildDependency-1.lua
+npm notice 393B dist/cjs/commands/removeDeduplicationKey-1.lua
+npm notice 960B dist/cjs/commands/removeJob-2.lua
+npm notice 914B dist/cjs/commands/removeJobScheduler-3.lua
+npm notice 2.1kB dist/cjs/commands/removeOrphanedJobs-1.lua
+npm notice 598B dist/cjs/commands/removeUnprocessedChildren-2.lua
+npm notice 2.0kB dist/cjs/commands/reprocessJob-9.lua
+npm notice 2.3kB dist/cjs/commands/retryJob-11.lua
+npm notice 337B dist/cjs/commands/saveStacktrace-1.lua
+npm notice 284B dist/cjs/commands/updateData-1.lua
+npm notice 3.7kB dist/cjs/commands/updateJobScheduler-12.lua
+npm notice 640B dist/cjs/commands/updateProgress-3.lua
+npm notice 1.0kB dist/cjs/enums/child-command.js
+npm notice 1.0kB dist/cjs/enums/error-code.js
+npm notice 410B dist/cjs/enums/index.js
+npm notice 740B dist/cjs/enums/metrics-time.js
+npm notice 1.3kB dist/cjs/enums/parent-command.js
+npm notice 3.8kB dist/cjs/enums/telemetry-attributes.js
+npm notice 732B dist/cjs/index.js
+npm notice 77B dist/cjs/interfaces/advanced-options.js
+npm notice 77B dist/cjs/interfaces/backoff-options.js
+npm notice 77B dist/cjs/interfaces/base-job-options.js
+npm notice 77B dist/cjs/interfaces/child-message.js
+npm notice 77B dist/cjs/interfaces/connection.js
+npm notice 77B dist/cjs/interfaces/flow-job.js
+npm notice 2.2kB dist/cjs/interfaces/index.js
+npm notice 77B dist/cjs/interfaces/ioredis-events.js
+npm notice 77B dist/cjs/interfaces/job-json.js
+npm notice 77B dist/cjs/interfaces/job-scheduler-json.js
+npm notice 77B dist/cjs/interfaces/lock-manager-worker-context.js
+npm notice 77B dist/cjs/interfaces/metrics-options.js
+npm notice 77B dist/cjs/interfaces/metrics.js
+npm notice 77B dist/cjs/interfaces/minimal-job.js
+npm notice 77B dist/cjs/interfaces/minimal-queue.js
+npm notice 77B dist/cjs/interfaces/parent-message.js
+npm notice 77B dist/cjs/interfaces/parent-options.js
+npm notice 77B dist/cjs/interfaces/parent.js
+npm notice 77B dist/cjs/interfaces/queue-backend.js
+npm notice 77B dist/cjs/interfaces/queue-meta.js
+npm notice 283B dist/cjs/interfaces/queue-options.js
+npm notice 77B dist/cjs/interfaces/rate-limiter-options.js
+npm notice 77B dist/cjs/interfaces/receiver.js
+npm notice 77B dist/cjs/interfaces/redis-client.js
+npm notice 77B dist/cjs/interfaces/redis-options.js
+npm notice 77B dist/cjs/interfaces/redis-streams.js
+npm notice 77B dist/cjs/interfaces/relay-backend.js
+npm notice 77B dist/cjs/interfaces/repeat-options.js
+npm notice 77B dist/cjs/interfaces/repeatable-options.js
+npm notice 77B dist/cjs/interfaces/retry-options.js
+npm notice 77B dist/cjs/interfaces/sandboxed-job-processor.js
+npm notice 77B dist/cjs/interfaces/sandboxed-job.js
+npm notice 77B dist/cjs/interfaces/sandboxed-options.js
+npm notice 77B dist/cjs/interfaces/script-queue-context.js
+npm notice 77B dist/cjs/interfaces/telemetry.js
+npm notice 77B dist/cjs/interfaces/worker-options.js
+npm notice 2.4kB dist/cjs/postgres/create-postgres-backend.js
+npm notice 3.9kB dist/cjs/postgres/index.js
+npm notice 1.7kB dist/cjs/postgres/migrations/index.js
+npm notice 14.9kB dist/cjs/postgres/migrator.js
+npm notice 482B dist/cjs/postgres/pg-types.js
+npm notice 16.9kB dist/cjs/postgres/postgres-connection.js
+npm notice 74.7kB dist/cjs/postgres/postgres-queue-backend.js
+npm notice 12.8kB dist/cjs/postgres/postgres-relay-backend.js
+npm notice 2.1kB dist/cjs/postgres/sql-loader.js
+npm notice 214.2kB dist/cjs/postgres/sql-scripts.js
+npm notice 24.3kB dist/cjs/scripts/addDelayedJob-6.js
+npm notice 22.5kB dist/cjs/scripts/addJobScheduler-11.js
+npm notice 686B dist/cjs/scripts/addLog-2.js
+npm notice 19.2kB dist/cjs/scripts/addParentJob-6.js
+npm notice 23.1kB dist/cjs/scripts/addPrioritizedJob-9.js
+npm notice 23.2kB dist/cjs/scripts/addStandardJob-9.js
+npm notice 3.2kB dist/cjs/scripts/changeDelay-4.js
+npm notice 4.0kB dist/cjs/scripts/changePriority-7.js
+npm notice 13.0kB dist/cjs/scripts/cleanJobsInSet-3.js
+npm notice 9.0kB dist/cjs/scripts/drain-5.js
+npm notice 704B dist/cjs/scripts/extendLock-2.js
+npm notice 1.4kB dist/cjs/scripts/extendLocks-1.js
+npm notice 1.1kB dist/cjs/scripts/getCounts-1.js
+npm notice 749B dist/cjs/scripts/getCountsPerPriority-2.js
+npm notice 954B dist/cjs/scripts/getDependencyCounts-4.js
+npm notice 4.7kB dist/cjs/scripts/getJobs-1.js
+npm notice 529B dist/cjs/scripts/getJobScheduler-1.js
+npm notice 639B dist/cjs/scripts/getMetrics-2.js
+npm notice 2.0kB dist/cjs/scripts/getRanges-1.js
+npm notice 1.0kB dist/cjs/scripts/getRateLimitTtl-2.js
+npm notice 1.6kB dist/cjs/scripts/getState-8.js
+npm notice 1.2kB dist/cjs/scripts/getStateV2-8.js
+npm notice 4.0kB dist/cjs/scripts/index.js
+npm notice 1.1kB dist/cjs/scripts/isFinished-3.js
+npm notice 629B dist/cjs/scripts/isJobInList-1.js
+npm notice 755B dist/cjs/scripts/isMaxed-2.js
+npm notice 3.6kB dist/cjs/scripts/moveJobFromActiveToWait-9.js
+npm notice 4.2kB dist/cjs/scripts/moveJobsToWait-8.js
+npm notice 6.7kB dist/cjs/scripts/moveStalledJobsToWait-9.js
+npm notice 8.6kB dist/cjs/scripts/moveToActive-11.js
+npm notice 13.8kB dist/cjs/scripts/moveToDelayed-11.js
+npm notice 39.8kB dist/cjs/scripts/moveToFinished-14.js
+npm notice 3.0kB dist/cjs/scripts/moveToWaitingChildren-7.js
+npm notice 11.1kB dist/cjs/scripts/obliterate-2.js
+npm notice 3.9kB dist/cjs/scripts/paginate-1.js
+npm notice 2.8kB dist/cjs/scripts/pause-7.js
+npm notice 3.2kB dist/cjs/scripts/promote-9.js
+npm notice 592B dist/cjs/scripts/relayAckInbox-1.js
+npm notice 5.4kB dist/cjs/scripts/relayDeleteRetained-1.js
+npm notice 11.5kB dist/cjs/scripts/relayGet-1.js
+npm notice 1.2kB dist/cjs/scripts/relayGetNamespaces-1.js
+npm notice 2.9kB dist/cjs/scripts/relayHeartbeat-1.js
+npm notice 13.3kB dist/cjs/scripts/relayPublish-1.js
+npm notice 1.1kB dist/cjs/scripts/relayReadInbox-1.js
+npm notice 10.2kB dist/cjs/scripts/relayRegisterNode-1.js
+npm notice 7.1kB dist/cjs/scripts/relayRemoveEndpoint-1.js
+npm notice 4.6kB dist/cjs/scripts/relaySubscribe-1.js
+npm notice 9.4kB dist/cjs/scripts/relaySweep-1.js
+npm notice 1.4kB dist/cjs/scripts/relayTouchNamespace-1.js
+npm notice 2.6kB dist/cjs/scripts/relayTrimInbox-1.js
+npm notice 9.1kB dist/cjs/scripts/relayUnregisterNode-1.js
+npm notice 498B dist/cjs/scripts/releaseLock-1.js
+npm notice 5.7kB dist/cjs/scripts/removeChildDependency-1.js
+npm notice 626B dist/cjs/scripts/removeDeduplicationKey-1.js
+npm notice 12.6kB dist/cjs/scripts/removeJob-2.js
+npm notice 1.3kB dist/cjs/scripts/removeJobScheduler-3.js
+npm notice 2.3kB dist/cjs/scripts/removeOrphanedJobs-1.js
+npm notice 12.3kB dist/cjs/scripts/removeUnprocessedChildren-2.js
+npm notice 4.6kB dist/cjs/scripts/reprocessJob-9.js
+npm notice 6.1kB dist/cjs/scripts/retryJob-11.js
+npm notice 549B dist/cjs/scripts/saveStacktrace-1.js
+npm notice 482B dist/cjs/scripts/updateData-1.js
+npm notice 12.7kB dist/cjs/scripts/updateJobScheduler-12.js
+npm notice 1.1kB dist/cjs/scripts/updateProgress-3.js
+npm notice 79.9kB dist/cjs/tsconfig-cjs.tsbuildinfo
+npm notice 77B dist/cjs/types/backoff-strategy.js
+npm notice 77B dist/cjs/types/database-type.js
+npm notice 77B dist/cjs/types/deduplication-options.js
+npm notice 77B dist/cjs/types/default-queue-options.js
+npm notice 77B dist/cjs/types/finished-status.js
+npm notice 783B dist/cjs/types/index.js
+npm notice 77B dist/cjs/types/job-json-sandbox.js
+npm notice 77B dist/cjs/types/job-options.js
+npm notice 77B dist/cjs/types/job-progress.js
+npm notice 77B dist/cjs/types/job-scheduler-template-options.js
+npm notice 77B dist/cjs/types/job-type.js
+npm notice 77B dist/cjs/types/keep-jobs.js
+npm notice 77B dist/cjs/types/no-infer.js
+npm notice 77B dist/cjs/types/processor.js
+npm notice 77B dist/cjs/types/queue-type.js
+npm notice 77B dist/cjs/types/repeat-strategy.js
+npm notice 4.9kB dist/cjs/utils/create-backend.js
+npm notice 13.5kB dist/cjs/utils/index.js
+npm notice 1.8kB dist/cjs/utils/with-backend.js
+npm notice 130B dist/cjs/version.js
+npm notice 229B dist/esm/classes/abort-controller.d.ts
+npm notice 450B dist/esm/classes/abort-controller.js
+npm notice 2.5kB dist/esm/classes/async-fifo-queue.d.ts
+npm notice 4.6kB dist/esm/classes/async-fifo-queue.js
+npm notice 631B dist/esm/classes/backoffs.d.ts
+npm notice 1.8kB dist/esm/classes/backoffs.js
+npm notice 816B dist/esm/classes/bun-redis-client.d.ts
+npm notice 46.7kB dist/esm/classes/bun-redis-client.js
+npm notice 707B dist/esm/classes/child-pool.d.ts
+npm notice 3.6kB dist/esm/classes/child-pool.js
+npm notice 1.5kB dist/esm/classes/child-processor.d.ts
+npm notice 11.0kB dist/esm/classes/child-processor.js
+npm notice 989B dist/esm/classes/child.d.ts
+npm notice 7.7kB dist/esm/classes/child.js
+npm notice 816B dist/esm/classes/errors/connection-closed-error.d.ts
+npm notice 985B dist/esm/classes/errors/connection-closed-error.js
+npm notice 265B dist/esm/classes/errors/delayed-error.d.ts
+npm notice 389B dist/esm/classes/errors/delayed-error.js
+npm notice 226B dist/esm/classes/errors/index.d.ts
+npm notice 226B dist/esm/classes/errors/index.js
+npm notice 244B dist/esm/classes/errors/rate-limit-error.d.ts
+npm notice 371B dist/esm/classes/errors/rate-limit-error.js
+npm notice 292B dist/esm/classes/errors/unrecoverable-error.d.ts
+npm notice 422B dist/esm/classes/errors/unrecoverable-error.js
+npm notice 307B dist/esm/classes/errors/waiting-children-error.d.ts
+npm notice 440B dist/esm/classes/errors/waiting-children-error.js
+npm notice 271B dist/esm/classes/errors/waiting-error.d.ts
+npm notice 395B dist/esm/classes/errors/waiting-error.js
+npm notice 528B dist/esm/classes/finished-errors.d.ts
+npm notice 2.5kB dist/esm/classes/finished-errors.js
+npm notice 8.1kB dist/esm/classes/flow-producer.d.ts
+npm notice 17.9kB dist/esm/classes/flow-producer.js
+npm notice 862B dist/esm/classes/index.d.ts
+npm notice 985B dist/esm/classes/index.js
+npm notice 1.8kB dist/esm/classes/ioredis-client.d.ts
+npm notice 13.5kB dist/esm/classes/ioredis-client.js
+npm notice 3.4kB dist/esm/classes/job-scheduler.d.ts
+npm notice 14.7kB dist/esm/classes/job-scheduler.js
+npm notice 18.4kB dist/esm/classes/job.d.ts
+npm notice 37.5kB dist/esm/classes/job.js
+npm notice 2.3kB dist/esm/classes/lock-manager.d.ts
+npm notice 5.9kB dist/esm/classes/lock-manager.js
+npm notice 156B dist/esm/classes/main-base.d.ts
+npm notice 1.6kB dist/esm/classes/main-base.js
+npm notice 11B dist/esm/classes/main-worker.d.ts
+npm notice 198B dist/esm/classes/main-worker.js
+npm notice 11B dist/esm/classes/main.d.ts
+npm notice 179B dist/esm/classes/main.js
+npm notice 4.5kB dist/esm/classes/node-redis-client.d.ts
+npm notice 28.7kB dist/esm/classes/node-redis-client.js
+npm notice 4.2kB dist/esm/classes/queue-base.d.ts
+npm notice 5.1kB dist/esm/classes/queue-base.js
+npm notice 1.5kB dist/esm/classes/queue-events-producer.d.ts
+npm notice 1.1kB dist/esm/classes/queue-events-producer.js
+npm notice 11.9kB dist/esm/classes/queue-events.d.ts
+npm notice 4.5kB dist/esm/classes/queue-events.js
+npm notice 11.0kB dist/esm/classes/queue-getters.d.ts
+npm notice 21.0kB dist/esm/classes/queue-getters.js
+npm notice 288B dist/esm/classes/queue-keys.d.ts
+npm notice 922B dist/esm/classes/queue-keys.js
+npm notice 17.2kB dist/esm/classes/queue.d.ts
+npm notice 24.2kB dist/esm/classes/queue.js
+npm notice 3.7kB dist/esm/classes/redis-connection.d.ts
+npm notice 27.4kB dist/esm/classes/redis-connection.js
+npm notice 23.6kB dist/esm/classes/redis-queue-backend.d.ts
+npm notice 81.9kB dist/esm/classes/redis-queue-backend.js
+npm notice 5.8kB dist/esm/classes/redis-relay-backend.d.ts
+npm notice 18.8kB dist/esm/classes/redis-relay-backend.js
+npm notice 555B dist/esm/classes/relay-errors.d.ts
+npm notice 1.6kB dist/esm/classes/relay-errors.js
+npm notice 7.4kB dist/esm/classes/relay.d.ts
+npm notice 21.1kB dist/esm/classes/relay.js
+npm notice 259B dist/esm/classes/sandbox.d.ts
+npm notice 9.6kB dist/esm/classes/sandbox.js
+npm notice 139B dist/esm/classes/valkey-glide-client.d.ts
+npm notice 34.8kB dist/esm/classes/valkey-glide-client.js
+npm notice 13.8kB dist/esm/classes/worker.d.ts
+npm notice 46.8kB dist/esm/classes/worker.js
+npm notice 2.9kB dist/esm/commands/addDelayedJob-6.lua
+npm notice 6.7kB dist/esm/commands/addJobScheduler-11.lua
+npm notice 503B dist/esm/commands/addLog-2.lua
+npm notice 3.1kB dist/esm/commands/addParentJob-6.lua
+npm notice 3.4kB dist/esm/commands/addPrioritizedJob-9.lua
+npm notice 3.5kB dist/esm/commands/addStandardJob-9.lua
+npm notice 1.2kB dist/esm/commands/changeDelay-4.lua
+npm notice 2.1kB dist/esm/commands/changePriority-7.lua
+npm notice 1.9kB dist/esm/commands/cleanJobsInSet-3.lua
+npm notice 1.3kB dist/esm/commands/drain-5.lua
+npm notice 505B dist/esm/commands/extendLock-2.lua
+npm notice 1.2kB dist/esm/commands/extendLocks-1.lua
+npm notice 872B dist/esm/commands/getCounts-1.lua
+npm notice 521B dist/esm/commands/getCountsPerPriority-2.lua
+npm notice 729B dist/esm/commands/getDependencyCounts-4.lua
+npm notice 4.5kB dist/esm/commands/getJobs-1.lua
+npm notice 318B dist/esm/commands/getJobScheduler-1.lua
+npm notice 441B dist/esm/commands/getMetrics-2.lua
+npm notice 1.8kB dist/esm/commands/getRanges-1.lua
+npm notice 501B dist/esm/commands/getRateLimitTtl-2.lua
+npm notice 1.2kB dist/esm/commands/getState-8.lua
+npm notice 974B dist/esm/commands/getStateV2-8.lua
+npm notice 201B dist/esm/commands/includes/addBaseMarkerIfNeeded.lua
+npm notice 739B dist/esm/commands/includes/addDelayedJob.lua
+npm notice 386B dist/esm/commands/includes/addDelayMarkerIfNeeded.lua
+npm notice 604B dist/esm/commands/includes/addJobFromScheduler.lua
+npm notice 302B dist/esm/commands/includes/addJobInTargetList.lua
+npm notice 417B dist/esm/commands/includes/addJobWithPriority.lua
+npm notice 378B dist/esm/commands/includes/batches.lua
+npm notice 199B dist/esm/commands/includes/checkItemInList.lua
+npm notice 1.9kB dist/esm/commands/includes/cleanList.lua
+npm notice 1.8kB dist/esm/commands/includes/cleanSet.lua
+npm notice 1.5kB dist/esm/commands/includes/collectMetrics.lua
+npm notice 3.6kB dist/esm/commands/includes/deduplicateJob.lua
+npm notice 3.3kB dist/esm/commands/includes/deduplicateJobWithoutReplace.lua
+npm notice 332B dist/esm/commands/includes/destructureJobKey.lua
+npm notice 3.6kB dist/esm/commands/includes/fetchNextJob.lua
+npm notice 290B dist/esm/commands/includes/filterOutJobsToIgnore.lua
+npm notice 2.5kB dist/esm/commands/includes/findPage.lua
+npm notice 953B dist/esm/commands/includes/getDelayedScore.lua
+npm notice 1.8kB dist/esm/commands/includes/getJobSchedulerEveryNextMillis.lua
+npm notice 477B dist/esm/commands/includes/getJobsInZset.lua
+npm notice 328B dist/esm/commands/includes/getNextDelayedTimestamp.lua
+npm notice 308B dist/esm/commands/includes/getOrSetMaxEvents.lua
+npm notice 225B dist/esm/commands/includes/getPriorityScore.lua
+npm notice 656B dist/esm/commands/includes/getQueueMetadata.lua
+npm notice 365B dist/esm/commands/includes/getRateLimitTTL.lua
+npm notice 348B dist/esm/commands/includes/getTimestamp.lua
+npm notice 262B dist/esm/commands/includes/getWaitPlusPrioritizedCount.lua
+npm notice 131B dist/esm/commands/includes/getZSetItems.lua
+npm notice 879B dist/esm/commands/includes/handleDuplicatedJob.lua
+npm notice 503B dist/esm/commands/includes/isJobSchedulerJob.lua
+npm notice 957B dist/esm/commands/includes/isLocked.lua
+npm notice 354B dist/esm/commands/includes/isQueueMaxed.lua
+npm notice 255B dist/esm/commands/includes/isQueuePaused.lua
+npm notice 484B dist/esm/commands/includes/isQueuePausedOrMaxed.lua
+npm notice 749B dist/esm/commands/includes/moveChildBackToParentDependencies.lua
+npm notice 3.0kB dist/esm/commands/includes/moveChildFromDependenciesIfNeeded.lua
+npm notice 373B dist/esm/commands/includes/moveJobFromPrioritizedToActive.lua
+npm notice 511B dist/esm/commands/includes/moveJobToWait.lua
+npm notice 1.8kB dist/esm/commands/includes/moveParentToWait.lua
+npm notice 559B dist/esm/commands/includes/moveParentToWaitIfNeeded.lua
+npm notice 504B dist/esm/commands/includes/moveParentToWaitIfNoPendingDependencies.lua
+npm notice 1.6kB dist/esm/commands/includes/prepareJobForProcessing.lua
+npm notice 1.4kB dist/esm/commands/includes/promoteDelayedJobs.lua
+npm notice 353B dist/esm/commands/includes/pushBackJobWithPriority.lua
+npm notice 1.3kB dist/esm/commands/includes/recoverStaleDeduplicationKey.lua
+npm notice 1.3kB dist/esm/commands/includes/refreshRelayNamespace.lua
+npm notice 4.1kB dist/esm/commands/includes/relayIndex.lua
+npm notice 505B dist/esm/commands/includes/relayTime.lua
+npm notice 2.5kB dist/esm/commands/includes/relayTopics.lua
+npm notice 634B dist/esm/commands/includes/removeDeduplicationKeyIfNeededOnFinalization.lua
+npm notice 578B dist/esm/commands/includes/removeDeduplicationKeyIfNeededOnRemoval.lua
+npm notice 548B dist/esm/commands/includes/removeJob.lua
+npm notice 1.2kB dist/esm/commands/includes/removeJobFromAnyState.lua
+npm notice 233B dist/esm/commands/includes/removeJobKeys.lua
+npm notice 256B dist/esm/commands/includes/removeJobs.lua
+npm notice 690B dist/esm/commands/includes/removeJobsByMaxAge.lua
+npm notice 409B dist/esm/commands/includes/removeJobsByMaxCount.lua
+npm notice 3.5kB dist/esm/commands/includes/removeJobWithChildren.lua
+npm notice 514B dist/esm/commands/includes/removeListJobs.lua
+npm notice 468B dist/esm/commands/includes/removeLock.lua
+npm notice 3.4kB dist/esm/commands/includes/removeParentDependencyKey.lua
+npm notice 532B dist/esm/commands/includes/removeZSetJobs.lua
+npm notice 2.6kB dist/esm/commands/includes/requeueDeduplicatedJob.lua
+npm notice 401B dist/esm/commands/includes/setDeduplicationKey.lua
+npm notice 1.5kB dist/esm/commands/includes/storeAndEnqueueJob.lua
+npm notice 2.4kB dist/esm/commands/includes/storeDeduplicatedNextJob.lua
+npm notice 1.2kB dist/esm/commands/includes/storeJob.lua
+npm notice 1.9kB dist/esm/commands/includes/storeJobScheduler.lua
+npm notice 350B dist/esm/commands/includes/trimEvents.lua
+npm notice 1.1kB dist/esm/commands/includes/updateExistingJobsParent.lua
+npm notice 322B dist/esm/commands/includes/updateJobFields.lua
+npm notice 484B dist/esm/commands/includes/updateParentDepsIfNeeded.lua
+npm notice 888B dist/esm/commands/isFinished-3.lua
+npm notice 270B dist/esm/commands/isJobInList-1.lua
+npm notice 252B dist/esm/commands/isMaxed-2.lua
+npm notice 1.5kB dist/esm/commands/moveJobFromActiveToWait-9.lua
+npm notice 2.1kB dist/esm/commands/moveJobsToWait-8.lua
+npm notice 4.3kB dist/esm/commands/moveStalledJobsToWait-9.lua
+npm notice 3.1kB dist/esm/commands/moveToActive-11.lua
+npm notice 2.5kB dist/esm/commands/moveToDelayed-11.lua
+npm notice 7.8kB dist/esm/commands/moveToFinished-14.lua
+npm notice 2.3kB dist/esm/commands/moveToWaitingChildren-7.lua
+npm notice 3.3kB dist/esm/commands/obliterate-2.lua
+npm notice 1.3kB dist/esm/commands/paginate-1.lua
+npm notice 1.7kB dist/esm/commands/pause-7.lua
+npm notice 1.7kB dist/esm/commands/promote-9.lua
+npm notice 385B dist/esm/commands/relayAckInbox-1.lua
+npm notice 969B dist/esm/commands/relayDeleteRetained-1.lua
+npm notice 4.4kB dist/esm/commands/relayGet-1.lua
+npm notice 516B dist/esm/commands/relayGetNamespaces-1.lua
+npm notice 945B dist/esm/commands/relayHeartbeat-1.lua
+npm notice 4.8kB dist/esm/commands/relayPublish-1.lua
+npm notice 858B dist/esm/commands/relayReadInbox-1.lua
+npm notice 1.8kB dist/esm/commands/relayRegisterNode-1.lua
+npm notice 335B dist/esm/commands/relayRemoveEndpoint-1.lua
+npm notice 2.0kB dist/esm/commands/relaySubscribe-1.lua
+npm notice 970B dist/esm/commands/relaySweep-1.lua
+npm notice 683B dist/esm/commands/relayTouchNamespace-1.lua
+npm notice 2.0kB dist/esm/commands/relayTrimInbox-1.lua
+npm notice 639B dist/esm/commands/relayUnregisterNode-1.lua
+npm notice 307B dist/esm/commands/releaseLock-1.lua
+npm notice 685B dist/esm/commands/removeChildDependency-1.lua
+npm notice 393B dist/esm/commands/removeDeduplicationKey-1.lua
+npm notice 960B dist/esm/commands/removeJob-2.lua
+npm notice 914B dist/esm/commands/removeJobScheduler-3.lua
+npm notice 2.1kB dist/esm/commands/removeOrphanedJobs-1.lua
+npm notice 598B dist/esm/commands/removeUnprocessedChildren-2.lua
+npm notice 2.0kB dist/esm/commands/reprocessJob-9.lua
+npm notice 2.3kB dist/esm/commands/retryJob-11.lua
+npm notice 337B dist/esm/commands/saveStacktrace-1.lua
+npm notice 284B dist/esm/commands/updateData-1.lua
+npm notice 3.7kB dist/esm/commands/updateJobScheduler-12.lua
+npm notice 640B dist/esm/commands/updateProgress-3.lua
+npm notice 312B dist/esm/enums/child-command.d.ts
+npm notice 895B dist/esm/enums/child-command.js
+npm notice 358B dist/esm/enums/error-code.d.ts
+npm notice 927B dist/esm/enums/error-code.js
+npm notice 169B dist/esm/enums/index.d.ts
+npm notice 169B dist/esm/enums/index.js
+npm notice 215B dist/esm/enums/metrics-time.d.ts
+npm notice 618B dist/esm/enums/metrics-time.js
+npm notice 374B dist/esm/enums/parent-command.d.ts
+npm notice 1.2kB dist/esm/enums/parent-command.js
+npm notice 2.3kB dist/esm/enums/telemetry-attributes.d.ts
+npm notice 3.6kB dist/esm/enums/telemetry-attributes.js
+npm notice 273B dist/esm/index.d.ts
+npm notice 387B dist/esm/index.js
+npm notice 553B dist/esm/interfaces/advanced-options.d.ts
+npm notice 11B dist/esm/interfaces/advanced-options.js
+npm notice 420B dist/esm/interfaces/backoff-options.d.ts
+npm notice 11B dist/esm/interfaces/backoff-options.js
+npm notice 3.8kB dist/esm/interfaces/base-job-options.d.ts
+npm notice 11B dist/esm/interfaces/base-job-options.js
+npm notice 187B dist/esm/interfaces/child-message.d.ts
+npm notice 11B dist/esm/interfaces/child-message.js
+npm notice 254B dist/esm/interfaces/connection.d.ts
+npm notice 11B dist/esm/interfaces/connection.js
+npm notice 1.3kB dist/esm/interfaces/flow-job.d.ts
+npm notice 11B dist/esm/interfaces/flow-job.js
+npm notice 1.2kB dist/esm/interfaces/index.d.ts
+npm notice 1.2kB dist/esm/interfaces/index.js
+npm notice 188B dist/esm/interfaces/ioredis-events.d.ts
+npm notice 11B dist/esm/interfaces/ioredis-events.js
+npm notice 738B dist/esm/interfaces/job-json.d.ts
+npm notice 11B dist/esm/interfaces/job-json.js
+npm notice 509B dist/esm/interfaces/job-scheduler-json.d.ts
+npm notice 11B dist/esm/interfaces/job-scheduler-json.js
+npm notice 794B dist/esm/interfaces/lock-manager-worker-context.d.ts
+npm notice 11B dist/esm/interfaces/lock-manager-worker-context.js
+npm notice 403B dist/esm/interfaces/metrics-options.d.ts
+npm notice 11B dist/esm/interfaces/metrics-options.js
+npm notice 161B dist/esm/interfaces/metrics.d.ts
+npm notice 11B dist/esm/interfaces/metrics.js
+npm notice 4.0kB dist/esm/interfaces/minimal-job.d.ts
+npm notice 11B dist/esm/interfaces/minimal-job.js
+npm notice 1.9kB dist/esm/interfaces/minimal-queue.d.ts
+npm notice 11B dist/esm/interfaces/minimal-queue.js
+npm notice 204B dist/esm/interfaces/parent-message.d.ts
+npm notice 11B dist/esm/interfaces/parent-message.js
+npm notice 294B dist/esm/interfaces/parent-options.d.ts
+npm notice 11B dist/esm/interfaces/parent-options.js
+npm notice 1.8kB dist/esm/interfaces/parent.d.ts
+npm notice 11B dist/esm/interfaces/parent.js
+npm notice 23.8kB dist/esm/interfaces/queue-backend.d.ts
+npm notice 11B dist/esm/interfaces/queue-backend.js
+npm notice 1.7kB dist/esm/interfaces/queue-meta.d.ts
+npm notice 11B dist/esm/interfaces/queue-meta.js
+npm notice 4.1kB dist/esm/interfaces/queue-options.d.ts
+npm notice 163B dist/esm/interfaces/queue-options.js
+npm notice 296B dist/esm/interfaces/rate-limiter-options.d.ts
+npm notice 11B dist/esm/interfaces/rate-limiter-options.js
+npm notice 147B dist/esm/interfaces/receiver.d.ts
+npm notice 11B dist/esm/interfaces/receiver.js
+npm notice 7.6kB dist/esm/interfaces/redis-client.d.ts
+npm notice 11B dist/esm/interfaces/redis-client.js
+npm notice 1.3kB dist/esm/interfaces/redis-options.d.ts
+npm notice 11B dist/esm/interfaces/redis-options.js
+npm notice 182B dist/esm/interfaces/redis-streams.d.ts
+npm notice 11B dist/esm/interfaces/redis-streams.js
+npm notice 8.9kB dist/esm/interfaces/relay-backend.d.ts
+npm notice 11B dist/esm/interfaces/relay-backend.js
+npm notice 1.6kB dist/esm/interfaces/repeat-options.d.ts
+npm notice 11B dist/esm/interfaces/repeat-options.js
+npm notice 201B dist/esm/interfaces/repeatable-options.d.ts
+npm notice 11B dist/esm/interfaces/repeatable-options.js
+npm notice 308B dist/esm/interfaces/retry-options.d.ts
+npm notice 11B dist/esm/interfaces/retry-options.js
+npm notice 320B dist/esm/interfaces/sandboxed-job-processor.d.ts
+npm notice 11B dist/esm/interfaces/sandboxed-job-processor.js
+npm notice 1.2kB dist/esm/interfaces/sandboxed-job.d.ts
+npm notice 11B dist/esm/interfaces/sandboxed-job.js
+npm notice 1.1kB dist/esm/interfaces/sandboxed-options.d.ts
+npm notice 11B dist/esm/interfaces/sandboxed-options.js
+npm notice 1.1kB dist/esm/interfaces/script-queue-context.d.ts
+npm notice 11B dist/esm/interfaces/script-queue-context.js
+npm notice 8.4kB dist/esm/interfaces/telemetry.d.ts
+npm notice 11B dist/esm/interfaces/telemetry.js
+npm notice 5.2kB dist/esm/interfaces/worker-options.d.ts
+npm notice 11B dist/esm/interfaces/worker-options.js
+npm notice 971B dist/esm/postgres/create-postgres-backend.d.ts
+npm notice 2.2kB dist/esm/postgres/create-postgres-backend.js
+npm notice 844B dist/esm/postgres/index.d.ts
+npm notice 707B dist/esm/postgres/index.js
+npm notice 1.6kB dist/esm/postgres/migrations/index.d.ts
+npm notice 1.5kB dist/esm/postgres/migrations/index.js
+npm notice 6.9kB dist/esm/postgres/migrator.d.ts
+npm notice 14.0kB dist/esm/postgres/migrator.js
+npm notice 3.9kB dist/esm/postgres/pg-types.d.ts
+npm notice 383B dist/esm/postgres/pg-types.js
+npm notice 8.7kB dist/esm/postgres/postgres-connection.d.ts
+npm notice 16.7kB dist/esm/postgres/postgres-connection.js
+npm notice 16.7kB dist/esm/postgres/postgres-queue-backend.d.ts
+npm notice 74.2kB dist/esm/postgres/postgres-queue-backend.js
+npm notice 3.6kB dist/esm/postgres/postgres-relay-backend.d.ts
+npm notice 12.4kB dist/esm/postgres/postgres-relay-backend.js
+npm notice 561B dist/esm/postgres/sql-loader.d.ts
+npm notice 1.9kB dist/esm/postgres/sql-loader.js
+npm notice 384B dist/esm/postgres/sql-scripts.d.ts
+npm notice 214.1kB dist/esm/postgres/sql-scripts.js
+npm notice 98B dist/esm/scripts/addDelayedJob-6.d.ts
+npm notice 24.2kB dist/esm/scripts/addDelayedJob-6.js
+npm notice 100B dist/esm/scripts/addJobScheduler-11.d.ts
+npm notice 22.4kB dist/esm/scripts/addJobScheduler-11.js
+npm notice 91B dist/esm/scripts/addLog-2.d.ts
+npm notice 589B dist/esm/scripts/addLog-2.js
+npm notice 97B dist/esm/scripts/addParentJob-6.d.ts
+npm notice 19.1kB dist/esm/scripts/addParentJob-6.js
+npm notice 102B dist/esm/scripts/addPrioritizedJob-9.d.ts
+npm notice 23.0kB dist/esm/scripts/addPrioritizedJob-9.js
+npm notice 99B dist/esm/scripts/addStandardJob-9.d.ts
+npm notice 23.1kB dist/esm/scripts/addStandardJob-9.js
+npm notice 96B dist/esm/scripts/changeDelay-4.d.ts
+npm notice 3.1kB dist/esm/scripts/changeDelay-4.js
+npm notice 99B dist/esm/scripts/changePriority-7.d.ts
+npm notice 3.9kB dist/esm/scripts/changePriority-7.js
+npm notice 99B dist/esm/scripts/cleanJobsInSet-3.d.ts
+npm notice 12.9kB dist/esm/scripts/cleanJobsInSet-3.js
+npm notice 90B dist/esm/scripts/drain-5.d.ts
+npm notice 9.0kB dist/esm/scripts/drain-5.js
+npm notice 95B dist/esm/scripts/extendLock-2.d.ts
+npm notice 603B dist/esm/scripts/extendLock-2.js
+npm notice 96B dist/esm/scripts/extendLocks-1.d.ts
+npm notice 1.3kB dist/esm/scripts/extendLocks-1.js
+npm notice 94B dist/esm/scripts/getCounts-1.d.ts
+npm notice 967B dist/esm/scripts/getCounts-1.js
+npm notice 105B dist/esm/scripts/getCountsPerPriority-2.d.ts
+npm notice 638B dist/esm/scripts/getCountsPerPriority-2.js
+npm notice 104B dist/esm/scripts/getDependencyCounts-4.d.ts
+npm notice 844B dist/esm/scripts/getDependencyCounts-4.js
+npm notice 92B dist/esm/scripts/getJobs-1.d.ts
+npm notice 4.6kB dist/esm/scripts/getJobs-1.js
+npm notice 100B dist/esm/scripts/getJobScheduler-1.d.ts
+npm notice 423B dist/esm/scripts/getJobScheduler-1.js
+npm notice 95B dist/esm/scripts/getMetrics-2.d.ts
+npm notice 538B dist/esm/scripts/getMetrics-2.js
+npm notice 94B dist/esm/scripts/getRanges-1.d.ts
+npm notice 1.9kB dist/esm/scripts/getRanges-1.js
+npm notice 100B dist/esm/scripts/getRateLimitTtl-2.d.ts
+npm notice 929B dist/esm/scripts/getRateLimitTtl-2.js
+npm notice 93B dist/esm/scripts/getState-8.d.ts
+npm notice 1.5kB dist/esm/scripts/getState-8.js
+npm notice 95B dist/esm/scripts/getStateV2-8.d.ts
+npm notice 1.1kB dist/esm/scripts/getStateV2-8.js
+npm notice 2.2kB dist/esm/scripts/index.d.ts
+npm notice 2.2kB dist/esm/scripts/index.js
+npm notice 95B dist/esm/scripts/isFinished-3.d.ts
+npm notice 980B dist/esm/scripts/isFinished-3.js
+npm notice 96B dist/esm/scripts/isJobInList-1.d.ts
+npm notice 527B dist/esm/scripts/isJobInList-1.js
+npm notice 92B dist/esm/scripts/isMaxed-2.d.ts
+npm notice 657B dist/esm/scripts/isMaxed-2.js
+npm notice 108B dist/esm/scripts/moveJobFromActiveToWait-9.d.ts
+npm notice 3.5kB dist/esm/scripts/moveJobFromActiveToWait-9.js
+npm notice 99B dist/esm/scripts/moveJobsToWait-8.d.ts
+npm notice 4.1kB dist/esm/scripts/moveJobsToWait-8.js
+npm notice 106B dist/esm/scripts/moveStalledJobsToWait-9.d.ts
+npm notice 6.6kB dist/esm/scripts/moveStalledJobsToWait-9.js
+npm notice 97B dist/esm/scripts/moveToActive-11.d.ts
+npm notice 8.5kB dist/esm/scripts/moveToActive-11.js
+npm notice 98B dist/esm/scripts/moveToDelayed-11.d.ts
+npm notice 13.6kB dist/esm/scripts/moveToDelayed-11.js
+npm notice 99B dist/esm/scripts/moveToFinished-14.d.ts
+npm notice 39.7kB dist/esm/scripts/moveToFinished-14.js
+npm notice 106B dist/esm/scripts/moveToWaitingChildren-7.d.ts
+npm notice 2.9kB dist/esm/scripts/moveToWaitingChildren-7.js
+npm notice 95B dist/esm/scripts/obliterate-2.d.ts
+npm notice 10.9kB dist/esm/scripts/obliterate-2.js
+npm notice 93B dist/esm/scripts/paginate-1.d.ts
+npm notice 3.8kB dist/esm/scripts/paginate-1.js
+npm notice 90B dist/esm/scripts/pause-7.d.ts
+npm notice 2.7kB dist/esm/scripts/pause-7.js
+npm notice 92B dist/esm/scripts/promote-9.d.ts
+npm notice 3.1kB dist/esm/scripts/promote-9.js
+npm notice 98B dist/esm/scripts/relayAckInbox-1.d.ts
+npm notice 488B dist/esm/scripts/relayAckInbox-1.js
+npm notice 104B dist/esm/scripts/relayDeleteRetained-1.d.ts
+npm notice 5.3kB dist/esm/scripts/relayDeleteRetained-1.js
+npm notice 93B dist/esm/scripts/relayGet-1.d.ts
+npm notice 11.4kB dist/esm/scripts/relayGet-1.js
+npm notice 103B dist/esm/scripts/relayGetNamespaces-1.d.ts
+npm notice 1.1kB dist/esm/scripts/relayGetNamespaces-1.js
+npm notice 99B dist/esm/scripts/relayHeartbeat-1.d.ts
+npm notice 2.8kB dist/esm/scripts/relayHeartbeat-1.js
+npm notice 97B dist/esm/scripts/relayPublish-1.d.ts
+npm notice 13.2kB dist/esm/scripts/relayPublish-1.js
+npm notice 99B dist/esm/scripts/relayReadInbox-1.d.ts
+npm notice 962B dist/esm/scripts/relayReadInbox-1.js
+npm notice 102B dist/esm/scripts/relayRegisterNode-1.d.ts
+npm notice 10.1kB dist/esm/scripts/relayRegisterNode-1.js
+npm notice 104B dist/esm/scripts/relayRemoveEndpoint-1.d.ts
+npm notice 7.0kB dist/esm/scripts/relayRemoveEndpoint-1.js
+npm notice 99B dist/esm/scripts/relaySubscribe-1.d.ts
+npm notice 4.5kB dist/esm/scripts/relaySubscribe-1.js
+npm notice 95B dist/esm/scripts/relaySweep-1.d.ts
+npm notice 9.3kB dist/esm/scripts/relaySweep-1.js
+npm notice 104B dist/esm/scripts/relayTouchNamespace-1.d.ts
+npm notice 1.3kB dist/esm/scripts/relayTouchNamespace-1.js
+npm notice 99B dist/esm/scripts/relayTrimInbox-1.d.ts
+npm notice 2.5kB dist/esm/scripts/relayTrimInbox-1.js
+npm notice 104B dist/esm/scripts/relayUnregisterNode-1.d.ts
+npm notice 9.0kB dist/esm/scripts/relayUnregisterNode-1.js
+npm notice 96B dist/esm/scripts/releaseLock-1.d.ts
+npm notice 396B dist/esm/scripts/releaseLock-1.js
+npm notice 106B dist/esm/scripts/removeChildDependency-1.d.ts
+npm notice 5.6kB dist/esm/scripts/removeChildDependency-1.js
+npm notice 107B dist/esm/scripts/removeDeduplicationKey-1.d.ts
+npm notice 513B dist/esm/scripts/removeDeduplicationKey-1.js
+npm notice 94B dist/esm/scripts/removeJob-2.d.ts
+npm notice 12.5kB dist/esm/scripts/removeJob-2.js
+npm notice 103B dist/esm/scripts/removeJobScheduler-3.d.ts
+npm notice 1.2kB dist/esm/scripts/removeJobScheduler-3.js
+npm notice 103B dist/esm/scripts/removeOrphanedJobs-1.d.ts
+npm notice 2.2kB dist/esm/scripts/removeOrphanedJobs-1.js
+npm notice 110B dist/esm/scripts/removeUnprocessedChildren-2.d.ts
+npm notice 12.2kB dist/esm/scripts/removeUnprocessedChildren-2.js
+npm notice 97B dist/esm/scripts/reprocessJob-9.d.ts
+npm notice 4.5kB dist/esm/scripts/reprocessJob-9.js
+npm notice 93B dist/esm/scripts/retryJob-11.d.ts
+npm notice 6.0kB dist/esm/scripts/retryJob-11.js
+npm notice 99B dist/esm/scripts/saveStacktrace-1.d.ts
+npm notice 444B dist/esm/scripts/saveStacktrace-1.js
+npm notice 95B dist/esm/scripts/updateData-1.d.ts
+npm notice 381B dist/esm/scripts/updateData-1.js
+npm notice 103B dist/esm/scripts/updateJobScheduler-12.d.ts
+npm notice 12.6kB dist/esm/scripts/updateJobScheduler-12.js
+npm notice 99B dist/esm/scripts/updateProgress-3.d.ts
+npm notice 1.0kB dist/esm/scripts/updateProgress-3.js
+npm notice 89.9kB dist/esm/tsconfig.tsbuildinfo
+npm notice 184B dist/esm/types/backoff-strategy.d.ts
+npm notice 11B dist/esm/types/backoff-strategy.js
+npm notice 61B dist/esm/types/database-type.d.ts
+npm notice 11B dist/esm/types/database-type.js
+npm notice 1.1kB dist/esm/types/deduplication-options.d.ts
+npm notice 11B dist/esm/types/deduplication-options.js
+npm notice 818B dist/esm/types/default-queue-options.d.ts
+npm notice 11B dist/esm/types/default-queue-options.js
+npm notice 124B dist/esm/types/finished-status.d.ts
+npm notice 11B dist/esm/types/finished-status.js
+npm notice 386B dist/esm/types/index.d.ts
+npm notice 386B dist/esm/types/index.js
+npm notice 169B dist/esm/types/job-json-sandbox.d.ts
+npm notice 11B dist/esm/types/job-json-sandbox.js
+npm notice 2.0kB dist/esm/types/job-options.d.ts
+npm notice 11B dist/esm/types/job-options.js
+npm notice 62B dist/esm/types/job-progress.d.ts
+npm notice 11B dist/esm/types/job-progress.js
+npm notice 154B dist/esm/types/job-scheduler-template-options.d.ts
+npm notice 11B dist/esm/types/job-scheduler-template-options.js
+npm notice 215B dist/esm/types/job-type.d.ts
+npm notice 11B dist/esm/types/job-type.js
+npm notice 1.2kB dist/esm/types/keep-jobs.d.ts
+npm notice 11B dist/esm/types/keep-jobs.js
+npm notice 228B dist/esm/types/no-infer.d.ts
+npm notice 11B dist/esm/types/no-infer.js
+npm notice 334B dist/esm/types/processor.d.ts
+npm notice 11B dist/esm/types/processor.js
+npm notice 402B dist/esm/types/queue-type.d.ts
+npm notice 11B dist/esm/types/queue-type.js
+npm notice 197B dist/esm/types/repeat-strategy.d.ts
+npm notice 11B dist/esm/types/repeat-strategy.js
+npm notice 1.7kB dist/esm/utils/create-backend.d.ts
+npm notice 4.4kB dist/esm/utils/create-backend.js
+npm notice 7.1kB dist/esm/utils/index.d.ts
+npm notice 12.1kB dist/esm/utils/index.js
+npm notice 2.1kB dist/esm/utils/with-backend.d.ts
+npm notice 1.6kB dist/esm/utils/with-backend.js
+npm notice 40B dist/esm/version.d.ts
+npm notice 32B dist/esm/version.js
+npm notice 10.5kB package.json
+npm notice Tarball Details
+npm notice name: bullmq
+npm notice version: 6.4.2
+npm notice filename: bullmq-6.4.2.tgz
+npm notice package size: 609.1 kB
+npm notice unpacked size: 3.4 MB
+npm notice shasum: 6b11b18baf59da9c745acec94dfee508b1b211eb
+npm notice integrity: sha512-kXnQpwvAHca4M[...]5TqHIOl1jORpA==
+npm notice total files: 805
+npm notice
+bullmq-6.4.2.tgz
+{
+  "verified": true,
+  "root": "/tmp/bullmq4168/postgres-candidate",
+  "files": 1068,
+  "symlinks": 2,
+  "node": "v24.22.1",
+  "base": "09b7bfeb8653e74074542ca48e70477540742a7e",
+  "candidateArchiveSha256": "7bc67762360cab5ec31cc6f42e95cbc9c8d2401364a40b5129cf5bf2e10193a3",
+  "checkedAt": "2026-10-25T10:23:43.783Z"
+}

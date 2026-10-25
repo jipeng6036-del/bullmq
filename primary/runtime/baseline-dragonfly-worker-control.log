@@ -1,0 +1,167 @@
+{"argv": ["docker", "exec", "--user", "node", "--env", "HOME=/tmp/bullmq4168/home", "--env", "npm_config_cache=/tmp/bullmq4168/npm-cache", "--env", "PATH=/tmp/bullmq4168/tools/node_modules/node/bin:/tmp/bullmq4168/tools/node_modules/.bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin", "ghpr-heartbeat0902-js-bullmq4168-validation", "sh", "-c", "cd /tmp/bullmq4168/baseline && BULLMQ_TEST_PREFIX={b} yarn vitest run --no-file-parallelism tests/worker.test.ts -t \"does not process a job that is being processed when a new queue starts\""], "started": "2026-10-25T10:18:34.177311+00:00"}
+yarn run v1.22.22
+$ /tmp/bullmq4168/baseline/node_modules/.bin/vitest run --no-file-parallelism tests/worker.test.ts -t 'does not process a job that is being processed when a new queue starts'
+(!) Your Vite config uses features that are unsupported by `configLoader: 'native'`, which is planned to become the default in a future major version of Vite:
+  - ESM syntax in a file loaded as CommonJS (vitest.config.ts:1:1). Use a `.mjs` extension or set `"type": "module"` in the closest package.json
+Set `VITE_CONFIG_NATIVE_IGNORE_WARNING=true` to suppress this warning.
+
+[1m[30m[46m RUN [49m[39m[22m [36mv4.1.12 [39m[90m/tmp/bullmq4168/baseline[39m
+
+ [2m[90m↓[39m[22m tests/worker.test.ts[2m > [22mworkers[2m > [22mprocess a lifo queue
+ [2m[90m↓[39m[22m tests/worker.test.ts[2m > [22mworkers[2m > [22mprocess several jobs serially
+ [2m[90m↓[39m[22m tests/worker.test.ts[2m > [22mworkers[2m > [22mprocess a job that updates progress as number
+ [2m[90m↓[39m[22m tests/worker.test.ts[2m > [22mworkers[2m > [22mprocess a job that updates progress as object
+ [2m[90m↓[39m[22m tests/worker.test.ts[2m > [22mworkers[2m > [22mprocess a job that updates progress as string
+ [2m[90m↓[39m[22m tests/worker.test.ts[2m > [22mworkers[2m > [22mprocess a job that updates progress as boolean
+ [2m[90m↓[39m[22m tests/worker.test.ts[2m > [22mworkers[2m > [22mprocess a job that updates progress with a typed progress generic
+ [2m[90m↓[39m[22m tests/worker.test.ts[2m > [22mworkers[2m > [22mprocesses jobs that were added before the worker started
+ [2m[90m↓[39m[22m tests/worker.test.ts[2m > [22mworkers[2m > [22mprocess a job that returns data in the process handler
+ [2m[90m↓[39m[22m tests/worker.test.ts[2m > [22mworkers[2m > [22mprocess a job that returns a string in the process handler
+ [2m[90m↓[39m[22m tests/worker.test.ts[2m > [22mworkers[2m > [22mprocess a job that returning data returnvalue gets stored in the database
+ [2m[90m↓[39m[22m tests/worker.test.ts[2m > [22mworkers[2m > [22mprocess a job that does some asynchronous operation
+ [2m[90m↓[39m[22m tests/worker.test.ts[2m > [22mworkers[2m > [22mprocess a synchronous job
+ [2m[90m↓[39m[22m tests/worker.test.ts[2m > [22mworkers[2m > [22mprocess a slow job without waiting previous job to finish
+ [31m×[39m tests/worker.test.ts[2m > [22mworkers[2m > [22mdoes not process a job that is being processed when a new queue starts[33m 10034[2mms[22m[39m
+[31m   → Test timed out in 10000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".[39m
+ [2m[90m↓[39m[22m tests/worker.test.ts[2m > [22mworkers[2m > [22mprocess a job that throws an exception
+ [2m[90m↓[39m[22m tests/worker.test.ts[2m > [22mworkers[2m > [22mprocess a job that returns data with a circular dependency
+ [2m[90m↓[39m[22m tests/worker.test.ts[2m > [22mworkers[2m > [22mprocess a job that returns a rejected promise
+ [2m[90m↓[39m[22m tests/worker.test.ts[2m > [22mworkers[2m > [22msets the worker name on the job upon processing
+ [2m[90m↓[39m[22m tests/worker.test.ts[2m > [22mworkers[2m > [22mwhen job is in failed state[2m > [22mretries a job that fails
+ [2m[90m↓[39m[22m tests/worker.test.ts[2m > [22mworkers[2m > [22mwhen job is in failed state[2m > [22mwhen passing resetAttemptsMade and resetAttemptsStarted as true[2m > [22mretries a job that fails and resets attemptsMade and attemptsStarted
+ [2m[90m↓[39m[22m tests/worker.test.ts[2m > [22mworkers[2m > [22mwhen job is in failed state[2m > [22mwhen the job has a priority[2m > [22mmoves the retried job back to the prioritized state
+ [2m[90m↓[39m[22m tests/worker.test.ts[2m > [22mworkers[2m > [22mwhen job is in completed state[2m > [22mretries a job that completes
+ [2m[90m↓[39m[22m tests/worker.test.ts[2m > [22mworkers[2m > [22mwhen job is in completed state[2m > [22mwhen passing resetAttemptsMade and resetAttemptsStarted as true[2m > [22mretries a job that completes and resets attemptsMade and attemptsStarted
+ [2m[90m↓[39m[22m tests/worker.test.ts[2m > [22mworkers[2m > [22mwhen job is in completed state[2m > [22mwhen the job has a priority[2m > [22mmoves the retried job back to the prioritized state
+ [2m[90m↓[39m[22m tests/worker.test.ts[2m > [22mworkers[2m > [22mwhen closing a worker[2m > [22mprocess a job that throws an exception after worker close
+ [2m[90m↓[39m[22m tests/worker.test.ts[2m > [22mworkers[2m > [22mwhen closing a worker[2m > [22mprocess a job that complete after worker close
+ [2m[90m↓[39m[22m tests/worker.test.ts[2m > [22mworkers[2m > [22mwhen closing a worker[2m > [22mresolves close() when an active job throws DelayedError during shutdown
+ [2m[90m↓[39m[22m tests/worker.test.ts[2m > [22mworkers[2m > [22mwhen closing a worker[2m > [22mresolves close() when a paused worker has an active job that throws DelayedError
+ [2m[90m↓[39m[22m tests/worker.test.ts[2m > [22mworkers[2m > [22mwhen closing a worker[2m > [22mdoes not retry connection errors indefinitely while the worker is closing
+ [2m[90m↓[39m[22m tests/worker.test.ts[2m > [22mworkers[2m > [22mwhen waiting for a job[2m > [22mreconnects blocking transport after a connection error (#4378)
+ [2m[90m↓[39m[22m tests/worker.test.ts[2m > [22mworkers[2m > [22mwhen waiting for a job[2m > [22mretries after reconnecting blocking transport fails
+ [2m[90m↓[39m[22m tests/worker.test.ts[2m > [22mworkers[2m > [22mwhen waiting for a job[2m > [22mrecovers when the blocking command never settles (#4479)
+ [2m[90m↓[39m[22m tests/worker.test.ts[2m > [22mworkers[2m > [22mwhen waiting for a job[2m > [22mdoes not disconnect a reconnecting blocking client (#4585)
+ [2m[90m↓[39m[22m tests/worker.test.ts[2m > [22mworkers[2m > [22mwhen waiting for a job[2m > [22mdrops the abandoned blocking command once the client is live again (#4585)
+ [2m[90m↓[39m[22m tests/worker.test.ts[2m > [22mworkers[2m > [22mwhen waiting for a job[2m > [22mreconnects a healthy connection torn down by the watchdog (#4585 ready-path race)
+ [2m[90m↓[39m[22m tests/worker.test.ts[2m > [22mworkers[2m > [22mwhen calling getBlockTimeout[2m > [22mwhen blockUntil is 0[2m > [22mwhen drainDelay is greater than minimumBlockTimeout[2m > [22mreturns drainDelay
+ [2m[90m↓[39m[22m tests/worker.test.ts[2m > [22mworkers[2m > [22mwhen calling getBlockTimeout[2m > [22mwhen blockUntil is 0[2m > [22mwhen drainDelay is lower than minimumBlockTimeout[2m > [22mreturns drainDelay
+ [2m[90m↓[39m[22m tests/worker.test.ts[2m > [22mworkers[2m > [22mwhen calling getBlockTimeout[2m > [22mwhen blockUntil is greater than 0[2m > [22mwhen blockUntil is lower than date now value[2m > [22mreturns blockDelay value lower or equal 0
+ [2m[90m↓[39m[22m tests/worker.test.ts[2m > [22mworkers[2m > [22mwhen calling getBlockTimeout[2m > [22mwhen blockUntil is greater than 0[2m > [22mwhen blockUntil is greater than date now value[2m > [22mreturns delay value greater than minimumBlockTimeout
+ [2m[90m↓[39m[22m tests/worker.test.ts[2m > [22mworkers[2m > [22mwhen calling getBlockTimeout[2m > [22mwhen blockUntil is greater than 0[2m > [22mwhen blockDelay exceeds the backend maximumBlockTimeout[2m > [22mcaps the block timeout at the backend's maximumBlockTimeout
+ [2m[90m↓[39m[22m tests/worker.test.ts[2m > [22mworkers[2m > [22mwhen reading maximumBlockTimeout[2m > [22mdelegates to the backend value
+ [2m[90m↓[39m[22m tests/worker.test.ts[2m > [22mworkers[2m > [22mwhen reading maximumBlockTimeout[2m > [22mfalls back to the default (10s) when the backend does not specify one
+ [2m[90m↓[39m[22m tests/worker.test.ts[2m > [22mworkers[2m > [22mwhen sharing connection[2m > [22mshould not fail
+ [2m[90m↓[39m[22m tests/worker.test.ts[2m > [22mworkers[2m > [22mauto job removal[2m > [22mshould remove job after completed if removeOnComplete
+ [2m[90m↓[39m[22m tests/worker.test.ts[2m > [22mworkers[2m > [22mauto job removal[2m > [22mshould remove a job after completed if the default job options specify removeOnComplete
+ [2m[90m↓[39m[22m tests/worker.test.ts[2m > [22mworkers[2m > [22mauto job removal[2m > [22mshould keep specified number of jobs after completed with removeOnComplete
+ [2m[90m↓[39m[22m tests/worker.test.ts[2m > [22mworkers[2m > [22mauto job removal[2m > [22mshould keep of jobs newer than specified after completed with removeOnComplete
+ [2m[90m↓[39m[22m tests/worker.test.ts[2m > [22mworkers[2m > [22mauto job removal[2m > [22mshould keep of jobs newer than specified and up to a count completed with removeOnComplete
+ [2m[90m↓[39m[22m tests/worker.test.ts[2m > [22mworkers[2m > [22mauto job removal[2m > [22mshould keep of jobs newer than specified and up to a count fail with removeOnFail
+ [2m[90m↓[39m[22m tests/worker.test.ts[2m > [22mworkers[2m > [22mauto job removal[2m > [22mshould keep specified number of jobs after completed with default job options removeOnComplete
+ [2m[90m↓[39m[22m tests/worker.test.ts[2m > [22mworkers[2m > [22mauto job removal[2m > [22mshould remove job after failed if removeOnFail
+ [2m[90m↓[39m[22m tests/worker.test.ts[2m > [22mworkers[2m > [22mauto job removal[2m > [22mshould remove a job after fail if the default job options specify removeOnFail
+ [2m[90m↓[39m[22m tests/worker.test.ts[2m > [22mworkers[2m > [22mauto job removal[2m > [22mshould keep specified number of jobs after completed with removeOnFail
+ [2m[90m↓[39m[22m tests/worker.test.ts[2m > [22mworkers[2m > [22mauto job removal[2m > [22mshould keep specified number of jobs after completed with global removeOnFail
+ [2m[90m↓[39m[22m tests/worker.test.ts[2m > [22mworkers[2m > [22mauto job removal[2m > [22mwhen worker has removeOnFinish options[2m > [22mshould keep of jobs newer than specified after completed with removeOnComplete
+ [2m[90m↓[39m[22m tests/worker.test.ts[2m > [22mworkers[2m > [22mauto job removal[2m > [22mwhen worker has removeOnFinish options[2m > [22mshould keep of jobs newer than specified and up to a count completed with removeOnComplete
+ [2m[90m↓[39m[22m tests/worker.test.ts[2m > [22mworkers[2m > [22mauto job removal[2m > [22mwhen worker has removeOnFinish options[2m > [22mshould keep jobs with age 10 and limit 2 with removeOnComplete
+ [2m[90m↓[39m[22m tests/worker.test.ts[2m > [22mworkers[2m > [22mauto job removal[2m > [22mwhen worker has removeOnFinish options[2m > [22mshould keep of jobs newer than specified and up to a count fail with removeOnFail
+ [2m[90m↓[39m[22m tests/worker.test.ts[2m > [22mworkers[2m > [22mauto job removal[2m > [22mwhen worker has removeOnFinish options[2m > [22mshould remove all jobs when count is 0 with removeOnFail
+ [2m[90m↓[39m[22m tests/worker.test.ts[2m > [22mworkers[2m > [22mwhen adding delayed job after standard one when worker is drained[2m > [22mpick standard job without delay
+ [2m[90m↓[39m[22m tests/worker.test.ts[2m > [22mworkers[2m > [22mwhen prioritized jobs are added[2m > [22mshould process jobs by priority
+ [2m[90m↓[39m[22m tests/worker.test.ts[2m > [22mworkers[2m > [22mwhen prioritized jobs are added[2m > [22mwhen jobs are added with the maximum allowed priority value[2m > [22mshould process jobs with the same priority in FIFO order
+ [2m[90m↓[39m[22m tests/worker.test.ts[2m > [22mworkers[2m > [22mwhen prioritized jobs are added[2m > [22mwhen jobs are added with the maximum allowed priority value[2m > [22mshould reject jobs above the maximum allowed priority value
+ [2m[90m↓[39m[22m tests/worker.test.ts[2m > [22mworkers[2m > [22mwhen prioritized jobs are added[2m > [22mwhile processing last active job[2m > [22mshould process prioritized job whithout delay
+ [2m[90m↓[39m[22m tests/worker.test.ts[2m > [22mworkers[2m > [22mwhen prioritized jobs are added[2m > [22mwhen using custom jobId[2m > [22mshould process prioritized jobs
+ [2m[90m↓[39m[22m tests/worker.test.ts[2m > [22mworkers[2m > [22mwhen sharing a redis connection between workers[2m > [22mshould not close the connection
+ [2m[90m↓[39m[22m tests/worker.test.ts[2m > [22mworkers[2m > [22mwhen sharing a redis connection between workers[2m > [22mwhen connection is passed into a queue[2m > [22mshould not close the connection
+ [2m[90m↓[39m[22m tests/worker.test.ts[2m > [22mworkers[2m > [22mwhen autorun option is provided as false[2m > [22mprocesses several jobs serially using process option as false
+ [2m[90m↓[39m[22m tests/worker.test.ts[2m > [22mworkers[2m > [22mwhen autorun option is provided as false[2m > [22mwhen process function is not defined[2m > [22mthrows error
+ [2m[90m↓[39m[22m tests/worker.test.ts[2m > [22mworkers[2m > [22mwhen autorun option is provided as false[2m > [22mwhen run method is called when worker is running[2m > [22mthrows error
+ [2m[90m↓[39m[22m tests/worker.test.ts[2m > [22mworkers[2m > [22mwhen queue is paused and retry a job[2m > [22mmoves job to wait
+ [2m[90m↓[39m[22m tests/worker.test.ts[2m > [22mworkers[2m > [22mretry a job that fails using job retry method
+ [2m[90m↓[39m[22m tests/worker.test.ts[2m > [22mworkers[2m > [22memits error and continues running when _getNextJob fails
+ [2m[90m↓[39m[22m tests/worker.test.ts[2m > [22mworkers[2m > [22mcontinues processing after a worker has stalled
+ [2m[90m↓[39m[22m tests/worker.test.ts[2m > [22mworkers[2m > [22mmax stalled count cannot be less than zero
+ [2m[90m↓[39m[22m tests/worker.test.ts[2m > [22mworkers[2m > [22mmax started attempts cannot be less than zero
+ [2m[90m↓[39m[22m tests/worker.test.ts[2m > [22mworkers[2m > [22mstalled interval cannot be zero
+ [2m[90m↓[39m[22m tests/worker.test.ts[2m > [22mworkers[2m > [22mdrain delay cannot be zero
+ [2m[90m↓[39m[22m tests/worker.test.ts[2m > [22mworkers[2m > [22mlock extender continues to run until all active jobs are completed when closing a worker
+ [2m[90m↓[39m[22m tests/worker.test.ts[2m > [22mworkers[2m > [22mConcurrency process[2m > [22mshould thrown an exception if I specify a concurrency of 0
+ [2m[90m↓[39m[22m tests/worker.test.ts[2m > [22mworkers[2m > [22mConcurrency process[2m > [22mshould thrown an exception if I specify a NaN concurrency
+ [2m[90m↓[39m[22m tests/worker.test.ts[2m > [22mworkers[2m > [22mConcurrency process[2m > [22mshould run job in sequence if I specify a concurrency of 1
+ [2m[90m↓[39m[22m tests/worker.test.ts[2m > [22mworkers[2m > [22mConcurrency process[2m > [22mshould process job respecting the concurrency set
+ [2m[90m↓[39m[22m tests/worker.test.ts[2m > [22mworkers[2m > [22mConcurrency process[2m > [22mwhen changing concurrency[2m > [22mwhen increasing value[2m > [22mshould process job respecting the current concurrency set
+ [2m[90m↓[39m[22m tests/worker.test.ts[2m > [22mworkers[2m > [22mConcurrency process[2m > [22mwhen changing concurrency[2m > [22mwhen decreasing value[2m > [22mshould process job respecting the current concurrency set
+ [2m[90m↓[39m[22m tests/worker.test.ts[2m > [22mworkers[2m > [22mConcurrency process[2m > [22mwhen pausing[2m > [22mshould wait for all concurrent processing
+ [2m[90m↓[39m[22m tests/worker.test.ts[2m > [22mworkers[2m > [22mConcurrency process[2m > [22mwhen pausing[2m > [22mshould not keep active jobs
+ [2m[90m↓[39m[22m tests/worker.test.ts[2m > [22mworkers[2m > [22mConcurrency process[2m > [22mwhen pausing[2m > [22mshould resume processing after pause with doNotWaitActive
+ [2m[90m↓[39m[22m tests/worker.test.ts[2m > [22mworkers[2m > [22mRetries and backoffs[2m > [22mupdates job's delay property if it fails and backoff is set
+ [2m[90m↓[39m[22m tests/worker.test.ts[2m > [22mworkers[2m > [22mRetries and backoffs[2m > [22mwhen backoff type is exponential[2m > [22mupdates job's delay property if it fails and backoff is set
+ [2m[90m↓[39m[22m tests/worker.test.ts[2m > [22mworkers[2m > [22mRetries and backoffs[2m > [22mwhen backoff type is exponential[2m > [22mwhen jitter option is provided[2m > [22mupdates job's delay property between 0 and max exponential backoff value
+ [2m[90m↓[39m[22m tests/worker.test.ts[2m > [22mworkers[2m > [22mRetries and backoffs[2m > [22mwhen backoff type is exponential[2m > [22mwhen jitter option is provided[2m > [22mwhen jitter is provided with lower value than 1[2m > [22mupdates job's delay property only applying jitter in a fixed percentage
+ [2m[90m↓[39m[22m tests/worker.test.ts[2m > [22mworkers[2m > [22mRetries and backoffs[2m > [22mwhen backoff type is fixed[2m > [22mupdates job's delay property and respects fixed delay value
+ [2m[90m↓[39m[22m tests/worker.test.ts[2m > [22mworkers[2m > [22mRetries and backoffs[2m > [22mwhen backoff type is fixed[2m > [22mwhen jitter option is provided[2m > [22mupdates job's delay property between 0 and max fixed backoff value
+ [2m[90m↓[39m[22m tests/worker.test.ts[2m > [22mworkers[2m > [22mRetries and backoffs[2m > [22mwhen backoff type is fixed[2m > [22mwhen jitter option is provided[2m > [22mwhen jitter is provided with lower value than 1[2m > [22mupdates job's delay property only applying jitter in a fixed percentage
+ [2m[90m↓[39m[22m tests/worker.test.ts[2m > [22mworkers[2m > [22mRetries and backoffs[2m > [22mwhen attempts is 1 and job fails[2m > [22mshould execute job only once and emits retries-exhausted event
+ [2m[90m↓[39m[22m tests/worker.test.ts[2m > [22mworkers[2m > [22mRetries and backoffs[2m > [22mwhen jobs do not fail and get the maximum attempts limit[2m > [22mdoes not emit retries-exhausted event
+ [2m[90m↓[39m[22m tests/worker.test.ts[2m > [22mworkers[2m > [22mRetries and backoffs[2m > [22mwhen job has been failed and moved to wait[2m > [22msaves failedReason
+ [2m[90m↓[39m[22m tests/worker.test.ts[2m > [22mworkers[2m > [22mRetries and backoffs[2m > [22mshould automatically retry a failed job if attempts is bigger than 1
+ [2m[90m↓[39m[22m tests/worker.test.ts[2m > [22mworkers[2m > [22mRetries and backoffs[2m > [22mwhen there are delayed jobs between retries[2m > [22mwhen using retryJob[2m > [22mpromotes delayed jobs first
+ [2m[90m↓[39m[22m tests/worker.test.ts[2m > [22mworkers[2m > [22mRetries and backoffs[2m > [22mwhen there are delayed jobs between retries[2m > [22mwhen job has more priority than delayed jobs[2m > [22mexecutes retried job first
+ [2m[90m↓[39m[22m tests/worker.test.ts[2m > [22mworkers[2m > [22mRetries and backoffs[2m > [22mshould not retry a failed job more than the number of given attempts times
+ [2m[90m↓[39m[22m tests/worker.test.ts[2m > [22mworkers[2m > [22mRetries and backoffs[2m > [22mshould retry a job after a delay if a fixed backoff is given
+ [2m[90m↓[39m[22m tests/worker.test.ts[2m > [22mworkers[2m > [22mRetries and backoffs[2m > [22mwhen UnrecoverableError is throw[2m > [22mmoves job to failed
+ [2m[90m↓[39m[22m tests/worker.test.ts[2m > [22mworkers[2m > [22mRetries and backoffs[2m > [22mwhen providing a way to execute step jobs[2m > [22mshould retry a job after a delay if a fixed backoff is given, keeping the current step
+ [2m[90m↓[39m[22m tests/worker.test.ts[2m > [22mworkers[2m > [22mRetries and backoffs[2m > [22mwhen providing a way to execute step jobs[2m > [22mwhen timeout is provided[2m > [22mshould check if timeout is reached in each step
+ [2m[90m↓[39m[22m tests/worker.test.ts[2m > [22mworkers[2m > [22mRetries and backoffs[2m > [22mwhen providing a way to execute step jobs[2m > [22mwhen moving job to delayed in one step[2m > [22mshould retry job after a delay time, keeping the current step
+ [2m[90m↓[39m[22m tests/worker.test.ts[2m > [22mworkers[2m > [22mRetries and backoffs[2m > [22mwhen providing a way to execute step jobs[2m > [22mwhen moving job to delayed in one step[2m > [22mwhen passing maxStartedAttempts[2m > [22mshould fail job when consuming the max started attempts
+ [2m[90m↓[39m[22m tests/worker.test.ts[2m > [22mworkers[2m > [22mRetries and backoffs[2m > [22mwhen providing a way to execute step jobs[2m > [22mwhen moving job to delayed in one step[2m > [22mwhen passing maxStartedAttempts[2m > [22mshould allow only retry a job once after it has reached the max attemptsStarted
+ [2m[90m↓[39m[22m tests/worker.test.ts[2m > [22mworkers[2m > [22mRetries and backoffs[2m > [22mwhen providing a way to execute step jobs[2m > [22mwhen moving job to waiting in one step[2m > [22mshould retry job right away, keeping the current step
+ [2m[90m↓[39m[22m tests/worker.test.ts[2m > [22mworkers[2m > [22mRetries and backoffs[2m > [22mshould retry a job after a delay if an exponential backoff is given
+ [2m[90m↓[39m[22m tests/worker.test.ts[2m > [22mworkers[2m > [22mRetries and backoffs[2m > [22mshould retry a job after a delay if a custom backoff is given
+ [2m[90m↓[39m[22m tests/worker.test.ts[2m > [22mworkers[2m > [22mRetries and backoffs[2m > [22mwhen applying custom backoff by type[2m > [22mshould retry a job after a delay for custom type
+ [2m[90m↓[39m[22m tests/worker.test.ts[2m > [22mworkers[2m > [22mRetries and backoffs[2m > [22mshould not retry a job if the custom backoff returns -1
+ [2m[90m↓[39m[22m tests/worker.test.ts[2m > [22mworkers[2m > [22mRetries and backoffs[2m > [22mshould retry a job after a delay if a custom backoff is given based on the error thrown
+ [2m[90m↓[39m[22m tests/worker.test.ts[2m > [22mworkers[2m > [22mRetries and backoffs[2m > [22mshould retry a job after a delay if a custom backoff is given based on the job data
+ [2m[90m↓[39m[22m tests/worker.test.ts[2m > [22mworkers[2m > [22mRetries and backoffs[2m > [22mshould be able to handle a custom backoff if it returns a promise
+ [2m[90m↓[39m[22m tests/worker.test.ts[2m > [22mworkers[2m > [22mRetries and backoffs[2m > [22mshould not retry a job that has been removed
+ [2m[90m↓[39m[22m tests/worker.test.ts[2m > [22mworkers[2m > [22mRetries and backoffs[2m > [22mshould not retry a job that has been retried already
+ [2m[90m↓[39m[22m tests/worker.test.ts[2m > [22mworkers[2m > [22mRetries and backoffs[2m > [22mshould only retry a job once after it has reached the max attempts
+ [2m[90m↓[39m[22m tests/worker.test.ts[2m > [22mworkers[2m > [22mRetries and backoffs[2m > [22mshould not retry a job that is active
+ [2m[90m↓[39m[22m tests/worker.test.ts[2m > [22mworkers[2m > [22mManually process jobs[2m > [22mshould allow to complete jobs manually
+ [2m[90m↓[39m[22m tests/worker.test.ts[2m > [22mworkers[2m > [22mManually process jobs[2m > [22mwhen move job to waiting-children[2m > [22mwhen job is not in active state[2m > [22mthrows an error
+ [2m[90m↓[39m[22m tests/worker.test.ts[2m > [22mworkers[2m > [22mManually process jobs[2m > [22mshould allow to fail jobs manually
+ [2m[90m↓[39m[22m tests/worker.test.ts[2m > [22mworkers[2m > [22mManually process jobs[2m > [22mwhen there is a job in waiting[2m > [22mshould emit active event when calling getNextJob
+ [2m[90m↓[39m[22m tests/worker.test.ts[2m > [22mworkers[2m > [22mManually process jobs[2m > [22mwhen a stalled job has exhausted its max stalled attempts[2m > [22mshould move the job to failed automatically on the next getNextJob call and return undefined when no other jobs are waiting
+ [2m[90m↓[39m[22m tests/worker.test.ts[2m > [22mworkers[2m > [22mManually process jobs[2m > [22mwhen a stalled job has exhausted its max stalled attempts[2m > [22mshould fail the deferred-failure job and return the next waiting job
+ [2m[90m↓[39m[22m tests/worker.test.ts[2m > [22mworkers[2m > [22mnon-blocking[2m > [22mshould block by default
+ [2m[90m↓[39m[22m tests/worker.test.ts[2m > [22mworkers[2m > [22mnon-blocking[2m > [22mshouldn't block when disabled
+ [2m[90m↓[39m[22m tests/worker.test.ts[2m > [22mworkers[2m > [22mnon-blocking[2m > [22mshouldn't block when disabled and paused
+ [2m[90m↓[39m[22m tests/worker.test.ts[2m > [22mworkers[2m > [22mshould retrieve concurrency from getter
+
+[31m⎯⎯⎯⎯⎯⎯⎯[39m[1m[41m Failed Tests 1 [49m[22m[31m⎯⎯⎯⎯⎯⎯⎯[39m
+
+[41m[1m FAIL [22m[49m tests/worker.test.ts[2m > [22mworkers[2m > [22mdoes not process a job that is being processed when a new queue starts
+[31m[1mError[22m: Test timed out in 10000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".[39m
+[36m [2m❯[22m tests/worker.test.ts:[2m566:3[22m[39m
+    [90m564|[39m   // `worker.redis.test.ts`.
+    [90m565|[39m
+    [90m566|[39m   it('does not process a job that is being processed when a new queue …
+    [90m   |[39m   [31m^[39m
+    [90m567|[39m     // TODO: Move timeout to test options: { timeout: 12000 }
+    [90m568|[39m     let err;
+
+[31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯[22m[39m
+
+
+[2m Test Files [22m [1m[31m1 failed[39m[22m[90m (1)[39m
+[2m      Tests [22m [1m[31m1 failed[39m[22m[2m | [22m[33m131 skipped[39m[90m (132)[39m
+[2m   Start at [22m 10:18:36
+[2m   Duration [22m 10.61s[2m (transform 357ms, setup 52ms, import 443ms, tests 10.04s, environment 0ms)[22m
+
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+error Command failed with exit code 1.

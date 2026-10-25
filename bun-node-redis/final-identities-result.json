@@ -1,0 +1,12 @@
+{
+  "name": "final-identities",
+  "argv": [
+    "docker",
+    "inspect",
+    "ghpr-0902-bullmq-bun-root-redis7",
+    "ghpr-0902-bullmq-bun-root-runner"
+  ],
+  "started": "2026-10-25T10:36:25.628595+00:00",
+  "ended": "2026-10-25T10:36:25.862260+00:00",
+  "exitCode": 0
+}

@@ -1,0 +1,29 @@
+{
+  "id": "5a57efcee481e50da1a440156f0bf8e8cad0517867bfefaaa7723f885f8a796c",
+  "name": "/ghpr-heartbeat0902-js-bullmq4168-valkey8",
+  "image": "valkey/valkey:8-alpine3.20",
+  "imageId": "sha256:75010b6854cb5ba6a0b1540d1bd3238541a31e3f8018cd31f9e5b92bb3192fa6",
+  "networkMode": "container:dc900eccc78fa9a90941e4db6d6760b19eefec943c21d6680d78c27a25bb4fa7",
+  "tmpfs": {
+    "/data": "rw,size=67108864"
+  },
+  "namespaceAnchorRedis7MovedToPort": 6387,
+  "command": [
+    "docker",
+    "run",
+    "-d",
+    "--name",
+    "ghpr-heartbeat0902-js-bullmq4168-valkey8",
+    "--network",
+    "container:dc900eccc78fa9a90941e4db6d6760b19eefec943c21d6680d78c27a25bb4fa7",
+    "--tmpfs",
+    "/data:rw,size=67108864",
+    "valkey/valkey:8-alpine3.20",
+    "valkey-server",
+    "--save",
+    "",
+    "--appendonly",
+    "no"
+  ],
+  "created": "2026-10-25T10:03:07.510094+00:00"
+}

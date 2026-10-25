@@ -1,0 +1,90 @@
+{
+  "atUtc": "2026-10-25T10:36:54.998981+00:00",
+  "command": [
+    "docker",
+    "inspect",
+    "ghpr-bullmq-matrix-agent-node20-store",
+    "ghpr-bullmq-matrix-agent-node20",
+    "ghpr-bullmq-matrix-agent-node22-store",
+    "ghpr-bullmq-matrix-agent-node22",
+    "ghpr-bullmq-matrix-agent-valkey-glide-store",
+    "ghpr-bullmq-matrix-agent-valkey-glide"
+  ],
+  "exitCode": 0,
+  "rawSha256": "26d6264a3c7e4536197304d8de26a10a437c8168b270d81e658c04ed4f37aa08",
+  "resources": [
+    {
+      "name": "ghpr-bullmq-matrix-agent-node20-store",
+      "id": "49ed1b84ed357af750739364e57e82bff9190715dafc20054ac30c8fe757164a",
+      "imageId": "sha256:57e4255cc971b1c8d6f8a6ca283ac01bc3ecdd914273ef6bfaede87aaecd6541",
+      "imageTag": "redis:7-alpine",
+      "labels": {
+        "ghpr.owner": "heartbeat0902-bullmq-matrix-agent"
+      },
+      "running": true,
+      "networkMode": "bridge",
+      "portBindings": {}
+    },
+    {
+      "name": "ghpr-bullmq-matrix-agent-node20",
+      "id": "8ad5266f38a9f1c02cb7e1496bce8638774af79815fd470a6fcce7536f2238bc",
+      "imageId": "sha256:5c4012d11d9857c42713ba511fbc19645cac1706bb710d51d42b0d301dff7f88",
+      "imageTag": "node:26-bookworm",
+      "labels": {
+        "ghpr.owner": "heartbeat0902-bullmq-matrix-agent"
+      },
+      "running": true,
+      "networkMode": "container:49ed1b84ed357af750739364e57e82bff9190715dafc20054ac30c8fe757164a",
+      "portBindings": {}
+    },
+    {
+      "name": "ghpr-bullmq-matrix-agent-node22-store",
+      "id": "eb3c9ac1b7cfe619a1faee6f92566cf8dfdcf32bfcdc56053c64dc7423201950",
+      "imageId": "sha256:57e4255cc971b1c8d6f8a6ca283ac01bc3ecdd914273ef6bfaede87aaecd6541",
+      "imageTag": "redis:7-alpine",
+      "labels": {
+        "ghpr.owner": "heartbeat0902-bullmq-matrix-agent"
+      },
+      "running": true,
+      "networkMode": "bridge",
+      "portBindings": {}
+    },
+    {
+      "name": "ghpr-bullmq-matrix-agent-node22",
+      "id": "191d61af8e22ee2edcacee27941a410ad53a1986883ea0e11bbdec5555911210",
+      "imageId": "sha256:5c4012d11d9857c42713ba511fbc19645cac1706bb710d51d42b0d301dff7f88",
+      "imageTag": "node:26-bookworm",
+      "labels": {
+        "ghpr.owner": "heartbeat0902-bullmq-matrix-agent"
+      },
+      "running": true,
+      "networkMode": "container:eb3c9ac1b7cfe619a1faee6f92566cf8dfdcf32bfcdc56053c64dc7423201950",
+      "portBindings": {}
+    },
+    {
+      "name": "ghpr-bullmq-matrix-agent-valkey-glide-store",
+      "id": "9993d59c2719a86c64993a2d233a5b59e7eb19e44472304be247a9b3b097bcad",
+      "imageId": "sha256:75010b6854cb5ba6a0b1540d1bd3238541a31e3f8018cd31f9e5b92bb3192fa6",
+      "imageTag": "valkey/valkey:8-alpine3.20",
+      "labels": {
+        "ghpr.owner": "heartbeat0902-bullmq-matrix-agent"
+      },
+      "running": true,
+      "networkMode": "bridge",
+      "portBindings": {}
+    },
+    {
+      "name": "ghpr-bullmq-matrix-agent-valkey-glide",
+      "id": "85ddc11d9b622845461728aecc4e03a7f85a8edb03192a370c0f52d8a4271cc2",
+      "imageId": "sha256:5c4012d11d9857c42713ba511fbc19645cac1706bb710d51d42b0d301dff7f88",
+      "imageTag": "node:26-bookworm",
+      "labels": {
+        "ghpr.owner": "heartbeat0902-bullmq-matrix-agent"
+      },
+      "running": true,
+      "networkMode": "container:9993d59c2719a86c64993a2d233a5b59e7eb19e44472304be247a9b3b097bcad",
+      "portBindings": {}
+    }
+  ],
+  "scope": "Read only exactly the six worker-owned resources; no host ports published; each test worker shares only its own dedicated store network namespace."
+}

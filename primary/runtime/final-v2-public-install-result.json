@@ -1,0 +1,23 @@
+{
+  "name": "final-v2-public-install",
+  "command": "mkdir -p /tmp/bullmq4168/public-final-v2 && cd /tmp/bullmq4168/public-final-v2 && tar -xf /evidence/public-linux-assets.tar && tar -xf /evidence/strong-pending-close-assets.tar && printf \"{\\\"private\\\":true}\\n\" > package.json && npm install --ignore-scripts --no-audit --no-fund /evidence/artifact-final-v2/bullmq-6.4.2.tgz ioredis@5.11.1 && REDIS_PORT=6387 node visibility-probe-fileurl.cjs && cp visibility-fileurl-results.json /evidence/final-v2-public-visibility.json && REDIS_PORT=6387 node strong-close-probe.cjs && cp strong-pending-close-result.json /evidence/final-v2-strong-pending-close.json && REDIS_PORT=6387 node reuse-probe.cjs && cp reuse-result.json /evidence/final-v2-public-reuse.json",
+  "argv": [
+    "docker",
+    "exec",
+    "--user",
+    "node",
+    "--env",
+    "HOME=/tmp/bullmq4168/home",
+    "--env",
+    "npm_config_cache=/tmp/bullmq4168/npm-cache",
+    "--env",
+    "PATH=/tmp/bullmq4168/tools/node_modules/node/bin:/tmp/bullmq4168/tools/node_modules/.bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+    "ghpr-heartbeat0902-js-bullmq4168-matrix",
+    "sh",
+    "-c",
+    "mkdir -p /tmp/bullmq4168/public-final-v2 && cd /tmp/bullmq4168/public-final-v2 && tar -xf /evidence/public-linux-assets.tar && tar -xf /evidence/strong-pending-close-assets.tar && printf \"{\\\"private\\\":true}\\n\" > package.json && npm install --ignore-scripts --no-audit --no-fund /evidence/artifact-final-v2/bullmq-6.4.2.tgz ioredis@5.11.1 && REDIS_PORT=6387 node visibility-probe-fileurl.cjs && cp visibility-fileurl-results.json /evidence/final-v2-public-visibility.json && REDIS_PORT=6387 node strong-close-probe.cjs && cp strong-pending-close-result.json /evidence/final-v2-strong-pending-close.json && REDIS_PORT=6387 node reuse-probe.cjs && cp reuse-result.json /evidence/final-v2-public-reuse.json"
+  ],
+  "started": "2026-10-25T10:25:58.965646+00:00",
+  "ended": "2026-10-25T10:26:20.860437+00:00",
+  "exitCode": 0
+}

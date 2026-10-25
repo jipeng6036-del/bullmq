@@ -1,0 +1,47 @@
+{
+  "utc": "2026-10-25T10:18:54.885104+00:00",
+  "base": "09b7bfeb8653e74074542ca48e70477540742a7e",
+  "archiveSha256": "7bc67762360cab5ec31cc6f42e95cbc9c8d2401364a40b5129cf5bf2e10193a3",
+  "expectedTracked": 1068,
+  "tarEntries": 1068,
+  "errors": [],
+  "pass": true,
+  "candidateFiles": [
+    {
+      "path": "src/classes/child-processor.ts",
+      "mode": "100644",
+      "sha256": "bee535372224faa900ab6566fbc6ffd27fe14395a1c38e4b950c6fd81626cb98",
+      "bytes": 11009
+    },
+    {
+      "path": "src/classes/sandbox.ts",
+      "mode": "100644",
+      "sha256": "9dc41eca97a29776785b97a335747f9c02ab9ad30d43f31bcc8235ffecee242e",
+      "bytes": 7035
+    },
+    {
+      "path": "src/enums/child-command.ts",
+      "mode": "100644",
+      "sha256": "9eff9e47993440d0d454f2a2d77e24477030300a6cd8553e6372fc7ebcc7c8e1",
+      "bytes": 245
+    },
+    {
+      "path": "tests/sandboxed_process.test.ts",
+      "mode": "100644",
+      "sha256": "3576b9b6677194384812a043fb3b54458e1f09f959a824d654c9fbc73b10e060",
+      "bytes": 68710
+    },
+    {
+      "path": "tests/child-processor.test.ts",
+      "mode": "100644",
+      "sha256": "228ce90c084a90cf0ddb8a195fcdbc48713b121f335f3560aa6a7c951b6c2920",
+      "bytes": 3959
+    },
+    {
+      "path": "tests/fixtures/fixture_processor_update_data_await.js",
+      "mode": "100644",
+      "sha256": "bd12dc3628575ad06b62659da98bdd0c3dcddc1784f627fd60254495cd246864",
+      "bytes": 1032
+    }
+  ]
+}

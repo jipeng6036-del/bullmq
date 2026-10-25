@@ -1,0 +1,28 @@
+{
+  "atUtc": "2026-10-25T10:03:47.537752+00:00",
+  "source": "https://github.com/actions/node-versions/blob/main/versions-manifest.json",
+  "sourceBlob": "087f9616f5441f5db8a88979c30841329c359bbc",
+  "latestLtsMajors": [
+    {
+      "version": "24.22.1",
+      "lts": "Krypton"
+    },
+    {
+      "version": "22.23.4",
+      "lts": "Jod"
+    },
+    {
+      "version": "20.20.2",
+      "lts": "Iron"
+    },
+    {
+      "version": "18.20.8",
+      "lts": "Hydrogen"
+    }
+  ],
+  "usedNodes": [
+    "24.22.1",
+    "22.23.4",
+    "20.20.2"
+  ]
+}

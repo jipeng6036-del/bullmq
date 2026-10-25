@@ -1,0 +1,34 @@
+I20261025 10:21:08.834889     7 init.cc:144] dragonfly running in opt mode.
+I20261025 10:21:08.835073     7 dfly_main.cc:1108] Starting dragonfly df-v2.0.2-8ce4bbb106586057fbd85f71ed353c60d0d5bf87
+                   .--::--.                   
+   :+*=:          =@@@@@@@@=          :+*+:   
+  %@@@@@@%*=.     =@@@@@@@@-     .=*%@@@@@@#  
+  @@@@@@@@@@@@#+-. .%@@@@#. .-+#@@@@@@@@@@@%  
+  -@@@@@@@@@@@@@@@@*:#@@#:*@@@@@@@@@@@@@@@@-  
+    :+*********####-%@%%@%-####********++.    
+   .%@@@@@@@@@@@@@%:@@@@@@:@@@@@@@@@@@@@@%    
+   .@@@@@@@@%*+-:   =@@@@=  .:-+*%@@@@@@@%.   
+     =*+-:           ###*          .:-+*=     
+                     %@@%                     
+                     *@@*                     
+                     +@@=                     
+                     :##:                     
+                     :@@:                     
+                      @@                      
+                      ..                      
+* Logs will be written to the first available of the following paths:
+/tmp/dragonfly.*
+./dragonfly.*
+* For the available flags type dragonfly [--help | --helpfull]
+* Documentation can be found at: https://www.dragonflydb.io/docs
+W20261025 10:21:08.835240     7 dfly_main.cc:1165] SWAP is enabled. Consider disabling it when running Dragonfly.
+I20261025 10:21:08.835260     7 dfly_main.cc:1171] maxmemory has not been specified. Deciding myself....
+I20261025 10:21:08.835263     7 dfly_main.cc:1180] Found 17.55GiB available memory. Setting maxmemory to 14.04GiB
+W20261025 10:21:08.835297     7 dfly_main.cc:550] Check if io_uring is disabled via /proc/sys/kernel/io_uring_disabled. Switching to epoll.
+I20261025 10:21:08.840471     7 proactor_pool.cc:186] Running 24 io threads
+I20261025 10:21:08.841909    13 dragonfly_listener.cc:159] SSL version: OpenSSL 3.4.5 7 Apr 2026
+I20261025 10:21:08.844020     7 dragonfly_connection.cc:917] Shared RESP V2 read buffer disabled
+I20261025 10:21:08.868413     7 server_family.cc:1217] Host OS: Linux 6.6.87.2-microsoft-standard-WSL2 x86_64 with 24 threads
+I20261025 10:21:08.878433     7 snapshot_storage.cc:327] Load snapshot: Searching for snapshot in directory: "/data"
+W20261025 10:21:08.878490     7 server_family.cc:1330] Load snapshot: No snapshot found
+I20261025 10:21:08.883809    14 listener_interface.cc:102] sock[51] AcceptServer - listening on 0.0.0.0:6379

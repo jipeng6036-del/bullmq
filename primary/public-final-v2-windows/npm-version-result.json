@@ -1,0 +1,12 @@
+{
+  "argv": [
+    "C:\\WINDOWS\\system32\\cmd.exe",
+    "/d",
+    "/c",
+    "E:\\Nodejs\\npm.cmd",
+    "--version"
+  ],
+  "started": "2026-10-25T10:41:45.600605+00:00",
+  "ended": "2026-10-25T10:41:46.023536+00:00",
+  "exitCode": 0
+}

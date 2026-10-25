@@ -1,0 +1,9 @@
+{
+  "lane": "primary",
+  "priorGate": "final-v2-dragonfly",
+  "started": "2026-10-25T10:30:50.886143+00:00",
+  "stoppedCompletedDragonfly": "49b709c3a11dbab0400a7c3bdc24593ad4e2f84f97f842057ea525457bcf1fc1",
+  "restoredOwnedRedis7At6379": "68225c39f119220e6cd64e3023615b1208aba08bc8d1731ad179abea974e5977",
+  "version": "Redis server v=7.4.11 sha=00000000:0 malloc=jemalloc-5.3.0 bits=64 build=6467c31a802b9aff",
+  "ended": "2026-10-25T10:30:54.631191+00:00"
+}

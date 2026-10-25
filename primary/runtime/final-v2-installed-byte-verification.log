@@ -1,0 +1,7 @@
+{"argv": ["docker", "exec", "--user", "node", "--env", "HOME=/tmp/bullmq4168/home", "--env", "npm_config_cache=/tmp/bullmq4168/npm-cache", "--env", "PATH=/tmp/bullmq4168/tools/node_modules/node/bin:/tmp/bullmq4168/tools/node_modules/.bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin", "ghpr-heartbeat0902-js-bullmq4168-matrix", "sh", "-c", "node /evidence/verify-final-v2-installed.cjs"], "started": "2026-10-25T10:30:11.293958+00:00"}
+{
+  "sourceCommit": "2e5ecf53615fd799d0c660d3b8bb8a5af579ccf7",
+  "artifactSha256": "d14b6b2ce3a64dccd7950860eb2b757e093bbf74735ea3ec7790bb43bf9b9f8e",
+  "allInstalledPackageFilesVerified": 805,
+  "node": "v24.22.1"
+}

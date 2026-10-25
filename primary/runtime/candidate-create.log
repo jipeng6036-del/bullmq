@@ -1,0 +1,9 @@
+{"argv": ["docker", "exec", "--user", "node", "--env", "HOME=/tmp/bullmq4168/home", "--env", "npm_config_cache=/tmp/bullmq4168/npm-cache", "--env", "PATH=/tmp/bullmq4168/tools/node_modules/node/bin:/tmp/bullmq4168/tools/node_modules/.bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin", "ghpr-heartbeat0902-js-bullmq4168-validation", "sh", "-c", "cp -a /tmp/bullmq4168/baseline /tmp/bullmq4168/candidate && node /evidence/verify-baseline.cjs /tmp/bullmq4168/candidate"], "started": "2026-10-25T09:40:13.226567+00:00"}
+{
+  "root": "/tmp/bullmq4168/candidate",
+  "base": "09b7bfeb8653e74074542ca48e70477540742a7e",
+  "verified": 1066,
+  "symlinks": 2,
+  "node": "v24.22.1",
+  "git": "09b7bfeb8653e74074542ca48e70477540742a7e"
+}

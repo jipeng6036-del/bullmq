@@ -1,0 +1,102 @@
+{
+  "node": "v24.22.1",
+  "port": 6387,
+  "all": [
+    {
+      "mode": "child-process",
+      "operation": "retry",
+      "value": {
+        "equal": true,
+        "seen": [
+          0,
+          1,
+          2
+        ],
+        "aborted": false,
+        "listenersBefore": 1,
+        "listenersAfter": 1
+      },
+      "persisted": {
+        "operation": "retry",
+        "port": 6387,
+        "seen": [
+          0,
+          1,
+          2
+        ]
+      },
+      "elapsedMs": 2520,
+      "workerErrors": []
+    },
+    {
+      "mode": "child-process",
+      "operation": "slow",
+      "value": {
+        "equal": true,
+        "seen": [
+          0
+        ],
+        "aborted": false,
+        "listenersBefore": 1,
+        "listenersAfter": 1
+      },
+      "persisted": {
+        "operation": "slow",
+        "port": 6387,
+        "seen": [
+          0
+        ]
+      },
+      "elapsedMs": 5718,
+      "workerErrors": []
+    },
+    {
+      "mode": "worker-thread",
+      "operation": "retry",
+      "value": {
+        "equal": true,
+        "seen": [
+          0,
+          1,
+          2
+        ],
+        "aborted": false,
+        "listenersBefore": 1,
+        "listenersAfter": 1
+      },
+      "persisted": {
+        "operation": "retry",
+        "port": 6387,
+        "seen": [
+          0,
+          1,
+          2
+        ]
+      },
+      "elapsedMs": 2505,
+      "workerErrors": []
+    },
+    {
+      "mode": "worker-thread",
+      "operation": "slow",
+      "value": {
+        "equal": true,
+        "seen": [
+          0
+        ],
+        "aborted": false,
+        "listenersBefore": 1,
+        "listenersAfter": 1
+      },
+      "persisted": {
+        "operation": "slow",
+        "port": 6387,
+        "seen": [
+          0
+        ]
+      },
+      "elapsedMs": 5620,
+      "workerErrors": []
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "root": "/tmp/bullmq4168/baseline",
+  "base": "09b7bfeb8653e74074542ca48e70477540742a7e",
+  "verified": 1066,
+  "symlinks": 2,
+  "node": "v24.22.1",
+  "git": "09b7bfeb8653e74074542ca48e70477540742a7e"
+}

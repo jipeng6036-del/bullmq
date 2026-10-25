@@ -1,0 +1,82 @@
+{"argv": ["docker", "exec", "--user", "node", "--env", "HOME=/tmp/bunroot/home", "--env", "npm_config_cache=/tmp/bunroot/npm-cache", "--env", "YARN_CACHE_FOLDER=/tmp/bunroot/yarn-cache", "--env", "PATH=/tmp/bunroot/tools/node_modules/node/bin:/tmp/bunroot/tools/node_modules/.bin:/tmp/bunroot/bun/node_modules/@oven/bun-linux-x64/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin", "--env", "REDIS_HOST=127.0.0.1", "--env", "REDIS_PORT=6379", "ghpr-0902-bullmq-bun-root-runner", "sh", "-c", "cd /tmp/bunroot/candidate && yarn test:adapter-conformance"], "started": "2026-10-25T10:30:11.621006+00:00"}
+yarn run v1.22.22
+$ vitest run --no-file-parallelism --config vitest.adapter-conformance.config.ts
+(!) Your Vite config uses features that are unsupported by `configLoader: 'native'`, which is planned to become the default in a future major version of Vite:
+  - ESM syntax in a file loaded as CommonJS (vitest.adapter-conformance.config.ts:1:1). Use a `.mjs` extension or set `"type": "module"` in the closest package.json
+Set `VITE_CONFIG_NATIVE_IGNORE_WARNING=true` to suppress this warning.
+
+ RUN  v4.1.12 /tmp/bunroot/candidate
+
+ ✓ tests/adapter-conformance.test.ts > Adapter Conformance > Connection Lifecycle > should report status "ready" after connect 1ms
+ ✓ tests/adapter-conformance.test.ts > Adapter Conformance > Connection Lifecycle > should create a duplicate that connects independently 2ms
+ ✓ tests/adapter-conformance.test.ts > Adapter Conformance > Connection Lifecycle > should handle connectionName in duplicate options 2ms
+ ✓ tests/adapter-conformance.test.ts > Adapter Conformance > Connection Lifecycle > should transition to "end" status after quit 1ms
+ ✓ tests/adapter-conformance.test.ts > Adapter Conformance > Connection Lifecycle > should emit "close" on disconnect 1ms
+ ✓ tests/adapter-conformance.test.ts > Adapter Conformance > Connection Lifecycle > should support setMaxListeners/getMaxListeners 0ms
+ ✓ tests/adapter-conformance.test.ts > Adapter Conformance > String Commands > should set and get a string value 1ms
+ ✓ tests/adapter-conformance.test.ts > Adapter Conformance > String Commands > should set with PX option (millisecond expiry) 0ms
+ ✓ tests/adapter-conformance.test.ts > Adapter Conformance > String Commands > should return null for non-existent key 0ms
+ ✓ tests/adapter-conformance.test.ts > Adapter Conformance > String Commands > should delete keys and return count 1ms
+ ✓ tests/adapter-conformance.test.ts > Adapter Conformance > String Commands > should handle del with no keys gracefully 0ms
+ ✓ tests/adapter-conformance.test.ts > Adapter Conformance > Hash Commands > should hset and hgetall 1ms
+ ✓ tests/adapter-conformance.test.ts > Adapter Conformance > Hash Commands > should hset numeric values as strings 1ms
+ ✓ tests/adapter-conformance.test.ts > Adapter Conformance > Hash Commands > should hget a single field 0ms
+ ✓ tests/adapter-conformance.test.ts > Adapter Conformance > Hash Commands > should hget return null for missing field 0ms
+ ✓ tests/adapter-conformance.test.ts > Adapter Conformance > Hash Commands > should hmget multiple fields 1ms
+ ✓ tests/adapter-conformance.test.ts > Adapter Conformance > Hash Commands > should hdel fields and return count 1ms
+ ✓ tests/adapter-conformance.test.ts > Adapter Conformance > Hash Commands > should hexists return 1/0 0ms
+ ✓ tests/adapter-conformance.test.ts > Adapter Conformance > Hash Commands > should return empty object for hgetall on non-existent key 0ms
+ ✓ tests/adapter-conformance.test.ts > Adapter Conformance > Sorted Set Commands > should zrange return members in order 1ms
+ ✓ tests/adapter-conformance.test.ts > Adapter Conformance > Sorted Set Commands > should zrange with WITHSCORES return [member, score, ...] 1ms
+ ✓ tests/adapter-conformance.test.ts > Adapter Conformance > Sorted Set Commands > should zrevrange return members in reverse order 1ms
+ ✓ tests/adapter-conformance.test.ts > Adapter Conformance > Sorted Set Commands > should zcard return cardinality 1ms
+ ✓ tests/adapter-conformance.test.ts > Adapter Conformance > Sorted Set Commands > should zscore return score as string 0ms
+ ✓ tests/adapter-conformance.test.ts > Adapter Conformance > Sorted Set Commands > should zscore return null for missing member 0ms
+ ✓ tests/adapter-conformance.test.ts > Adapter Conformance > List Commands > should lrange return elements 1ms
+ ✓ tests/adapter-conformance.test.ts > Adapter Conformance > List Commands > should llen return length 0ms
+ ✓ tests/adapter-conformance.test.ts > Adapter Conformance > List Commands > should ltrim truncate list 1ms
+ ✓ tests/adapter-conformance.test.ts > Adapter Conformance > List Commands > should lpos find element position 1ms
+ ✓ tests/adapter-conformance.test.ts > Adapter Conformance > List Commands > should lpos return null for missing element 0ms
+ ✓ tests/adapter-conformance.test.ts > Adapter Conformance > Set Commands > should smembers return all members 1ms
+ ✓ tests/adapter-conformance.test.ts > Adapter Conformance > Set Commands > should return empty array for smembers on non-existent key 0ms
+ ✓ tests/adapter-conformance.test.ts > Adapter Conformance > Stream Commands > should xadd entries and return an ID 1ms
+ ✓ tests/adapter-conformance.test.ts > Adapter Conformance > Stream Commands > should xadd with numeric field values (stringified) 0ms
+ ✓ tests/adapter-conformance.test.ts > Adapter Conformance > Stream Commands > should xadd with MAXLEN option 2ms
+ ✓ tests/adapter-conformance.test.ts > Adapter Conformance > Stream Commands > should xread entries from a stream 1ms
+ ✓ tests/adapter-conformance.test.ts > Adapter Conformance > Stream Commands > should xtrim a stream 3ms
+ ✓ tests/adapter-conformance.test.ts > Adapter Conformance > Scan Commands > should scan return [cursor, keys] tuple 1ms
+ ✓ tests/adapter-conformance.test.ts > Adapter Conformance > Scan Commands > should scan with string cursor 2ms
+ ✓ tests/adapter-conformance.test.ts > Adapter Conformance > Scan Commands > should scanStream return a Readable 2ms
+ ✓ tests/adapter-conformance.test.ts > Adapter Conformance > Lua Script Engine > should defineCommand and runCommand execute a script 1ms
+ ✓ tests/adapter-conformance.test.ts > Adapter Conformance > Lua Script Engine > should make defined command accessible as a property 0ms
+ ✓ tests/adapter-conformance.test.ts > Adapter Conformance > Lua Script Engine > should execute defined command properties with ioredis-style args arrays 0ms
+ ✓ tests/adapter-conformance.test.ts > Adapter Conformance > Lua Script Engine > should keep defined command properties on duplicates 1ms
+ ✓ tests/adapter-conformance.test.ts > Adapter Conformance > Lua Script Engine > should handle numeric arguments (stringify) 0ms
+ ✓ tests/adapter-conformance.test.ts > Adapter Conformance > Lua Script Engine > should handle undefined/null arguments as empty string 0ms
+ ✓ tests/adapter-conformance.test.ts > Adapter Conformance > Lua Script Engine > should preserve Buffer arguments 0ms
+ ✓ tests/adapter-conformance.test.ts > Adapter Conformance > Lua Script Engine > should handle NOSCRIPT by falling back to EVAL 1ms
+ ✓ tests/adapter-conformance.test.ts > Adapter Conformance > Transaction (multi) > should return results in ioredis format: [Error|null, value][] 1ms
+ ✓ tests/adapter-conformance.test.ts > Adapter Conformance > Transaction (multi) > should hscan return ioredis format: [cursor, [field, value, ...]] 1ms
+ ✓ tests/adapter-conformance.test.ts > Adapter Conformance > Transaction (multi) > should sscan return ioredis format: [cursor, [member, ...]] 1ms
+ ✓ tests/adapter-conformance.test.ts > Adapter Conformance > Transaction (multi) > should hscan accept string cursor 1ms
+ ✓ tests/adapter-conformance.test.ts > Adapter Conformance > Transaction (multi) > should sscan accept string cursor 1ms
+ ✓ tests/adapter-conformance.test.ts > Adapter Conformance > Transaction (multi) > should del with zero keys not add a command to the pipeline 1ms
+ ✓ tests/adapter-conformance.test.ts > Adapter Conformance > Transaction (multi) > should support runCommand (Lua scripts) in transaction 1ms
+ ✓ tests/adapter-conformance.test.ts > Adapter Conformance > Blocking Commands > should bzpopmin return null on timeout 134ms
+ ✓ tests/adapter-conformance.test.ts > Adapter Conformance > Blocking Commands > should bzpopmin return element when available 1ms
+ ✓ tests/adapter-conformance.test.ts > Adapter Conformance > Server Commands > should info return a string with redis_version 0ms
+ ✓ tests/adapter-conformance.test.ts > Adapter Conformance > Server Commands > should clientSetName set the connection name 2ms
+ ✓ tests/adapter-conformance.test.ts > Adapter Conformance > Server Commands > should clientList return a string with client info 0ms
+ ✓ tests/adapter-conformance.test.ts > Adapter Conformance > BullMQ-specific Edge Cases > should hset accept both Record<string, string> and Record<string, number> 1ms
+ ✓ tests/adapter-conformance.test.ts > Adapter Conformance > BullMQ-specific Edge Cases > should handle large scan results correctly 1ms
+ ✓ tests/adapter-conformance.test.ts > Adapter Conformance > BullMQ-specific Edge Cases > should xadd handle all field types BullMQ uses 0ms
+ ✓ tests/adapter-conformance.test.ts > Adapter Conformance > BullMQ-specific Edge Cases > should zrange WITHSCORES return scores as strings 0ms
+ ✓ tests/adapter-conformance.test.ts > Adapter Conformance > BullMQ-specific Edge Cases > should pipeline preserve command order 1ms
+ ✓ tests/adapter-conformance.test.ts > Adapter Conformance > BullMQ-specific Edge Cases > should handle concurrent operations without interference 1ms
+
+ Test Files  1 passed (1)
+      Tests  66 passed (66)
+   Start at  10:30:13
+   Duration  1.01s (transform 525ms, setup 0ms, import 716ms, tests 215ms, environment 0ms)
+
+Done in 2.16s.

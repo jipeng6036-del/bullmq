@@ -1,0 +1,341 @@
+{
+  "atUtc": "2026-10-25T10:49:16.685310+00:00",
+  "status": "PASS",
+  "head": "2e5ecf53615fd799d0c660d3b8bb8a5af579ccf7",
+  "tree": "0503ca913f5b3b71b081f7912a497fe635317d67",
+  "parent": "09b7bfeb8653e74074542ca48e70477540742a7e",
+  "archiveSha256": "7bc67762360cab5ec31cc6f42e95cbc9c8d2401364a40b5129cf5bf2e10193a3",
+  "all1068FinalHeadBlobsAndModesMatch": true,
+  "all1068SourcePrePostChecksPass": true,
+  "lanes": {
+    "node20": {
+      "runtimeVersion": [
+        "v20.20.2",
+        "11.20.0",
+        "1.22.22"
+      ],
+      "server": "Redis7.4.11",
+      "frozenInstall": {
+        "key": "node20-install",
+        "command": [
+          "docker",
+          "exec",
+          "ghpr-bullmq-matrix-agent-node20",
+          "bash",
+          "-lc",
+          "set -e; export PATH=/work/tools/node_modules/node-linux-x64/bin:/work/tools/node_modules/.bin:$PATH; export npm_config_cache=/work/npm-cache YARN_CACHE_FOLDER=/work/yarn-cache; cd /work/source; yarn install --ignore-engines --frozen-lockfile --non-interactive"
+        ],
+        "startedUtc": "2026-10-25T10:19:10.130070+00:00",
+        "endedUtc": "2026-10-25T10:19:59.632771+00:00",
+        "exitCode": 0,
+        "error": null,
+        "log": "F:\\Github-PR\\ci-evidence\\heartbeat0902-bullmq-matrix-agent-runtime\\v2-node20-install.log",
+        "logSha256": "a6a4a791fe75ac16ef8a65d25303962056813daa9c33d4d2e5348b47bce274db"
+      },
+      "installReuseNote": null,
+      "build": {
+        "key": "node20-build",
+        "command": [
+          "docker",
+          "exec",
+          "ghpr-bullmq-matrix-agent-node20",
+          "bash",
+          "-lc",
+          "set -e; export PATH=/work/tools/node_modules/node-linux-x64/bin:/work/tools/node_modules/.bin:$PATH; export npm_config_cache=/work/npm-cache YARN_CACHE_FOLDER=/work/yarn-cache; cd /work/source; yarn build"
+        ],
+        "startedUtc": "2026-10-25T10:21:45.706209+00:00",
+        "endedUtc": "2026-10-25T10:21:56.132953+00:00",
+        "exitCode": 0,
+        "error": null,
+        "log": "F:\\Github-PR\\ci-evidence\\heartbeat0902-bullmq-matrix-agent-runtime\\v2-node20-build.log",
+        "logSha256": "df4a561852ad09163353b456a7288b989f71d101878131b3e50519b6ab2dacf4"
+      },
+      "tests": [
+        {
+          "filesPassed": 49,
+          "testsPassed": 1114,
+          "testsSkipped": 3,
+          "skippedIds": [
+            "tests/job_scheduler_stress.test.ts > Job Scheduler Stress > should upsert many times with different settings respecting the guarantees",
+            "tests/script_loader.test.ts > scriptLoader > when using path mappings > mappings can be absolute based on project root",
+            "tests/script_loader.test.ts > scriptLoader > when using path mappings > substitutes ~ with the project root"
+          ],
+          "execution": {
+            "key": "node20-test-1",
+            "command": [
+              "docker",
+              "exec",
+              "ghpr-bullmq-matrix-agent-node20",
+              "bash",
+              "-lc",
+              "set -e; export PATH=/work/tools/node_modules/node-linux-x64/bin:/work/tools/node_modules/.bin:$PATH; export npm_config_cache=/work/npm-cache YARN_CACHE_FOLDER=/work/yarn-cache; cd /work/source; yarn test"
+            ],
+            "startedUtc": "2026-10-25T10:21:56.135238+00:00",
+            "endedUtc": "2026-10-25T10:30:10.882457+00:00",
+            "exitCode": 0,
+            "error": null,
+            "log": "F:\\Github-PR\\ci-evidence\\heartbeat0902-bullmq-matrix-agent-runtime\\v2-node20-test-1.log",
+            "logSha256": "b53cd8309bbc0a95f97319693de13c837d8eaf740cc375d83b163390b9dfebfa"
+          }
+        },
+        {
+          "filesPassed": 6,
+          "testsPassed": 206,
+          "testsSkipped": 11,
+          "skippedIds": [
+            "tests/connection.test.ts > connection > when maxmemory-policy is different than noeviction in Redis > throws an error",
+            "tests/cluster.test.ts > Cluster integration tests > when using a real Redis cluster > reads relay inboxes using a native Cluster connection",
+            "tests/cluster.test.ts > Cluster integration tests > when using a real Redis cluster > should add and process jobs",
+            "tests/cluster.test.ts > Cluster integration tests > when using a real Redis cluster > should handle multiple jobs in parallel",
+            "tests/cluster.test.ts > Cluster integration tests > when using a real Redis cluster > should get workers from cluster",
+            "tests/cluster.test.ts > Cluster integration tests > when using a real Redis cluster > should handle delayed jobs",
+            "tests/cluster.test.ts > Cluster integration tests > when using a real Redis cluster > should handle job retries",
+            "tests/cluster.test.ts > Cluster integration tests > when using a real Redis cluster > should get queue counts",
+            "tests/cluster.test.ts > Cluster with authentication integration tests > when using a Redis cluster with authentication > should add and process jobs with authenticated cluster",
+            "tests/cluster.test.ts > Cluster with authentication integration tests > when using a Redis cluster with authentication > should handle worker blocking connection with authentication",
+            "tests/cluster.test.ts > Cluster with authentication integration tests > when using a Redis cluster with authentication > should handle QueueEvents with authentication"
+          ],
+          "execution": {
+            "key": "node20-test-2",
+            "command": [
+              "docker",
+              "exec",
+              "ghpr-bullmq-matrix-agent-node20",
+              "bash",
+              "-lc",
+              "set -e; export PATH=/work/tools/node_modules/node-linux-x64/bin:/work/tools/node_modules/.bin:$PATH; export npm_config_cache=/work/npm-cache YARN_CACHE_FOLDER=/work/yarn-cache; cd /work/source; yarn test:ioredis"
+            ],
+            "startedUtc": "2026-10-25T10:30:10.884617+00:00",
+            "endedUtc": "2026-10-25T10:31:47.504656+00:00",
+            "exitCode": 0,
+            "error": null,
+            "log": "F:\\Github-PR\\ci-evidence\\heartbeat0902-bullmq-matrix-agent-runtime\\v2-node20-test-2.log",
+            "logSha256": "0425c161f3307769c15dcf5c9f1258994c959baa1e46f03f686d182fb01a16e0"
+          }
+        }
+      ],
+      "sourceBefore": "v2-node20-source-before.json",
+      "sourceAfter": "v2-node20-source-after.json",
+      "sourceAfterSha256": "a90b0c484c6c4e523e66a3443089f9fa0988eb245b7ea4befee2eea0d2b8adf6"
+    },
+    "node22": {
+      "runtimeVersion": [
+        "v22.23.4",
+        "11.20.0",
+        "1.22.22"
+      ],
+      "server": "Redis7.4.11",
+      "frozenInstall": {
+        "key": "node22-install-final",
+        "command": [
+          "docker",
+          "exec",
+          "ghpr-bullmq-matrix-agent-node22",
+          "bash",
+          "-lc",
+          "export PATH=/work/tools/node_modules/node-linux-x64/bin:/work/tools/node_modules/.bin:$PATH; export npm_config_cache=/work/npm-cache YARN_CACHE_FOLDER=/work/yarn-cache; cd /work/source; yarn install --ignore-engines --frozen-lockfile --non-interactive"
+        ],
+        "startedUtc": "2026-10-25T10:12:11.138683+00:00",
+        "endedUtc": "2026-10-25T10:13:01.078248+00:00",
+        "exitCode": 0,
+        "error": null,
+        "log": "F:\\Github-PR\\ci-evidence\\heartbeat0902-bullmq-matrix-agent-runtime\\node22-install-final.log",
+        "logSha256": "4a04f8c44bbef39596574bafc876c9b503222a544aec596917791db61521bea8"
+      },
+      "installReuseNote": "Reuse the completed official frozen Node22 install; package.json and yarn.lock are unchanged by v2 formatting. Full1068-source pre/post checks verify exact final lock bytes.",
+      "build": {
+        "key": "node22-build",
+        "command": [
+          "docker",
+          "exec",
+          "ghpr-bullmq-matrix-agent-node22",
+          "bash",
+          "-lc",
+          "set -e; export PATH=/work/tools/node_modules/node-linux-x64/bin:/work/tools/node_modules/.bin:$PATH; export npm_config_cache=/work/npm-cache YARN_CACHE_FOLDER=/work/yarn-cache; cd /work/source; yarn build"
+        ],
+        "startedUtc": "2026-10-25T10:21:45.951346+00:00",
+        "endedUtc": "2026-10-25T10:21:56.016919+00:00",
+        "exitCode": 0,
+        "error": null,
+        "log": "F:\\Github-PR\\ci-evidence\\heartbeat0902-bullmq-matrix-agent-runtime\\v2-node22-build.log",
+        "logSha256": "5b23ff5dcd5716ea4a40c4cf4a329fdee29f850983bae83e8536011718b0bcd0"
+      },
+      "tests": [
+        {
+          "filesPassed": 49,
+          "testsPassed": 1114,
+          "testsSkipped": 3,
+          "skippedIds": [
+            "tests/job_scheduler_stress.test.ts > Job Scheduler Stress > should upsert many times with different settings respecting the guarantees",
+            "tests/script_loader.test.ts > scriptLoader > when using path mappings > mappings can be absolute based on project root",
+            "tests/script_loader.test.ts > scriptLoader > when using path mappings > substitutes ~ with the project root"
+          ],
+          "execution": {
+            "key": "node22-test-1",
+            "command": [
+              "docker",
+              "exec",
+              "ghpr-bullmq-matrix-agent-node22",
+              "bash",
+              "-lc",
+              "set -e; export PATH=/work/tools/node_modules/node-linux-x64/bin:/work/tools/node_modules/.bin:$PATH; export npm_config_cache=/work/npm-cache YARN_CACHE_FOLDER=/work/yarn-cache; cd /work/source; yarn test"
+            ],
+            "startedUtc": "2026-10-25T10:21:56.018777+00:00",
+            "endedUtc": "2026-10-25T10:30:10.910620+00:00",
+            "exitCode": 0,
+            "error": null,
+            "log": "F:\\Github-PR\\ci-evidence\\heartbeat0902-bullmq-matrix-agent-runtime\\v2-node22-test-1.log",
+            "logSha256": "4b9b64e7fdcc2c1335c7a6d33d61dedb3cc93351844f9288214e743a75c8be87"
+          }
+        },
+        {
+          "filesPassed": 6,
+          "testsPassed": 206,
+          "testsSkipped": 11,
+          "skippedIds": [
+            "tests/connection.test.ts > connection > when maxmemory-policy is different than noeviction in Redis > throws an error",
+            "tests/cluster.test.ts > Cluster integration tests > when using a real Redis cluster > reads relay inboxes using a native Cluster connection",
+            "tests/cluster.test.ts > Cluster integration tests > when using a real Redis cluster > should add and process jobs",
+            "tests/cluster.test.ts > Cluster integration tests > when using a real Redis cluster > should handle multiple jobs in parallel",
+            "tests/cluster.test.ts > Cluster integration tests > when using a real Redis cluster > should get workers from cluster",
+            "tests/cluster.test.ts > Cluster integration tests > when using a real Redis cluster > should handle delayed jobs",
+            "tests/cluster.test.ts > Cluster integration tests > when using a real Redis cluster > should handle job retries",
+            "tests/cluster.test.ts > Cluster integration tests > when using a real Redis cluster > should get queue counts",
+            "tests/cluster.test.ts > Cluster with authentication integration tests > when using a Redis cluster with authentication > should add and process jobs with authenticated cluster",
+            "tests/cluster.test.ts > Cluster with authentication integration tests > when using a Redis cluster with authentication > should handle worker blocking connection with authentication",
+            "tests/cluster.test.ts > Cluster with authentication integration tests > when using a Redis cluster with authentication > should handle QueueEvents with authentication"
+          ],
+          "execution": {
+            "key": "node22-test-2",
+            "command": [
+              "docker",
+              "exec",
+              "ghpr-bullmq-matrix-agent-node22",
+              "bash",
+              "-lc",
+              "set -e; export PATH=/work/tools/node_modules/node-linux-x64/bin:/work/tools/node_modules/.bin:$PATH; export npm_config_cache=/work/npm-cache YARN_CACHE_FOLDER=/work/yarn-cache; cd /work/source; yarn test:ioredis"
+            ],
+            "startedUtc": "2026-10-25T10:30:10.912769+00:00",
+            "endedUtc": "2026-10-25T10:31:47.145968+00:00",
+            "exitCode": 0,
+            "error": null,
+            "log": "F:\\Github-PR\\ci-evidence\\heartbeat0902-bullmq-matrix-agent-runtime\\v2-node22-test-2.log",
+            "logSha256": "6e97160f7041f4290fac4e4bc95b9951d2ca6f0eb872c08dc9667d93d9fa34f8"
+          }
+        }
+      ],
+      "sourceBefore": "v2-node22-source-before.json",
+      "sourceAfter": "v2-node22-source-after.json",
+      "sourceAfterSha256": "e6215f3d6882d888c7c6d16788d178d5b71f11ce0d5356c6bd0cd9319f7d61b6"
+    },
+    "valkey-glide": {
+      "runtimeVersion": [
+        "v24.22.1",
+        "11.20.0",
+        "1.22.22"
+      ],
+      "server": "Valkey8.0.1 (redis_version compatibility7.2.4)",
+      "adapter": "@valkey/valkey-glide2.5.0",
+      "frozenInstall": {
+        "key": "valkey-glide-install",
+        "command": [
+          "docker",
+          "exec",
+          "ghpr-bullmq-matrix-agent-valkey-glide",
+          "bash",
+          "-lc",
+          "set -e; export PATH=/work/tools/node_modules/node-linux-x64/bin:/work/tools/node_modules/.bin:$PATH; export npm_config_cache=/work/npm-cache YARN_CACHE_FOLDER=/work/yarn-cache; cd /work/source; yarn install --ignore-engines --frozen-lockfile --non-interactive"
+        ],
+        "startedUtc": "2026-10-25T10:32:11.479328+00:00",
+        "endedUtc": "2026-10-25T10:33:01.051501+00:00",
+        "exitCode": 0,
+        "error": null,
+        "log": "F:\\Github-PR\\ci-evidence\\heartbeat0902-bullmq-matrix-agent-runtime\\v2-valkey-glide-install.log",
+        "logSha256": "0c25eb32306832804dc696427cedf33092e8d9b77dee09a49c071be0a0cae66e"
+      },
+      "extraAdapterInstall": {
+        "key": "valkey-glide-glide-install",
+        "command": [
+          "docker",
+          "exec",
+          "ghpr-bullmq-matrix-agent-valkey-glide",
+          "bash",
+          "-lc",
+          "set -e; export PATH=/work/tools/node_modules/node-linux-x64/bin:/work/tools/node_modules/.bin:$PATH; export npm_config_cache=/work/npm-cache YARN_CACHE_FOLDER=/work/yarn-cache; cd /work/source; npm install --no-save @valkey/valkey-glide@2.5.0"
+        ],
+        "startedUtc": "2026-10-25T10:33:04.153943+00:00",
+        "endedUtc": "2026-10-25T10:33:23.230506+00:00",
+        "exitCode": 0,
+        "error": null,
+        "log": "F:\\Github-PR\\ci-evidence\\heartbeat0902-bullmq-matrix-agent-runtime\\v2-valkey-glide-glide-install.log",
+        "logSha256": "8bc88651d65e75fe7da6dce32aec17d1a42eafd5a820a2d4236faf7acc5164e8"
+      },
+      "adapterVersionAssert": {
+        "key": "assert-versions",
+        "command": [
+          "docker",
+          "exec",
+          "ghpr-bullmq-matrix-agent-valkey-glide",
+          "bash",
+          "-lc",
+          "set -e; export PATH=/work/tools/node_modules/node-linux-x64/bin:/work/tools/node_modules/.bin:$PATH; export npm_config_cache=/work/npm-cache YARN_CACHE_FOLDER=/work/yarn-cache; cd /work/source; node -e \"const fs=require('fs');const p=JSON.parse(fs.readFileSync('node_modules/@valkey/valkey-glide/package.json','utf8'));console.log(process.version,p.version);if(process.version!=='v24.22.1'||p.version!=='2.5.0')process.exit(1)\"; yarn --version"
+        ],
+        "startedUtc": "2026-10-25T10:41:30.254124+00:00",
+        "endedUtc": "2026-10-25T10:41:30.631581+00:00",
+        "exitCode": 0,
+        "log": "F:\\Github-PR\\ci-evidence\\heartbeat0902-bullmq-matrix-agent-runtime\\v2-glide-canonical-final-assert-versions.log",
+        "logSha256": "6113905d083e27be4de80caa3a2399e9d893fbea1cd05e177437ff48e0056120"
+      },
+      "build": {
+        "key": "build",
+        "command": [
+          "docker",
+          "exec",
+          "ghpr-bullmq-matrix-agent-valkey-glide",
+          "bash",
+          "-lc",
+          "set -e; export PATH=/work/tools/node_modules/node-linux-x64/bin:/work/tools/node_modules/.bin:$PATH; export npm_config_cache=/work/npm-cache YARN_CACHE_FOLDER=/work/yarn-cache; cd /work/source; yarn build"
+        ],
+        "startedUtc": "2026-10-25T10:41:30.632680+00:00",
+        "endedUtc": "2026-10-25T10:41:42.614420+00:00",
+        "exitCode": 0,
+        "log": "F:\\Github-PR\\ci-evidence\\heartbeat0902-bullmq-matrix-agent-runtime\\v2-glide-canonical-final-build.log",
+        "logSha256": "ea34542dd100a3c19ba6ed4a53ca7200ae036a6860682514b4721cb8c25e8760"
+      },
+      "tests": [
+        {
+          "filesPassed": 48,
+          "testsPassed": 1093,
+          "testsSkipped": 3,
+          "skippedIds": [
+            "tests/job_scheduler_stress.test.ts > Job Scheduler Stress > should upsert many times with different settings respecting the guarantees",
+            "tests/script_loader.test.ts > scriptLoader > when using path mappings > mappings can be absolute based on project root",
+            "tests/script_loader.test.ts > scriptLoader > when using path mappings > substitutes ~ with the project root"
+          ],
+          "execution": {
+            "key": "test",
+            "command": [
+              "docker",
+              "exec",
+              "ghpr-bullmq-matrix-agent-valkey-glide",
+              "bash",
+              "-lc",
+              "set -e; export PATH=/work/tools/node_modules/node-linux-x64/bin:/work/tools/node_modules/.bin:$PATH; export npm_config_cache=/work/npm-cache YARN_CACHE_FOLDER=/work/yarn-cache; cd /work/source; yarn test:valkey-glide"
+            ],
+            "startedUtc": "2026-10-25T10:41:42.615791+00:00",
+            "endedUtc": "2026-10-25T10:48:07.401332+00:00",
+            "exitCode": 0,
+            "log": "F:\\Github-PR\\ci-evidence\\heartbeat0902-bullmq-matrix-agent-runtime\\v2-glide-canonical-final-test.log",
+            "logSha256": "78dd2afce05313e49498c57d33dafb1650534d020e1494aae98f58e7212a9e1d"
+          }
+        }
+      ],
+      "sourceBefore": "v2-glide-canonical-final-source-before.json",
+      "sourceAfter": "v2-glide-canonical-final-source-after.json",
+      "lockSideEffectNote": "Official npm --no-save install rewrote yarn.lock. The initial passing suite is retained as superseded evidence. Exact committed lock bytes were restored in this isolated tree, then build/full suite and1068 postcheck were rerun successfully. No product branch or dependency manifest edits.",
+      "lockSideEffectEvidence": "v2-glide-lock-side-effect.json"
+    }
+  },
+  "scope": "Assigned local official Node20/22+Redis7 and native ValkeyGLIDE CI commands; no product edits, commits, publication, paid services, model calls, or other tasks stores.",
+  "history": "v1 results and interrupted Node22 v1 are historical only. First missing Yarn install127, first Docker cp artifact copy1 and superseded GLIDE lock postcheck1 remain retained, not reclassified as passes. Repeated initial read-only inspect log paths are not canonical proof; use fresh fixed runtime-identities records."
+}

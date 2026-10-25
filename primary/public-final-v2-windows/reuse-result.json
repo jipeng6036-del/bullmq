@@ -1,0 +1,120 @@
+{
+  "node": "v24.14.0",
+  "port": 46017,
+  "all": [
+    {
+      "mode": "child-process",
+      "values": [
+        {
+          "operation": "cancel",
+          "cancelled": true,
+          "value": {
+            "equal": true,
+            "seen": [
+              0
+            ],
+            "aborted": true,
+            "listenersBefore": 1,
+            "listenersAfter": 1,
+            "identity": "20372/0"
+          }
+        },
+        {
+          "operation": "reject",
+          "value": {
+            "caught": true,
+            "name": "TypeError",
+            "message": "Do not know how to serialize a BigInt",
+            "localType": "bigint",
+            "listenersBefore": 1,
+            "listenersAfter": 1,
+            "identity": "20372/0"
+          }
+        },
+        {
+          "operation": "send-failure",
+          "value": {
+            "caught": true,
+            "name": "Error",
+            "message": "() => {} could not be cloned.",
+            "localType": "function",
+            "listenersBefore": 1,
+            "listenersAfter": 1,
+            "identity": "20372/0"
+          }
+        },
+        {
+          "operation": "persist",
+          "value": {
+            "equal": true,
+            "seen": [
+              0
+            ],
+            "aborted": false,
+            "listenersBefore": 1,
+            "listenersAfter": 1,
+            "identity": "20372/0"
+          }
+        }
+      ],
+      "workerErrors": []
+    },
+    {
+      "mode": "worker-thread",
+      "values": [
+        {
+          "operation": "cancel",
+          "cancelled": true,
+          "value": {
+            "equal": true,
+            "seen": [
+              0
+            ],
+            "aborted": true,
+            "listenersBefore": 1,
+            "listenersAfter": 1,
+            "identity": "41656/1"
+          }
+        },
+        {
+          "operation": "reject",
+          "value": {
+            "caught": true,
+            "name": "TypeError",
+            "message": "Do not know how to serialize a BigInt",
+            "localType": "bigint",
+            "listenersBefore": 1,
+            "listenersAfter": 1,
+            "identity": "41656/1"
+          }
+        },
+        {
+          "operation": "send-failure",
+          "value": {
+            "caught": true,
+            "name": "DataCloneError",
+            "message": "() => {} could not be cloned.",
+            "localType": "function",
+            "listenersBefore": 1,
+            "listenersAfter": 1,
+            "identity": "41656/1"
+          }
+        },
+        {
+          "operation": "persist",
+          "value": {
+            "equal": true,
+            "seen": [
+              0
+            ],
+            "aborted": false,
+            "listenersBefore": 1,
+            "listenersAfter": 1,
+            "identity": "41656/1"
+          }
+        }
+      ],
+      "workerErrors": []
+    }
+  ]
+}

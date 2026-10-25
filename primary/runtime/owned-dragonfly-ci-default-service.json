@@ -1,0 +1,48 @@
+{
+  "id": "49b709c3a11dbab0400a7c3bdc24593ad4e2f84f97f842057ea525457bcf1fc1",
+  "name": "/ghpr-heartbeat0902-js-bullmq4168-dragonfly-ci-default",
+  "imageId": "sha256:061f00b201b58e12f974e4e96c761a881ee1c05e9d8ee967466a604b7299753b",
+  "command": [
+    "docker",
+    "run",
+    "-d",
+    "--name",
+    "ghpr-heartbeat0902-js-bullmq4168-dragonfly-ci-default",
+    "--network",
+    "container:68225c39f119220e6cd64e3023615b1208aba08bc8d1731ad179abea974e5977",
+    "--tmpfs",
+    "/data:rw,size=134217728",
+    "--ulimit",
+    "memlock=-1",
+    "-e",
+    "DFLY_cluster_mode=emulated",
+    "-e",
+    "DFLY_lock_on_hashtags=true",
+    "-e",
+    "HEALTHCHECK_PORT=6379",
+    "docker.dragonflydb.io/dragonflydb/dragonfly:latest"
+  ],
+  "state": {
+    "Status": "running",
+    "Running": true,
+    "Paused": false,
+    "Restarting": false,
+    "OOMKilled": false,
+    "Dead": false,
+    "Pid": 31175,
+    "ExitCode": 0,
+    "Error": "",
+    "StartedAt": "2026-10-25T10:21:08.684896285Z",
+    "FinishedAt": "0001-01-01T00:00:00Z",
+    "Health": {
+      "Status": "starting",
+      "FailingStreak": 0,
+      "Log": []
+    }
+  },
+  "exactOfficialImageCommand": [
+    "dragonfly",
+    "--logtostderr"
+  ],
+  "created": "2026-10-25T10:21:11.533983+00:00"
+}

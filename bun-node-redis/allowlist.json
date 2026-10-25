@@ -1,0 +1,400 @@
+{
+  "scope": "bun-node-redis/ only",
+  "finalHead": "2e5ecf53615fd799d0c660d3b8bb8a5af579ccf7",
+  "archiveSha256": "7bc67762360cab5ec31cc6f42e95cbc9c8d2401364a40b5129cf5bf2e10193a3",
+  "sourceManifestEntryCount": 47,
+  "originalEvidenceFilesCopied": 46,
+  "sourceManifestFilesCopied": 1,
+  "byteModifiedEvidenceFiles": 0,
+  "omitted": [
+    {
+      "path": "inflight-host-processes.json",
+      "sourceSha256": "ec676844cac2dfb6aadc9c0acbd8958b5ac9234c97e44bdcddec42982d8cb715",
+      "reason": "Nonessential local host process snapshot; excluded whole to avoid personal user-profile and shell-wrapper metadata. Original remains local. No derivative or other host process material is exported."
+    }
+  ],
+  "files": [
+    {
+      "path": "bounded-exec-events-query.json",
+      "sourcePath": "ci-evidence/heartbeat0902-bullmq-bun-root/v2/bounded-exec-events-query.json",
+      "bytes": 464,
+      "sha256": "3f5eae36c047b9b928822227911ed42f70202c67ebbd22158acd8859ad402d19",
+      "sourceSha256": "3f5eae36c047b9b928822227911ed42f70202c67ebbd22158acd8859ad402d19",
+      "copiedByteForByte": true
+    },
+    {
+      "path": "bounded-exec-events.jsonl",
+      "sourcePath": "ci-evidence/heartbeat0902-bullmq-bun-root/v2/bounded-exec-events.jsonl",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sourceSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "copiedByteForByte": true
+    },
+    {
+      "path": "candidate-adapter-conformance-clean.log",
+      "sourcePath": "ci-evidence/heartbeat0902-bullmq-bun-root/v2/candidate-adapter-conformance-clean.log",
+      "bytes": 9948,
+      "sha256": "b904401ab8caf838160aa3c738fa9fa3a20b59a6ed9f1fcdb2e077f23f43e750",
+      "sourceSha256": "b904401ab8caf838160aa3c738fa9fa3a20b59a6ed9f1fcdb2e077f23f43e750",
+      "copiedByteForByte": true
+    },
+    {
+      "path": "candidate-adapter-conformance-result.json",
+      "sourcePath": "ci-evidence/heartbeat0902-bullmq-bun-root/v2/candidate-adapter-conformance-result.json",
+      "bytes": 841,
+      "sha256": "17cc7d381b40f4dd08a18551c3d2ca604f7ded1f254eb69f3682881954e59585",
+      "sourceSha256": "17cc7d381b40f4dd08a18551c3d2ca604f7ded1f254eb69f3682881954e59585",
+      "copiedByteForByte": true
+    },
+    {
+      "path": "candidate-adapter-conformance.log",
+      "sourcePath": "ci-evidence/heartbeat0902-bullmq-bun-root/v2/candidate-adapter-conformance.log",
+      "bytes": 13796,
+      "sha256": "1cc902b3d8ddb6d42afc27f2a4798d2fab3c517664baa1e531cbf17acc00ee85",
+      "sourceSha256": "1cc902b3d8ddb6d42afc27f2a4798d2fab3c517664baa1e531cbf17acc00ee85",
+      "copiedByteForByte": true
+    },
+    {
+      "path": "candidate-build-result.json",
+      "sourcePath": "ci-evidence/heartbeat0902-bullmq-bun-root/v2/candidate-build-result.json",
+      "bytes": 808,
+      "sha256": "b5fda5c40613006d6727aa34e2c4264b71ba4e1400d241eede2a1cd4c0014260",
+      "sourceSha256": "b5fda5c40613006d6727aa34e2c4264b71ba4e1400d241eede2a1cd4c0014260",
+      "copiedByteForByte": true
+    },
+    {
+      "path": "candidate-build.log",
+      "sourcePath": "ci-evidence/heartbeat0902-bullmq-bun-root/v2/candidate-build.log",
+      "bytes": 13360,
+      "sha256": "c46c6732711aa945003e206a0457febc579c909d72e17b81da30a8a3bc4617c0",
+      "sourceSha256": "c46c6732711aa945003e206a0457febc579c909d72e17b81da30a8a3bc4617c0",
+      "copiedByteForByte": true
+    },
+    {
+      "path": "candidate-bun-full-clean.log",
+      "sourcePath": "ci-evidence/heartbeat0902-bullmq-bun-root/v2/candidate-bun-full-clean.log",
+      "bytes": 155508,
+      "sha256": "be97eff6faf7428b96deca0e1a27a17262530c137ac7d9e972d061956ad361d6",
+      "sourceSha256": "be97eff6faf7428b96deca0e1a27a17262530c137ac7d9e972d061956ad361d6",
+      "copiedByteForByte": true
+    },
+    {
+      "path": "candidate-bun-full-result.json",
+      "sourcePath": "ci-evidence/heartbeat0902-bullmq-bun-root/v2/candidate-bun-full-result.json",
+      "bytes": 814,
+      "sha256": "f622f2de063fc6c518d0dc888bb22ff16f5a475dbfba21ea4b6272bb76f21a2c",
+      "sourceSha256": "f622f2de063fc6c518d0dc888bb22ff16f5a475dbfba21ea4b6272bb76f21a2c",
+      "copiedByteForByte": true
+    },
+    {
+      "path": "candidate-bun-full.log",
+      "sourcePath": "ci-evidence/heartbeat0902-bullmq-bun-root/v2/candidate-bun-full.log",
+      "bytes": 218249,
+      "sha256": "47c05ca415ae63aa3c9030a9d194a8b7578a2a9fbc8cc058d39989a34cb10140",
+      "sourceSha256": "47c05ca415ae63aa3c9030a9d194a8b7578a2a9fbc8cc058d39989a34cb10140",
+      "copiedByteForByte": true
+    },
+    {
+      "path": "candidate-bun-smoke-clean.log",
+      "sourcePath": "ci-evidence/heartbeat0902-bullmq-bun-root/v2/candidate-bun-smoke-clean.log",
+      "bytes": 2818,
+      "sha256": "b29f1171ea4cba9ca99872f632ca3ada1697c672c8b28b9d91c47b19be49b2de",
+      "sourceSha256": "b29f1171ea4cba9ca99872f632ca3ada1697c672c8b28b9d91c47b19be49b2de",
+      "copiedByteForByte": true
+    },
+    {
+      "path": "candidate-bun-smoke-result.json",
+      "sourcePath": "ci-evidence/heartbeat0902-bullmq-bun-root/v2/candidate-bun-smoke-result.json",
+      "bytes": 821,
+      "sha256": "016928a52852df1755c02d1b39b32bf581c29c60445ae96bfc4f500a8e88815e",
+      "sourceSha256": "016928a52852df1755c02d1b39b32bf581c29c60445ae96bfc4f500a8e88815e",
+      "copiedByteForByte": true
+    },
+    {
+      "path": "candidate-bun-smoke.log",
+      "sourcePath": "ci-evidence/heartbeat0902-bullmq-bun-root/v2/candidate-bun-smoke.log",
+      "bytes": 2818,
+      "sha256": "b29f1171ea4cba9ca99872f632ca3ada1697c672c8b28b9d91c47b19be49b2de",
+      "sourceSha256": "b29f1171ea4cba9ca99872f632ca3ada1697c672c8b28b9d91c47b19be49b2de",
+      "copiedByteForByte": true
+    },
+    {
+      "path": "candidate-frozen-v2-manifest.json",
+      "sourcePath": "ci-evidence/heartbeat0902-bullmq-bun-root/v2/candidate-frozen-v2-manifest.json",
+      "bytes": 1889,
+      "sha256": "d9ae5e3c108c93ecb8e1a3fbba72db01e3f4ae424db253bbd4f09d37ae6607dc",
+      "sourceSha256": "d9ae5e3c108c93ecb8e1a3fbba72db01e3f4ae424db253bbd4f09d37ae6607dc",
+      "copiedByteForByte": true
+    },
+    {
+      "path": "candidate-node-redis-clean.log",
+      "sourcePath": "ci-evidence/heartbeat0902-bullmq-bun-root/v2/candidate-node-redis-clean.log",
+      "bytes": 162868,
+      "sha256": "ebafa59c40cd6555d6389c0f23a48a38b4eb411eec26e1f80e46652267c224c5",
+      "sourceSha256": "ebafa59c40cd6555d6389c0f23a48a38b4eb411eec26e1f80e46652267c224c5",
+      "copiedByteForByte": true
+    },
+    {
+      "path": "candidate-node-redis-result.json",
+      "sourcePath": "ci-evidence/heartbeat0902-bullmq-bun-root/v2/candidate-node-redis-result.json",
+      "bytes": 823,
+      "sha256": "69d959b6e0350d3cd85c25abdbb1d4bf23a9d3f446e1742427bb8ce38589a9c6",
+      "sourceSha256": "69d959b6e0350d3cd85c25abdbb1d4bf23a9d3f446e1742427bb8ce38589a9c6",
+      "copiedByteForByte": true
+    },
+    {
+      "path": "candidate-node-redis.log",
+      "sourcePath": "ci-evidence/heartbeat0902-bullmq-bun-root/v2/candidate-node-redis.log",
+      "bytes": 227571,
+      "sha256": "e337f538cd7c1f4d2f1781cf20cac36661c639735b54128ce3913bb78dc10eb1",
+      "sourceSha256": "e337f538cd7c1f4d2f1781cf20cac36661c639735b54128ce3913bb78dc10eb1",
+      "copiedByteForByte": true
+    },
+    {
+      "path": "candidate-source-final-result.json",
+      "sourcePath": "ci-evidence/heartbeat0902-bullmq-bun-root/v2/candidate-source-final-result.json",
+      "bytes": 861,
+      "sha256": "8e249f44d757774587866f01bc70f773967be4b568bc694c83aec9330e5d1f13",
+      "sourceSha256": "8e249f44d757774587866f01bc70f773967be4b568bc694c83aec9330e5d1f13",
+      "copiedByteForByte": true
+    },
+    {
+      "path": "candidate-source-final.log",
+      "sourcePath": "ci-evidence/heartbeat0902-bullmq-bun-root/v2/candidate-source-final.log",
+      "bytes": 785,
+      "sha256": "6199a7e3f68ff83d52a47ffb55f4de5ac9691e48fec1c0470c30784b54061f09",
+      "sourceSha256": "6199a7e3f68ff83d52a47ffb55f4de5ac9691e48fec1c0470c30784b54061f09",
+      "copiedByteForByte": true
+    },
+    {
+      "path": "carry-review-v2.py",
+      "sourcePath": "ci-evidence/heartbeat0902-bullmq-bun-root/v2/carry-review-v2.py",
+      "bytes": 2718,
+      "sha256": "ae59f315f57890bd8177f57595f870bc820472a685e05dd474ba1c0fb94d21ce",
+      "sourceSha256": "ae59f315f57890bd8177f57595f870bc820472a685e05dd474ba1c0fb94d21ce",
+      "copiedByteForByte": true
+    },
+    {
+      "path": "final-head-gate-summary.json",
+      "sourcePath": "ci-evidence/heartbeat0902-bullmq-bun-root/v2/final-head-gate-summary.json",
+      "bytes": 10223,
+      "sha256": "db5cfe03ca86b8202782d9587ee72ca12f61815723805131e9742cab9fa107c6",
+      "sourceSha256": "db5cfe03ca86b8202782d9587ee72ca12f61815723805131e9742cab9fa107c6",
+      "copiedByteForByte": true
+    },
+    {
+      "path": "final-head-source-precheck-result.json",
+      "sourcePath": "ci-evidence/heartbeat0902-bullmq-bun-root/v2/final-head-source-precheck-result.json",
+      "bytes": 918,
+      "sha256": "4c157ce4f46ad36df510ce5efa9102b94f3342dd5b9997c6d24dec7f3776cd6f",
+      "sourceSha256": "4c157ce4f46ad36df510ce5efa9102b94f3342dd5b9997c6d24dec7f3776cd6f",
+      "copiedByteForByte": true
+    },
+    {
+      "path": "final-head-source-precheck.log",
+      "sourcePath": "ci-evidence/heartbeat0902-bullmq-bun-root/v2/final-head-source-precheck.log",
+      "bytes": 861,
+      "sha256": "5573f16e62670f7337da8ebcae4401f41a45369948730369ec90fe4c860f3b91",
+      "sourceSha256": "5573f16e62670f7337da8ebcae4401f41a45369948730369ec90fe4c860f3b91",
+      "copiedByteForByte": true
+    },
+    {
+      "path": "final-head-tree-mapping.json",
+      "sourcePath": "ci-evidence/heartbeat0902-bullmq-bun-root/v2/final-head-tree-mapping.json",
+      "bytes": 270,
+      "sha256": "2691bfba3bdada6186f4a2ae9b636d408a1a859c39ea011a50b121846998178f",
+      "sourceSha256": "2691bfba3bdada6186f4a2ae9b636d408a1a859c39ea011a50b121846998178f",
+      "copiedByteForByte": true
+    },
+    {
+      "path": "final-identities-result.json",
+      "sourcePath": "ci-evidence/heartbeat0902-bullmq-bun-root/v2/final-identities-result.json",
+      "bytes": 283,
+      "sha256": "70d02140134b162c608e16bd547b1cb63e5003b79a472a1bea7d803a6d605e1d",
+      "sourceSha256": "70d02140134b162c608e16bd547b1cb63e5003b79a472a1bea7d803a6d605e1d",
+      "copiedByteForByte": true
+    },
+    {
+      "path": "final-identities.log",
+      "sourcePath": "ci-evidence/heartbeat0902-bullmq-bun-root/v2/final-identities.log",
+      "bytes": 16714,
+      "sha256": "d74214e72c08343cd6b2f8dd33460278dc3ba0ba2dd80074ab27e31cea0c4a0a",
+      "sourceSha256": "d74214e72c08343cd6b2f8dd33460278dc3ba0ba2dd80074ab27e31cea0c4a0a",
+      "copiedByteForByte": true
+    },
+    {
+      "path": "finalize-v2.py",
+      "sourcePath": "ci-evidence/heartbeat0902-bullmq-bun-root/v2/finalize-v2.py",
+      "bytes": 6792,
+      "sha256": "87b23b09f254a28a26d6a67739c81f1b65316cf744a8e26f63bd08c460afde34",
+      "sourceSha256": "87b23b09f254a28a26d6a67739c81f1b65316cf744a8e26f63bd08c460afde34",
+      "copiedByteForByte": true
+    },
+    {
+      "path": "format-v2-ast-equivalence.json",
+      "sourcePath": "ci-evidence/heartbeat0902-bullmq-bun-root/v2/format-v2-ast-equivalence.json",
+      "bytes": 1297,
+      "sha256": "426aeee70b937cfa6f730911fa06d990c06d2c04dba960d9fb4b3206085b5f6f",
+      "sourceSha256": "426aeee70b937cfa6f730911fa06d990c06d2c04dba960d9fb4b3206085b5f6f",
+      "copiedByteForByte": true
+    },
+    {
+      "path": "gates-v2.py",
+      "sourcePath": "ci-evidence/heartbeat0902-bullmq-bun-root/v2/gates-v2.py",
+      "bytes": 3189,
+      "sha256": "554dd235cecef3013e0eab6505143b3ca4b7527458c86365b6a4f6571c2fb2f2",
+      "sourceSha256": "554dd235cecef3013e0eab6505143b3ca4b7527458c86365b6a4f6571c2fb2f2",
+      "copiedByteForByte": true
+    },
+    {
+      "path": "independent-source-review.json",
+      "sourcePath": "ci-evidence/heartbeat0902-bullmq-bun-root/v2/independent-source-review.json",
+      "bytes": 3064,
+      "sha256": "dec67fed7b0011812f0c9b2c662d1c73cce72257f6ccaf2074b28498c3b601ed",
+      "sourceSha256": "dec67fed7b0011812f0c9b2c662d1c73cce72257f6ccaf2074b28498c3b601ed",
+      "copiedByteForByte": true
+    },
+    {
+      "path": "mapping-first-attempt.json",
+      "sourcePath": "ci-evidence/heartbeat0902-bullmq-bun-root/v2/mapping-first-attempt.json",
+      "bytes": 471,
+      "sha256": "7bf6285528e14cccb6dad45fc6ad57fbe79165d7bfb7ff6ffd02dbf6e15fbb8f",
+      "sourceSha256": "7bf6285528e14cccb6dad45fc6ad57fbe79165d7bfb7ff6ffd02dbf6e15fbb8f",
+      "copiedByteForByte": true
+    },
+    {
+      "path": "memory-events-after-bun.log",
+      "sourcePath": "ci-evidence/heartbeat0902-bullmq-bun-root/v2/memory-events-after-bun.log",
+      "bytes": 59,
+      "sha256": "de0bf46c06ec8c25c14803783151d907281a81520d8cb97cd3fa2c69c6fc23ec",
+      "sourceSha256": "de0bf46c06ec8c25c14803783151d907281a81520d8cb97cd3fa2c69c6fc23ec",
+      "copiedByteForByte": true
+    },
+    {
+      "path": "pipeline-results.json",
+      "sourcePath": "ci-evidence/heartbeat0902-bullmq-bun-root/v2/pipeline-results.json",
+      "bytes": 188,
+      "sha256": "3b24eadb8470f3585e4814bae1c363e80f799dfa2f85cb7371853d9085e6f664",
+      "sourceSha256": "3b24eadb8470f3585e4814bae1c363e80f799dfa2f85cb7371853d9085e6f664",
+      "copiedByteForByte": true
+    },
+    {
+      "path": "pipeline-v2.py",
+      "sourcePath": "ci-evidence/heartbeat0902-bullmq-bun-root/v2/pipeline-v2.py",
+      "bytes": 3722,
+      "sha256": "b149a37a8fe34b062713e1e334e3af6c0012b1134c437aa26adcd760528feeee",
+      "sourceSha256": "b149a37a8fe34b062713e1e334e3af6c0012b1134c437aa26adcd760528feeee",
+      "copiedByteForByte": true
+    },
+    {
+      "path": "redis-reset-before-node-redis-result.json",
+      "sourcePath": "ci-evidence/heartbeat0902-bullmq-bun-root/v2/redis-reset-before-node-redis-result.json",
+      "bytes": 287,
+      "sha256": "ddb51e19d17d0549adc048ea3fd62929b72a1e601e2b32c4f233cfbdb0e82a14",
+      "sourceSha256": "ddb51e19d17d0549adc048ea3fd62929b72a1e601e2b32c4f233cfbdb0e82a14",
+      "copiedByteForByte": true
+    },
+    {
+      "path": "redis-reset-before-node-redis.log",
+      "sourcePath": "ci-evidence/heartbeat0902-bullmq-bun-root/v2/redis-reset-before-node-redis.log",
+      "bytes": 140,
+      "sha256": "73834c5efa8897c009d114b596b78a9ec13ec0567b8b1c849fea1a4237ae0ade",
+      "sourceSha256": "73834c5efa8897c009d114b596b78a9ec13ec0567b8b1c849fea1a4237ae0ade",
+      "copiedByteForByte": true
+    },
+    {
+      "path": "redis-reset-before-v2-bun-result.json",
+      "sourcePath": "ci-evidence/heartbeat0902-bullmq-bun-root/v2/redis-reset-before-v2-bun-result.json",
+      "bytes": 283,
+      "sha256": "b885ec01a8bd084d891de076a81ec951641ec04b5d48d7233936245584dd1e87",
+      "sourceSha256": "b885ec01a8bd084d891de076a81ec951641ec04b5d48d7233936245584dd1e87",
+      "copiedByteForByte": true
+    },
+    {
+      "path": "redis-reset-before-v2-bun.log",
+      "sourcePath": "ci-evidence/heartbeat0902-bullmq-bun-root/v2/redis-reset-before-v2-bun.log",
+      "bytes": 140,
+      "sha256": "d161e7c74f364e7b0bb27542d6ac0a20b92c49eb20a7416ff752405184fd7d66",
+      "sourceSha256": "d161e7c74f364e7b0bb27542d6ac0a20b92c49eb20a7416ff752405184fd7d66",
+      "copiedByteForByte": true
+    },
+    {
+      "path": "REPORT.md",
+      "sourcePath": "ci-evidence/heartbeat0902-bullmq-bun-root/v2/REPORT.md",
+      "bytes": 3271,
+      "sha256": "b4964fb55175564c626850867b2d378a3179c5f6765d3104c0af46cffae162e4",
+      "sourceSha256": "b4964fb55175564c626850867b2d378a3179c5f6765d3104c0af46cffae162e4",
+      "copiedByteForByte": true
+    },
+    {
+      "path": "run-v2.py",
+      "sourcePath": "ci-evidence/heartbeat0902-bullmq-bun-root/v2/run-v2.py",
+      "bytes": 1674,
+      "sha256": "f04ab9c9e6088ce50846534a278116f33921ed3c963f46670b7055bfbd92212b",
+      "sourceSha256": "f04ab9c9e6088ce50846534a278116f33921ed3c963f46670b7055bfbd92212b",
+      "copiedByteForByte": true
+    },
+    {
+      "path": "runner-state-after-bun.json",
+      "sourcePath": "ci-evidence/heartbeat0902-bullmq-bun-root/v2/runner-state-after-bun.json",
+      "bytes": 219,
+      "sha256": "038f639ef5f9e56ebb0b338eafbc9397476018971adf954f60b8584caeaa8801",
+      "sourceSha256": "038f639ef5f9e56ebb0b338eafbc9397476018971adf954f60b8584caeaa8801",
+      "copiedByteForByte": true
+    },
+    {
+      "path": "source-archives-v2.json",
+      "sourcePath": "ci-evidence/heartbeat0902-bullmq-bun-root/v2/source-archives-v2.json",
+      "bytes": 491427,
+      "sha256": "b9b81544d2b346b3ccefa8d8ea84b7a8b09e978ebffb583154cf8a139ad5f257",
+      "sourceSha256": "b9b81544d2b346b3ccefa8d8ea84b7a8b09e978ebffb583154cf8a139ad5f257",
+      "copiedByteForByte": true
+    },
+    {
+      "path": "v1-v2-byte-delta.json",
+      "sourcePath": "ci-evidence/heartbeat0902-bullmq-bun-root/v2/v1-v2-byte-delta.json",
+      "bytes": 307,
+      "sha256": "63477cb491115bb36fb6ad6d5e8d2f458db6dd19522ba5efb20f6a193ada77ac",
+      "sourceSha256": "63477cb491115bb36fb6ad6d5e8d2f458db6dd19522ba5efb20f6a193ada77ac",
+      "copiedByteForByte": true
+    },
+    {
+      "path": "v2-extract-verify-result.json",
+      "sourcePath": "ci-evidence/heartbeat0902-bullmq-bun-root/v2/v2-extract-verify-result.json",
+      "bytes": 978,
+      "sha256": "c135bef4d939b60ae097b781020927f41df9dbfab9190359385be18046e8d55d",
+      "sourceSha256": "c135bef4d939b60ae097b781020927f41df9dbfab9190359385be18046e8d55d",
+      "copiedByteForByte": true
+    },
+    {
+      "path": "v2-extract-verify.log",
+      "sourcePath": "ci-evidence/heartbeat0902-bullmq-bun-root/v2/v2-extract-verify.log",
+      "bytes": 930,
+      "sha256": "a2359869c9f4d3958d5d9f36de7198f587e8b052c867c0ea7626476e2b96f621",
+      "sourceSha256": "a2359869c9f4d3958d5d9f36de7198f587e8b052c867c0ea7626476e2b96f621",
+      "copiedByteForByte": true
+    },
+    {
+      "path": "verify-source-v2.cjs",
+      "sourcePath": "ci-evidence/heartbeat0902-bullmq-bun-root/v2/verify-source-v2.cjs",
+      "bytes": 1072,
+      "sha256": "38b44e29c7a7993cca8b0612901094b5064e7328295cc84e6c760c3c057c9a22",
+      "sourceSha256": "38b44e29c7a7993cca8b0612901094b5064e7328295cc84e6c760c3c057c9a22",
+      "copiedByteForByte": true
+    },
+    {
+      "path": "source-evidence-sha256.json",
+      "sourcePath": "ci-evidence/heartbeat0902-bullmq-bun-root/v2/evidence-sha256.json",
+      "bytes": 7348,
+      "sha256": "a1ee0cbfab56faec29d615020506d53a273d23f7e0d52f7776e069cad0b7fea7",
+      "copiedByteForByte": true,
+      "purpose": "Original 47-entry source manifest. One nonessential host-process snapshot is intentionally omitted from this public set."
+    }
+  ],
+  "generatedMetadataFiles": [
+    "allowlist.json",
+    "content-review.json",
+    "SHA256SUMS.json"
+  ],
+  "hashCoverage": "SHA256SUMS.json covers every exported file except itself; original source manifest retains original hashes including the omitted local-only file."
+}

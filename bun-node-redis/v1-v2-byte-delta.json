@@ -1,0 +1,9 @@
+{
+  "v2ArchiveSha256": "7bc67762360cab5ec31cc6f42e95cbc9c8d2401364a40b5129cf5bf2e10193a3",
+  "changed": [
+    "src/classes/child-processor.ts",
+    "tests/child-processor.test.ts"
+  ],
+  "packageAndLockUnchanged": true,
+  "dependencyReuse": "Exact frozen v1 installation, no dependency mutation"
+}

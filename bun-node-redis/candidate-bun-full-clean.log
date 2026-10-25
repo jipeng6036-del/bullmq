@@ -1,0 +1,1198 @@
+{"argv": ["docker", "exec", "--user", "node", "--env", "HOME=/tmp/bunroot/home", "--env", "npm_config_cache=/tmp/bunroot/npm-cache", "--env", "YARN_CACHE_FOLDER=/tmp/bunroot/yarn-cache", "--env", "PATH=/tmp/bunroot/tools/node_modules/node/bin:/tmp/bunroot/tools/node_modules/.bin:/tmp/bunroot/bun/node_modules/@oven/bun-linux-x64/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin", "--env", "REDIS_HOST=127.0.0.1", "--env", "REDIS_PORT=6379", "ghpr-0902-bullmq-bun-root-runner", "sh", "-c", "cd /tmp/bunroot/candidate && yarn test:bun"], "started": "2026-10-25T10:22:55.179237+00:00"}
+yarn run v1.22.22
+$ bun node_modules/vitest/dist/cli.js run --no-file-parallelism --config vitest.bun.config.ts
+(!) Your Vite config uses features that are unsupported by `configLoader: 'native'`, which is planned to become the default in a future major version of Vite:
+  - ESM syntax in a file loaded as CommonJS (vitest.bun.config.ts:1:1). Use a `.mjs` extension or set `"type": "module"` in the closest package.json
+Set `VITE_CONFIG_NATIVE_IGNORE_WARNING=true` to suppress this warning.
+
+ RUN  v4.1.12 /tmp/bunroot/candidate
+
+ ✓ tests/worker.test.ts > workers > process a lifo queue 20ms
+ ✓ tests/worker.test.ts > workers > process several jobs serially 16ms
+ ✓ tests/worker.test.ts > workers > process a job that updates progress as number 5ms
+ ✓ tests/worker.test.ts > workers > process a job that updates progress as object 5ms
+ ✓ tests/worker.test.ts > workers > process a job that updates progress as string 4ms
+ ✓ tests/worker.test.ts > workers > process a job that updates progress as boolean 4ms
+ ✓ tests/worker.test.ts > workers > process a job that updates progress with a typed progress generic 5ms
+ ✓ tests/worker.test.ts > workers > processes jobs that were added before the worker started 5ms
+ ✓ tests/worker.test.ts > workers > process a job that returns data in the process handler 5ms
+ ✓ tests/worker.test.ts > workers > process a job that returns a string in the process handler 105ms
+ ✓ tests/worker.test.ts > workers > process a job that returning data returnvalue gets stored in the database 8ms
+ ✓ tests/worker.test.ts > workers > process a job that does some asynchronous operation 258ms
+ ✓ tests/worker.test.ts > workers > process a synchronous job 6ms
+ ✓ tests/worker.test.ts > workers > process a slow job without waiting previous job to finish 1007ms
+stderr | tests/worker.test.ts > workers > process a job that returns data with a circular dependency
+TypeError: JSON.stringify cannot serialize cyclic structures.
+    at stringify (native)
+    at tryCatch (/tmp/bunroot/candidate/src/utils/index.ts:36:15)
+    at /tmp/bunroot/candidate/src/classes/job.ts:668:40
+
+ ✓ tests/worker.test.ts > workers > does not process a job that is being processed when a new queue starts 506ms
+ ✓ tests/worker.test.ts > workers > process a job that throws an exception 16ms
+ ✓ tests/worker.test.ts > workers > process a job that returns data with a circular dependency 18ms
+ ✓ tests/worker.test.ts > workers > process a job that returns a rejected promise 4ms
+ ✓ tests/worker.test.ts > workers > sets the worker name on the job upon processing 206ms
+ ✓ tests/worker.test.ts > workers > when job is in failed state > retries a job that fails 5ms
+ ✓ tests/worker.test.ts > workers > when job is in failed state > when passing resetAttemptsMade and resetAttemptsStarted as true > retries a job that fails and resets attemptsMade and attemptsStarted 5ms
+ ✓ tests/worker.test.ts > workers > when job is in failed state > when the job has a priority > moves the retried job back to the prioritized state 5ms
+ ✓ tests/worker.test.ts > workers > when job is in completed state > retries a job that completes 7ms
+ ✓ tests/worker.test.ts > workers > when job is in completed state > when passing resetAttemptsMade and resetAttemptsStarted as true > retries a job that completes and resets attemptsMade and attemptsStarted 5ms
+ ✓ tests/worker.test.ts > workers > when job is in completed state > when the job has a priority > moves the retried job back to the prioritized state 6ms
+ ✓ tests/worker.test.ts > workers > when closing a worker > process a job that throws an exception after worker close 3007ms
+ ✓ tests/worker.test.ts > workers > when closing a worker > process a job that complete after worker close 3006ms
+ ✓ tests/worker.test.ts > workers > when closing a worker > resolves close() when an active job throws DelayedError during shutdown 208ms
+ ✓ tests/worker.test.ts > workers > when closing a worker > resolves close() when a paused worker has an active job that throws DelayedError 207ms
+ ✓ tests/worker.test.ts > workers > when closing a worker > does not retry connection errors indefinitely while the worker is closing 4ms
+ ✓ tests/worker.test.ts > workers > when waiting for a job > reconnects blocking transport after a connection error (#4378) 5ms
+ ✓ tests/worker.test.ts > workers > when waiting for a job > retries after reconnecting blocking transport fails 3ms
+ ✓ tests/worker.test.ts > workers > when waiting for a job > recovers when the blocking command never settles (#4479) 1007ms
+ ✓ tests/worker.test.ts > workers > when waiting for a job > does not disconnect a reconnecting blocking client (#4585) 1008ms
+stderr | tests/worker.test.ts > workers > when waiting for a job > drops the abandoned blocking command once the client is live again (#4585)
+TypeError: Attempted to assign to readonly property.
+    at close (/tmp/bunroot/candidate/src/classes/redis-connection.ts:800:16)
+    at /tmp/bunroot/candidate/src/classes/redis-queue-backend.ts:314:41
+
+ ✓ tests/worker.test.ts > workers > when waiting for a job > drops the abandoned blocking command once the client is live again (#4585) 1011ms
+ ✓ tests/worker.test.ts > workers > when waiting for a job > reconnects a healthy connection torn down by the watchdog (#4585 ready-path race) 1040ms
+ ✓ tests/worker.test.ts > workers > when calling getBlockTimeout > when blockUntil is 0 > when drainDelay is greater than minimumBlockTimeout > returns drainDelay 3ms
+ ✓ tests/worker.test.ts > workers > when calling getBlockTimeout > when blockUntil is 0 > when drainDelay is lower than minimumBlockTimeout > returns drainDelay 2ms
+ ✓ tests/worker.test.ts > workers > when calling getBlockTimeout > when blockUntil is greater than 0 > when blockUntil is lower than date now value > returns blockDelay value lower or equal 0 2ms
+ ✓ tests/worker.test.ts > workers > when calling getBlockTimeout > when blockUntil is greater than 0 > when blockUntil is greater than date now value > returns delay value greater than minimumBlockTimeout 2ms
+ ✓ tests/worker.test.ts > workers > when calling getBlockTimeout > when blockUntil is greater than 0 > when blockDelay exceeds the backend maximumBlockTimeout > caps the block timeout at the backend's maximumBlockTimeout 3ms
+ ✓ tests/worker.test.ts > workers > when reading maximumBlockTimeout > delegates to the backend value 3ms
+ ✓ tests/worker.test.ts > workers > when reading maximumBlockTimeout > falls back to the default (10s) when the backend does not specify one 3ms
+ ✓ tests/worker.test.ts > workers > when sharing connection > should not fail 14ms
+ ✓ tests/worker.test.ts > workers > auto job removal > should remove job after completed if removeOnComplete 4ms
+ ✓ tests/worker.test.ts > workers > auto job removal > should remove a job after completed if the default job options specify removeOnComplete 3ms
+ ✓ tests/worker.test.ts > workers > auto job removal > should keep specified number of jobs after completed with removeOnComplete 14ms
+ ✓ tests/worker.test.ts > workers > auto job removal > should keep of jobs newer than specified after completed with removeOnComplete 11ms
+ ✓ tests/worker.test.ts > workers > auto job removal > should keep of jobs newer than specified and up to a count completed with removeOnComplete 12ms
+ ✓ tests/worker.test.ts > workers > auto job removal > should keep of jobs newer than specified and up to a count fail with removeOnFail 14ms
+ ✓ tests/worker.test.ts > workers > auto job removal > should keep specified number of jobs after completed with default job options removeOnComplete 9ms
+ ✓ tests/worker.test.ts > workers > auto job removal > should remove job after failed if removeOnFail 15ms
+ ✓ tests/worker.test.ts > workers > auto job removal > should remove a job after fail if the default job options specify removeOnFail 12ms
+ ✓ tests/worker.test.ts > workers > auto job removal > should keep specified number of jobs after completed with removeOnFail 12ms
+ ✓ tests/worker.test.ts > workers > auto job removal > should keep specified number of jobs after completed with global removeOnFail 9ms
+ ✓ tests/worker.test.ts > workers > auto job removal > when worker has removeOnFinish options > should keep of jobs newer than specified after completed with removeOnComplete 12ms
+ ✓ tests/worker.test.ts > workers > auto job removal > when worker has removeOnFinish options > should keep of jobs newer than specified and up to a count completed with removeOnComplete 10ms
+ ✓ tests/worker.test.ts > workers > auto job removal > when worker has removeOnFinish options > should keep jobs with age 10 and limit 2 with removeOnComplete 11ms
+ ✓ tests/worker.test.ts > workers > auto job removal > when worker has removeOnFinish options > should keep of jobs newer than specified and up to a count fail with removeOnFail 12ms
+ ✓ tests/worker.test.ts > workers > auto job removal > when worker has removeOnFinish options > should remove all jobs when count is 0 with removeOnFail 13ms
+ ✓ tests/worker.test.ts > workers > when adding delayed job after standard one when worker is drained > pick standard job without delay 5076ms
+ ✓ tests/worker.test.ts > workers > when prioritized jobs are added > should process jobs by priority 9ms
+ ✓ tests/worker.test.ts > workers > when prioritized jobs are added > when jobs are added with the maximum allowed priority value > should process jobs with the same priority in FIFO order 5ms
+ ✓ tests/worker.test.ts > workers > when prioritized jobs are added > when jobs are added with the maximum allowed priority value > should reject jobs above the maximum allowed priority value 2ms
+ ✓ tests/worker.test.ts > workers > when prioritized jobs are added > while processing last active job > should process prioritized job whithout delay 5ms
+ ✓ tests/worker.test.ts > workers > when prioritized jobs are added > when using custom jobId > should process prioritized jobs 55ms
+ ✓ tests/worker.test.ts > workers > when sharing a redis connection between workers > should not close the connection 4ms
+ ✓ tests/worker.test.ts > workers > when sharing a redis connection between workers > when connection is passed into a queue > should not close the connection 6ms
+ ✓ tests/worker.test.ts > workers > when autorun option is provided as false > processes several jobs serially using process option as false 217ms
+ ✓ tests/worker.test.ts > workers > when autorun option is provided as false > when process function is not defined > throws error 3ms
+ ✓ tests/worker.test.ts > workers > when autorun option is provided as false > when run method is called when worker is running > throws error 5ms
+ ✓ tests/worker.test.ts > workers > when queue is paused and retry a job > moves job to wait 105ms
+ ✓ tests/worker.test.ts > workers > retry a job that fails using job retry method 5ms
+ ✓ tests/worker.test.ts > workers > emits error and continues running when _getNextJob fails 5ms
+stderr | tests/worker.test.ts > workers > continues processing after a worker has stalled
+Error: Missing lock for job 1. moveToFinished
+    at finishedErrors (/tmp/bunroot/candidate/src/classes/finished-errors.ts:30:15)
+    at moveToFinished (/tmp/bunroot/candidate/src/classes/redis-queue-backend.ts:1207:18)
+    at moveToCompleted (/tmp/bunroot/candidate/src/classes/redis-queue-backend.ts:2443:31)
+    at /tmp/bunroot/candidate/src/classes/job.ts:675:59 {
+  code: -2
+}
+
+stderr | tests/worker.test.ts > workers > continues processing after a worker has stalled
+Error: Missing lock for job 1. moveToFinished
+    at finishedErrors (/tmp/bunroot/candidate/src/classes/finished-errors.ts:30:15)
+    at moveToFinished (/tmp/bunroot/candidate/src/classes/redis-queue-backend.ts:1207:18)
+    at moveToFailed (/tmp/bunroot/candidate/src/classes/redis-queue-backend.ts:2466:31)
+    at /tmp/bunroot/candidate/src/classes/job.ts:801:44 {
+  code: -2
+}
+
+ ✓ tests/worker.test.ts > workers > continues processing after a worker has stalled 2008ms
+ ✓ tests/worker.test.ts > workers > max stalled count cannot be less than zero 2ms
+ ✓ tests/worker.test.ts > workers > max started attempts cannot be less than zero 2ms
+ ✓ tests/worker.test.ts > workers > stalled interval cannot be zero 2ms
+ ✓ tests/worker.test.ts > workers > drain delay cannot be zero 2ms
+ ✓ tests/worker.test.ts > workers > lock extender continues to run until all active jobs are completed when closing a worker 2004ms
+ ✓ tests/worker.test.ts > workers > Concurrency process > should thrown an exception if I specify a concurrency of 0 2ms
+ ✓ tests/worker.test.ts > workers > Concurrency process > should thrown an exception if I specify a NaN concurrency 2ms
+ ✓ tests/worker.test.ts > workers > Concurrency process > should run job in sequence if I specify a concurrency of 1 105ms
+ ✓ tests/worker.test.ts > workers > Concurrency process > should process job respecting the concurrency set 1227ms
+ ✓ tests/worker.test.ts > workers > Concurrency process > when changing concurrency > when increasing value > should process job respecting the current concurrency set 2839ms
+ ✓ tests/worker.test.ts > workers > Concurrency process > when changing concurrency > when decreasing value > should process job respecting the current concurrency set 5315ms
+ ✓ tests/worker.test.ts > workers > Concurrency process > when pausing > should wait for all concurrent processing 88ms
+ ✓ tests/worker.test.ts > workers > Concurrency process > when pausing > should not keep active jobs 206ms
+ ✓ tests/worker.test.ts > workers > Concurrency process > when pausing > should resume processing after pause with doNotWaitActive 109ms
+ ✓ tests/worker.test.ts > workers > Retries and backoffs > updates job's delay property if it fails and backoff is set 4ms
+ ✓ tests/worker.test.ts > workers > Retries and backoffs > when backoff type is exponential > updates job's delay property if it fails and backoff is set 661ms
+ ✓ tests/worker.test.ts > workers > Retries and backoffs > when backoff type is exponential > when jitter option is provided > updates job's delay property between 0 and max exponential backoff value 506ms
+ ✓ tests/worker.test.ts > workers > Retries and backoffs > when backoff type is exponential > when jitter option is provided > when jitter is provided with lower value than 1 > updates job's delay property only applying jitter in a fixed percentage 504ms
+ ✓ tests/worker.test.ts > workers > Retries and backoffs > when backoff type is fixed > updates job's delay property and respects fixed delay value 2409ms
+ ✓ tests/worker.test.ts > workers > Retries and backoffs > when backoff type is fixed > when jitter option is provided > updates job's delay property between 0 and max fixed backoff value 1407ms
+ ✓ tests/worker.test.ts > workers > Retries and backoffs > when backoff type is fixed > when jitter option is provided > when jitter is provided with lower value than 1 > updates job's delay property only applying jitter in a fixed percentage 1406ms
+ ✓ tests/worker.test.ts > workers > Retries and backoffs > when attempts is 1 and job fails > should execute job only once and emits retries-exhausted event 4ms
+ ✓ tests/worker.test.ts > workers > Retries and backoffs > when jobs do not fail and get the maximum attempts limit > does not emit retries-exhausted event 3ms
+ ✓ tests/worker.test.ts > workers > Retries and backoffs > when job has been failed and moved to wait > saves failedReason 4ms
+ ✓ tests/worker.test.ts > workers > Retries and backoffs > should automatically retry a failed job if attempts is bigger than 1 27ms
+ ✓ tests/worker.test.ts > workers > Retries and backoffs > when there are delayed jobs between retries > when using retryJob > promotes delayed jobs first 1013ms
+ ✓ tests/worker.test.ts > workers > Retries and backoffs > when there are delayed jobs between retries > when job has more priority than delayed jobs > executes retried job first 1012ms
+ ✓ tests/worker.test.ts > workers > Retries and backoffs > should not retry a failed job more than the number of given attempts times 5ms
+ ✓ tests/worker.test.ts > workers > Retries and backoffs > should retry a job after a delay if a fixed backoff is given 2055ms
+ ✓ tests/worker.test.ts > workers > Retries and backoffs > when UnrecoverableError is throw > moves job to failed 1105ms
+ ✓ tests/worker.test.ts > workers > Retries and backoffs > when providing a way to execute step jobs > should retry a job after a delay if a fixed backoff is given, keeping the current step 2109ms
+ ✓ tests/worker.test.ts > workers > Retries and backoffs > when providing a way to execute step jobs > when timeout is provided > should check if timeout is reached in each step 3515ms
+ ✓ tests/worker.test.ts > workers > Retries and backoffs > when providing a way to execute step jobs > when moving job to delayed in one step > should retry job after a delay time, keeping the current step 304ms
+ ✓ tests/worker.test.ts > workers > Retries and backoffs > when providing a way to execute step jobs > when moving job to delayed in one step > when passing maxStartedAttempts > should fail job when consuming the max started attempts 302ms
+ ✓ tests/worker.test.ts > workers > Retries and backoffs > when providing a way to execute step jobs > when moving job to delayed in one step > when passing maxStartedAttempts > should allow only retry a job once after it has reached the max attemptsStarted 4ms
+ ✓ tests/worker.test.ts > workers > Retries and backoffs > when providing a way to execute step jobs > when moving job to waiting in one step > should retry job right away, keeping the current step 3ms
+ ✓ tests/worker.test.ts > workers > Retries and backoffs > should retry a job after a delay if an exponential backoff is given 3106ms
+ ✓ tests/worker.test.ts > workers > Retries and backoffs > should retry a job after a delay if a custom backoff is given 3115ms
+ ✓ tests/worker.test.ts > workers > Retries and backoffs > when applying custom backoff by type > should retry a job after a delay for custom type 9047ms
+ ✓ tests/worker.test.ts > workers > Retries and backoffs > should not retry a job if the custom backoff returns -1 3ms
+ ✓ tests/worker.test.ts > workers > Retries and backoffs > should retry a job after a delay if a custom backoff is given based on the error thrown 3012ms
+ ✓ tests/worker.test.ts > workers > Retries and backoffs > should retry a job after a delay if a custom backoff is given based on the job data 2510ms
+ ✓ tests/worker.test.ts > workers > Retries and backoffs > should be able to handle a custom backoff if it returns a promise 1208ms
+ ✓ tests/worker.test.ts > workers > Retries and backoffs > should not retry a job that has been removed 16ms
+ ✓ tests/worker.test.ts > workers > Retries and backoffs > should not retry a job that has been retried already 5ms
+ ✓ tests/worker.test.ts > workers > Retries and backoffs > should only retry a job once after it has reached the max attempts 4ms
+ ✓ tests/worker.test.ts > workers > Retries and backoffs > should not retry a job that is active 504ms
+ ✓ tests/worker.test.ts > workers > Manually process jobs > should allow to complete jobs manually 3ms
+ ✓ tests/worker.test.ts > workers > Manually process jobs > when move job to waiting-children > when job is not in active state > throws an error 6ms
+ ✓ tests/worker.test.ts > workers > Manually process jobs > should allow to fail jobs manually 3ms
+ ✓ tests/worker.test.ts > workers > Manually process jobs > when there is a job in waiting > should emit active event when calling getNextJob 3ms
+ ✓ tests/worker.test.ts > workers > Manually process jobs > when a stalled job has exhausted its max stalled attempts > should move the job to failed automatically on the next getNextJob call and return undefined when no other jobs are waiting 3ms
+ ✓ tests/worker.test.ts > workers > Manually process jobs > when a stalled job has exhausted its max stalled attempts > should fail the deferred-failure job and return the next waiting job 3ms
+ ✓ tests/worker.test.ts > workers > non-blocking > should block by default 103ms
+ ✓ tests/worker.test.ts > workers > non-blocking > shouldn't block when disabled 103ms
+ ✓ tests/worker.test.ts > workers > non-blocking > shouldn't block when disabled and paused 3ms
+ ✓ tests/worker.test.ts > workers > should retrieve concurrency from getter 2ms
+ ✓ tests/rate_limiter.test.ts > Rate Limiter > should not put a job into the delayed queue when limit is hit 218ms
+ ✓ tests/rate_limiter.test.ts > Rate Limiter > when setting rate limit globally > should obey the rate limit 5021ms
+ ✓ tests/rate_limiter.test.ts > Rate Limiter > when setting rate limit globally > when rate limit is removed > should execute jobs without rate limit 13ms
+ ✓ tests/rate_limiter.test.ts > Rate Limiter > should obey the rate limit 10018ms
+ ✓ tests/rate_limiter.test.ts > Rate Limiter > should respect processing time without adding limiter delay 9015ms
+ ✓ tests/rate_limiter.test.ts > Rate Limiter > should quickly close a worker even with slow rate-limit 505ms
+ ✓ tests/rate_limiter.test.ts > Rate Limiter > when a job never completed > should not block the rate limit 3013ms
+ ✓ tests/rate_limiter.test.ts > Rate Limiter > when queue is paused between rate limit > should add active jobs to wait 708ms
+ ✓ tests/rate_limiter.test.ts > Rate Limiter > when using flows > should obey the rate limit per queue 10019ms
+ ✓ tests/rate_limiter.test.ts > Rate Limiter > should obey the rate limit with max value greater than 1 5010ms
+ ✓ tests/rate_limiter.test.ts > Rate Limiter > when dynamic limit is used > should obey the rate limit 3525ms
+ ✓ tests/rate_limiter.test.ts > Rate Limiter > when dynamic limit is used > when job does not exist > should fail with job existence error 5ms
+ ✓ tests/rate_limiter.test.ts > Rate Limiter > when dynamic limit is used > when rate limit is too low > should move job to wait anyway 1027ms
+ ✓ tests/rate_limiter.test.ts > Rate Limiter > when dynamic limit is used > when passing maxJobs when getting rate limit ttl > when rate limit counter is lower than maxJobs > should returns 0 3ms
+ ✓ tests/rate_limiter.test.ts > Rate Limiter > when dynamic limit is used > when passing maxJobs when getting rate limit ttl > when rate limit counter is greater than maxJobs > should returns at least rate limit duration 1011ms
+ ✓ tests/rate_limiter.test.ts > Rate Limiter > when dynamic limit is used > when reaching max attempts and we want to move the job to failed > should throw Unrecoverable error 1107ms
+ ✓ tests/rate_limiter.test.ts > Rate Limiter > when dynamic limit is used > when priority is provided > should obey the rate limit respecting priority 1413ms
+ ✓ tests/rate_limiter.test.ts > Rate Limiter > when dynamic limit is used > when priority is provided > when priority is the same for some jobs > should get jobs in fifo order 256ms
+ ✓ tests/rate_limiter.test.ts > Rate Limiter > when dynamic limit is used > when priority is provided > when priority is different for some jobs > should get jobs in fifo order 1005ms
+ ✓ tests/rate_limiter.test.ts > Rate Limiter > when dynamic limit is used > when queue is paused > moves job to wait 355ms
+ ✓ tests/rate_limiter.test.ts > Rate Limiter > when dynamic limit is used > when removing rate limit > should process jobs normally 2007ms
+ ✓ tests/rate_limiter.test.ts > Rate Limiter > when dynamic limit is used > when removing rate limit > when maximumRateLimitDelay is reached > should continue processing jobs 3007ms
+ ✓ tests/rate_limiter.test.ts > Rate Limiter > when there are delayed jobs to promote > should promote jobs after maximumRateLimitDelay 3105ms
+ ✓ tests/rate_limiter.test.ts > Rate Limiter > when there are more added jobs than max limiter > processes jobs as max limiter from the beginning 3739ms
+ ✓ tests/rate_limiter.test.ts > Rate Limiter > when there are more added jobs than max limiter > when rate limit is max 1 > processes jobs as max limiter from the beginning 4710ms
+ ✓ tests/rate_limiter.test.ts > Rate Limiter > should obey priority 115ms
+ ✓ tests/flow.test.ts > flows > when removeOnFail is true in last pending child > moves parent to wait without getting stuck 22ms
+ ✓ tests/flow.test.ts > flows > when removeOnComplete is true in children > keeps children results in parent 6ms
+ ✓ tests/flow.test.ts > flows > when removeOnComplete contains age in children and time is reached > keeps children results in parent 3012ms
+ ✓ tests/flow.test.ts > flows > should process children before the parent 10ms
+ ✓ tests/flow.test.ts > flows > should allow parent opts on the root job 9ms
+ ✓ tests/flow.test.ts > flows > when removeChildDependency is called > when last child call this method > moves parent to wait 207ms
+ ✓ tests/flow.test.ts > flows > when removeChildDependency is called > when child is retrieved from getJob > does not restore the parent reference 3ms
+ ✓ tests/flow.test.ts > flows > when removeChildDependency is called > when there are pending children when calling this method > keeps parent in waiting-children state 308ms
+ ✓ tests/flow.test.ts > flows > when removeChildDependency is called > when parent does not exist > throws an error 5ms
+ ✓ tests/flow.test.ts > flows > when removeChildDependency is called > when child does not exist > throws an error 3ms
+ ✓ tests/flow.test.ts > flows > when ignoreDependencyOnFailure is provided > moves parent to wait after children fail 44ms
+ ✓ tests/flow.test.ts > flows > when removeDependencyOnFailure is provided > moves parent to wait after children fail 45ms
+stderr | tests/flow.test.ts > flows > when chaining flows at runtime using step jobs > when parent has pending children to be processed when trying to move it to completed > should fail parent with pending dependencies error
+Error: Job 1 has pending dependencies. moveToFinished
+    at finishedErrors (/tmp/bunroot/candidate/src/classes/finished-errors.ts:38:15)
+    at moveToFinished (/tmp/bunroot/candidate/src/classes/redis-queue-backend.ts:1207:18)
+    at moveToCompleted (/tmp/bunroot/candidate/src/classes/redis-queue-backend.ts:2443:31)
+    at /tmp/bunroot/candidate/src/classes/job.ts:675:59 {
+  code: -4
+}
+
+ ✓ tests/flow.test.ts > flows > when chaining flows at runtime using step jobs > should wait children as one step of the parent job 48ms
+ ✓ tests/flow.test.ts > flows > when chaining flows at runtime using step jobs > when parent has pending children to be processed when trying to move it to completed > should fail parent with pending dependencies error 15ms
+stderr | tests/flow.test.ts > flows > when chaining flows at runtime using step jobs > when parent has pending children to be processed when trying to move it to completed > when parent has pending children to be processed when trying to move it to completed > should fail parent with pending dependencies error
+Error: Job 1 has pending dependencies. moveToFinished
+    at finishedErrors (/tmp/bunroot/candidate/src/classes/finished-errors.ts:38:15)
+    at moveToFinished (/tmp/bunroot/candidate/src/classes/redis-queue-backend.ts:1207:18)
+    at moveToCompleted (/tmp/bunroot/candidate/src/classes/redis-queue-backend.ts:2443:31)
+    at /tmp/bunroot/candidate/src/classes/job.ts:675:59 {
+  code: -4
+}
+
+ ✓ tests/flow.test.ts > flows > when chaining flows at runtime using step jobs > when parent has pending children to be processed when trying to move it to completed > when parent has pending children to be processed when trying to move it to completed > should fail parent with pending dependencies error 118ms
+ ✓ tests/flow.test.ts > flows > when chaining flows at runtime using step jobs > when parent is not in waiting-children state when one child with failParentOnFailure failed > should fail parent when trying to move it to waiting children 1015ms
+ ✓ tests/flow.test.ts > flows > when chaining flows at runtime using step jobs > when parent is not in waiting-children state when one child with failParentOnFailure failed > when parent has another parent > should fail parent and grandparent when trying to move it to waiting children 1011ms
+ ✓ tests/flow.test.ts > flows > when chaining flows at runtime using step jobs > when parent failed before moving to waiting-children > should fail parent with last error 9ms
+ ✓ tests/flow.test.ts > flows > when queue is rate limited and parents fail with deferred failures > should not affect rate limit configuration 9ms
+ ✓ tests/flow.test.ts > flows > when moving jobs from wait to active continuing > begins with attemptsMade as 1 6ms
+ ✓ tests/flow.test.ts > flows > when defaultJobOptions is provided > processes children before the parent 8ms
+ ✓ tests/flow.test.ts > flows > when priority is provided > processes children before the parent respecting priority option 670ms
+ ✓ tests/flow.test.ts > flows > when backoff strategy is provided > retries a job after a delay if a fixed backoff is given 551ms
+ ✓ tests/flow.test.ts > flows > when continually adding jobs > adds jobs that do not exists 5ms
+ ✓ tests/flow.test.ts > flows > when continually adding jobs > processes parent jobs added while a child job is active 2006ms
+ ✓ tests/flow.test.ts > flows > when continually adding jobs > when job already have a parent > throws an error 3ms
+ ✓ tests/flow.test.ts > flows > when continually adding jobs > when child already existed and it is re-added with same parentId > moves parent to wait if child is already completed 1508ms
+ ✓ tests/flow.test.ts > flows > when custom prefix is set in flow producer > uses default prefix to add jobs 19ms
+ ✓ tests/flow.test.ts > flows > when priority option is provided > should process children before the parent prioritizing jobs per queueName 169ms
+ ✓ tests/flow.test.ts > flows > when failParentOnFailure option is provided > when parent is in waiting-children state > should move parent to failed when child is moved to failed 214ms
+ ✓ tests/flow.test.ts > flows > when failParentOnFailure option is provided > when parent is in delayed state > should move parent to failed when child is moved to failed 510ms
+ ✓ tests/flow.test.ts > flows > when failParentOnFailure option is provided > when parent is in prioritized state > should move parent to failed when child is moved to failed 2010ms
+ ✓ tests/flow.test.ts > flows > when failParentOnFailure option is provided > when removeOnFail option is provided > should remove parent when child is moved to failed 216ms
+ ✓ tests/flow.test.ts > flows > when failParentOnFailure option is provided > when removeDependencyOnFailure is provided > moves parent to wait after children fail 15ms
+ ✓ tests/flow.test.ts > flows > when failParentOnFailure option is provided > when ignoreDependencyOnFailure is provided > moves parent to wait after children fail 19ms
+ ✓ tests/flow.test.ts > flows > when continueParentOnFailure option is provided > should start processing parent after a child fails 13ms
+ ✓ tests/flow.test.ts > flows > when continueParentOnFailure option is provided > should start processing parent after child fails even with more unprocessed children 13ms
+ ✓ tests/flow.test.ts > flows > when continueParentOnFailure option is provided > should ignore parent if a child has already failed and another one fails afterwards 12ms
+ ✓ tests/flow.test.ts > flows > when continueParentOnFailure option is provided > should move the parent to delayed after a child fails 1010ms
+ ✓ tests/flow.test.ts > flows > when continueParentOnFailure option is provided > should move the parent to prioritized after a child fails 6ms
+ ✓ tests/flow.test.ts > flows > should get paginated processed dependencies keys 22ms
+ ✓ tests/flow.test.ts > flows > should get a flow tree 5ms
+ ✓ tests/flow.test.ts > flows > should get part of flow tree 3ms
+ ✓ tests/flow.test.ts > flows > when prefix is not provided in getFlow > should get a flow tree using default prefix from FlowProducer 4ms
+ ✓ tests/flow.test.ts > flows > when parent has removeOnComplete as true > removes processed data 6ms
+ ✓ tests/flow.test.ts > flows > should process parent when children is an empty array 4ms
+ ✓ tests/flow.test.ts > flows > should allow passing custom jobId in options 157ms
+ ✓ tests/flow.test.ts > flows > should process a chain of jobs 7ms
+ ✓ tests/flow.test.ts > flows > when parent has delay > moves process to delayed after children are processed 3506ms
+ ✓ tests/flow.test.ts > flows > when children have delay > moves children to delayed 2511ms
+ ✓ tests/flow.test.ts > flows > should not process parent if child fails 5ms
+ ✓ tests/flow.test.ts > flows > should not process parent until queue is unpaused 507ms
+ ✓ tests/flow.test.ts > flows > .addBulk > should allow parent opts on the root job 7ms
+ ✓ tests/flow.test.ts > flows > .addBulk > should process jobs 5ms
+ ✓ tests/flow.test.ts > flows > .removeUnprocessedChildren > should remove unprocessed children 6ms
+ ✓ tests/flow.test.ts > flows > .removeUnprocessedChildren > should not remove completed children 70ms
+ ✓ tests/flow.test.ts > flows > .remove > should remove all children when removing a parent 4ms
+ ✓ tests/flow.test.ts > flows > .remove > when removeChildren option is provided as false > does not remove any children when removing a parent 5ms
+ ✓ tests/flow.test.ts > flows > .remove > when there are processed children > removes all children when removing a parent 38ms
+ ✓ tests/flow.test.ts > flows > .remove > when there are processed children > when there is a grand parent > removes all children when removing a parent, but not grandparent 39ms
+ ✓ tests/flow.test.ts > flows > .remove > when there are unsuccessful children > removes all children when removing a parent 10ms
+ ✓ tests/flow.test.ts > flows > .remove > should not remove anything if there is a locked job in the tree 5ms
+ ✓ tests/flow.test.ts > flows > .remove > should remove from parent dependencies and move parent to wait 4ms
+ ✓ tests/flow.test.ts > flows > .remove > should only move parent to wait when all children have been removed 3ms
+ ✓ tests/flow.test.ts > flows > .retry > when retrying a failed child > should update parent dependencies reference 30ms
+ ✓ tests/flow.test.ts > flows > .retry > when retrying a failed child with ignoreDependencyOnFailure > should move the child back to the parent dependencies 4ms
+ ✓ tests/flow.test.ts > flows > .retry > when retrying a failed child with continueParentOnFailure > should move the child back to the parent dependencies 4ms
+ ✓ tests/flow.test.ts > flows > .retry > when retrying a completed child > should update parent dependencies reference 608ms
+ ✓ tests/flow.test.ts > flows > .retry > when retrying a failed child with ignoreDependencyOnFailure using queue.retryJobs > should move the child back to the parent dependencies 5ms
+ ✓ tests/flow.test.ts > flows > .retry > when retrying completed children using queue.retryJobs > should move the children back to the parent dependencies 4ms
+ ✓ tests/flow.test.ts > flows > when root parent job has deduplication option > should reject deduplication when root node has children 2ms
+ ✓ tests/flow.test.ts > flows > when root parent job has deduplication option > should reject deduplication on nested nodes with children 1ms
+ ✓ tests/flow.test.ts > flows > when root parent job has deduplication option > should return deduplicated root job id when flow has no children 2ms
+ ✓ tests/flow.test.ts > flows > when root parent job has deduplication option > should return deduplicated ids from addBulk when roots share deduplication id 2ms
+ ✓ tests/flow.test.ts > flows > when root parent job has deduplication option > should return same deduplicated id for concurrent add calls 2ms
+ ✓ tests/flow.test.ts > flows > when root parent job has deduplication option > should not corrupt id mapping for successful jobs when some addBulk commands fail 2ms
+ ✓ tests/flow.test.ts > flows > when add is called with a non-existing parent > throws an error instead of silently dropping the job 2ms
+ ✓ tests/deduplication.test.ts > deduplication > when job is deduplicated when added again with same deduplication id > emits deduplicated event 13ms
+ ✓ tests/deduplication.test.ts > deduplication > when job is deduplicated when added again with same deduplication id > when job key no longer exists > removes stale deduplication key and adds the new job 4ms
+ ✓ tests/deduplication.test.ts > deduplication > when job is deduplicated when added again with same deduplication id > when job key no longer exists > when the existing deduplication key points to a missing job > recovers a stale keepLastIfActive key even when the next add uses ttl and extend 155ms
+ ✓ tests/deduplication.test.ts > deduplication > when job is deduplicated when added again with same deduplication id > when job key no longer exists > when the existing deduplication key points to a missing job > discards the pending next job payload of the stale winner 112ms
+ ✓ tests/deduplication.test.ts > deduplication > when job is deduplicated when added again with same deduplication id > when job key no longer exists > when the existing deduplication key points to a missing job > does not clear an existing ttl window when the next add omits ttl 3ms
+ ✓ tests/deduplication.test.ts > deduplication > when job is deduplicated when added again with same deduplication id > when job key no longer exists > when replace is provided as true without ttl > removes stale deduplication key and adds the new job 3ms
+ ✓ tests/deduplication.test.ts > deduplication > when job is deduplicated when added again with same deduplication id > when removing deduplication key > should stop deduplication 210ms
+ ✓ tests/deduplication.test.ts > deduplication > when job is deduplicated when added again with same deduplication id > when removing deduplication key > when using removeDeduplicationKey from job instance > when job id is still present inside deduplication key > should stop deduplication 209ms
+ ✓ tests/deduplication.test.ts > deduplication > when job is deduplicated when added again with same deduplication id > when removing deduplication key > when using removeDeduplicationKey from job instance > when job id is not present inside deduplication key > should not stop deduplication 408ms
+ ✓ tests/deduplication.test.ts > deduplication > when job is deduplicated when added again with same deduplication id > when ttl is provided > uses a fixed time period and emits deduplicated event 2209ms
+ ✓ tests/deduplication.test.ts > deduplication > when job is deduplicated when added again with same deduplication id > when ttl is provided > when removing deduplicated job > removes deduplication key 2212ms
+ ✓ tests/deduplication.test.ts > deduplication > when job is deduplicated when added again with same deduplication id > when ttl is provided > when extend is provided as true > resets ttl 611ms
+ ✓ tests/deduplication.test.ts > deduplication > when job is deduplicated when added again with same deduplication id > when ttl is provided > when replace is provided as true > removes last job if it is in delayed state 868ms
+ ✓ tests/deduplication.test.ts > deduplication > when job is deduplicated when added again with same deduplication id > when ttl is provided > when extend is provided as true > resets ttl 507ms
+ ✓ tests/deduplication.test.ts > deduplication > when job is deduplicated when added again with same deduplication id > when ttl is provided > when extend and replace options are provided as true > resets ttl and removes last job if it is in delayed state 904ms
+ ✓ tests/deduplication.test.ts > deduplication > when job is deduplicated when added again with same deduplication id > when ttl is not provided > waits until job is finished before removing deduplication key 612ms
+ ✓ tests/deduplication.test.ts > deduplication > when job is deduplicated when added again with same deduplication id > when ttl is not provided > when replace is provided as true > removes last job if it is in delayed state 747ms
+ ✓ tests/deduplication.test.ts > deduplication > when job is deduplicated when added again with same deduplication id > when ttl is not provided > when removing deduplicated job > removes deduplication key 106ms
+ ✓ tests/deduplication.test.ts > deduplication > when job is deduplicated when added again with same deduplication id > when ttl is not provided > when removing deduplicated job > when manual removal on a deduplicated job in finished state > does not remove deduplication key 208ms
+ ✓ tests/deduplication.test.ts > deduplication > when keepLastIfActive is true > should store next job data and create new job when active job completes 511ms
+ ✓ tests/deduplication.test.ts > deduplication > when keepLastIfActive is true > should still deduplicate when dedup job is waiting (not active) 3ms
+ ✓ tests/deduplication.test.ts > deduplication > when keepLastIfActive is true > stores the next job when the deduplicated job is at index 0 of the active list 3ms
+ ✓ tests/deduplication.test.ts > deduplication > when keepLastIfActive is true > stores the next job when the deduplicated job is active past index 0 3ms
+ ✓ tests/deduplication.test.ts > deduplication > when keepLastIfActive is true > does not store a next job when other jobs are active but this one is not 3ms
+ ✓ tests/deduplication.test.ts > deduplication > when keepLastIfActive is true > should replace stored data with latest when multiple jobs added while active 509ms
+ ✓ tests/deduplication.test.ts > deduplication > when keepLastIfActive is true > should not allow parallel execution of jobs with same dedup id 412ms
+ ✓ tests/deduplication.test.ts > deduplication > when keepLastIfActive is true > should properly clean up after both jobs complete 312ms
+ ✓ tests/deduplication.test.ts > deduplication > when keepLastIfActive is true > should work with ttl option 306ms
+ ✓ tests/deduplication.test.ts > deduplication > when keepLastIfActive is true > should add next job to paused list when queue is paused and process after resume 506ms
+ ✓ tests/deduplication.test.ts > deduplication > when keepLastIfActive is true > should allow delay with keepLastIfActive 2ms
+ ✓ tests/deduplication.test.ts > deduplication > when keepLastIfActive is true > should allow queue default delay with keepLastIfActive 3ms
+ ✓ tests/deduplication.test.ts > deduplication > when keepLastIfActive is true > should requeue with delay when active job completes and next job was stored 2590ms
+ ✓ tests/deduplication.test.ts > deduplication > when keepLastIfActive is true > should requeue next job when active job fails permanently 510ms
+ ✓ tests/deduplication.test.ts > deduplication > when keepLastIfActive is true > should requeue next job only after retries are exhausted 497ms
+ ✓ tests/deduplication.test.ts > deduplication > when keepLastIfActive is true > should prevent parallel execution even when ttl expires while job is active 506ms
+ ✓ tests/deduplication.test.ts > deduplication > when keepLastIfActive is true > should preserve custom jobId when requeuing proto-job 506ms
+ ✓ tests/stalled_jobs.test.ts > stalled jobs > process stalled jobs when starting a queue 1127ms
+ ✓ tests/stalled_jobs.test.ts > stalled jobs > don't process stalled jobs when starting a queue with skipStalledCheck 1006ms
+ ✓ tests/stalled_jobs.test.ts > stalled jobs > when stalled jobs stall more than allowable stalled limit > moves jobs to failed 1023ms
+ ✓ tests/stalled_jobs.test.ts > stalled jobs > when stalled jobs stall more than allowable stalled limit > when retrying jobs > keeps stalledCounter 1124ms
+ ✓ tests/stalled_jobs.test.ts > stalled jobs > when stalled jobs stall more than allowable stalled limit > moves jobs to failed with maxStalledCount > 1 3030ms
+ ✓ tests/stalled_jobs.test.ts > stalled jobs > when stalled jobs stall more than allowable stalled limit > when failParentOnFailure is provided as true > should move parent to failed when child is moved to failed 1117ms
+ ✓ tests/stalled_jobs.test.ts > stalled jobs > when stalled jobs stall more than allowable stalled limit > when continueParentOnFailure is provided as true > should start processing parent when child is moved to failed 1116ms
+ ✓ tests/stalled_jobs.test.ts > stalled jobs > when stalled jobs stall more than allowable stalled limit > when ignoreDependencyOnFailure is provided as true > should move parent to waiting when child is moved to failed and save child failedReason 1120ms
+ ✓ tests/stalled_jobs.test.ts > stalled jobs > when stalled jobs stall more than allowable stalled limit > when removeDependencyOnFailure is provided as true > should move parent to waiting when child is moved to failed 1114ms
+ ✓ tests/stalled_jobs.test.ts > stalled jobs > when stalled jobs stall more than allowable stalled limit > when removeOnFail is provided as a number > keeps the specified number of jobs in failed 1014ms
+ ✓ tests/stalled_jobs.test.ts > stalled jobs > when stalled jobs stall more than allowable stalled limit > when removeOnFail is provided as boolean > when removeOnFail is provided as true > removes all job keys 1016ms
+ ✓ tests/stalled_jobs.test.ts > stalled jobs > when stalled jobs stall more than allowable stalled limit > when removeOnFail is provided as boolean > keeps the jobs with removeOnFail as false in failed 1115ms
+ ✓ tests/stalled_jobs.test.ts > stalled jobs > when stalled jobs stall more than allowable stalled limit > when removeOnFail is provided as a object > keeps the specified number of jobs in failed respecting the age 1017ms
+ ✓ tests/stalled_jobs.test.ts > stalled jobs > jobs not stalled while lock is extended 608ms
+ ✓ tests/events.redis.test.ts > events (redis-only) > when the blocking XREAD never settles (#4479) > recovers via the readEvents watchdog 1064ms
+ ✓ tests/events.redis.test.ts > events (redis-only) > when the event-stream client is already reconnecting (#4585) > does not disconnect a reconnecting client, letting IORedis recover 1053ms
+ ✓ tests/events.redis.test.ts > events (redis-only) > when the event-stream client is already reconnecting (#4585) > drops the abandoned read once the client is live again 1056ms
+ ✓ tests/events.redis.test.ts > events (redis-only) > when a healthy event-stream connection is torn down by the watchdog (#4585 ready-path race) > reconnects instead of racing the disconnect and dying 1086ms
+ ✓ tests/events.redis.test.ts > events (redis-only) > when jobs removal is attempted on non-existed records > should not publish removed events 18ms
+ ✓ tests/events.redis.test.ts > events (redis-only) > when maxLen is 0 > should trim events automatically 315ms
+ ✓ tests/events.redis.test.ts > events (redis-only) > when maxLen is greater than 0 > should trim events so its length is at least the threshold 4091ms
+ ✓ tests/events.redis.test.ts > events (redis-only) > when maxLen is greater than 0 > when jobs are moved to delayed > should trim events so its length is at least the threshold 4101ms
+ ✓ tests/events.redis.test.ts > events (redis-only) > when maxLen is greater than 0 > when jobs are retried immediately > should trim events so its length is at least the threshold 2129ms
+ ✓ tests/events.redis.test.ts > events (redis-only) > when maxLen is greater than 0 > when jobs removal is attempted > should trim events so its length is at least the threshold 28ms
+ ✓ tests/events.redis.test.ts > events (redis-only) > should trim events manually 4ms
+ ✓ tests/events.redis.test.ts > events (redis-only) > when publishing custom events > emits waiting when a job has been added 256ms
+
+ ✓ tests/concurrency.test.ts > Concurrency > should run max concurrency for jobs added 1537ms
+
+ ✓ tests/concurrency.test.ts > Concurrency > should run max concurrency for jobs added 1622ms
+ ✓ tests/concurrency.test.ts > Concurrency > emits drained global event only once when worker is idle 4007ms
+ ✓ tests/concurrency.test.ts > Concurrency > when global dynamic limit is used > should run max concurrency for jobs added respecting global dynamic limit 1770ms
+ ✓ tests/concurrency.test.ts > Concurrency > when global dynamic limit is used > when max limiter is greater than 1 > should run max concurrency for jobs added first processed 2526ms
+
+ ✓ tests/concurrency.test.ts > Concurrency > when moving job to waiting-children > should run max concurrency for jobs added first processed 824ms
+ ✓ tests/concurrency.test.ts > Concurrency > should automatically process stalled jobs respecting group order 1138ms
+ ✓ tests/concurrency.test.ts > Concurrency > when jobs use backoff strategy > processes jobs without getting stuck 236ms
+ ✓ tests/concurrency.test.ts > Concurrency > when jobs use backoff strategy > when backoff is 0 > processes jobs without getting stuck 303ms
+ ✓ tests/concurrency.test.ts > Concurrency > when lock is expired and removing a job in active state > does not get stuck in max state 56ms
+ ✓ tests/delay.test.ts > Delayed jobs > should process a delayed job only after delayed time 1064ms
+ ✓ tests/delay.test.ts > Delayed jobs > when delay is provided as 0 > when priority is not provided > should add job directly into wait state 4ms
+ ✓ tests/delay.test.ts > Delayed jobs > when delay is provided as 0 > when priority is provided > should add job directly into prioritized state 2ms
+ ✓ tests/delay.test.ts > Delayed jobs > when queue is paused > should keep moving delayed jobs to waiting 2601ms
+ ✓ tests/delay.test.ts > Delayed jobs > should process a delayed job added after an initial long delayed job 2012ms
+ ✓ tests/delay.test.ts > Delayed jobs > should process delayed jobs in correct order respecting delay 2315ms
+ ✓ tests/delay.test.ts > Delayed jobs > should process delayed jobs with several workers respecting delay 714ms
+ ✓ tests/delay.test.ts > Delayed jobs > should process delayed jobs concurrently respecting delay and concurrency 796ms
+ ✓ tests/delay.test.ts > Delayed jobs > when failed jobs are retried and moved to delayed > processes jobs without getting stuck 328ms
+ ✓ tests/delay.test.ts > Delayed jobs > should process delayed jobs with exact same timestamps in correct order (FIFO) 1092ms
+ ✓ tests/delay.test.ts > Delayed jobs > when autorun option is provided as false > should process a delayed job only after delayed time 1095ms
+ ✓ tests/worker.redis.test.ts > workers (redis-only) > should cap progress events 55ms
+ ✓ tests/worker.redis.test.ts > workers (redis-only) > do not call moveToActive more than concurrency factor + 1 1269ms
+ ✓ tests/worker.redis.test.ts > workers (redis-only) > do not call moveToActive more than number of jobs + 2 272ms
+ ✓ tests/worker.redis.test.ts > workers (redis-only) > when 0.002 is used as blocktimeout > should not block forever 63ms
+ ✓ tests/worker.redis.test.ts > workers (redis-only) > should not leave orphaned job data when limit is less than removable jobs 1811ms
+ ✓ tests/worker.redis.test.ts > workers (redis-only) > when prioritized jobs are added > when priority counter is having a high number > should process jobs by priority 400ms
+ ✓ tests/worker.redis.test.ts > workers (redis-only) > keeps locks for all the jobs that are processed concurrently 2017ms
+ ✓ tests/worker.redis.test.ts > workers (redis-only) > emits error if lock is lost 1260ms
+ ✓ tests/worker.redis.test.ts > workers (redis-only) > emits error if lock is "stolen" 2007ms
+ ✓ tests/worker.redis.test.ts > workers (redis-only) > deletes token after moving jobs to delayed 452ms
+ ✓ tests/worker.redis.test.ts > workers (redis-only) > should clear job from stalled set when job completed 105ms
+ ✓ tests/worker.redis.test.ts > workers (redis-only) > when creating children at runtime > should wait children as one step of the parent job 410ms
+ ✓ tests/worker.redis.test.ts > workers (redis-only) > when creating children at runtime > when skip attempt option is provided as true > should wait children as one step of the parent job whithout incrementing attemptMade 409ms
+ ✓ tests/worker.redis.test.ts > workers (redis-only) > Manually process jobs > when move job to waiting-children > allows to move parent job to waiting-children 9ms
+ ✓ tests/worker.redis.test.ts > workers (redis-only) > Manually process jobs > should get paginated unprocessed dependencies keys 13ms
+ ✓ tests/job_scheduler.test.ts > Job Scheduler > when job scheduler emits an error > should forward error to queue.on("error") 13ms
+ ✓ tests/job_scheduler.test.ts > Job Scheduler > when endDate is not greater than current timestamp > throws an error 3ms
+ ✓ tests/job_scheduler.test.ts > Job Scheduler > when removed debounce option is provided > throws an error 3ms
+ ✓ tests/job_scheduler.test.ts > Job Scheduler > it should stop repeating after endDate 20ms
+ ✓ tests/job_scheduler.test.ts > Job Scheduler > when jobs have the same cron pattern and different job scheduler id > should create multiple jobs 10ms
+ ✓ tests/job_scheduler.test.ts > Job Scheduler > when job schedulers have same id and different every pattern > should create only one job scheduler 4ms
+ ✓ tests/job_scheduler.test.ts > Job Scheduler > when job schedulers are upserted in quick succession > should create only one job scheduler and one delayed job 6ms
+ ✓ tests/job_scheduler.test.ts > Job Scheduler > when job schedulers are upserted in quick succession > should create only one job scheduler and one delayed job with different settings 6ms
+ ✓ tests/job_scheduler.test.ts > Job Scheduler > when job schedulers are upserted in quick succession > should respect offset when upserting a job scheduler with every 3ms
+ ✓ tests/job_scheduler.test.ts > Job Scheduler > when job schedulers are upserted in quick succession > should respect offset on first upsert when offset slot is in the future 3ms
+ ✓ tests/job_scheduler.test.ts > Job Scheduler > when job schedulers are upserted in quick succession > when next delayed job already exists and it is not in waiting or delayed states > updates the scheduler with the new settings 5ms
+ ✓ tests/job_scheduler.test.ts > Job Scheduler > when job schedulers are upserted in quick succession > when next delayed job already exists and it is not in waiting or delayed states > when job scheduler is being updated with upsertJobScheduler method > updates scheduler and creates next iteration 8ms
+ ✓ tests/job_scheduler.test.ts > Job Scheduler > when job schedulers are upserted in quick succession > when next delayed job already exists and it is not in waiting or delayed states > when job scheduler is being updated with upsertJobScheduler method > should reschedule immediately when changing every interval 6ms
+ ✓ tests/job_scheduler.test.ts > Job Scheduler > when job schedulers are upserted in quick succession > when next delayed job already exists and it is not in waiting or delayed states > when job scheduler is being updated with upsertJobScheduler method > when job scheduler is removed and upserted > throws error and does not add job scheduler 12ms
+ ✓ tests/job_scheduler.test.ts > Job Scheduler > when job schedulers are upserted in quick succession > when next delayed job already exists and it is not in waiting or delayed states > when job scheduler is being updated with upsertJobScheduler method > when job scheduler is removed and updated > emits duplicated event and does not add job scheduler 8ms
+ ✓ tests/job_scheduler.test.ts > Job Scheduler > when job schedulers are upserted in quick succession > when generated job is in waiting state > should upsert scheduler by removing waiting job 4ms
+ ✓ tests/job_scheduler.test.ts > Job Scheduler > when job schedulers are upserted in quick succession > when generated job is in paused state > should upsert scheduler by removing paused job 4ms
+ ✓ tests/job_scheduler.test.ts > Job Scheduler > when job schedulers are upserted in quick succession > when generated job is in prioritized state > should upsert scheduler by removing prioritized job 4ms
+ ✓ tests/job_scheduler.test.ts > Job Scheduler > when clocks are slightly out of sync > should create only one delayed job 3ms
+ ✓ tests/job_scheduler.test.ts > Job Scheduler > when job scheduler does not exist > should return undefined 2ms
+ ✓ tests/job_scheduler.test.ts > Job Scheduler > should create job schedulers with different cron patterns 30ms
+ ✓ tests/job_scheduler.test.ts > Job Scheduler > should repeat every 2 seconds 10ms
+ ✓ tests/job_scheduler.test.ts > Job Scheduler > should repeat every 2 seconds with startDate in future 9ms
+ ✓ tests/job_scheduler.test.ts > Job Scheduler > should repeat every 2 seconds with startDate in past 9ms
+ ✓ tests/job_scheduler.test.ts > Job Scheduler > when using removeOnComplete > should remove repeated job 11ms
+ ✓ tests/job_scheduler.test.ts > Job Scheduler > when custom cron strategy is provided > should repeat every 2 seconds 11ms
+ ✓ tests/job_scheduler.test.ts > Job Scheduler > when custom cron strategy is provided > when differentiating strategy by job name > should repeat every 2 seconds 12ms
+ ✓ tests/job_scheduler.test.ts > Job Scheduler > when using 'every' option is on same millis as iteration time > should repeat every 2 seconds and start immediately 8ms
+ ✓ tests/job_scheduler.test.ts > Job Scheduler > when using 'every' and time is one millisecond before iteration time > should repeat every 2 seconds and start immediately 6ms
+ ✓ tests/job_scheduler.test.ts > Job Scheduler > when using 'every' and time is one millisecond after iteration time > should repeat every 2 seconds and start immediately 5ms
+ ✓ tests/job_scheduler.test.ts > Job Scheduler > when 'every' and offset are provided on upsert > aligns the first job to the next offset slot after now 3ms
+ ✓ tests/job_scheduler.test.ts > Job Scheduler > when using 'every' and offset plus delay of being picked by a worker is same as delay > should repeat every 2 seconds and start immediately 6ms
+ ✓ tests/job_scheduler.test.ts > Job Scheduler > should start immediately even after removing the job scheduler and adding it again 5ms
+ ✓ tests/job_scheduler.test.ts > Job Scheduler > should repeat once a day for 5 days and start immediately using endDate 25ms
+ ✓ tests/job_scheduler.test.ts > Job Scheduler > should repeat once a day for 5 days and start immediately 8ms
+ ✓ tests/job_scheduler.test.ts > Job Scheduler > should repeat once a day after startDate that is equal as first iteration 19ms
+ ✓ tests/job_scheduler.test.ts > Job Scheduler > should repeat once a day for 5 days 11ms
+ ✓ tests/job_scheduler.test.ts > Job Scheduler > should repeat 7:th day every month at 9:25 162ms
+ ✓ tests/job_scheduler.test.ts > Job Scheduler > when 2 jobs with the same options are added > creates only one job 3ms
+ ✓ tests/job_scheduler.test.ts > Job Scheduler > when repeatable job is promoted > keeps one repeatable and one delayed after being processed 6ms
+ ✓ tests/job_scheduler.test.ts > Job Scheduler > should allow removing a named repeatable job 7ms
+ ✓ tests/job_scheduler.test.ts > Job Scheduler > when repeatable job does not exist > returns false 2ms
+ ✓ tests/job_scheduler.test.ts > Job Scheduler > when repeatable job fails > should continue repeating 7ms
+ ✓ tests/job_scheduler.test.ts > Job Scheduler > when repeatable job fails > should not create a new delayed job if the failed job is retried with retryJobs 6ms
+ ✓ tests/job_scheduler.test.ts > Job Scheduler > when repeatable job fails > should not create a new delayed job if the failed job is retried with Job.retry() 5ms
+ ✓ tests/job_scheduler.test.ts > Job Scheduler > when every option is provided > should keep only one waiting job if adding a new repeatable job with the same id 3ms
+ ✓ tests/job_scheduler.test.ts > Job Scheduler > when pattern option is provided > should keep only one delayed job if adding a new repeatable job with the same id 4ms
+ ✓ tests/job_scheduler.test.ts > Job Scheduler > when pattern option is provided > should update delayed job timestamp when upserting with different pattern 3ms
+ ✓ tests/job_scheduler.test.ts > Job Scheduler > should allow adding a repeatable job after removing it 5ms
+ ✓ tests/job_scheduler.test.ts > Job Scheduler > should not allow to remove a delayed job if it belongs to a repeatable job 7ms
+ ✓ tests/job_scheduler.test.ts > Job Scheduler > should not remove delayed jobs if they belong to a repeatable job when using drain 4ms
+ ✓ tests/job_scheduler.test.ts > Job Scheduler > should not remove delayed jobs if they belong to a repeatable job when using clean 3ms
+ ✓ tests/job_scheduler.test.ts > Job Scheduler > should keep one delayed job if updating a repeatable job's every option 2ms
+ ✓ tests/job_scheduler.test.ts > Job Scheduler > when deleting and upserting a job scheduler > should not throw error while processing jobs 657ms
+stderr | tests/job_scheduler.test.ts > Job Scheduler > when job scheduler update fails in worker > should allow repeatable jobs to be retried infinitely when stalled
+Error: Simulated scheduler update failure (attempt 1)
+    at /tmp/bunroot/candidate/tests/job_scheduler.test.ts:2914:17
+    at /tmp/bunroot/candidate/src/classes/worker.ts:1002:34
+    at retryIfFailed (/tmp/bunroot/candidate/src/classes/worker.ts:1592:22)
+    at nextJobFromJobData (/tmp/bunroot/candidate/src/classes/worker.ts:981:49)
+
+stderr | tests/job_scheduler.test.ts > Job Scheduler > when job scheduler update fails in worker > should allow repeatable jobs to be retried infinitely when stalled
+Error: Failed to add repeatable job for next iteration: Simulated scheduler update failure (attempt 1)
+    at nextJobFromJobData (/tmp/bunroot/candidate/src/classes/worker.ts:1031:33)
+
+ ✓ tests/job_scheduler.test.ts > Job Scheduler > when job scheduler update fails in worker > should move job to delayed with backoff when scheduler update fails 2006ms
+stderr | tests/job_scheduler.test.ts > Job Scheduler > when job scheduler update fails in worker > should allow repeatable jobs to be retried infinitely when stalled
+Error: Simulated scheduler update failure (attempt 2)
+    at /tmp/bunroot/candidate/tests/job_scheduler.test.ts:2914:17
+    at /tmp/bunroot/candidate/src/classes/worker.ts:1002:34
+    at retryIfFailed (/tmp/bunroot/candidate/src/classes/worker.ts:1592:22)
+    at nextJobFromJobData (/tmp/bunroot/candidate/src/classes/worker.ts:981:49)
+
+stderr | tests/job_scheduler.test.ts > Job Scheduler > when job scheduler update fails in worker > should allow repeatable jobs to be retried infinitely when stalled
+Error: Failed to add repeatable job for next iteration: Simulated scheduler update failure (attempt 2)
+    at nextJobFromJobData (/tmp/bunroot/candidate/src/classes/worker.ts:1031:33)
+
+stderr | tests/job_scheduler.test.ts > Job Scheduler > when job scheduler update fails in worker > should allow repeatable jobs to be retried infinitely when stalled
+Error: Simulated scheduler update failure (attempt 3)
+    at /tmp/bunroot/candidate/tests/job_scheduler.test.ts:2914:17
+    at /tmp/bunroot/candidate/src/classes/worker.ts:1002:34
+    at retryIfFailed (/tmp/bunroot/candidate/src/classes/worker.ts:1592:22)
+    at nextJobFromJobData (/tmp/bunroot/candidate/src/classes/worker.ts:981:49)
+
+stderr | tests/job_scheduler.test.ts > Job Scheduler > when job scheduler update fails in worker > should allow repeatable jobs to be retried infinitely when stalled
+Error: Failed to add repeatable job for next iteration: Simulated scheduler update failure (attempt 3)
+    at nextJobFromJobData (/tmp/bunroot/candidate/src/classes/worker.ts:1031:33)
+
+ ✓ tests/job_scheduler.test.ts > Job Scheduler > when job scheduler update fails in worker > should allow repeatable jobs to be retried infinitely when stalled 3224ms
+ ✓ tests/job_scheduler.test.ts > Job Scheduler > when job scheduler update fails in worker > should fail regular jobs after maxStalledCount but allow repeatable jobs infinite retries 2008ms
+ ✓ tests/job_scheduler.test.ts > Job Scheduler > should not repeat more than 5 times 9ms
+ ✓ tests/job_scheduler.test.ts > Job Scheduler > should processes delayed jobs by priority 4ms
+ ✓ tests/job_scheduler.test.ts > Job Scheduler > should use ".every" as a valid interval 14ms
+ ✓ tests/job_scheduler.test.ts > Job Scheduler > should repeat every day with a startDate in the future 7ms
+ ✓ tests/job_scheduler.test.ts > Job Scheduler > should throw an error when using .pattern and .every simultaneously 2ms
+ ✓ tests/job_scheduler.test.ts > Job Scheduler > should throw an error when not specifying .pattern or .every 2ms
+ ✓ tests/job_scheduler.test.ts > Job Scheduler > should throw an error when using .immediately and .startDate simultaneously 2ms
+ ✓ tests/job_scheduler.test.ts > Job Scheduler > should return a valid job with the job's options and data passed as the job template 2ms
+ ✓ tests/job_scheduler.test.ts > Job Scheduler > should emit a waiting event when adding a repeatable job to the waiting list 4ms
+ ✓ tests/job_scheduler.test.ts > Job Scheduler > should have the right count value 4ms
+ ✓ tests/job_scheduler.test.ts > Job Scheduler > should schedule next "every" repeatable job after promote 5ms
+ ✓ tests/job_scheduler.test.ts > Job Scheduler > should schedule next "pattern" repeatable job after promote 6ms
+ ✓ tests/job_scheduler.test.ts > Job Scheduler > should schedule next "pattern" repeatable job after promote with immediately 7ms
+ ✓ tests/job_scheduler.test.ts > Job Scheduler > worker should start processing repeatable jobs after drain 6ms
+ ✓ tests/job_scheduler.test.ts > Job Scheduler > when job scheduler id contains 5 or more colon segments > should not create duplicate schedulers after a job completes (issue #3828) 6ms
+ ✓ tests/job_scheduler.test.ts > Job Scheduler > when job scheduler id contains 5 or more colon segments > should classify a real scheduler id with 5+ segments via isJobScheduler 2ms
+ ✓ tests/relay.test.ts > Relay (redis) > backend contract > registers nodes and renews their lease 6ms
+ ✓ tests/relay.test.ts > Relay (redis) > backend contract > extends the inbox expiry when refreshing a node registration 705ms
+ ✓ tests/relay.test.ts > Relay (redis) > backend contract > does not read pending inbox entries after a node lease expires 155ms
+ ✓ tests/relay.test.ts > Relay (redis) > backend contract > validates node and endpoint ids 3ms
+ ✓ tests/relay.test.ts > Relay (redis) > backend contract > rejects subscriptions of unregistered nodes 1ms
+ ✓ tests/relay.test.ts > Relay (redis) > backend contract > rejects subscriptions of expired nodes before they are swept 255ms
+ ✓ tests/relay.test.ts > Relay (redis) > backend contract > rejects the invalid pattern "" 1ms
+ ✓ tests/relay.test.ts > Relay (redis) > backend contract > rejects the invalid pattern "a..b" 1ms
+ ✓ tests/relay.test.ts > Relay (redis) > backend contract > rejects the invalid pattern "a.>.c" 1ms
+ ✓ tests/relay.test.ts > Relay (redis) > backend contract > rejects the invalid pattern ">.a" 1ms
+ ✓ tests/relay.test.ts > Relay (redis) > backend contract > rejects the invalid pattern "a.b*" 1ms
+ ✓ tests/relay.test.ts > Relay (redis) > backend contract > rejects the invalid pattern "a.>>" 1ms
+ ✓ tests/relay.test.ts > Relay (redis) > backend contract > rejects the invalid pattern "a b" 1ms
+ ✓ tests/relay.test.ts > Relay (redis) > backend contract > rejects the invalid pattern "$conn.*" 1ms
+ ✓ tests/relay.test.ts > Relay (redis) > backend contract > rejects the invalid pattern "*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*" 1ms
+ ✓ tests/relay.test.ts > Relay (redis) > backend contract > rejects publishing to the invalid topic "" 1ms
+ ✓ tests/relay.test.ts > Relay (redis) > backend contract > rejects publishing to the invalid topic "." 1ms
+ ✓ tests/relay.test.ts > Relay (redis) > backend contract > rejects publishing to the invalid topic "a." 1ms
+ ✓ tests/relay.test.ts > Relay (redis) > backend contract > rejects publishing to the invalid topic ".a" 0ms
+ ✓ tests/relay.test.ts > Relay (redis) > backend contract > rejects publishing to the invalid topic "a..b" 1ms
+ ✓ tests/relay.test.ts > Relay (redis) > backend contract > rejects publishing to the invalid topic "a b" 0ms
+ ✓ tests/relay.test.ts > Relay (redis) > backend contract > rejects publishing to the invalid topic "a.b/c" 1ms
+ ✓ tests/relay.test.ts > Relay (redis) > backend contract > rejects publishing to the invalid topic "a.*" 1ms
+ ✓ tests/relay.test.ts > Relay (redis) > backend contract > rejects publishing to the invalid topic "a.>" 1ms
+ ✓ tests/relay.test.ts > Relay (redis) > backend contract > rejects publishing to the invalid topic "ä" 0ms
+ ✓ tests/relay.test.ts > Relay (redis) > backend contract > rejects publishing to the invalid topic "a.$conn" 1ms
+ ✓ tests/relay.test.ts > Relay (redis) > backend contract > rejects publishing to the invalid topic "$conn.x1" 1ms
+ ✓ tests/relay.test.ts > Relay (redis) > backend contract > rejects publishing to the invalid topic "$1.a" 1ms
+ ✓ tests/relay.test.ts > Relay (redis) > backend contract > rejects publishing to the invalid topic "$.a" 1ms
+ ✓ tests/relay.test.ts > Relay (redis) > backend contract > rejects publishing to the invalid topic "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" 1ms
+ ✓ tests/relay.test.ts > Relay (redis) > backend contract > rejects publishing to the invalid topic "a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a" 1ms
+ ✓ tests/relay.test.ts > Relay (redis) > backend contract > accepts the longest and deepest valid topics 1ms
+ ✓ tests/relay.test.ts > Relay (redis) > backend contract > subscribes and removes endpoints idempotently 1ms
+ ✓ tests/relay.test.ts > Relay (redis) > backend contract > routes every topic to exactly the matching patterns 7ms
+ ✓ tests/relay.test.ts > Relay (redis) > backend contract > lists each endpoint once even when several of its patterns match 2ms
+ ✓ tests/relay.test.ts > Relay (redis) > backend contract > appends one entry per node, each with its own endpoints 2ms
+ ✓ tests/relay.test.ts > Relay (redis) > backend contract > assigns increasing message ids 1ms
+ ✓ tests/relay.test.ts > Relay (redis) > backend contract > keeps message ids unique and increasing without a registered node 62ms
+ ✓ tests/relay.test.ts > Relay (redis) > backend contract > passes data through byte for byte 3ms
+ ✓ tests/relay.test.ts > Relay (redis) > backend contract > enforces the max data size in bytes 1ms
+ ✓ tests/relay.test.ts > Relay (redis) > backend contract > keeps inbox entries until the next read acknowledges them 4ms
+ ✓ tests/relay.test.ts > Relay (redis) > backend contract > trims consumed entries and reports the unread backlog 4ms
+ ✓ tests/relay.test.ts > Relay (redis) > backend contract > caps the inbox by dropping the oldest unread entries 5ms
+ ✓ tests/relay.test.ts > Relay (redis) > backend contract > does not count fetched entries as dropped when capping the inbox 3ms
+ ✓ tests/relay.test.ts > Relay (redis) > backend contract > reports an empty backlog for an empty or missing inbox 1ms
+ ✓ tests/relay.test.ts > Relay (redis) > backend contract > waits for new entries when the inbox is empty 329ms
+ ✓ tests/relay.test.ts > Relay (redis) > backend contract > an interrupt also stops reads that have not started waiting yet 1ms
+ ✓ tests/relay.test.ts > Relay (redis) > backend contract > returns retained messages only to exact subscriptions 2ms
+ ✓ tests/relay.test.ts > Relay (redis) > backend contract > deletes retained messages 3ms
+ ✓ tests/relay.test.ts > Relay (redis) > backend contract > expires retained messages 252ms
+ ✓ tests/relay.test.ts > Relay (redis) > backend contract > removes every subscription of an endpoint 3ms
+ ✓ tests/relay.test.ts > Relay (redis) > backend contract > unregistering a node removes its subscriptions and inbox 2ms
+ ✓ tests/relay.test.ts > Relay (redis) > backend contract > re-registering a node resets state only if its lease expired (expired=false) 3ms
+ ✓ tests/relay.test.ts > Relay (redis) > backend contract > re-registering a node resets state only if its lease expired (expired=true) 254ms
+ ✓ tests/relay.test.ts > Relay (redis) > backend contract > skips nodes whose lease expired, and sweeps them 253ms
+ ✓ tests/relay.test.ts > Relay (redis) > backend contract > an expired node must recover even before it is swept 253ms
+ ✓ tests/relay.test.ts > Relay (redis) > backend contract > updates sweep deadlines on registration and heartbeat 604ms
+ ✓ tests/relay.test.ts > Relay (redis) > backend contract > sweeps at most the given number of nodes per call 203ms
+ ✓ tests/relay.test.ts > Relay (redis) > backend contract > keeps subscriptions consistent under concurrent changes 3ms
+ ✓ tests/relay.test.ts > Relay (redis) > backend contract > isolates namespaces 2ms
+ ✓ tests/relay.test.ts > Relay (redis) > getters > lists nodes in registration order, with their info and stats 8ms
+ ✓ tests/relay.test.ts > Relay (redis) > getters > lists an expired node not swept yet without its info 255ms
+ ✓ tests/relay.test.ts > Relay (redis) > getters > lists subscriptions and patterns in a stable order, with pagination 3ms
+ ✓ tests/relay.test.ts > Relay (redis) > getters > lists retained messages by expiry, without expired ones 253ms
+ ✓ tests/relay.test.ts > Relay (redis) > getters > lists the namespaces in use 257ms
+ ✓ tests/relay.test.ts > Relay (redis) > getters > stops listing a namespace once its nodes and retained messages are removed 4ms
+ ✓ tests/relay.test.ts > Relay (redis) > node connections > shows where a node is connected from, as the datastore sees it 4ms
+ ✓ tests/relay.test.ts > Relay (redis) > leaves nothing behind > when the last node closes, keeping only retained messages until they expire 504ms
+ ✓ tests/relay.test.ts > Relay (redis) > leaves nothing behind > when every node of a namespace crashes 503ms
+ ✓ tests/relay.test.ts > Relay (redis) > leaves nothing behind > when a node crashes and the others carry on 254ms
+ ✓ tests/relay.test.ts > Relay (redis) > Relay > validates its options 1ms
+ ✓ tests/relay.test.ts > Relay (redis) > Relay > delivers messages between nodes, with JSON payloads 16ms
+ ✓ tests/relay.test.ts > Relay (redis) > Relay > gives each subscription its own copy 65ms
+ ✓ tests/relay.test.ts > Relay (redis) > Relay > delivers messages in publish order 34ms
+ ✓ tests/relay.test.ts > Relay (redis) > Relay > stops delivering after unsubscribe 63ms
+ ✓ tests/relay.test.ts > Relay (redis) > Relay > delivers the retained message first on exact subscriptions 13ms
+ ✓ tests/relay.test.ts > Relay (redis) > Relay > rejects invalid topics and oversized messages 8ms
+ ✓ tests/relay.test.ts > Relay (redis) > Relay > a failed subscribe leaves nothing behind 4ms
+ ✓ tests/relay.test.ts > Relay (redis) > Relay > reports listener errors without stopping delivery 14ms
+ ✓ tests/relay.test.ts > Relay (redis) > Relay > recovers its subscriptions after being swept 64ms
+ ✓ tests/relay.test.ts > Relay (redis) > Relay > emits recovered after an unswept lease expires before receiving again 265ms
+ ✓ tests/relay.test.ts > Relay (redis) > Relay > sweeps nodes that stopped renewing their lease 103ms
+ ✓ tests/relay.test.ts > Relay (redis) > Relay > close() unregisters the node and rejects further use 3ms
+ ✓ tests/relay.test.ts > Relay (redis) > Relay > close() returns promptly right after subscribing 5ms
+ ✓ tests/relay.test.ts > Relay (redis) > Relay > close() returns promptly while the inbox read is blocked 51ms
+ ✓ tests/relay.test.ts > Relay (redis) > Relay > delivers to many subscribers across nodes 15ms
+ ✓ tests/delay.redis.test.ts > Delayed jobs (redis-only) > when markers are deleted > should process a delayed job without getting stuck 6027ms
+ ✓ tests/job.test.ts > Job > .create > saves the job in redis 10ms
+ ✓ tests/job.test.ts > Job > .create > should use the custom jobId if one is provided 3ms
+ ✓ tests/job.test.ts > Job > .create > when custom jobId is provided as empty string > should ignore the empty custom id and generates a numeric id 2ms
+ ✓ tests/job.test.ts > Job > .create > should set default size limit and succeed in creating job 2ms
+ ✓ tests/job.test.ts > Job > .create > should set default size limit and fail due to size limit exception 3ms
+ ✓ tests/job.test.ts > Job > .create > should set default size limit with non-ascii data and fail due to size limit exception 2ms
+ ✓ tests/job.test.ts > Job > .create > should set custom job id and default size limit and fail due to size limit exception 2ms
+ ✓ tests/job.test.ts > Job > .create > when parent key is missing > throws an error 3ms
+ ✓ tests/job.test.ts > Job > .create > when removeDependencyOnFailure and failParentOnFailure options are provided > throws an error 2ms
+ ✓ tests/job.test.ts > Job > .create > when removeDependencyOnFailure and ignoreDependencyOnFailure options are provided > throws an error 2ms
+ ✓ tests/job.test.ts > Job > .create > when failParentOnFailure and ignoreDependencyOnFailure options are provided > throws an error 2ms
+ ✓ tests/job.test.ts > Job > .create > when priority option is provided as float > throws an error 2ms
+ ✓ tests/job.test.ts > Job > .create > when priority option is provided with a value greater than 2097151 > throws an error 3ms
+ ✓ tests/job.test.ts > Job > .create > when deduplication id option is provided as empty string > throws an error 2ms
+ ✓ tests/job.test.ts > Job > .create > when removed debounce option is provided > throws an error 2ms
+ ✓ tests/job.test.ts > Job > .create > when deduplication and parent options are provided > throws an error 2ms
+ ✓ tests/job.test.ts > Job > .create > when jitter backoff option is provided with a value lesser than 0 > throws an error 2ms
+ ✓ tests/job.test.ts > Job > .create > when jitter backoff option is provided with a value greater than 1 > throws an error 2ms
+ ✓ tests/job.test.ts > Job > JSON.stringify > retains property types 3ms
+ ✓ tests/job.test.ts > Job > JSON.stringify > omits the queue property to avoid a circular json error on node 8 2ms
+ ✓ tests/job.test.ts > Job > JSON.stringify > should correctly handle zero passed as data 7ms
+ ✓ tests/job.test.ts > Job > .update > should allow updating job data 2ms
+ ✓ tests/job.test.ts > Job > .update > when job is removed > throws error 2ms
+ ✓ tests/job.test.ts > Job > .remove > removes the job from redis 3ms
+ ✓ tests/job.test.ts > Job > .remove > removes 4000 jobs in time range of 4000ms 218ms
+ ✓ tests/job.test.ts > Job > .progressProgress > can set and get progress as number 3ms
+ ✓ tests/job.test.ts > Job > .progressProgress > can set and get progress as object 2ms
+ ✓ tests/job.test.ts > Job > .progressProgress > can set and get progress as string 2ms
+ ✓ tests/job.test.ts > Job > .progressProgress > can set and get progress as boolean 3ms
+ ✓ tests/job.test.ts > Job > .progressProgress > can set progress as number using the Queue instance 2ms
+ ✓ tests/job.test.ts > Job > .progressProgress > can set progress as object using the Queue instance 2ms
+ ✓ tests/job.test.ts > Job > .progressProgress > when job is removed > throws error 2ms
+ ✓ tests/job.test.ts > Job > .log > can log two rows with text in asc order 3ms
+ ✓ tests/job.test.ts > Job > .log > can log two rows with text in desc order 3ms
+ ✓ tests/job.test.ts > Job > .log > should preserve up to keepLogs latest entries 3ms
+ ✓ tests/job.test.ts > Job > .log > should allow to add job logs from Queue instance 2ms
+ ✓ tests/job.test.ts > Job > .log > can log using a queue-like object without shared scripts 2ms
+ ✓ tests/job.test.ts > Job > .log > when job is removed > throws error 2ms
+ ✓ tests/job.test.ts > Job > .clearLogs > can clear the log 2ms
+ ✓ tests/job.test.ts > Job > .clearLogs > can preserve up to keepLogs latest entries 4ms
+ ✓ tests/job.test.ts > Job > .moveToCompleted > marks the job as completed and returns new job 4ms
+ ✓ tests/job.test.ts > Job > .moveToFailed > marks the job as failed 6ms
+ ✓ tests/job.test.ts > Job > .moveToFailed > when using a custom error > marks the job as failed 3ms
+ ✓ tests/job.test.ts > Job > .moveToFailed > moves the job to wait for retry if attempts are given 5ms
+ ✓ tests/job.test.ts > Job > .moveToFailed > when job is not in active state > throws an error 3ms
+ ✓ tests/job.test.ts > Job > .moveToFailed > when attempts made equal to attempts given > marks the job as failed 3ms
+ ✓ tests/job.test.ts > Job > .moveToFailed > when attempts are given and backoff is non zero > moves the job to delayed for retry 3ms
+ ✓ tests/job.test.ts > Job > .moveToFailed > when attempts are given and backoff is non zero > when fetchNext is true and > when another job is waiting > returns the next job data after moving the failed job to delayed 3ms
+ ✓ tests/job.test.ts > Job > .moveToFailed > when attempts are given and backoff is non zero > when fetchNext is true and > when no job is waiting > does not return any job data after moving the failed job to delayed 3ms
+ ✓ tests/job.test.ts > Job > .moveToFailed > when attempts are given and backoff is non zero > when fetchNext is false and another job is waiting > does not return next job data 3ms
+ ✓ tests/job.test.ts > Job > .moveToFailed > applies stacktrace limit on failure 3ms
+ ✓ tests/job.test.ts > Job > .moveToFailed > when stackTraceLimit is provided as 0 > keep stacktrace empty 3ms
+ ✓ tests/job.test.ts > Job > .moveToFailed > saves error stacktrace 3ms
+ ✓ tests/job.test.ts > Job > .moveToWait > moves job to wait from active 3ms
+ ✓ tests/job.test.ts > Job > .changeDelay > can change delay of a delayed job 2057ms
+ ✓ tests/job.test.ts > Job > .changeDelay > should not change delay if a job is not delayed 3ms
+ ✓ tests/job.test.ts > Job > .changePriority > when job is in wait state > when lifo option is provided as true > moves job to the head of wait list 47ms
+ ✓ tests/job.test.ts > Job > .changePriority > when job is in wait state > when lifo option is provided as false > moves job to the tail of wait list and has more priority 47ms
+ ✓ tests/job.test.ts > Job > .changePriority > when job is in prioritized state > can change priority of a job 52ms
+ ✓ tests/job.test.ts > Job > .changePriority > when job is in prioritized state > when lifo option is provided as true > moves job to the head of prioritized jobs with same priority 48ms
+ ✓ tests/job.test.ts > Job > .changePriority > when queue is paused > respects new priority 46ms
+ ✓ tests/job.test.ts > Job > .changePriority > when job is not in wait or prioritized state > does not add a record in priority zset 3ms
+ ✓ tests/job.test.ts > Job > .changePriority > when job does not exist > throws an error 3ms
+ ✓ tests/job.test.ts > Job > .promote > can promote a delayed job to be executed immediately 2ms
+ ✓ tests/job.test.ts > Job > .promote > should process a promoted job according to its priority 809ms
+ ✓ tests/job.test.ts > Job > .promote > should not promote a job that is not delayed 2ms
+ ✓ tests/job.test.ts > Job > .promote > when queue is paused > should promote delayed job to the right queue 2ms
+ ✓ tests/job.test.ts > Job > .promote > when queue is empty > should promote delayed job to the right queue 2ms
+ ✓ tests/job.test.ts > Job > .getState > should get job actual state 4ms
+ ✓ tests/job.test.ts > Job > .finished > should resolve when the job has been completed 3ms
+ ✓ tests/job.test.ts > Job > .finished > when job was added with removeOnComplete > rejects with missing key for job message 106ms
+ ✓ tests/job.test.ts > Job > .finished > should resolve when the job has been completed and return object 3ms
+ ✓ tests/job.test.ts > Job > .finished > should resolve when the job has been delayed and completed and return object 606ms
+ ✓ tests/job.test.ts > Job > .finished > should resolve when the job has been completed and return string 5ms
+ ✓ tests/job.test.ts > Job > .finished > should reject when the job has been failed 506ms
+ ✓ tests/job.test.ts > Job > .finished > should resolve directly if already processed 506ms
+ ✓ tests/job.test.ts > Job > .finished > should reject directly if already processed 507ms
+ ✓ tests/clean.test.ts > Cleaner > should clean an empty queue 9ms
+ ✓ tests/clean.test.ts > Cleaner > should clean two jobs from the queue 41ms
+ ✓ tests/clean.test.ts > Cleaner > should succeed when the limit is higher than the actual number of jobs 106ms
+ ✓ tests/clean.test.ts > Cleaner > should only remove a job outside of the grace period 308ms
+ ✓ tests/clean.test.ts > Cleaner > should not clean anything if all jobs are in grace period 3ms
+ ✓ tests/clean.test.ts > Cleaner > should clean all failed jobs 262ms
+ ✓ tests/clean.test.ts > Cleaner > when job scheduler is present > should clean all failed jobs 361ms
+ ✓ tests/clean.test.ts > Cleaner > when job scheduler is present > should clean all completed jobs 362ms
+ ✓ tests/clean.test.ts > Cleaner > should clean all waiting jobs 112ms
+ ✓ tests/clean.test.ts > Cleaner > should clean all delayed jobs when limit is given 104ms
+ ✓ tests/clean.test.ts > Cleaner > should clean all prioritized jobs when limit is given 105ms
+ ✓ tests/clean.test.ts > Cleaner > when prioritized state is provided > should clean the number of jobs requested 107ms
+ ✓ tests/clean.test.ts > Cleaner > when delayed state is provided > cleans all delayed jobs 104ms
+ ✓ tests/clean.test.ts > Cleaner > when delayed state is provided > does not clean anything if all jobs are in grace period 104ms
+ ✓ tests/clean.test.ts > Cleaner > when creating a flow > when parent belongs to same queue > when parent has more than 1 pending children in the same queue > removes parent record 5ms
+ ✓ tests/clean.test.ts > Cleaner > when creating a flow > when parent belongs to same queue > when parent has all processed children in the same queue > when parent completes > deletes parent and its dependency keys 190ms
+ ✓ tests/clean.test.ts > Cleaner > when creating a flow > when parent belongs to same queue > when parent has all processed children in the same queue > when parent fails > deletes parent dependencies and keeps parent 40ms
+ ✓ tests/clean.test.ts > Cleaner > when creating a flow > when parent belongs to same queue > when parent has only 1 pending child in the same queue > deletes parent and its dependency keys 28ms
+ ✓ tests/clean.test.ts > Cleaner > when creating a flow > when parent belongs to same queue > when parent has pending children in different queue > keeps parent in waiting-children 4ms
+ ✓ tests/clean.test.ts > Cleaner > when creating a flow > when parent belongs to same queue > when creating children at runtime and call clean when parent is active > does not delete parent record 1109ms
+ ✓ tests/clean.test.ts > Cleaner > when creating a flow > when parent belongs to different queue > when parent has more than 1 pending children > deletes each children until trying to move parent to wait 7ms
+ ✓ tests/clean.test.ts > Cleaner > when creating a flow > when parent belongs to different queue > when parent has only 1 pending children > moves parent to wait to try to process it 5ms
+ ✓ tests/clean.test.ts > Cleaner > should accept both "wait" and "waiting" in clean method 206ms
+ ✓ tests/clean.test.ts > Cleaner > should emit correct events for both "wait" and "waiting" clean operations 106ms
+ ✓ tests/clean.test.ts > Cleaner > removeOrphanedJobs > should return 0 on an empty queue 3ms
+ ✓ tests/clean.test.ts > Cleaner > removeOrphanedJobs > should return 0 when all jobs are in a state set 3ms
+ ✓ tests/clean.test.ts > Cleaner > removeOrphanedJobs > should not remove jobs in the wait state 2ms
+ ✓ tests/clean.test.ts > Cleaner > removeOrphanedJobs > should not remove jobs in the active state 2006ms
+ ✓ tests/clean.test.ts > Cleaner > removeOrphanedJobs > should not remove jobs in the completed state 4ms
+ ✓ tests/clean.test.ts > Cleaner > removeOrphanedJobs > should not remove jobs in the failed state 4ms
+ ✓ tests/clean.test.ts > Cleaner > removeOrphanedJobs > should not remove jobs in the delayed state 2ms
+ ✓ tests/clean.test.ts > Cleaner > removeOrphanedJobs > should not remove jobs in the prioritized state 2ms
+ ✓ tests/clean.test.ts > Cleaner > removeOrphanedJobs > should not remove jobs in the waiting-children state 3ms
+ ✓ tests/events.test.ts > events > when autorun option is provided as false > emits waiting when a job has been added 64ms
+ ✓ tests/events.test.ts > events > when autorun option is provided as false > when run method is called when queueEvent is running > throws error 57ms
+ ✓ tests/events.test.ts > events > should emit waiting when a job has been added 54ms
+ ✓ tests/events.test.ts > events > should emit global waiting event when a job has been added 155ms
+ ✓ tests/events.test.ts > events > when jobs are cleaned > emits cleaned global event 636ms
+ ✓ tests/events.test.ts > events > emits drained global event when all jobs have been processed 58ms
+ ✓ tests/events.test.ts > events > when concurrency is greater than 1 > emits drained global event when all jobs have been processed 556ms
+ ✓ tests/events.test.ts > events > emits drained global event only once when worker is idle 3060ms
+ ✓ tests/events.test.ts > events > emits drained event in worker when all jobs have been processed 65ms
+ ✓ tests/events.test.ts > events > emits error event when there is an error on other events 55ms
+ ✓ tests/events.test.ts > events > when one job is added > emits added event 158ms
+ ✓ tests/events.test.ts > events > when job has been added again > emits duplicated event 157ms
+ ✓ tests/events.test.ts > events > should emit an event when a job becomes active 55ms
+ ✓ tests/events.test.ts > events > should emit an active event for every processed job 60ms
+ ✓ tests/events.test.ts > events > when one job is a parent > emits waiting-children and waiting event 210ms
+ ✓ tests/events.test.ts > events > should listen to global events 55ms
+ ✓ tests/events.test.ts > events > emits completed global event with the deserialized return value 55ms
+ ✓ tests/lock_manager.test.ts > LockManager > constructor > should create a lock manager with worker context 2ms
+ ✓ tests/lock_manager.test.ts > LockManager > start and stop > should start and stop the lock manager 0ms
+ ✓ tests/lock_manager.test.ts > LockManager > start and stop > should not start if already closed 0ms
+ ✓ tests/lock_manager.test.ts > LockManager > start and stop > should not start timer if lockRenewTime is 0 0ms
+ ✓ tests/lock_manager.test.ts > LockManager > start and stop > should handle multiple close calls gracefully 0ms
+ ✓ tests/lock_manager.test.ts > LockManager > job tracking > should track and untrack jobs 0ms
+ ✓ tests/lock_manager.test.ts > LockManager > job tracking > should not track jobs after being closed 0ms
+ ✓ tests/lock_manager.test.ts > LockManager > job tracking > should clear all tracked jobs when closed 0ms
+ ✓ tests/lock_manager.test.ts > LockManager > job tracking > should ignore empty job ids 0ms
+ ✓ tests/lock_manager.test.ts > LockManager > lock renewal > should extend locks for tracked jobs 601ms
+ ✓ tests/lock_manager.test.ts > LockManager > lock renewal > should emit error when lock extension fails 301ms
+ ✓ tests/lock_manager.test.ts > LockManager > lock renewal > should emit error when extendJobLocks throws 301ms
+ ✓ tests/lock_manager.test.ts > LockManager > lock renewal > should not extend locks if no jobs need renewal 301ms
+ ✓ tests/lock_manager.test.ts > LockManager > lock renewal > should update timestamps for jobs without initial timestamp 251ms
+ ✓ tests/lock_manager.test.ts > LockManager > integration with Worker > should track jobs during processing 165ms
+ ✓ tests/lock_manager.test.ts > LockManager > integration with Worker > should untrack jobs on failure 59ms
+ ✓ tests/lock_manager.test.ts > LockManager > integration with Worker > should continue renewing locks for long-running jobs 3006ms
+ ✓ tests/lock_manager.test.ts > LockManager > integration with Worker > should handle lock manager closure during worker shutdown 3ms
+ ✓ tests/lock_manager.test.ts > LockManager > telemetry > should call trace when extending locks 301ms
+ ✓ tests/pause.test.ts > Pause > should not process delayed jobs 516ms
+ ✓ tests/pause.test.ts > Pause > should pause a queue until resumed 9ms
+ ✓ tests/pause.test.ts > Pause > should be able to pause a running queue and emit relevant events 5ms
+ ✓ tests/pause.test.ts > Pause > should pause the queue locally 6ms
+ ✓ tests/pause.test.ts > Pause > should wait until active jobs are finished before resolving pause 1010ms
+ ✓ tests/pause.test.ts > Pause > should pause the queue locally when more than one worker is active 207ms
+ ✓ tests/pause.test.ts > Pause > should wait for blocking job retrieval to complete before pausing locally 208ms
+ ✓ tests/pause.test.ts > Pause > pauses fast when queue is drained 57ms
+ ✓ tests/pause.test.ts > Pause > gets the right response from isPaused 4ms
+ ✓ tests/pause.test.ts > Pause > should rename the legacy paused list into wait on resume 3ms
+ ✓ tests/pause.test.ts > Pause > should fully migrate the legacy paused list in batches on resume 41ms
+ ✓ tests/pause.test.ts > Pause > should pause and resume worker without error 46ms
+ ✓ tests/pause.test.ts > Pause > should fetch new jobs right after resume when paused without waiting for active jobs 1512ms
+ ✓ tests/pause.test.ts > Pause > when backoff is 0 > moves job into paused queue 38ms
+stderr | tests/async_fifo_queue.test.ts > AsyncFIFOQueue > handles a promise that rejects
+Unexpected Error in AsyncFifoQueue Error: test
+    at /tmp/bunroot/candidate/tests/async_fifo_queue.test.ts:21:33
+
+ ✓ tests/async_fifo_queue.test.ts > AsyncFIFOQueue > empty queue 2ms
+ ✓ tests/async_fifo_queue.test.ts > AsyncFIFOQueue > handles a promise that rejects 101ms
+ ✓ tests/async_fifo_queue.test.ts > AsyncFIFOQueue > add several promises and wait for them to complete 502ms
+ ✓ tests/async_fifo_queue.test.ts > AsyncFIFOQueue > add several promises and wait for them to complete in order 502ms
+ ✓ tests/async_fifo_queue.test.ts > AsyncFIFOQueue > add several promises with random delays and wait for them to complete in order 571ms
+ ✓ tests/async_fifo_queue.test.ts > AsyncFIFOQueue > add several promises while fetching them concurrently 1632ms
+ ✓ tests/async_fifo_queue.test.ts > AsyncFIFOQueue > should handle promises that get rejected and don't block the queue 10ms
+ ✓ tests/job_cancellation_advanced.test.ts > Job Cancellation - Advanced Scenarios > Cancellation with Retries > should retry cancelled job when throwing regular Error 33ms
+ ✓ tests/job_cancellation_advanced.test.ts > Job Cancellation - Advanced Scenarios > Cancellation with Retries > should NOT retry cancelled job when throwing UnrecoverableError 218ms
+ ✓ tests/job_cancellation_advanced.test.ts > Job Cancellation - Advanced Scenarios > Cancellation with Retries > should handle cancellation on last retry attempt 109ms
+ ✓ tests/job_cancellation_advanced.test.ts > Job Cancellation - Advanced Scenarios > Job State Transitions > should move cancelled job to failed state 26ms
+ ✓ tests/job_cancellation_advanced.test.ts > Job Cancellation - Advanced Scenarios > Job State Transitions > should track job state through QueueEvents 16ms
+ ✓ tests/job_cancellation_advanced.test.ts > Job Cancellation - Advanced Scenarios > Cancellation Timing > should cancel job before it processes any data 106ms
+ ✓ tests/job_cancellation_advanced.test.ts > Job Cancellation - Advanced Scenarios > Cancellation Timing > should cancel job in the middle of processing 58ms
+ ✓ tests/job_cancellation_advanced.test.ts > Job Cancellation - Advanced Scenarios > Cancellation Timing > should handle cancellation near completion 97ms
+ ✓ tests/job_cancellation_advanced.test.ts > Job Cancellation - Advanced Scenarios > Concurrency and Cancellation > should cancel specific job among concurrent jobs 520ms
+ ✓ tests/job_cancellation_advanced.test.ts > Job Cancellation - Advanced Scenarios > Concurrency and Cancellation > should handle rapid cancellations with high concurrency 518ms
+ ✓ tests/job_cancellation_advanced.test.ts > Job Cancellation - Advanced Scenarios > Cancellation with Delayed Jobs > should handle cancellation of job with backoff retry 666ms
+ ✓ tests/job_cancellation_advanced.test.ts > Job Cancellation - Advanced Scenarios > Error Messages and Debugging > should preserve error message from cancellation 16ms
+ ✓ tests/job_cancellation_advanced.test.ts > Job Cancellation - Advanced Scenarios > Error Messages and Debugging > should track stacktrace for cancelled jobs 15ms
+ ✓ tests/job_cancellation_advanced.test.ts > Job Cancellation - Advanced Scenarios > Worker Lifecycle and Cancellation > should handle cancellation during worker shutdown 15ms
+ ✓ tests/job_cancellation_advanced.test.ts > Job Cancellation - Advanced Scenarios > Worker Lifecycle and Cancellation > should not cancel jobs after worker is closed 3ms
+ ✓ tests/job_cancellation_advanced.test.ts > Job Cancellation - Advanced Scenarios > Complex Cancellation Patterns > should support async cleanup when job is cancelled 125ms
+ ✓ tests/job_cancellation_advanced.test.ts > Job Cancellation - Advanced Scenarios > Complex Cancellation Patterns > should handle complex async cleanup with multiple resources 117ms
+ ✓ tests/job_cancellation_advanced.test.ts > Job Cancellation - Advanced Scenarios > Complex Cancellation Patterns > should handle timeout during async cleanup 156ms
+ ✓ tests/job_cancellation_advanced.test.ts > Job Cancellation - Advanced Scenarios > Complex Cancellation Patterns > should allow cleanup to check signal again (re-entrant cancellation) 58ms
+ ✓ tests/job_cancellation_advanced.test.ts > Job Cancellation - Advanced Scenarios > Complex Cancellation Patterns > should handle cancellation with progress updates 58ms
+ ✓ tests/job_cancellation_advanced.test.ts > Job Cancellation - Advanced Scenarios > Complex Cancellation Patterns > should cancel job that makes external API calls 56ms
+ ✓ tests/bulk.test.ts > bulk jobs > should process jobs 15ms
+ ✓ tests/bulk.test.ts > bulk jobs > should allow to pass parent option 6ms
+ ✓ tests/bulk.test.ts > bulk jobs > should keep workers busy 2714ms
+ ✓ tests/bulk.test.ts > bulk jobs > should process jobs with custom ids 4ms
+ ✓ tests/job_cancellation.test.ts > Job Cancellation > Basic Cancellation > should cancel a running job using abort event (recommended) 70ms
+ ✓ tests/job_cancellation.test.ts > Job Cancellation > Basic Cancellation > should cancel a running job using polling (alternative) 57ms
+ ✓ tests/job_cancellation.test.ts > Job Cancellation > Basic Cancellation > should interrupt async operations with abort event 105ms
+ ✓ tests/job_cancellation.test.ts > Job Cancellation > Basic Cancellation > should return false when cancelling a non-existent job 4ms
+ ✓ tests/job_cancellation.test.ts > Job Cancellation > Basic Cancellation > should return false when cancelling a job that has already completed 28ms
+ ✓ tests/job_cancellation.test.ts > Job Cancellation > Cancel All Jobs > should cancel all active jobs 16ms
+ ✓ tests/job_cancellation.test.ts > Job Cancellation > AbortSignal Integration > should work with fetch-like APIs that accept abort signal 14ms
+ ✓ tests/job_cancellation.test.ts > Job Cancellation > AbortSignal Integration > should work with processor that ignores signal (backward compatibility) 55ms
+ ✓ tests/job_cancellation.test.ts > Job Cancellation > AbortSignal Integration > should handle signal.aborted check in async operations 35ms
+ ✓ tests/job_cancellation.test.ts > Job Cancellation > Lock Renewal Failure > should allow manual cancellation on lockRenewalFailed event 5ms
+ ✓ tests/job_cancellation.test.ts > Job Cancellation > Get Active Jobs > should return list of active job IDs using queue.getActive() 510ms
+ ✓ tests/job_cancellation.test.ts > Job Cancellation > Get Active Jobs > should return empty array when no jobs are active 4ms
+ ✓ tests/job_cancellation.test.ts > Job Cancellation > Get Active Jobs > should update active jobs list as jobs complete 117ms
+ ✓ tests/job_cancellation.test.ts > Job Cancellation > Edge Cases > should handle cancellation of job that throws error 15ms
+ ✓ tests/job_cancellation.test.ts > Job Cancellation > Edge Cases > should handle concurrent cancellations 9ms
+ ✓ tests/job_cancellation.test.ts > Job Cancellation > Edge Cases > should handle cancellation with UnrecoverableError 15ms
+ ✓ tests/job_cancellation.test.ts > Job Cancellation > Edge Cases > should work with multiple workers processing same queue 1023ms
+ ✓ tests/job_cancellation.test.ts > Job Cancellation > Signal Properties > should not create AbortController when processor does not use signal 55ms
+ ✓ tests/job_cancellation.test.ts > Job Cancellation > Signal Properties > should create AbortController when processor uses signal parameter 55ms
+ ✓ tests/job_cancellation.test.ts > Job Cancellation > Signal Properties > should provide working AbortSignal with aborted property 105ms
+ ✓ tests/job_cancellation.test.ts > Job Cancellation > Signal Properties > should work with signal event listener 55ms
+ ✓ tests/job_cancellation.test.ts > Job Cancellation > Signal Properties > should support cancellation reason 4ms
+ ✓ tests/job_cancellation.test.ts > Job Cancellation > Signal Properties > should catch error from moveToFailed when lock is lost 104ms
+ ✓ tests/queue.test.ts > queues > use generics > should be able to use generics 11ms
+ ✓ tests/queue.test.ts > queues > use generics > should resolve Job<any, any, string> when no generics provided 4ms
+ ✓ tests/queue.test.ts > queues > when removing a job > should emit removed event 3ms
+ ✓ tests/queue.test.ts > queues > should return the queue version 3ms
+ ✓ tests/queue.test.ts > queues > should return default library version when using skipMetasUpdate 5ms
+ ✓ tests/queue.test.ts > queues > .getMeta > should return global concurrency 4ms
+ ✓ tests/queue.test.ts > queues > .getMeta > should return global rate limit 4ms
+ ✓ tests/queue.test.ts > queues > .getMeta > should return paused 3ms
+ ✓ tests/queue.test.ts > queues > .add > when jobId is provided as integer > throws error 4ms
+ ✓ tests/queue.test.ts > queues > .add > when custom job id contains : > throws an error 3ms
+ ✓ tests/queue.test.ts > queues > .add > when auto-generated job id counter reaches scientific notation threshold > addStandardJob > stores the job id consistently in decimal form (not 3e+8) 5ms
+ ✓ tests/queue.test.ts > queues > .add > when auto-generated job id counter reaches scientific notation threshold > addPrioritizedJob > stores the job id consistently in decimal form (not 3e+8) 3ms
+ ✓ tests/queue.test.ts > queues > .add > when auto-generated job id counter reaches scientific notation threshold > addDelayedJob > stores the job id consistently in decimal form (not 3e+8) 4ms
+ ✓ tests/queue.test.ts > queues > .add > when auto-generated job id counter reaches scientific notation threshold > addParentJob > stores the parent job id consistently in decimal form (not 3e+8) 3ms
+ ✓ tests/queue.test.ts > queues > when queue name contains : > throws an error 2ms
+ ✓ tests/queue.test.ts > queues > when empty name is provided > throws an error 3ms
+ ✓ tests/queue.test.ts > queues > .drain > count added, unprocessed jobs 10ms
+ ✓ tests/queue.test.ts > queues > .drain > when having a flow > when parent belongs to same queue > when parent has more than 1 pending children in the same queue > deletes parent record 5ms
+ ✓ tests/queue.test.ts > queues > .drain > when having a flow > when parent belongs to same queue > when parent has only 1 pending child in the same queue > deletes parent record 3ms
+ ✓ tests/queue.test.ts > queues > .drain > when having a flow > when parent belongs to same queue > when parent has pending children in different queue > keeps parent in waiting-children 4ms
+ ✓ tests/queue.test.ts > queues > .drain > when having a flow > when parent belongs to different queue > when parent has more than 1 pending children > deletes each children until trying to move parent to wait 5ms
+ ✓ tests/queue.test.ts > queues > .drain > when having a flow > when parent belongs to different queue > when parent has only 1 pending children > moves parent to wait to try to process it 5ms
+ ✓ tests/queue.test.ts > queues > .drain > when delayed option is provided as false > clean queue without delayed jobs 12ms
+ ✓ tests/queue.test.ts > queues > .drain > when delayed option is provided as true > clean queue including delayed jobs 6ms
+ ✓ tests/queue.test.ts > queues > .drain > when queue is paused > clean queue including paused jobs 4ms
+ ✓ tests/queue.test.ts > queues > .retryJobs > retries all failed jobs by default 188ms
+ ✓ tests/queue.test.ts > queues > .retryJobs > when completed state is provided > retries all completed jobs 420ms
+ ✓ tests/queue.test.ts > queues > .retryJobs > when timestamp is provided > should retry all failed jobs before specific timestamp 616ms
+ ✓ tests/queue.test.ts > queues > .retryJobs > when queue is paused > moves retried jobs to wait 96ms
+ ✓ tests/queue.test.ts > queues > .promoteJobs > promotes all delayed jobs by default 93ms
+ ✓ tests/relay-resilience.test.ts > Relay resilience > rejects a subscription completed after close without delivering retained data 15ms
+ ✓ tests/relay-resilience.test.ts > Relay resilience > requires a connection 1ms
+ ✓ tests/relay-resilience.test.ts > Relay resilience > rejects invalid leaseDuration before creating a backend 1ms
+ ✓ tests/relay-resilience.test.ts > Relay resilience > rejects invalid heartbeatInterval before creating a backend 0ms
+ ✓ tests/relay-resilience.test.ts > Relay resilience > rejects invalid sweepInterval before creating a backend 1ms
+ ✓ tests/relay-resilience.test.ts > Relay resilience > rejects invalid blockTimeout before creating a backend 0ms
+ ✓ tests/relay-resilience.test.ts > Relay resilience > rejects invalid inboxMaxLength before creating a backend 0ms
+ ✓ tests/relay-resilience.test.ts > Relay resilience > rejects invalid maxMessageSize before creating a backend 1ms
+ ✓ tests/relay-resilience.test.ts > Relay resilience > accepts positive integer option boundaries (1) 1ms
+ ✓ tests/relay-resilience.test.ts > Relay resilience > accepts positive integer option boundaries (2147483647) 0ms
+ ✓ tests/relay-resilience.test.ts > Relay resilience > rejects a lag threshold above the inbox cap ({"lagThreshold":10001}) 0ms
+ ✓ tests/relay-resilience.test.ts > Relay resilience > rejects a lag threshold above the inbox cap ({"inboxMaxLength":10,"lagThreshold":11}) 0ms
+ ✓ tests/relay-resilience.test.ts > Relay resilience > accepts a lag threshold equal to the inbox cap (1) 1ms
+ ✓ tests/relay-resilience.test.ts > Relay resilience > accepts a lag threshold equal to the inbox cap (10000) 0ms
+ ✓ tests/relay-resilience.test.ts > Relay resilience > rejects invalid retention (-1) before publishing 1ms
+ ✓ tests/relay-resilience.test.ts > Relay resilience > rejects invalid retention (0.5) before publishing 0ms
+ ✓ tests/relay-resilience.test.ts > Relay resilience > rejects invalid retention (NaN) before publishing 0ms
+ ✓ tests/relay-resilience.test.ts > Relay resilience > rejects invalid retention (Infinity) before publishing 0ms
+ ✓ tests/relay-resilience.test.ts > Relay resilience > rejects invalid retention (-Infinity) before publishing 0ms
+ ✓ tests/relay-resilience.test.ts > Relay resilience > rejects invalid retention (9007199254740992) before publishing 0ms
+ ✓ tests/relay-resilience.test.ts > Relay resilience > accepts retention boundaries (undefined) 1ms
+ ✓ tests/relay-resilience.test.ts > Relay resilience > accepts retention boundaries (0) 0ms
+ ✓ tests/relay-resilience.test.ts > Relay resilience > accepts retention boundaries (1) 0ms
+ ✓ tests/relay-resilience.test.ts > Relay resilience > accepts retention boundaries (9007199254740991) 0ms
+ ✓ tests/relay-resilience.test.ts > Relay resilience > clamps the default heartbeat for a 1 ms lease 2ms
+ ✓ tests/relay-resilience.test.ts > Relay resilience > clamps the default heartbeat for a 2 ms lease 0ms
+ ✓ tests/relay-resilience.test.ts > Relay resilience > does not start timers when closed during waitUntilReady 1ms
+ ✓ tests/relay-resilience.test.ts > Relay resilience > does not start timers when closed during registerNode 0ms
+ ✓ tests/relay-resilience.test.ts > Relay resilience > closes while the datastore never becomes ready 0ms
+ ✓ tests/relay-resilience.test.ts > Relay resilience > delivers a retained baseline before an update received while subscribing 21ms
+ ✓ tests/relay-resilience.test.ts > Relay resilience > delivers every message buffered while subscribing, whatever their order 21ms
+ ✓ tests/relay-resilience.test.ts > Relay resilience > reports a failed start 1ms
+ ✓ tests/relay-resilience.test.ts > Relay resilience > reports heartbeat and sweep failures and keeps running 21ms
+ ✓ tests/relay-resilience.test.ts > Relay resilience > delivers retained ID 9007199254740991 before newer live ID 9007199254740992, without losing precision 21ms
+ ✓ tests/relay-resilience.test.ts > Relay resilience > delivers retained ID 9007199254740992 before newer live ID 9007199254740993, without losing precision 21ms
+ ✓ tests/relay-resilience.test.ts > Relay resilience > delivers retained ID 9007199254740993 before newer live ID 9007199254740992, without losing precision 21ms
+ ✓ tests/relay-resilience.test.ts > Relay resilience > delivers retained ID 9007199254740993 before newer live ID 9007199254740993, without losing precision 21ms
+ ✓ tests/relay-resilience.test.ts > Relay resilience > retries the inbox after a read failure 1028ms
+ ✓ tests/relay-resilience.test.ts > Relay resilience > skips inbox entries of kinds it does not know 21ms
+ ✓ tests/relay-resilience.test.ts > Relay resilience > registers with its name, host, pid and version 1ms
+ ✓ tests/relay-resilience.test.ts > Relay resilience > validates the name and getter ranges 1ms
+ ✓ tests/relay-resilience.test.ts > Relay resilience > reports undecodable payloads and keeps delivering 21ms
+ ✓ tests/relay-resilience.test.ts > Relay resilience > closes even if unregistering fails 1ms
+ ✓ tests/relay-resilience.test.ts > Relay resilience > does not renew or sweep once closed 0ms
+ ✓ tests/relay-resilience.test.ts > Relay resilience > does not run two recoveries at once 1ms
+ ✓ tests/relay-resilience.test.ts > Relay resilience > renews the lease while recovery restores subscriptions 1ms
+ ✓ tests/relay-resilience.test.ts > Relay resilience > retries a recovery that failed part way 1ms
+ ✓ tests/relay-resilience.test.ts > Relay resilience > removes an endpoint unsubscribed while recovery restores it 11ms
+ ✓ tests/relay-resilience.test.ts > Relay resilience > keeps failed removals inactive and retries them during recovery 21ms
+ ✓ tests/relay-resilience.test.ts > Relay resilience > cleans up an initial subscription failure overlapping recovery (initial failure first) 21ms
+ ✓ tests/relay-resilience.test.ts > Relay resilience > cleans up an initial subscription failure overlapping recovery (recovery first) 21ms
+ ✓ tests/relay-resilience.test.ts > Relay resilience > waits for recovery before dispatching an inbox batch 21ms
+ ✓ tests/relay-resilience.test.ts > Relay resilience > discards a fetched inbox batch when recovery replaces its registration 21ms
+ ✓ tests/relay-resilience.test.ts > Relay resilience > does not overlap sweeps 0ms
+ ✓ tests/relay-resilience.test.ts > Relay resilience > waits for an active sweep before closing (fails: false) 1ms
+ ✓ tests/relay-resilience.test.ts > Relay resilience > waits for an active sweep before closing (fails: true) 1ms
+ ✓ tests/relay-resilience.test.ts > Relay resilience > trims its inbox on heartbeat and emits lag past the threshold 0ms
+ ✓ tests/relay-resilience.test.ts > Relay resilience > trims during pending inbox reads but protects fetched batches 0ms
+ ✓ tests/relay-resilience.test.ts > Relay resilience > defaults lagThreshold to half of inboxMaxLength 0ms
+ ✓ tests/relay-resilience.test.ts > Relay resilience > rejects an invalid lagThreshold 0ms
+ ✓ tests/obliterate.redis.test.ts > Obliterate (redis-only) > should obliterate an empty queue 10ms
+ ✓ tests/obliterate.redis.test.ts > Obliterate (redis-only) > should obliterate a queue which is empty but has had jobs in the past 4ms
+ ✓ tests/obliterate.redis.test.ts > Obliterate (redis-only) > should obliterate a queue with jobs in different statuses 513ms
+ ✓ tests/obliterate.redis.test.ts > Obliterate (redis-only) > when creating a flow > when parent belongs to same queue > when parent has more than 1 pending children in the same queue > removes parent record 7ms
+ ✓ tests/obliterate.redis.test.ts > Obliterate (redis-only) > when creating a flow > when parent belongs to same queue > when parent has only 1 pending child in the same queue > obliterates a queue with jobs and its dependency keys 27ms
+ ✓ tests/obliterate.redis.test.ts > Obliterate (redis-only) > when creating a flow > when parent belongs to same queue > when parent has pending children in different queue > keeps parent in waiting-children 4ms
+ ✓ tests/obliterate.redis.test.ts > Obliterate (redis-only) > when creating a flow > when parent belongs to different queue > when parent has more than 1 pending children > deletes each children until trying to move parent to wait 4ms
+ ✓ tests/obliterate.redis.test.ts > Obliterate (redis-only) > when creating a flow > when parent belongs to different queue > when parent has only 1 pending children > moves parent to wait to try to process it 5ms
+ ✓ tests/obliterate.redis.test.ts > Obliterate (redis-only) > should obliterate if queue has active jobs using "force" 510ms
+ ✓ tests/obliterate.redis.test.ts > Obliterate (redis-only) > should remove job schedulers 5ms
+ ✓ tests/obliterate.redis.test.ts > Obliterate (redis-only) > should obliterate a queue with high number of jobs in different statuses 215ms
+ ✓ tests/getters.test.ts > Jobs getters > .getQueueEvents > gets all queueEvents for this queue 31ms
+ ✓ tests/getters.test.ts > Jobs getters > .getWorkers > gets all workers for this queue only 7ms
+ ✓ tests/getters.test.ts > Jobs getters > .getWorkers > gets all workers including their names 6ms
+ ✓ tests/getters.test.ts > Jobs getters > .getWorkers > gets only workers related only to one queue 8ms
+ ✓ tests/getters.test.ts > Jobs getters > .getWorkers > when sharing connection > gets all workers for a given queue 10ms
+ ✓ tests/getters.test.ts > Jobs getters > .getJobState > gets current job state 3ms
+ ✓ tests/getters.test.ts > Jobs getters > should get waiting jobs 3ms
+ ✓ tests/getters.test.ts > Jobs getters > should get all waiting jobs when no range is provided 3ms
+ ✓ tests/getters.test.ts > Jobs getters > should filter out missing jobs when ids remain in the waiting list 4ms
+ ✓ tests/getters.test.ts > Jobs getters > should backfill a bounded range when a job hash is missing 3ms
+ ✓ tests/getters.test.ts > Jobs getters > should return an empty array for an ascending bounded range beyond the list length 3ms
+ ✓ tests/getters.test.ts > Jobs getters > should get paused jobs 2ms
+ ✓ tests/getters.test.ts > Jobs getters > should get active jobs 4ms
+ ✓ tests/getters.test.ts > Jobs getters > should get a specific job 2ms
+ ✓ tests/getters.test.ts > Jobs getters > should get undefined for nonexistent specific job 2ms
+ ✓ tests/getters.test.ts > Jobs getters > should get completed jobs 4ms
+ ✓ tests/getters.test.ts > Jobs getters > should get failed jobs 8ms
+ ✓ tests/getters.test.ts > Jobs getters > .count > when there are prioritized jobs > retries count considering prioritized jobs 4ms
+ ✓ tests/getters.test.ts > Jobs getters > .getPrioritized > retries prioritized job instances 3ms
+ ✓ tests/getters.test.ts > Jobs getters > .getPrioritizedCount > retries prioritized count 6ms
+ ✓ tests/getters.test.ts > Jobs getters > should get all failed jobs when no range is provided 6ms
+ ✓ tests/getters.test.ts > Jobs getters > should return all completed jobs when not setting start/end 4ms
+ ✓ tests/getters.test.ts > Jobs getters > should return all failed jobs when not setting start/end 4ms
+ ✓ tests/getters.test.ts > Jobs getters > should return subset of jobs when setting positive range 4ms
+ ✓ tests/getters.test.ts > Jobs getters > should return subset of jobs when setting a negative range 4ms
+ ✓ tests/getters.test.ts > Jobs getters > should return subset of jobs when range overflows 4ms
+ ✓ tests/getters.test.ts > Jobs getters > should return jobs for multiple types 4ms
+ ✓ tests/getters.test.ts > Jobs getters > when marker is present > when there are delayed jobs and waiting jobs > filters jobIds different than marker 2ms
+ ✓ tests/getters.test.ts > Jobs getters > when marker is present > when there is only one delayed job and get waiting jobs > filters marker and returns an empty array 2ms
+ ✓ tests/getters.test.ts > Jobs getters > should return deduplicated jobs for duplicates types 2ms
+ ✓ tests/getters.test.ts > Jobs getters > should return jobs for all types 4ms
+ ✓ tests/getters.test.ts > Jobs getters > should return 0 if queue is empty 2ms
+ ✓ tests/getters.test.ts > Jobs getters > .getJobCounts > returns job counts for active, completed, delayed, failed, prioritized,
+    waiting and waiting-children 611ms
+ ✓ tests/getters.test.ts > Jobs getters > .getCountsPerPriority > returns job counts per priority 5ms
+ ✓ tests/getters.test.ts > Jobs getters > .getCountsPerPriority > when queue is paused > returns job counts per priority 3ms
+ ✓ tests/getters.test.ts > Jobs getters > .getDependencies > return unprocessed jobs that are dependencies of a given parent job 4ms
+ ✓ tests/getters.test.ts > Jobs getters > .getDependencies > return processed jobs that are dependencies of a given parent job 6ms
+ ✓ tests/getters.test.ts > Jobs getters > #exportPrometheusMetrics > should export all job states in Prometheus gauge format 4ms
+ ✓ tests/getters.test.ts > Jobs getters > #exportPrometheusMetrics > should export all job states in Prometheus gauge format with global variables 2ms
+ ✓ tests/getters.test.ts > Jobs getters > #exportPrometheusMetrics > should handle empty states gracefully 2ms
+ ✓ tests/getters.test.ts > Jobs getters > #exportPrometheusMetrics > should export bullmq_job_completed_total and bullmq_job_failed_total counters from getMetrics 3ms
+ ✓ tests/getters.test.ts > Jobs getters > #exportPrometheusMetrics > should emit zero-valued counters when metrics collection is disabled 4ms
+ ✓ tests/getters.test.ts > Jobs getters > #exportPrometheusMetrics > should escape special characters in queue names and global variable values 3ms
+ ✓ tests/telemetry_interface.test.ts > Telemetry > Queue.add > should correctly interact with telemetry when adding a job 10ms
+ ✓ tests/telemetry_interface.test.ts > Telemetry > Queue.add > should correctly handle errors and record them in telemetry 3ms
+ ✓ tests/telemetry_interface.test.ts > Telemetry > Queue.addBulk > should correctly interact with telemetry when adding multiple jobs 3ms
+ ✓ tests/telemetry_interface.test.ts > Telemetry > Queue.addBulk > should correctly handle errors and record them in telemetry for addBulk 2ms
+ ✓ tests/telemetry_interface.test.ts > Telemetry > Queue.clean > should report the count of cleaned jobs to telemetry without the id array 3ms
+ ✓ tests/telemetry_interface.test.ts > Telemetry > Queue.upsertJobScheduler > should correctly interact with telemetry when adding a job scheduler 3ms
+ ✓ tests/telemetry_interface.test.ts > Telemetry > Queue.upsertJobScheduler > should correctly handle errors and record them in telemetry for upsertJobScheduler 2ms
+ ✓ tests/telemetry_interface.test.ts > Telemetry > Worker stalled checker telemetry context > Worker.pause/resume with recurring stalled checker > does not let recurring moveStalledJobsToWait spans inherit the resume span 229ms
+ ✓ tests/telemetry_interface.test.ts > Telemetry > Worker stalled checker telemetry context > Worker.pause/resume with recurring stalled checker > when moveStalledJobsToWait scans across a restart > never overlaps, and keeps ticking from the latest generation 296ms
+ ✓ tests/telemetry_interface.test.ts > Telemetry > Worker.getNextJob > should trace each fetched job with its propagation metadata 8ms
+ ✓ tests/telemetry_interface.test.ts > Telemetry > Worker.processJob > should correctly interact with telemetry when processing a job 5ms
+ ✓ tests/telemetry_interface.test.ts > Telemetry > Worker.processJob > should propagate context correctly between queue and worker using telemetry 4ms
+ ✓ tests/telemetry_interface.test.ts > Telemetry > Worker.processJob > should set timestamp attributes when job processing completes 4ms
+ ✓ tests/telemetry_interface.test.ts > Telemetry > Worker.processJob > should set job attempts attribute on successful completion 4ms
+ ✓ tests/telemetry_interface.test.ts > Telemetry > Worker.processJob > should set job failed reason attribute on failure 5ms
+ ✓ tests/telemetry_interface.test.ts > Telemetry > Flows > should correctly interact with telemetry when adding a flow 4ms
+ ✓ tests/telemetry_interface.test.ts > Telemetry > Flows > should correctly handle errors and record them in telemetry for flows 3ms
+ ✓ tests/telemetry_interface.test.ts > Telemetry > Flows - addBulk > should correctly interact with telemetry when adding multiple flows 3ms
+ ✓ tests/telemetry_interface.test.ts > Telemetry > Flows - addBulk > should correctly handle errors and record them in telemetry for addBulk 2ms
+ ✓ tests/telemetry_interface.test.ts > Telemetry > Omit Propagation > should omit propagation on queue add 3ms
+ ✓ tests/telemetry_interface.test.ts > Telemetry > Omit Propagation > should omit propagation on queue addBulk 3ms
+ ✓ tests/telemetry_interface.test.ts > Telemetry > Omit Propagation > should omit propagation on job scheduler 3ms
+ ✓ tests/telemetry_interface.test.ts > Telemetry > Omit Propagation > should omit propagation on flow producer 5ms
+ ✓ tests/telemetry_interface.test.ts > Telemetry > Metrics > should record metrics when job is completed 4ms
+ ✓ tests/telemetry_interface.test.ts > Telemetry > Metrics > should record metrics when job fails 3ms
+ ✓ tests/telemetry_interface.test.ts > Telemetry > Metrics > should record delayed metrics when job is retried with delay 4ms
+ ✓ tests/telemetry_interface.test.ts > Telemetry > Metrics > should record duration histogram when job completes 55ms
+ ✓ tests/telemetry_interface.test.ts > Telemetry > Metrics > should not record metrics when meter is not configured 5ms
+ ✓ tests/telemetry_interface.test.ts > Telemetry > Metrics > should cache counter and histogram instances 3ms
+ ✓ tests/telemetry_interface.test.ts > Telemetry > Metrics > should record gauge metric when calling recordJobCountsMetric() 4ms
+ ✓ tests/telemetry_interface.test.ts > Telemetry > Metrics > should not record gauge metrics when meter is not enabled 3ms
+ ✓ tests/obliterate.test.ts > Obliterate > should raise exception if queue has active jobs 523ms
+ ✓ tests/obliterate.test.ts > Obliterate > should remove job logs 109ms
+ ✓ tests/relay_stress.test.ts > Relay stress (redis) > delivers every message once and in publisher order with concurrent publishers 273ms
+ ✓ tests/relay_stress.test.ts > Relay stress (redis) > keeps delivering to stable nodes while other nodes join and leave 176ms
+ ✓ tests/relay_stress.test.ts > Relay stress (redis) > keeps subscriptions consistent under subscribe/unsubscribe churn 151ms
+ ✓ tests/scripts.test.ts > scripts > .paginateSet > should paginate a small set same size as set 50ms
+ ✓ tests/scripts.test.ts > scripts > .paginateSet > should paginate a small set different size as set 3ms
+ ✓ tests/scripts.test.ts > scripts > .paginateSet > should paginate a large set in pages of given size 4ms
+ ✓ tests/scripts.test.ts > scripts > .paginateHash > should paginate a small hash same size as hash 2ms
+ ✓ tests/scripts.test.ts > scripts > .paginateHash > should paginate a small hash different size as hash 2ms
+ ✓ tests/scripts.test.ts > scripts > .paginateHash > should paginate a large hash in pages of given size 205ms
+ ✓ tests/clean.redis.test.ts > Cleaner (redis-only) > removeOrphanedJobs > should remove orphaned job hashes with no sub-keys 11ms
+ ✓ tests/clean.redis.test.ts > Cleaner (redis-only) > removeOrphanedJobs > should remove all sub-keys of orphaned jobs 3ms
+ ✓ tests/clean.redis.test.ts > Cleaner (redis-only) > removeOrphanedJobs > should distinguish orphaned jobs from legitimate jobs across all states 7ms
+ ✓ tests/clean.redis.test.ts > Cleaner (redis-only) > removeOrphanedJobs > should not remove infrastructure keys 3ms
+ ✓ tests/clean.redis.test.ts > Cleaner (redis-only) > removeOrphanedJobs > should not confuse repeat sub-keys with orphaned jobs 3ms
+ ✓ tests/clean.redis.test.ts > Cleaner (redis-only) > removeOrphanedJobs > should handle jobs with custom string IDs 3ms
+ ✓ tests/clean.redis.test.ts > Cleaner (redis-only) > removeOrphanedJobs > should detect orphans found only via sub-keys 3ms
+ ✓ tests/clean.redis.test.ts > Cleaner (redis-only) > removeOrphanedJobs > should handle a large number of orphaned jobs across SCAN iterations 17ms
+ ✓ tests/clean.redis.test.ts > Cleaner (redis-only) > should clean a job without a timestamp 112ms
+ ✓ tests/job.redis.test.ts > Job (redis-only) > .remove > removes processed hash 17ms
+ ✓ tests/job.redis.test.ts > Job (redis-only) > .moveToCompleted > should not fail if queue meta key is missing 3ms
+ ✓ tests/job.redis.test.ts > Job (redis-only) > .moveToCompleted > should not complete a parent job before its children 8ms
+ ✓ tests/job.redis.test.ts > Job (redis-only) > .moveToFailed > when job is removed > should not save stacktrace 111ms
+ ✓ tests/script_loader.test.ts > scriptLoader > when using path mappings > relative paths are relative to the caller of "addScriptPathMapping" 2ms
+ ↓ tests/script_loader.test.ts > scriptLoader > when using path mappings > mappings can be absolute based on project root
+ ✓ tests/script_loader.test.ts > scriptLoader > when using path mappings > mappings can be based on other mapped paths 1ms
+ ✓ tests/script_loader.test.ts > scriptLoader > when using path mappings > substitutes mapped paths 0ms
+ ↓ tests/script_loader.test.ts > scriptLoader > when using path mappings > substitutes ~ with the project root
+ ✓ tests/script_loader.test.ts > scriptLoader > when using path mappings > substitutes "base" with the bullmq base commands folder 0ms
+ ✓ tests/script_loader.test.ts > scriptLoader > when using path mappings > errors on an unrecognized mapping 3ms
+ ✓ tests/script_loader.test.ts > scriptLoader > when loading files > handles basic includes 17ms
+ ✓ tests/script_loader.test.ts > scriptLoader > when loading files > normalizes path before loading 1ms
+ ✓ tests/script_loader.test.ts > scriptLoader > when loading files > removes the @include tag from the resulting script 1ms
+ ✓ tests/script_loader.test.ts > scriptLoader > when loading files > interpolates a script exactly once 2ms
+ ✓ tests/script_loader.test.ts > scriptLoader > when loading files > inserts scripts in dependency order 2ms
+ ✓ tests/script_loader.test.ts > scriptLoader > when loading files > handles glob patterns in @includes statement 4ms
+ ✓ tests/script_loader.test.ts > scriptLoader > when loading files > supports path mapping 1ms
+ ✓ tests/script_loader.test.ts > scriptLoader > when loading files > supports path mapping and globs simultaneously 1ms
+ ✓ tests/script_loader.test.ts > scriptLoader > when loading files > errors on a missing include 1ms
+ ✓ tests/script_loader.test.ts > scriptLoader > when loading files > detects circular dependencies 1ms
+ ✓ tests/script_loader.test.ts > scriptLoader > when loading files > prevents multiple includes of a file in a single script 1ms
+ ✓ tests/script_loader.test.ts > scriptLoader > when loading files > loads all files in a directory 1ms
+ ✓ tests/script_loader.test.ts > scriptLoader > when loading files > caches loadScripts calls per directory 2ms
+ ✓ tests/script_loader.test.ts > scriptLoader > when loading files > throws error if no lua files are found in a directory 1ms
+ ✓ tests/script_loader.test.ts > scriptLoader > when loading files > does not load non .lua files 0ms
+ ✓ tests/script_loader.test.ts > scriptLoader > when initializing a RedisClient > properly sets commands on the instance 23ms
+ ✓ tests/script_loader.test.ts > scriptLoader > when initializing a RedisClient > sets commands on a client only once 3ms
+ ✓ tests/script_loader.test.ts > scriptLoader > .clearCache > can clear the command cache 2ms
+ ✓ tests/job_scheduler.redis.test.ts > Job Scheduler (redis-only) > should be able to remove repeatable jobs by key 27ms
+ ✓ tests/job_scheduler.redis.test.ts > Job Scheduler (redis-only) > when listing schedulers without hash data > should raise a migration error for legacy repeatable keys 5ms
+ ✓ tests/job_scheduler.redis.test.ts > Job Scheduler (redis-only) > when listing schedulers without hash data > should raise a migration error for legacy every-based keys 3ms
+ ✓ tests/job_scheduler.redis.test.ts > Job Scheduler (redis-only) > when listing schedulers without hash data > should remove dangling scheduler references that are not legacy repeatable keys 4ms
+ ✓ tests/job_scheduler.redis.test.ts > Job Scheduler (redis-only) > when listing schedulers without hash data > should remove dangling references with numeric suffix but non-legacy endDate segment 3ms
+ ✓ tests/job_scheduler.redis.test.ts > Job Scheduler (redis-only) > when processing a legacy repeatable job in v6 > should emit a migration error while continuing current job processing 6ms
+ ✓ tests/job_scheduler.redis.test.ts > Job Scheduler (redis-only) > when repeatable job fails > should not create a new delayed job if the failed job is stalled and moved back to wait 17ms
+ ✓ tests/job_scheduler.redis.test.ts > Job Scheduler (redis-only) > when repeatable job fails > when the scheduler has been removed > should fail a stalled scheduler job after maxStalledCount 11ms
+ ✓ tests/job_scheduler.redis.test.ts > Job Scheduler (redis-only) > collision detection > should handle collision detection correctly for concurrent scheduler operations 3ms
+ ✓ tests/job_scheduler.redis.test.ts > Job Scheduler (redis-only) > collision detection > should report busy when every-based scheduler collisions exhaust scanned slots 5ms
+ ✓ tests/job_scheduler.redis.test.ts > Job Scheduler (redis-only) > when job scheduler id contains 5 or more colon segments > should NOT misclassify a legacy repeatable key with 5+ segments as a scheduler 3ms
+ ✓ tests/metrics.test.ts > metrics > should gather metrics for completed jobs 29ms
+ ✓ tests/metrics.test.ts > metrics > should only keep metrics for "maxDataPoints" 11ms
+ ✓ tests/metrics.test.ts > metrics > should gather metrics for failed jobs 15ms
+ ✓ tests/metrics.test.ts > metrics > should get metrics with pagination 9ms
+ ✓ tests/constructor-options.test.ts > backend constructor connection options > 'QueueBase' > passes the connection (false) unchanged to the factory 3ms
+ ✓ tests/constructor-options.test.ts > backend constructor connection options > 'QueueBase' > passes the connection (0) unchanged to the factory 0ms
+ ✓ tests/constructor-options.test.ts > backend constructor connection options > 'QueueBase' > passes the connection ("") unchanged to the factory 0ms
+ ✓ tests/constructor-options.test.ts > backend constructor connection options > 'QueueBase' > passes the connection ({"endpoint":"localhost"}) unchanged to the factory 0ms
+ ✓ tests/constructor-options.test.ts > backend constructor connection options > 'QueueBase' > forwards missing connection options (undefined) to an explicit factory 0ms
+ ✓ tests/constructor-options.test.ts > backend constructor connection options > 'QueueBase' > forwards missing connection options (null) to an explicit factory 0ms
+ ✓ tests/constructor-options.test.ts > backend constructor connection options > 'QueueBase' > forwards missing connection options ({}) to an explicit factory 0ms
+ ✓ tests/constructor-options.test.ts > backend constructor connection options > 'QueueBase' > forwards missing connection options ({}) to an explicit factory 0ms
+ ✓ tests/constructor-options.test.ts > backend constructor connection options > 'QueueBase' > forwards missing connection options ({"connection":null}) to an explicit factory 0ms
+ ✓ tests/constructor-options.test.ts > backend constructor connection options > 'QueueBase' > uses a process-wide custom backend when options are omitted 0ms
+ ✓ tests/constructor-options.test.ts > backend constructor connection options > 'QueueGetters' > passes the connection (false) unchanged to the factory 0ms
+ ✓ tests/constructor-options.test.ts > backend constructor connection options > 'QueueGetters' > passes the connection (0) unchanged to the factory 0ms
+ ✓ tests/constructor-options.test.ts > backend constructor connection options > 'QueueGetters' > passes the connection ("") unchanged to the factory 0ms
+ ✓ tests/constructor-options.test.ts > backend constructor connection options > 'QueueGetters' > passes the connection ({"endpoint":"localhost"}) unchanged to the factory 0ms
+ ✓ tests/constructor-options.test.ts > backend constructor connection options > 'QueueGetters' > forwards missing connection options (undefined) to an explicit factory 0ms
+ ✓ tests/constructor-options.test.ts > backend constructor connection options > 'QueueGetters' > forwards missing connection options (null) to an explicit factory 0ms
+ ✓ tests/constructor-options.test.ts > backend constructor connection options > 'QueueGetters' > forwards missing connection options ({}) to an explicit factory 0ms
+ ✓ tests/constructor-options.test.ts > backend constructor connection options > 'QueueGetters' > forwards missing connection options ({}) to an explicit factory 0ms
+ ✓ tests/constructor-options.test.ts > backend constructor connection options > 'QueueGetters' > forwards missing connection options ({"connection":null}) to an explicit factory 0ms
+ ✓ tests/constructor-options.test.ts > backend constructor connection options > 'QueueGetters' > uses a process-wide custom backend when options are omitted 0ms
+ ✓ tests/constructor-options.test.ts > backend constructor connection options > 'Queue' > passes the connection (false) unchanged to the factory 0ms
+ ✓ tests/constructor-options.test.ts > backend constructor connection options > 'Queue' > passes the connection (0) unchanged to the factory 0ms
+ ✓ tests/constructor-options.test.ts > backend constructor connection options > 'Queue' > passes the connection ("") unchanged to the factory 0ms
+ ✓ tests/constructor-options.test.ts > backend constructor connection options > 'Queue' > passes the connection ({"endpoint":"localhost"}) unchanged to the factory 0ms
+ ✓ tests/constructor-options.test.ts > backend constructor connection options > 'Queue' > forwards missing connection options (undefined) to an explicit factory 0ms
+ ✓ tests/constructor-options.test.ts > backend constructor connection options > 'Queue' > forwards missing connection options (null) to an explicit factory 0ms
+ ✓ tests/constructor-options.test.ts > backend constructor connection options > 'Queue' > forwards missing connection options ({}) to an explicit factory 0ms
+ ✓ tests/constructor-options.test.ts > backend constructor connection options > 'Queue' > forwards missing connection options ({}) to an explicit factory 0ms
+ ✓ tests/constructor-options.test.ts > backend constructor connection options > 'Queue' > forwards missing connection options ({"connection":null}) to an explicit factory 0ms
+ ✓ tests/constructor-options.test.ts > backend constructor connection options > 'Queue' > uses a process-wide custom backend when options are omitted 0ms
+ ✓ tests/constructor-options.test.ts > backend constructor connection options > 'QueueEvents' > passes the connection (false) unchanged to the factory 0ms
+ ✓ tests/constructor-options.test.ts > backend constructor connection options > 'QueueEvents' > passes the connection (0) unchanged to the factory 0ms
+ ✓ tests/constructor-options.test.ts > backend constructor connection options > 'QueueEvents' > passes the connection ("") unchanged to the factory 0ms
+ ✓ tests/constructor-options.test.ts > backend constructor connection options > 'QueueEvents' > passes the connection ({"endpoint":"localhost"}) unchanged to the factory 0ms
+ ✓ tests/constructor-options.test.ts > backend constructor connection options > 'QueueEvents' > forwards missing connection options (undefined) to an explicit factory 0ms
+ ✓ tests/constructor-options.test.ts > backend constructor connection options > 'QueueEvents' > forwards missing connection options (null) to an explicit factory 0ms
+ ✓ tests/constructor-options.test.ts > backend constructor connection options > 'QueueEvents' > forwards missing connection options ({}) to an explicit factory 0ms
+ ✓ tests/constructor-options.test.ts > backend constructor connection options > 'QueueEvents' > forwards missing connection options ({}) to an explicit factory 0ms
+ ✓ tests/constructor-options.test.ts > backend constructor connection options > 'QueueEvents' > forwards missing connection options ({"connection":null}) to an explicit factory 0ms
+ ✓ tests/constructor-options.test.ts > backend constructor connection options > 'QueueEvents' > uses a process-wide custom backend when options are omitted 0ms
+ ✓ tests/constructor-options.test.ts > backend constructor connection options > 'QueueEventsProducer' > passes the connection (false) unchanged to the factory 0ms
+ ✓ tests/constructor-options.test.ts > backend constructor connection options > 'QueueEventsProducer' > passes the connection (0) unchanged to the factory 0ms
+ ✓ tests/constructor-options.test.ts > backend constructor connection options > 'QueueEventsProducer' > passes the connection ("") unchanged to the factory 0ms
+ ✓ tests/constructor-options.test.ts > backend constructor connection options > 'QueueEventsProducer' > passes the connection ({"endpoint":"localhost"}) unchanged to the factory 0ms
+ ✓ tests/constructor-options.test.ts > backend constructor connection options > 'QueueEventsProducer' > forwards missing connection options (undefined) to an explicit factory 0ms
+ ✓ tests/constructor-options.test.ts > backend constructor connection options > 'QueueEventsProducer' > forwards missing connection options (null) to an explicit factory 0ms
+ ✓ tests/constructor-options.test.ts > backend constructor connection options > 'QueueEventsProducer' > forwards missing connection options ({}) to an explicit factory 0ms
+ ✓ tests/constructor-options.test.ts > backend constructor connection options > 'QueueEventsProducer' > forwards missing connection options ({}) to an explicit factory 0ms
+ ✓ tests/constructor-options.test.ts > backend constructor connection options > 'QueueEventsProducer' > forwards missing connection options ({"connection":null}) to an explicit factory 0ms
+ ✓ tests/constructor-options.test.ts > backend constructor connection options > 'QueueEventsProducer' > uses a process-wide custom backend when options are omitted 0ms
+ ✓ tests/constructor-options.test.ts > backend constructor connection options > 'FlowProducer' > passes the connection (false) unchanged to the factory 0ms
+ ✓ tests/constructor-options.test.ts > backend constructor connection options > 'FlowProducer' > passes the connection (0) unchanged to the factory 0ms
+ ✓ tests/constructor-options.test.ts > backend constructor connection options > 'FlowProducer' > passes the connection ("") unchanged to the factory 0ms
+ ✓ tests/constructor-options.test.ts > backend constructor connection options > 'FlowProducer' > passes the connection ({"endpoint":"localhost"}) unchanged to the factory 0ms
+ ✓ tests/constructor-options.test.ts > backend constructor connection options > 'FlowProducer' > forwards missing connection options (undefined) to an explicit factory 0ms
+ ✓ tests/constructor-options.test.ts > backend constructor connection options > 'FlowProducer' > forwards missing connection options (null) to an explicit factory 0ms
+ ✓ tests/constructor-options.test.ts > backend constructor connection options > 'FlowProducer' > forwards missing connection options ({}) to an explicit factory 0ms
+ ✓ tests/constructor-options.test.ts > backend constructor connection options > 'FlowProducer' > forwards missing connection options ({}) to an explicit factory 0ms
+ ✓ tests/constructor-options.test.ts > backend constructor connection options > 'FlowProducer' > forwards missing connection options ({"connection":null}) to an explicit factory 0ms
+ ✓ tests/constructor-options.test.ts > backend constructor connection options > 'FlowProducer' > uses a process-wide custom backend when options are omitted 0ms
+ ✓ tests/constructor-options.test.ts > backend constructor connection options > 'Worker' > passes the connection (false) unchanged to the factory 0ms
+ ✓ tests/constructor-options.test.ts > backend constructor connection options > 'Worker' > passes the connection (0) unchanged to the factory 0ms
+ ✓ tests/constructor-options.test.ts > backend constructor connection options > 'Worker' > passes the connection ("") unchanged to the factory 0ms
+ ✓ tests/constructor-options.test.ts > backend constructor connection options > 'Worker' > passes the connection ({"endpoint":"localhost"}) unchanged to the factory 0ms
+ ✓ tests/constructor-options.test.ts > backend constructor connection options > 'Worker' > forwards missing connection options (undefined) to an explicit factory 1ms
+ ✓ tests/constructor-options.test.ts > backend constructor connection options > 'Worker' > forwards missing connection options (null) to an explicit factory 0ms
+ ✓ tests/constructor-options.test.ts > backend constructor connection options > 'Worker' > forwards missing connection options ({}) to an explicit factory 0ms
+ ✓ tests/constructor-options.test.ts > backend constructor connection options > 'Worker' > forwards missing connection options ({}) to an explicit factory 0ms
+ ✓ tests/constructor-options.test.ts > backend constructor connection options > 'Worker' > forwards missing connection options ({"connection":null}) to an explicit factory 0ms
+ ✓ tests/constructor-options.test.ts > backend constructor connection options > 'Worker' > uses a process-wide custom backend when options are omitted 0ms
+ ✓ tests/constructor-options.test.ts > backend constructor connection options > 'JobScheduler' > passes the connection (false) unchanged to the factory 0ms
+ ✓ tests/constructor-options.test.ts > backend constructor connection options > 'JobScheduler' > passes the connection (0) unchanged to the factory 0ms
+ ✓ tests/constructor-options.test.ts > backend constructor connection options > 'JobScheduler' > passes the connection ("") unchanged to the factory 0ms
+ ✓ tests/constructor-options.test.ts > backend constructor connection options > 'JobScheduler' > passes the connection ({"endpoint":"localhost"}) unchanged to the factory 0ms
+ ✓ tests/constructor-options.test.ts > backend constructor connection options > 'JobScheduler' > forwards missing connection options (undefined) to an explicit factory 0ms
+ ✓ tests/constructor-options.test.ts > backend constructor connection options > 'JobScheduler' > forwards missing connection options (null) to an explicit factory 0ms
+ ✓ tests/constructor-options.test.ts > backend constructor connection options > 'JobScheduler' > forwards missing connection options ({}) to an explicit factory 0ms
+ ✓ tests/constructor-options.test.ts > backend constructor connection options > 'JobScheduler' > forwards missing connection options ({}) to an explicit factory 0ms
+ ✓ tests/constructor-options.test.ts > backend constructor connection options > 'JobScheduler' > forwards missing connection options ({"connection":null}) to an explicit factory 0ms
+ ✓ tests/constructor-options.test.ts > backend constructor connection options > 'JobScheduler' > uses a process-wide custom backend when options are omitted 0ms
+ ✓ tests/constructor-options.test.ts > backend constructor connection options > preserves no-options Redis constructors 35ms
+ ✓ tests/getters.redis.test.ts > Jobs getters (redis-only) > .getWorkers > when disconnection happens > gets all workers even after reconnection 44ms
+ ✓ tests/create-backend.test.ts > Redis backend connection ownership > closes only owned clients (blocking: false, force: false) 6ms
+ ✓ tests/create-backend.test.ts > Redis backend connection ownership > closes only owned clients (blocking: false, force: true) 2ms
+ ✓ tests/create-backend.test.ts > Redis backend connection ownership > closes only owned clients (blocking: true, force: false) 3ms
+ ✓ tests/create-backend.test.ts > Redis backend connection ownership > closes only owned clients (blocking: true, force: true) 2ms
+ ✓ tests/create-backend.test.ts > Redis backend duplication of raw node-redis clients > adapts dedicated blocking connections with the native driver 35ms
+ ✓ tests/valkey-glide-client.test.ts > ValkeyGlideAdapter > preserves the raw constructor context when duplicating clients 3ms
+ ✓ tests/valkey-glide-client.test.ts > ValkeyGlideAdapter > maps core commands and normalizes responses 3ms
+ ✓ tests/valkey-glide-client.test.ts > ValkeyGlideAdapter > supports ioredis-compatible helper commands used by the test suite 2ms
+ ✓ tests/valkey-glide-client.test.ts > ValkeyGlideAdapter > falls back from EVALSHA to EVAL on NOSCRIPT 1ms
+ ✓ tests/valkey-glide-client.test.ts > ValkeyGlideAdapter > falls back from EVALSHA to EVAL on NoScriptError 1ms
+ ✓ tests/valkey-glide-client.test.ts > ValkeyGlideAdapter > duplicates client via createClient and applies connectionName 0ms
+ ✓ tests/valkey-glide-client.test.ts > ValkeyGlideAdapter > reconnects duplicated clients after disconnecting 1ms
+ ✓ tests/valkey-glide-client.test.ts > ValkeyGlideAdapter > uses the string decoder for CLIENT commands 1ms
+ ✓ tests/valkey-glide-client.test.ts > ValkeyGlideAdapter > supports MULTI/pipeline style transactions 1ms
+ ✓ tests/valkey-glide-client.test.ts > ValkeyGlideAdapter > uses string decoder while queueing MULTI commands 1ms
+ ✓ tests/valkey-glide-client.test.ts > ValkeyGlideAdapter > uses native batch execution when available 1ms
+ ✓ tests/valkey-glide-client.test.ts > ValkeyGlideAdapter > reports wait status until connect is called 0ms
+ ✓ tests/valkey-glide-client.test.ts > ValkeyGlideAdapter > emits ready again after disconnect and reconnect 0ms
+ ✓ tests/valkey-glide-client.test.ts > ValkeyGlideAdapter > waits for in-flight commands before closing the raw client 3ms
+ ✓ tests/valkey-glide-client.test.ts > ValkeyGlideAdapter > releases queued commands when disconnected before they start 2ms
+ ✓ tests/valkey-glide-client.test.ts > ValkeyGlideAdapter > closes the raw client immediately for blocking commands 3ms
+ ✓ tests/valkey-glide-client.test.ts > ValkeyGlideAdapter > routes INFO to a single node in cluster mode 1ms
+ ✓ tests/valkey-glide-client.test.ts > ValkeyGlideAdapter > routes INFO to a single node on a duplicated cluster client 1ms
+ ✓ tests/valkey-glide-client.test.ts > ValkeyGlideAdapter > rejects info() with ConnectionClosedError when closed while raw client is pending 0ms
+ ✓ tests/valkey-glide-client.test.ts > ValkeyGlideAdapter > normalizes a ClosingError from duplicated client creation in info() 2ms
+ ✓ tests/valkey-glide-client.test.ts > ValkeyGlideAdapter > throws ConnectionClosedError for commands issued after disconnect 0ms
+ ✓ tests/postgres-listen-client-recovery.test.ts > PostgresConnection LISTEN client recovery > enables TCP keepAlive on the dedicated standalone LISTEN client 4ms
+ ✓ tests/postgres-listen-client-recovery.test.ts > PostgresConnection LISTEN client recovery > enables TCP keepAlive on a client checked out of a user-supplied pool 2ms
+ ✓ tests/postgres-listen-client-recovery.test.ts > PostgresConnection LISTEN client recovery > destroys the pooled LISTEN client on close 1ms
+ ✓ tests/postgres-listen-client-recovery.test.ts > PostgresConnection LISTEN client recovery > reports no keepalive when a pooled client socket cannot be adjusted 0ms
+ ✓ tests/postgres-listen-client-recovery.test.ts > PostgresConnection LISTEN client recovery > re-applies the LISTEN client name after the client is rebuilt 1ms
+ ✓ tests/postgres-listen-client-recovery.test.ts > PostgresConnection LISTEN client recovery > invalidates the memoized client and rebuilds it after a fatal error 1ms
+ ✓ tests/postgres-listen-client-recovery.test.ts > PostgresConnection LISTEN client recovery > emits "listenerinvalidated" when the LISTEN client dies 0ms
+ ✓ tests/postgres-listen-client-recovery.test.ts > PostgresConnection LISTEN client recovery > ignores a stale error from an already-replaced client 1ms
+ ✓ tests/postgres-listen-client-recovery.test.ts > PostgresConnection LISTEN client recovery > does not invalidate while the connection is closing 0ms
+ ✓ tests/postgres-listen-client-recovery.test.ts > PostgresConnection LISTEN client recovery > does not memoize a failed connect, so the next call establishes a fresh client 2ms
+ ✓ tests/postgres-listen-client-recovery.test.ts > PostgresConnection LISTEN client recovery > does not memoize a failed checkout from a user-supplied pool 1ms
+ ✓ tests/postgres-listen-client-recovery.test.ts > PostgresConnection LISTEN client recovery > shares one in-flight connect between concurrent callers, even when it fails 0ms
+ ✓ tests/postgres-listen-client-recovery.test.ts > PostgresRelayBackend LISTEN client recovery > retries LISTEN when the client is invalidated during identity lookup 12ms
+ ✓ tests/postgres-listen-client-recovery.test.ts > PostgresQueueBackend LISTEN client recovery > re-subscribes and wakes the blocking wait when the LISTEN client is invalidated 1ms
+ ✓ tests/postgres-listen-client-recovery.test.ts > PostgresQueueBackend LISTEN client recovery > caps maximumBlockTimeout when the LISTEN connection has no keepalive 0ms
+ ✓ tests/ioredis-client.test.ts > createIORedisClient duplicate routing > should route duplicate({ connectionName }) through redisOptions for Cluster 11ms
+ ✓ tests/ioredis-client.test.ts > createIORedisClient duplicate routing > should pass options directly for non-Cluster Redis 4ms
+ ✓ tests/ioredis-client.test.ts > createIORedisClient does not mutate the raw client > should not add bullmq markers or override methods on the raw ioredis instance 108ms
+ ✓ tests/ioredis-client.test.ts > createIORedisClient does not mutate the raw client > should return the same proxy when wrapping the same raw client twice 1ms
+ ✓ tests/ioredis-client.test.ts > createIORedisClient does not mutate the raw client > should be idempotent when called with an already-wrapped client 0ms
+ ✓ tests/flow.redis.test.ts > flows (redis-only) > should add meta key to both parents and children 16ms
+ ✓ tests/queue.redis.test.ts > queues (redis-only) > .removeDeprecatedPriorityKey > removes old priority key 10ms
+ ✓ tests/child-processor.test.ts > Sandboxed updateData responses > registers before sending and cleans up repeated immediate responses 6ms
+ ✓ tests/child-processor.test.ts > Sandboxed updateData responses > cleans up when sending fails by throw 1ms
+ ✓ tests/child-processor.test.ts > Sandboxed updateData responses > cleans up when sending fails by reject 0ms
+ ✓ tests/child-processor.test.ts > Sandboxed updateData responses > waits for persistence without adding an RPC timeout 2ms
+ ✓ tests/child-processor.test.ts > Sandboxed updateData responses > returns persistence errors and removes the response listener 1ms
+ ✓ tests/child-processor.test.ts > Sandboxed updateData responses > keeps the timeout for existing RPCs and cleans up after it expires 2ms
+ ✓ tests/bun-redis-nested-duplicate.test.ts > bun adapter nested duplicate (#4706) > single duplicate() still materializes a raw client 2ms
+ ✓ tests/bun-redis-nested-duplicate.test.ts > bun adapter nested duplicate (#4706) > nested duplicate().duplicate() materializes the grandchild without TypeError 0ms
+ ✓ tests/bun-redis-nested-duplicate.test.ts > bun adapter nested duplicate (#4706) > nested duplicate can send a command before an explicit connect() 0ms
+ ✓ tests/bun-redis-nested-duplicate.test.ts > bun adapter nested duplicate (#4706) > serializes concurrent nested duplicate() so lazy rawFactory does not overwrite raw 1ms
+ ✓ tests/postgres-queue-backend.test.ts > PostgresQueueBackend > batches lock renewal with the shared SQL command 4ms
+ ✓ tests/child_stdio_null.test.ts > Child.init with null stdout/stderr > keeps the inlined enum values in the mock in sync with the real enums 2ms
+ ✓ tests/child_stdio_null.test.ts > Child.init with null stdout/stderr > does not throw a TypeError when parent.stdout and parent.stderr are null 2ms
+ ✓ tests/connection-closed-error.test.ts > ConnectionClosedError > exposes a local connection closed message matching ioredis 2ms
+ ✓ tests/connection-closed-error.test.ts > ConnectionClosedError > treats a ConnectionClosedError as a connection error 0ms
+ ✓ tests/connection-closed-error.test.ts > ConnectionClosedError > treats the connection closed message as a connection error 0ms
+ ✓ tests/connection-closed-error.test.ts > ConnectionClosedError > treats an unrelated error as not a connection error 0ms
+
+ Test Files  47 passed (47)
+      Tests  1092 passed | 2 skipped (1094)
+   Start at  10:22:59
+   Duration  333.55s (transform 8.51s, setup 535ms, import 12.05s, tests 318.01s, environment 6ms)
+
+Done in 337.42s.

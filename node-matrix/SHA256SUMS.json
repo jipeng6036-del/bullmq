@@ -1,0 +1,213 @@
+{
+  "head": "2e5ecf53615fd799d0c660d3b8bb8a5af579ccf7",
+  "tree": "0503ca913f5b3b71b081f7912a497fe635317d67",
+  "archiveSha256": "7bc67762360cab5ec31cc6f42e95cbc9c8d2401364a40b5129cf5bf2e10193a3",
+  "contentScanPassed": true,
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 3756,
+      "sha256": "43ea5b5d4fe1daac17176f4c032b82c31a22fd532947991f4bca59c68f47a5aa"
+    },
+    {
+      "path": "v2-final-gates.json",
+      "bytes": 19365,
+      "sha256": "31453d46b2cda1ffdd0c296349049e4521a57f140442d6b1d8638e513b855c33"
+    },
+    {
+      "path": "v2-final-head.json",
+      "bytes": 562,
+      "sha256": "43ea7f6b62a0ffc50da9f03be8bcc6eb6232a08d8d9fafc34071a8e15fb6265a"
+    },
+    {
+      "path": "v2-final-head-source-match.json",
+      "bytes": 412,
+      "sha256": "0db1cb4605625271ee79d9027ce5be142c9f1c720890e12eee695d420a05a829"
+    },
+    {
+      "path": "v2-host-head-all-blobs.json",
+      "bytes": 257708,
+      "sha256": "2f5d1a95a494390ff4951ad2f8da24f63ee15d9c764f2fcbe6f3c23a4adea10a"
+    },
+    {
+      "path": "v2-frozen-archive-independent-verification.json",
+      "bytes": 1487,
+      "sha256": "74e83d5eda0ea5362f966bc478092a98ffec9e7406b841bb2836f05d2f1f2cf4"
+    },
+    {
+      "path": "v2-runtime-identities.json",
+      "bytes": 3588,
+      "sha256": "88c69fd0f9dde5cf29bf1f58148742316be4d188f2d988d8dc2bd677f7c99bb4"
+    },
+    {
+      "path": "v2-runtime-identities-raw.json",
+      "bytes": 46437,
+      "sha256": "26d6264a3c7e4536197304d8de26a10a437c8168b270d81e658c04ed4f37aa08"
+    },
+    {
+      "path": "v2-glide-lock-side-effect.json",
+      "bytes": 569,
+      "sha256": "de087d58a887fdc4307dd2e0372cfd3f799986197d9de0cd820cf6c28097974a"
+    },
+    {
+      "path": "v2-glide-npm-lock-side-effect.diff",
+      "bytes": 388791,
+      "sha256": "c94c362f61dbe419d949ed0c604e26131e6f7396491bffbca044875f34d20bce"
+    },
+    {
+      "path": "verify-source-v2.cjs",
+      "bytes": 1266,
+      "sha256": "872367e64171e98499e0884ca42037c379338a09c271bb6777cdeac25abe3239"
+    },
+    {
+      "path": "v2-node20-versions.log",
+      "bytes": 413,
+      "sha256": "30d4b4171644b24de8a97abc9d06f50db2e72263367459da912a43013840b7cb"
+    },
+    {
+      "path": "v2-node20-store-version.log",
+      "bytes": 637,
+      "sha256": "78670e8a3a60645305cd2533faef8b31a2df64433d3c27d54010bd54533ef5a6"
+    },
+    {
+      "path": "v2-node20-source-before.json",
+      "bytes": 1571,
+      "sha256": "9545516c6d550b9974cf48cf8cb130e4ef8f89ad4a6ae366164aeefdbc882f9c"
+    },
+    {
+      "path": "v2-node20-source-after.json",
+      "bytes": 1571,
+      "sha256": "a90b0c484c6c4e523e66a3443089f9fa0988eb245b7ea4befee2eea0d2b8adf6"
+    },
+    {
+      "path": "v2-node20-build.log",
+      "bytes": 12764,
+      "sha256": "df4a561852ad09163353b456a7288b989f71d101878131b3e50519b6ab2dacf4"
+    },
+    {
+      "path": "v2-node20-test-1.log",
+      "bytes": 231950,
+      "sha256": "b53cd8309bbc0a95f97319693de13c837d8eaf740cc375d83b163390b9dfebfa"
+    },
+    {
+      "path": "v2-node20-test-2.log",
+      "bytes": 56840,
+      "sha256": "0425c161f3307769c15dcf5c9f1258994c959baa1e46f03f686d182fb01a16e0"
+    },
+    {
+      "path": "v2-node22-versions.log",
+      "bytes": 413,
+      "sha256": "8528108b57d07839d90e6245a2f10323bdadda0523930827a0d0b61a8b8e6cca"
+    },
+    {
+      "path": "v2-node22-store-version.log",
+      "bytes": 639,
+      "sha256": "79f054c5d41008bdf761389dcbfb683d83c6c6faf5daf2d3b5eff6a4522101cb"
+    },
+    {
+      "path": "v2-node22-source-before.json",
+      "bytes": 1571,
+      "sha256": "e2976e478bf6b5178c70ed20a4d368c96d6bab8f49eeb210a48ef7bf52a5a38d"
+    },
+    {
+      "path": "v2-node22-source-after.json",
+      "bytes": 1571,
+      "sha256": "e6215f3d6882d888c7c6d16788d178d5b71f11ce0d5356c6bd0cd9319f7d61b6"
+    },
+    {
+      "path": "v2-node22-build.log",
+      "bytes": 12763,
+      "sha256": "5b23ff5dcd5716ea4a40c4cf4a329fdee29f850983bae83e8536011718b0bcd0"
+    },
+    {
+      "path": "v2-node22-test-1.log",
+      "bytes": 231955,
+      "sha256": "4b9b64e7fdcc2c1335c7a6d33d61dedb3cc93351844f9288214e743a75c8be87"
+    },
+    {
+      "path": "v2-node22-test-2.log",
+      "bytes": 56879,
+      "sha256": "6e97160f7041f4290fac4e4bc95b9951d2ca6f0eb872c08dc9667d93d9fa34f8"
+    },
+    {
+      "path": "v2-node20-install.log",
+      "bytes": 1736,
+      "sha256": "a6a4a791fe75ac16ef8a65d25303962056813daa9c33d4d2e5348b47bce274db"
+    },
+    {
+      "path": "node22-install-final.log",
+      "bytes": 1736,
+      "sha256": "4a04f8c44bbef39596574bafc876c9b503222a544aec596917791db61521bea8"
+    },
+    {
+      "path": "v2-valkey-glide-install.log",
+      "bytes": 1736,
+      "sha256": "0c25eb32306832804dc696427cedf33092e8d9b77dee09a49c071be0a0cae66e"
+    },
+    {
+      "path": "v2-valkey-glide-versions.log",
+      "bytes": 413,
+      "sha256": "a66b25e6c9b39198ed7ab9e0f17e4a7fef4732792c8e1634dd74a6bbafc9a3e0"
+    },
+    {
+      "path": "v2-valkey-glide-store-version.log",
+      "bytes": 673,
+      "sha256": "1f76a26a82add4d22af019630ca81f34f4c1d1768e12a35c3ff314c4484e1b5b"
+    },
+    {
+      "path": "v2-valkey-glide-glide-install.log",
+      "bytes": 783,
+      "sha256": "8bc88651d65e75fe7da6dce32aec17d1a42eafd5a820a2d4236faf7acc5164e8"
+    },
+    {
+      "path": "v2-valkey-glide-glide-version.log",
+      "bytes": 6,
+      "sha256": "732f64d874f90788c0199b0c19bfd9b3b6436e140114e53e462832532d74c61c"
+    },
+    {
+      "path": "v2-glide-canonical-final-assert-versions.log",
+      "bytes": 23,
+      "sha256": "6113905d083e27be4de80caa3a2399e9d893fbea1cd05e177437ff48e0056120"
+    },
+    {
+      "path": "v2-glide-canonical-final-source-before.json",
+      "bytes": 1571,
+      "sha256": "8d6ad8b483f7a6ad518db30477545e8680b5dabd6fde605e35bfd57e2222b9ad"
+    },
+    {
+      "path": "v2-glide-canonical-final-source-after.json",
+      "bytes": 1571,
+      "sha256": "845048db07d808de612eb6b893d7d8172dcad0ef56f38ebb659ab13e7b6235e3"
+    },
+    {
+      "path": "v2-glide-canonical-final-build.log",
+      "bytes": 12763,
+      "sha256": "ea34542dd100a3c19ba6ed4a53ca7200ae036a6860682514b4721cb8c25e8760"
+    },
+    {
+      "path": "v2-glide-canonical-final-test.log",
+      "bytes": 223051,
+      "sha256": "78dd2afce05313e49498c57d33dafb1650534d020e1494aae98f58e7212a9e1d"
+    },
+    {
+      "path": "v2-glide-canonical-final-restore-and-source-before.log",
+      "bytes": 1572,
+      "sha256": "6e92d85e4211002de06078e86eecb5e572a71c45ca36a433f7e990d6b418861b"
+    },
+    {
+      "path": "v2-glide-canonical-final-source-after.log",
+      "bytes": 1572,
+      "sha256": "fb787a59ae0c2476784b3cbc899a3dc95ab066a52204c782ff455f70905cda40"
+    },
+    {
+      "path": "public-allowlist.json",
+      "bytes": 1916,
+      "sha256": "ad305f16a4db48e2c4a9b656333886a943a05e3063be51d897c337614d58abc9"
+    },
+    {
+      "path": "public-content-scan.json",
+      "bytes": 627,
+      "sha256": "127dab3f564fbcf4f9bfffa1f3fc89e7f967782fbef5879f441a95a8d6239cb1"
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "verified": true,
+  "sourceCommit": "2e5ecf53615fd799d0c660d3b8bb8a5af579ccf7",
+  "sourceTree": "0503ca913f5b3b71b081f7912a497fe635317d67",
+  "artifactSha256": "d14b6b2ce3a64dccd7950860eb2b757e093bbf74735ea3ec7790bb43bf9b9f8e",
+  "installedFiles": 805,
+  "redisContainerId": "ec80b192650b25877b7573510ece6cc532c79736982d0e1a126010640872ad11",
+  "redisVersion": "Redis server v=8.10.0 sha=00000000:1 malloc=jemalloc-5.3.0 bits=64 build=15f20ec95e21aa19",
+  "redisPort": 46017,
+  "node": "v24.14.0",
+  "commands": [
+    {
+      "argv": [
+        "E:\\Nodejs\\node.EXE",
+        "-p",
+        "JSON.stringify({node:process.version,versions:process.versions})"
+      ],
+      "started": "2026-10-25T10:41:45.156899+00:00",
+      "ended": "2026-10-25T10:41:45.600090+00:00",
+      "exitCode": 0
+    },
+    {
+      "argv": [
+        "C:\\WINDOWS\\system32\\cmd.exe",
+        "/d",
+        "/c",
+        "E:\\Nodejs\\npm.cmd",
+        "--version"
+      ],
+      "started": "2026-10-25T10:41:45.600605+00:00",
+      "ended": "2026-10-25T10:41:46.023536+00:00",
+      "exitCode": 0
+    },
+    {
+      "argv": [
+        "C:\\WINDOWS\\system32\\cmd.exe",
+        "/d",
+        "/c",
+        "E:\\Nodejs\\npm.cmd",
+        "install",
+        "--ignore-scripts",
+        "--no-audit",
+        "--no-fund",
+        "--cache",
+        "F:\\Github-PR\\ci-evidence\\heartbeat0902-js-bullmq-4168\\public-final-v2-windows\\npm-cache",
+        "--registry",
+        "https://registry.npmjs.org",
+        "F:\\Github-PR\\ci-evidence\\heartbeat0902-js-bullmq-4168\\runtime\\artifact-final-v2\\bullmq-6.4.2.tgz",
+        "ioredis@5.11.1"
+      ],
+      "started": "2026-10-25T10:41:46.023536+00:00",
+      "ended": "2026-10-25T10:42:51.033294+00:00",
+      "exitCode": 0
+    },
+    {
+      "argv": [
+        "E:\\Nodejs\\node.EXE",
+        "visibility-probe-fileurl.cjs"
+      ],
+      "started": "2026-10-25T10:42:51.197157+00:00",
+      "ended": "2026-10-25T10:42:52.399256+00:00",
+      "exitCode": 0
+    },
+    {
+      "argv": [
+        "E:\\Nodejs\\node.EXE",
+        "contracts-probe.cjs"
+      ],
+      "started": "2026-10-25T10:42:52.399772+00:00",
+      "ended": "2026-10-25T10:43:18.697853+00:00",
+      "exitCode": 0
+    },
+    {
+      "argv": [
+        "E:\\Nodejs\\node.EXE",
+        "reuse-probe.cjs"
+      ],
+      "started": "2026-10-25T10:43:18.698373+00:00",
+      "ended": "2026-10-25T10:43:22.805979+00:00",
+      "exitCode": 0
+    },
+    {
+      "argv": [
+        "E:\\Nodejs\\node.EXE",
+        "strong-close-probe.cjs"
+      ],
+      "started": "2026-10-25T10:43:22.805979+00:00",
+      "ended": "2026-10-25T10:43:33.040145+00:00",
+      "exitCode": 0
+    }
+  ],
+  "visibilityObservations": 750,
+  "contractCases": 14,
+  "sameChildReuseModes": 2,
+  "strongPendingCases": 4,
+  "completed": "2026-10-25T10:43:33.042814+00:00"
+}

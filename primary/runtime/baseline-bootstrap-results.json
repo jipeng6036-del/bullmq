@@ -1,0 +1,23 @@
+[
+  {
+    "step": "tools-scripts",
+    "command": "cd /tmp/bullmq4168/tools/node_modules/node && /usr/local/bin/node installArchSpecificPackage && /tmp/bullmq4168/tools/node_modules/node/bin/node --version",
+    "exitCode": 0,
+    "started": "2026-10-25T09:38:37.765841+00:00",
+    "ended": "2026-10-25T09:38:39.558944+00:00"
+  },
+  {
+    "step": "install",
+    "command": "cd /tmp/bullmq4168/baseline && node --version && npm --version && yarn --version && yarn install --ignore-engines --frozen-lockfile --non-interactive --cache-folder /tmp/bullmq4168/yarn-cache",
+    "exitCode": 0,
+    "started": "2026-10-25T09:38:39.559461+00:00",
+    "ended": "2026-10-25T09:39:29.649930+00:00"
+  },
+  {
+    "step": "build",
+    "command": "cd /tmp/bullmq4168/baseline && yarn build",
+    "exitCode": 0,
+    "started": "2026-10-25T09:39:29.650438+00:00",
+    "ended": "2026-10-25T09:39:37.642830+00:00"
+  }
+]

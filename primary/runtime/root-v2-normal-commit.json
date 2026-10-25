@@ -1,0 +1,171 @@
+[
+  {
+    "args": [
+      "git",
+      "rev-parse",
+      "HEAD"
+    ],
+    "code": 0,
+    "stdout": "09b7bfeb8653e74074542ca48e70477540742a7e\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "git",
+      "diff",
+      "--cached",
+      "--name-only"
+    ],
+    "code": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "./node_modules/.bin/prettier",
+      "--check",
+      "src/classes/child-processor.ts",
+      "src/classes/sandbox.ts",
+      "src/enums/child-command.ts",
+      "tests/sandboxed_process.test.ts",
+      "tests/child-processor.test.ts",
+      "tests/fixtures/fixture_processor_update_data_await.js"
+    ],
+    "code": 0,
+    "stdout": "Checking formatting...\nAll matched files use Prettier code style!\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "git",
+      "add",
+      "--",
+      "src/classes/child-processor.ts",
+      "src/classes/sandbox.ts",
+      "src/enums/child-command.ts",
+      "tests/sandboxed_process.test.ts",
+      "tests/child-processor.test.ts",
+      "tests/fixtures/fixture_processor_update_data_await.js"
+    ],
+    "code": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "git",
+      "diff",
+      "--cached",
+      "--name-only"
+    ],
+    "code": 0,
+    "stdout": "src/classes/child-processor.ts\nsrc/classes/sandbox.ts\nsrc/enums/child-command.ts\ntests/child-processor.test.ts\ntests/fixtures/fixture_processor_update_data_await.js\ntests/sandboxed_process.test.ts\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "git",
+      "diff",
+      "--cached",
+      "--check"
+    ],
+    "code": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "git",
+      "commit",
+      "-m",
+      "fix(sandbox): await persisted updateData responses",
+      "-m",
+      "Wait for parent-side persistence and return update errors to the sandboxed caller. Refs #4168."
+    ],
+    "code": 0,
+    "stdout": "[fix/sandbox-update-data-persistence 2e5ecf5361] fix(sandbox): await persisted updateData responses\n 6 files changed, 254 insertions(+), 15 deletions(-)\n create mode 100644 tests/child-processor.test.ts\n create mode 100644 tests/fixtures/fixture_processor_update_data_await.js\n",
+    "stderr": "yarn run v1.22.22\n$ pretty-quick --staged\n\ud83d\udd0d  Finding changed files since git revision 09b7bfeb86.\n\ud83c\udfaf  Found 6 changed files.\n\u2705  Everything is awesome!\nDone in 1.07s.\nyarn run v1.22.22\n$ ./node_modules/.bin/eslint . --fix\n\n/tmp/bullmq4168/candidate/src/postgres/postgres-relay-backend.ts\n  395:7  warning  'identity' is never reassigned. Use 'const' instead  prefer-const\n\n\u2716 1 problem (0 errors, 1 warning)\n\nDone in 3.50s.\nyarn run v1.22.22\n$ lint-staged\n\u22ef Backing up original state\u2026\n\u2714 Done backing up original state (3efc488ee8)!\n\u22ef Running tasks for staged files\u2026\n    *.{js,ts} \u2014 6 files\n      \u22ef npm run eslint:fix\n\n\u2714 npm run eslint:fix\n\n\u2714 Done running tasks for staged files!\n\u22ef Staging changes from tasks\u2026\n\u2714 Done staging changes from tasks!\n\u22ef Cleaning up temporary files\u2026\n\u2714 Done cleaning up temporary files!\nDone in 3.75s.\nyarn run v1.22.22\n$ madge --circular --extensions ts ./src\n- Finding files\nProcessed 178 files (726ms) \n\n\u2714 No circular dependency found!\n\nDone in 0.83s.\n"
+  },
+  {
+    "args": [
+      "git",
+      "rev-parse",
+      "HEAD"
+    ],
+    "code": 0,
+    "stdout": "2e5ecf53615fd799d0c660d3b8bb8a5af579ccf7\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "git",
+      "status",
+      "--porcelain"
+    ],
+    "code": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "git",
+      "bundle",
+      "create",
+      "/evidence/final-v2-source.bundle",
+      "HEAD",
+      "^09b7bfeb8653e74074542ca48e70477540742a7e"
+    ],
+    "code": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "git",
+      "rev-parse",
+      "HEAD^"
+    ],
+    "code": 0,
+    "stdout": "09b7bfeb8653e74074542ca48e70477540742a7e\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "git",
+      "rev-parse",
+      "HEAD^{tree}"
+    ],
+    "code": 0,
+    "stdout": "0503ca913f5b3b71b081f7912a497fe635317d67\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "git",
+      "diff",
+      "--stat",
+      "HEAD^",
+      "HEAD"
+    ],
+    "code": 0,
+    "stdout": " src/classes/child-processor.ts                     |  63 +++++++++---\n src/classes/sandbox.ts                             |  18 +++-\n src/enums/child-command.ts                         |   1 +\n tests/child-processor.test.ts                      | 108 +++++++++++++++++++++\n .../fixture_processor_update_data_await.js         |  35 +++++++\n tests/sandboxed_process.test.ts                    |  44 +++++++++\n 6 files changed, 254 insertions(+), 15 deletions(-)\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "git",
+      "ls-tree",
+      "HEAD",
+      "--",
+      "src/classes/child-processor.ts",
+      "src/classes/sandbox.ts",
+      "src/enums/child-command.ts",
+      "tests/sandboxed_process.test.ts",
+      "tests/child-processor.test.ts",
+      "tests/fixtures/fixture_processor_update_data_await.js"
+    ],
+    "code": 0,
+    "stdout": "100644 blob 99a280730db1c1271b8c21c6901cc8a8c32f3336\tsrc/classes/child-processor.ts\n100644 blob f69ca7ddfe1254ea7a82da0e0d0eed6952c03673\tsrc/classes/sandbox.ts\n100644 blob 56582618281fcd25466f597c84195e707f83320a\tsrc/enums/child-command.ts\n100644 blob 31bac68e3d38b364ef2ca5fd0dd0d9351ffde524\ttests/child-processor.test.ts\n100644 blob 2c96f5ed684eaa92c1dfc03ae353a99b41e493f5\ttests/fixtures/fixture_processor_update_data_await.js\n100644 blob e64abf50d02187f9cd3ac4a35b9c676aa6e52e41\ttests/sandboxed_process.test.ts\n",
+    "stderr": ""
+  }
+]

@@ -1,0 +1,497 @@
+{
+  "createdAt": "2026-10-25T10:50:00.212710+00:00",
+  "status": "ALL_APPLICABLE_FINAL_V2_LOCAL_GATES_PASSED",
+  "source": {
+    "base": "09b7bfeb8653e74074542ca48e70477540742a7e",
+    "head": "2e5ecf53615fd799d0c660d3b8bb8a5af579ccf7",
+    "tree": "0503ca913f5b3b71b081f7912a497fe635317d67",
+    "trackedEntries": 1068,
+    "symlinks": 2,
+    "archiveSha256": "7bc67762360cab5ec31cc6f42e95cbc9c8d2401364a40b5129cf5bf2e10193a3",
+    "files": [
+      {
+        "path": "src/classes/child-processor.ts",
+        "mode": "100644",
+        "sha256": "bee535372224faa900ab6566fbc6ffd27fe14395a1c38e4b950c6fd81626cb98",
+        "bytes": 11009
+      },
+      {
+        "path": "src/classes/sandbox.ts",
+        "mode": "100644",
+        "sha256": "9dc41eca97a29776785b97a335747f9c02ab9ad30d43f31bcc8235ffecee242e",
+        "bytes": 7035
+      },
+      {
+        "path": "src/enums/child-command.ts",
+        "mode": "100644",
+        "sha256": "9eff9e47993440d0d454f2a2d77e24477030300a6cd8553e6372fc7ebcc7c8e1",
+        "bytes": 245
+      },
+      {
+        "path": "tests/sandboxed_process.test.ts",
+        "mode": "100644",
+        "sha256": "3576b9b6677194384812a043fb3b54458e1f09f959a824d654c9fbc73b10e060",
+        "bytes": 68710
+      },
+      {
+        "path": "tests/child-processor.test.ts",
+        "mode": "100644",
+        "sha256": "228ce90c084a90cf0ddb8a195fcdbc48713b121f335f3560aa6a7c951b6c2920",
+        "bytes": 3959
+      },
+      {
+        "path": "tests/fixtures/fixture_processor_update_data_await.js",
+        "mode": "100644",
+        "sha256": "bd12dc3628575ad06b62659da98bdd0c3dcddc1784f627fd60254495cd246864",
+        "bytes": 1032
+      }
+    ],
+    "normalHookEvidence": "runtime/root-v2-normal-commit.json"
+  },
+  "dependencyProvenance": {
+    "officialInstall": "yarn install --ignore-engines --frozen-lockfile --non-interactive",
+    "installExitCode": 0,
+    "evidence": "runtime/baseline-bootstrap-results.json",
+    "candidateReuse": "The baseline dependencies were physically copied to the candidate; package.json and yarn.lock stayed byte-identical across baseline/v1/v2. Final gates were rerun on final source."
+  },
+  "gates": [
+    {
+      "gate": "final-v2-primary-quality-coverage",
+      "exitCode": 0,
+      "command": "cd /tmp/bullmq4168/candidate && test \"$(git rev-parse HEAD)\" = 2e5ecf53615fd799d0c660d3b8bb8a5af579ccf7 && node /evidence/verify-final-v2.cjs /tmp/bullmq4168/candidate && node --version && yarn --version && yarn lint && yarn build && yarn test:types && ./node_modules/.bin/prettier --check src/classes/child-processor.ts src/classes/sandbox.ts src/enums/child-command.ts tests/sandboxed_process.test.ts tests/child-processor.test.ts tests/fixtures/fixture_processor_update_data_await.js && yarn test:smoke && yarn coverage && node /evidence/verify-final-v2.cjs /tmp/bullmq4168/candidate",
+      "started": "2026-10-25T10:30:54.682088+00:00",
+      "ended": "2026-10-25T10:39:11.789981+00:00",
+      "reportedTotals": [
+        "Test Files  6 passed (6)",
+        "Tests  86 passed | 2 skipped (88)",
+        "Test Files  54 passed (54)",
+        "Tests  1315 passed | 14 skipped (1329)",
+        "All files          |   89.52 |    80.71 |   87.88 |   89.76 |"
+      ],
+      "log": "runtime/final-v2-primary-quality-coverage.log",
+      "result": "runtime/final-v2-primary-quality-coverage-result.json"
+    },
+    {
+      "gate": "final-v2-node24-redis6",
+      "exitCode": 0,
+      "command": "cd /tmp/bullmq4168/candidate && node /evidence/verify-final-v2.cjs /tmp/bullmq4168/candidate && node --version && yarn --version && yarn build && yarn test && yarn test:ioredis && node /evidence/verify-final-v2.cjs /tmp/bullmq4168/candidate",
+      "started": "2026-10-25T10:31:13.206607+00:00",
+      "ended": "2026-10-25T10:39:09.996136+00:00",
+      "reportedTotals": [
+        "Test Files  49 passed (49)",
+        "Tests  1114 passed | 3 skipped (1117)",
+        "Test Files  6 passed (6)",
+        "Tests  206 passed | 11 skipped (217)"
+      ],
+      "log": "runtime/final-v2-node24-redis6.log",
+      "result": "runtime/final-v2-node24-redis6-result.json"
+    },
+    {
+      "gate": "final-v2-valkey8",
+      "exitCode": 0,
+      "command": "cd /tmp/bullmq4168/candidate && node /evidence/verify-final-v2.cjs /tmp/bullmq4168/candidate && yarn build && yarn test && node /evidence/verify-final-v2.cjs /tmp/bullmq4168/candidate",
+      "started": "2026-10-25T10:22:57.915825+00:00",
+      "ended": "2026-10-25T10:30:11.056159+00:00",
+      "reportedTotals": [
+        "Test Files  49 passed (49)",
+        "Tests  1114 passed | 3 skipped (1117)"
+      ],
+      "log": "runtime/final-v2-valkey8.log",
+      "result": "runtime/final-v2-valkey8-result.json"
+    },
+    {
+      "gate": "final-v2-dragonfly",
+      "exitCode": 0,
+      "command": "cd /tmp/bullmq4168/candidate && test \"$(git rev-parse HEAD)\" = 2e5ecf53615fd799d0c660d3b8bb8a5af579ccf7 && node /evidence/verify-final-v2.cjs /tmp/bullmq4168/candidate && yarn build && BULLMQ_TEST_PREFIX={b} yarn test && node /evidence/verify-final-v2.cjs /tmp/bullmq4168/candidate",
+      "started": "2026-10-25T10:22:41.312271+00:00",
+      "ended": "2026-10-25T10:30:11.056159+00:00",
+      "reportedTotals": [
+        "Test Files  49 passed (49)",
+        "Tests  1114 passed | 3 skipped (1117)"
+      ],
+      "log": "runtime/final-v2-dragonfly.log",
+      "result": "runtime/final-v2-dragonfly-result.json"
+    },
+    {
+      "gate": "final-v2-postgres-pack",
+      "exitCode": 0,
+      "command": "cd /tmp/bullmq4168/postgres-candidate && node /evidence/verify-final-v2.cjs /tmp/bullmq4168/postgres-candidate && yarn build && POSTGRES_URL=postgres://postgres:postgres@127.0.0.1:5432/bullmq_test yarn test:postgres && mkdir -p /evidence/artifact-final-v2 && npm pack --ignore-scripts --pack-destination /evidence/artifact-final-v2 && node /evidence/verify-final-v2.cjs /tmp/bullmq4168/postgres-candidate",
+      "started": "2026-10-25T10:23:24.782004+00:00",
+      "ended": "2026-10-25T10:23:43.926495+00:00",
+      "reportedTotals": [
+        "Test Files  8 passed (8)",
+        "Tests  154 passed (154)"
+      ],
+      "log": "runtime/final-v2-postgres-pack.log",
+      "result": "runtime/final-v2-postgres-pack-result.json"
+    },
+    {
+      "gate": "final-v2-installed-byte-verification",
+      "exitCode": 0,
+      "command": "node /evidence/verify-final-v2-installed.cjs",
+      "started": "2026-10-25T10:30:11.293958+00:00",
+      "ended": "2026-10-25T10:30:11.748294+00:00",
+      "reportedTotals": [],
+      "log": "runtime/final-v2-installed-byte-verification.log",
+      "result": "runtime/final-v2-installed-byte-verification-result.json"
+    },
+    {
+      "gate": "final-v2-public-install",
+      "exitCode": 0,
+      "command": "mkdir -p /tmp/bullmq4168/public-final-v2 && cd /tmp/bullmq4168/public-final-v2 && tar -xf /evidence/public-linux-assets.tar && tar -xf /evidence/strong-pending-close-assets.tar && printf \"{\\\"private\\\":true}\\n\" > package.json && npm install --ignore-scripts --no-audit --no-fund /evidence/artifact-final-v2/bullmq-6.4.2.tgz ioredis@5.11.1 && REDIS_PORT=6387 node visibility-probe-fileurl.cjs && cp visibility-fileurl-results.json /evidence/final-v2-public-visibility.json && REDIS_PORT=6387 node strong-close-probe.cjs && cp strong-pending-close-result.json /evidence/final-v2-strong-pending-close.json && REDIS_PORT=6387 node reuse-probe.cjs && cp reuse-result.json /evidence/final-v2-public-reuse.json",
+      "started": "2026-10-25T10:25:58.965646+00:00",
+      "ended": "2026-10-25T10:26:20.860437+00:00",
+      "reportedTotals": [],
+      "log": "runtime/final-v2-public-install.log",
+      "result": "runtime/final-v2-public-install-result.json"
+    },
+    {
+      "gate": "final-v2-public-retry-slow",
+      "exitCode": 0,
+      "command": "cd /tmp/bullmq4168/public-final-v2 && cp /evidence/contracts-v2-extra-probe.cjs . && REDIS_PORT=6387 node contracts-v2-extra-probe.cjs && cp contracts-v2-extra-result.json /evidence/final-v2-public-retry-slow.json && node /evidence/assert-final-v2-runtime.cjs",
+      "started": "2026-10-25T10:27:25.843839+00:00",
+      "ended": "2026-10-25T10:27:42.601726+00:00",
+      "reportedTotals": [],
+      "log": "runtime/final-v2-public-retry-slow.log",
+      "result": "runtime/final-v2-public-retry-slow-result.json"
+    },
+    {
+      "gate": "final-v2-strong-requested-at",
+      "exitCode": 0,
+      "command": "cd /tmp/bullmq4168/public-final-v2 && tar -xf /evidence/strong-requested-at-assets.tar && REDIS_PORT=6387 node strong-close-probe.cjs && cp strong-requested-at-result.json /evidence/final-v2-strong-requested-at.json",
+      "started": "2026-10-25T10:42:07.532589+00:00",
+      "ended": "2026-10-25T10:42:20.252481+00:00",
+      "reportedTotals": [],
+      "log": "runtime/final-v2-strong-requested-at.log",
+      "result": "runtime/final-v2-strong-requested-at-result.json"
+    },
+    {
+      "gate": "node20-redis7",
+      "exitCode": 0,
+      "reportedTotals": [
+        "default: 49 files / 1114 passed / 3 upstream skipped",
+        "ioredis: 6 files / 206 passed / 11 upstream skipped"
+      ],
+      "result": "ci-evidence\\heartbeat0902-bullmq-matrix-agent-runtime\\v2-results.json",
+      "steps": [
+        {
+          "key": "node20-build",
+          "command": [
+            "docker",
+            "exec",
+            "ghpr-bullmq-matrix-agent-node20",
+            "bash",
+            "-lc",
+            "set -e; export PATH=/work/tools/node_modules/node-linux-x64/bin:/work/tools/node_modules/.bin:$PATH; export npm_config_cache=/work/npm-cache YARN_CACHE_FOLDER=/work/yarn-cache; cd /work/source; yarn build"
+          ],
+          "startedUtc": "2026-10-25T10:21:45.706209+00:00",
+          "endedUtc": "2026-10-25T10:21:56.132953+00:00",
+          "exitCode": 0,
+          "error": null,
+          "log": "F:\\Github-PR\\ci-evidence\\heartbeat0902-bullmq-matrix-agent-runtime\\v2-node20-build.log",
+          "logSha256": "df4a561852ad09163353b456a7288b989f71d101878131b3e50519b6ab2dacf4"
+        },
+        {
+          "key": "node20-test-1",
+          "command": [
+            "docker",
+            "exec",
+            "ghpr-bullmq-matrix-agent-node20",
+            "bash",
+            "-lc",
+            "set -e; export PATH=/work/tools/node_modules/node-linux-x64/bin:/work/tools/node_modules/.bin:$PATH; export npm_config_cache=/work/npm-cache YARN_CACHE_FOLDER=/work/yarn-cache; cd /work/source; yarn test"
+          ],
+          "startedUtc": "2026-10-25T10:21:56.135238+00:00",
+          "endedUtc": "2026-10-25T10:30:10.882457+00:00",
+          "exitCode": 0,
+          "error": null,
+          "log": "F:\\Github-PR\\ci-evidence\\heartbeat0902-bullmq-matrix-agent-runtime\\v2-node20-test-1.log",
+          "logSha256": "b53cd8309bbc0a95f97319693de13c837d8eaf740cc375d83b163390b9dfebfa"
+        },
+        {
+          "key": "node20-test-2",
+          "command": [
+            "docker",
+            "exec",
+            "ghpr-bullmq-matrix-agent-node20",
+            "bash",
+            "-lc",
+            "set -e; export PATH=/work/tools/node_modules/node-linux-x64/bin:/work/tools/node_modules/.bin:$PATH; export npm_config_cache=/work/npm-cache YARN_CACHE_FOLDER=/work/yarn-cache; cd /work/source; yarn test:ioredis"
+          ],
+          "startedUtc": "2026-10-25T10:30:10.884617+00:00",
+          "endedUtc": "2026-10-25T10:31:47.504656+00:00",
+          "exitCode": 0,
+          "error": null,
+          "log": "F:\\Github-PR\\ci-evidence\\heartbeat0902-bullmq-matrix-agent-runtime\\v2-node20-test-2.log",
+          "logSha256": "0425c161f3307769c15dcf5c9f1258994c959baa1e46f03f686d182fb01a16e0"
+        },
+        {
+          "key": "node20-final-source",
+          "command": [
+            "docker",
+            "exec",
+            "ghpr-bullmq-matrix-agent-node20",
+            "bash",
+            "-lc",
+            "set -e; export PATH=/work/tools/node_modules/node-linux-x64/bin:/work/tools/node_modules/.bin:$PATH; export npm_config_cache=/work/npm-cache YARN_CACHE_FOLDER=/work/yarn-cache; cd /work/source; node /evidence/verify-source-v2.cjs v2-node20-source-after.json"
+          ],
+          "startedUtc": "2026-10-25T10:31:47.506511+00:00",
+          "endedUtc": "2026-10-25T10:31:47.839127+00:00",
+          "exitCode": 0,
+          "error": null,
+          "log": "F:\\Github-PR\\ci-evidence\\heartbeat0902-bullmq-matrix-agent-runtime\\v2-node20-final-source.log",
+          "logSha256": "bbeaf6ebfb3674355ed8f063d18ce367fe05aebade8f4d62e4b02567f6d24f24"
+        }
+      ]
+    },
+    {
+      "gate": "node22-redis7",
+      "exitCode": 0,
+      "reportedTotals": [
+        "default: 49 files / 1114 passed / 3 upstream skipped",
+        "ioredis: 6 files / 206 passed / 11 upstream skipped"
+      ],
+      "result": "ci-evidence\\heartbeat0902-bullmq-matrix-agent-runtime\\v2-results.json",
+      "steps": [
+        {
+          "key": "node22-build",
+          "command": [
+            "docker",
+            "exec",
+            "ghpr-bullmq-matrix-agent-node22",
+            "bash",
+            "-lc",
+            "set -e; export PATH=/work/tools/node_modules/node-linux-x64/bin:/work/tools/node_modules/.bin:$PATH; export npm_config_cache=/work/npm-cache YARN_CACHE_FOLDER=/work/yarn-cache; cd /work/source; yarn build"
+          ],
+          "startedUtc": "2026-10-25T10:21:45.951346+00:00",
+          "endedUtc": "2026-10-25T10:21:56.016919+00:00",
+          "exitCode": 0,
+          "error": null,
+          "log": "F:\\Github-PR\\ci-evidence\\heartbeat0902-bullmq-matrix-agent-runtime\\v2-node22-build.log",
+          "logSha256": "5b23ff5dcd5716ea4a40c4cf4a329fdee29f850983bae83e8536011718b0bcd0"
+        },
+        {
+          "key": "node22-test-1",
+          "command": [
+            "docker",
+            "exec",
+            "ghpr-bullmq-matrix-agent-node22",
+            "bash",
+            "-lc",
+            "set -e; export PATH=/work/tools/node_modules/node-linux-x64/bin:/work/tools/node_modules/.bin:$PATH; export npm_config_cache=/work/npm-cache YARN_CACHE_FOLDER=/work/yarn-cache; cd /work/source; yarn test"
+          ],
+          "startedUtc": "2026-10-25T10:21:56.018777+00:00",
+          "endedUtc": "2026-10-25T10:30:10.910620+00:00",
+          "exitCode": 0,
+          "error": null,
+          "log": "F:\\Github-PR\\ci-evidence\\heartbeat0902-bullmq-matrix-agent-runtime\\v2-node22-test-1.log",
+          "logSha256": "4b9b64e7fdcc2c1335c7a6d33d61dedb3cc93351844f9288214e743a75c8be87"
+        },
+        {
+          "key": "node22-test-2",
+          "command": [
+            "docker",
+            "exec",
+            "ghpr-bullmq-matrix-agent-node22",
+            "bash",
+            "-lc",
+            "set -e; export PATH=/work/tools/node_modules/node-linux-x64/bin:/work/tools/node_modules/.bin:$PATH; export npm_config_cache=/work/npm-cache YARN_CACHE_FOLDER=/work/yarn-cache; cd /work/source; yarn test:ioredis"
+          ],
+          "startedUtc": "2026-10-25T10:30:10.912769+00:00",
+          "endedUtc": "2026-10-25T10:31:47.145968+00:00",
+          "exitCode": 0,
+          "error": null,
+          "log": "F:\\Github-PR\\ci-evidence\\heartbeat0902-bullmq-matrix-agent-runtime\\v2-node22-test-2.log",
+          "logSha256": "6e97160f7041f4290fac4e4bc95b9951d2ca6f0eb872c08dc9667d93d9fa34f8"
+        },
+        {
+          "key": "node22-final-source",
+          "command": [
+            "docker",
+            "exec",
+            "ghpr-bullmq-matrix-agent-node22",
+            "bash",
+            "-lc",
+            "set -e; export PATH=/work/tools/node_modules/node-linux-x64/bin:/work/tools/node_modules/.bin:$PATH; export npm_config_cache=/work/npm-cache YARN_CACHE_FOLDER=/work/yarn-cache; cd /work/source; node /evidence/verify-source-v2.cjs v2-node22-source-after.json"
+          ],
+          "startedUtc": "2026-10-25T10:31:47.147819+00:00",
+          "endedUtc": "2026-10-25T10:31:47.458211+00:00",
+          "exitCode": 0,
+          "error": null,
+          "log": "F:\\Github-PR\\ci-evidence\\heartbeat0902-bullmq-matrix-agent-runtime\\v2-node22-final-source.log",
+          "logSha256": "cad6f63a5030652b092ed5dfbe24a3089baa61554a6a231c7516855a86edde60"
+        }
+      ]
+    }
+  ],
+  "independentBunAndNodeRedis": {
+    "report": "ci-evidence\\heartbeat0902-bullmq-bun-root\\v2\\final-head-gate-summary.json",
+    "head": "2e5ecf53615fd799d0c660d3b8bb8a5af579ccf7",
+    "build": 0,
+    "bunSmoke": "19 passed",
+    "bunFull": "47 files / 1092 passed / 2 upstream skipped",
+    "adapterConformance": "66 passed",
+    "nodeRedis": "49 files / 1114 passed / 3 upstream skipped"
+  },
+  "glide": {
+    "reportedTotals": [
+      "Test Files  48 passed (48)",
+      "Tests  1093 passed | 3 skipped (1096)"
+    ],
+    "status": "passed",
+    "result": "ci-evidence\\heartbeat0902-bullmq-matrix-agent-runtime\\v2-glide-canonical-final-results.json",
+    "finalMatrixSummary": "ci-evidence/heartbeat0902-bullmq-matrix-agent-runtime/v2-final-gates.json",
+    "earlierRun": "test passed but npm no-save mutated yarn.lock; earlier source-after failed and is superseded by the fully passed canonical-lock rerun"
+  },
+  "artifact": {
+    "sha256": "d14b6b2ce3a64dccd7950860eb2b757e093bbf74735ea3ec7790bb43bf9b9f8e",
+    "files": 805,
+    "inventory": "runtime/artifact-final-v2-manifest.json",
+    "sourceCommit": "2e5ecf53615fd799d0c660d3b8bb8a5af579ccf7"
+  },
+  "publicRuntime": {
+    "linux": {
+      "node": "24.22.1",
+      "redis": "7.4.11",
+      "visibilityObservations": 750,
+      "stale": 0,
+      "sameChildReuseModes": 2,
+      "strongPendingCases": 4,
+      "strongTimingEvidence": "runtime/final-v2-strong-requested-at.json",
+      "proofs": [
+        "runtime/final-v2-public-visibility.json",
+        "runtime/final-v2-public-reuse.json",
+        "runtime/final-v2-public-retry-slow.json"
+      ]
+    },
+    "windows": {
+      "verified": true,
+      "sourceCommit": "2e5ecf53615fd799d0c660d3b8bb8a5af579ccf7",
+      "sourceTree": "0503ca913f5b3b71b081f7912a497fe635317d67",
+      "artifactSha256": "d14b6b2ce3a64dccd7950860eb2b757e093bbf74735ea3ec7790bb43bf9b9f8e",
+      "installedFiles": 805,
+      "redisContainerId": "ec80b192650b25877b7573510ece6cc532c79736982d0e1a126010640872ad11",
+      "redisVersion": "Redis server v=8.10.0 sha=00000000:1 malloc=jemalloc-5.3.0 bits=64 build=15f20ec95e21aa19",
+      "redisPort": 46017,
+      "node": "v24.14.0",
+      "commands": [
+        {
+          "argv": [
+            "E:\\Nodejs\\node.EXE",
+            "-p",
+            "JSON.stringify({node:process.version,versions:process.versions})"
+          ],
+          "started": "2026-10-25T10:41:45.156899+00:00",
+          "ended": "2026-10-25T10:41:45.600090+00:00",
+          "exitCode": 0
+        },
+        {
+          "argv": [
+            "C:\\WINDOWS\\system32\\cmd.exe",
+            "/d",
+            "/c",
+            "E:\\Nodejs\\npm.cmd",
+            "--version"
+          ],
+          "started": "2026-10-25T10:41:45.600605+00:00",
+          "ended": "2026-10-25T10:41:46.023536+00:00",
+          "exitCode": 0
+        },
+        {
+          "argv": [
+            "C:\\WINDOWS\\system32\\cmd.exe",
+            "/d",
+            "/c",
+            "E:\\Nodejs\\npm.cmd",
+            "install",
+            "--ignore-scripts",
+            "--no-audit",
+            "--no-fund",
+            "--cache",
+            "F:\\Github-PR\\ci-evidence\\heartbeat0902-js-bullmq-4168\\public-final-v2-windows\\npm-cache",
+            "--registry",
+            "https://registry.npmjs.org",
+            "F:\\Github-PR\\ci-evidence\\heartbeat0902-js-bullmq-4168\\runtime\\artifact-final-v2\\bullmq-6.4.2.tgz",
+            "ioredis@5.11.1"
+          ],
+          "started": "2026-10-25T10:41:46.023536+00:00",
+          "ended": "2026-10-25T10:42:51.033294+00:00",
+          "exitCode": 0
+        },
+        {
+          "argv": [
+            "E:\\Nodejs\\node.EXE",
+            "visibility-probe-fileurl.cjs"
+          ],
+          "started": "2026-10-25T10:42:51.197157+00:00",
+          "ended": "2026-10-25T10:42:52.399256+00:00",
+          "exitCode": 0
+        },
+        {
+          "argv": [
+            "E:\\Nodejs\\node.EXE",
+            "contracts-probe.cjs"
+          ],
+          "started": "2026-10-25T10:42:52.399772+00:00",
+          "ended": "2026-10-25T10:43:18.697853+00:00",
+          "exitCode": 0
+        },
+        {
+          "argv": [
+            "E:\\Nodejs\\node.EXE",
+            "reuse-probe.cjs"
+          ],
+          "started": "2026-10-25T10:43:18.698373+00:00",
+          "ended": "2026-10-25T10:43:22.805979+00:00",
+          "exitCode": 0
+        },
+        {
+          "argv": [
+            "E:\\Nodejs\\node.EXE",
+            "strong-close-probe.cjs"
+          ],
+          "started": "2026-10-25T10:43:22.805979+00:00",
+          "ended": "2026-10-25T10:43:33.040145+00:00",
+          "exitCode": 0
+        }
+      ],
+      "visibilityObservations": 750,
+      "contractCases": 14,
+      "sameChildReuseModes": 2,
+      "strongPendingCases": 4,
+      "completed": "2026-10-25T10:43:33.042814+00:00"
+    }
+  },
+  "baseline": {
+    "source": "09b7bfeb8653e74074542ca48e70477540742a7e",
+    "buildExitCode": 0,
+    "newRegressionFailures": 4,
+    "log": "runtime/baseline-new-regressions-v2.log",
+    "filterExclusions": 99,
+    "filterBoundary": "99 nonmatching existing cases excluded by the -t filter; not baseline failures or newly added skips",
+    "controls": "actual fork/thread + Redis7, no method delay mocks"
+  },
+  "boundaries": [
+    "Six child-processor EventEmitter/wrapJob tests are protocol unit tests, not actual IPC E2E.",
+    "Four real Redis sandbox regressions execute via test:ioredis/coverage on Redis6/7; default Valkey/Dragonfly test config excludes sandboxed_process.",
+    "No new skip, relaxed assertion, new public option, enum renumbering or hard updateData timeout.",
+    "Original retry final-state permanent loss is not claimed reproduced.",
+    "Windows supported file-URL Worker entry was used; unrelated Windows absolute import-path bug is out of scope.",
+    "Initial v1 Windows/package/matrix records are historical; final package SHA d14b6b... and v2 logs establish finalHEAD.",
+    "Force close can leave a running job active; subsequent-worker control is bounded to current shutdown semantics, not PR4991 redesign.",
+    "Latest issue/policy/default HEAD/open PR prepublication refresh is root responsibility; local test success is not GitHub CI success."
+  ],
+  "historicalFailures": [
+    "v1 direct Prettier check failed two files; corrected only formatting, AST equivalent; every final gate rerun against v2.",
+    "Dragonfly with custom proactor_threads=2 exposed an existing worker failure on candidate and baseline; official default Dragonfly configuration baseline control and final full suite pass.",
+    "GLIDE first v2 runtime tests passed but npm no-save lock drift was detected; canonical-lock restore, version assertion, build, full suite1093 passed/3 upstream skips and1068-source postcheck subsequently passed. The initial drift run remains superseded evidence."
+  ],
+  "notRunLocally": [
+    "GitHub CodeQL/OSV services (remote CI only)",
+    "Unrelated port-language suites filtered out by official paths for this Node-only patch"
+  ],
+  "pendingRoot": [
+    "fresh GitHub eligibility/dedup/HEAD/policy preflight",
+    "publication"
+  ]
+}

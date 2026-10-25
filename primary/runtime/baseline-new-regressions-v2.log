@@ -1,0 +1,171 @@
+{"argv": ["docker", "exec", "--user", "node", "--env", "HOME=/tmp/bullmq4168/home", "--env", "npm_config_cache=/tmp/bullmq4168/npm-cache", "--env", "PATH=/tmp/bullmq4168/tools/node_modules/node/bin:/tmp/bullmq4168/tools/node_modules/.bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin", "ghpr-heartbeat0902-js-bullmq4168-validation", "sh", "-c", "cd /tmp/bullmq4168/candidate && yarn vitest run --no-file-parallelism --config vitest.ioredis.config.ts tests/sandboxed_process.test.ts -t \"should await persisted data|should return persistence errors\""], "started": "2026-10-25T09:40:44.236678+00:00"}
+yarn run v1.22.22
+$ /tmp/bullmq4168/candidate/node_modules/.bin/vitest run --no-file-parallelism --config vitest.ioredis.config.ts tests/sandboxed_process.test.ts -t 'should await persisted data|should return persistence errors'
+(!) Your Vite config uses features that are unsupported by `configLoader: 'native'`, which is planned to become the default in a future major version of Vite:
+  - ESM syntax in a file loaded as CommonJS (vitest.ioredis.config.ts:1:1). Use a `.mjs` extension or set `"type": "module"` in the closest package.json
+Set `VITE_CONFIG_NATIVE_IGNORE_WARNING=true` to suppress this warning.
+
+[1m[30m[46m RUN [49m[39m[22m [36mv4.1.12 [39m[90m/tmp/bullmq4168/candidate[39m
+
+ [2m[90m↓[39m[22m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using child processes[2m > [22msandboxed process[2m > [22mshould process and complete
+ [2m[90m↓[39m[22m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using child processes[2m > [22msandboxed process[2m > [22mshould process and complete when passing a URL
+ [2m[90m↓[39m[22m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using child processes[2m > [22msandboxed process[2m > [22mshould process and complete using esbuild compiled processor
+ [2m[90m↓[39m[22m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using child processes[2m > [22msandboxed process[2m > [22mwhen processor has more than 2 params[2m > [22mshould ignore extra params, process and complete
+ [2m[90m↓[39m[22m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using child processes[2m > [22msandboxed process[2m > [22mwhen processor file is .cjs (CommonJS)[2m > [22mprocesses and completes
+ [2m[90m↓[39m[22m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using child processes[2m > [22msandboxed process[2m > [22mwhen processor file is .mjs (ESM)[2m > [22mprocesses and completes
+ [2m[90m↓[39m[22m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using child processes[2m > [22msandboxed process[2m > [22mwhen there is an output from stdout[2m > [22muses the parent stdout
+ [2m[90m↓[39m[22m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using child processes[2m > [22msandboxed process[2m > [22mwhen there is an output from stderr[2m > [22muses the parent stderr
+ [2m[90m↓[39m[22m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using child processes[2m > [22msandboxed process[2m > [22mwhen processor throws UnrecoverableError[2m > [22mmoves job to failed
+ [2m[90m↓[39m[22m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using child processes[2m > [22msandboxed process[2m > [22mshould process with named processor
+ [2m[90m↓[39m[22m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using child processes[2m > [22msandboxed process[2m > [22mshould process with concurrent processors
+ [2m[90m↓[39m[22m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using child processes[2m > [22msandboxed process[2m > [22mshould reuse process with single processors
+ [2m[90m↓[39m[22m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using child processes[2m > [22msandboxed process[2m > [22mshould process and update progress
+ [2m[90m↓[39m[22m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using child processes[2m > [22msandboxed process[2m > [22mshould process and update data
+ [31m×[39m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using child processes[2m > [22msandboxed process[2m > [22mshould await persisted data before continuing in a sandbox[33m 696[2mms[22m[39m
+[31m   → expected { …(2) } to deeply equal { persisted: { updated: true }, …(1) }[39m
+ [31m×[39m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using child processes[2m > [22msandboxed process[2m > [22mshould return persistence errors to a sandboxed updateData caller[32m 106[2mms[22m[39m
+[31m   → Do not know how to serialize a BigInt[39m
+ [2m[90m↓[39m[22m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using child processes[2m > [22msandboxed process[2m > [22mshould process steps and complete
+ [2m[90m↓[39m[22m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using child processes[2m > [22msandboxed process[2m > [22mcan get children values by calling getChildrenValues
+ [2m[90m↓[39m[22m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using child processes[2m > [22msandboxed process[2m > [22mwill fail job if calling getChildrenValues is too slow
+ [2m[90m↓[39m[22m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using child processes[2m > [22msandboxed process[2m > [22mcan get children failures by calling getIgnoredChildrenFailures
+ [2m[90m↓[39m[22m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using child processes[2m > [22msandboxed process[2m > [22mcan get dependencies count by calling getDependenciesCount
+ [2m[90m↓[39m[22m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using child processes[2m > [22msandboxed process[2m > [22mwill fail job if calling getDependenciesCount is too slow
+ [2m[90m↓[39m[22m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using child processes[2m > [22msandboxed process[2m > [22mcan get dependencies by calling getDependencies
+ [2m[90m↓[39m[22m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using child processes[2m > [22msandboxed process[2m > [22mwill fail job if calling getDependencies is too slow
+ [2m[90m↓[39m[22m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using child processes[2m > [22msandboxed process[2m > [22mshould process and move to delayed
+ [2m[90m↓[39m[22m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using child processes[2m > [22msandboxed process[2m > [22mshould process and move to wait
+ [2m[90m↓[39m[22m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using child processes[2m > [22msandboxed process[2m > [22mshould process and move to wait for children
+ [2m[90m↓[39m[22m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using child processes[2m > [22msandboxed process[2m > [22mwhen env variables are provided[2m > [22mshares env variables
+ [2m[90m↓[39m[22m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using child processes[2m > [22msandboxed process[2m > [22mincludes queueName
+ [2m[90m↓[39m[22m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using child processes[2m > [22msandboxed process[2m > [22mincludes parent
+ [2m[90m↓[39m[22m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using child processes[2m > [22msandboxed process[2m > [22mshould process and fail
+ [2m[90m↓[39m[22m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using child processes[2m > [22msandboxed process[2m > [22mshould process and fail when circular reference
+ [2m[90m↓[39m[22m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using child processes[2m > [22msandboxed process[2m > [22mshould error if processor file is missing
+ [2m[90m↓[39m[22m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using child processes[2m > [22msandboxed process[2m > [22mshould error if processor file passed as URL is missing
+ [2m[90m↓[39m[22m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using child processes[2m > [22msandboxed process[2m > [22mshould fail if the process crashes
+ [2m[90m↓[39m[22m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using child processes[2m > [22msandboxed process[2m > [22mshould fail if the process exits 0
+ [2m[90m↓[39m[22m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using child processes[2m > [22msandboxed process[2m > [22mshould fail if the process exits non-0
+ [2m[90m↓[39m[22m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using child processes[2m > [22msandboxed process[2m > [22mshould fail if wrapping with ttl pattern
+ [2m[90m↓[39m[22m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using child processes[2m > [22msandboxed process[2m > [22mshould fail if the process file is broken
+ [2m[90m↓[39m[22m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using child processes[2m > [22msandboxed process[2m > [22mwhen a child fails to initialize once (transient error)[2m > [22mdoes not reuse the broken child and recovers on the next job
+ [2m[90m↓[39m[22m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using child processes[2m > [22msandboxed process[2m > [22mwhen child process a job and its killed direcly after completing[2m > [22mshould process the next job in a new child process
+ [2m[90m↓[39m[22m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using child processes[2m > [22msandboxed process[2m > [22mwhen child process a job and its killed with SIGKILL while processing[2m > [22mshould fail with an unexpected error
+ [2m[90m↓[39m[22m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using child processes[2m > [22msandboxed process[2m > [22mwhen function is not exported[2m > [22mthrows an error
+ [2m[90m↓[39m[22m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using child processes[2m > [22msandboxed process[2m > [22mshould release exited process
+ [2m[90m↓[39m[22m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using child processes[2m > [22msandboxed process[2m > [22mshould allow the job to complete and then exit on worker close
+ [2m[90m↓[39m[22m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using child processes[2m > [22msandboxed process[2m > [22mwhen cancelling a sandboxed job[2m > [22mshould cancel a running job and fail it
+ [2m[90m↓[39m[22m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using child processes[2m > [22msandboxed process[2m > [22mwhen cancelling a sandboxed job[2m > [22mshould cancel a running job with a custom reason
+ [2m[90m↓[39m[22m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using child processes[2m > [22msandboxed process[2m > [22mwhen cancelling a sandboxed job[2m > [22mshould return false when cancelling a non-existent job
+ [2m[90m↓[39m[22m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using child processes[2m > [22msandboxed process[2m > [22mwhen cancelling a sandboxed job[2m > [22mshould cancel all running jobs with cancelAllJobs
+ [2m[90m↓[39m[22m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using child processes[2m > [22mcustom cases[2m > [22mshould handle non-BullMQ messages during child initialization
+ [2m[90m↓[39m[22m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using child processes[2m > [22mcustom cases[2m > [22mshould allow to pass workerForkOptions
+ [2m[90m↓[39m[22m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using child processes[2m > [22mcustom cases[2m > [22mshould allow to pass workerForkOptions with timeout
+ [2m[90m↓[39m[22m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using worker threads[2m > [22msandboxed process[2m > [22mshould process and complete
+ [2m[90m↓[39m[22m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using worker threads[2m > [22msandboxed process[2m > [22mshould process and complete when passing a URL
+ [2m[90m↓[39m[22m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using worker threads[2m > [22msandboxed process[2m > [22mshould process and complete using esbuild compiled processor
+ [2m[90m↓[39m[22m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using worker threads[2m > [22msandboxed process[2m > [22mwhen processor has more than 2 params[2m > [22mshould ignore extra params, process and complete
+ [2m[90m↓[39m[22m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using worker threads[2m > [22msandboxed process[2m > [22mwhen processor file is .cjs (CommonJS)[2m > [22mprocesses and completes
+ [2m[90m↓[39m[22m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using worker threads[2m > [22msandboxed process[2m > [22mwhen processor file is .mjs (ESM)[2m > [22mprocesses and completes
+ [2m[90m↓[39m[22m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using worker threads[2m > [22msandboxed process[2m > [22mwhen there is an output from stdout[2m > [22muses the parent stdout
+ [2m[90m↓[39m[22m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using worker threads[2m > [22msandboxed process[2m > [22mwhen there is an output from stderr[2m > [22muses the parent stderr
+ [2m[90m↓[39m[22m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using worker threads[2m > [22msandboxed process[2m > [22mwhen processor throws UnrecoverableError[2m > [22mmoves job to failed
+ [2m[90m↓[39m[22m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using worker threads[2m > [22msandboxed process[2m > [22mshould process with named processor
+ [2m[90m↓[39m[22m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using worker threads[2m > [22msandboxed process[2m > [22mshould process with concurrent processors
+ [2m[90m↓[39m[22m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using worker threads[2m > [22msandboxed process[2m > [22mshould reuse process with single processors
+ [2m[90m↓[39m[22m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using worker threads[2m > [22msandboxed process[2m > [22mshould process and update progress
+ [2m[90m↓[39m[22m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using worker threads[2m > [22msandboxed process[2m > [22mshould process and update data
+ [31m×[39m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using worker threads[2m > [22msandboxed process[2m > [22mshould await persisted data before continuing in a sandbox[33m 678[2mms[22m[39m
+[31m   → expected { …(2) } to deeply equal { persisted: { updated: true }, …(1) }[39m
+ [31m×[39m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using worker threads[2m > [22msandboxed process[2m > [22mshould return persistence errors to a sandboxed updateData caller[32m 89[2mms[22m[39m
+[31m   → Do not know how to serialize a BigInt[39m
+ [2m[90m↓[39m[22m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using worker threads[2m > [22msandboxed process[2m > [22mshould process steps and complete
+ [2m[90m↓[39m[22m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using worker threads[2m > [22msandboxed process[2m > [22mcan get children values by calling getChildrenValues
+ [2m[90m↓[39m[22m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using worker threads[2m > [22msandboxed process[2m > [22mwill fail job if calling getChildrenValues is too slow
+ [2m[90m↓[39m[22m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using worker threads[2m > [22msandboxed process[2m > [22mcan get children failures by calling getIgnoredChildrenFailures
+ [2m[90m↓[39m[22m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using worker threads[2m > [22msandboxed process[2m > [22mcan get dependencies count by calling getDependenciesCount
+ [2m[90m↓[39m[22m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using worker threads[2m > [22msandboxed process[2m > [22mwill fail job if calling getDependenciesCount is too slow
+ [2m[90m↓[39m[22m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using worker threads[2m > [22msandboxed process[2m > [22mcan get dependencies by calling getDependencies
+ [2m[90m↓[39m[22m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using worker threads[2m > [22msandboxed process[2m > [22mwill fail job if calling getDependencies is too slow
+ [2m[90m↓[39m[22m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using worker threads[2m > [22msandboxed process[2m > [22mshould process and move to delayed
+ [2m[90m↓[39m[22m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using worker threads[2m > [22msandboxed process[2m > [22mshould process and move to wait
+ [2m[90m↓[39m[22m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using worker threads[2m > [22msandboxed process[2m > [22mshould process and move to wait for children
+ [2m[90m↓[39m[22m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using worker threads[2m > [22msandboxed process[2m > [22mwhen env variables are provided[2m > [22mshares env variables
+ [2m[90m↓[39m[22m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using worker threads[2m > [22msandboxed process[2m > [22mincludes queueName
+ [2m[90m↓[39m[22m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using worker threads[2m > [22msandboxed process[2m > [22mincludes parent
+ [2m[90m↓[39m[22m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using worker threads[2m > [22msandboxed process[2m > [22mshould process and fail
+ [2m[90m↓[39m[22m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using worker threads[2m > [22msandboxed process[2m > [22mshould process and fail when circular reference
+ [2m[90m↓[39m[22m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using worker threads[2m > [22msandboxed process[2m > [22mshould error if processor file is missing
+ [2m[90m↓[39m[22m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using worker threads[2m > [22msandboxed process[2m > [22mshould error if processor file passed as URL is missing
+ [2m[90m↓[39m[22m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using worker threads[2m > [22msandboxed process[2m > [22mshould fail if the process crashes
+ [2m[90m↓[39m[22m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using worker threads[2m > [22msandboxed process[2m > [22mshould fail if the process exits 0
+ [2m[90m↓[39m[22m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using worker threads[2m > [22msandboxed process[2m > [22mshould fail if the process exits non-0
+ [2m[90m↓[39m[22m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using worker threads[2m > [22msandboxed process[2m > [22mshould fail if wrapping with ttl pattern
+ [2m[90m↓[39m[22m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using worker threads[2m > [22msandboxed process[2m > [22mshould fail if the process file is broken
+ [2m[90m↓[39m[22m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using worker threads[2m > [22msandboxed process[2m > [22mwhen a child fails to initialize once (transient error)[2m > [22mdoes not reuse the broken child and recovers on the next job
+ [2m[90m↓[39m[22m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using worker threads[2m > [22msandboxed process[2m > [22mwhen child process a job and its killed direcly after completing[2m > [22mshould process the next job in a new child process
+ [2m[90m↓[39m[22m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using worker threads[2m > [22msandboxed process[2m > [22mwhen child process a job and its killed with SIGKILL while processing[2m > [22mshould fail with an unexpected error
+ [2m[90m↓[39m[22m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using worker threads[2m > [22msandboxed process[2m > [22mwhen function is not exported[2m > [22mthrows an error
+ [2m[90m↓[39m[22m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using worker threads[2m > [22msandboxed process[2m > [22mshould release exited process
+ [2m[90m↓[39m[22m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using worker threads[2m > [22msandboxed process[2m > [22mshould allow the job to complete and then exit on worker close
+ [2m[90m↓[39m[22m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using worker threads[2m > [22msandboxed process[2m > [22mwhen cancelling a sandboxed job[2m > [22mshould cancel a running job and fail it
+ [2m[90m↓[39m[22m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using worker threads[2m > [22msandboxed process[2m > [22mwhen cancelling a sandboxed job[2m > [22mshould cancel a running job with a custom reason
+ [2m[90m↓[39m[22m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using worker threads[2m > [22msandboxed process[2m > [22mwhen cancelling a sandboxed job[2m > [22mshould return false when cancelling a non-existent job
+ [2m[90m↓[39m[22m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using worker threads[2m > [22msandboxed process[2m > [22mwhen cancelling a sandboxed job[2m > [22mshould cancel all running jobs with cancelAllJobs
+ [2m[90m↓[39m[22m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using worker threads[2m > [22mcustom cases[2m > [22mshould allow to pass workerThreadsOptions
+ [2m[90m↓[39m[22m tests/sandboxed_process.test.ts[2m > [22mSandbox error message handling[2m > [22mpreserves error message when child reports via ParentCommand.Error
+
+[31m⎯⎯⎯⎯⎯⎯⎯[39m[1m[41m Failed Tests 4 [49m[22m[31m⎯⎯⎯⎯⎯⎯⎯[39m
+
+[41m[1m FAIL [22m[49m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using child processes[2m > [22msandboxed process[2m > [22mshould await persisted data before continuing in a sandbox
+[41m[1m FAIL [22m[49m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using worker threads[2m > [22msandboxed process[2m > [22mshould await persisted data before continuing in a sandbox
+[31m[1mAssertionError[22m: expected { …(2) } to deeply equal { persisted: { updated: true }, …(1) }[39m
+
+[32m- Expected[39m
+[31m+ Received[39m
+
+[2m  {[22m
+[2m    "local": {[22m
+[2m      "updated": true,[22m
+[2m    },[22m
+[2m    "persisted": {[22m
+[32m-     "updated": true,[39m
+[31m+     "operation": "persist",[39m
+[2m    },[22m
+[2m  }[22m
+
+[36m [2m❯[22m tests/sandboxed_process.test.ts:[2m842:58[22m[39m
+    [90m840|[39m       [35mtry[39m {
+    [90m841|[39m         [35mconst[39m job [33m=[39m [35mawait[39m queue[33m.[39m[34madd[39m([32m'test'[39m[33m,[39m { operation[33m:[39m [32m'persist'[39m })[33m;[39m
+    [90m842|[39m         [34mexpect[39m([35mawait[39m job[33m.[39m[34mwaitUntilFinished[39m(queueEvents))[33m.[39m[34mtoEqual[39m({
+    [90m   |[39m                                                          [31m^[39m
+    [90m843|[39m           persisted[33m:[39m { updated[33m:[39m [35mtrue[39m }[33m,[39m
+    [90m844|[39m           local[33m:[39m { updated[33m:[39m [35mtrue[39m }[33m,[39m
+
+[31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/4]⎯[22m[39m
+
+[41m[1m FAIL [22m[49m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using child processes[2m > [22msandboxed process[2m > [22mshould return persistence errors to a sandboxed updateData caller
+[41m[1m FAIL [22m[49m tests/sandboxed_process.test.ts[2m > [22mSandboxed process using worker threads[2m > [22msandboxed process[2m > [22mshould return persistence errors to a sandboxed updateData caller
+[31m[1mError[22m: Do not know how to serialize a BigInt[39m
+[36m [2m❯[22m QueueEvents.onFailed src/classes/job.ts:[2m1145:16[22m[39m
+    [90m1143|[39m       [35mfunction[39m [34monFailed[39m(args[33m:[39m any) {
+    [90m1144|[39m         [34mremoveListeners[39m()[33m;[39m
+    [90m1145|[39m         [34mreject[39m([35mnew[39m [33mError[39m(args[33m.[39mfailedReason [33m||[39m args))[33m;[39m
+    [90m   |[39m                [31m^[39m
+    [90m1146|[39m       }
+    [90m1147|[39m
+[90m [2m❯[22m QueueEvents.emit src/classes/queue-base.ts:[2m156:20[22m[39m
+[90m [2m❯[22m QueueEvents.emit src/classes/queue-events.ts:[2m319:18[22m[39m
+[90m [2m❯[22m QueueEvents.consumeEvents src/classes/queue-events.ts:[2m413:20[22m[39m
+[90m [2m❯[22m QueueEvents.run src/classes/queue-events.ts:[2m361:9[22m[39m
+
+[31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/4]⎯[22m[39m
+
+
+[2m Test Files [22m [1m[31m1 failed[39m[22m[90m (1)[39m
+[2m      Tests [22m [1m[31m4 failed[39m[22m[2m | [22m[33m99 skipped[39m[90m (103)[39m
+[2m   Start at [22m 09:40:44
+[2m   Duration [22m 2.12s[2m (transform 341ms, setup 52ms, import 412ms, tests 1.57s, environment 0ms)[22m
+
+error Command failed with exit code 1.
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.

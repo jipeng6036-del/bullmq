@@ -1,0 +1,126 @@
+{
+  "node": "v24.14.0",
+  "port": 46017,
+  "rows": [
+    {
+      "mode": "child-process",
+      "action": "force-close",
+      "precondition": {
+        "actualParentCommandUpdateObserved": true,
+        "requestId": "eld1dzoljaq",
+        "pauseAt": 1792925003165,
+        "pauseRequestedAt": 1792925003165,
+        "observedAt": 1792925003171,
+        "checkedAt": 1792925003171,
+        "remainingPauseLowerBoundMs": 1994,
+        "parentJobDataUpdated": true,
+        "redisStoredDataUpdated": false,
+        "childCompletionObserved": false,
+        "observerOnly": true
+      },
+      "closeMs": 39,
+      "closed": true,
+      "nextResult": {
+        "control": "5b295f07-81fd-45bc-93d6-8cc55bf6adc9",
+        "updated": true,
+        "aborted": false,
+        "identity": "103096/0",
+        "listenersAfter": 1
+      },
+      "workerErrors": []
+    },
+    {
+      "mode": "child-process",
+      "action": "cancel",
+      "precondition": {
+        "actualParentCommandUpdateObserved": true,
+        "requestId": "t0f6kiks4yi",
+        "pauseAt": 1792925006296,
+        "pauseRequestedAt": 1792925006296,
+        "observedAt": 1792925006297,
+        "checkedAt": 1792925006298,
+        "remainingPauseLowerBoundMs": 1998,
+        "parentJobDataUpdated": true,
+        "redisStoredDataUpdated": false,
+        "childCompletionObserved": false,
+        "observerOnly": true
+      },
+      "cancelled": true,
+      "targetResult": {
+        "control": "269412ec-bf14-4fdb-b8e1-f4bc694234ef",
+        "updated": true,
+        "aborted": true,
+        "identity": "98044/0",
+        "listenersAfter": 1
+      },
+      "nextResult": {
+        "control": "269412ec-bf14-4fdb-b8e1-f4bc694234ef",
+        "updated": true,
+        "aborted": false,
+        "identity": "98044/0",
+        "listenersAfter": 1
+      },
+      "workerErrors": []
+    },
+    {
+      "mode": "worker-thread",
+      "action": "force-close",
+      "precondition": {
+        "actualParentCommandUpdateObserved": true,
+        "requestId": "rvl9jo4j9r",
+        "pauseAt": 1792925008600,
+        "pauseRequestedAt": 1792925008600,
+        "observedAt": 1792925008600,
+        "checkedAt": 1792925008601,
+        "remainingPauseLowerBoundMs": 1999,
+        "parentJobDataUpdated": true,
+        "redisStoredDataUpdated": false,
+        "childCompletionObserved": false,
+        "observerOnly": true
+      },
+      "closeMs": 3,
+      "closed": true,
+      "nextResult": {
+        "control": "88eefe7a-d411-4228-a0e8-0d6229d8b1f2",
+        "updated": true,
+        "aborted": false,
+        "identity": "43176/2",
+        "listenersAfter": 1
+      },
+      "workerErrors": []
+    },
+    {
+      "mode": "worker-thread",
+      "action": "cancel",
+      "precondition": {
+        "actualParentCommandUpdateObserved": true,
+        "requestId": "0087ejefhfvw7",
+        "pauseAt": 1792925010979,
+        "pauseRequestedAt": 1792925010979,
+        "observedAt": 1792925010980,
+        "checkedAt": 1792925010980,
+        "remainingPauseLowerBoundMs": 1999,
+        "parentJobDataUpdated": true,
+        "redisStoredDataUpdated": false,
+        "childCompletionObserved": false,
+        "observerOnly": true
+      },
+      "cancelled": true,
+      "targetResult": {
+        "control": "b7c956b3-4ca6-4c31-919d-b332f9ccff7e",
+        "updated": true,
+        "aborted": true,
+        "identity": "43176/3",
+        "listenersAfter": 1
+      },
+      "nextResult": {
+        "control": "b7c956b3-4ca6-4c31-919d-b332f9ccff7e",
+        "updated": true,
+        "aborted": false,
+        "identity": "43176/3",
+        "listenersAfter": 1
+      },
+      "workerErrors": []
+    }
+  ]
+}

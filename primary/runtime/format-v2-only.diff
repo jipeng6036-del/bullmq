@@ -1,0 +1,88 @@
+--- v1/src/classes/child-processor.ts
++++ v2/src/classes/child-processor.ts
+@@ -232,12 +232,17 @@
+       updateData: async (data: any) => {
+         wrappedJob.data = data;
+         const requestId = Math.random().toString(36).substring(2, 15);
+-        await waitResponse(requestId, this.receiver, undefined, 'updateData', () =>
+-          send({
+-            requestId,
+-            cmd: ParentCommand.Update,
+-            value: data,
+-          }),
++        await waitResponse(
++          requestId,
++          this.receiver,
++          undefined,
++          'updateData',
++          () =>
++            send({
++              requestId,
++              cmd: ParentCommand.Update,
++              value: data,
++            }),
+         );
+       },
+ 
+@@ -379,7 +384,10 @@
+ 
+   try {
+     if (send) {
+-      const [value] = await Promise.all([response, Promise.resolve().then(send)]);
++      const [value] = await Promise.all([
++        response,
++        Promise.resolve().then(send),
++      ]);
+       return value;
+     }
+     return await response;
+--- v1/tests/child-processor.test.ts
++++ v2/tests/child-processor.test.ts
+@@ -32,25 +32,28 @@
+     }
+   });
+ 
+-  it.each(['throw', 'reject'])('cleans up when sending fails by %s', async mode => {
+-    const receiver = new EventEmitter();
+-    const error = new Error('IPC channel closed');
+-    let requestId: string;
+-    const send = (msg: any): Promise<void> => {
+-      requestId = msg.requestId;
+-      if (mode === 'throw') {
+-        throw error;
+-      }
+-      return Promise.reject(error);
+-    };
+-    const job = new TestChildProcessor(send, receiver).job(send);
+-    const updating = job.updateData({ updated: true });
+-    expect(job.data).toEqual({ updated: true });
+-    await expect(updating).rejects.toBe(error);
+-    expect(receiver.listenerCount('message')).toBe(0);
+-    receiver.emit('message', { requestId: requestId!, value: null });
+-    expect(receiver.listenerCount('message')).toBe(0);
+-  });
++  it.each(['throw', 'reject'])(
++    'cleans up when sending fails by %s',
++    async mode => {
++      const receiver = new EventEmitter();
++      const error = new Error('IPC channel closed');
++      let requestId: string;
++      const send = (msg: any): Promise<void> => {
++        requestId = msg.requestId;
++        if (mode === 'throw') {
++          throw error;
++        }
++        return Promise.reject(error);
++      };
++      const job = new TestChildProcessor(send, receiver).job(send);
++      const updating = job.updateData({ updated: true });
++      expect(job.data).toEqual({ updated: true });
++      await expect(updating).rejects.toBe(error);
++      expect(receiver.listenerCount('message')).toBe(0);
++      receiver.emit('message', { requestId: requestId!, value: null });
++      expect(receiver.listenerCount('message')).toBe(0);
++    },
++  );
+ 
+   it('waits for persistence without adding an RPC timeout', async () => {
+     vi.useFakeTimers();

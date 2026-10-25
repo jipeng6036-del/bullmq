@@ -1,0 +1,33 @@
+{"argv": ["docker", "exec", "--user", "node", "--env", "HOME=/tmp/bunroot/home", "--env", "npm_config_cache=/tmp/bunroot/npm-cache", "--env", "YARN_CACHE_FOLDER=/tmp/bunroot/yarn-cache", "--env", "PATH=/tmp/bunroot/tools/node_modules/node/bin:/tmp/bunroot/tools/node_modules/.bin:/tmp/bunroot/bun/node_modules/@oven/bun-linux-x64/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin", "--env", "REDIS_HOST=127.0.0.1", "--env", "REDIS_PORT=6379", "ghpr-0902-bullmq-bun-root-runner", "sh", "-c", "cd /tmp/bunroot/candidate && yarn test:bun:smoke"], "started": "2026-10-25T10:22:51.725237+00:00"}
+yarn run v1.22.22
+$ bun test --timeout 20000 tests/bun-redis.test.ts tests/bun-adapter-suite.test.ts
+bun test v1.4.4 (38afee6c8)
+
+tests/bun-adapter-suite.test.ts:
+(pass) bun adapter extended suite > supports bulk add and wait counts [5.76ms]
+(pass) bun adapter extended suite > supports pause and resume [2.38ms]
+(pass) bun adapter extended suite > handles failed jobs [5.22ms]
+(pass) bun adapter extended suite > processes jobs with concurrency [205.75ms]
+(pass) bun adapter extended suite > processes delayed jobs [393.95ms]
+(pass) bun adapter extended suite > processes a flow end-to-end [6.23ms]
+
+tests/bun-redis.test.ts:
+(pass) bun redis adapter > basic IRedisClient operations > should report ready status [0.04ms]
+(pass) bun redis adapter > basic IRedisClient operations > should get/set string values [0.44ms]
+(pass) bun redis adapter > basic IRedisClient operations > should hset/hget/hgetall [245.77ms]
+(pass) bun redis adapter > basic IRedisClient operations > should zrange with WITHSCORES [30.54ms]
+(pass) bun redis adapter > basic IRedisClient operations > should duplicate [1.46ms]
+(pass) bun redis adapter > basic IRedisClient operations > duplicate() targets the same server, not Bun default (#4582) [0.28ms]
+(pass) bun redis adapter > basic IRedisClient operations > nested duplicate().duplicate() materializes the grandchild (#4706) [0.17ms]
+(pass) bun redis adapter > basic IRedisClient operations > duplicate() reports ready when Bun returns an already-connected client [0.16ms]
+(pass) bun redis adapter > basic IRedisClient operations > should explicitly reconnect while an automatic reconnect is pending [1102.34ms]
+(pass) bun redis adapter > Queue operations via bun adapter > should add and retrieve a job [2.23ms]
+(pass) bun redis adapter > Worker processing via bun adapter > should process a job to completion [2.91ms]
+(pass) bun redis adapter > FlowProducer via bun adapter > should create a parent-child flow [1.46ms]
+(pass) bun redis adapter > shared connection teardown via bun adapter > should not flood ConnectionClosedError when the shared connection is closed via the adapter [203.97ms]
+
+ 19 pass
+ 0 fail
+ 32 expect() calls
+Ran 19 tests across 2 files. [3.03s]
+Done in 3.08s.

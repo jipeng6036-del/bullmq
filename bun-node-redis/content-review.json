@@ -1,0 +1,42 @@
+{
+  "scope": "Explicit 46 of the 47 original final-v2 evidence files, plus original source manifest; no recursive directory copy",
+  "reviewMethod": "Agent-performed manual semantic inspection plus deterministic content-pattern scanning and machine cross-checks. No human approval is claimed.",
+  "finalHead": "2e5ecf53615fd799d0c660d3b8bb8a5af579ccf7",
+  "archiveSha256": "7bc67762360cab5ec31cc6f42e95cbc9c8d2401364a40b5129cf5bf2e10193a3",
+  "credentialScan": {
+    "filesScannedBeforeCopy": 47,
+    "categories": [
+      "private_key",
+      "github_token",
+      "api_token",
+      "aws_access_id",
+      "jwt",
+      "authorization_value",
+      "credential_assignment",
+      "credential_url",
+      "email_address",
+      "personal_user_profile",
+      "known_personal_account_label",
+      "cookie_header"
+    ],
+    "findings": []
+  },
+  "omitted": [
+    {
+      "path": "inflight-host-processes.json",
+      "sourceSha256": "ec676844cac2dfb6aadc9c0acbd8958b5ac9234c97e44bdcddec42982d8cb715",
+      "reason": "Nonessential local host process snapshot; excluded whole to avoid personal user-profile and shell-wrapper metadata. Original remains local. No derivative or other host process material is exported."
+    }
+  ],
+  "semanticChecks": [
+    "Final v2 HEAD/tree/archive and 1068 source identities match in raw mapping and summary.",
+    "Raw gate summaries and exit-code records substantiate build 0, smoke 19 pass, Bun 1092 pass/2 skipped, adapter 66 pass, Node Redis 1114 pass/3 skipped. Skips are explicit and are not passing assertions.",
+    "Runtime image ENV NODE_VERSION=24.14.0 is the bootstrap image metadata. Actual invoked PATH and precheck output prove Node 24.22.1; Yarn 1.22.22, Bun 1.4.4 and Redis 7.4.11 are the tested versions.",
+    "Only the two explicitly owned task containers appear in the Docker identity evidence. Their image-version environment values and task mount metadata contain no credentials. The complete host-process snapshot is omitted.",
+    "Source-archive JSON contains only public-source path/type/mode/link/hash metadata, not source archives or dependency payloads. It deliberately names both v1 and v2; only v2 maps to final HEAD.",
+    "V1 is historical. Semantic review carry-forward is explained by two-file official formatting/AST equivalence; v1 runtime observations are not relabeled final HEAD. Six ChildProcessor cases are EventEmitter/wrapJob unit cases, not real IPC/Redis tests.",
+    "The initial HEAD precheck stopped before any test, and the bounded event query returned no rows. Those diagnostic artifacts are not counted as successful tests.",
+    "Operator helper sources are task-scoped text evidence, not dependencies, binaries, credentials or unrelated project material. Local paths are provenance; these helpers do not claim a standalone environment installer."
+  ],
+  "publicabilityConclusion": "No credential or personal-account content was detected in the exported explicit set by these checks. No commit, push, GitHub state change or runtime stop is performed."
+}

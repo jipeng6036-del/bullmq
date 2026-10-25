@@ -1,0 +1,9 @@
+{
+  "since": "2026-10-25T10:22:40Z",
+  "until": "2026-10-25T10:31:43.7738784Z",
+  "container": "ghpr-0902-bullmq-bun-root-runner",
+  "purpose": "Bounded read-only exec_create/exec_die diagnosis; no retry or termination",
+  "pipelineBunExitCode": 0,
+  "eventRows": 0,
+  "eventHistoryBoundary": "Bounded query returned no historical rows; exec_die is not used to infer success. Actual full Bun summary and docker exec return code 0 establish completion."
+}

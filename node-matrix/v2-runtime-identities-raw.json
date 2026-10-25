@@ -1,0 +1,1301 @@
+[
+    {
+        "Id": "49ed1b84ed357af750739364e57e82bff9190715dafc20054ac30c8fe757164a",
+        "Created": "2026-10-25T09:56:25.892880602Z",
+        "Path": "docker-entrypoint.sh",
+        "Args": [
+            "redis-server"
+        ],
+        "State": {
+            "Status": "running",
+            "Running": true,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 21112,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2026-10-25T10:18:55.908903987Z",
+            "FinishedAt": "2026-10-25T10:11:50.323377355Z"
+        },
+        "Image": "sha256:57e4255cc971b1c8d6f8a6ca283ac01bc3ecdd914273ef6bfaede87aaecd6541",
+        "ResolvConfPath": "/var/lib/docker/containers/49ed1b84ed357af750739364e57e82bff9190715dafc20054ac30c8fe757164a/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/49ed1b84ed357af750739364e57e82bff9190715dafc20054ac30c8fe757164a/hostname",
+        "HostsPath": "/var/lib/docker/containers/49ed1b84ed357af750739364e57e82bff9190715dafc20054ac30c8fe757164a/hosts",
+        "LogPath": "",
+        "Name": "/ghpr-bullmq-matrix-agent-node20-store",
+        "RestartCount": 0,
+        "Driver": "overlayfs",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "",
+        "ExecIDs": null,
+        "HostConfig": {
+            "Binds": null,
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "local",
+                "Config": {}
+            },
+            "NetworkMode": "bridge",
+            "PortBindings": {},
+            "RestartPolicy": {
+                "Name": "no",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "ConsoleSize": [
+                0,
+                0
+            ],
+            "CapAdd": null,
+            "CapDrop": null,
+            "CgroupnsMode": "private",
+            "Dns": null,
+            "DnsOptions": [],
+            "DnsSearch": [],
+            "ExtraHosts": null,
+            "GroupAdd": null,
+            "IpcMode": "private",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": null,
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 0,
+            "NanoCpus": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": [],
+            "BlkioDeviceReadBps": [],
+            "BlkioDeviceWriteBps": [],
+            "BlkioDeviceReadIOps": [],
+            "BlkioDeviceWriteIOps": [],
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": [],
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "MemoryReservation": 0,
+            "MemorySwap": 0,
+            "MemorySwappiness": null,
+            "OomKillDisable": null,
+            "PidsLimit": null,
+            "Ulimits": null,
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "MaskedPaths": [
+                "/proc/acpi",
+                "/proc/asound",
+                "/proc/interrupts",
+                "/proc/kcore",
+                "/proc/keys",
+                "/proc/latency_stats",
+                "/proc/sched_debug",
+                "/proc/scsi",
+                "/proc/timer_list",
+                "/proc/timer_stats",
+                "/sys/devices/virtual/powercap",
+                "/sys/firmware"
+            ],
+            "ReadonlyPaths": [
+                "/proc/bus",
+                "/proc/fs",
+                "/proc/irq",
+                "/proc/sys",
+                "/proc/sysrq-trigger"
+            ]
+        },
+        "Storage": {
+            "RootFS": {
+                "Snapshot": {
+                    "Name": "overlayfs"
+                }
+            }
+        },
+        "Mounts": [
+            {
+                "Type": "volume",
+                "Name": "85c3dc8b994b22dcc3f7348a8bce45c84486af139dbeb52a1391837750f01db8",
+                "Source": "/var/lib/docker/volumes/85c3dc8b994b22dcc3f7348a8bce45c84486af139dbeb52a1391837750f01db8/_data",
+                "Destination": "/data",
+                "Driver": "local",
+                "Mode": "",
+                "RW": true,
+                "Propagation": ""
+            }
+        ],
+        "Config": {
+            "Hostname": "49ed1b84ed35",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "ExposedPorts": {
+                "6379/tcp": {}
+            },
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "REDIS_VERSION=7.4.11"
+            ],
+            "Cmd": [
+                "redis-server"
+            ],
+            "Image": "redis:7-alpine",
+            "Volumes": {
+                "/data": {}
+            },
+            "WorkingDir": "/data",
+            "Entrypoint": [
+                "docker-entrypoint.sh"
+            ],
+            "Labels": {
+                "ghpr.owner": "heartbeat0902-bullmq-matrix-agent"
+            }
+        },
+        "NetworkSettings": {
+            "SandboxID": "61dd1bc1fb4c384b2f23004b02b5b95a22c7b7afc4a27b059981e07f8a5314ae",
+            "SandboxKey": "/var/run/docker/netns/61dd1bc1fb4c",
+            "Ports": {
+                "6379/tcp": null
+            },
+            "Networks": {
+                "bridge": {
+                    "IPAMConfig": null,
+                    "Links": null,
+                    "Aliases": null,
+                    "DriverOpts": null,
+                    "GwPriority": 0,
+                    "NetworkID": "8cac28c9e899c27a231953303135a6c8f27f616b728d888f8c9d71b63e5fdc9a",
+                    "EndpointID": "b4fc765369d26007c7ab23196f528ece7055fb4329c068d7c67d3df110d52108",
+                    "Gateway": "172.17.0.1",
+                    "IPAddress": "172.17.0.7",
+                    "MacAddress": "3e:62:a3:19:70:8c",
+                    "IPPrefixLen": 16,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "DNSNames": null
+                }
+            }
+        },
+        "ImageManifestDescriptor": {
+            "mediaType": "application/vnd.oci.image.manifest.v1+json",
+            "digest": "sha256:8be847644e195abc4c10c8d9936cfa45332eccc6b714fa7b186ff43f1f4d5579",
+            "size": 2288,
+            "annotations": {
+                "com.docker.official-images.bashbrew.arch": "amd64",
+                "org.opencontainers.image.base.digest": "sha256:f765c92e59538d44c6946f8073bdbffd2e8d5916981161faed1b30aa0ef0c2c5",
+                "org.opencontainers.image.base.name": "alpine:3.21",
+                "org.opencontainers.image.created": "2026-10-21T21:13:28Z",
+                "org.opencontainers.image.revision": "74654c612ee06275377d483dc4e134e57b463e9e",
+                "org.opencontainers.image.source": "https://github.com/redis/docker-library-redis.git#74654c612ee06275377d483dc4e134e57b463e9e:alpine",
+                "org.opencontainers.image.url": "https://hub.docker.com/_/redis",
+                "org.opencontainers.image.version": "7.4.11-alpine"
+            },
+            "platform": {
+                "architecture": "amd64",
+                "os": "linux"
+            }
+        }
+    },
+    {
+        "Id": "8ad5266f38a9f1c02cb7e1496bce8638774af79815fd470a6fcce7536f2238bc",
+        "Created": "2026-10-25T10:00:48.794932331Z",
+        "Path": "docker-entrypoint.sh",
+        "Args": [
+            "sleep",
+            "infinity"
+        ],
+        "State": {
+            "Status": "running",
+            "Running": true,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 21460,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2026-10-25T10:18:58.24474146Z",
+            "FinishedAt": "2026-10-25T10:11:54.969306668Z"
+        },
+        "Image": "sha256:5c4012d11d9857c42713ba511fbc19645cac1706bb710d51d42b0d301dff7f88",
+        "ResolvConfPath": "/var/lib/docker/containers/49ed1b84ed357af750739364e57e82bff9190715dafc20054ac30c8fe757164a/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/49ed1b84ed357af750739364e57e82bff9190715dafc20054ac30c8fe757164a/hostname",
+        "HostsPath": "/var/lib/docker/containers/49ed1b84ed357af750739364e57e82bff9190715dafc20054ac30c8fe757164a/hosts",
+        "LogPath": "",
+        "Name": "/ghpr-bullmq-matrix-agent-node20",
+        "RestartCount": 0,
+        "Driver": "overlayfs",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "",
+        "ExecIDs": null,
+        "HostConfig": {
+            "Binds": [
+                "F:\\Github-PR\\ci-evidence\\heartbeat0902-bullmq-matrix-agent-runtime:/evidence",
+                "F:\\Github-PR\\ci-evidence\\heartbeat0902-js-bullmq-4168\\runtime:/frozen:ro"
+            ],
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "local",
+                "Config": {}
+            },
+            "NetworkMode": "container:49ed1b84ed357af750739364e57e82bff9190715dafc20054ac30c8fe757164a",
+            "PortBindings": {},
+            "RestartPolicy": {
+                "Name": "no",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "ConsoleSize": [
+                0,
+                0
+            ],
+            "CapAdd": null,
+            "CapDrop": null,
+            "CgroupnsMode": "private",
+            "Dns": null,
+            "DnsOptions": [],
+            "DnsSearch": [],
+            "ExtraHosts": null,
+            "GroupAdd": null,
+            "IpcMode": "private",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": null,
+            "Tmpfs": {
+                "/work": "rw,size=4g,exec"
+            },
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 0,
+            "NanoCpus": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": [],
+            "BlkioDeviceReadBps": [],
+            "BlkioDeviceWriteBps": [],
+            "BlkioDeviceReadIOps": [],
+            "BlkioDeviceWriteIOps": [],
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": [],
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "MemoryReservation": 0,
+            "MemorySwap": 0,
+            "MemorySwappiness": null,
+            "OomKillDisable": null,
+            "PidsLimit": null,
+            "Ulimits": null,
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "MaskedPaths": [
+                "/proc/acpi",
+                "/proc/asound",
+                "/proc/interrupts",
+                "/proc/kcore",
+                "/proc/keys",
+                "/proc/latency_stats",
+                "/proc/sched_debug",
+                "/proc/scsi",
+                "/proc/timer_list",
+                "/proc/timer_stats",
+                "/sys/devices/virtual/powercap",
+                "/sys/firmware"
+            ],
+            "ReadonlyPaths": [
+                "/proc/bus",
+                "/proc/fs",
+                "/proc/irq",
+                "/proc/sys",
+                "/proc/sysrq-trigger"
+            ]
+        },
+        "Storage": {
+            "RootFS": {
+                "Snapshot": {
+                    "Name": "overlayfs"
+                }
+            }
+        },
+        "Mounts": [
+            {
+                "Type": "bind",
+                "Source": "F:\\Github-PR\\ci-evidence\\heartbeat0902-bullmq-matrix-agent-runtime",
+                "Destination": "/evidence",
+                "Mode": "",
+                "RW": true,
+                "Propagation": "rprivate"
+            },
+            {
+                "Type": "bind",
+                "Source": "F:\\Github-PR\\ci-evidence\\heartbeat0902-js-bullmq-4168\\runtime",
+                "Destination": "/frozen",
+                "Mode": "ro",
+                "RW": false,
+                "Propagation": "rprivate"
+            }
+        ],
+        "Config": {
+            "Hostname": "49ed1b84ed35",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "NODE_VERSION=26.12.1"
+            ],
+            "Cmd": [
+                "sleep",
+                "infinity"
+            ],
+            "Image": "node:26-bookworm",
+            "Volumes": null,
+            "WorkingDir": "/work",
+            "Entrypoint": [
+                "docker-entrypoint.sh"
+            ],
+            "Labels": {
+                "ghpr.owner": "heartbeat0902-bullmq-matrix-agent"
+            }
+        },
+        "NetworkSettings": {
+            "SandboxID": "",
+            "SandboxKey": "",
+            "Ports": {},
+            "Networks": {}
+        },
+        "ImageManifestDescriptor": {
+            "mediaType": "application/vnd.oci.image.manifest.v1+json",
+            "digest": "sha256:155f6779f557f863b16a6b77b3443b52f7dde209643eff9896d661bbd6829840",
+            "size": 2310,
+            "annotations": {
+                "com.docker.official-images.bashbrew.arch": "amd64",
+                "org.opencontainers.image.base.digest": "sha256:0ac99c7dcee4d051ea036dd4dc6db33cef4c5d2088c0bed4001d81e3d6cf53bd",
+                "org.opencontainers.image.base.name": "buildpack-deps:bookworm",
+                "org.opencontainers.image.created": "2026-10-21T11:33:33Z",
+                "org.opencontainers.image.revision": "80f02a542da739e6a662451d1db66456a0dea253",
+                "org.opencontainers.image.source": "https://github.com/nodejs/docker-node.git#80f02a542da739e6a662451d1db66456a0dea253:26/bookworm",
+                "org.opencontainers.image.url": "https://hub.docker.com/_/node",
+                "org.opencontainers.image.version": "26-bookworm"
+            },
+            "platform": {
+                "architecture": "amd64",
+                "os": "linux"
+            }
+        }
+    },
+    {
+        "Id": "eb3c9ac1b7cfe619a1faee6f92566cf8dfdcf32bfcdc56053c64dc7423201950",
+        "Created": "2026-10-25T10:11:55.500430142Z",
+        "Path": "docker-entrypoint.sh",
+        "Args": [
+            "redis-server"
+        ],
+        "State": {
+            "Status": "running",
+            "Running": true,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 88232,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2026-10-25T10:11:56.665568326Z",
+            "FinishedAt": "0001-01-01T00:00:00Z"
+        },
+        "Image": "sha256:57e4255cc971b1c8d6f8a6ca283ac01bc3ecdd914273ef6bfaede87aaecd6541",
+        "ResolvConfPath": "/var/lib/docker/containers/eb3c9ac1b7cfe619a1faee6f92566cf8dfdcf32bfcdc56053c64dc7423201950/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/eb3c9ac1b7cfe619a1faee6f92566cf8dfdcf32bfcdc56053c64dc7423201950/hostname",
+        "HostsPath": "/var/lib/docker/containers/eb3c9ac1b7cfe619a1faee6f92566cf8dfdcf32bfcdc56053c64dc7423201950/hosts",
+        "LogPath": "",
+        "Name": "/ghpr-bullmq-matrix-agent-node22-store",
+        "RestartCount": 0,
+        "Driver": "overlayfs",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "",
+        "ExecIDs": null,
+        "HostConfig": {
+            "Binds": null,
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "local",
+                "Config": {}
+            },
+            "NetworkMode": "bridge",
+            "PortBindings": {},
+            "RestartPolicy": {
+                "Name": "no",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "ConsoleSize": [
+                0,
+                0
+            ],
+            "CapAdd": null,
+            "CapDrop": null,
+            "CgroupnsMode": "private",
+            "Dns": null,
+            "DnsOptions": [],
+            "DnsSearch": [],
+            "ExtraHosts": null,
+            "GroupAdd": null,
+            "IpcMode": "private",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": null,
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 0,
+            "NanoCpus": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": [],
+            "BlkioDeviceReadBps": [],
+            "BlkioDeviceWriteBps": [],
+            "BlkioDeviceReadIOps": [],
+            "BlkioDeviceWriteIOps": [],
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": [],
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "MemoryReservation": 0,
+            "MemorySwap": 0,
+            "MemorySwappiness": null,
+            "OomKillDisable": null,
+            "PidsLimit": null,
+            "Ulimits": null,
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "MaskedPaths": [
+                "/proc/acpi",
+                "/proc/asound",
+                "/proc/interrupts",
+                "/proc/kcore",
+                "/proc/keys",
+                "/proc/latency_stats",
+                "/proc/sched_debug",
+                "/proc/scsi",
+                "/proc/timer_list",
+                "/proc/timer_stats",
+                "/sys/devices/virtual/powercap",
+                "/sys/firmware"
+            ],
+            "ReadonlyPaths": [
+                "/proc/bus",
+                "/proc/fs",
+                "/proc/irq",
+                "/proc/sys",
+                "/proc/sysrq-trigger"
+            ]
+        },
+        "Storage": {
+            "RootFS": {
+                "Snapshot": {
+                    "Name": "overlayfs"
+                }
+            }
+        },
+        "Mounts": [
+            {
+                "Type": "volume",
+                "Name": "05377ebfd82866b87191535fbfde662eada91ebe7852a00f5546982810559b91",
+                "Source": "/var/lib/docker/volumes/05377ebfd82866b87191535fbfde662eada91ebe7852a00f5546982810559b91/_data",
+                "Destination": "/data",
+                "Driver": "local",
+                "Mode": "",
+                "RW": true,
+                "Propagation": ""
+            }
+        ],
+        "Config": {
+            "Hostname": "eb3c9ac1b7cf",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "ExposedPorts": {
+                "6379/tcp": {}
+            },
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "REDIS_VERSION=7.4.11"
+            ],
+            "Cmd": [
+                "redis-server"
+            ],
+            "Image": "redis:7-alpine",
+            "Volumes": {
+                "/data": {}
+            },
+            "WorkingDir": "/data",
+            "Entrypoint": [
+                "docker-entrypoint.sh"
+            ],
+            "Labels": {
+                "ghpr.owner": "heartbeat0902-bullmq-matrix-agent"
+            }
+        },
+        "NetworkSettings": {
+            "SandboxID": "6e038705fa0e52b66c25f8b7a307717b4b45582dd5a7737536996f77fe4c62b9",
+            "SandboxKey": "/var/run/docker/netns/6e038705fa0e",
+            "Ports": {
+                "6379/tcp": null
+            },
+            "Networks": {
+                "bridge": {
+                    "IPAMConfig": null,
+                    "Links": null,
+                    "Aliases": null,
+                    "DriverOpts": null,
+                    "GwPriority": 0,
+                    "NetworkID": "8cac28c9e899c27a231953303135a6c8f27f616b728d888f8c9d71b63e5fdc9a",
+                    "EndpointID": "fe4d003a6f4498dc807ceb7cc8c4feeb04e0b353abed2b533b68d3ee8ac4648c",
+                    "Gateway": "172.17.0.1",
+                    "IPAddress": "172.17.0.6",
+                    "MacAddress": "2a:7c:b2:55:1f:cf",
+                    "IPPrefixLen": 16,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "DNSNames": null
+                }
+            }
+        },
+        "ImageManifestDescriptor": {
+            "mediaType": "application/vnd.oci.image.manifest.v1+json",
+            "digest": "sha256:8be847644e195abc4c10c8d9936cfa45332eccc6b714fa7b186ff43f1f4d5579",
+            "size": 2288,
+            "annotations": {
+                "com.docker.official-images.bashbrew.arch": "amd64",
+                "org.opencontainers.image.base.digest": "sha256:f765c92e59538d44c6946f8073bdbffd2e8d5916981161faed1b30aa0ef0c2c5",
+                "org.opencontainers.image.base.name": "alpine:3.21",
+                "org.opencontainers.image.created": "2026-10-21T21:13:28Z",
+                "org.opencontainers.image.revision": "74654c612ee06275377d483dc4e134e57b463e9e",
+                "org.opencontainers.image.source": "https://github.com/redis/docker-library-redis.git#74654c612ee06275377d483dc4e134e57b463e9e:alpine",
+                "org.opencontainers.image.url": "https://hub.docker.com/_/redis",
+                "org.opencontainers.image.version": "7.4.11-alpine"
+            },
+            "platform": {
+                "architecture": "amd64",
+                "os": "linux"
+            }
+        }
+    },
+    {
+        "Id": "191d61af8e22ee2edcacee27941a410ad53a1986883ea0e11bbdec5555911210",
+        "Created": "2026-10-25T10:11:57.647325704Z",
+        "Path": "docker-entrypoint.sh",
+        "Args": [
+            "sleep",
+            "infinity"
+        ],
+        "State": {
+            "Status": "running",
+            "Running": true,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 88446,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2026-10-25T10:11:58.902312782Z",
+            "FinishedAt": "0001-01-01T00:00:00Z"
+        },
+        "Image": "sha256:5c4012d11d9857c42713ba511fbc19645cac1706bb710d51d42b0d301dff7f88",
+        "ResolvConfPath": "/var/lib/docker/containers/eb3c9ac1b7cfe619a1faee6f92566cf8dfdcf32bfcdc56053c64dc7423201950/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/eb3c9ac1b7cfe619a1faee6f92566cf8dfdcf32bfcdc56053c64dc7423201950/hostname",
+        "HostsPath": "/var/lib/docker/containers/eb3c9ac1b7cfe619a1faee6f92566cf8dfdcf32bfcdc56053c64dc7423201950/hosts",
+        "LogPath": "",
+        "Name": "/ghpr-bullmq-matrix-agent-node22",
+        "RestartCount": 0,
+        "Driver": "overlayfs",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "",
+        "ExecIDs": null,
+        "HostConfig": {
+            "Binds": [
+                "F:\\Github-PR\\ci-evidence\\heartbeat0902-bullmq-matrix-agent-runtime:/evidence",
+                "F:\\Github-PR\\ci-evidence\\heartbeat0902-js-bullmq-4168\\runtime:/frozen:ro"
+            ],
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "local",
+                "Config": {}
+            },
+            "NetworkMode": "container:eb3c9ac1b7cfe619a1faee6f92566cf8dfdcf32bfcdc56053c64dc7423201950",
+            "PortBindings": {},
+            "RestartPolicy": {
+                "Name": "no",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "ConsoleSize": [
+                0,
+                0
+            ],
+            "CapAdd": null,
+            "CapDrop": null,
+            "CgroupnsMode": "private",
+            "Dns": null,
+            "DnsOptions": [],
+            "DnsSearch": [],
+            "ExtraHosts": null,
+            "GroupAdd": null,
+            "IpcMode": "private",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": null,
+            "Tmpfs": {
+                "/work": "rw,size=4g,exec"
+            },
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 0,
+            "NanoCpus": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": [],
+            "BlkioDeviceReadBps": [],
+            "BlkioDeviceWriteBps": [],
+            "BlkioDeviceReadIOps": [],
+            "BlkioDeviceWriteIOps": [],
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": [],
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "MemoryReservation": 0,
+            "MemorySwap": 0,
+            "MemorySwappiness": null,
+            "OomKillDisable": null,
+            "PidsLimit": null,
+            "Ulimits": null,
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "MaskedPaths": [
+                "/proc/acpi",
+                "/proc/asound",
+                "/proc/interrupts",
+                "/proc/kcore",
+                "/proc/keys",
+                "/proc/latency_stats",
+                "/proc/sched_debug",
+                "/proc/scsi",
+                "/proc/timer_list",
+                "/proc/timer_stats",
+                "/sys/devices/virtual/powercap",
+                "/sys/firmware"
+            ],
+            "ReadonlyPaths": [
+                "/proc/bus",
+                "/proc/fs",
+                "/proc/irq",
+                "/proc/sys",
+                "/proc/sysrq-trigger"
+            ]
+        },
+        "Storage": {
+            "RootFS": {
+                "Snapshot": {
+                    "Name": "overlayfs"
+                }
+            }
+        },
+        "Mounts": [
+            {
+                "Type": "bind",
+                "Source": "F:\\Github-PR\\ci-evidence\\heartbeat0902-bullmq-matrix-agent-runtime",
+                "Destination": "/evidence",
+                "Mode": "",
+                "RW": true,
+                "Propagation": "rprivate"
+            },
+            {
+                "Type": "bind",
+                "Source": "F:\\Github-PR\\ci-evidence\\heartbeat0902-js-bullmq-4168\\runtime",
+                "Destination": "/frozen",
+                "Mode": "ro",
+                "RW": false,
+                "Propagation": "rprivate"
+            }
+        ],
+        "Config": {
+            "Hostname": "eb3c9ac1b7cf",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "NODE_VERSION=26.12.1"
+            ],
+            "Cmd": [
+                "sleep",
+                "infinity"
+            ],
+            "Image": "node:26-bookworm",
+            "Volumes": null,
+            "WorkingDir": "/work",
+            "Entrypoint": [
+                "docker-entrypoint.sh"
+            ],
+            "Labels": {
+                "ghpr.owner": "heartbeat0902-bullmq-matrix-agent"
+            }
+        },
+        "NetworkSettings": {
+            "SandboxID": "",
+            "SandboxKey": "",
+            "Ports": {},
+            "Networks": {}
+        },
+        "ImageManifestDescriptor": {
+            "mediaType": "application/vnd.oci.image.manifest.v1+json",
+            "digest": "sha256:155f6779f557f863b16a6b77b3443b52f7dde209643eff9896d661bbd6829840",
+            "size": 2310,
+            "annotations": {
+                "com.docker.official-images.bashbrew.arch": "amd64",
+                "org.opencontainers.image.base.digest": "sha256:0ac99c7dcee4d051ea036dd4dc6db33cef4c5d2088c0bed4001d81e3d6cf53bd",
+                "org.opencontainers.image.base.name": "buildpack-deps:bookworm",
+                "org.opencontainers.image.created": "2026-10-21T11:33:33Z",
+                "org.opencontainers.image.revision": "80f02a542da739e6a662451d1db66456a0dea253",
+                "org.opencontainers.image.source": "https://github.com/nodejs/docker-node.git#80f02a542da739e6a662451d1db66456a0dea253:26/bookworm",
+                "org.opencontainers.image.url": "https://hub.docker.com/_/node",
+                "org.opencontainers.image.version": "26-bookworm"
+            },
+            "platform": {
+                "architecture": "amd64",
+                "os": "linux"
+            }
+        }
+    },
+    {
+        "Id": "9993d59c2719a86c64993a2d233a5b59e7eb19e44472304be247a9b3b097bcad",
+        "Created": "2026-10-25T10:31:47.94529915Z",
+        "Path": "docker-entrypoint.sh",
+        "Args": [
+            "valkey-server"
+        ],
+        "State": {
+            "Status": "running",
+            "Running": true,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 88795,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2026-10-25T10:31:55.747377105Z",
+            "FinishedAt": "0001-01-01T00:00:00Z"
+        },
+        "Image": "sha256:75010b6854cb5ba6a0b1540d1bd3238541a31e3f8018cd31f9e5b92bb3192fa6",
+        "ResolvConfPath": "/var/lib/docker/containers/9993d59c2719a86c64993a2d233a5b59e7eb19e44472304be247a9b3b097bcad/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/9993d59c2719a86c64993a2d233a5b59e7eb19e44472304be247a9b3b097bcad/hostname",
+        "HostsPath": "/var/lib/docker/containers/9993d59c2719a86c64993a2d233a5b59e7eb19e44472304be247a9b3b097bcad/hosts",
+        "LogPath": "",
+        "Name": "/ghpr-bullmq-matrix-agent-valkey-glide-store",
+        "RestartCount": 0,
+        "Driver": "overlayfs",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "",
+        "ExecIDs": null,
+        "HostConfig": {
+            "Binds": null,
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "local",
+                "Config": {}
+            },
+            "NetworkMode": "bridge",
+            "PortBindings": {},
+            "RestartPolicy": {
+                "Name": "no",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "ConsoleSize": [
+                0,
+                0
+            ],
+            "CapAdd": null,
+            "CapDrop": null,
+            "CgroupnsMode": "private",
+            "Dns": null,
+            "DnsOptions": [],
+            "DnsSearch": [],
+            "ExtraHosts": null,
+            "GroupAdd": null,
+            "IpcMode": "private",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": null,
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 0,
+            "NanoCpus": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": [],
+            "BlkioDeviceReadBps": [],
+            "BlkioDeviceWriteBps": [],
+            "BlkioDeviceReadIOps": [],
+            "BlkioDeviceWriteIOps": [],
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": [],
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "MemoryReservation": 0,
+            "MemorySwap": 0,
+            "MemorySwappiness": null,
+            "OomKillDisable": null,
+            "PidsLimit": null,
+            "Ulimits": null,
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "MaskedPaths": [
+                "/proc/acpi",
+                "/proc/asound",
+                "/proc/interrupts",
+                "/proc/kcore",
+                "/proc/keys",
+                "/proc/latency_stats",
+                "/proc/sched_debug",
+                "/proc/scsi",
+                "/proc/timer_list",
+                "/proc/timer_stats",
+                "/sys/devices/virtual/powercap",
+                "/sys/firmware"
+            ],
+            "ReadonlyPaths": [
+                "/proc/bus",
+                "/proc/fs",
+                "/proc/irq",
+                "/proc/sys",
+                "/proc/sysrq-trigger"
+            ]
+        },
+        "Storage": {
+            "RootFS": {
+                "Snapshot": {
+                    "Name": "overlayfs"
+                }
+            }
+        },
+        "Mounts": [
+            {
+                "Type": "volume",
+                "Name": "fbb390e31862de989d2b30b6562f4679b041a584a4c24e2bb08e7d10ad3bbdb1",
+                "Source": "/var/lib/docker/volumes/fbb390e31862de989d2b30b6562f4679b041a584a4c24e2bb08e7d10ad3bbdb1/_data",
+                "Destination": "/data",
+                "Driver": "local",
+                "Mode": "",
+                "RW": true,
+                "Propagation": ""
+            }
+        ],
+        "Config": {
+            "Hostname": "9993d59c2719",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "ExposedPorts": {
+                "6379/tcp": {}
+            },
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "VALKEY_VERSION=8.0.1",
+                "VALKEY_DOWNLOAD_URL=https://github.com/valkey-io/valkey/archive/refs/tags/8.0.1.tar.gz",
+                "VALKEY_DOWNLOAD_SHA=1e1d6dfbed2f932a87afbc7402be050a73974a9b19a9116897e537a6638e5e1d"
+            ],
+            "Cmd": [
+                "valkey-server"
+            ],
+            "Image": "valkey/valkey:8-alpine3.20",
+            "Volumes": {
+                "/data": {}
+            },
+            "WorkingDir": "/data",
+            "Entrypoint": [
+                "docker-entrypoint.sh"
+            ],
+            "Labels": {
+                "ghpr.owner": "heartbeat0902-bullmq-matrix-agent"
+            }
+        },
+        "NetworkSettings": {
+            "SandboxID": "9ddabf15e0f0d651900f771a890d6e91750611f08dcc6a25b903a8264d54af0f",
+            "SandboxKey": "/var/run/docker/netns/9ddabf15e0f0",
+            "Ports": {
+                "6379/tcp": null
+            },
+            "Networks": {
+                "bridge": {
+                    "IPAMConfig": null,
+                    "Links": null,
+                    "Aliases": null,
+                    "DriverOpts": null,
+                    "GwPriority": 0,
+                    "NetworkID": "8cac28c9e899c27a231953303135a6c8f27f616b728d888f8c9d71b63e5fdc9a",
+                    "EndpointID": "1f790025665e0147d3d85b76a22aba1629259c37b3b05ffcf20997db0442b49a",
+                    "Gateway": "172.17.0.1",
+                    "IPAddress": "172.17.0.8",
+                    "MacAddress": "a2:c0:af:77:db:fa",
+                    "IPPrefixLen": 16,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "DNSNames": null
+                }
+            }
+        },
+        "ImageManifestDescriptor": {
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "digest": "sha256:3fbc04f11e4a945285c12c8cafc413c8682c1ae6adbc0d56f0fe5469c2f71293",
+            "size": 1674,
+            "platform": {
+                "architecture": "amd64",
+                "os": "linux"
+            }
+        }
+    },
+    {
+        "Id": "85ddc11d9b622845461728aecc4e03a7f85a8edb03192a370c0f52d8a4271cc2",
+        "Created": "2026-10-25T10:31:56.745872804Z",
+        "Path": "docker-entrypoint.sh",
+        "Args": [
+            "sleep",
+            "infinity"
+        ],
+        "State": {
+            "Status": "running",
+            "Running": true,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 88911,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2026-10-25T10:31:58.673994662Z",
+            "FinishedAt": "0001-01-01T00:00:00Z"
+        },
+        "Image": "sha256:5c4012d11d9857c42713ba511fbc19645cac1706bb710d51d42b0d301dff7f88",
+        "ResolvConfPath": "/var/lib/docker/containers/9993d59c2719a86c64993a2d233a5b59e7eb19e44472304be247a9b3b097bcad/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/9993d59c2719a86c64993a2d233a5b59e7eb19e44472304be247a9b3b097bcad/hostname",
+        "HostsPath": "/var/lib/docker/containers/9993d59c2719a86c64993a2d233a5b59e7eb19e44472304be247a9b3b097bcad/hosts",
+        "LogPath": "",
+        "Name": "/ghpr-bullmq-matrix-agent-valkey-glide",
+        "RestartCount": 0,
+        "Driver": "overlayfs",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "",
+        "ExecIDs": [
+            "c0b189c9c52fd386161ee8b001ef04edeed682eb8153da62a79d55a59bc107e4"
+        ],
+        "HostConfig": {
+            "Binds": [
+                "F:\\Github-PR\\ci-evidence\\heartbeat0902-js-bullmq-4168\\runtime:/frozen:ro",
+                "F:\\Github-PR\\ci-evidence\\heartbeat0902-bullmq-matrix-agent-runtime:/evidence"
+            ],
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "local",
+                "Config": {}
+            },
+            "NetworkMode": "container:9993d59c2719a86c64993a2d233a5b59e7eb19e44472304be247a9b3b097bcad",
+            "PortBindings": {},
+            "RestartPolicy": {
+                "Name": "no",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "ConsoleSize": [
+                0,
+                0
+            ],
+            "CapAdd": null,
+            "CapDrop": null,
+            "CgroupnsMode": "private",
+            "Dns": null,
+            "DnsOptions": [],
+            "DnsSearch": [],
+            "ExtraHosts": null,
+            "GroupAdd": null,
+            "IpcMode": "private",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": null,
+            "Tmpfs": {
+                "/work": "rw,size=4g,exec"
+            },
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 0,
+            "NanoCpus": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": [],
+            "BlkioDeviceReadBps": [],
+            "BlkioDeviceWriteBps": [],
+            "BlkioDeviceReadIOps": [],
+            "BlkioDeviceWriteIOps": [],
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": [],
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "MemoryReservation": 0,
+            "MemorySwap": 0,
+            "MemorySwappiness": null,
+            "OomKillDisable": null,
+            "PidsLimit": null,
+            "Ulimits": null,
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "MaskedPaths": [
+                "/proc/acpi",
+                "/proc/asound",
+                "/proc/interrupts",
+                "/proc/kcore",
+                "/proc/keys",
+                "/proc/latency_stats",
+                "/proc/sched_debug",
+                "/proc/scsi",
+                "/proc/timer_list",
+                "/proc/timer_stats",
+                "/sys/devices/virtual/powercap",
+                "/sys/firmware"
+            ],
+            "ReadonlyPaths": [
+                "/proc/bus",
+                "/proc/fs",
+                "/proc/irq",
+                "/proc/sys",
+                "/proc/sysrq-trigger"
+            ]
+        },
+        "Storage": {
+            "RootFS": {
+                "Snapshot": {
+                    "Name": "overlayfs"
+                }
+            }
+        },
+        "Mounts": [
+            {
+                "Type": "bind",
+                "Source": "F:\\Github-PR\\ci-evidence\\heartbeat0902-bullmq-matrix-agent-runtime",
+                "Destination": "/evidence",
+                "Mode": "",
+                "RW": true,
+                "Propagation": "rprivate"
+            },
+            {
+                "Type": "bind",
+                "Source": "F:\\Github-PR\\ci-evidence\\heartbeat0902-js-bullmq-4168\\runtime",
+                "Destination": "/frozen",
+                "Mode": "ro",
+                "RW": false,
+                "Propagation": "rprivate"
+            }
+        ],
+        "Config": {
+            "Hostname": "9993d59c2719",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "NODE_VERSION=26.12.1"
+            ],
+            "Cmd": [
+                "sleep",
+                "infinity"
+            ],
+            "Image": "node:26-bookworm",
+            "Volumes": null,
+            "WorkingDir": "/work",
+            "Entrypoint": [
+                "docker-entrypoint.sh"
+            ],
+            "Labels": {
+                "ghpr.owner": "heartbeat0902-bullmq-matrix-agent"
+            }
+        },
+        "NetworkSettings": {
+            "SandboxID": "",
+            "SandboxKey": "",
+            "Ports": {},
+            "Networks": {}
+        },
+        "ImageManifestDescriptor": {
+            "mediaType": "application/vnd.oci.image.manifest.v1+json",
+            "digest": "sha256:155f6779f557f863b16a6b77b3443b52f7dde209643eff9896d661bbd6829840",
+            "size": 2310,
+            "annotations": {
+                "com.docker.official-images.bashbrew.arch": "amd64",
+                "org.opencontainers.image.base.digest": "sha256:0ac99c7dcee4d051ea036dd4dc6db33cef4c5d2088c0bed4001d81e3d6cf53bd",
+                "org.opencontainers.image.base.name": "buildpack-deps:bookworm",
+                "org.opencontainers.image.created": "2026-10-21T11:33:33Z",
+                "org.opencontainers.image.revision": "80f02a542da739e6a662451d1db66456a0dea253",
+                "org.opencontainers.image.source": "https://github.com/nodejs/docker-node.git#80f02a542da739e6a662451d1db66456a0dea253:26/bookworm",
+                "org.opencontainers.image.url": "https://hub.docker.com/_/node",
+                "org.opencontainers.image.version": "26-bookworm"
+            },
+            "platform": {
+                "architecture": "amd64",
+                "os": "linux"
+            }
+        }
+    }
+]

@@ -1,0 +1,10 @@
+{
+  "argv": [
+    "E:\\Nodejs\\node.EXE",
+    "-p",
+    "JSON.stringify({node:process.version,versions:process.versions})"
+  ],
+  "started": "2026-10-25T10:41:45.156899+00:00",
+  "ended": "2026-10-25T10:41:45.600090+00:00",
+  "exitCode": 0
+}

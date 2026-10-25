@@ -1,0 +1,269 @@
+{
+  "status": "FINAL_HEAD_V2_OFFICIAL_BUN_AND_NODE_REDIS_GATES_PASSED_LOCALLY",
+  "createdAt": "2026-10-25T10:37:12.793251+00:00",
+  "finalHead": "2e5ecf53615fd799d0c660d3b8bb8a5af579ccf7",
+  "finalTree": "0503ca913f5b3b71b081f7912a497fe635317d67",
+  "base": "09b7bfeb8653e74074542ca48e70477540742a7e",
+  "archiveSha256": "7bc67762360cab5ec31cc6f42e95cbc9c8d2401364a40b5129cf5bf2e10193a3",
+  "treeMapping": {
+    "finalHead": "2e5ecf53615fd799d0c660d3b8bb8a5af579ccf7",
+    "archiveSha256": "7bc67762360cab5ec31cc6f42e95cbc9c8d2401364a40b5129cf5bf2e10193a3",
+    "treeEntries": 1068,
+    "archiveEntries": 1068,
+    "errors": [],
+    "allTreeGitBlobsModesAndSymlinksMatch": true
+  },
+  "runtime": {
+    "owner": "bullmq-bun-root",
+    "node": "24.22.1",
+    "yarn": "1.22.22",
+    "bun": "1.4.4",
+    "redis": "7.4.11",
+    "redisHostPort": "127.0.0.1:45261",
+    "testRedisEndpoint": "127.0.0.1:6379 in owned redis container network namespace",
+    "containers": [
+      {
+        "name": "/ghpr-0902-bullmq-bun-root-redis7",
+        "id": "87c43361f57b318fbe168cab1f1b9a7279b5bc57a5b7a3fed6ed0f9b8fb6bfa0",
+        "image": "sha256:57e4255cc971b1c8d6f8a6ca283ac01bc3ecdd914273ef6bfaede87aaecd6541",
+        "owner": "bullmq-bun-root",
+        "networkMode": "bridge",
+        "ports": {
+          "6379/tcp": [
+            {
+              "HostIp": "127.0.0.1",
+              "HostPort": "45261"
+            }
+          ]
+        }
+      },
+      {
+        "name": "/ghpr-0902-bullmq-bun-root-runner",
+        "id": "de1ce14f3bcabfb6b2fa585dcf2fe20b0b0378cf49320b4ad54e2da0abf71a7e",
+        "image": "sha256:d8e448a56fc63242f70026718378bd4b00f8c82e78d20eefb199224a4d8e33d8",
+        "owner": "bullmq-bun-root",
+        "networkMode": "container:87c43361f57b318fbe168cab1f1b9a7279b5bc57a5b7a3fed6ed0f9b8fb6bfa0",
+        "ports": {}
+      }
+    ]
+  },
+  "dependencyReuse": {
+    "source": "v1 exact frozen install; package.json and yarn.lock unchanged in v2",
+    "lockSha256": "352db92214415193667c493636408682bb3fb612775c70df81e5522f6b76cb4f"
+  },
+  "gates": {
+    "candidate-build": {
+      "name": "candidate-build",
+      "argv": [
+        "docker",
+        "exec",
+        "--user",
+        "node",
+        "--env",
+        "HOME=/tmp/bunroot/home",
+        "--env",
+        "npm_config_cache=/tmp/bunroot/npm-cache",
+        "--env",
+        "YARN_CACHE_FOLDER=/tmp/bunroot/yarn-cache",
+        "--env",
+        "PATH=/tmp/bunroot/tools/node_modules/node/bin:/tmp/bunroot/tools/node_modules/.bin:/tmp/bunroot/bun/node_modules/@oven/bun-linux-x64/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+        "--env",
+        "REDIS_HOST=127.0.0.1",
+        "--env",
+        "REDIS_PORT=6379",
+        "ghpr-0902-bullmq-bun-root-runner",
+        "sh",
+        "-c",
+        "cd /tmp/bunroot/candidate && yarn build"
+      ],
+      "started": "2026-10-25T10:22:41.984793+00:00",
+      "ended": "2026-10-25T10:22:51.721731+00:00",
+      "exitCode": 0
+    },
+    "candidate-bun-smoke": {
+      "name": "candidate-bun-smoke",
+      "argv": [
+        "docker",
+        "exec",
+        "--user",
+        "node",
+        "--env",
+        "HOME=/tmp/bunroot/home",
+        "--env",
+        "npm_config_cache=/tmp/bunroot/npm-cache",
+        "--env",
+        "YARN_CACHE_FOLDER=/tmp/bunroot/yarn-cache",
+        "--env",
+        "PATH=/tmp/bunroot/tools/node_modules/node/bin:/tmp/bunroot/tools/node_modules/.bin:/tmp/bunroot/bun/node_modules/@oven/bun-linux-x64/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+        "--env",
+        "REDIS_HOST=127.0.0.1",
+        "--env",
+        "REDIS_PORT=6379",
+        "ghpr-0902-bullmq-bun-root-runner",
+        "sh",
+        "-c",
+        "cd /tmp/bunroot/candidate && yarn test:bun:smoke"
+      ],
+      "started": "2026-10-25T10:22:51.725237+00:00",
+      "ended": "2026-10-25T10:22:55.177237+00:00",
+      "exitCode": 0
+    },
+    "candidate-bun-full": {
+      "name": "candidate-bun-full",
+      "argv": [
+        "docker",
+        "exec",
+        "--user",
+        "node",
+        "--env",
+        "HOME=/tmp/bunroot/home",
+        "--env",
+        "npm_config_cache=/tmp/bunroot/npm-cache",
+        "--env",
+        "YARN_CACHE_FOLDER=/tmp/bunroot/yarn-cache",
+        "--env",
+        "PATH=/tmp/bunroot/tools/node_modules/node/bin:/tmp/bunroot/tools/node_modules/.bin:/tmp/bunroot/bun/node_modules/@oven/bun-linux-x64/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+        "--env",
+        "REDIS_HOST=127.0.0.1",
+        "--env",
+        "REDIS_PORT=6379",
+        "ghpr-0902-bullmq-bun-root-runner",
+        "sh",
+        "-c",
+        "cd /tmp/bunroot/candidate && yarn test:bun"
+      ],
+      "started": "2026-10-25T10:22:55.179237+00:00",
+      "ended": "2026-10-25T10:30:10.939614+00:00",
+      "exitCode": 0
+    },
+    "candidate-adapter-conformance": {
+      "name": "candidate-adapter-conformance",
+      "argv": [
+        "docker",
+        "exec",
+        "--user",
+        "node",
+        "--env",
+        "HOME=/tmp/bunroot/home",
+        "--env",
+        "npm_config_cache=/tmp/bunroot/npm-cache",
+        "--env",
+        "YARN_CACHE_FOLDER=/tmp/bunroot/yarn-cache",
+        "--env",
+        "PATH=/tmp/bunroot/tools/node_modules/node/bin:/tmp/bunroot/tools/node_modules/.bin:/tmp/bunroot/bun/node_modules/@oven/bun-linux-x64/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+        "--env",
+        "REDIS_HOST=127.0.0.1",
+        "--env",
+        "REDIS_PORT=6379",
+        "ghpr-0902-bullmq-bun-root-runner",
+        "sh",
+        "-c",
+        "cd /tmp/bunroot/candidate && yarn test:adapter-conformance"
+      ],
+      "started": "2026-10-25T10:30:11.621006+00:00",
+      "ended": "2026-10-25T10:30:14.274451+00:00",
+      "exitCode": 0
+    },
+    "candidate-node-redis": {
+      "name": "candidate-node-redis",
+      "argv": [
+        "docker",
+        "exec",
+        "--user",
+        "node",
+        "--env",
+        "HOME=/tmp/bunroot/home",
+        "--env",
+        "npm_config_cache=/tmp/bunroot/npm-cache",
+        "--env",
+        "YARN_CACHE_FOLDER=/tmp/bunroot/yarn-cache",
+        "--env",
+        "PATH=/tmp/bunroot/tools/node_modules/node/bin:/tmp/bunroot/tools/node_modules/.bin:/tmp/bunroot/bun/node_modules/@oven/bun-linux-x64/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+        "--env",
+        "REDIS_HOST=127.0.0.1",
+        "--env",
+        "REDIS_PORT=6379",
+        "ghpr-0902-bullmq-bun-root-runner",
+        "sh",
+        "-c",
+        "cd /tmp/bunroot/candidate && yarn test:node-redis"
+      ],
+      "started": "2026-10-25T10:30:14.275487+00:00",
+      "ended": "2026-10-25T10:36:25.288416+00:00",
+      "exitCode": 0
+    },
+    "candidate-source-final": {
+      "name": "candidate-source-final",
+      "argv": [
+        "docker",
+        "exec",
+        "--user",
+        "node",
+        "--env",
+        "HOME=/tmp/bunroot/home",
+        "--env",
+        "npm_config_cache=/tmp/bunroot/npm-cache",
+        "--env",
+        "YARN_CACHE_FOLDER=/tmp/bunroot/yarn-cache",
+        "--env",
+        "PATH=/tmp/bunroot/tools/node_modules/node/bin:/tmp/bunroot/tools/node_modules/.bin:/tmp/bunroot/bun/node_modules/@oven/bun-linux-x64/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+        "--env",
+        "REDIS_HOST=127.0.0.1",
+        "--env",
+        "REDIS_PORT=6379",
+        "ghpr-0902-bullmq-bun-root-runner",
+        "sh",
+        "-c",
+        "node /evidence/v2/verify-source-v2.cjs /tmp/bunroot/candidate candidate-frozen-v2.tar"
+      ],
+      "started": "2026-10-25T10:36:25.292995+00:00",
+      "ended": "2026-10-25T10:36:25.626090+00:00",
+      "exitCode": 0
+    }
+  },
+  "stats": {
+    "smoke": {
+      "passed": 19,
+      "failed": 0,
+      "files": 2
+    },
+    "bunFull": {
+      "fileSummary": "47 passed (47)",
+      "testSummary": "1092 passed | 2 skipped (1094)",
+      "duration": "333.55s (transform 8.51s, setup 535ms, import 12.05s, tests 318.01s, environment 6ms)",
+      "skippedCases": [
+        "tests/script_loader.test.ts > scriptLoader > when using path mappings > mappings can be absolute based on project root",
+        "tests/script_loader.test.ts > scriptLoader > when using path mappings > substitutes ~ with the project root"
+      ]
+    },
+    "adapterConformance": {
+      "fileSummary": "1 passed (1)",
+      "testSummary": "66 passed (66)",
+      "duration": "1.01s (transform 525ms, setup 0ms, import 716ms, tests 215ms, environment 0ms)",
+      "skippedCases": []
+    },
+    "nodeRedis": {
+      "fileSummary": "49 passed (49)",
+      "testSummary": "1114 passed | 3 skipped (1117)",
+      "duration": "370.39s (transform 2.37s, setup 3.98s, import 6.10s, tests 356.47s, environment 3ms)",
+      "skippedCases": [
+        "tests/job_scheduler_stress.test.ts > Job Scheduler Stress > should upsert many times with different settings respecting the guarantees",
+        "tests/script_loader.test.ts > scriptLoader > when using path mappings > mappings can be absolute based on project root",
+        "tests/script_loader.test.ts > scriptLoader > when using path mappings > substitutes ~ with the project root"
+      ]
+    }
+  },
+  "unitVsRuntimeBoundary": "Six tests/child-processor.test.ts cases are EventEmitter/wrapJob message protocol unit cases; these are not described as real IPC/Redis tests.",
+  "sourceFinalVerifiedEntries": 1068,
+  "reviewStatus": "NO_EVIDENCE_BACKED_BLOCKING_FINDINGS",
+  "astEquivalenceVerified": true,
+  "executionIsolation": "Bun and Node Redis ran sequentially on owned Redis7 only; owned Redis was reset between runtime lanes; no shared/default host Redis used.",
+  "baselineControl": {
+    "executed": false,
+    "reason": "All candidate gates exited 0; no failing assertion to attribute"
+  },
+  "v1Evidence": "All v1 records retained as historical, not relabeled final HEAD.",
+  "environmentRetained": true,
+  "productEdited": false,
+  "githubStateWritten": false
+}

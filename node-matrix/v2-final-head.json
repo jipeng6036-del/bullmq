@@ -1,0 +1,13 @@
+{
+  "atUtc": "2026-10-25T10:21:45.109479+00:00",
+  "head": "2e5ecf53615fd799d0c660d3b8bb8a5af579ccf7",
+  "tree": "0503ca913f5b3b71b081f7912a497fe635317d67",
+  "parent": "09b7bfeb8653e74074542ca48e70477540742a7e",
+  "archiveSha256": "7bc67762360cab5ec31cc6f42e95cbc9c8d2401364a40b5129cf5bf2e10193a3",
+  "rootEvidence": [
+    "root-v2-committed-source.json",
+    "root-v2-normal-commit.json",
+    "final-v2-source.bundle"
+  ],
+  "authority": "Root confirmed normal hooks preserved all six frozen-v2 source hashes and explicitly started final matrix."
+}

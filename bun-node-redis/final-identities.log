@@ -1,0 +1,468 @@
+{"argv": ["docker", "inspect", "ghpr-0902-bullmq-bun-root-redis7", "ghpr-0902-bullmq-bun-root-runner"], "started": "2026-10-25T10:36:25.628595+00:00"}
+[
+    {
+        "Id": "87c43361f57b318fbe168cab1f1b9a7279b5bc57a5b7a3fed6ed0f9b8fb6bfa0",
+        "Created": "2026-10-25T09:55:39.567192978Z",
+        "Path": "docker-entrypoint.sh",
+        "Args": [
+            "redis-server",
+            "--save",
+            "",
+            "--appendonly",
+            "no"
+        ],
+        "State": {
+            "Status": "running",
+            "Running": true,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 10931,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2026-10-25T09:55:41.046711322Z",
+            "FinishedAt": "0001-01-01T00:00:00Z"
+        },
+        "Image": "sha256:57e4255cc971b1c8d6f8a6ca283ac01bc3ecdd914273ef6bfaede87aaecd6541",
+        "ResolvConfPath": "/var/lib/docker/containers/87c43361f57b318fbe168cab1f1b9a7279b5bc57a5b7a3fed6ed0f9b8fb6bfa0/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/87c43361f57b318fbe168cab1f1b9a7279b5bc57a5b7a3fed6ed0f9b8fb6bfa0/hostname",
+        "HostsPath": "/var/lib/docker/containers/87c43361f57b318fbe168cab1f1b9a7279b5bc57a5b7a3fed6ed0f9b8fb6bfa0/hosts",
+        "LogPath": "",
+        "Name": "/ghpr-0902-bullmq-bun-root-redis7",
+        "RestartCount": 0,
+        "Driver": "overlayfs",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "",
+        "ExecIDs": null,
+        "HostConfig": {
+            "Binds": null,
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "local",
+                "Config": {}
+            },
+            "NetworkMode": "bridge",
+            "PortBindings": {
+                "6379/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": ""
+                    }
+                ]
+            },
+            "RestartPolicy": {
+                "Name": "no",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "ConsoleSize": [
+                0,
+                0
+            ],
+            "CapAdd": null,
+            "CapDrop": null,
+            "CgroupnsMode": "private",
+            "Dns": null,
+            "DnsOptions": [],
+            "DnsSearch": [],
+            "ExtraHosts": null,
+            "GroupAdd": null,
+            "IpcMode": "private",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": null,
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 0,
+            "NanoCpus": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": [],
+            "BlkioDeviceReadBps": [],
+            "BlkioDeviceWriteBps": [],
+            "BlkioDeviceReadIOps": [],
+            "BlkioDeviceWriteIOps": [],
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": [],
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "MemoryReservation": 0,
+            "MemorySwap": 0,
+            "MemorySwappiness": null,
+            "OomKillDisable": null,
+            "PidsLimit": null,
+            "Ulimits": null,
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "MaskedPaths": [
+                "/proc/acpi",
+                "/proc/asound",
+                "/proc/interrupts",
+                "/proc/kcore",
+                "/proc/keys",
+                "/proc/latency_stats",
+                "/proc/sched_debug",
+                "/proc/scsi",
+                "/proc/timer_list",
+                "/proc/timer_stats",
+                "/sys/devices/virtual/powercap",
+                "/sys/firmware"
+            ],
+            "ReadonlyPaths": [
+                "/proc/bus",
+                "/proc/fs",
+                "/proc/irq",
+                "/proc/sys",
+                "/proc/sysrq-trigger"
+            ]
+        },
+        "Storage": {
+            "RootFS": {
+                "Snapshot": {
+                    "Name": "overlayfs"
+                }
+            }
+        },
+        "Mounts": [
+            {
+                "Type": "volume",
+                "Name": "7bbe2d5add155d6e998f8c7d32bf0fbd2f55b801c382046b100c85a1626aa570",
+                "Source": "/var/lib/docker/volumes/7bbe2d5add155d6e998f8c7d32bf0fbd2f55b801c382046b100c85a1626aa570/_data",
+                "Destination": "/data",
+                "Driver": "local",
+                "Mode": "",
+                "RW": true,
+                "Propagation": ""
+            }
+        ],
+        "Config": {
+            "Hostname": "87c43361f57b",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "ExposedPorts": {
+                "6379/tcp": {}
+            },
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "REDIS_VERSION=7.4.11"
+            ],
+            "Cmd": [
+                "redis-server",
+                "--save",
+                "",
+                "--appendonly",
+                "no"
+            ],
+            "Image": "redis@sha256:57e4255cc971b1c8d6f8a6ca283ac01bc3ecdd914273ef6bfaede87aaecd6541",
+            "Volumes": {
+                "/data": {}
+            },
+            "WorkingDir": "/data",
+            "Entrypoint": [
+                "docker-entrypoint.sh"
+            ],
+            "Labels": {
+                "owner": "bullmq-bun-root",
+                "task": "heartbeat0902-bullmq-bun"
+            }
+        },
+        "NetworkSettings": {
+            "SandboxID": "3fd02c0ed1844c254db0ace26ea3f81b54e5207e993712bd74339139a2618138",
+            "SandboxKey": "/var/run/docker/netns/3fd02c0ed184",
+            "Ports": {
+                "6379/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "45261"
+                    }
+                ]
+            },
+            "Networks": {
+                "bridge": {
+                    "IPAMConfig": null,
+                    "Links": null,
+                    "Aliases": null,
+                    "DriverOpts": null,
+                    "GwPriority": 0,
+                    "NetworkID": "8cac28c9e899c27a231953303135a6c8f27f616b728d888f8c9d71b63e5fdc9a",
+                    "EndpointID": "413982c73f6d92e23745958c0d895524c7e6d10f9a3b52838fab79649131a3f3",
+                    "Gateway": "172.17.0.1",
+                    "IPAddress": "172.17.0.3",
+                    "MacAddress": "32:b5:06:a9:94:e9",
+                    "IPPrefixLen": 16,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "DNSNames": null
+                }
+            }
+        },
+        "ImageManifestDescriptor": {
+            "mediaType": "application/vnd.oci.image.manifest.v1+json",
+            "digest": "sha256:8be847644e195abc4c10c8d9936cfa45332eccc6b714fa7b186ff43f1f4d5579",
+            "size": 2288,
+            "annotations": {
+                "com.docker.official-images.bashbrew.arch": "amd64",
+                "org.opencontainers.image.base.digest": "sha256:f765c92e59538d44c6946f8073bdbffd2e8d5916981161faed1b30aa0ef0c2c5",
+                "org.opencontainers.image.base.name": "alpine:3.21",
+                "org.opencontainers.image.created": "2026-10-21T21:13:28Z",
+                "org.opencontainers.image.revision": "74654c612ee06275377d483dc4e134e57b463e9e",
+                "org.opencontainers.image.source": "https://github.com/redis/docker-library-redis.git#74654c612ee06275377d483dc4e134e57b463e9e:alpine",
+                "org.opencontainers.image.url": "https://hub.docker.com/_/redis",
+                "org.opencontainers.image.version": "7.4.11-alpine"
+            },
+            "platform": {
+                "architecture": "amd64",
+                "os": "linux"
+            }
+        }
+    },
+    {
+        "Id": "de1ce14f3bcabfb6b2fa585dcf2fe20b0b0378cf49320b4ad54e2da0abf71a7e",
+        "Created": "2026-10-25T09:55:42.508754833Z",
+        "Path": "docker-entrypoint.sh",
+        "Args": [
+            "sleep",
+            "infinity"
+        ],
+        "State": {
+            "Status": "running",
+            "Running": true,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 11220,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2026-10-25T09:55:43.511326256Z",
+            "FinishedAt": "0001-01-01T00:00:00Z"
+        },
+        "Image": "sha256:d8e448a56fc63242f70026718378bd4b00f8c82e78d20eefb199224a4d8e33d8",
+        "ResolvConfPath": "/var/lib/docker/containers/87c43361f57b318fbe168cab1f1b9a7279b5bc57a5b7a3fed6ed0f9b8fb6bfa0/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/87c43361f57b318fbe168cab1f1b9a7279b5bc57a5b7a3fed6ed0f9b8fb6bfa0/hostname",
+        "HostsPath": "/var/lib/docker/containers/87c43361f57b318fbe168cab1f1b9a7279b5bc57a5b7a3fed6ed0f9b8fb6bfa0/hosts",
+        "LogPath": "",
+        "Name": "/ghpr-0902-bullmq-bun-root-runner",
+        "RestartCount": 0,
+        "Driver": "overlayfs",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "",
+        "ExecIDs": null,
+        "HostConfig": {
+            "Binds": null,
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "local",
+                "Config": {}
+            },
+            "NetworkMode": "container:87c43361f57b318fbe168cab1f1b9a7279b5bc57a5b7a3fed6ed0f9b8fb6bfa0",
+            "PortBindings": {},
+            "RestartPolicy": {
+                "Name": "no",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "ConsoleSize": [
+                0,
+                0
+            ],
+            "CapAdd": null,
+            "CapDrop": null,
+            "CgroupnsMode": "private",
+            "Dns": null,
+            "DnsOptions": [],
+            "DnsSearch": [],
+            "ExtraHosts": null,
+            "GroupAdd": null,
+            "IpcMode": "private",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": null,
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 0,
+            "NanoCpus": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": [],
+            "BlkioDeviceReadBps": [],
+            "BlkioDeviceWriteBps": [],
+            "BlkioDeviceReadIOps": [],
+            "BlkioDeviceWriteIOps": [],
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": [],
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "MemoryReservation": 0,
+            "MemorySwap": 0,
+            "MemorySwappiness": null,
+            "OomKillDisable": null,
+            "PidsLimit": null,
+            "Ulimits": null,
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "Mounts": [
+                {
+                    "Type": "bind",
+                    "Source": "F:\\Github-PR\\ci-evidence\\heartbeat0902-js-bullmq-4168\\runtime",
+                    "Target": "/input",
+                    "ReadOnly": true
+                },
+                {
+                    "Type": "bind",
+                    "Source": "F:\\Github-PR\\ci-evidence\\heartbeat0902-bullmq-bun-root",
+                    "Target": "/evidence"
+                }
+            ],
+            "MaskedPaths": [
+                "/proc/acpi",
+                "/proc/asound",
+                "/proc/interrupts",
+                "/proc/kcore",
+                "/proc/keys",
+                "/proc/latency_stats",
+                "/proc/sched_debug",
+                "/proc/scsi",
+                "/proc/timer_list",
+                "/proc/timer_stats",
+                "/sys/devices/virtual/powercap",
+                "/sys/firmware"
+            ],
+            "ReadonlyPaths": [
+                "/proc/bus",
+                "/proc/fs",
+                "/proc/irq",
+                "/proc/sys",
+                "/proc/sysrq-trigger"
+            ]
+        },
+        "Storage": {
+            "RootFS": {
+                "Snapshot": {
+                    "Name": "overlayfs"
+                }
+            }
+        },
+        "Mounts": [
+            {
+                "Type": "bind",
+                "Source": "F:\\Github-PR\\ci-evidence\\heartbeat0902-bullmq-bun-root",
+                "Destination": "/evidence",
+                "Mode": "",
+                "RW": true,
+                "Propagation": "rprivate"
+            },
+            {
+                "Type": "bind",
+                "Source": "F:\\Github-PR\\ci-evidence\\heartbeat0902-js-bullmq-4168\\runtime",
+                "Destination": "/input",
+                "Mode": "",
+                "RW": false,
+                "Propagation": "rprivate"
+            }
+        ],
+        "Config": {
+            "Hostname": "87c43361f57b",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "NODE_VERSION=24.14.0",
+                "YARN_VERSION=1.22.22"
+            ],
+            "Cmd": [
+                "sleep",
+                "infinity"
+            ],
+            "Image": "node@sha256:d8e448a56fc63242f70026718378bd4b00f8c82e78d20eefb199224a4d8e33d8",
+            "Volumes": null,
+            "WorkingDir": "",
+            "Entrypoint": [
+                "docker-entrypoint.sh"
+            ],
+            "Labels": {
+                "owner": "bullmq-bun-root",
+                "task": "heartbeat0902-bullmq-bun"
+            }
+        },
+        "NetworkSettings": {
+            "SandboxID": "",
+            "SandboxKey": "",
+            "Ports": {},
+            "Networks": {}
+        },
+        "ImageManifestDescriptor": {
+            "mediaType": "application/vnd.oci.image.manifest.v1+json",
+            "digest": "sha256:4bd6219054c8bebcd26a66bfd8ca0bd6e1024b4b97474c59bb7ee3bbcbef4fe8",
+            "size": 1929,
+            "annotations": {
+                "com.docker.official-images.bashbrew.arch": "amd64",
+                "org.opencontainers.image.base.digest": "sha256:8af0e5095f9964007f5ebd11191dfe52dcb51bf3afa2c07f055fc5451b78ba0e",
+                "org.opencontainers.image.base.name": "debian:bookworm-slim",
+                "org.opencontainers.image.created": "2026-03-16T22:45:07Z",
+                "org.opencontainers.image.revision": "62ab97e3a124eeaa6e12aa36815f5d71d498ce29",
+                "org.opencontainers.image.source": "https://github.com/nodejs/docker-node.git#62ab97e3a124eeaa6e12aa36815f5d71d498ce29:24/bookworm-slim",
+                "org.opencontainers.image.url": "https://hub.docker.com/_/node",
+                "org.opencontainers.image.version": "24-bookworm-slim"
+            },
+            "platform": {
+                "architecture": "amd64",
+                "os": "linux"
+            }
+        }
+    }
+]

@@ -1,0 +1,23 @@
+{
+  "name": "final-v2-primary-quality-coverage",
+  "command": "cd /tmp/bullmq4168/candidate && test \"$(git rev-parse HEAD)\" = 2e5ecf53615fd799d0c660d3b8bb8a5af579ccf7 && node /evidence/verify-final-v2.cjs /tmp/bullmq4168/candidate && node --version && yarn --version && yarn lint && yarn build && yarn test:types && ./node_modules/.bin/prettier --check src/classes/child-processor.ts src/classes/sandbox.ts src/enums/child-command.ts tests/sandboxed_process.test.ts tests/child-processor.test.ts tests/fixtures/fixture_processor_update_data_await.js && yarn test:smoke && yarn coverage && node /evidence/verify-final-v2.cjs /tmp/bullmq4168/candidate",
+  "argv": [
+    "docker",
+    "exec",
+    "--user",
+    "node",
+    "--env",
+    "HOME=/tmp/bullmq4168/home",
+    "--env",
+    "npm_config_cache=/tmp/bullmq4168/npm-cache",
+    "--env",
+    "PATH=/tmp/bullmq4168/tools/node_modules/node/bin:/tmp/bullmq4168/tools/node_modules/.bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+    "ghpr-heartbeat0902-js-bullmq4168-validation",
+    "sh",
+    "-c",
+    "cd /tmp/bullmq4168/candidate && test \"$(git rev-parse HEAD)\" = 2e5ecf53615fd799d0c660d3b8bb8a5af579ccf7 && node /evidence/verify-final-v2.cjs /tmp/bullmq4168/candidate && node --version && yarn --version && yarn lint && yarn build && yarn test:types && ./node_modules/.bin/prettier --check src/classes/child-processor.ts src/classes/sandbox.ts src/enums/child-command.ts tests/sandboxed_process.test.ts tests/child-processor.test.ts tests/fixtures/fixture_processor_update_data_await.js && yarn test:smoke && yarn coverage && node /evidence/verify-final-v2.cjs /tmp/bullmq4168/candidate"
+  ],
+  "started": "2026-10-25T10:30:54.682088+00:00",
+  "ended": "2026-10-25T10:39:11.789981+00:00",
+  "exitCode": 0
+}

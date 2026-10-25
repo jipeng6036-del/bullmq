@@ -1,0 +1,118 @@
+{"argv": ["docker", "exec", "--user", "node", "--env", "HOME=/tmp/bullmq4168/home", "--env", "npm_config_cache=/tmp/bullmq4168/npm-cache", "--env", "PATH=/tmp/bullmq4168/tools/node_modules/node/bin:/tmp/bullmq4168/tools/node_modules/.bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin", "ghpr-heartbeat0902-js-bullmq4168-validation", "sh", "-c", "cd /tmp/bullmq4168/baseline && yarn build"], "started": "2026-10-25T09:39:29.650438+00:00"}
+yarn run v1.22.22
+$ npm run clean:dist && npm run pretest && npm run tsc:all && npm run copy:main:type && npm run clean:temp:files && npm run copy:lua && npm run copy:includes:lua
+npm warn Unknown env config "version-commit-hooks". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown env config "version-tag-prefix". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown env config "version-git-message". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown env config "argv". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown env config "version-git-tag". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+
+> bullmq@6.4.2 clean:dist
+> rimraf dist
+
+npm warn Unknown env config "version-commit-hooks". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown env config "version-tag-prefix". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown env config "version-git-message". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown env config "argv". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown env config "version-git-tag". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+
+> bullmq@6.4.2 pretest
+> npm run clean:scripts && npm run generate:raw:scripts && npm run transform:commands && npm run generate:sql:scripts && npm run circular:references
+
+npm warn Unknown env config "version-commit-hooks". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown env config "version-tag-prefix". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown env config "version-git-message". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown env config "argv". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown env config "version-git-tag". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+
+> bullmq@6.4.2 clean:scripts
+> rimraf rawScripts src/scripts src/postgres/sql-scripts.ts
+
+npm warn Unknown env config "version-commit-hooks". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown env config "version-tag-prefix". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown env config "version-git-message". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown env config "argv". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown env config "version-git-tag". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+
+> bullmq@6.4.2 generate:raw:scripts
+> ts-node --project tsconfig-cjs.json scripts/generateRawScripts.ts
+
+npm warn Unknown env config "version-commit-hooks". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown env config "version-tag-prefix". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown env config "version-git-message". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown env config "argv". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown env config "version-git-tag". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+
+> bullmq@6.4.2 transform:commands
+> node ./scripts/commandTransform.js ./rawScripts ./src/scripts
+
+npm warn Unknown env config "version-commit-hooks". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown env config "version-tag-prefix". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown env config "version-git-message". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown env config "argv". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown env config "version-git-tag". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+
+> bullmq@6.4.2 generate:sql:scripts
+> node ./scripts/generateSqlScripts.js
+
+Generated src/postgres/sql-scripts.ts (100 commands, 4 migrations)
+npm warn Unknown env config "version-commit-hooks". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown env config "version-tag-prefix". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown env config "version-git-message". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown env config "argv". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown env config "version-git-tag". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+
+> bullmq@6.4.2 circular:references
+> madge --circular --extensions ts ./src
+
+- Finding files
+Processed 178 files (719ms) 
+
+✔ No circular dependency found!
+
+npm warn Unknown env config "version-commit-hooks". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown env config "version-tag-prefix". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown env config "version-git-message". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown env config "argv". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown env config "version-git-tag". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+
+> bullmq@6.4.2 tsc:all
+> tsc && tsc -p tsconfig-cjs.json
+
+npm warn Unknown env config "version-commit-hooks". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown env config "version-tag-prefix". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown env config "version-git-message". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown env config "argv". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown env config "version-git-tag". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+
+> bullmq@6.4.2 copy:main:type
+> cpx "./dist/esm/classes/main.d.ts" ./dist/cjs/classes && cpx "./dist/esm/classes/main-worker.d.ts" ./dist/cjs/classes
+
+npm warn Unknown env config "version-commit-hooks". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown env config "version-tag-prefix". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown env config "version-git-message". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown env config "argv". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown env config "version-git-tag". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+
+> bullmq@6.4.2 clean:temp:files
+> rimraf dist/cjs/bullmq.d.ts dist/esm/bullmq.d.ts dist/tsdoc-metadata.json
+
+npm warn Unknown env config "version-commit-hooks". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown env config "version-tag-prefix". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown env config "version-git-message". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown env config "argv". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown env config "version-git-tag". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+
+> bullmq@6.4.2 copy:lua
+> cpx "./src/commands/*.lua" ./dist/cjs/commands && cpx "./src/commands/*.lua" ./dist/esm/commands
+
+npm warn Unknown env config "version-commit-hooks". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown env config "version-tag-prefix". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown env config "version-git-message". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown env config "argv". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown env config "version-git-tag". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+
+> bullmq@6.4.2 copy:includes:lua
+> cpx "./src/commands/includes/*.lua" ./dist/cjs/commands/includes && cpx "./src/commands/includes/*.lua" ./dist/esm/commands/includes
+
+Done in 7.65s.

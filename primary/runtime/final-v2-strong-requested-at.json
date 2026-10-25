@@ -1,0 +1,126 @@
+{
+  "node": "v24.22.1",
+  "port": 6387,
+  "rows": [
+    {
+      "mode": "child-process",
+      "action": "force-close",
+      "precondition": {
+        "actualParentCommandUpdateObserved": true,
+        "requestId": "2atsunac6ec",
+        "pauseAt": 1792924931225,
+        "pauseRequestedAt": 1792924931225,
+        "observedAt": 1792924931226,
+        "checkedAt": 1792924931226,
+        "remainingPauseLowerBoundMs": 1999,
+        "parentJobDataUpdated": true,
+        "redisStoredDataUpdated": false,
+        "childCompletionObserved": false,
+        "observerOnly": true
+      },
+      "closeMs": 2059,
+      "closed": true,
+      "nextResult": {
+        "control": "937de8a6-270a-480c-8970-c43bb241563b",
+        "updated": true,
+        "aborted": false,
+        "identity": "5444/0",
+        "listenersAfter": 1
+      },
+      "workerErrors": []
+    },
+    {
+      "mode": "child-process",
+      "action": "cancel",
+      "precondition": {
+        "actualParentCommandUpdateObserved": true,
+        "requestId": "lsay4ppdstr",
+        "pauseAt": 1792924933422,
+        "pauseRequestedAt": 1792924933422,
+        "observedAt": 1792924933422,
+        "checkedAt": 1792924933423,
+        "remainingPauseLowerBoundMs": 1999,
+        "parentJobDataUpdated": true,
+        "redisStoredDataUpdated": false,
+        "childCompletionObserved": false,
+        "observerOnly": true
+      },
+      "cancelled": true,
+      "targetResult": {
+        "control": "045b327f-f072-4b28-9651-0f20f37705b5",
+        "updated": true,
+        "aborted": true,
+        "identity": "5456/0",
+        "listenersAfter": 1
+      },
+      "nextResult": {
+        "control": "045b327f-f072-4b28-9651-0f20f37705b5",
+        "updated": true,
+        "aborted": false,
+        "identity": "5456/0",
+        "listenersAfter": 1
+      },
+      "workerErrors": []
+    },
+    {
+      "mode": "worker-thread",
+      "action": "force-close",
+      "precondition": {
+        "actualParentCommandUpdateObserved": true,
+        "requestId": "0haz7117zo5v",
+        "pauseAt": 1792924935572,
+        "pauseRequestedAt": 1792924935572,
+        "observedAt": 1792924935572,
+        "checkedAt": 1792924935573,
+        "remainingPauseLowerBoundMs": 1999,
+        "parentJobDataUpdated": true,
+        "redisStoredDataUpdated": false,
+        "childCompletionObserved": false,
+        "observerOnly": true
+      },
+      "closeMs": 2,
+      "closed": true,
+      "nextResult": {
+        "control": "047403c4-eee7-4906-ac5c-a9e6cd6f6da9",
+        "updated": true,
+        "aborted": false,
+        "identity": "5420/2",
+        "listenersAfter": 1
+      },
+      "workerErrors": []
+    },
+    {
+      "mode": "worker-thread",
+      "action": "cancel",
+      "precondition": {
+        "actualParentCommandUpdateObserved": true,
+        "requestId": "6fx4aq1k2o4",
+        "pauseAt": 1792924937718,
+        "pauseRequestedAt": 1792924937718,
+        "observedAt": 1792924937718,
+        "checkedAt": 1792924937719,
+        "remainingPauseLowerBoundMs": 1999,
+        "parentJobDataUpdated": true,
+        "redisStoredDataUpdated": false,
+        "childCompletionObserved": false,
+        "observerOnly": true
+      },
+      "cancelled": true,
+      "targetResult": {
+        "control": "510de73a-eeab-433b-993e-c93f2c1ce549",
+        "updated": true,
+        "aborted": true,
+        "identity": "5420/3",
+        "listenersAfter": 1
+      },
+      "nextResult": {
+        "control": "510de73a-eeab-433b-993e-c93f2c1ce549",
+        "updated": true,
+        "aborted": false,
+        "identity": "5420/3",
+        "listenersAfter": 1
+      },
+      "workerErrors": []
+    }
+  ]
+}

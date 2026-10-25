@@ -1,0 +1,29 @@
+yarn install v1.22.22
+[1/4] Resolving packages...
+warning Resolution field "js-yaml@5.4.2" is incompatible with requested version "js-yaml@^4.1.0"
+warning Resolution field "js-yaml@5.4.2" is incompatible with requested version "js-yaml@^4.3.2"
+warning Resolution field "brace-expansion@5.0.12" is incompatible with requested version "brace-expansion@^1.1.7"
+warning Resolution field "picomatch@4.0.7" is incompatible with requested version "picomatch@^2.3.1"
+warning Resolution field "js-yaml@5.4.2" is incompatible with requested version "js-yaml@4.2.0"
+[2/4] Fetching packages...
+[3/4] Linking dependencies...
+warning " > vitest@4.1.12" has unmet peer dependency "vite@^6.0.0 || ^7.0.0 || ^8.0.0".
+warning Workspaces can only be enabled in private projects.
+warning Workspaces can only be enabled in private projects.
+warning Workspaces can only be enabled in private projects.
+warning Workspaces can only be enabled in private projects.
+warning Workspaces can only be enabled in private projects.
+warning Workspaces can only be enabled in private projects.
+warning Workspaces can only be enabled in private projects.
+warning Workspaces can only be enabled in private projects.
+warning Workspaces can only be enabled in private projects.
+warning Workspaces can only be enabled in private projects.
+warning Workspaces can only be enabled in private projects.
+warning Workspaces can only be enabled in private projects.
+warning Workspaces can only be enabled in private projects.
+warning Workspaces can only be enabled in private projects.
+warning Workspaces can only be enabled in private projects.
+warning Workspaces can only be enabled in private projects.
+[4/4] Building fresh packages...
+$ husky
+.git can't be foundDone in 49.58s.

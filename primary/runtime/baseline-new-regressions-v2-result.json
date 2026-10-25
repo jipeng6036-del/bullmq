@@ -1,0 +1,23 @@
+{
+  "name": "baseline-new-regressions-v2",
+  "command": "cd /tmp/bullmq4168/candidate && yarn vitest run --no-file-parallelism --config vitest.ioredis.config.ts tests/sandboxed_process.test.ts -t \"should await persisted data|should return persistence errors\"",
+  "argv": [
+    "docker",
+    "exec",
+    "--user",
+    "node",
+    "--env",
+    "HOME=/tmp/bullmq4168/home",
+    "--env",
+    "npm_config_cache=/tmp/bullmq4168/npm-cache",
+    "--env",
+    "PATH=/tmp/bullmq4168/tools/node_modules/node/bin:/tmp/bullmq4168/tools/node_modules/.bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+    "ghpr-heartbeat0902-js-bullmq4168-validation",
+    "sh",
+    "-c",
+    "cd /tmp/bullmq4168/candidate && yarn vitest run --no-file-parallelism --config vitest.ioredis.config.ts tests/sandboxed_process.test.ts -t \"should await persisted data|should return persistence errors\""
+  ],
+  "started": "2026-10-25T09:40:44.236678+00:00",
+  "ended": "2026-10-25T09:40:47.015384+00:00",
+  "exitCode": 1
+}

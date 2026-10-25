@@ -1,0 +1,24 @@
+{
+  "allAstEquivalent": true,
+  "method": "Compare every TypeScript syntax node kind and child order plus identifier/literal values; exclude SourceFile.text and positional/trivia formatting",
+  "officialFormatterLog": "official-format-v2-ast.log",
+  "instrumentationCorrection": "First attempt incorrectly included whole SourceFile.text; first result preserved separately",
+  "files": [
+    {
+      "path": "src/classes/child-processor.ts",
+      "beforeSha256": "6151b982fea955453f4535bc517335068a071d514d30a18c66092bed23b423a0",
+      "afterSha256": "bee535372224faa900ab6566fbc6ffd27fe14395a1c38e4b950c6fd81626cb98",
+      "astBeforeSha256": "971f9b1854ee2cb4cac07c684d5444de2852d33f177dabe3cd98c79bece044d7",
+      "astAfterSha256": "971f9b1854ee2cb4cac07c684d5444de2852d33f177dabe3cd98c79bece044d7",
+      "astEquivalent": true
+    },
+    {
+      "path": "tests/child-processor.test.ts",
+      "beforeSha256": "6dacab79c2a563c77aee72695278abed658411502738e71b52dcdac0b12a32fb",
+      "afterSha256": "228ce90c084a90cf0ddb8a195fcdbc48713b121f335f3560aa6a7c951b6c2920",
+      "astBeforeSha256": "3862b5107bbc4a7a10313453764077b98c497a7f2d6216de3bb63fb8f94859d9",
+      "astAfterSha256": "3862b5107bbc4a7a10313453764077b98c497a7f2d6216de3bb63fb8f94859d9",
+      "astEquivalent": true
+    }
+  ]
+}

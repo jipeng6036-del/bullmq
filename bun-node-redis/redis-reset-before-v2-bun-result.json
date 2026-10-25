@@ -1,0 +1,13 @@
+{
+  "name": "redis-reset-before-v2-bun",
+  "argv": [
+    "docker",
+    "exec",
+    "ghpr-0902-bullmq-bun-root-redis7",
+    "redis-cli",
+    "FLUSHALL"
+  ],
+  "started": "2026-10-25T10:19:04.311294+00:00",
+  "ended": "2026-10-25T10:19:04.616619+00:00",
+  "exitCode": 0
+}

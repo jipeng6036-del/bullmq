@@ -1,0 +1,4 @@
+{"argv": ["E:\\Nodejs\\node.EXE", "visibility-probe-fileurl.cjs"], "started": "2026-10-25T10:42:51.197157+00:00", "cwd": "F:\\Github-PR\\ci-evidence\\heartbeat0902-js-bullmq-4168\\public-final-v2-windows"}
+{"mode":"in-process","jobs":10,"observations":250,"mismatches":[],"errors":[]}
+{"mode":"child-process","jobs":10,"observations":250,"mismatches":[],"errors":[]}
+{"mode":"worker-thread","jobs":10,"observations":250,"mismatches":[],"errors":[]}

@@ -1,0 +1,82 @@
+{"argv": ["docker", "exec", "--user", "node", "--env", "HOME=/tmp/bunroot/home", "--env", "npm_config_cache=/tmp/bunroot/npm-cache", "--env", "YARN_CACHE_FOLDER=/tmp/bunroot/yarn-cache", "--env", "PATH=/tmp/bunroot/tools/node_modules/node/bin:/tmp/bunroot/tools/node_modules/.bin:/tmp/bunroot/bun/node_modules/@oven/bun-linux-x64/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin", "--env", "REDIS_HOST=127.0.0.1", "--env", "REDIS_PORT=6379", "ghpr-0902-bullmq-bun-root-runner", "sh", "-c", "cd /tmp/bunroot/candidate && yarn test:adapter-conformance"], "started": "2026-10-25T10:30:11.621006+00:00"}
+yarn run v1.22.22
+$ vitest run --no-file-parallelism --config vitest.adapter-conformance.config.ts
+(!) Your Vite config uses features that are unsupported by `configLoader: 'native'`, which is planned to become the default in a future major version of Vite:
+  - ESM syntax in a file loaded as CommonJS (vitest.adapter-conformance.config.ts:1:1). Use a `.mjs` extension or set `"type": "module"` in the closest package.json
+Set `VITE_CONFIG_NATIVE_IGNORE_WARNING=true` to suppress this warning.
+
+[1m[30m[46m RUN [49m[39m[22m [36mv4.1.12 [39m[90m/tmp/bunroot/candidate[39m
+
+ [32m✓[39m tests/adapter-conformance.test.ts[2m > [22mAdapter Conformance[2m > [22mConnection Lifecycle[2m > [22mshould report status "ready" after connect[32m 1[2mms[22m[39m
+ [32m✓[39m tests/adapter-conformance.test.ts[2m > [22mAdapter Conformance[2m > [22mConnection Lifecycle[2m > [22mshould create a duplicate that connects independently[32m 2[2mms[22m[39m
+ [32m✓[39m tests/adapter-conformance.test.ts[2m > [22mAdapter Conformance[2m > [22mConnection Lifecycle[2m > [22mshould handle connectionName in duplicate options[32m 2[2mms[22m[39m
+ [32m✓[39m tests/adapter-conformance.test.ts[2m > [22mAdapter Conformance[2m > [22mConnection Lifecycle[2m > [22mshould transition to "end" status after quit[32m 1[2mms[22m[39m
+ [32m✓[39m tests/adapter-conformance.test.ts[2m > [22mAdapter Conformance[2m > [22mConnection Lifecycle[2m > [22mshould emit "close" on disconnect[32m 1[2mms[22m[39m
+ [32m✓[39m tests/adapter-conformance.test.ts[2m > [22mAdapter Conformance[2m > [22mConnection Lifecycle[2m > [22mshould support setMaxListeners/getMaxListeners[32m 0[2mms[22m[39m
+ [32m✓[39m tests/adapter-conformance.test.ts[2m > [22mAdapter Conformance[2m > [22mString Commands[2m > [22mshould set and get a string value[32m 1[2mms[22m[39m
+ [32m✓[39m tests/adapter-conformance.test.ts[2m > [22mAdapter Conformance[2m > [22mString Commands[2m > [22mshould set with PX option (millisecond expiry)[32m 0[2mms[22m[39m
+ [32m✓[39m tests/adapter-conformance.test.ts[2m > [22mAdapter Conformance[2m > [22mString Commands[2m > [22mshould return null for non-existent key[32m 0[2mms[22m[39m
+ [32m✓[39m tests/adapter-conformance.test.ts[2m > [22mAdapter Conformance[2m > [22mString Commands[2m > [22mshould delete keys and return count[32m 1[2mms[22m[39m
+ [32m✓[39m tests/adapter-conformance.test.ts[2m > [22mAdapter Conformance[2m > [22mString Commands[2m > [22mshould handle del with no keys gracefully[32m 0[2mms[22m[39m
+ [32m✓[39m tests/adapter-conformance.test.ts[2m > [22mAdapter Conformance[2m > [22mHash Commands[2m > [22mshould hset and hgetall[32m 1[2mms[22m[39m
+ [32m✓[39m tests/adapter-conformance.test.ts[2m > [22mAdapter Conformance[2m > [22mHash Commands[2m > [22mshould hset numeric values as strings[32m 1[2mms[22m[39m
+ [32m✓[39m tests/adapter-conformance.test.ts[2m > [22mAdapter Conformance[2m > [22mHash Commands[2m > [22mshould hget a single field[32m 0[2mms[22m[39m
+ [32m✓[39m tests/adapter-conformance.test.ts[2m > [22mAdapter Conformance[2m > [22mHash Commands[2m > [22mshould hget return null for missing field[32m 0[2mms[22m[39m
+ [32m✓[39m tests/adapter-conformance.test.ts[2m > [22mAdapter Conformance[2m > [22mHash Commands[2m > [22mshould hmget multiple fields[32m 1[2mms[22m[39m
+ [32m✓[39m tests/adapter-conformance.test.ts[2m > [22mAdapter Conformance[2m > [22mHash Commands[2m > [22mshould hdel fields and return count[32m 1[2mms[22m[39m
+ [32m✓[39m tests/adapter-conformance.test.ts[2m > [22mAdapter Conformance[2m > [22mHash Commands[2m > [22mshould hexists return 1/0[32m 0[2mms[22m[39m
+ [32m✓[39m tests/adapter-conformance.test.ts[2m > [22mAdapter Conformance[2m > [22mHash Commands[2m > [22mshould return empty object for hgetall on non-existent key[32m 0[2mms[22m[39m
+ [32m✓[39m tests/adapter-conformance.test.ts[2m > [22mAdapter Conformance[2m > [22mSorted Set Commands[2m > [22mshould zrange return members in order[32m 1[2mms[22m[39m
+ [32m✓[39m tests/adapter-conformance.test.ts[2m > [22mAdapter Conformance[2m > [22mSorted Set Commands[2m > [22mshould zrange with WITHSCORES return [member, score, ...][32m 1[2mms[22m[39m
+ [32m✓[39m tests/adapter-conformance.test.ts[2m > [22mAdapter Conformance[2m > [22mSorted Set Commands[2m > [22mshould zrevrange return members in reverse order[32m 1[2mms[22m[39m
+ [32m✓[39m tests/adapter-conformance.test.ts[2m > [22mAdapter Conformance[2m > [22mSorted Set Commands[2m > [22mshould zcard return cardinality[32m 1[2mms[22m[39m
+ [32m✓[39m tests/adapter-conformance.test.ts[2m > [22mAdapter Conformance[2m > [22mSorted Set Commands[2m > [22mshould zscore return score as string[32m 0[2mms[22m[39m
+ [32m✓[39m tests/adapter-conformance.test.ts[2m > [22mAdapter Conformance[2m > [22mSorted Set Commands[2m > [22mshould zscore return null for missing member[32m 0[2mms[22m[39m
+ [32m✓[39m tests/adapter-conformance.test.ts[2m > [22mAdapter Conformance[2m > [22mList Commands[2m > [22mshould lrange return elements[32m 1[2mms[22m[39m
+ [32m✓[39m tests/adapter-conformance.test.ts[2m > [22mAdapter Conformance[2m > [22mList Commands[2m > [22mshould llen return length[32m 0[2mms[22m[39m
+ [32m✓[39m tests/adapter-conformance.test.ts[2m > [22mAdapter Conformance[2m > [22mList Commands[2m > [22mshould ltrim truncate list[32m 1[2mms[22m[39m
+ [32m✓[39m tests/adapter-conformance.test.ts[2m > [22mAdapter Conformance[2m > [22mList Commands[2m > [22mshould lpos find element position[32m 1[2mms[22m[39m
+ [32m✓[39m tests/adapter-conformance.test.ts[2m > [22mAdapter Conformance[2m > [22mList Commands[2m > [22mshould lpos return null for missing element[32m 0[2mms[22m[39m
+ [32m✓[39m tests/adapter-conformance.test.ts[2m > [22mAdapter Conformance[2m > [22mSet Commands[2m > [22mshould smembers return all members[32m 1[2mms[22m[39m
+ [32m✓[39m tests/adapter-conformance.test.ts[2m > [22mAdapter Conformance[2m > [22mSet Commands[2m > [22mshould return empty array for smembers on non-existent key[32m 0[2mms[22m[39m
+ [32m✓[39m tests/adapter-conformance.test.ts[2m > [22mAdapter Conformance[2m > [22mStream Commands[2m > [22mshould xadd entries and return an ID[32m 1[2mms[22m[39m
+ [32m✓[39m tests/adapter-conformance.test.ts[2m > [22mAdapter Conformance[2m > [22mStream Commands[2m > [22mshould xadd with numeric field values (stringified)[32m 0[2mms[22m[39m
+ [32m✓[39m tests/adapter-conformance.test.ts[2m > [22mAdapter Conformance[2m > [22mStream Commands[2m > [22mshould xadd with MAXLEN option[32m 2[2mms[22m[39m
+ [32m✓[39m tests/adapter-conformance.test.ts[2m > [22mAdapter Conformance[2m > [22mStream Commands[2m > [22mshould xread entries from a stream[32m 1[2mms[22m[39m
+ [32m✓[39m tests/adapter-conformance.test.ts[2m > [22mAdapter Conformance[2m > [22mStream Commands[2m > [22mshould xtrim a stream[32m 3[2mms[22m[39m
+ [32m✓[39m tests/adapter-conformance.test.ts[2m > [22mAdapter Conformance[2m > [22mScan Commands[2m > [22mshould scan return [cursor, keys] tuple[32m 1[2mms[22m[39m
+ [32m✓[39m tests/adapter-conformance.test.ts[2m > [22mAdapter Conformance[2m > [22mScan Commands[2m > [22mshould scan with string cursor[32m 2[2mms[22m[39m
+ [32m✓[39m tests/adapter-conformance.test.ts[2m > [22mAdapter Conformance[2m > [22mScan Commands[2m > [22mshould scanStream return a Readable[32m 2[2mms[22m[39m
+ [32m✓[39m tests/adapter-conformance.test.ts[2m > [22mAdapter Conformance[2m > [22mLua Script Engine[2m > [22mshould defineCommand and runCommand execute a script[32m 1[2mms[22m[39m
+ [32m✓[39m tests/adapter-conformance.test.ts[2m > [22mAdapter Conformance[2m > [22mLua Script Engine[2m > [22mshould make defined command accessible as a property[32m 0[2mms[22m[39m
+ [32m✓[39m tests/adapter-conformance.test.ts[2m > [22mAdapter Conformance[2m > [22mLua Script Engine[2m > [22mshould execute defined command properties with ioredis-style args arrays[32m 0[2mms[22m[39m
+ [32m✓[39m tests/adapter-conformance.test.ts[2m > [22mAdapter Conformance[2m > [22mLua Script Engine[2m > [22mshould keep defined command properties on duplicates[32m 1[2mms[22m[39m
+ [32m✓[39m tests/adapter-conformance.test.ts[2m > [22mAdapter Conformance[2m > [22mLua Script Engine[2m > [22mshould handle numeric arguments (stringify)[32m 0[2mms[22m[39m
+ [32m✓[39m tests/adapter-conformance.test.ts[2m > [22mAdapter Conformance[2m > [22mLua Script Engine[2m > [22mshould handle undefined/null arguments as empty string[32m 0[2mms[22m[39m
+ [32m✓[39m tests/adapter-conformance.test.ts[2m > [22mAdapter Conformance[2m > [22mLua Script Engine[2m > [22mshould preserve Buffer arguments[32m 0[2mms[22m[39m
+ [32m✓[39m tests/adapter-conformance.test.ts[2m > [22mAdapter Conformance[2m > [22mLua Script Engine[2m > [22mshould handle NOSCRIPT by falling back to EVAL[32m 1[2mms[22m[39m
+ [32m✓[39m tests/adapter-conformance.test.ts[2m > [22mAdapter Conformance[2m > [22mTransaction (multi)[2m > [22mshould return results in ioredis format: [Error|null, value][][32m 1[2mms[22m[39m
+ [32m✓[39m tests/adapter-conformance.test.ts[2m > [22mAdapter Conformance[2m > [22mTransaction (multi)[2m > [22mshould hscan return ioredis format: [cursor, [field, value, ...]][32m 1[2mms[22m[39m
+ [32m✓[39m tests/adapter-conformance.test.ts[2m > [22mAdapter Conformance[2m > [22mTransaction (multi)[2m > [22mshould sscan return ioredis format: [cursor, [member, ...]][32m 1[2mms[22m[39m
+ [32m✓[39m tests/adapter-conformance.test.ts[2m > [22mAdapter Conformance[2m > [22mTransaction (multi)[2m > [22mshould hscan accept string cursor[32m 1[2mms[22m[39m
+ [32m✓[39m tests/adapter-conformance.test.ts[2m > [22mAdapter Conformance[2m > [22mTransaction (multi)[2m > [22mshould sscan accept string cursor[32m 1[2mms[22m[39m
+ [32m✓[39m tests/adapter-conformance.test.ts[2m > [22mAdapter Conformance[2m > [22mTransaction (multi)[2m > [22mshould del with zero keys not add a command to the pipeline[32m 1[2mms[22m[39m
+ [32m✓[39m tests/adapter-conformance.test.ts[2m > [22mAdapter Conformance[2m > [22mTransaction (multi)[2m > [22mshould support runCommand (Lua scripts) in transaction[32m 1[2mms[22m[39m
+ [32m✓[39m tests/adapter-conformance.test.ts[2m > [22mAdapter Conformance[2m > [22mBlocking Commands[2m > [22mshould bzpopmin return null on timeout[32m 134[2mms[22m[39m
+ [32m✓[39m tests/adapter-conformance.test.ts[2m > [22mAdapter Conformance[2m > [22mBlocking Commands[2m > [22mshould bzpopmin return element when available[32m 1[2mms[22m[39m
+ [32m✓[39m tests/adapter-conformance.test.ts[2m > [22mAdapter Conformance[2m > [22mServer Commands[2m > [22mshould info return a string with redis_version[32m 0[2mms[22m[39m
+ [32m✓[39m tests/adapter-conformance.test.ts[2m > [22mAdapter Conformance[2m > [22mServer Commands[2m > [22mshould clientSetName set the connection name[32m 2[2mms[22m[39m
+ [32m✓[39m tests/adapter-conformance.test.ts[2m > [22mAdapter Conformance[2m > [22mServer Commands[2m > [22mshould clientList return a string with client info[32m 0[2mms[22m[39m
+ [32m✓[39m tests/adapter-conformance.test.ts[2m > [22mAdapter Conformance[2m > [22mBullMQ-specific Edge Cases[2m > [22mshould hset accept both Record<string, string> and Record<string, number>[32m 1[2mms[22m[39m
+ [32m✓[39m tests/adapter-conformance.test.ts[2m > [22mAdapter Conformance[2m > [22mBullMQ-specific Edge Cases[2m > [22mshould handle large scan results correctly[32m 1[2mms[22m[39m
+ [32m✓[39m tests/adapter-conformance.test.ts[2m > [22mAdapter Conformance[2m > [22mBullMQ-specific Edge Cases[2m > [22mshould xadd handle all field types BullMQ uses[32m 0[2mms[22m[39m
+ [32m✓[39m tests/adapter-conformance.test.ts[2m > [22mAdapter Conformance[2m > [22mBullMQ-specific Edge Cases[2m > [22mshould zrange WITHSCORES return scores as strings[32m 0[2mms[22m[39m
+ [32m✓[39m tests/adapter-conformance.test.ts[2m > [22mAdapter Conformance[2m > [22mBullMQ-specific Edge Cases[2m > [22mshould pipeline preserve command order[32m 1[2mms[22m[39m
+ [32m✓[39m tests/adapter-conformance.test.ts[2m > [22mAdapter Conformance[2m > [22mBullMQ-specific Edge Cases[2m > [22mshould handle concurrent operations without interference[32m 1[2mms[22m[39m
+
+[2m Test Files [22m [1m[32m1 passed[39m[22m[90m (1)[39m
+[2m      Tests [22m [1m[32m66 passed[39m[22m[90m (66)[39m
+[2m   Start at [22m 10:30:13
+[2m   Duration [22m 1.01s[2m (transform 525ms, setup 0ms, import 716ms, tests 215ms, environment 0ms)[22m
+
+Done in 2.16s.

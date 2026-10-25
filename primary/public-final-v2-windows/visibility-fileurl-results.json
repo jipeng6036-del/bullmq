@@ -1,0 +1,28 @@
+{
+  "node": "v24.14.0",
+  "bullmq": "6.4.2",
+  "port": 46017,
+  "all": [
+    {
+      "mode": "in-process",
+      "jobs": 10,
+      "observations": 250,
+      "mismatches": [],
+      "errors": []
+    },
+    {
+      "mode": "child-process",
+      "jobs": 10,
+      "observations": 250,
+      "mismatches": [],
+      "errors": []
+    },
+    {
+      "mode": "worker-thread",
+      "jobs": 10,
+      "observations": 250,
+      "mismatches": [],
+      "errors": []
+    }
+  ]
+}

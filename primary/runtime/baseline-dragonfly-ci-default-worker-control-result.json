@@ -1,0 +1,23 @@
+{
+  "name": "baseline-dragonfly-ci-default-worker-control",
+  "command": "cd /tmp/bullmq4168/baseline && BULLMQ_TEST_PREFIX={b} yarn vitest run --no-file-parallelism tests/worker.test.ts -t \"does not process a job that is being processed when a new queue starts\"",
+  "argv": [
+    "docker",
+    "exec",
+    "--user",
+    "node",
+    "--env",
+    "HOME=/tmp/bullmq4168/home",
+    "--env",
+    "npm_config_cache=/tmp/bullmq4168/npm-cache",
+    "--env",
+    "PATH=/tmp/bullmq4168/tools/node_modules/node/bin:/tmp/bullmq4168/tools/node_modules/.bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+    "ghpr-heartbeat0902-js-bullmq4168-validation",
+    "sh",
+    "-c",
+    "cd /tmp/bullmq4168/baseline && BULLMQ_TEST_PREFIX={b} yarn vitest run --no-file-parallelism tests/worker.test.ts -t \"does not process a job that is being processed when a new queue starts\""
+  ],
+  "started": "2026-10-25T10:21:11.615957+00:00",
+  "ended": "2026-10-25T10:21:13.428132+00:00",
+  "exitCode": 0
+}
