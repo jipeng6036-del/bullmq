@@ -1,0 +1,47 @@
+{
+  "atUtc": "2026-10-25T10:54:19.593798+00:00",
+  "scope": "Read-only binary and running-server version in the exact task-owned PostgreSQL container used by final gate; no tests repeated and no database mutation.",
+  "sourceCommit": "2e5ecf53615fd799d0c660d3b8bb8a5af579ccf7",
+  "rows": [
+    {
+      "command": [
+        "docker",
+        "inspect",
+        "--format",
+        "{{.Name}} {{.Image}} {{.State.Running}}",
+        "aea6beed187edfadb8f2f80209fe82e5f23f9e099661e60b477cfbde89eedda9"
+      ],
+      "stdout": "/ghpr-heartbeat0902-js-bullmq4168-postgres16 sha256:f4610795587492cd4fb887c2dc3de301b813278bb6f616992061141b5f15ac36 true\n",
+      "exitCode": 0
+    },
+    {
+      "command": [
+        "docker",
+        "exec",
+        "aea6beed187edfadb8f2f80209fe82e5f23f9e099661e60b477cfbde89eedda9",
+        "postgres",
+        "--version"
+      ],
+      "stdout": "postgres (PostgreSQL) 16.15\n",
+      "stderr": "",
+      "exitCode": 0
+    },
+    {
+      "command": [
+        "docker",
+        "exec",
+        "aea6beed187edfadb8f2f80209fe82e5f23f9e099661e60b477cfbde89eedda9",
+        "psql",
+        "-U",
+        "postgres",
+        "-d",
+        "bullmq_test",
+        "-Atc",
+        "SHOW server_version"
+      ],
+      "stdout": "16.15\n",
+      "stderr": "",
+      "exitCode": 0
+    }
+  ]
+}

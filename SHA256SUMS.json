@@ -2,6 +2,21 @@
   "sourceCommit": "2e5ecf53615fd799d0c660d3b8bb8a5af579ccf7",
   "files": [
     {
+      "path": "README.md",
+      "bytes": 5850,
+      "sha256": "c44197d7feac6947b32836246e020fa0a8e28c109d6c29209d30aaef77f8323f"
+    },
+    {
+      "path": "bun-node-redis/REPORT.md",
+      "bytes": 3271,
+      "sha256": "b4964fb55175564c626850867b2d378a3179c5f6765d3104c0af46cffae162e4"
+    },
+    {
+      "path": "bun-node-redis/SHA256SUMS.json",
+      "bytes": 7641,
+      "sha256": "c2623f5b547f0daacc8df0baa707a02ed7812d96a0e05b24b959d27e346c6589"
+    },
+    {
       "path": "bun-node-redis/allowlist.json",
       "bytes": 19287,
       "sha256": "c11bc41c59879ff46afcd5c193532fb830c4b94f5229d59f8ddbd7330c20f122"
@@ -202,11 +217,6 @@
       "sha256": "d161e7c74f364e7b0bb27542d6ac0a20b92c49eb20a7416ff752405184fd7d66"
     },
     {
-      "path": "bun-node-redis/REPORT.md",
-      "bytes": 3271,
-      "sha256": "b4964fb55175564c626850867b2d378a3179c5f6765d3104c0af46cffae162e4"
-    },
-    {
       "path": "bun-node-redis/run-v2.py",
       "bytes": 1674,
       "sha256": "f04ab9c9e6088ce50846534a278116f33921ed3c963f46670b7055bfbd92212b"
@@ -215,11 +225,6 @@
       "path": "bun-node-redis/runner-state-after-bun.json",
       "bytes": 219,
       "sha256": "038f639ef5f9e56ebb0b338eafbc9397476018971adf954f60b8584caeaa8801"
-    },
-    {
-      "path": "bun-node-redis/SHA256SUMS.json",
-      "bytes": 7641,
-      "sha256": "c2623f5b547f0daacc8df0baa707a02ed7812d96a0e05b24b959d27e346c6589"
     },
     {
       "path": "bun-node-redis/source-archives-v2.json",
@@ -252,6 +257,16 @@
       "sha256": "38b44e29c7a7993cca8b0612901094b5064e7328295cc84e6c760c3c057c9a22"
     },
     {
+      "path": "node-matrix/README.md",
+      "bytes": 3756,
+      "sha256": "43ea5b5d4fe1daac17176f4c032b82c31a22fd532947991f4bca59c68f47a5aa"
+    },
+    {
+      "path": "node-matrix/SHA256SUMS.json",
+      "bytes": 7143,
+      "sha256": "84227b99521fd64354f999a012ad0737d3968d4290a6b07cb8d0d51df5715e63"
+    },
+    {
       "path": "node-matrix/node22-install-final.log",
       "bytes": 1736,
       "sha256": "4a04f8c44bbef39596574bafc876c9b503222a544aec596917791db61521bea8"
@@ -265,16 +280,6 @@
       "path": "node-matrix/public-content-scan.json",
       "bytes": 627,
       "sha256": "127dab3f564fbcf4f9bfffa1f3fc89e7f967782fbef5879f441a95a8d6239cb1"
-    },
-    {
-      "path": "node-matrix/README.md",
-      "bytes": 3756,
-      "sha256": "43ea5b5d4fe1daac17176f4c032b82c31a22fd532947991f4bca59c68f47a5aa"
-    },
-    {
-      "path": "node-matrix/SHA256SUMS.json",
-      "bytes": 7143,
-      "sha256": "84227b99521fd64354f999a012ad0737d3968d4290a6b07cb8d0d51df5715e63"
     },
     {
       "path": "node-matrix/v2-final-gates.json",
@@ -462,6 +467,11 @@
       "sha256": "872367e64171e98499e0884ca42037c379338a09c271bb6777cdeac25abe3239"
     },
     {
+      "path": "primary/EXPORT-REVIEW.json",
+      "bytes": 16469,
+      "sha256": "6c411464da058883d033a19cb44f38b69795586e16d578696fe91d6f463006c8"
+    },
+    {
       "path": "primary/current-policy-source.json",
       "bytes": 125857,
       "sha256": "642d073b91ac1b89100555ce9b585d6bd75989f5b33a42844495dd0514e6f2fe"
@@ -472,9 +482,9 @@
       "sha256": "2370dd43ff73af450a71b68f6a2450ad210c9dd1ba97306bcdc25fe1df7c7861"
     },
     {
-      "path": "primary/EXPORT-REVIEW.json",
-      "bytes": 16469,
-      "sha256": "6c411464da058883d033a19cb44f38b69795586e16d578696fe91d6f463006c8"
+      "path": "primary/final-v2-REPORT.md",
+      "bytes": 6716,
+      "sha256": "3536db50023da112a2bd38a37ca65f27ac4b15eb5c6c73f090462eee2e8498dd"
     },
     {
       "path": "primary/final-v2-gate-summary.json",
@@ -482,9 +492,9 @@
       "sha256": "a7884a6fa57c6e83de3f6c8beb79dc616058fa36db0977a9ab7def4457957abc"
     },
     {
-      "path": "primary/final-v2-REPORT.md",
-      "bytes": 6716,
-      "sha256": "3536db50023da112a2bd38a37ca65f27ac4b15eb5c6c73f090462eee2e8498dd"
+      "path": "primary/public-final-v2-windows/FINAL-RESULT.json",
+      "bytes": 2925,
+      "sha256": "10c698f571b4b272d5bbc9f1b1a705ffa62167177cebeb02bc10a62b6a42958e"
     },
     {
       "path": "primary/public-final-v2-windows/contracts-probe-result.json",
@@ -510,11 +520,6 @@
       "path": "primary/public-final-v2-windows/contracts-result.json",
       "bytes": 6419,
       "sha256": "2635143ce2cec248f9b8393579b5feb5756c40ca772816462caf4c47e0cf9a45"
-    },
-    {
-      "path": "primary/public-final-v2-windows/FINAL-RESULT.json",
-      "bytes": 2925,
-      "sha256": "10c698f571b4b272d5bbc9f1b1a705ffa62167177cebeb02bc10a62b6a42958e"
     },
     {
       "path": "primary/public-final-v2-windows/install-result.json",
@@ -887,6 +892,11 @@
       "sha256": "c5cdf6100c7fc9618a9c11893fb54680a6eab5eadabe42de22e264bdc3cefb60"
     },
     {
+      "path": "primary/runtime/root-postgres-version-proof.json",
+      "bytes": 1358,
+      "sha256": "0a7fc7d81c0bf4b16394635b275f55a03e99744f472d6cbc3fb8faf167cc0e0d"
+    },
+    {
       "path": "primary/runtime/root-v2-committed-source.json",
       "bytes": 2451,
       "sha256": "ec183656bcba7ba073e85ada953eeeba22e35019c967a9b882a4940be56e9c74"
@@ -910,11 +920,6 @@
       "path": "primary/runtime/verify-windows-final-v2.py",
       "bytes": 6328,
       "sha256": "da1cdaefa06032a19f723ef2370ff4a1baab4c5ae87433c351f43bd20c1ef696"
-    },
-    {
-      "path": "README.md",
-      "bytes": 5850,
-      "sha256": "c44197d7feac6947b32836246e020fa0a8e28c109d6c29209d30aaef77f8323f"
     }
   ]
 }
