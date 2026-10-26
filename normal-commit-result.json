@@ -1,0 +1,21 @@
+{
+  "name": "normal-commit",
+  "command": "cd /tmp/bullmq5017/source && node /evidence/versions.cjs && git config user.name jipeng6036-del && git config user.email jipeng6036@gmail.com && git diff --check && git add tests/child-processor.test.ts && git diff --cached --stat && git commit -m \"test(sandbox): use node prefix for events import\" && node /evidence/verify-source.cjs /evidence/candidate-source-manifest.json && git status --porcelain && git show --format=fuller --stat HEAD && git rev-parse HEAD > /evidence/candidate-head.txt && git bundle create /evidence/candidate.bundle HEAD ^483f33fdd44c4ebd42061cb064eb48b9744a841f",
+  "argv": [
+    "docker",
+    "exec",
+    "--env",
+    "HOME=/tmp/bullmq5017/home",
+    "--env",
+    "npm_config_cache=/tmp/bullmq5017/npm-cache",
+    "--env",
+    "PATH=/tmp/bullmq5017/tools/node_modules/node/bin:/tmp/bullmq5017/tools/node_modules/.bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+    "ghpr-maintenance2132-bullmq5017-validation",
+    "sh",
+    "-c",
+    "cd /tmp/bullmq5017/source && node /evidence/versions.cjs && git config user.name jipeng6036-del && git config user.email jipeng6036@gmail.com && git diff --check && git add tests/child-processor.test.ts && git diff --cached --stat && git commit -m \"test(sandbox): use node prefix for events import\" && node /evidence/verify-source.cjs /evidence/candidate-source-manifest.json && git status --porcelain && git show --format=fuller --stat HEAD && git rev-parse HEAD > /evidence/candidate-head.txt && git bundle create /evidence/candidate.bundle HEAD ^483f33fdd44c4ebd42061cb064eb48b9744a841f"
+  ],
+  "started": "2026-10-26T21:44:32.817128+00:00",
+  "ended": "2026-10-26T21:44:42.592954+00:00",
+  "exitCode": 0
+}

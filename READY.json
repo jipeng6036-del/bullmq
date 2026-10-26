@@ -1,0 +1,53 @@
+{
+  "cleanup": "Task-owned Redis and validation containers stopped and ownership/identity reverified; no removal or prune.",
+  "createdAt": "2026-10-26T21:53:04.355770+00:00",
+  "status": "READY_FOR_ROOT_INDEPENDENT_REVIEW_NOT_PUSHED",
+  "candidate": {
+    "head": "772e94a781313b2d21f7ae751df5dac935d236c7",
+    "parent": "483f33fdd44c4ebd42061cb064eb48b9744a841f",
+    "tree": "8681b423461e9132cb88752bf897512cfce9f443",
+    "branch": "maintenance/bullmq-5017-node-import",
+    "status": "",
+    "normalHookLog": "normal-commit.log",
+    "files": [
+      "tests/child-processor.test.ts"
+    ]
+  },
+  "baselineLint": {
+    "head": "483f33fdd44c4ebd42061cb064eb48b9744a841f",
+    "exitCode": 1,
+    "onlyError": "tests/child-processor.test.ts:1 events requires node:events"
+  },
+  "environment": {
+    "versions": {
+      "node": "v24.22.1",
+      "eslint": "10.13.0",
+      "vitest": "4.1.12",
+      "typescript": "5.9.3",
+      "ioredis": "5.11.1"
+    },
+    "yarn": "1.22.22",
+    "redis": "Redis server v=7.4.11 sha=00000000:0 malloc=jemalloc-5.3.0 bits=64 build=6467c31a802b9aff",
+    "ownership": "Dedicated ephemeral Redis7 and Linux validation containers labelled ghpr.owner=maintenance2132-bullmq5017. No other services used.",
+    "install": "yarn install --ignore-engines --frozen-lockfile --non-interactive",
+    "baseline": "483f33fdd44c4ebd42061cb064eb48b9744a841f",
+    "candidate": "772e94a781313b2d21f7ae751df5dac935d236c7"
+  },
+  "results": {
+    "lint": "PASS, existing src/postgres/postgres-relay-backend.ts:395 prefer-const warning remains",
+    "build": "PASS",
+    "publicTypes": "PASS",
+    "changedFormat": "PASS all six PR files",
+    "normalHuskyHooks": "PASS, no bypass; source unchanged by hooks",
+    "smoke": "6 files,86 passed,2 skipped",
+    "primaryCoverage": "54 files,1315 passed,14 skipped",
+    "childProcessorUnit": "6 passed, EventEmitter-only unit proof",
+    "realRedisSandboxRegressions": "4 passed: process/thread x persistence visibility/BigInt persistence-error catch",
+    "trackedSource": "1068 entries pre/post bytes and symlink verification match"
+  },
+  "scope": "This one-line test import follow-up validates current Node24/Redis7 primary gates; previous 2e5 full backend/platform matrix remains historical, never relabelled.",
+  "actions": "Local normal commit only. No push/PR edit until root review.",
+  "previousProof": "https://github.com/jipeng6036-del/bullmq/tree/325d94d1d0464874bbb04177825ca64e64b33d8f",
+  "priorHead": "2e5ecf53615fd799d0c660d3b8bb8a5af579ccf7",
+  "publicProofStatus": "Prepared exact-byte allowlist; not published by worker"
+}

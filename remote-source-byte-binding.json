@@ -1,0 +1,43 @@
+{
+  "head": "483f33fdd44c4ebd42061cb064eb48b9744a841f",
+  "files": [
+    {
+      "path": "src/classes/child-processor.ts",
+      "apiBlob": "99a280730db1c1271b8c21c6901cc8a8c32f3336",
+      "localBlob": "99a280730db1c1271b8c21c6901cc8a8c32f3336",
+      "match": true
+    },
+    {
+      "path": "src/classes/sandbox.ts",
+      "apiBlob": "f69ca7ddfe1254ea7a82da0e0d0eed6952c03673",
+      "localBlob": "f69ca7ddfe1254ea7a82da0e0d0eed6952c03673",
+      "match": true
+    },
+    {
+      "path": "src/enums/child-command.ts",
+      "apiBlob": "56582618281fcd25466f597c84195e707f83320a",
+      "localBlob": "56582618281fcd25466f597c84195e707f83320a",
+      "match": true
+    },
+    {
+      "path": "tests/child-processor.test.ts",
+      "apiBlob": "31bac68e3d38b364ef2ca5fd0dd0d9351ffde524",
+      "localBlob": "31bac68e3d38b364ef2ca5fd0dd0d9351ffde524",
+      "match": true
+    },
+    {
+      "path": "tests/fixtures/fixture_processor_update_data_await.js",
+      "apiBlob": "2c96f5ed684eaa92c1dfc03ae353a99b41e493f5",
+      "localBlob": "2c96f5ed684eaa92c1dfc03ae353a99b41e493f5",
+      "match": true
+    },
+    {
+      "path": "tests/sandboxed_process.test.ts",
+      "apiBlob": "437142e22f9fafd35a750a679ee3d959966d10b9",
+      "localBlob": "437142e22f9fafd35a750a679ee3d959966d10b9",
+      "match": true
+    }
+  ],
+  "parent": "52255a96309e28e4b8c6247d3249981408596197",
+  "oldCheckoutUntouched": true
+}

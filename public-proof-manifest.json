@@ -1,0 +1,184 @@
+{
+  "candidate": "772e94a781313b2d21f7ae751df5dac935d236c7",
+  "allowlist": [
+    "focused.sh",
+    "cleanup.json",
+    "verify-source.cjs",
+    "run.py",
+    "README.md",
+    "READY.json",
+    "REPORT.md",
+    "candidate.diff",
+    "candidate-commit.json",
+    "baseline-source-manifest.json",
+    "candidate-source-manifest.json",
+    "remote-source-byte-binding.json",
+    "environment-summary.json",
+    "baseline-lint.log",
+    "baseline-lint-result.json",
+    "candidate-quality.log",
+    "candidate-quality-result.json",
+    "normal-commit.log",
+    "normal-commit-result.json",
+    "candidate-primary-coverage.log",
+    "candidate-primary-coverage-result.json",
+    "candidate-focused-regressions.log",
+    "candidate-focused-regressions-result.json",
+    "bootstrap-source.log",
+    "bootstrap-source-result.json"
+  ],
+  "files": [
+    {
+      "path": "focused.sh",
+      "sourcePath": "focused.sh",
+      "bytes": 575,
+      "sha256": "ca5c1d9898b8e6a29c7ad8327dcd3ec1ffe2b5c9aeb783640926c8134ec17db5"
+    },
+    {
+      "path": "cleanup.json",
+      "sourcePath": "cleanup.json",
+      "bytes": 3588,
+      "sha256": "0a4be215ded218ebb0a01c2a1439f05fd2ba143b12f18d94f07745465f8aef2e"
+    },
+    {
+      "path": "verify-source.cjs",
+      "sourcePath": "verify-source.cjs",
+      "bytes": 850,
+      "sha256": "9aa3d1edb2b81fdcc986a8c09228c7895e790e9be81e9ea9f728aa4a16474baa"
+    },
+    {
+      "path": "run.py",
+      "sourcePath": "run.py",
+      "bytes": 1008,
+      "sha256": "226f2d60f680137217ca4013466b089cc7e4cbf40cc2ddc780b7797c6c5a9401"
+    },
+    {
+      "path": "README.md",
+      "sourcePath": "README.md",
+      "bytes": 353,
+      "sha256": "89a0109e960105783da67d96ce3342719e127ee3c1252d236cd76922af6c23ce"
+    },
+    {
+      "path": "READY.json",
+      "sourcePath": "READY.json",
+      "bytes": 2658,
+      "sha256": "4f5ec04ac1a359935b868e4a640cee0f8a1e1982dfc779cda1cb5aaa71ab4210"
+    },
+    {
+      "path": "REPORT.md",
+      "sourcePath": "REPORT.md",
+      "bytes": 1576,
+      "sha256": "7e2bcc161a95c8cfefd79f6463a5fa6a100cbbe3fd57f7b0f59229056cf092a4"
+    },
+    {
+      "path": "candidate.diff",
+      "sourcePath": "candidate.diff",
+      "bytes": 474,
+      "sha256": "762dbbe1d8ff34c3560e8e9d3fefbb43730243e77a96672caf73d5ca09aec214"
+    },
+    {
+      "path": "candidate-commit.json",
+      "sourcePath": "candidate-commit.json",
+      "bytes": 337,
+      "sha256": "6b0dae6fdd2f2a6f67eb34f2e421d3ce1bb6fc52a7b602f0f303ac1165b98b8d"
+    },
+    {
+      "path": "baseline-source-manifest.json",
+      "sourcePath": "baseline-source-manifest.json",
+      "bytes": 276502,
+      "sha256": "181e33eeb2ee2bf2144f131c5db1b32ac6f7ac32619903de8328d87aa96e6ec9"
+    },
+    {
+      "path": "candidate-source-manifest.json",
+      "sourcePath": "candidate-source-manifest.json",
+      "bytes": 276591,
+      "sha256": "00c10127f5916fb6562a48e0a0af0352e3d39010ccfdef1232accffcbe28218d"
+    },
+    {
+      "path": "remote-source-byte-binding.json",
+      "sourcePath": "remote-source-byte-binding.json",
+      "bytes": 1444,
+      "sha256": "3357c5deca24259c77f583d0d41f82572ccfaee1f57813b1d7048bc1b5a8b488"
+    },
+    {
+      "path": "environment-summary.json",
+      "sourcePath": "environment-summary.json",
+      "bytes": 634,
+      "sha256": "12f52c5177b5cdecc854495cd20e5b968c815f9cc5132b3d73f001dc409fbc5b"
+    },
+    {
+      "path": "baseline-lint.log",
+      "sourcePath": "baseline-lint.log",
+      "bytes": 1519,
+      "sha256": "29f85620c12c74aa4da225e3d475ece601f1fc55a258da7b8905eae93d2b0d65"
+    },
+    {
+      "path": "baseline-lint-result.json",
+      "sourcePath": "baseline-lint-result.json",
+      "bytes": 1222,
+      "sha256": "225ea0dfa6d732f872979804fa54fe84761ac38399c3a1ad565ed6864c21235f"
+    },
+    {
+      "path": "candidate-quality.log",
+      "sourcePath": "candidate-quality.log",
+      "bytes": 29666,
+      "sha256": "9e772ac4502bb0c5f2cf695916b2e5a31d701b0db04c22358f40bb994bdb330b"
+    },
+    {
+      "path": "candidate-quality-result.json",
+      "sourcePath": "candidate-quality-result.json",
+      "bytes": 1704,
+      "sha256": "07906e3e43fa0930913c229f8f86d45ab9316236133df1a9beed149aed8cbfde"
+    },
+    {
+      "path": "normal-commit.log",
+      "sourcePath": "normal-commit.log",
+      "bytes": 2801,
+      "sha256": "4a43a98ddf6215de90a4bfac56c55a55709b181022a483d0211db2b9fd724fa9"
+    },
+    {
+      "path": "normal-commit-result.json",
+      "sourcePath": "normal-commit-result.json",
+      "bytes": 1760,
+      "sha256": "f303ad9dcb802c849cc9617aa869f72913abad650ef64178ccc0e855bd438ca8"
+    },
+    {
+      "path": "candidate-primary-coverage.log",
+      "sourcePath": "candidate-primary-coverage.log",
+      "bytes": 292352,
+      "sha256": "6579b4f79363b7bb6a73ca85fbcf982506a5953698ff910902c663d0170b69c5"
+    },
+    {
+      "path": "candidate-primary-coverage-result.json",
+      "sourcePath": "candidate-primary-coverage-result.json",
+      "bytes": 1137,
+      "sha256": "d17d31ab0e19ac610d2f173596887e67e7bc44621ce09766d50843c89d5693fb"
+    },
+    {
+      "path": "candidate-focused-regressions.log",
+      "sourcePath": "candidate-focused-regressions.log",
+      "bytes": 24320,
+      "sha256": "4a30f52f5ab4920ef2caf43fd3c70d5bb3fee1941afe76318b9a5d11c86ddda5"
+    },
+    {
+      "path": "candidate-focused-regressions-result.json",
+      "sourcePath": "candidate-focused-regressions-result.json",
+      "bytes": 640,
+      "sha256": "c8a1199d892831ce87965d377e578aeb9ad908e89cb3bb2332ebca553cb30d81"
+    },
+    {
+      "path": "bootstrap-source.log",
+      "sourcePath": "bootstrap-source.log",
+      "bytes": 2862,
+      "sha256": "1b7eef8774a0abd714e7ff2d66e6bb4457b7e9078e7c17c80929d0f3ee30a54a"
+    },
+    {
+      "path": "bootstrap-source-result.json",
+      "sourcePath": "bootstrap-source-result.json",
+      "bytes": 1345,
+      "sha256": "d68643fcf351329b13a13b0242aabe7dd19607c36bf9fab63490262d9a607208"
+    }
+  ],
+  "byteExactCopies": true,
+  "publication": "Prepared only. Root review required before normal publication."
+}

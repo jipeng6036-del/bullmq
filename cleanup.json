@@ -1,0 +1,111 @@
+{
+  "atUtc": "2026-10-26T21:52:56.873161+00:00",
+  "before": [
+    {
+      "id": "b5c6fee0ab700541e188b83a72b8230abc831e69d9dbc6ee25dbe4c17d3ead42",
+      "name": "/ghpr-maintenance2132-bullmq5017-validation",
+      "image": "sha256:5c4012d11d9857c42713ba511fbc19645cac1706bb710d51d42b0d301dff7f88",
+      "state": {
+        "Status": "running",
+        "Running": true,
+        "Paused": false,
+        "Restarting": false,
+        "OOMKilled": false,
+        "Dead": false,
+        "Pid": 37801,
+        "ExitCode": 0,
+        "Error": "",
+        "StartedAt": "2026-10-26T21:40:08.050379976Z",
+        "FinishedAt": "0001-01-01T00:00:00Z"
+      },
+      "ownershipLabel": "maintenance2132-bullmq5017"
+    },
+    {
+      "id": "e9711addce52de97dbb0cb8ef00a6699ea0600df918345d91a943523cbd09c3a",
+      "name": "/ghpr-maintenance2132-bullmq5017-redis7",
+      "image": "sha256:57e4255cc971b1c8d6f8a6ca283ac01bc3ecdd914273ef6bfaede87aaecd6541",
+      "state": {
+        "Status": "running",
+        "Running": true,
+        "Paused": false,
+        "Restarting": false,
+        "OOMKilled": false,
+        "Dead": false,
+        "Pid": 35770,
+        "ExitCode": 0,
+        "Error": "",
+        "StartedAt": "2026-10-26T21:39:40.117022114Z",
+        "FinishedAt": "0001-01-01T00:00:00Z"
+      },
+      "ownershipLabel": "maintenance2132-bullmq5017"
+    }
+  ],
+  "commands": [
+    {
+      "args": [
+        "docker",
+        "stop",
+        "--time",
+        "10",
+        "b5c6fee0ab700541e188b83a72b8230abc831e69d9dbc6ee25dbe4c17d3ead42"
+      ],
+      "exitCode": 0,
+      "stdout": "Flag --time has been deprecated, use --timeout instead\nb5c6fee0ab700541e188b83a72b8230abc831e69d9dbc6ee25dbe4c17d3ead42\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "docker",
+        "stop",
+        "--time",
+        "10",
+        "e9711addce52de97dbb0cb8ef00a6699ea0600df918345d91a943523cbd09c3a"
+      ],
+      "exitCode": 0,
+      "stdout": "Flag --time has been deprecated, use --timeout instead\ne9711addce52de97dbb0cb8ef00a6699ea0600df918345d91a943523cbd09c3a\n",
+      "stderr": ""
+    }
+  ],
+  "after": [
+    {
+      "id": "b5c6fee0ab700541e188b83a72b8230abc831e69d9dbc6ee25dbe4c17d3ead42",
+      "name": "/ghpr-maintenance2132-bullmq5017-validation",
+      "image": "sha256:5c4012d11d9857c42713ba511fbc19645cac1706bb710d51d42b0d301dff7f88",
+      "state": {
+        "Status": "exited",
+        "Running": false,
+        "Paused": false,
+        "Restarting": false,
+        "OOMKilled": false,
+        "Dead": false,
+        "Pid": 0,
+        "ExitCode": 143,
+        "Error": "",
+        "StartedAt": "2026-10-26T21:40:08.050379976Z",
+        "FinishedAt": "2026-10-26T21:52:54.995735402Z"
+      },
+      "ownershipLabel": "maintenance2132-bullmq5017"
+    },
+    {
+      "id": "e9711addce52de97dbb0cb8ef00a6699ea0600df918345d91a943523cbd09c3a",
+      "name": "/ghpr-maintenance2132-bullmq5017-redis7",
+      "image": "sha256:57e4255cc971b1c8d6f8a6ca283ac01bc3ecdd914273ef6bfaede87aaecd6541",
+      "state": {
+        "Status": "exited",
+        "Running": false,
+        "Paused": false,
+        "Restarting": false,
+        "OOMKilled": false,
+        "Dead": false,
+        "Pid": 0,
+        "ExitCode": 0,
+        "Error": "",
+        "StartedAt": "2026-10-26T21:39:40.117022114Z",
+        "FinishedAt": "2026-10-26T21:52:55.809228851Z"
+      },
+      "ownershipLabel": "maintenance2132-bullmq5017"
+    }
+  ],
+  "allOwnedStopped": true,
+  "noDeleteOrPrune": true
+}

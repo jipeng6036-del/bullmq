@@ -1,0 +1,5 @@
+import pathlib,subprocess,json,datetime,sys
+root=pathlib.Path('F:/Github-PR/ci-evidence/maintenance2132-bullmq-fix');name=sys.argv[1];command=sys.argv[2];argv=['docker','exec','--env','HOME=/tmp/bullmq5017/home','--env','npm_config_cache=/tmp/bullmq5017/npm-cache','--env','PATH=/tmp/bullmq5017/tools/node_modules/node/bin:/tmp/bullmq5017/tools/node_modules/.bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin','ghpr-maintenance2132-bullmq5017-validation','sh','-c',command];start=datetime.datetime.now(datetime.timezone.utc).isoformat()
+with (root/(name+'.log')).open('w',encoding='utf8') as log:
+ log.write(json.dumps({'argv':argv,'started':start})+'\n');log.flush();p=subprocess.run(argv,stdout=log,stderr=subprocess.STDOUT)
+res={'name':name,'command':command,'argv':argv,'started':start,'ended':datetime.datetime.now(datetime.timezone.utc).isoformat(),'exitCode':p.returncode};(root/(name+'-result.json')).write_text(json.dumps(res,indent=2));print(json.dumps(res));sys.exit(p.returncode)

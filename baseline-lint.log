@@ -1,0 +1,22 @@
+{"argv": ["docker", "exec", "--env", "HOME=/tmp/bullmq5017/home", "--env", "npm_config_cache=/tmp/bullmq5017/npm-cache", "--env", "PATH=/tmp/bullmq5017/tools/node_modules/node/bin:/tmp/bullmq5017/tools/node_modules/.bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin", "ghpr-maintenance2132-bullmq5017-validation", "sh", "-c", "cd /tmp/bullmq5017/source && git init -q && git fetch /evidence/source.bundle HEAD && git reset --mixed FETCH_HEAD && git config core.autocrlf false && git config core.symlinks true && yarn prepare && node /evidence/verify-source.cjs /evidence/baseline-source-manifest.json && node --version && yarn --version && yarn lint"], "started": "2026-10-26T21:43:17.967683+00:00"}
+From /evidence/source.bundle
+ * branch            HEAD       -> FETCH_HEAD
+yarn run v1.22.22
+$ husky
+Done in 0.07s.
+{"manifest":"/evidence/baseline-source-manifest.json","head":"483f33fdd44c4ebd42061cb064eb48b9744a841f","entries":1068,"mismatches":[]}
+v24.22.1
+1.22.22
+yarn run v1.22.22
+$ ./node_modules/.bin/eslint .
+
+/tmp/bullmq5017/source/src/postgres/postgres-relay-backend.ts
+  395:7  warning  'identity' is never reassigned. Use 'const' instead  prefer-const
+
+/tmp/bullmq5017/source/tests/child-processor.test.ts
+  1:1  error  'events' import is restricted from being used. Use 'node:events' instead of 'events'  no-restricted-imports
+
+✖ 2 problems (1 error, 1 warning)
+
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+error Command failed with exit code 1.

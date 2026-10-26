@@ -1,0 +1,39 @@
+{"argv": ["docker", "exec", "--env", "HOME=/tmp/bullmq5017/home", "--env", "npm_config_cache=/tmp/bullmq5017/npm-cache", "--env", "PATH=/tmp/bullmq5017/tools/node_modules/node/bin:/tmp/bullmq5017/tools/node_modules/.bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin", "ghpr-maintenance2132-bullmq5017-validation", "sh", "-c", "cd /tmp/bullmq5017/tools/node_modules/node && node installArchSpecificPackage && /tmp/bullmq5017/tools/node_modules/node/bin/node --version && tar -xf /evidence/baseline-source.tar -C /tmp/bullmq5017/source && cd /tmp/bullmq5017/source && node --version && yarn --version && yarn install --ignore-engines --frozen-lockfile --non-interactive --cache-folder /tmp/bullmq5017/yarn-cache"], "started": "2026-10-26T21:42:19.563014+00:00"}
+(node:64) [DEP0190] DeprecationWarning: Passing args to a child process with shell option true can lead to security vulnerabilities, as the arguments are not escaped, only concatenated.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+
+up to date, audited 3 packages in 1s
+
+found 0 vulnerabilities
+v24.22.1
+v24.22.1
+1.22.22
+yarn install v1.22.22
+[1/4] Resolving packages...
+warning Resolution field "js-yaml@5.4.2" is incompatible with requested version "js-yaml@^4.1.0"
+warning Resolution field "js-yaml@5.4.2" is incompatible with requested version "js-yaml@^4.3.2"
+warning Resolution field "brace-expansion@5.0.12" is incompatible with requested version "brace-expansion@^1.1.7"
+warning Resolution field "picomatch@4.0.7" is incompatible with requested version "picomatch@^2.3.1"
+warning Resolution field "js-yaml@5.4.2" is incompatible with requested version "js-yaml@4.2.0"
+[2/4] Fetching packages...
+[3/4] Linking dependencies...
+warning " > vitest@4.1.12" has unmet peer dependency "vite@^6.0.0 || ^7.0.0 || ^8.0.0".
+warning Workspaces can only be enabled in private projects.
+warning Workspaces can only be enabled in private projects.
+warning Workspaces can only be enabled in private projects.
+warning Workspaces can only be enabled in private projects.
+warning Workspaces can only be enabled in private projects.
+warning Workspaces can only be enabled in private projects.
+warning Workspaces can only be enabled in private projects.
+warning Workspaces can only be enabled in private projects.
+warning Workspaces can only be enabled in private projects.
+warning Workspaces can only be enabled in private projects.
+warning Workspaces can only be enabled in private projects.
+warning Workspaces can only be enabled in private projects.
+warning Workspaces can only be enabled in private projects.
+warning Workspaces can only be enabled in private projects.
+warning Workspaces can only be enabled in private projects.
+warning Workspaces can only be enabled in private projects.
+[4/4] Building fresh packages...
+$ husky
+.git can't be foundDone in 46.94s.

@@ -1,0 +1,21 @@
+{
+  "name": "bootstrap-source",
+  "command": "cd /tmp/bullmq5017/tools/node_modules/node && node installArchSpecificPackage && /tmp/bullmq5017/tools/node_modules/node/bin/node --version && tar -xf /evidence/baseline-source.tar -C /tmp/bullmq5017/source && cd /tmp/bullmq5017/source && node --version && yarn --version && yarn install --ignore-engines --frozen-lockfile --non-interactive --cache-folder /tmp/bullmq5017/yarn-cache",
+  "argv": [
+    "docker",
+    "exec",
+    "--env",
+    "HOME=/tmp/bullmq5017/home",
+    "--env",
+    "npm_config_cache=/tmp/bullmq5017/npm-cache",
+    "--env",
+    "PATH=/tmp/bullmq5017/tools/node_modules/node/bin:/tmp/bullmq5017/tools/node_modules/.bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+    "ghpr-maintenance2132-bullmq5017-validation",
+    "sh",
+    "-c",
+    "cd /tmp/bullmq5017/tools/node_modules/node && node installArchSpecificPackage && /tmp/bullmq5017/tools/node_modules/node/bin/node --version && tar -xf /evidence/baseline-source.tar -C /tmp/bullmq5017/source && cd /tmp/bullmq5017/source && node --version && yarn --version && yarn install --ignore-engines --frozen-lockfile --non-interactive --cache-folder /tmp/bullmq5017/yarn-cache"
+  ],
+  "started": "2026-10-26T21:42:19.563014+00:00",
+  "ended": "2026-10-26T21:43:10.516821+00:00",
+  "exitCode": 0
+}

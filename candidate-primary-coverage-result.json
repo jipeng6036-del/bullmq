@@ -1,0 +1,21 @@
+{
+  "name": "candidate-primary-coverage",
+  "command": "cd /tmp/bullmq5017/source && test \"$(git rev-parse HEAD)\" = 772e94a781313b2d21f7ae751df5dac935d236c7 && node /evidence/verify-source.cjs /evidence/candidate-source-manifest.json && yarn coverage && node /evidence/verify-source.cjs /evidence/candidate-source-manifest.json",
+  "argv": [
+    "docker",
+    "exec",
+    "--env",
+    "HOME=/tmp/bullmq5017/home",
+    "--env",
+    "npm_config_cache=/tmp/bullmq5017/npm-cache",
+    "--env",
+    "PATH=/tmp/bullmq5017/tools/node_modules/node/bin:/tmp/bullmq5017/tools/node_modules/.bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+    "ghpr-maintenance2132-bullmq5017-validation",
+    "sh",
+    "-c",
+    "cd /tmp/bullmq5017/source && test \"$(git rev-parse HEAD)\" = 772e94a781313b2d21f7ae751df5dac935d236c7 && node /evidence/verify-source.cjs /evidence/candidate-source-manifest.json && yarn coverage && node /evidence/verify-source.cjs /evidence/candidate-source-manifest.json"
+  ],
+  "started": "2026-10-26T21:44:51.969999+00:00",
+  "ended": "2026-10-26T21:52:37.218825+00:00",
+  "exitCode": 0
+}

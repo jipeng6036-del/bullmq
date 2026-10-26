@@ -1,0 +1,10 @@
+diff --git a/tests/child-processor.test.ts b/tests/child-processor.test.ts
+index 31bac68e3d..d497f1f097 100644
+--- a/tests/child-processor.test.ts
++++ b/tests/child-processor.test.ts
+@@ -1,4 +1,4 @@
+-import { EventEmitter } from 'events';
++import { EventEmitter } from 'node:events';
+ import { afterEach, describe, expect, it, vi } from 'vitest';
+ import { ChildProcessor } from '../src/classes/child-processor';
+ import { ChildCommand, ParentCommand } from '../src/enums';

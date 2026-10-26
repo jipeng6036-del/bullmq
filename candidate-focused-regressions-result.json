@@ -1,0 +1,21 @@
+{
+  "name": "candidate-focused-regressions",
+  "command": "sh /evidence/focused.sh",
+  "argv": [
+    "docker",
+    "exec",
+    "--env",
+    "HOME=/tmp/bullmq5017/home",
+    "--env",
+    "npm_config_cache=/tmp/bullmq5017/npm-cache",
+    "--env",
+    "PATH=/tmp/bullmq5017/tools/node_modules/node/bin:/tmp/bullmq5017/tools/node_modules/.bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+    "ghpr-maintenance2132-bullmq5017-validation",
+    "sh",
+    "-c",
+    "sh /evidence/focused.sh"
+  ],
+  "started": "2026-10-26T21:52:44.907900+00:00",
+  "ended": "2026-10-26T21:52:47.978882+00:00",
+  "exitCode": 0
+}

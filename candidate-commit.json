@@ -1,0 +1,11 @@
+{
+  "head": "772e94a781313b2d21f7ae751df5dac935d236c7",
+  "parent": "483f33fdd44c4ebd42061cb064eb48b9744a841f",
+  "tree": "8681b423461e9132cb88752bf897512cfce9f443",
+  "branch": "maintenance/bullmq-5017-node-import",
+  "status": "",
+  "normalHookLog": "normal-commit.log",
+  "files": [
+    "tests/child-processor.test.ts"
+  ]
+}

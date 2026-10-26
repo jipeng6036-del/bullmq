@@ -1,0 +1,21 @@
+{
+  "name": "candidate-quality",
+  "command": "cd /tmp/bullmq5017/source && cp /evidence/candidate-child-processor.test.ts tests/child-processor.test.ts && node /evidence/verify-source.cjs /evidence/candidate-source-manifest.json && yarn lint && yarn build && yarn test:types && ./node_modules/.bin/prettier --check src/classes/child-processor.ts src/classes/sandbox.ts src/enums/child-command.ts tests/sandboxed_process.test.ts tests/child-processor.test.ts tests/fixtures/fixture_processor_update_data_await.js && yarn test:smoke && node /evidence/verify-source.cjs /evidence/candidate-source-manifest.json",
+  "argv": [
+    "docker",
+    "exec",
+    "--env",
+    "HOME=/tmp/bullmq5017/home",
+    "--env",
+    "npm_config_cache=/tmp/bullmq5017/npm-cache",
+    "--env",
+    "PATH=/tmp/bullmq5017/tools/node_modules/node/bin:/tmp/bullmq5017/tools/node_modules/.bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+    "ghpr-maintenance2132-bullmq5017-validation",
+    "sh",
+    "-c",
+    "cd /tmp/bullmq5017/source && cp /evidence/candidate-child-processor.test.ts tests/child-processor.test.ts && node /evidence/verify-source.cjs /evidence/candidate-source-manifest.json && yarn lint && yarn build && yarn test:types && ./node_modules/.bin/prettier --check src/classes/child-processor.ts src/classes/sandbox.ts src/enums/child-command.ts tests/sandboxed_process.test.ts tests/child-processor.test.ts tests/fixtures/fixture_processor_update_data_await.js && yarn test:smoke && node /evidence/verify-source.cjs /evidence/candidate-source-manifest.json"
+  ],
+  "started": "2026-10-26T21:43:52.770359+00:00",
+  "ended": "2026-10-26T21:44:17.979180+00:00",
+  "exitCode": 0
+}

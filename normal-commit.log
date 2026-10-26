@@ -1,0 +1,56 @@
+{"argv": ["docker", "exec", "--env", "HOME=/tmp/bullmq5017/home", "--env", "npm_config_cache=/tmp/bullmq5017/npm-cache", "--env", "PATH=/tmp/bullmq5017/tools/node_modules/node/bin:/tmp/bullmq5017/tools/node_modules/.bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin", "ghpr-maintenance2132-bullmq5017-validation", "sh", "-c", "cd /tmp/bullmq5017/source && node /evidence/versions.cjs && git config user.name jipeng6036-del && git config user.email jipeng6036@gmail.com && git diff --check && git add tests/child-processor.test.ts && git diff --cached --stat && git commit -m \"test(sandbox): use node prefix for events import\" && node /evidence/verify-source.cjs /evidence/candidate-source-manifest.json && git status --porcelain && git show --format=fuller --stat HEAD && git rev-parse HEAD > /evidence/candidate-head.txt && git bundle create /evidence/candidate.bundle HEAD ^483f33fdd44c4ebd42061cb064eb48b9744a841f"], "started": "2026-10-26T21:44:32.817128+00:00"}
+{"node":"v24.22.1","eslint":"10.13.0","vitest":"4.1.12","typescript":"5.9.3","ioredis":"5.11.1"}
+ tests/child-processor.test.ts | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+yarn run v1.22.22
+$ pretty-quick --staged
+🔍  Finding changed files since git revision 483f33fd.
+🎯  Found 1 changed file.
+✅  Everything is awesome!
+Done in 0.86s.
+yarn run v1.22.22
+$ ./node_modules/.bin/eslint . --fix
+
+/tmp/bullmq5017/source/src/postgres/postgres-relay-backend.ts
+  395:7  warning  'identity' is never reassigned. Use 'const' instead  prefer-const
+
+✖ 1 problem (0 errors, 1 warning)
+
+Done in 3.02s.
+yarn run v1.22.22
+$ lint-staged
+⋯ Backing up original state…
+✔ Done backing up original state (30eecc3f)!
+⋯ Running tasks for staged files…
+    *.{js,ts} — 1 file
+      ⋯ npm run eslint:fix
+
+✔ npm run eslint:fix
+
+✔ Done running tasks for staged files!
+⋯ Staging changes from tasks…
+✔ Done staging changes from tasks!
+⋯ Cleaning up temporary files…
+✔ Done cleaning up temporary files!
+Done in 3.43s.
+yarn run v1.22.22
+$ madge --circular --extensions ts ./src
+- Finding files
+Processed 178 files (660ms) 
+
+✔ No circular dependency found!
+
+Done in 0.75s.
+[master 772e94a7] test(sandbox): use node prefix for events import
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+{"manifest":"/evidence/candidate-source-manifest.json","head":"772e94a781313b2d21f7ae751df5dac935d236c7","entries":1068,"mismatches":[]}
+commit 772e94a781313b2d21f7ae751df5dac935d236c7
+Author:     jipeng6036-del <jipeng6036@gmail.com>
+AuthorDate: Mon Oct 26 21:44:33 2026 +0000
+Commit:     jipeng6036-del <jipeng6036@gmail.com>
+CommitDate: Mon Oct 26 21:44:33 2026 +0000
+
+    test(sandbox): use node prefix for events import
+
+ tests/child-processor.test.ts | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
